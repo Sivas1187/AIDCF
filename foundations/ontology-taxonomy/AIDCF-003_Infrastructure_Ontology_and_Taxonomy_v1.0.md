@@ -1,5 +1,13 @@
 > Markdown edition (source of truth). PDF: [AIDCF-003_Infrastructure_Ontology_and_Taxonomy_v1.0.pdf](AIDCF-003_Infrastructure_Ontology_and_Taxonomy_v1.0.pdf)
 
+**AIDCF**
+
+# INFRASTRUCTURE ONTOLOGY & TAXONOMY
+
+*AI Data Centre Facilities Assurance Framework*
+
+Version 1.0
+
 Canonical semantics for capability-centred AI infrastructure assurance
 
 Artifact ID: AIDCF-IOT-001  

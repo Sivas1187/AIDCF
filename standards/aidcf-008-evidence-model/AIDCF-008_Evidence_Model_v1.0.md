@@ -1,5 +1,13 @@
 > Markdown edition (source of truth). PDF: [AIDCF-008_Evidence_Model_v1.0.pdf](AIDCF-008_Evidence_Model_v1.0.pdf)
 
+**AIDCF**
+
+# EVIDENCE MODEL
+
+*AI Data Centre Facilities Assurance Framework*
+
+Version 1.0
+
 A normative evidence architecture for traceable, current, sufficient and reviewable AI infrastructure assurance
 
 Artifact ID: AIDCF-EVM-001  

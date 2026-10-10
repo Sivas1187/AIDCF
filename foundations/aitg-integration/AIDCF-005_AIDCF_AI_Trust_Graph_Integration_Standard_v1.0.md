@@ -1,5 +1,13 @@
 > Markdown edition (source of truth). PDF: [AIDCF-005_AIDCF_AI_Trust_Graph_Integration_Standard_v1.0.pdf](AIDCF-005_AIDCF_AI_Trust_Graph_Integration_Standard_v1.0.pdf)
 
+**AIDCF**
+
+# AIDCF - AI TRUST GRAPH INTEGRATION STANDARD
+
+*AI Data Centre Facilities Assurance Framework*
+
+Version 1.0
+
 A graph-native interoperability and semantic handoff standard for infrastructure assurance, digital trust, failure propagation, evidence and accountable decisions
 
 Artifact ID: AIDCF-INT-001  

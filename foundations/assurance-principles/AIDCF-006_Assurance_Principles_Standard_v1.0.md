@@ -1,5 +1,13 @@
 > Markdown edition (source of truth). PDF: [AIDCF-006_Assurance_Principles_Standard_v1.0.pdf](AIDCF-006_Assurance_Principles_Standard_v1.0.pdf)
 
+**AIDCF**
+
+# ASSURANCE PRINCIPLES STANDARD
+
+*AI Data Centre Facilities Assurance Framework*
+
+Version 1.0
+
 The constitutional rules governing claims, evidence, uncertainty, critical gates, decisions, independence and responsible use
 
 Artifact ID: AIDCF-APS-001  

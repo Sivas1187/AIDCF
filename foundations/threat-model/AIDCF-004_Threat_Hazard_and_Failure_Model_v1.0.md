@@ -1,5 +1,13 @@
 > Markdown edition (source of truth). PDF: [AIDCF-004_Threat_Hazard_and_Failure_Model_v1.0.pdf](AIDCF-004_Threat_Hazard_and_Failure_Model_v1.0.pdf)
 
+**AIDCF**
+
+# THREAT, HAZARD & FAILURE MODEL
+
+*AI Data Centre Facilities Assurance Framework*
+
+Version 1.0
+
 Capability-first adverse-condition, failure-propagation and resilience analysis
 
 Artifact ID: AIDCF-THF-001  
