@@ -5,6 +5,7 @@ All notable changes to this repository are recorded here. Versions refer to the 
 ## [Unreleased]
 
 ### Fixed
+- AIDCF-009 Practitioner Handbook v1.0 restored to `standards/aidcf-009-assessment-methodology/`: v1.1 is an additive companion and does not reproduce v1.0's normative content (roles, stage gates, playbooks, workpaper templates)
 - `registries/controls/controls.csv`: control titles and normative requirements now taken from the AIDCF-007A workbook, replacing placeholder text inherited from the AIDCF-015 v1.2 package
 
 ### Pending before public release
@@ -33,5 +34,4 @@ All notable changes to this repository are recorded here. Versions refer to the 
 
 ### Archived
 - AIDCF-007 Control Catalogue v1.0 (superseded by AIDCF-007A)
-- AIDCF-009 Practitioner Handbook v1.0 (superseded by v1.1)
 - AIDCF-015 v1.1 Executable Reference Implementation (superseded by v1.2)
