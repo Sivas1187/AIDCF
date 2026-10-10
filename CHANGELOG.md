@@ -4,11 +4,15 @@ All notable changes to this repository are recorded here. Versions refer to the 
 
 ## [Unreleased]
 
+### Fixed
+- `registries/controls/controls.csv`: control titles and normative requirements now taken from the AIDCF-007A workbook, replacing placeholder text inherited from the AIDCF-015 v1.2 package
+
 ### Pending before public release
 - DOI and publication metadata
 - Core Conceptual Model v1.0 and AIDCF-016 Machine-Executable Data Model Standard
 - Independent Critical Gate review and authorised pilot status
 - Private security-reporting channel
+- Correct placeholder control titles in the AIDCF-015 package registry in its next release
 
 ## [3.0 Validation Candidate] - 2026-10-10
 
