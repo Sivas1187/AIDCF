@@ -5,7 +5,6 @@ All notable changes to this repository are recorded here. Versions refer to the 
 ## [Unreleased]
 
 ### Pending before public release
-- Licence selection (documentation, registries and data, schemas and software, marks)
 - DOI and publication metadata
 - Core Conceptual Model v1.0 and AIDCF-016 Machine-Executable Data Model Standard
 - Independent Critical Gate review and authorised pilot status
@@ -20,6 +19,7 @@ All notable changes to this repository are recorded here. Versions refer to the 
 - Standards AIDCF-008 to AIDCF-014
 - AIDCF-015 v1.2 canonical-baseline synthetic reference implementation, with registries and schemas
 - AIDCF-016 Full Stack Validation Report v1.0
+- Licensing: CC BY 4.0 for documentation, standards, registries and data; Apache 2.0 for schemas and software
 - Governance, contribution, security, conduct and citation files
 - PDF copies of all Word artifacts
 

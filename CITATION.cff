@@ -11,6 +11,9 @@ authors:
   - family-names: Sethumadhavan
     given-names: Siva
 version: "3.0"
+license:
+  - CC-BY-4.0
+  - Apache-2.0
 date-released: "2026-10-10"
 repository-code: "https://github.com/Sivas1187/AIDCF"
 keywords:
@@ -27,4 +30,4 @@ preferred-citation:
     - family-names: Sethumadhavan
       given-names: Siva
   year: 2026
-# Add a `license:` field once licences are selected, and a `doi:` field once a DOI is assigned.
+# Add a `doi:` field once a DOI is assigned.

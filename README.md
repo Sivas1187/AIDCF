@@ -537,7 +537,7 @@ Stable identity does not imply that control wording can never evolve. Meaning-ch
 
 ```text
 AIDCF/
-├── README.md, LICENSE (pending), CITATION.cff, CHANGELOG.md,
+├── README.md, LICENSE, LICENSES/, CITATION.cff, CHANGELOG.md,
 │   GOVERNANCE.md, CONTRIBUTING.md, SECURITY.md, CODE_OF_CONDUCT.md
 ├── docs/            images, diagrams, presentations, publications
 ├── whitepaper/
@@ -1003,16 +1003,13 @@ Citation metadata is in [CITATION.cff](CITATION.cff).
 
 ## Licence
 
-**No licence is selected in this README.**
+AIDCF uses separate licences for content and code. See [LICENSE](LICENSE) for the full mapping.
 
-Before publication, choose licences separately for:
-
-1. whitepapers and documentation;
-2. control registries and datasets;
-3. schemas, validators and software;
-4. logos, names and marks, if any.
-
-Do not assume that one licence is appropriate for every artifact.
+| Material | Licence |
+|---|---|
+| Whitepapers, documentation, standards, registries and data | [CC BY 4.0](LICENSES/CC-BY-4.0.txt) |
+| Schemas, validators, software and the AIDCF-015 reference implementation | [Apache 2.0](LICENSES/Apache-2.0.txt) |
+| AIDCF name, logos and marks | Not licensed |
 
 No rights to third-party standards or proprietary material are granted by AIDCF.
 

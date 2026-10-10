@@ -1,0 +1,34 @@
+AIDCF: AI Data Centre Facilities Assurance Framework
+Copyright (c) 2026 Siva Sethumadhavan
+
+This repository uses two licences. Full texts are in the LICENSES/ folder.
+
+1. Creative Commons Attribution 4.0 International (CC BY 4.0)
+   LICENSES/CC-BY-4.0.txt
+
+   Applies to whitepapers, documentation, standards and the control
+   registries and data, including:
+     whitepaper/, foundations/, standards/, registries/, assurance/,
+     validation/, pilots/, crosswalks/, research/, examples/, docs/,
+     the documents in implementation/ and archive/,
+     and the Markdown files in the repository root.
+
+2. Apache License, Version 2.0 (Apache-2.0)
+   LICENSES/Apache-2.0.txt
+
+   Applies to schemas, validators and software, including:
+     schemas/,
+     implementation/aidcf-015-v1.2/ (code, schemas, tests and synthetic data),
+     archive/historical-releases/ (earlier executable packages).
+
+Where a file is not covered above, CC BY 4.0 applies unless the file
+states otherwise.
+
+Not licensed:
+  - The names "AIDCF" and "AI Data Centre Facilities Assurance Framework",
+    and any logos or marks, are not licensed under either licence.
+  - No rights are granted to third-party standards or proprietary
+    material referenced by AIDCF (for example ISO, IEC, NIST, EN, TIA,
+    Uptime Institute or ISA publications).
+
+Attribution for CC BY 4.0 material: cite AIDCF as shown in CITATION.cff.
