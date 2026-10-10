@@ -1,0 +1,34 @@
+{
+  "id": "urn:aidcf:decision:DEC-001-v1.2",
+  "type": "AssuranceDecision",
+  "version": "1.2",
+  "status": "APPROVED",
+  "sourceArtifact": "AIDCF-015",
+  "decisionState": "LIMITED",
+  "scope": "Synthetic bounded reference implementation only",
+  "gateResultRefs": [
+    "urn:aidcf:gate:CG-01",
+    "urn:aidcf:gate:CG-02",
+    "urn:aidcf:gate:CG-03",
+    "urn:aidcf:gate:CG-04",
+    "urn:aidcf:gate:CG-05",
+    "urn:aidcf:gate:CG-06",
+    "urn:aidcf:gate:CG-07",
+    "urn:aidcf:gate:CG-08",
+    "urn:aidcf:gate:CG-09",
+    "urn:aidcf:gate:CG-10",
+    "urn:aidcf:gate:CG-11",
+    "urn:aidcf:gate:CG-12",
+    "urn:aidcf:gate:CG-13",
+    "urn:aidcf:gate:CG-14",
+    "urn:aidcf:gate:CG-15"
+  ],
+  "scoreRef": "urn:aidcf:score:SNAP-001-v1.2",
+  "controllingReasons": [
+    "CG-09 UNKNOWN",
+    "CG-10 UNKNOWN",
+    "3.3333% representative control coverage",
+    "Synthetic non-production evidence"
+  ],
+  "notCertification": true
+}

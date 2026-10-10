@@ -1,0 +1,4 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix aidcf: <urn:aidcf:> .
+aidcf:ControlAssessmentShape a sh:NodeShape ; sh:targetClass aidcf:ControlAssessment ; sh:property [ sh:path aidcf:controlRef ; sh:minCount 1 ; sh:maxCount 1 ] ; sh:property [ sh:path aidcf:evidenceRefs ; sh:minCount 1 ] .
+aidcf:GateResultShape a sh:NodeShape ; sh:targetClass aidcf:GateResult ; sh:property [ sh:path aidcf:gateId ; sh:minCount 1 ] .

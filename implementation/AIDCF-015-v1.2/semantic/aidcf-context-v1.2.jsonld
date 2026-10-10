@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "aidcf": "urn:aidcf:",
+    "id": "@id",
+    "type": "@type",
+    "controlRef": {
+      "@id": "aidcf:controlRef",
+      "@type": "@id"
+    },
+    "evidenceRefs": {
+      "@id": "aidcf:evidenceRefs",
+      "@type": "@id"
+    },
+    "gateRefs": {
+      "@id": "aidcf:gateRefs",
+      "@type": "@id"
+    },
+    "migratedFrom": "aidcf:migratedFrom"
+  }
+}

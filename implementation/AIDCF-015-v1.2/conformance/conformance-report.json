@@ -1,0 +1,56 @@
+{
+  "release": "AIDCF-015 v1.2",
+  "synthetic": true,
+  "baselineStatus": "CANONICAL_15_90_360",
+  "migration": {
+    "legacyMapped": 12,
+    "liveLegacyControlRefs": 0,
+    "canonicalRegistryControls": 360,
+    "closed": [
+      "BI-001",
+      "NC-01"
+    ]
+  },
+  "validation": {
+    "tests": 76,
+    "passed": 76,
+    "failed": 0,
+    "rdfParsed": false,
+    "shaclRuntimeExecuted": false
+  },
+  "scoreReperformance": {
+    "expectedRawScore": 83.3333,
+    "actualRawScore": 83.3333,
+    "scoreMatch": true,
+    "expectedHash": "7b872d3968fd159b088b9af2c327e0dc8100c46b1d345749a8e816b5f46e29c1",
+    "actualHash": "7b872d3968fd159b088b9af2c327e0dc8100c46b1d345749a8e816b5f46e29c1",
+    "hashMatch": true,
+    "inputs": {
+      "MCF-CAP-001": 90,
+      "MCF-DEP-001": 78,
+      "MCF-POW-001": 92,
+      "MCF-THM-009": 83,
+      "MCF-CMP-001": 91,
+      "MCF-STO-017": 85,
+      "MCF-NET-001": 88,
+      "MCF-OPS-013": 80,
+      "MCF-RES-017": 72,
+      "MCF-SUP-021": 70,
+      "MCF-SEC-005": 76,
+      "MCF-EVA-017": 95
+    }
+  },
+  "graphQueries": 8,
+  "decision": "LIMITED",
+  "coverage": {
+    "canonicalUniverse": 360,
+    "assessedControls": 12,
+    "percent": 3.3333
+  },
+  "overall": "CANONICAL_BASELINE_COMPLIANT_SYNTHETIC_REFERENCE_IMPLEMENTATION",
+  "remainingReleaseGates": [
+    "Independent T7 rerun and signed review",
+    "SHACL runtime execution if pyshacl unavailable",
+    "No real-facility or certification claim"
+  ]
+}

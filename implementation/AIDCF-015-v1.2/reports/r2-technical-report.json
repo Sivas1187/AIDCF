@@ -1,0 +1,88 @@
+{
+  "reportId": "R2-v1.2",
+  "version": "1.2",
+  "decisionRef": "urn:aidcf:decision:DEC-001-v1.2",
+  "assessedCanonicalControls": [
+    "MCF-CAP-001",
+    "MCF-CMP-001",
+    "MCF-DEP-001",
+    "MCF-EVA-017",
+    "MCF-NET-001",
+    "MCF-OPS-013",
+    "MCF-POW-001",
+    "MCF-RES-017",
+    "MCF-SEC-005",
+    "MCF-STO-017",
+    "MCF-SUP-021",
+    "MCF-THM-009"
+  ],
+  "migrationRefs": [
+    {
+      "from": "PILOT-CAP-001",
+      "to": "MCF-CAP-001"
+    },
+    {
+      "from": "PILOT-DEP-001",
+      "to": "MCF-DEP-001"
+    },
+    {
+      "from": "PILOT-POW-001",
+      "to": "MCF-POW-001"
+    },
+    {
+      "from": "PILOT-THM-001",
+      "to": "MCF-THM-009"
+    },
+    {
+      "from": "PILOT-CMP-001",
+      "to": "MCF-CMP-001"
+    },
+    {
+      "from": "PILOT-STO-001",
+      "to": "MCF-STO-017"
+    },
+    {
+      "from": "PILOT-NET-001",
+      "to": "MCF-NET-001"
+    },
+    {
+      "from": "PILOT-OPS-001",
+      "to": "MCF-OPS-013"
+    },
+    {
+      "from": "PILOT-RES-001",
+      "to": "MCF-RES-017"
+    },
+    {
+      "from": "PILOT-SUP-001",
+      "to": "MCF-SUP-021"
+    },
+    {
+      "from": "PILOT-SEC-001",
+      "to": "MCF-SEC-005"
+    },
+    {
+      "from": "PILOT-EVA-001",
+      "to": "MCF-EVA-017"
+    }
+  ],
+  "gateSummary": {
+    "CG-01": "PASS",
+    "CG-02": "PASS",
+    "CG-03": "PASS",
+    "CG-04": "APPROVED_NA",
+    "CG-05": "PASS",
+    "CG-06": "PASS",
+    "CG-07": "PASS",
+    "CG-08": "PASS",
+    "CG-09": "UNKNOWN",
+    "CG-10": "UNKNOWN",
+    "CG-11": "PASS",
+    "CG-12": "PASS",
+    "CG-13": "PASS",
+    "CG-14": "PASS",
+    "CG-15": "PASS"
+  },
+  "score": 83.3333,
+  "coveragePercent": 3.3333
+}

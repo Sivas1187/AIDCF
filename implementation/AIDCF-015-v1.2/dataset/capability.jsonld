@@ -1,0 +1,18 @@
+{
+  "@context": "../semantic/aidcf-context-v1.2.jsonld",
+  "id": "urn:aidcf:capability:synthetic-training-001",
+  "type": "CapabilityInstance",
+  "version": "1.2",
+  "status": "APPROVED",
+  "sourceArtifact": "AIDCF-015",
+  "name": "Synthetic high-density liquid-cooled distributed AI training",
+  "owner": "Synthetic Capability Owner",
+  "serviceOutcomes": [
+    "SO-01 Training workload availability",
+    "SO-02 Distributed job completion",
+    "SO-03 Checkpoint integrity",
+    "SO-04 Thermal stability",
+    "SO-05 Controlled restoration"
+  ],
+  "synthetic": true
+}

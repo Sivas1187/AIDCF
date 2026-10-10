@@ -1,0 +1,44 @@
+{
+  "id": "urn:aidcf:score:SNAP-001-v1.2",
+  "type": "ScoreSnapshot",
+  "version": "1.2",
+  "status": "APPROVED",
+  "sourceArtifact": "AIDCF-015",
+  "rawScore": 83.3333,
+  "controlAssessments": [
+    "urn:aidcf:assessment:CA-001",
+    "urn:aidcf:assessment:CA-002",
+    "urn:aidcf:assessment:CA-003",
+    "urn:aidcf:assessment:CA-004",
+    "urn:aidcf:assessment:CA-005",
+    "urn:aidcf:assessment:CA-006",
+    "urn:aidcf:assessment:CA-007",
+    "urn:aidcf:assessment:CA-008",
+    "urn:aidcf:assessment:CA-009",
+    "urn:aidcf:assessment:CA-010",
+    "urn:aidcf:assessment:CA-011",
+    "urn:aidcf:assessment:CA-012"
+  ],
+  "calculationMethod": "Arithmetic mean of 12 bounded synthetic representative control indicators; no full-catalogue coverage claim.",
+  "inputs": {
+    "MCF-CAP-001": 90,
+    "MCF-DEP-001": 78,
+    "MCF-POW-001": 92,
+    "MCF-THM-009": 83,
+    "MCF-CMP-001": 91,
+    "MCF-STO-017": 85,
+    "MCF-NET-001": 88,
+    "MCF-OPS-013": 80,
+    "MCF-RES-017": 72,
+    "MCF-SUP-021": 70,
+    "MCF-SEC-005": 76,
+    "MCF-EVA-017": 95
+  },
+  "calculationHash": "7b872d3968fd159b088b9af2c327e0dc8100c46b1d345749a8e816b5f46e29c1",
+  "coverage": {
+    "canonicalUniverse": 360,
+    "assessedControls": 12,
+    "percent": 3.3333
+  },
+  "gateOverlay": "CG-09 and CG-10 UNKNOWN; score cannot override gates."
+}

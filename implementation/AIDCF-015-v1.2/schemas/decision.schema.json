@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "version",
+    "status",
+    "sourceArtifact",
+    "decisionState",
+    "gateResultRefs",
+    "scoreRef"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "type": "string"
+    },
+    "version": {
+      "const": "1.2"
+    },
+    "status": {
+      "type": "string"
+    },
+    "sourceArtifact": {
+      "const": "AIDCF-015"
+    },
+    "decisionState": {
+      "enum": [
+        "REASONABLY_ASSURED",
+        "CONDITIONALLY_ASSURED",
+        "LIMITED",
+        "NOT_ASSURED",
+        "UNKNOWN",
+        "SUSPENDED",
+        "WITHDRAWN",
+        "SUPERSEDED"
+      ]
+    },
+    "gateResultRefs": {
+      "type": "array",
+      "minItems": 15,
+      "maxItems": 15
+    },
+    "scoreRef": {
+      "type": "string"
+    }
+  },
+  "$id": "urn:aidcf:schema:decision:1.2",
+  "additionalProperties": true
+}

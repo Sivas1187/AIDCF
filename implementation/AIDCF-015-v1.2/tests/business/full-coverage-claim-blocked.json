@@ -1,0 +1,8 @@
+{
+  "given": {
+    "assessedControls": 12,
+    "canonicalControls": 360,
+    "claim": "FULL_COVERAGE"
+  },
+  "expected": "REJECT"
+}

@@ -1,0 +1,173 @@
+{
+  "@context": "../semantic/aidcf-context-v1.2.jsonld",
+  "@graph": [
+    {
+      "id": "urn:aidcf:evidence:EV-001",
+      "type": "EvidenceObject",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "evidenceClass": "CONFIGURATION",
+      "sha256": "758457354fbb8958efa8167dafbc6a08ad2ce3605e2a9a82c94c32cf93a1efe9",
+      "supportsControlRefs": [
+        "MCF-CAP-001"
+      ],
+      "classification": "SYNTHETIC_INTERNAL",
+      "migratedFrom": "PILOT-CAP-001"
+    },
+    {
+      "id": "urn:aidcf:evidence:EV-002",
+      "type": "EvidenceObject",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "evidenceClass": "OPERATIONAL",
+      "sha256": "8fbb8818bb741792f10fb45597c71b90b5a59c69237fc4f822f3c22b0aaba353",
+      "supportsControlRefs": [
+        "MCF-DEP-001"
+      ],
+      "classification": "SYNTHETIC_INTERNAL",
+      "migratedFrom": "PILOT-DEP-001"
+    },
+    {
+      "id": "urn:aidcf:evidence:EV-003",
+      "type": "EvidenceObject",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "evidenceClass": "VALIDATION",
+      "sha256": "4b3af8fdd8db32959776e6ba3ec7a35178dfaa7e4bdae438689ec0c57a723192",
+      "supportsControlRefs": [
+        "MCF-POW-001"
+      ],
+      "classification": "SYNTHETIC_INTERNAL",
+      "migratedFrom": "PILOT-POW-001"
+    },
+    {
+      "id": "urn:aidcf:evidence:EV-004",
+      "type": "EvidenceObject",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "evidenceClass": "DOCUMENTARY",
+      "sha256": "f09c6cb5f8c4f490ef87bdd6fe7e591426a175c364491ed5c3958335e2773340",
+      "supportsControlRefs": [
+        "MCF-THM-009"
+      ],
+      "classification": "SYNTHETIC_INTERNAL",
+      "migratedFrom": "PILOT-THM-001"
+    },
+    {
+      "id": "urn:aidcf:evidence:EV-005",
+      "type": "EvidenceObject",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "evidenceClass": "CONFIGURATION",
+      "sha256": "0dc4594aca2f00c76c0429ea1570f6c2bf234856c09e5611d13a4e26f04532bb",
+      "supportsControlRefs": [
+        "MCF-CMP-001"
+      ],
+      "classification": "SYNTHETIC_INTERNAL",
+      "migratedFrom": "PILOT-CMP-001"
+    },
+    {
+      "id": "urn:aidcf:evidence:EV-006",
+      "type": "EvidenceObject",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "evidenceClass": "OPERATIONAL",
+      "sha256": "2c68a9aae9e7185ccf28a7c2c153e844700cdbc064e168e51505d35d8c91bf76",
+      "supportsControlRefs": [
+        "MCF-STO-017"
+      ],
+      "classification": "SYNTHETIC_INTERNAL",
+      "migratedFrom": "PILOT-STO-001"
+    },
+    {
+      "id": "urn:aidcf:evidence:EV-007",
+      "type": "EvidenceObject",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "evidenceClass": "VALIDATION",
+      "sha256": "f084c6f53faf0662130f5481a20adefe8a68375b3c474c89eac79a51283a6781",
+      "supportsControlRefs": [
+        "MCF-NET-001"
+      ],
+      "classification": "SYNTHETIC_INTERNAL",
+      "migratedFrom": "PILOT-NET-001"
+    },
+    {
+      "id": "urn:aidcf:evidence:EV-008",
+      "type": "EvidenceObject",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "evidenceClass": "DOCUMENTARY",
+      "sha256": "1d1ec487bcc892793ae74604b77f0215006a5746070c1d443c3d1296d9558f73",
+      "supportsControlRefs": [
+        "MCF-OPS-013"
+      ],
+      "classification": "SYNTHETIC_INTERNAL",
+      "migratedFrom": "PILOT-OPS-001"
+    },
+    {
+      "id": "urn:aidcf:evidence:EV-009",
+      "type": "EvidenceObject",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "evidenceClass": "CONFIGURATION",
+      "sha256": "9e1ba1b21d5f230c30c7c808c13fff8cf997276d709ead999c908824637228a6",
+      "supportsControlRefs": [
+        "MCF-RES-017"
+      ],
+      "classification": "SYNTHETIC_INTERNAL",
+      "migratedFrom": "PILOT-RES-001"
+    },
+    {
+      "id": "urn:aidcf:evidence:EV-010",
+      "type": "EvidenceObject",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "evidenceClass": "OPERATIONAL",
+      "sha256": "76ab53852fe8a5ca6e6f69f0ac65b8eeea435535ee5d0fb373df5ce82b0927a1",
+      "supportsControlRefs": [
+        "MCF-SUP-021"
+      ],
+      "classification": "SYNTHETIC_INTERNAL",
+      "migratedFrom": "PILOT-SUP-001"
+    },
+    {
+      "id": "urn:aidcf:evidence:EV-011",
+      "type": "EvidenceObject",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "evidenceClass": "VALIDATION",
+      "sha256": "9d62b5fce2e5e6cb50237fd9b4f671298c73945c21cebdf98ab67bb6a3a2d8d7",
+      "supportsControlRefs": [
+        "MCF-SEC-005"
+      ],
+      "classification": "SYNTHETIC_INTERNAL",
+      "migratedFrom": "PILOT-SEC-001"
+    },
+    {
+      "id": "urn:aidcf:evidence:EV-012",
+      "type": "EvidenceObject",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "evidenceClass": "DOCUMENTARY",
+      "sha256": "e13d94b50e9c71ed3aea9256cb0dfad6483de0a2c258d6598389a46f367a8f11",
+      "supportsControlRefs": [
+        "MCF-EVA-017"
+      ],
+      "classification": "SYNTHETIC_INTERNAL",
+      "migratedFrom": "PILOT-EVA-001"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "urn:aidcf:evidence:EV-001",
+  "type": "EvidenceObject",
+  "version": "1.2",
+  "status": "APPROVED",
+  "sourceArtifact": "AIDCF-015",
+  "evidenceClass": "CONFIGURATION",
+  "sha256": "758457354fbb8958efa8167dafbc6a08ad2ce3605e2a9a82c94c32cf93a1efe9",
+  "supportsControlRefs": [
+    "MCF-CAP-001"
+  ],
+  "classification": "SYNTHETIC_INTERNAL",
+  "migratedFrom": "PILOT-CAP-001"
+}

@@ -1,0 +1,395 @@
+{
+  "release": "AIDCF-015 v1.2",
+  "tests": 76,
+  "passed": 76,
+  "failed": 0,
+  "results": [
+    {
+      "test": "registry-domains.csv",
+      "pass": true,
+      "details": "15 rows"
+    },
+    {
+      "test": "registry-control-families.csv",
+      "pass": true,
+      "details": "90 rows"
+    },
+    {
+      "test": "registry-controls.csv",
+      "pass": true,
+      "details": "360 rows"
+    },
+    {
+      "test": "canonical-control-id-pattern",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "control-assessment-1",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "control-assessment-2",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "control-assessment-3",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "control-assessment-4",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "control-assessment-5",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "control-assessment-6",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "control-assessment-7",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "control-assessment-8",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "control-assessment-9",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "control-assessment-10",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "control-assessment-11",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "control-assessment-12",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-1",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-2",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-3",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-4",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-5",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-6",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-7",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-8",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-9",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-10",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-11",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-12",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-13",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-14",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-15",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "score-1",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "decision-1",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "evidence-1",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "evidence-2",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "evidence-3",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "evidence-4",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "evidence-5",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "evidence-6",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "evidence-7",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "evidence-8",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "evidence-9",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "evidence-10",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "evidence-11",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "evidence-12",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "assessment-canonical-urn:aidcf:assessment:CA-001",
+      "pass": true,
+      "details": "MCF-CAP-001"
+    },
+    {
+      "test": "assessment-canonical-urn:aidcf:assessment:CA-002",
+      "pass": true,
+      "details": "MCF-DEP-001"
+    },
+    {
+      "test": "assessment-canonical-urn:aidcf:assessment:CA-003",
+      "pass": true,
+      "details": "MCF-POW-001"
+    },
+    {
+      "test": "assessment-canonical-urn:aidcf:assessment:CA-004",
+      "pass": true,
+      "details": "MCF-THM-009"
+    },
+    {
+      "test": "assessment-canonical-urn:aidcf:assessment:CA-005",
+      "pass": true,
+      "details": "MCF-CMP-001"
+    },
+    {
+      "test": "assessment-canonical-urn:aidcf:assessment:CA-006",
+      "pass": true,
+      "details": "MCF-STO-017"
+    },
+    {
+      "test": "assessment-canonical-urn:aidcf:assessment:CA-007",
+      "pass": true,
+      "details": "MCF-NET-001"
+    },
+    {
+      "test": "assessment-canonical-urn:aidcf:assessment:CA-008",
+      "pass": true,
+      "details": "MCF-OPS-013"
+    },
+    {
+      "test": "assessment-canonical-urn:aidcf:assessment:CA-009",
+      "pass": true,
+      "details": "MCF-RES-017"
+    },
+    {
+      "test": "assessment-canonical-urn:aidcf:assessment:CA-010",
+      "pass": true,
+      "details": "MCF-SUP-021"
+    },
+    {
+      "test": "assessment-canonical-urn:aidcf:assessment:CA-011",
+      "pass": true,
+      "details": "MCF-SEC-005"
+    },
+    {
+      "test": "assessment-canonical-urn:aidcf:assessment:CA-012",
+      "pass": true,
+      "details": "MCF-EVA-017"
+    },
+    {
+      "test": "gate-controls-canonical-CG-01",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-controls-canonical-CG-02",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-controls-canonical-CG-03",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-controls-canonical-CG-04",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-controls-canonical-CG-05",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-controls-canonical-CG-06",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-controls-canonical-CG-07",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-controls-canonical-CG-08",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-controls-canonical-CG-09",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-controls-canonical-CG-10",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-controls-canonical-CG-11",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-controls-canonical-CG-12",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-controls-canonical-CG-13",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-controls-canonical-CG-14",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "gate-controls-canonical-CG-15",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "score-value-match",
+      "pass": true,
+      "details": "83.3333"
+    },
+    {
+      "test": "score-hash-match",
+      "pass": true,
+      "details": "7b872d3968fd159b088b9af2c327e0dc8100c46b1d345749a8e816b5f46e29c1"
+    },
+    {
+      "test": "unknown-blocks-positive",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "test": "report-decision-match",
+      "pass": true,
+      "details": ""
+    }
+  ],
+  "rdfShacl": {
+    "ontologyParsed": false,
+    "shaclRuntimeExecuted": false,
+    "conforms": null,
+    "details": "RDF parse failed: No module named 'rdflib'"
+  },
+  "overall": "CANONICAL_BASELINE_COMPLIANT_SYNTHETIC_REFERENCE_IMPLEMENTATION"
+}

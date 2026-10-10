@@ -1,0 +1,276 @@
+{
+  "@context": "../semantic/aidcf-context-v1.2.jsonld",
+  "@graph": [
+    {
+      "id": "urn:aidcf:gate:CG-01",
+      "type": "GateResult",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "gateId": "CG-01",
+      "state": "PASS",
+      "controlRefs": [
+        "MCF-CAP-001"
+      ],
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-001"
+      ],
+      "conditions": [],
+      "boundedPilot": true
+    },
+    {
+      "id": "urn:aidcf:gate:CG-02",
+      "type": "GateResult",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "gateId": "CG-02",
+      "state": "PASS",
+      "controlRefs": [
+        "MCF-CAP-001"
+      ],
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-001"
+      ],
+      "conditions": [],
+      "boundedPilot": true
+    },
+    {
+      "id": "urn:aidcf:gate:CG-03",
+      "type": "GateResult",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "gateId": "CG-03",
+      "state": "PASS",
+      "controlRefs": [
+        "MCF-DEP-001",
+        "MCF-SUP-021"
+      ],
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-002",
+        "urn:aidcf:evidence:EV-010"
+      ],
+      "conditions": [],
+      "boundedPilot": true
+    },
+    {
+      "id": "urn:aidcf:gate:CG-04",
+      "type": "GateResult",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "gateId": "CG-04",
+      "state": "APPROVED_NA",
+      "controlRefs": [],
+      "evidenceRefs": [],
+      "conditions": [
+        "Not selected in this bounded synthetic control sample; not a statement about a real facility."
+      ],
+      "boundedPilot": true
+    },
+    {
+      "id": "urn:aidcf:gate:CG-05",
+      "type": "GateResult",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "gateId": "CG-05",
+      "state": "PASS",
+      "controlRefs": [
+        "MCF-POW-001"
+      ],
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-003"
+      ],
+      "conditions": [],
+      "boundedPilot": true
+    },
+    {
+      "id": "urn:aidcf:gate:CG-06",
+      "type": "GateResult",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "gateId": "CG-06",
+      "state": "PASS",
+      "controlRefs": [
+        "MCF-THM-009"
+      ],
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-004"
+      ],
+      "conditions": [],
+      "boundedPilot": true
+    },
+    {
+      "id": "urn:aidcf:gate:CG-07",
+      "type": "GateResult",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "gateId": "CG-07",
+      "state": "PASS",
+      "controlRefs": [
+        "MCF-OPS-013",
+        "MCF-SEC-005"
+      ],
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-008",
+        "urn:aidcf:evidence:EV-011"
+      ],
+      "conditions": [],
+      "boundedPilot": true
+    },
+    {
+      "id": "urn:aidcf:gate:CG-08",
+      "type": "GateResult",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "gateId": "CG-08",
+      "state": "PASS",
+      "controlRefs": [
+        "MCF-CMP-001",
+        "MCF-STO-017",
+        "MCF-NET-001"
+      ],
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-005",
+        "urn:aidcf:evidence:EV-006",
+        "urn:aidcf:evidence:EV-007"
+      ],
+      "conditions": [],
+      "boundedPilot": true
+    },
+    {
+      "id": "urn:aidcf:gate:CG-09",
+      "type": "GateResult",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "gateId": "CG-09",
+      "state": "UNKNOWN",
+      "controlRefs": [
+        "MCF-RES-017"
+      ],
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-009"
+      ],
+      "conditions": [
+        "Complete integrated recovery exercise and checkpoint restoration validation."
+      ],
+      "boundedPilot": true
+    },
+    {
+      "id": "urn:aidcf:gate:CG-10",
+      "type": "GateResult",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "gateId": "CG-10",
+      "state": "UNKNOWN",
+      "controlRefs": [
+        "MCF-STO-017",
+        "MCF-RES-017"
+      ],
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-006",
+        "urn:aidcf:evidence:EV-009"
+      ],
+      "conditions": [
+        "Complete integrated recovery exercise and checkpoint restoration validation."
+      ],
+      "boundedPilot": true
+    },
+    {
+      "id": "urn:aidcf:gate:CG-11",
+      "type": "GateResult",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "gateId": "CG-11",
+      "state": "PASS",
+      "controlRefs": [
+        "MCF-EVA-017"
+      ],
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-012"
+      ],
+      "conditions": [],
+      "boundedPilot": true
+    },
+    {
+      "id": "urn:aidcf:gate:CG-12",
+      "type": "GateResult",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "gateId": "CG-12",
+      "state": "PASS",
+      "controlRefs": [
+        "MCF-DEP-001",
+        "MCF-EVA-017"
+      ],
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-002",
+        "urn:aidcf:evidence:EV-012"
+      ],
+      "conditions": [],
+      "boundedPilot": true
+    },
+    {
+      "id": "urn:aidcf:gate:CG-13",
+      "type": "GateResult",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "gateId": "CG-13",
+      "state": "PASS",
+      "controlRefs": [
+        "MCF-OPS-013",
+        "MCF-SUP-021"
+      ],
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-008",
+        "urn:aidcf:evidence:EV-010"
+      ],
+      "conditions": [],
+      "boundedPilot": true
+    },
+    {
+      "id": "urn:aidcf:gate:CG-14",
+      "type": "GateResult",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "gateId": "CG-14",
+      "state": "PASS",
+      "controlRefs": [
+        "MCF-OPS-013"
+      ],
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-008"
+      ],
+      "conditions": [],
+      "boundedPilot": true
+    },
+    {
+      "id": "urn:aidcf:gate:CG-15",
+      "type": "GateResult",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "gateId": "CG-15",
+      "state": "PASS",
+      "controlRefs": [
+        "MCF-SEC-005"
+      ],
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-011"
+      ],
+      "conditions": [],
+      "boundedPilot": true
+    }
+  ]
+}

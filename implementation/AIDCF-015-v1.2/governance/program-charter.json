@@ -1,0 +1,12 @@
+{
+  "charterId": "AIDCF-015-v1.2-CHAR-001",
+  "purpose": "Migrate executable synthetic pilot to approved AIDCF-007A baseline.",
+  "roles": {
+    "sponsor": "Methodology owner",
+    "migrationOwner": "Registry steward",
+    "validator": "Conformance reviewer",
+    "decisionAuthority": "Accountable methodology authority"
+  },
+  "independence": "Synthetic self-validation; independent T7 review remains pending.",
+  "safety": "No live engineering, switching, intrusion or destructive test."
+}

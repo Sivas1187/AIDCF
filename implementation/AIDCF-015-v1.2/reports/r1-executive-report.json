@@ -1,0 +1,19 @@
+{
+  "reportId": "R1-v1.2",
+  "version": "1.2",
+  "classification": "SYNTHETIC_INTERNAL",
+  "decisionRef": "urn:aidcf:decision:DEC-001-v1.2",
+  "decisionState": "LIMITED",
+  "headline": "Canonical ID migration completed; bounded synthetic assurance remains LIMITED.",
+  "limitations": [
+    "CG-09 UNKNOWN",
+    "CG-10 UNKNOWN",
+    "3.3333% representative control coverage",
+    "Synthetic non-production evidence"
+  ],
+  "prohibitedClaims": [
+    "AIDCF Certified",
+    "Facility assured",
+    "Full 360-control coverage"
+  ]
+}

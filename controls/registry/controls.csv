@@ -1,0 +1,361 @@
+controlId,familyId,domainId,title,requirement,criticalGates,assuranceLevel,status,version,amendmentId
+MCF-GOV-001,GOV-01,GOV,Definition and ownership for governance architecture,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-002,GOV-01,GOV,Architecture and implementation for governance architecture,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-003,GOV-01,GOV,Monitoring and operation for governance architecture,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-004,GOV-01,GOV,Validation and recovery for governance architecture,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-005,GOV-02,GOV,Definition and ownership for accountability and responsibility,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-006,GOV-02,GOV,Architecture and implementation for accountability and responsibility,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-007,GOV-02,GOV,Monitoring and operation for accountability and responsibility,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-008,GOV-02,GOV,Validation and recovery for accountability and responsibility,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-009,GOV-03,GOV,Definition and ownership for policy and standards management,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-010,GOV-03,GOV,Architecture and implementation for policy and standards management,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-011,GOV-03,GOV,Monitoring and operation for policy and standards management,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-012,GOV-03,GOV,Validation and recovery for policy and standards management,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-013,GOV-04,GOV,Definition and ownership for risk and assurance governance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-014,GOV-04,GOV,Architecture and implementation for risk and assurance governance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-015,GOV-04,GOV,Monitoring and operation for risk and assurance governance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-016,GOV-04,GOV,Validation and recovery for risk and assurance governance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-017,GOV-05,GOV,Definition and ownership for stakeholder and regulatory interface,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-018,GOV-05,GOV,Architecture and implementation for stakeholder and regulatory interface,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-019,GOV-05,GOV,Monitoring and operation for stakeholder and regulatory interface,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-020,GOV-05,GOV,Validation and recovery for stakeholder and regulatory interface,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-021,GOV-06,GOV,"Definition and ownership for ethics, impartiality and competence",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-022,GOV-06,GOV,"Architecture and implementation for ethics, impartiality and competence",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-023,GOV-06,GOV,"Monitoring and operation for ethics, impartiality and competence",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-GOV-024,GOV-06,GOV,"Validation and recovery for ethics, impartiality and competence",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-13;CG-14,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-001,CAP-01,CAP,Definition and ownership for capability inventory,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-002,CAP-01,CAP,Architecture and implementation for capability inventory,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-003,CAP-01,CAP,Monitoring and operation for capability inventory,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-004,CAP-01,CAP,Validation and recovery for capability inventory,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-005,CAP-02,CAP,Definition and ownership for service outcome definition,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-006,CAP-02,CAP,Architecture and implementation for service outcome definition,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-007,CAP-02,CAP,Monitoring and operation for service outcome definition,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-008,CAP-02,CAP,Validation and recovery for service outcome definition,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-009,CAP-03,CAP,Definition and ownership for criticality and materiality,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-010,CAP-03,CAP,Architecture and implementation for criticality and materiality,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-011,CAP-03,CAP,Monitoring and operation for criticality and materiality,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-012,CAP-03,CAP,Validation and recovery for criticality and materiality,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-013,CAP-04,CAP,Definition and ownership for demand and growth modelling,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-014,CAP-04,CAP,Architecture and implementation for demand and growth modelling,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-015,CAP-04,CAP,Monitoring and operation for demand and growth modelling,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-016,CAP-04,CAP,Validation and recovery for demand and growth modelling,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-017,CAP-05,CAP,Definition and ownership for operating envelope,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-018,CAP-05,CAP,Architecture and implementation for operating envelope,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-019,CAP-05,CAP,Monitoring and operation for operating envelope,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-020,CAP-05,CAP,Validation and recovery for operating envelope,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-021,CAP-06,CAP,Definition and ownership for capability lifecycle and change,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-022,CAP-06,CAP,Architecture and implementation for capability lifecycle and change,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-023,CAP-06,CAP,Monitoring and operation for capability lifecycle and change,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CAP-024,CAP-06,CAP,Validation and recovery for capability lifecycle and change,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-01;CG-02,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-001,DEP-01,DEP,Definition and ownership for dependency discovery,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-002,DEP-01,DEP,Architecture and implementation for dependency discovery,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-003,DEP-01,DEP,Monitoring and operation for dependency discovery,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-004,DEP-01,DEP,Validation and recovery for dependency discovery,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-005,DEP-02,DEP,Definition and ownership for shared and common-mode dependencies,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-006,DEP-02,DEP,Architecture and implementation for shared and common-mode dependencies,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-007,DEP-02,DEP,Monitoring and operation for shared and common-mode dependencies,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-008,DEP-02,DEP,Validation and recovery for shared and common-mode dependencies,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-009,DEP-03,DEP,Definition and ownership for external providers and utilities,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-010,DEP-03,DEP,Architecture and implementation for external providers and utilities,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-011,DEP-03,DEP,Monitoring and operation for external providers and utilities,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-012,DEP-03,DEP,Validation and recovery for external providers and utilities,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-013,DEP-04,DEP,Definition and ownership for concentration and substitutability,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-014,DEP-04,DEP,Architecture and implementation for concentration and substitutability,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-015,DEP-04,DEP,Monitoring and operation for concentration and substitutability,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-016,DEP-04,DEP,Validation and recovery for concentration and substitutability,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-017,DEP-05,DEP,Definition and ownership for boundary and interface control,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-018,DEP-05,DEP,Architecture and implementation for boundary and interface control,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-019,DEP-05,DEP,Monitoring and operation for boundary and interface control,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-020,DEP-05,DEP,Validation and recovery for boundary and interface control,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-021,DEP-06,DEP,Definition and ownership for dependency monitoring and review,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-022,DEP-06,DEP,Architecture and implementation for dependency monitoring and review,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-023,DEP-06,DEP,Monitoring and operation for dependency monitoring and review,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-DEP-024,DEP-06,DEP,Validation and recovery for dependency monitoring and review,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-12,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-001,PHY-01,PHY,Definition and ownership for site and location resilience,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-002,PHY-01,PHY,Architecture and implementation for site and location resilience,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-003,PHY-01,PHY,Monitoring and operation for site and location resilience,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-004,PHY-01,PHY,Validation and recovery for site and location resilience,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-005,PHY-02,PHY,Definition and ownership for building and structural integrity,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-006,PHY-02,PHY,Architecture and implementation for building and structural integrity,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-007,PHY-02,PHY,Monitoring and operation for building and structural integrity,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-008,PHY-02,PHY,Validation and recovery for building and structural integrity,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-009,PHY-03,PHY,Definition and ownership for physical zoning and segregation,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-010,PHY-03,PHY,Architecture and implementation for physical zoning and segregation,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-011,PHY-03,PHY,Monitoring and operation for physical zoning and segregation,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-012,PHY-03,PHY,Validation and recovery for physical zoning and segregation,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-013,PHY-04,PHY,Definition and ownership for access and surveillance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-014,PHY-04,PHY,Architecture and implementation for access and surveillance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-015,PHY-04,PHY,Monitoring and operation for access and surveillance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-016,PHY-04,PHY,Validation and recovery for access and surveillance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-017,PHY-05,PHY,Definition and ownership for asset movement and custody,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-018,PHY-05,PHY,Architecture and implementation for asset movement and custody,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-019,PHY-05,PHY,Monitoring and operation for asset movement and custody,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-020,PHY-05,PHY,Validation and recovery for asset movement and custody,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-021,PHY-06,PHY,"Definition and ownership for fire, life safety and emergency interfaces",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-022,PHY-06,PHY,"Architecture and implementation for fire, life safety and emergency interfaces",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-023,PHY-06,PHY,"Monitoring and operation for fire, life safety and emergency interfaces",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-PHY-024,PHY-06,PHY,"Validation and recovery for fire, life safety and emergency interfaces",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-001,POW-01,POW,Definition and ownership for utility and grid interface,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-002,POW-01,POW,Architecture and implementation for utility and grid interface,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-003,POW-01,POW,Monitoring and operation for utility and grid interface,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-004,POW-01,POW,Validation and recovery for utility and grid interface,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-005,POW-02,POW,Definition and ownership for generation and fuel,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-006,POW-02,POW,Architecture and implementation for generation and fuel,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-007,POW-02,POW,Monitoring and operation for generation and fuel,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-008,POW-02,POW,Validation and recovery for generation and fuel,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-009,POW-03,POW,Definition and ownership for ups and energy storage,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-010,POW-03,POW,Architecture and implementation for ups and energy storage,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-011,POW-03,POW,Monitoring and operation for ups and energy storage,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-012,POW-03,POW,Validation and recovery for ups and energy storage,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-013,POW-04,POW,Definition and ownership for distribution and protection,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-014,POW-04,POW,Architecture and implementation for distribution and protection,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-015,POW-04,POW,Monitoring and operation for distribution and protection,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-016,POW-04,POW,Validation and recovery for distribution and protection,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-017,POW-05,POW,Definition and ownership for power quality and transient response,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-018,POW-05,POW,Architecture and implementation for power quality and transient response,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-019,POW-05,POW,Monitoring and operation for power quality and transient response,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-020,POW-05,POW,Validation and recovery for power quality and transient response,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-021,POW-06,POW,"Definition and ownership for electrical monitoring, maintenance and recovery",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-022,POW-06,POW,"Architecture and implementation for electrical monitoring, maintenance and recovery",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-023,POW-06,POW,"Monitoring and operation for electrical monitoring, maintenance and recovery",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-POW-024,POW-06,POW,"Validation and recovery for electrical monitoring, maintenance and recovery",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-05,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-001,THM-01,THM,Definition and ownership for thermal architecture and capacity,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-002,THM-01,THM,Architecture and implementation for thermal architecture and capacity,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-003,THM-01,THM,Monitoring and operation for thermal architecture and capacity,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-004,THM-01,THM,Validation and recovery for thermal architecture and capacity,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-005,THM-02,THM,Definition and ownership for air cooling systems,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-006,THM-02,THM,Architecture and implementation for air cooling systems,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-007,THM-02,THM,Monitoring and operation for air cooling systems,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-008,THM-02,THM,Validation and recovery for air cooling systems,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-009,THM-03,THM,Definition and ownership for liquid cooling systems,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-010,THM-03,THM,Architecture and implementation for liquid cooling systems,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-011,THM-03,THM,Monitoring and operation for liquid cooling systems,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-012,THM-03,THM,Validation and recovery for liquid cooling systems,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-013,THM-04,THM,Definition and ownership for heat rejection and water systems,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-014,THM-04,THM,Architecture and implementation for heat rejection and water systems,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-015,THM-04,THM,Monitoring and operation for heat rejection and water systems,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-016,THM-04,THM,Validation and recovery for heat rejection and water systems,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-017,THM-05,THM,Definition and ownership for fluid quality and leak management,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-018,THM-05,THM,Architecture and implementation for fluid quality and leak management,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-019,THM-05,THM,Monitoring and operation for fluid quality and leak management,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-020,THM-05,THM,Validation and recovery for fluid quality and leak management,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-021,THM-06,THM,"Definition and ownership for thermal control, maintenance and recovery",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-022,THM-06,THM,"Architecture and implementation for thermal control, maintenance and recovery",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-023,THM-06,THM,"Monitoring and operation for thermal control, maintenance and recovery",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-THM-024,THM-06,THM,"Validation and recovery for thermal control, maintenance and recovery",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-06,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-001,ENV-01,ENV,Definition and ownership for environmental operating conditions,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-002,ENV-01,ENV,Architecture and implementation for environmental operating conditions,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-003,ENV-01,ENV,Monitoring and operation for environmental operating conditions,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-004,ENV-01,ENV,Validation and recovery for environmental operating conditions,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-005,ENV-02,ENV,Definition and ownership for energy performance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-006,ENV-02,ENV,Architecture and implementation for energy performance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-007,ENV-02,ENV,Monitoring and operation for energy performance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-008,ENV-02,ENV,Validation and recovery for energy performance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-009,ENV-03,ENV,Definition and ownership for water performance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-010,ENV-03,ENV,Architecture and implementation for water performance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-011,ENV-03,ENV,Monitoring and operation for water performance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-012,ENV-03,ENV,Validation and recovery for water performance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-013,ENV-04,ENV,Definition and ownership for carbon and resource reporting,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-014,ENV-04,ENV,Architecture and implementation for carbon and resource reporting,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-015,ENV-04,ENV,Monitoring and operation for carbon and resource reporting,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-016,ENV-04,ENV,Validation and recovery for carbon and resource reporting,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-017,ENV-05,ENV,Definition and ownership for hazardous materials and waste,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-018,ENV-05,ENV,Architecture and implementation for hazardous materials and waste,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-019,ENV-05,ENV,Monitoring and operation for hazardous materials and waste,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-020,ENV-05,ENV,Validation and recovery for hazardous materials and waste,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-021,ENV-06,ENV,Definition and ownership for climate adaptation and resource continuity,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-022,ENV-06,ENV,Architecture and implementation for climate adaptation and resource continuity,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-023,ENV-06,ENV,Monitoring and operation for climate adaptation and resource continuity,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-ENV-024,ENV-06,ENV,Validation and recovery for climate adaptation and resource continuity,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-02;CG-04,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-001,CMP-01,CMP,Definition and ownership for compute architecture and configuration,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-002,CMP-01,CMP,Architecture and implementation for compute architecture and configuration,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-003,CMP-01,CMP,Monitoring and operation for compute architecture and configuration,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-004,CMP-01,CMP,Validation and recovery for compute architecture and configuration,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-005,CMP-02,CMP,Definition and ownership for cluster and scale-up domains,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-006,CMP-02,CMP,Architecture and implementation for cluster and scale-up domains,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-007,CMP-02,CMP,Monitoring and operation for cluster and scale-up domains,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-008,CMP-02,CMP,Validation and recovery for cluster and scale-up domains,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-009,CMP-03,CMP,"Definition and ownership for capacity, scheduling and utilisation",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-010,CMP-03,CMP,"Architecture and implementation for capacity, scheduling and utilisation",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-011,CMP-03,CMP,"Monitoring and operation for capacity, scheduling and utilisation",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-012,CMP-03,CMP,"Validation and recovery for capacity, scheduling and utilisation",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-013,CMP-04,CMP,"Definition and ownership for firmware, driver and compatibility",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-014,CMP-04,CMP,"Architecture and implementation for firmware, driver and compatibility",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-015,CMP-04,CMP,"Monitoring and operation for firmware, driver and compatibility",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-016,CMP-04,CMP,"Validation and recovery for firmware, driver and compatibility",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-017,CMP-05,CMP,Definition and ownership for compute health and observability,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-018,CMP-05,CMP,Architecture and implementation for compute health and observability,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-019,CMP-05,CMP,Monitoring and operation for compute health and observability,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-020,CMP-05,CMP,Validation and recovery for compute health and observability,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-021,CMP-06,CMP,Definition and ownership for compute lifecycle and recovery,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-022,CMP-06,CMP,Architecture and implementation for compute lifecycle and recovery,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-023,CMP-06,CMP,Monitoring and operation for compute lifecycle and recovery,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-CMP-024,CMP-06,CMP,Validation and recovery for compute lifecycle and recovery,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-001,STO-01,STO,Definition and ownership for storage architecture and tiering,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-002,STO-01,STO,Architecture and implementation for storage architecture and tiering,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-003,STO-01,STO,Monitoring and operation for storage architecture and tiering,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-004,STO-01,STO,Validation and recovery for storage architecture and tiering,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-005,STO-02,STO,Definition and ownership for performance and capacity,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-006,STO-02,STO,Architecture and implementation for performance and capacity,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-007,STO-02,STO,Monitoring and operation for performance and capacity,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-008,STO-02,STO,Validation and recovery for performance and capacity,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-009,STO-03,STO,Definition and ownership for integrity and consistency,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-010,STO-03,STO,Architecture and implementation for integrity and consistency,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-011,STO-03,STO,Monitoring and operation for integrity and consistency,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-012,STO-03,STO,Validation and recovery for integrity and consistency,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-013,STO-04,STO,Definition and ownership for protection and replication,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-014,STO-04,STO,Architecture and implementation for protection and replication,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-015,STO-04,STO,Monitoring and operation for protection and replication,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-016,STO-04,STO,Validation and recovery for protection and replication,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-017,STO-05,STO,Definition and ownership for checkpoint and recovery services,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-018,STO-05,STO,Architecture and implementation for checkpoint and recovery services,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-019,STO-05,STO,Monitoring and operation for checkpoint and recovery services,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-020,STO-05,STO,Validation and recovery for checkpoint and recovery services,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-021,STO-06,STO,Definition and ownership for storage monitoring and lifecycle,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-022,STO-06,STO,Architecture and implementation for storage monitoring and lifecycle,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-023,STO-06,STO,Monitoring and operation for storage monitoring and lifecycle,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-STO-024,STO-06,STO,Validation and recovery for storage monitoring and lifecycle,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08;CG-10,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-001,NET-01,NET,Definition and ownership for scale-up and scale-out fabrics,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-002,NET-01,NET,Architecture and implementation for scale-up and scale-out fabrics,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-003,NET-01,NET,Monitoring and operation for scale-up and scale-out fabrics,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-004,NET-01,NET,Validation and recovery for scale-up and scale-out fabrics,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-005,NET-02,NET,Definition and ownership for performance and congestion control,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-006,NET-02,NET,Architecture and implementation for performance and congestion control,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-007,NET-02,NET,Monitoring and operation for performance and congestion control,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-008,NET-02,NET,Validation and recovery for performance and congestion control,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-009,NET-03,NET,Definition and ownership for storage and service networks,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-010,NET-03,NET,Architecture and implementation for storage and service networks,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-011,NET-03,NET,Monitoring and operation for storage and service networks,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-012,NET-03,NET,Validation and recovery for storage and service networks,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-013,NET-04,NET,Definition and ownership for management and out-of-band networks,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-014,NET-04,NET,Architecture and implementation for management and out-of-band networks,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-015,NET-04,NET,Monitoring and operation for management and out-of-band networks,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-016,NET-04,NET,Validation and recovery for management and out-of-band networks,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-017,NET-05,NET,Definition and ownership for physical connectivity and optics,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-018,NET-05,NET,Architecture and implementation for physical connectivity and optics,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-019,NET-05,NET,Monitoring and operation for physical connectivity and optics,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-020,NET-05,NET,Validation and recovery for physical connectivity and optics,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-021,NET-06,NET,Definition and ownership for network control and observability,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-022,NET-06,NET,Architecture and implementation for network control and observability,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-023,NET-06,NET,Monitoring and operation for network control and observability,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-NET-024,NET-06,NET,Validation and recovery for network control and observability,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-08,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-001,OPS-01,OPS,Definition and ownership for operating model and staffing,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-002,OPS-01,OPS,Architecture and implementation for operating model and staffing,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-003,OPS-01,OPS,Monitoring and operation for operating model and staffing,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-004,OPS-01,OPS,Validation and recovery for operating model and staffing,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-005,OPS-02,OPS,Definition and ownership for procedure and work control,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-006,OPS-02,OPS,Architecture and implementation for procedure and work control,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-007,OPS-02,OPS,Monitoring and operation for procedure and work control,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-008,OPS-02,OPS,Validation and recovery for procedure and work control,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-009,OPS-03,OPS,Definition and ownership for maintenance and reliability,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-010,OPS-03,OPS,Architecture and implementation for maintenance and reliability,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-011,OPS-03,OPS,Monitoring and operation for maintenance and reliability,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-012,OPS-03,OPS,Validation and recovery for maintenance and reliability,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-013,OPS-04,OPS,"Definition and ownership for alarm, incident and problem management",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-014,OPS-04,OPS,"Architecture and implementation for alarm, incident and problem management",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-015,OPS-04,OPS,"Monitoring and operation for alarm, incident and problem management",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-016,OPS-04,OPS,"Validation and recovery for alarm, incident and problem management",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-017,OPS-05,OPS,Definition and ownership for change and configuration management,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-018,OPS-05,OPS,Architecture and implementation for change and configuration management,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-019,OPS-05,OPS,Monitoring and operation for change and configuration management,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-020,OPS-05,OPS,Validation and recovery for change and configuration management,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-021,OPS-06,OPS,Definition and ownership for capacity and service operations,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-022,OPS-06,OPS,Architecture and implementation for capacity and service operations,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-023,OPS-06,OPS,Monitoring and operation for capacity and service operations,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-OPS-024,OPS-06,OPS,Validation and recovery for capacity and service operations,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-13;CG-14,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-001,RES-01,RES,Definition and ownership for resilience strategy,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-002,RES-01,RES,Architecture and implementation for resilience strategy,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-003,RES-01,RES,Monitoring and operation for resilience strategy,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-004,RES-01,RES,Validation and recovery for resilience strategy,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-005,RES-02,RES,Definition and ownership for fault-domain and containment design,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-006,RES-02,RES,Architecture and implementation for fault-domain and containment design,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-007,RES-02,RES,Monitoring and operation for fault-domain and containment design,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-008,RES-02,RES,Validation and recovery for fault-domain and containment design,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-009,RES-03,RES,Definition and ownership for continuity planning,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-010,RES-03,RES,Architecture and implementation for continuity planning,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-011,RES-03,RES,Monitoring and operation for continuity planning,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-012,RES-03,RES,Validation and recovery for continuity planning,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-013,RES-04,RES,Definition and ownership for recovery planning,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-014,RES-04,RES,Architecture and implementation for recovery planning,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-015,RES-04,RES,Monitoring and operation for recovery planning,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-016,RES-04,RES,Validation and recovery for recovery planning,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-017,RES-05,RES,Definition and ownership for testing and exercising,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-018,RES-05,RES,Architecture and implementation for testing and exercising,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-019,RES-05,RES,Monitoring and operation for testing and exercising,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-020,RES-05,RES,Validation and recovery for testing and exercising,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-021,RES-06,RES,Definition and ownership for crisis and adaptive response,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-022,RES-06,RES,Architecture and implementation for crisis and adaptive response,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-023,RES-06,RES,Monitoring and operation for crisis and adaptive response,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-RES-024,RES-06,RES,Validation and recovery for crisis and adaptive response,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-09;CG-10,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-001,SUP-01,SUP,Definition and ownership for supplier due diligence,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-002,SUP-01,SUP,Architecture and implementation for supplier due diligence,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-003,SUP-01,SUP,Monitoring and operation for supplier due diligence,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-004,SUP-01,SUP,Validation and recovery for supplier due diligence,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-005,SUP-02,SUP,Definition and ownership for contract and service obligations,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-006,SUP-02,SUP,Architecture and implementation for contract and service obligations,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-007,SUP-02,SUP,Monitoring and operation for contract and service obligations,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-008,SUP-02,SUP,Validation and recovery for contract and service obligations,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-009,SUP-03,SUP,Definition and ownership for hardware and component provenance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-010,SUP-03,SUP,Architecture and implementation for hardware and component provenance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-011,SUP-03,SUP,Monitoring and operation for hardware and component provenance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-012,SUP-03,SUP,Validation and recovery for hardware and component provenance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-013,SUP-04,SUP,"Definition and ownership for software, firmware and update supply",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-014,SUP-04,SUP,"Architecture and implementation for software, firmware and update supply",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-015,SUP-04,SUP,"Monitoring and operation for software, firmware and update supply",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-016,SUP-04,SUP,"Validation and recovery for software, firmware and update supply",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-017,SUP-05,SUP,"Definition and ownership for spares, logistics and obsolescence",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-018,SUP-05,SUP,"Architecture and implementation for spares, logistics and obsolescence",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-019,SUP-05,SUP,"Monitoring and operation for spares, logistics and obsolescence",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-020,SUP-05,SUP,"Validation and recovery for spares, logistics and obsolescence",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-021,SUP-06,SUP,Definition and ownership for remote support and third-party access,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-022,SUP-06,SUP,Architecture and implementation for remote support and third-party access,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-023,SUP-06,SUP,Monitoring and operation for remote support and third-party access,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SUP-024,SUP-06,SUP,Validation and recovery for remote support and third-party access,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-03;CG-13,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-001,SEC-01,SEC,Definition and ownership for identity and privileged access,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-002,SEC-01,SEC,Architecture and implementation for identity and privileged access,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-003,SEC-01,SEC,Monitoring and operation for identity and privileged access,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-004,SEC-01,SEC,Validation and recovery for identity and privileged access,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-005,SEC-02,SEC,Definition and ownership for control-plane protection,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-006,SEC-02,SEC,Architecture and implementation for control-plane protection,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-007,SEC-02,SEC,Monitoring and operation for control-plane protection,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-008,SEC-02,SEC,Validation and recovery for control-plane protection,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-009,SEC-03,SEC,Definition and ownership for network security and segmentation,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-010,SEC-03,SEC,Architecture and implementation for network security and segmentation,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-011,SEC-03,SEC,Monitoring and operation for network security and segmentation,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-012,SEC-03,SEC,Validation and recovery for network security and segmentation,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-013,SEC-04,SEC,"Definition and ownership for configuration, vulnerability and patching",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-014,SEC-04,SEC,"Architecture and implementation for configuration, vulnerability and patching",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-015,SEC-04,SEC,"Monitoring and operation for configuration, vulnerability and patching",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-016,SEC-04,SEC,"Validation and recovery for configuration, vulnerability and patching",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-017,SEC-05,SEC,Definition and ownership for detection and response,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-018,SEC-05,SEC,Architecture and implementation for detection and response,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-019,SEC-05,SEC,Monitoring and operation for detection and response,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-020,SEC-05,SEC,Validation and recovery for detection and response,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-021,SEC-06,SEC,Definition and ownership for ai-enabled and automated action,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-022,SEC-06,SEC,Architecture and implementation for ai-enabled and automated action,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-023,SEC-06,SEC,Monitoring and operation for ai-enabled and automated action,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-SEC-024,SEC-06,SEC,Validation and recovery for ai-enabled and automated action,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-07;CG-15,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-001,EVA-01,EVA,Definition and ownership for evidence architecture,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-002,EVA-01,EVA,Architecture and implementation for evidence architecture,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-003,EVA-01,EVA,Monitoring and operation for evidence architecture,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-004,EVA-01,EVA,Validation and recovery for evidence architecture,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-005,EVA-02,EVA,Definition and ownership for evidence provenance and quality,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-006,EVA-02,EVA,Architecture and implementation for evidence provenance and quality,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-007,EVA-02,EVA,Monitoring and operation for evidence provenance and quality,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-008,EVA-02,EVA,Validation and recovery for evidence provenance and quality,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-009,EVA-03,EVA,Definition and ownership for assessment planning and execution,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-010,EVA-03,EVA,Architecture and implementation for assessment planning and execution,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-011,EVA-03,EVA,Monitoring and operation for assessment planning and execution,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-012,EVA-03,EVA,Validation and recovery for assessment planning and execution,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-013,EVA-04,EVA,"Definition and ownership for findings, unknown and limitations",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-014,EVA-04,EVA,"Architecture and implementation for findings, unknown and limitations",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-015,EVA-04,EVA,"Monitoring and operation for findings, unknown and limitations",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-016,EVA-04,EVA,"Validation and recovery for findings, unknown and limitations",Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-017,EVA-05,EVA,Definition and ownership for critical gates and decisions,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-018,EVA-05,EVA,Architecture and implementation for critical gates and decisions,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-019,EVA-05,EVA,Monitoring and operation for critical gates and decisions,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-020,EVA-05,EVA,Validation and recovery for critical gates and decisions,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A5,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-021,EVA-06,EVA,Definition and ownership for reassessment and continuing assurance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A2,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-022,EVA-06,EVA,Architecture and implementation for reassessment and continuing assurance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A3,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-023,EVA-06,EVA,Monitoring and operation for reassessment and continuing assurance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A4,ACTIVE,1.0,AIDCF-007A-AMD-001
+MCF-EVA-024,EVA-06,EVA,Validation and recovery for reassessment and continuing assurance,Normative control under the approved AIDCF-007A 15/90/360 baseline.,CG-11;CG-12,A5,ACTIVE,1.0,AIDCF-007A-AMD-001

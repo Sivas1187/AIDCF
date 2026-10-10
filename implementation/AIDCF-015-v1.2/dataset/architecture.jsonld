@@ -1,0 +1,78 @@
+{
+  "@context": "../semantic/aidcf-context-v1.2.jsonld",
+  "capabilityRef": "urn:aidcf:capability:synthetic-training-001",
+  "systems": [
+    {
+      "id": "urn:aidcf:system:POW",
+      "type": "InfrastructureSystem",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "domain": "POW",
+      "name": "Electrical Power Infrastructure and Energy Continuity"
+    },
+    {
+      "id": "urn:aidcf:system:THM",
+      "type": "InfrastructureSystem",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "domain": "THM",
+      "name": "Cooling, Thermal and Fluid Infrastructure"
+    },
+    {
+      "id": "urn:aidcf:system:CMP",
+      "type": "InfrastructureSystem",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "domain": "CMP",
+      "name": "AI Compute Infrastructure"
+    },
+    {
+      "id": "urn:aidcf:system:STO",
+      "type": "InfrastructureSystem",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "domain": "STO",
+      "name": "AI Storage and Data Infrastructure"
+    },
+    {
+      "id": "urn:aidcf:system:NET",
+      "type": "InfrastructureSystem",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "domain": "NET",
+      "name": "AI Network and Interconnect Architecture"
+    },
+    {
+      "id": "urn:aidcf:system:SEC",
+      "type": "InfrastructureSystem",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "domain": "SEC",
+      "name": "Digital, OT and Control-Plane Security"
+    },
+    {
+      "id": "urn:aidcf:system:OPS",
+      "type": "InfrastructureSystem",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "domain": "OPS",
+      "name": "Building Operations and Service Management"
+    },
+    {
+      "id": "urn:aidcf:system:RES",
+      "type": "InfrastructureSystem",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "domain": "RES",
+      "name": "Resilience, Continuity and Recovery"
+    }
+  ]
+}

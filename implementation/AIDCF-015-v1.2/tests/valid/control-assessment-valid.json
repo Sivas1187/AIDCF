@@ -1,0 +1,16 @@
+{
+  "id": "urn:aidcf:assessment:CA-001",
+  "type": "ControlAssessment",
+  "version": "1.2",
+  "status": "APPROVED",
+  "sourceArtifact": "AIDCF-015",
+  "controlRef": "MCF-CAP-001",
+  "migratedFrom": "PILOT-CAP-001",
+  "result": "CONFORMING",
+  "numericIndicator": 90,
+  "evidenceRefs": [
+    "urn:aidcf:evidence:EV-001"
+  ],
+  "assessorReview": "SYNTHETIC_REVIEWED",
+  "unknownPreserved": true
+}

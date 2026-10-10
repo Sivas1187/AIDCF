@@ -1,0 +1,25 @@
+{
+  "status": "CANONICAL_BASELINE_ALIGNED",
+  "closedIssues": [
+    {
+      "id": "BI-001",
+      "closure": "Approved AIDCF-007A 15/90/360 registry adopted; local control references migrated."
+    },
+    {
+      "id": "NC-01",
+      "closure": "Canonical controls registry and auditable migration matrix included."
+    }
+  ],
+  "openIssues": [
+    {
+      "id": "NC-09",
+      "severity": "MODERATE",
+      "description": "Independent T7 execution and signed review remain pending."
+    },
+    {
+      "id": "SHACL-RUNTIME",
+      "severity": "MODERATE",
+      "description": "SHACL runtime execution is attempted when pyshacl is available; static shapes and RDF parse tests always run."
+    }
+  ]
+}

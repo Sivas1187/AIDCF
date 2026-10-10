@@ -1,0 +1,9 @@
+{
+  "given": {
+    "gateStates": [
+      "UNKNOWN"
+    ],
+    "requestedDecision": "REASONABLY_ASSURED"
+  },
+  "expected": "REJECT"
+}

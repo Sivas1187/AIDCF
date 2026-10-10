@@ -1,0 +1,197 @@
+{
+  "@context": "../semantic/aidcf-context-v1.2.jsonld",
+  "@graph": [
+    {
+      "id": "urn:aidcf:assessment:CA-001",
+      "type": "ControlAssessment",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "controlRef": "MCF-CAP-001",
+      "migratedFrom": "PILOT-CAP-001",
+      "result": "CONFORMING",
+      "numericIndicator": 90,
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-001"
+      ],
+      "assessorReview": "SYNTHETIC_REVIEWED",
+      "unknownPreserved": true
+    },
+    {
+      "id": "urn:aidcf:assessment:CA-002",
+      "type": "ControlAssessment",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "controlRef": "MCF-DEP-001",
+      "migratedFrom": "PILOT-DEP-001",
+      "result": "PARTIAL",
+      "numericIndicator": 78,
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-002"
+      ],
+      "assessorReview": "SYNTHETIC_REVIEWED",
+      "unknownPreserved": true
+    },
+    {
+      "id": "urn:aidcf:assessment:CA-003",
+      "type": "ControlAssessment",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "controlRef": "MCF-POW-001",
+      "migratedFrom": "PILOT-POW-001",
+      "result": "CONFORMING",
+      "numericIndicator": 92,
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-003"
+      ],
+      "assessorReview": "SYNTHETIC_REVIEWED",
+      "unknownPreserved": true
+    },
+    {
+      "id": "urn:aidcf:assessment:CA-004",
+      "type": "ControlAssessment",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "controlRef": "MCF-THM-009",
+      "migratedFrom": "PILOT-THM-001",
+      "result": "PARTIAL",
+      "numericIndicator": 83,
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-004"
+      ],
+      "assessorReview": "SYNTHETIC_REVIEWED",
+      "unknownPreserved": true
+    },
+    {
+      "id": "urn:aidcf:assessment:CA-005",
+      "type": "ControlAssessment",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "controlRef": "MCF-CMP-001",
+      "migratedFrom": "PILOT-CMP-001",
+      "result": "CONFORMING",
+      "numericIndicator": 91,
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-005"
+      ],
+      "assessorReview": "SYNTHETIC_REVIEWED",
+      "unknownPreserved": true
+    },
+    {
+      "id": "urn:aidcf:assessment:CA-006",
+      "type": "ControlAssessment",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "controlRef": "MCF-STO-017",
+      "migratedFrom": "PILOT-STO-001",
+      "result": "CONFORMING",
+      "numericIndicator": 85,
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-006"
+      ],
+      "assessorReview": "SYNTHETIC_REVIEWED",
+      "unknownPreserved": true
+    },
+    {
+      "id": "urn:aidcf:assessment:CA-007",
+      "type": "ControlAssessment",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "controlRef": "MCF-NET-001",
+      "migratedFrom": "PILOT-NET-001",
+      "result": "CONFORMING",
+      "numericIndicator": 88,
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-007"
+      ],
+      "assessorReview": "SYNTHETIC_REVIEWED",
+      "unknownPreserved": true
+    },
+    {
+      "id": "urn:aidcf:assessment:CA-008",
+      "type": "ControlAssessment",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "controlRef": "MCF-OPS-013",
+      "migratedFrom": "PILOT-OPS-001",
+      "result": "PARTIAL",
+      "numericIndicator": 80,
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-008"
+      ],
+      "assessorReview": "SYNTHETIC_REVIEWED",
+      "unknownPreserved": true
+    },
+    {
+      "id": "urn:aidcf:assessment:CA-009",
+      "type": "ControlAssessment",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "controlRef": "MCF-RES-017",
+      "migratedFrom": "PILOT-RES-001",
+      "result": "PARTIAL",
+      "numericIndicator": 72,
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-009"
+      ],
+      "assessorReview": "SYNTHETIC_REVIEWED",
+      "unknownPreserved": true
+    },
+    {
+      "id": "urn:aidcf:assessment:CA-010",
+      "type": "ControlAssessment",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "controlRef": "MCF-SUP-021",
+      "migratedFrom": "PILOT-SUP-001",
+      "result": "PARTIAL",
+      "numericIndicator": 70,
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-010"
+      ],
+      "assessorReview": "SYNTHETIC_REVIEWED",
+      "unknownPreserved": true
+    },
+    {
+      "id": "urn:aidcf:assessment:CA-011",
+      "type": "ControlAssessment",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "controlRef": "MCF-SEC-005",
+      "migratedFrom": "PILOT-SEC-001",
+      "result": "PARTIAL",
+      "numericIndicator": 76,
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-011"
+      ],
+      "assessorReview": "SYNTHETIC_REVIEWED",
+      "unknownPreserved": true
+    },
+    {
+      "id": "urn:aidcf:assessment:CA-012",
+      "type": "ControlAssessment",
+      "version": "1.2",
+      "status": "APPROVED",
+      "sourceArtifact": "AIDCF-015",
+      "controlRef": "MCF-EVA-017",
+      "migratedFrom": "PILOT-EVA-001",
+      "result": "CONFORMING",
+      "numericIndicator": 95,
+      "evidenceRefs": [
+        "urn:aidcf:evidence:EV-012"
+      ],
+      "assessorReview": "SYNTHETIC_REVIEWED",
+      "unknownPreserved": true
+    }
+  ]
+}

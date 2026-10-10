@@ -1,0 +1,10 @@
+{
+  "baselineId": "AIDCF-007A-15-90-360-v1.0",
+  "authority": "AIDCF-007A-AMD-001",
+  "domains": 15,
+  "families": 90,
+  "controls": 360,
+  "status": "APPROVED",
+  "supersedes": "14/84/336 declarations",
+  "appliedRelease": "AIDCF-015 v1.2"
+}

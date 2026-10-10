@@ -1,0 +1,17 @@
+{
+  "id": "urn:aidcf:gate:CG-01",
+  "type": "GateResult",
+  "version": "1.2",
+  "status": "APPROVED",
+  "sourceArtifact": "AIDCF-015",
+  "gateId": "CG-01",
+  "state": "PASS",
+  "controlRefs": [
+    "MCF-CAP-001"
+  ],
+  "evidenceRefs": [
+    "urn:aidcf:evidence:EV-001"
+  ],
+  "conditions": [],
+  "boundedPilot": true
+}

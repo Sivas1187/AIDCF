@@ -1,0 +1,38 @@
+{
+  "id": "urn:aidcf:event:MIG-001",
+  "type": "ChangeEvent",
+  "version": "1.2",
+  "status": "CLOSED",
+  "sourceArtifact": "AIDCF-015",
+  "eventType": "CANONICAL_IDENTIFIER_MIGRATION",
+  "authority": "AIDCF-007A-AMD-001",
+  "affectedObjects": [
+    "PILOT-CAP-001",
+    "PILOT-DEP-001",
+    "PILOT-POW-001",
+    "PILOT-THM-001",
+    "PILOT-CMP-001",
+    "PILOT-STO-001",
+    "PILOT-NET-001",
+    "PILOT-OPS-001",
+    "PILOT-RES-001",
+    "PILOT-SUP-001",
+    "PILOT-SEC-001",
+    "PILOT-EVA-001"
+  ],
+  "replacementObjects": [
+    "MCF-CAP-001",
+    "MCF-DEP-001",
+    "MCF-POW-001",
+    "MCF-THM-009",
+    "MCF-CMP-001",
+    "MCF-STO-017",
+    "MCF-NET-001",
+    "MCF-OPS-013",
+    "MCF-RES-017",
+    "MCF-SUP-021",
+    "MCF-SEC-005",
+    "MCF-EVA-017"
+  ],
+  "impact": "Identifiers and traceability updated; synthetic assessment substance unchanged."
+}

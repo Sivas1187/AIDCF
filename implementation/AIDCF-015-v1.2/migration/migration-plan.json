@@ -1,0 +1,20 @@
+{
+  "migrationId": "AIDCF-015-v1.2-MIG-001",
+  "sourceRelease": "AIDCF-015 v1.1",
+  "targetRelease": "AIDCF-015 v1.2",
+  "authority": "AIDCF-007A-AMD-001",
+  "scope": {
+    "legacyControls": 12,
+    "canonicalRegistryControls": 360
+  },
+  "rules": [
+    "Replace every PILOT-* control reference in assessment, evidence, gate, score, decision and report records.",
+    "Preserve original legacy ID in migratedFrom for auditability.",
+    "Do not claim assessment coverage for unassessed controls.",
+    "Recompute hashes and deterministic score outputs after migration."
+  ],
+  "closureTargets": [
+    "BI-001",
+    "NC-01"
+  ]
+}

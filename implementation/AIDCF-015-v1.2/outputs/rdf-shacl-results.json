@@ -1,0 +1,6 @@
+{
+  "ontologyParsed": false,
+  "shaclRuntimeExecuted": false,
+  "conforms": null,
+  "details": "RDF parse failed: No module named 'rdflib'"
+}

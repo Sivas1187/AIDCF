@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "version",
+    "status",
+    "sourceArtifact",
+    "controlRef",
+    "result",
+    "evidenceRefs"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "type": "string"
+    },
+    "version": {
+      "const": "1.2"
+    },
+    "status": {
+      "type": "string"
+    },
+    "sourceArtifact": {
+      "const": "AIDCF-015"
+    },
+    "controlRef": {
+      "pattern": "^MCF-(GOV|CAP|DEP|PHY|POW|THM|ENV|CMP|STO|NET|OPS|RES|SUP|SEC|EVA)-\\d{3}$"
+    },
+    "migratedFrom": {
+      "pattern": "^PILOT-[A-Z]{3}-\\d{3}$"
+    },
+    "result": {
+      "enum": [
+        "CONFORMING",
+        "PARTIAL",
+        "NONCONFORMING",
+        "UNKNOWN",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "evidenceRefs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$id": "urn:aidcf:schema:control-assessment:1.2",
+  "additionalProperties": true
+}
