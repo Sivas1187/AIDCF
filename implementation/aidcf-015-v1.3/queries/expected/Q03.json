@@ -1,0 +1,39 @@
+{
+ "query": "Q03",
+ "description": "AIDCF-014 section 19 Q03: for Control MCF-SEC-005, which evidence, results and findings exist, by claim type and scope?",
+ "basis": "CA-011 evidence classes E1 (EV-011), E2, E3, E4 (EV-027 to EV-029 in build order) and finding F-005.",
+ "rows": [
+  [
+   "CA-011",
+   "EFFECTIVENESS",
+   "PARTIAL",
+   "CI-001",
+   "EV-011",
+   "F-005"
+  ],
+  [
+   "CA-011",
+   "EFFECTIVENESS",
+   "PARTIAL",
+   "CI-001",
+   "EV-027",
+   "F-005"
+  ],
+  [
+   "CA-011",
+   "EFFECTIVENESS",
+   "PARTIAL",
+   "CI-001",
+   "EV-028",
+   "F-005"
+  ],
+  [
+   "CA-011",
+   "EFFECTIVENESS",
+   "PARTIAL",
+   "CI-001",
+   "EV-029",
+   "F-005"
+  ]
+ ]
+}

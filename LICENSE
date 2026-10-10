@@ -16,9 +16,13 @@ This repository uses two licences. Full texts are in the LICENSES/ folder.
 2. Apache License, Version 2.0 (Apache-2.0)
    LICENSES/Apache-2.0.txt
 
-   Applies to schemas, validators and software, including:
-     schemas/,
+   Applies to schemas, ontologies, validators and software, including:
+     schemas/ (JSON Schema, JSON-LD context, OWL ontology, SHACL shapes
+       and the generator in schemas/tools/),
+     implementation/aidcf-015-v1.3/ (code, schemas, tests and synthetic data),
      implementation/aidcf-015-v1.2/ (code, schemas, tests and synthetic data),
+     registries/tools/ (registry and catalogue generators),
+     .github/workflows/,
      archive/historical-releases/ (earlier executable packages).
 
 Where a file is not covered above, CC BY 4.0 applies unless the file
@@ -29,6 +33,8 @@ Not licensed:
     and any logos or marks, are not licensed under either licence.
   - No rights are granted to third-party standards or proprietary
     material referenced by AIDCF (for example ISO, IEC, NIST, EN, TIA,
-    Uptime Institute or ISA publications).
+    Uptime Institute, ISA, ASHRAE or Singapore Standards publications).
+    The crosswalks cite clause or topic references only and reproduce no
+    text from those standards.
 
 Attribution for CC BY 4.0 material: cite AIDCF as shown in CITATION.cff.

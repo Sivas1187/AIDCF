@@ -1,0 +1,83 @@
+name: Review finding
+description: Report a technical, assurance, semantic, implementation, pilot or editorial issue in an AIDCF artifact (CONTRIBUTING.md §3 to §5).
+labels: ["review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include confidential evidence, personal data, credentials, exploitable facility details or restricted diagrams. Report those privately (SECURITY.md).
+  - type: dropdown
+    id: category
+    attributes:
+      label: Issue category
+      options:
+        - TECH - infrastructure, engineering or architecture validity
+        - ASSUR - evidence, assessment, scoring, gates, decisions or reporting
+        - SEM - ontology, identifiers, graph semantics or machine validation
+        - SAFE - safety, legal, privacy or security-disclosure concern
+        - IMPL - schemas, validators, tooling or interoperability
+        - PILOT - pilot design, authorisation, measurement or evidence
+        - ED - editorial structure, terminology, accessibility or presentation
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - BLOCKER - could invalidate a material claim, create unsafe use, corrupt canonical identity or prevent release
+        - MAJOR - material technical, assurance or reproducibility weakness
+        - MODERATE - important weakness that does not by itself invalidate the framework
+        - EDITORIAL - clarity, formatting, navigation or wording
+    validations:
+      required: true
+  - type: input
+    id: artifact
+    attributes:
+      label: Artifact and version
+      placeholder: "e.g. AIDCF-010 v1.1, or AIDCF-007A registry v1.1"
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Section, object or canonical identifier
+      placeholder: "e.g. §12.3, MCF-THM-014, CG-04, SHACL shape aidcf:GateResultShape"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or reasoning
+      description: Separate observed fact, source-derived statement, interpretation and opinion. Cite source, edition and section where you can.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Affected claims or downstream artifacts
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Recommended disposition
+  - type: textarea
+    id: conflict
+    attributes:
+      label: Conflict-of-interest disclosure
+      placeholder: "None, or describe any commercial, employment or authorship interest"
+    validations:
+      required: true
+  - type: dropdown
+    id: classification
+    attributes:
+      label: Security classification of this issue's content
+      options:
+        - PUBLIC
+    validations:
+      required: true

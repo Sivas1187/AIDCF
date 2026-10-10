@@ -1,0 +1,1571 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://w3id.org/aidcf/schema/1.3/definitions.schema.json",
+  "title": "AIDCF 1.3 shared definitions",
+  "description": "Shared value definitions: IRIs, dates, controlled vocabularies (codes read from registries/vocabularies/*.csv where bound) and nested structures. Not a record schema.",
+  "$defs": {
+    "iri": {
+      "type": "string",
+      "pattern": "^(urn:[a-z0-9][a-z0-9-]*:|https://)[^\\s]+$"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "dateTime": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?(Z|[+-][0-9]{2}:[0-9]{2})$"
+    },
+    "code-GateRole": {
+      "title": "Control-to-gate role",
+      "description": "Controlled vocabulary (AIDCF-014 section 9 (EVALUATES_GATE); SPEC 6.1).",
+      "type": "string",
+      "enum": [
+        "CRITICAL",
+        "SUPPORTING"
+      ]
+    },
+    "code-GateApplicability": {
+      "title": "Gate applicability",
+      "description": "Controlled vocabulary (AIDCF-014 section 8A (GateResult profile)).",
+      "type": "string",
+      "enum": [
+        "IN_SCOPE",
+        "APPROVED_NA"
+      ]
+    },
+    "code-CriterionOutcome": {
+      "title": "Gate criterion outcome",
+      "description": "Controlled vocabulary (AIDCF-014 section 8A (GateResult profile: criteria evaluated and outcome); AIDCF-016).",
+      "type": "string",
+      "enum": [
+        "MET",
+        "NOT_MET",
+        "UNKNOWN",
+        "NOT_EVALUATED"
+      ]
+    },
+    "code-RecordLifecycle": {
+      "title": "Record lifecycle",
+      "description": "Controlled vocabulary (AIDCF-014 section 11A.1).",
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "CANDIDATE",
+        "REVIEWED",
+        "APPROVED",
+        "ACTIVE",
+        "SUSPENDED",
+        "WITHDRAWN",
+        "SUPERSEDED",
+        "RETIRED"
+      ]
+    },
+    "code-AssertionState": {
+      "title": "Assertion review state",
+      "description": "Controlled vocabulary (AIDCF-014 section 11A.2).",
+      "type": "string",
+      "enum": [
+        "CANDIDATE",
+        "SUPPORTED",
+        "CHALLENGED",
+        "QUALIFIED",
+        "CONFLICTING",
+        "UNKNOWN",
+        "SUPERSEDED"
+      ]
+    },
+    "code-Classification": {
+      "title": "Classification",
+      "description": "Controlled vocabulary (AIDCF-014 section 11A.8).",
+      "type": "string",
+      "enum": [
+        "PUBLIC",
+        "INTERNAL",
+        "CLIENT_RESTRICTED",
+        "CONFIDENTIAL",
+        "HIGHLY_RESTRICTED"
+      ]
+    },
+    "code-Weighting": {
+      "title": "Score weighting",
+      "description": "Controlled vocabulary (SPEC 5.12).",
+      "type": "string",
+      "enum": [
+        "UNWEIGHTED",
+        "PROFILE_WEIGHTED"
+      ]
+    },
+    "code-Domain": {
+      "title": "Control domain",
+      "description": "Controlled vocabulary (AIDCF-007A; registries/domains/domains.csv).",
+      "type": "string",
+      "enum": [
+        "GOV",
+        "CAP",
+        "DEP",
+        "PHY",
+        "POW",
+        "THM",
+        "ENV",
+        "CMP",
+        "STO",
+        "NET",
+        "OPS",
+        "RES",
+        "SUP",
+        "SEC",
+        "EVA"
+      ]
+    },
+    "code-Criticality": {
+      "title": "Capability criticality",
+      "description": "Controlled vocabulary (AIDCF-003; AIDCF-007A CAP-03).",
+      "type": "string",
+      "enum": [
+        "CRITICAL",
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ]
+    },
+    "code-WorkloadClass": {
+      "title": "Workload class",
+      "description": "Controlled vocabulary (AIDCF-014 section 8A (Capability profile: workload)).",
+      "type": "string",
+      "enum": [
+        "TRAINING",
+        "FINE_TUNING",
+        "INFERENCE",
+        "DATA_PROCESSING"
+      ]
+    },
+    "code-ReconciliationStatus": {
+      "title": "As-built reconciliation status",
+      "description": "Controlled vocabulary (AIDCF-013).",
+      "type": "string",
+      "enum": [
+        "RECONCILED",
+        "PARTIALLY_RECONCILED",
+        "NOT_RECONCILED",
+        "UNKNOWN"
+      ]
+    },
+    "code-DependencyType": {
+      "title": "Dependency type",
+      "description": "Controlled vocabulary (AIDCF-014 section 8A (Dependency profile); AIDCF-003).",
+      "type": "string",
+      "enum": [
+        "ELECTRICAL",
+        "THERMAL",
+        "FLUID",
+        "NETWORK",
+        "CONTROL",
+        "TIMING",
+        "IDENTITY",
+        "CONFIGURATION",
+        "DATA",
+        "HUMAN",
+        "SUPPLIER",
+        "UTILITY",
+        "RECOVERY"
+      ]
+    },
+    "code-DependencyStrength": {
+      "title": "Dependency strength",
+      "description": "Controlled vocabulary (AIDCF-014 section 8A (Dependency profile); AIDCF-003).",
+      "type": "string",
+      "enum": [
+        "ABSOLUTE",
+        "MATERIAL",
+        "CONDITIONAL",
+        "SUPPORTING",
+        "RECOVERY_ONLY",
+        "UNKNOWN"
+      ]
+    },
+    "code-SafeguardFunction": {
+      "title": "Safeguard function",
+      "description": "Controlled vocabulary (AIDCF-014 section 8A (Safeguard profile); AIDCF-004).",
+      "type": "string",
+      "enum": [
+        "PREVENT",
+        "DETECT",
+        "CONTAIN",
+        "CORRECT",
+        "RECOVER"
+      ]
+    },
+    "code-Activation": {
+      "title": "Safeguard activation",
+      "description": "Controlled vocabulary (AIDCF-014 section 8A (Safeguard profile)).",
+      "type": "string",
+      "enum": [
+        "AUTOMATIC",
+        "MANUAL",
+        "HYBRID"
+      ]
+    },
+    "code-ReviewType": {
+      "title": "Review type",
+      "description": "Controlled vocabulary (AIDCF-014 section 9 (APPROVED_BY) and section 24 (approveRecord)).",
+      "type": "string",
+      "enum": [
+        "REVIEW",
+        "APPROVAL"
+      ]
+    },
+    "code-ApprovalOutcome": {
+      "title": "Release approval outcome",
+      "description": "Controlled vocabulary (AIDCF-014 section 4 (approvals)).",
+      "type": "string",
+      "enum": [
+        "APPROVED",
+        "PENDING",
+        "REJECTED"
+      ]
+    },
+    "code-ConstraintType": {
+      "title": "Constraint type",
+      "description": "Controlled vocabulary (AIDCF-014 section 9 (CONSTRAINS)).",
+      "type": "string",
+      "enum": [
+        "CEILING",
+        "CONDITION",
+        "LIMITATION",
+        "BAND_WITHHELD",
+        "GATE_EFFECT"
+      ]
+    },
+    "code-SecurityLevelKind": {
+      "title": "Security level kind",
+      "description": "Controlled vocabulary (AIDCF-003 v1.1 Part XVI section 72 (IEC 62443 series)).",
+      "type": "string",
+      "enum": [
+        "SL-T",
+        "SL-C",
+        "SL-A"
+      ]
+    },
+    "code-FoundationalRequirementCode": {
+      "title": "IEC 62443 foundational requirement",
+      "description": "Controlled vocabulary (AIDCF-003 v1.1 Part XVI section 72).",
+      "type": "string",
+      "enum": [
+        "FR1",
+        "FR2",
+        "FR3",
+        "FR4",
+        "FR5",
+        "FR6",
+        "FR7"
+      ]
+    },
+    "code-PartyKind": {
+      "title": "Party kind",
+      "description": "Controlled vocabulary (AIDCF-014 section 7 (PartyEntity: organisation, role, actor or team)).",
+      "type": "string",
+      "enum": [
+        "ORGANISATION",
+        "ROLE",
+        "ACTOR",
+        "TEAM"
+      ]
+    },
+    "code-LocationKind": {
+      "title": "Location kind",
+      "description": "Controlled vocabulary (AIDCF-014 section 7 (Location)).",
+      "type": "string",
+      "enum": [
+        "SITE",
+        "BUILDING",
+        "HALL",
+        "ROOM",
+        "ROW",
+        "RACK_POSITION",
+        "LOGICAL"
+      ]
+    },
+    "code-HazardType": {
+      "title": "Hazard type",
+      "description": "Controlled vocabulary (AIDCF-004; SPEC 6 (CG-04 scope)).",
+      "type": "string",
+      "enum": [
+        "ELECTRICAL",
+        "FIRE",
+        "FLUID",
+        "CHEMICAL",
+        "REFRIGERANT",
+        "BATTERY_THERMAL",
+        "CONFINED_SPACE",
+        "UTILITY_DISTURBANCE",
+        "ENVIRONMENTAL"
+      ]
+    },
+    "code-FindingClass": {
+      "title": "Finding class",
+      "description": "Controlled vocabulary (AIDCF-010).",
+      "type": "string",
+      "enum": [
+        "OBSERVATION",
+        "IMPROVEMENT",
+        "WEAKNESS",
+        "SIGNIFICANT_WEAKNESS",
+        "CRITICAL_FINDING"
+      ]
+    },
+    "code-FindingStatus": {
+      "title": "Finding status",
+      "description": "Controlled vocabulary (AIDCF-011).",
+      "type": "string",
+      "enum": [
+        "OPEN",
+        "IN_REMEDIATION",
+        "CLOSED_PENDING_VERIFICATION",
+        "CLOSED"
+      ]
+    },
+    "code-UnknownStatus": {
+      "title": "UNKNOWN record status",
+      "description": "Controlled vocabulary (AIDCF-016).",
+      "type": "string",
+      "enum": [
+        "OPEN",
+        "DISPOSITIONED",
+        "RESOLVED"
+      ]
+    },
+    "code-ReviewIndependence": {
+      "title": "Review independence",
+      "description": "Controlled vocabulary (AIDCF-011).",
+      "type": "string",
+      "enum": [
+        "SELF",
+        "INTERNAL_INDEPENDENT",
+        "EXTERNAL_INDEPENDENT"
+      ]
+    },
+    "code-ReviewOutcome": {
+      "title": "Review outcome",
+      "description": "Controlled vocabulary (AIDCF-011).",
+      "type": "string",
+      "enum": [
+        "ACCEPTED",
+        "ACCEPTED_WITH_COMMENTS",
+        "REJECTED"
+      ]
+    },
+    "code-ReportClass": {
+      "title": "Report class",
+      "description": "Controlled vocabulary (AIDCF-012 report types).",
+      "type": "string",
+      "enum": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10"
+      ]
+    },
+    "code-ActionStatus": {
+      "title": "Action status",
+      "description": "Controlled vocabulary (AIDCF-011).",
+      "type": "string",
+      "enum": [
+        "OPEN",
+        "IN_PROGRESS",
+        "COMPLETE",
+        "VERIFIED",
+        "CANCELLED"
+      ]
+    },
+    "code-TriggerState": {
+      "title": "Reassessment trigger state",
+      "description": "Controlled vocabulary (AIDCF-011).",
+      "type": "string",
+      "enum": [
+        "CANDIDATE",
+        "ACCEPTED",
+        "REJECTED",
+        "ACTIONED"
+      ]
+    },
+    "code-EventType": {
+      "title": "Event type",
+      "description": "Controlled vocabulary (AIDCF-014 section 21).",
+      "type": "string",
+      "enum": [
+        "ARCHITECTURE_CHANGED",
+        "CAPACITY_THRESHOLD_BREACHED",
+        "CONFIGURATION_CHANGED",
+        "PROVIDER_CHANGED",
+        "SOURCE_UNAVAILABLE",
+        "EVIDENCE_EXPIRED",
+        "EVIDENCE_CONFLICT",
+        "INCIDENT_DETECTED",
+        "TEST_FAILED",
+        "GATE_STATUS_CHANGED",
+        "FINDING_CLOSED",
+        "CONTROL_DRIFT",
+        "DEPENDENCY_DRIFT",
+        "DECISION_SUSPENDED",
+        "REPORT_WITHDRAWN"
+      ]
+    },
+    "code-SourceHealth": {
+      "title": "Event source health",
+      "description": "Controlled vocabulary (AIDCF-014 section 20).",
+      "type": "string",
+      "enum": [
+        "HEALTHY",
+        "DEGRADED",
+        "UNAVAILABLE",
+        "UNKNOWN"
+      ]
+    },
+    "code-EventSeverity": {
+      "title": "Event severity",
+      "description": "Controlled vocabulary (AIDCF-014 section 20 (candidate until reviewed)).",
+      "type": "string",
+      "enum": [
+        "LOW",
+        "MODERATE",
+        "HIGH",
+        "CRITICAL"
+      ]
+    },
+    "code-Materiality": {
+      "title": "Materiality determination",
+      "description": "Controlled vocabulary (AIDCF-014 section 20 (candidate until reviewed)).",
+      "type": "string",
+      "enum": [
+        "MATERIAL",
+        "NOT_MATERIAL",
+        "UNDETERMINED"
+      ]
+    },
+    "code-HumanDisposition": {
+      "title": "Human disposition",
+      "description": "Controlled vocabulary (AIDCF-014 section 20).",
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "ACCEPTED",
+        "REJECTED"
+      ]
+    },
+    "code-HandoffType": {
+      "title": "Integration handoff type",
+      "description": "Controlled vocabulary (AIDCF-005).",
+      "type": "string",
+      "enum": [
+        "DECISION_SUMMARY",
+        "GATE_STATUS",
+        "UNKNOWN_REGISTER",
+        "EVIDENCE_REFERENCE",
+        "SHARED_IDENTITY"
+      ]
+    },
+    "code-MappingType": {
+      "title": "Cross-framework mapping type",
+      "description": "Controlled vocabulary (AIDCF-005).",
+      "type": "string",
+      "enum": [
+        "EXACT",
+        "CLOSE",
+        "PARTIAL",
+        "RELATED",
+        "NO_MAPPING"
+      ]
+    },
+    "code-ValidationLayer": {
+      "title": "Validation layer",
+      "description": "Controlled vocabulary (AIDCF-016 section 11).",
+      "type": "string",
+      "enum": [
+        "REGISTRY",
+        "SYNTAX",
+        "SCHEMA",
+        "SHACL",
+        "BUSINESS_RULE",
+        "TRACEABILITY",
+        "GRAPH_QUERY",
+        "SCORE",
+        "INTEGRITY",
+        "MANIFEST",
+        "VOCABULARY",
+        "EXPORT",
+        "FIXTURE"
+      ]
+    },
+    "code-ValidationOutcome": {
+      "title": "Validation outcome",
+      "description": "Controlled vocabulary (AIDCF-014 section 31A (Validation Result template)).",
+      "type": "string",
+      "enum": [
+        "PASS",
+        "FAIL",
+        "WARNING"
+      ]
+    },
+    "code-ChangeType": {
+      "title": "Migration change type",
+      "description": "Controlled vocabulary (AIDCF-014 section 27).",
+      "type": "string",
+      "enum": [
+        "IDENTIFIER",
+        "VOCABULARY",
+        "RESULT_REINTERPRETATION",
+        "STRUCTURE",
+        "ADDED",
+        "REMOVED"
+      ]
+    },
+    "code-BaselineStatus": {
+      "title": "Baseline issue status",
+      "description": "Controlled vocabulary (AIDCF-014 section 6).",
+      "type": "string",
+      "enum": [
+        "BLOCKED",
+        "CONDITIONALLY_BASELINED",
+        "RESOLVED"
+      ]
+    },
+    "code-SignatureStatus": {
+      "title": "Signature status",
+      "description": "Controlled vocabulary (AIDCF-016).",
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "SIGNED",
+        "VERIFIED"
+      ]
+    },
+    "code-ProvenanceMethod": {
+      "title": "Provenance method",
+      "description": "Controlled vocabulary (AIDCF-014 section 26; AIDCF-016).",
+      "type": "string",
+      "enum": [
+        "REGISTRY_IMPORT",
+        "SYNTHETIC_AUTHORING",
+        "AUTOMATED_DISCOVERY",
+        "INFERENCE",
+        "MIGRATION",
+        "VALIDATION_RUN",
+        "MANUAL_ENTRY"
+      ]
+    },
+    "code-ClaimType": {
+      "title": "Claim type",
+      "description": "Controlled vocabulary (registries/vocabularies/claim-types.csv).",
+      "type": "string",
+      "enum": [
+        "DESIGN",
+        "IMPLEMENTATION",
+        "OPERATION",
+        "EFFECTIVENESS",
+        "RESILIENCE"
+      ]
+    },
+    "code-AssuranceLevel": {
+      "title": "Assurance level",
+      "description": "Controlled vocabulary (registries/vocabularies/assurance-levels.csv).",
+      "type": "string",
+      "enum": [
+        "AL0",
+        "AL1",
+        "AL2",
+        "AL3",
+        "AL4",
+        "AL5",
+        "AL6"
+      ]
+    },
+    "code-ControlResult": {
+      "title": "Control result",
+      "description": "Controlled vocabulary (registries/vocabularies/control-results.csv).",
+      "type": "string",
+      "enum": [
+        "CONFORMING",
+        "PARTIAL",
+        "NONCONFORMING",
+        "UNKNOWN",
+        "NOT_APPLICABLE",
+        "NOT_ASSESSED"
+      ]
+    },
+    "code-ImplementationMaturity": {
+      "title": "Implementation maturity (diagnostic only)",
+      "description": "Controlled vocabulary (registries/vocabularies/implementation-maturity.csv).",
+      "type": "string",
+      "enum": [
+        "IM0",
+        "IM1",
+        "IM2",
+        "IM3",
+        "IM4",
+        "IM5"
+      ]
+    },
+    "code-GateState": {
+      "title": "Gate result",
+      "description": "Controlled vocabulary (registries/vocabularies/gate-results.csv).",
+      "type": "string",
+      "enum": [
+        "PASS",
+        "FAIL",
+        "UNKNOWN",
+        "APPROVED_NA",
+        "NOT_ASSESSED"
+      ]
+    },
+    "code-DecisionState": {
+      "title": "Decision state",
+      "description": "Controlled vocabulary (registries/vocabularies/decision-states.csv).",
+      "type": "string",
+      "enum": [
+        "REASONABLY_ASSURED",
+        "CONDITIONALLY_ASSURED",
+        "LIMITED",
+        "NOT_ASSURED",
+        "INCONCLUSIVE"
+      ]
+    },
+    "code-DecisionLifecycle": {
+      "title": "Decision lifecycle",
+      "description": "Controlled vocabulary (registries/vocabularies/decision-lifecycle.csv).",
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "RECOMMENDED",
+        "APPROVED",
+        "ACTIVE",
+        "SUSPENDED",
+        "WITHDRAWN",
+        "SUPERSEDED",
+        "EXPIRED"
+      ]
+    },
+    "code-Confidence": {
+      "title": "Confidence",
+      "description": "Controlled vocabulary (registries/vocabularies/confidence.csv).",
+      "type": "string",
+      "enum": [
+        "CONF-0",
+        "CONF-1",
+        "CONF-2",
+        "CONF-3",
+        "CONF-4"
+      ]
+    },
+    "code-ConfidenceFlag": {
+      "title": "Confidence flag",
+      "description": "Controlled vocabulary (registries/vocabularies/confidence.csv).",
+      "type": "string",
+      "enum": [
+        "CONFLICTING",
+        "STALE"
+      ]
+    },
+    "code-EvidenceClass": {
+      "title": "Evidence class",
+      "description": "Controlled vocabulary (registries/vocabularies/evidence-classes.csv).",
+      "type": "string",
+      "enum": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7"
+      ]
+    },
+    "code-QualityDimension": {
+      "title": "Evidence quality dimension",
+      "description": "Controlled vocabulary (registries/vocabularies/quality-dimensions.csv).",
+      "type": "string",
+      "enum": [
+        "P",
+        "F",
+        "C",
+        "R",
+        "T",
+        "I"
+      ]
+    },
+    "code-QualityBand": {
+      "title": "Evidence quality band",
+      "description": "Controlled vocabulary (registries/vocabularies/evidence-quality-bands.csv).",
+      "type": "string",
+      "enum": [
+        "Q0",
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5"
+      ]
+    },
+    "code-Sufficiency": {
+      "title": "Evidence sufficiency",
+      "description": "Controlled vocabulary (registries/vocabularies/sufficiency-levels.csv).",
+      "type": "string",
+      "enum": [
+        "S0",
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "code-IntegrityLevel": {
+      "title": "Evidence integrity level",
+      "description": "Controlled vocabulary (registries/vocabularies/integrity-levels.csv).",
+      "type": "string",
+      "enum": [
+        "I0",
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ]
+    },
+    "code-ControlProfileTier": {
+      "title": "Control evidence profile tier",
+      "description": "Controlled vocabulary (registries/vocabularies/control-profile-tiers.csv).",
+      "type": "string",
+      "enum": [
+        "CP-1",
+        "CP-2",
+        "CP-3",
+        "CP-4",
+        "CP-5"
+      ]
+    },
+    "code-EvidenceConformanceLevel": {
+      "title": "Evidence-system conformance level",
+      "description": "Controlled vocabulary (registries/vocabularies/evidence-system-conformance-levels.csv).",
+      "type": "string",
+      "enum": [
+        "EC0",
+        "EC1",
+        "EC2",
+        "EC3",
+        "EC4",
+        "EC5"
+      ]
+    },
+    "code-UnknownType": {
+      "title": "UNKNOWN type",
+      "description": "Controlled vocabulary (registries/vocabularies/unknown-types.csv).",
+      "type": "string",
+      "enum": [
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6",
+        "U7",
+        "U8",
+        "U9",
+        "U10"
+      ]
+    },
+    "code-UnknownSeverity": {
+      "title": "UNKNOWN severity",
+      "description": "Controlled vocabulary (registries/vocabularies/unknown-severity.csv).",
+      "type": "string",
+      "enum": [
+        "US5",
+        "US4",
+        "US3",
+        "US2",
+        "US1"
+      ]
+    },
+    "code-OperatingState": {
+      "title": "Operating state",
+      "description": "Controlled vocabulary (registries/vocabularies/operating-states.csv).",
+      "type": "string",
+      "enum": [
+        "NORMAL",
+        "DEGRADED",
+        "MAINTENANCE",
+        "EMERGENCY",
+        "RECOVERY",
+        "TRANSITION",
+        "SHUTDOWN",
+        "FAILED",
+        "UNKNOWN"
+      ]
+    },
+    "code-AssessmentMethod": {
+      "title": "Assessment method",
+      "description": "Controlled vocabulary (registries/vocabularies/assessment-methods.csv).",
+      "type": "string",
+      "enum": [
+        "INQUIRY",
+        "DOCUMENT_REVIEW",
+        "INSPECTION",
+        "OBSERVATION",
+        "RECONCILIATION",
+        "ANALYSIS",
+        "SAMPLING",
+        "TEST",
+        "REPERFORMANCE",
+        "SCENARIO_EXERCISE"
+      ]
+    },
+    "code-ControlType": {
+      "title": "Control type",
+      "description": "Controlled vocabulary (registries/vocabularies/control-types.csv).",
+      "type": "string",
+      "enum": [
+        "DIRECTIVE",
+        "PREVENTIVE",
+        "DETECTIVE",
+        "CORRECTIVE",
+        "RECOVERY"
+      ]
+    },
+    "code-LifecycleStage": {
+      "title": "Lifecycle stage",
+      "description": "Controlled vocabulary (registries/vocabularies/lifecycle-stages.csv).",
+      "type": "string",
+      "enum": [
+        "PLAN",
+        "DESIGN",
+        "BUILD",
+        "COMMISSION",
+        "OPERATE",
+        "CHANGE",
+        "DECOMMISSION"
+      ]
+    },
+    "code-ScoreBand": {
+      "title": "Score band",
+      "description": "Controlled vocabulary (registries/vocabularies/score-bands.csv).",
+      "type": "string",
+      "enum": [
+        "B5",
+        "B4",
+        "B3",
+        "B2",
+        "B1",
+        "WITHHELD"
+      ]
+    },
+    "code-RelationshipType": {
+      "title": "Relationship type",
+      "description": "Controlled vocabulary (AIDCF-014 section 9).",
+      "type": "string",
+      "enum": [
+        "HAS_OUTCOME",
+        "REQUIRES_FUNCTION",
+        "IMPLEMENTED_BY",
+        "COMPOSED_OF",
+        "CONNECTS_TO",
+        "CONSUMES_RESOURCE",
+        "DEPENDS_ON",
+        "SHARES_FAULT_DOMAIN_WITH",
+        "LOCATED_IN",
+        "OPERATED_BY",
+        "CONTROLLED_BY",
+        "MONITORED_BY",
+        "PROTECTED_BY",
+        "EXPOSED_TO",
+        "INITIATES",
+        "PROPAGATES_TO",
+        "RECOVERS_THROUGH",
+        "GOVERNED_BY",
+        "HAS_EVIDENCE_REQUIREMENT",
+        "EVIDENCED_BY",
+        "SUPPORTS",
+        "CHALLENGES",
+        "QUALIFIES",
+        "ASSESSED_BY",
+        "RESULTS_IN",
+        "HAS_FINDING",
+        "HAS_UNKNOWN",
+        "EVALUATES_GATE",
+        "CONSTRAINS",
+        "SUMMARISED_BY",
+        "RECOMMENDS",
+        "REVIEWED_BY",
+        "APPROVED_BY",
+        "REPORTED_IN",
+        "REQUIRES_ACTION",
+        "CLOSED_BY",
+        "INVALIDATED_BY",
+        "TRIGGERS_REASSESSMENT",
+        "SUPERSEDES",
+        "MIGRATED_FROM",
+        "INTEGRATION_HANDOFF"
+      ]
+    },
+    "obj-Provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceSystem",
+        "method",
+        "synthetic"
+      ],
+      "properties": {
+        "sourceSystem": {
+          "type": "string",
+          "minLength": 1
+        },
+        "method": {
+          "$ref": "definitions.schema.json#/$defs/code-ProvenanceMethod"
+        },
+        "synthetic": {
+          "type": "boolean"
+        },
+        "transformationVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "legacyValue": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "obj-Scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "capabilityRef"
+      ],
+      "properties": {
+        "capabilityRef": {
+          "$ref": "definitions.schema.json#/$defs/iri"
+        },
+        "snapshotRef": {
+          "$ref": "definitions.schema.json#/$defs/iri"
+        },
+        "boundaryNote": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "obj-ExternalIdentifier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "identifierScheme",
+        "identifierValue"
+      ],
+      "properties": {
+        "identifierScheme": {
+          "type": "string",
+          "minLength": 1
+        },
+        "identifierValue": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "obj-GateMapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gateRef",
+        "gateRole"
+      ],
+      "properties": {
+        "gateRef": {
+          "$ref": "definitions.schema.json#/$defs/iri"
+        },
+        "gateRole": {
+          "$ref": "definitions.schema.json#/$defs/code-GateRole"
+        }
+      }
+    },
+    "obj-GateCriterion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "criterionId",
+        "criterion",
+        "testMethod"
+      ],
+      "properties": {
+        "criterionId": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^GC-(0[1-9]|1[0-5])-[0-9]+$"
+        },
+        "criterion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "testMethod": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "obj-CriterionResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "criterionId",
+        "criterionOutcome"
+      ],
+      "properties": {
+        "criterionId": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^GC-(0[1-9]|1[0-5])-[0-9]+$"
+        },
+        "criterionOutcome": {
+          "$ref": "definitions.schema.json#/$defs/code-CriterionOutcome"
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "obj-QualityVector": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provenanceRating",
+        "fitnessRating",
+        "coverageRating",
+        "reliabilityRating",
+        "timelinessRating",
+        "integrityRating"
+      ],
+      "properties": {
+        "provenanceRating": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "fitnessRating": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "coverageRating": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "reliabilityRating": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "timelinessRating": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "integrityRating": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        }
+      }
+    },
+    "obj-OutcomeEffect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "outcomeRef",
+        "effect",
+        "exceedsTolerance"
+      ],
+      "properties": {
+        "outcomeRef": {
+          "$ref": "definitions.schema.json#/$defs/iri"
+        },
+        "effect": {
+          "type": "string",
+          "minLength": 1
+        },
+        "exceedsTolerance": {
+          "type": "boolean"
+        }
+      }
+    },
+    "obj-ControlEvaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "controlRef",
+        "gateRole",
+        "controlResult"
+      ],
+      "properties": {
+        "controlRef": {
+          "$ref": "definitions.schema.json#/$defs/iri"
+        },
+        "gateRole": {
+          "$ref": "definitions.schema.json#/$defs/code-GateRole"
+        },
+        "controlResult": {
+          "$ref": "definitions.schema.json#/$defs/code-ControlResult"
+        },
+        "controlAssessmentRef": {
+          "$ref": "definitions.schema.json#/$defs/iri"
+        },
+        "gateLevelEvaluation": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "obj-ScoreInput": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "controlRef",
+        "controlResult"
+      ],
+      "properties": {
+        "controlRef": {
+          "$ref": "definitions.schema.json#/$defs/iri"
+        },
+        "controlResult": {
+          "$ref": "definitions.schema.json#/$defs/code-ControlResult"
+        },
+        "controlAssessmentRef": {
+          "$ref": "definitions.schema.json#/$defs/iri"
+        },
+        "scoreValue": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
+    "obj-Coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "inScopeCount",
+        "notApplicableCount",
+        "assessedCount",
+        "scoredCount",
+        "unknownCount",
+        "notAssessedCount",
+        "coveragePercent"
+      ],
+      "properties": {
+        "inScopeCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "notApplicableCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "assessedCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "scoredCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unknownCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "notAssessedCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "coveragePercent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
+    "obj-UnknownOverlay": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "us1Count",
+        "us2Count",
+        "us3Count",
+        "us4Count",
+        "us5Count"
+      ],
+      "properties": {
+        "us1Count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "us2Count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "us3Count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "us4Count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "us5Count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "obj-DomainScore": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "domainCode",
+        "inScopeCount",
+        "scoredCount",
+        "coveragePercent",
+        "band"
+      ],
+      "properties": {
+        "domainCode": {
+          "$ref": "definitions.schema.json#/$defs/code-Domain"
+        },
+        "inScopeCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "scoredCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "coveragePercent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "band": {
+          "$ref": "definitions.schema.json#/$defs/code-ScoreBand"
+        },
+        "meanScore": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "bandWithheldReason": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "obj-DecisionCondition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "conditionText",
+        "owner",
+        "dueDate"
+      ],
+      "properties": {
+        "conditionText": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner": {
+          "$ref": "definitions.schema.json#/$defs/iri"
+        },
+        "dueDate": {
+          "$ref": "definitions.schema.json#/$defs/date"
+        },
+        "relatedRefs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "definitions.schema.json#/$defs/iri"
+          }
+        }
+      }
+    },
+    "obj-MigrationMapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fromId",
+        "toId",
+        "changeType",
+        "rationale"
+      ],
+      "properties": {
+        "fromId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "toId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "changeType": {
+          "$ref": "definitions.schema.json#/$defs/code-ChangeType"
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "obj-ConflictSource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact",
+        "artifactVersion",
+        "location",
+        "value"
+      ],
+      "properties": {
+        "artifact": {
+          "type": "string",
+          "minLength": 1
+        },
+        "artifactVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "location": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "obj-ManifestEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "filePath",
+        "sha256",
+        "byteSize",
+        "mediaType"
+      ],
+      "properties": {
+        "filePath": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "byteSize": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "mediaType": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publicId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+        },
+        "status": {
+          "$ref": "definitions.schema.json#/$defs/code-RecordLifecycle"
+        }
+      }
+    },
+    "obj-VersionEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "version",
+        "sha256"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+        },
+        "sha256": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "recordCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "filePath": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "obj-TestSuite": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "suiteVersion",
+        "sha256",
+        "validationResultsPath"
+      ],
+      "properties": {
+        "suiteVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "validationResultsPath": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "obj-Approval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "approverRole",
+        "approvalOutcome"
+      ],
+      "properties": {
+        "approverRole": {
+          "type": "string",
+          "minLength": 1
+        },
+        "approvalOutcome": {
+          "$ref": "definitions.schema.json#/$defs/code-ApprovalOutcome"
+        },
+        "reviewRef": {
+          "$ref": "definitions.schema.json#/$defs/iri"
+        }
+      }
+    },
+    "obj-Integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "digestAlgorithm",
+        "canonicalisation",
+        "signatureStatus"
+      ],
+      "properties": {
+        "digestAlgorithm": {
+          "type": "string",
+          "minLength": 1
+        },
+        "canonicalisation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "signatureStatus": {
+          "$ref": "definitions.schema.json#/$defs/code-SignatureStatus"
+        },
+        "signatureMethod": {
+          "type": "string",
+          "minLength": 1
+        },
+        "signaturePath": {
+          "type": "string",
+          "minLength": 1
+        },
+        "manifestDigest": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "obj-SLVector": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fr1",
+        "fr2",
+        "fr3",
+        "fr4",
+        "fr5",
+        "fr6",
+        "fr7"
+      ],
+      "properties": {
+        "fr1": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "fr2": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "fr3": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "fr4": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "fr5": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "fr6": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "fr7": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        }
+      }
+    }
+  }
+}

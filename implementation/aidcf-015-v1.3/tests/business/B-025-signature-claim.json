@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-025",
+ "layer": "MANIFEST",
+ "expect": "FAIL",
+ "expectedRule": "MAN-06",
+ "description": "Manifest claims a signature that does not exist.",
+ "patch": [],
+ "manifestPatch": [
+  {
+   "op": "set",
+   "field": "integrity.signatureStatus",
+   "value": "SIGNED"
+  }
+ ]
+}

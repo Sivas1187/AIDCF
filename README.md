@@ -5,9 +5,9 @@
 **Capability-centred, evidence-gated and graph-native assurance for AI infrastructure**
 
 > **Repository status:** Validation Candidate for Independent Review  
-> **Public framework version:** Whitepaper v3.0  
-> **Canonical control baseline:** 15 domains · 90 control families · 360 controls  
-> **Current implementation:** Synthetic, non-production reference implementation  
+> **Public framework version:** Whitepaper v3.1 (release AIDCF-REL-2026.10.1)  
+> **Canonical control baseline:** 15 domains · 90 control families · 360 controls (registry v1.0 approved baseline; v1.1 testable-control revision PROPOSED)  
+> **Current implementation:** Synthetic, non-production reference implementation (AIDCF-015 v1.3, data model AIDCF-016 MDM 1.3)  
 > **External validation:** Not yet completed
 
 ---
@@ -52,18 +52,19 @@ Choose the path that matches your purpose.
 
 ### Executive or decision-maker
 
-1. Read the [technical whitepaper](whitepaper/current/AIDCF_Technical_Whitepaper_v3.0_Validation_Candidate.md).
+1. Read the [technical whitepaper](whitepaper/current/AIDCF_Technical_Whitepaper_v3.1_Validation_Candidate.md).
 2. Review [The Problem AIDCF Solves](#the-problem-aidcf-solves).
 3. Review [Example Use Cases](#example-use-cases).
 4. Review the framework's status and limitations before relying on any conclusion.
 
 ### Infrastructure, engineering or operations practitioner
 
-1. Read the Manifesto and Core Conceptual Model.
+1. Read the Manifesto (AIDCF-001) and the Core Conceptual Model (AIDCF-002).
 2. Review AIDCF-003 through AIDCF-006 for ontology, failure reasoning, graph integration and assurance principles.
-3. Review the AIDCF-007A canonical registry.
+3. Review the AIDCF-007A canonical registry and the AIDCF-018 domain guide for each domain in scope.
 4. Use AIDCF-008 through AIDCF-012 for evidence, assessment, scoring, programme governance and reporting.
-5. Review AIDCF-013 for the system-of-systems reference architecture.
+5. Review AIDCF-013 for the system-of-systems reference architecture and AIDCF-017 for capability maturity.
+6. Use the AIDCF-019 crosswalks to relate AIDCF controls to standards you already apply.
 
 ### Researcher or independent reviewer
 
@@ -75,11 +76,12 @@ Choose the path that matches your purpose.
 ### Developer or semantic-model implementer
 
 1. Review AIDCF-014 and AIDCF-016.
-2. Inspect the CSV registries, JSON Schemas, JSON-LD context, RDF/Turtle and SHACL files.
-3. From `implementation/aidcf-015-v1.2/`, run:
+2. Inspect the CSV registries and vocabularies in `registries/`, and the JSON Schemas, JSON-LD context, OWL ontology and SHACL shapes in `schemas/`.
+3. From `implementation/aidcf-015-v1.3/`, run:
 
 ```bash
-python tools/run_all.py
+python3 -m pip install -r requirements.txt
+python3 -B tools/run_all.py
 ```
 
 4. Inspect captured validation, graph-query and score re-performance outputs.
@@ -92,9 +94,10 @@ Whitepaper
 → Manifesto
 → Core Conceptual Model
 → AIDCF-003 to AIDCF-006
-→ AIDCF-007A Registry
+→ AIDCF-007A Registry and AIDCF-018 Domain Guides
 → AIDCF-008 to AIDCF-012
-→ AIDCF-013 to AIDCF-016
+→ AIDCF-013, AIDCF-014, AIDCF-016
+→ AIDCF-017 Maturity Model and AIDCF-019 Crosswalks
 → Validation and pilot records
 ```
 
@@ -282,6 +285,8 @@ These examples do not imply that AIDCF is already validated for every use case o
 
 AIDCF is intended to complement existing standards and methods. It does not claim equivalence, certification, conformity or clause-level coverage unless a separate, reviewed crosswalk explicitly establishes it.
 
+Indicative family-level crosswalks (all 90 control families) for eight framework families are in [`crosswalks/`](crosswalks/README.md) (AIDCF-019). They map AIDCF families to clause or topic references only, reproduce no standard text, and have not yet been reviewed by holders of those standards.
+
 | Standard or framework family | Primary role | Relationship with AIDCF |
 |---|---|---|
 | ISO/IEC 42001 | AI management-system governance | Can inform organisational AI-governance context, roles, objectives, risk processes and supplier governance around the capability |
@@ -296,7 +301,8 @@ AIDCF is intended to complement existing standards and methods. It does not clai
 | ASHRAE data-centre guidance | Thermal, environmental and energy engineering | Can support thermal, environmental and operating-envelope criteria; source engineering guidance remains authoritative |
 | Reliability and safety methods | FMEA/FMECA, fault trees, event trees, bow ties and related analysis | AIDCF can consume structured outputs to model causes, failure modes, propagation, consequences and safeguards |
 | W3C PROV-O | Provenance representation | Can support machine-readable evidence lineage and transformation records |
-| Assurance-case methods | Structured claims, arguments and evidence | Conceptually compatible with AIDCF's reconstructable assurance chain; a formal mapping requires separate review |
+| Assurance-case methods (ISO/IEC/IEEE 15026-2, GSN) | Structured claims, arguments and evidence | AIDCF-002 maps each step of the canonical chain to 15026-2 assurance-case elements and GSN; independent review of that mapping is pending |
+| Singapore baselines (IMDA Advisory Guidelines 2025, Digital Infrastructure Bill, Cybersecurity Act and CCoP-CII, CSA AI-security guidelines, Green Mark for Data Centres 2024, SS 564, SS 697, SS 715, SS 726, MAS TRM and BCM) | National data-centre, energy, resilience and security baselines | Indicative mapping in `crosswalks/singapore/` |
 | AI Trust Graph | Trust, authority and exposure reasoning | Interoperates through reference, mapping, shared identity, boundary handoff, scenario composition, evidence reuse and decision federation |
 
 ### Important interpretation rule
@@ -341,7 +347,7 @@ Does explicit modelling of causes, failure modes, propagation, safeguards and re
 
 ### RQ6: Evidence quality
 
-Do provenance, freshness, coverage, reliability, traceability, integrity and sufficiency rules improve the defensibility and reproducibility of assessments?
+Do provenance, fitness, coverage, reliability, timeliness, integrity, traceability and sufficiency rules improve the defensibility and reproducibility of assessments?
 
 ### RQ7: UNKNOWN discipline
 
@@ -539,42 +545,49 @@ Stable identity does not imply that control wording can never evolve. Meaning-ch
 AIDCF/
 ├── README.md, LICENSE, LICENSES/, CITATION.cff, CHANGELOG.md,
 │   GOVERNANCE.md, CONTRIBUTING.md, SECURITY.md, CODE_OF_CONDUCT.md
+├── .github/         CI workflow, issue templates, pull-request template
 ├── docs/            images, diagrams, presentations, publications
 ├── whitepaper/
-│   ├── current/     Technical Whitepaper v3.0 (Markdown, PDF)
+│   ├── current/     Technical Whitepaper v3.1 (Markdown, PDF, figures)
 │   └── archive/     earlier whitepaper versions
 ├── foundations/
-│   ├── manifesto/             AIDCF Manifesto v1.0
-│   ├── conceptual-model/      Core Conceptual Model (to be added)
-│   ├── ontology-taxonomy/     AIDCF-003
-│   ├── threat-model/          AIDCF-004
-│   ├── aitg-integration/      AIDCF-005
-│   └── assurance-principles/  AIDCF-006
+│   ├── manifesto/             AIDCF-001 Manifesto v1.1
+│   ├── conceptual-model/      AIDCF-002 Core Conceptual Model v1.0
+│   ├── ontology-taxonomy/     AIDCF-003 v1.1
+│   ├── threat-model/          AIDCF-004 v1.1
+│   ├── aitg-integration/      AIDCF-005 v1.1
+│   └── assurance-principles/  AIDCF-006 v1.1
 ├── standards/
-│   ├── aidcf-007a/            amendment/ and registry/ (15-90-360 workbook)
-│   ├── aidcf-008-evidence-model/
-│   ├── aidcf-009-assessment-methodology/
-│   ├── aidcf-010-scoring-framework/
-│   ├── aidcf-011-assurance-program/
-│   ├── aidcf-012-reporting-standard/
-│   ├── aidcf-013-reference-architecture/
-│   ├── aidcf-014-traceability-standard/
-│   └── aidcf-016-machine-executable-model/  (to be added)
-├── registries/      domains, families, controls, gates, states (CSV)
-├── schemas/         json-schema, jsonld, rdf, owl, shacl
+│   ├── aidcf-007a/            amendment/ (v1.1) and registry/ (v1.0 approved, v1.1 PROPOSED,
+│   │                          per-domain control catalogues in registry/controls/)
+│   ├── aidcf-008-evidence-model/            v1.1
+│   ├── aidcf-009-assessment-methodology/    Part A Core Handbook v1.1, Part B Companion v1.2
+│   ├── aidcf-010-scoring-framework/         v1.1
+│   ├── aidcf-011-assurance-program/         v1.1
+│   ├── aidcf-012-reporting-standard/        v1.1
+│   ├── aidcf-013-reference-architecture/    v1.1
+│   ├── aidcf-014-traceability-standard/     v1.1
+│   ├── aidcf-016-machine-executable-model/  v1.0 (MDM 1.3)
+│   ├── aidcf-017-maturity-model/            v1.0
+│   └── aidcf-018-domain-guides/             15 domain guides v1.0
+├── registries/      domains, families, controls, evidence profiles, gate mappings,
+│                    gate criteria, parameters, states, 25 controlled vocabularies (CSV)
+├── schemas/         json-schema, jsonld, owl, shacl (MDM 1.3) and the generator in tools/
 ├── implementation/
-│   └── aidcf-015-v1.2/        synthetic reference implementation
+│   ├── aidcf-015-v1.3/        current synthetic reference implementation
+│   └── aidcf-015-v1.2/        previous package, retained unchanged for comparison
 ├── assurance/       assessment, scoring, decision and report models; statements
-├── validation/      validation-report (AIDCF-016 Full Stack Validation Report),
+├── validation/      AIDCF-VR-001 Full Stack Validation Report v1.1,
 │                    independent review, dispositions, derivations, gate approvals
 ├── pilots/          framework, authorisation, results, lessons learned
-├── crosswalks/      ISO 42001, NIST AI RMF, ISO 27001, EN 50600, TIA-942, Uptime, ISA/IEC 62443
+├── crosswalks/      AIDCF-019: ISO/IEC 42001, NIST AI RMF, ISO/IEC 27001, EN 50600,
+│                    TIA-942, Uptime, ISA/IEC 62443, Singapore baselines
 ├── research/        review papers, derivations, literature, hypotheses, questions
 ├── examples/        worked assessment, evidence, report, decision, capability
 └── archive/         superseded, duplicates, working drafts, historical releases
 ```
 
-Folders marked "to be added", and folders holding only a README, are reserved for planned content.
+Folders holding only a README (pilots, research, examples, parts of validation and assurance) are reserved for records that do not yet exist. They are empty on purpose: no pilot or independent review has taken place.
 
 Markdown (`.md`) is the source of truth for every document, with an archival PDF alongside. Excel workbooks remain authoritative for the control registry and have Markdown renderings. Structured registries and machine-readable files stay in their native formats.
 
@@ -584,24 +597,31 @@ Markdown (`.md`) is the source of truth for every document, with an archival PDF
 
 | Artifact | Purpose | Current status |
 |---|---|---|
-| Manifesto | Identity, mission, scope and assurance philosophy | Foundation |
-| Core Conceptual Model | Canonical concepts and capability-centred model | Controlled-review draft |
-| AIDCF-003 | Infrastructure ontology and taxonomy | Controlled-review draft |
-| AIDCF-004 | Threat, hazard, failure and recovery model | Controlled-review draft |
-| AIDCF-005 | Integration boundary with AI Trust Graph | Controlled-review draft |
-| AIDCF-006 | Constitutional assurance principles | Controlled-review draft |
-| AIDCF-007A Amendment | Authoritative 15/90/360 cardinality decision | Approved AIDCF baseline |
-| AIDCF-007A Registry | Canonical domains, families, controls and mappings | Approved AIDCF baseline |
-| AIDCF-008 | Evidence model | Controlled-review draft |
-| AIDCF-009 | Assessment methodology and practitioner handbook | Controlled-review draft |
-| AIDCF-010 | Scoring and decision framework | Controlled-review draft |
-| AIDCF-011 | Non-certification assurance programme framework | Controlled-review draft |
-| AIDCF-012 | Reporting and assurance-statement standard | Controlled-review draft |
-| AIDCF-013 | AI data-centre assurance reference architecture | Controlled-review draft |
-| AIDCF-014 | End-to-end traceability and machine-executable data standard | Controlled-review draft |
-| AIDCF-015 v1.2 | Canonical-baseline-aligned synthetic reference implementation | Synthetic demonstration |
-| AIDCF-016 | Machine-executable data-model standard | Controlled-review draft |
-| Whitepaper v3.0 | Consolidated research argument and validation candidate | Independent review pending |
+| [AIDCF-001 Manifesto v1.1](foundations/manifesto/AIDCF-001_Manifesto_v1.1.md) | Identity, mission, scope and assurance philosophy | Draft for controlled review |
+| [AIDCF-002 Core Conceptual Model v1.0](foundations/conceptual-model/AIDCF-002_Core_Conceptual_Model_v1.0.md) | Normative keywords, canonical 16-step chain, core concepts and definitions | Draft for controlled review |
+| [AIDCF-003 v1.1](foundations/ontology-taxonomy/AIDCF-003_Infrastructure_Ontology_and_Taxonomy_v1.1.md) | Infrastructure ontology and taxonomy | Draft for controlled review |
+| [AIDCF-004 v1.1](foundations/threat-model/AIDCF-004_Threat_Hazard_and_Failure_Model_v1.1.md) | Threat, hazard, failure and recovery model | Draft for controlled review |
+| [AIDCF-005 v1.1](foundations/aitg-integration/AIDCF-005_AIDCF_AI_Trust_Graph_Integration_Standard_v1.1.md) | Integration boundary with AI Trust Graph | Draft for controlled review |
+| [AIDCF-006 v1.1](foundations/assurance-principles/AIDCF-006_Assurance_Principles_Standard_v1.1.md) | Constitutional assurance principles | Draft for controlled review |
+| [AIDCF-007A Amendment v1.1](standards/aidcf-007a/amendment/AIDCF-007A_Control_Universe_Constitutional_Amendment_v1.1.md) | Authoritative 15/90/360 cardinality decision and amendment log | Cardinality approved; amendment AMD-002 proposed |
+| [AIDCF-007A Registry v1.0](standards/aidcf-007a/registry/AIDCF-007A_Canonical_Master_Control_Registry_15-90-360_v1.0.md) | Canonical domains, families and controls (approved baseline) | Approved AIDCF baseline |
+| [AIDCF-007A Registry v1.1](standards/aidcf-007a/registry/AIDCF-007A_Canonical_Master_Control_Registry_15-90-360_v1.1.md) | Testable controls, evidence profiles, per-control gate mapping, parameters | PROPOSED (AMD-002), not yet approved |
+| [AIDCF-008 v1.1](standards/aidcf-008-evidence-model/AIDCF-008_Evidence_Model_v1.1.md) | Evidence model | Draft for controlled review |
+| [AIDCF-009 Part A v1.1](standards/aidcf-009-assessment-methodology/AIDCF-009_Part_A_Core_Practitioner_Handbook_v1.1.md) | Core practitioner handbook: roles, stage gates, playbooks, workpapers | Draft for controlled review |
+| [AIDCF-009 Part B v1.2](standards/aidcf-009-assessment-methodology/AIDCF-009_Part_B_Enhanced_Practitioner_Companion_v1.2.md) | Enhanced practitioner companion | Draft for controlled review |
+| [AIDCF-010 v1.1](standards/aidcf-010-scoring-framework/AIDCF-010_Scoring_and_Decision_Framework_v1.1.md) | Scoring and decision framework | Draft for controlled review |
+| [AIDCF-011 v1.1](standards/aidcf-011-assurance-program/AIDCF-011_Assurance_Program_Framework_v1.1.md) | Non-certification assurance programme framework | Draft for controlled review |
+| [AIDCF-012 v1.1](standards/aidcf-012-reporting-standard/AIDCF-012_Reporting_and_Assurance_Statement_Standard_v1.1.md) | Reporting and assurance-statement standard | Draft for controlled review |
+| [AIDCF-013 v1.1](standards/aidcf-013-reference-architecture/AIDCF-013_AI_Data_Centre_Assurance_Reference_Architecture_v1.1.md) | AI data-centre assurance reference architecture | Draft for controlled review |
+| [AIDCF-014 v1.1](standards/aidcf-014-traceability-standard/AIDCF-014_End-to-End_Traceability_and_Machine-Executable_Data_Standard_v1.1.md) | End-to-end traceability and machine-executable data standard | Draft for controlled review |
+| [AIDCF-015 spec v1.0](implementation/AIDCF-015_Reference_Implementation_Synthetic_Dataset_and_Conformance_Pilot_v1.0.md) | Reference implementation specification (historical; package v1.3 is current) | Draft for controlled review |
+| [AIDCF-015 package v1.3](implementation/aidcf-015-v1.3/README.md) | Synthetic reference implementation on MDM 1.3 | Synthetic demonstration |
+| [AIDCF-016 v1.0](standards/aidcf-016-machine-executable-model/AIDCF-016_Machine-Executable_Data_Model_Standard_v1.0.md) | Machine-executable data-model standard (MDM 1.3) | Draft for controlled review |
+| [AIDCF-017 v1.0](standards/aidcf-017-maturity-model/AIDCF-017_Capability_Assurance_Maturity_Model_v1.0.md) | Capability assurance maturity model | Draft for controlled review |
+| [AIDCF-018 v1.0](standards/aidcf-018-domain-guides/) | Fifteen domain guides, one per control domain | Draft for controlled review |
+| [AIDCF-019](crosswalks/README.md) | Crosswalks to eight external frameworks (indicative) | Indicative; needs review by holders of each standard |
+| [AIDCF-VR-001 v1.1](validation/validation-report/AIDCF-VR-001_Full_Stack_Validation_Report_v1.1.md) | Full stack validation report | Draft for controlled review |
+| [AIDCF-WP-001 Whitepaper v3.1](whitepaper/current/AIDCF_Technical_Whitepaper_v3.1_Validation_Candidate.md) | Consolidated research argument and validation candidate | Independent review pending |
 
 ---
 
@@ -609,7 +629,14 @@ Markdown (`.md`) is the source of truth for every document, with an archival PDF
 
 AIDCF uses fifteen critical gates, identified as `CG-01` through `CG-15`.
 
-The gate identities and domain mappings are present in the canonical registry. Detailed gate names, evidence floors, applicability rules, state criteria and decision effects remain candidates for formal multidisciplinary approval unless and until a signed canonical gate registry is published.
+Gates are mapped control by control, not by whole domain. Each mapping has the role CRITICAL or SUPPORTING (`registries/controls/gate-mappings.csv`, 106 CRITICAL and 483 SUPPORTING mappings), and every gate has at least three CRITICAL controls. CG-11 (evidence integrity) and CG-12 (assessment independence and quality) are meta-gates that apply to every assessment. Pass criteria are in `registries/gates/critical-gate-criteria.csv` (101 criteria) and the roll-up rule is in AIDCF-010:
+
+- any CRITICAL control NONCONFORMING, or a gate criterion failed, gives FAIL;
+- any CRITICAL control PARTIAL gives FAIL, because PARTIAL never yields PASS;
+- any CRITICAL control UNKNOWN or not assessed, with nothing failed, gives UNKNOWN;
+- PASS requires every CRITICAL control CONFORMING and every criterion met.
+
+These names, criteria and mappings are proposed in registry v1.1 and remain candidates for formal multidisciplinary approval until a signed canonical gate registry is published.
 
 The controlled gate-state vocabulary is:
 
@@ -631,27 +658,29 @@ A gate evaluation constrains an assurance decision. It does not independently is
 
 Evidence is evaluated for:
 
-- provenance;
-- freshness;
-- coverage;
-- reliability;
-- traceability;
-- integrity;
-- sufficiency;
+- provenance (P);
+- fitness and relevance to the assertion (F);
+- coverage (C);
+- reliability (R);
+- timeliness and currentness (T);
+- integrity (I);
+- sufficiency (S0 to S5) against the control's evidence requirement profile;
 - conflict;
 - applicability to the assertion, boundary, state and period.
 
+Traceability is a linkage requirement on every evidence object (AIDCF-008 §17A), not a quality score. Each of the 360 controls in registry v1.1 has an evidence requirement profile naming required evidence classes, a quality floor and a sufficiency floor (`registries/controls/evidence-profiles.csv`).
+
 Evidence has no universal authority outside its source, method, scope, time and intended assertion.
 
-Examples of evidence classes include:
+The evidence classes are:
 
-- documentary evidence;
-- configuration evidence;
-- operational evidence;
-- validation and test evidence;
-- independent evidence;
-- human evidence;
-- derived evidence.
+- E1 documentary and declarative evidence;
+- E2 configuration and technical-state evidence;
+- E3 operational and observational evidence;
+- E4 validation and test evidence;
+- E5 independent and third-party evidence;
+- E6 human and experiential evidence;
+- E7 derived and analytical evidence.
 
 AI-generated extraction or summarisation may support review but does not independently corroborate its source.
 
@@ -707,11 +736,12 @@ REASONABLY_ASSURED
 CONDITIONALLY_ASSURED
 LIMITED
 NOT_ASSURED
-UNKNOWN_OR_INCONCLUSIVE
-SUSPENDED
-WITHDRAWN
-SUPERSEDED
+INCONCLUSIVE
 ```
+
+A decision also has a lifecycle state, recorded separately: `DRAFT`, `RECOMMENDED`, `APPROVED`, `ACTIVE`, `SUSPENDED`, `WITHDRAWN`, `SUPERSEDED`, `EXPIRED`. Legacy labels such as `ADVERSE` and `UNKNOWN_OR_INCONCLUSIVE` are aliases, mapped in `registries/vocabularies/`.
+
+Control results score CONFORMING 100, PARTIAL 50 and NONCONFORMING 0. UNKNOWN, NOT_APPLICABLE and NOT_ASSESSED are excluded from the mean and reduce coverage. Assessment coverage below 50% caps the decision at INCONCLUSIVE and below 80% at LIMITED. Ceilings combine by taking the most restrictive, in the order REASONABLY_ASSURED > CONDITIONALLY_ASSURED > LIMITED > INCONCLUSIVE > NOT_ASSURED, so a demonstrated gate FAIL is never softened to INCONCLUSIVE by thin coverage. A score band (B1 to B5) is reported only when coverage is at least 80% and no US4 or US5 UNKNOWN is open; otherwise the band is WITHHELD.
 
 These are internal AIDCF decision states. They must not be represented as statutory, regulated or accredited assurance levels.
 
@@ -719,13 +749,13 @@ These are internal AIDCF decision states. They must not be represented as statut
 
 ## Machine-executable implementation
 
-AIDCF supports technology-neutral implementation using:
+AIDCF-016 defines the machine-executable data model (MDM 1.3). The generated schema set in `schemas/` covers every AIDCF-014 object class and relationship, using:
 
 - CSV registries;
 - JSON Schema;
 - JSON-LD;
 - RDF and Turtle;
-- OWL;
+- OWL 2 (`schemas/owl/aidcf-core-1.3.ttl`, namespace `https://w3id.org/aidcf/ontology#`, registration pending);
 - SHACL;
 - property-graph projections;
 - validation fixtures;
@@ -752,33 +782,29 @@ Technical conformance proves only that declared data and rule requirements were 
 
 ## Synthetic reference implementation
 
-AIDCF-015 v1.2 is the current canonical-baseline-aligned synthetic reference implementation.
+AIDCF-015 v1.3 is the current synthetic reference implementation. It is built on the AIDCF-016 MDM 1.3 schemas and the v1.1 registry.
 
 It includes:
 
-- the complete 15/90/360 registries;
-- migration from legacy pilot IDs to canonical `MCF-*` identifiers;
-- JSON Schema definitions;
-- JSON-LD datasets;
-- RDF/Turtle and SHACL artifacts;
-- synthetic evidence fixtures with SHA-256 values;
-- control assessments;
-- gate results;
-- score snapshot and deterministic re-performance evidence;
-- executive and technical report records;
+- the complete 15/90/360 registries with per-control gate mappings and evidence profiles;
+- closed JSON Schema 2020-12 definitions, a JSON-LD 1.1 context, SHACL shapes and the OWL 2 ontology;
+- a synthetic JSON-LD dataset with evidence fixtures and SHA-256 values;
+- control assessments, gate results recomputed from the roll-up rule, a score snapshot and deterministic re-performance;
 - graph-query outputs;
-- positive, negative and anti-gaming tests;
-- release manifest and known-issues register.
+- positive, negative and anti-gaming fixtures, each expected to fail at a stated layer for a stated reason;
+- a release manifest and known-issues register.
+
+All 13 validation layers pass on the current package. The synthetic result is deliberately weak: CG-03, CG-07 and CG-15 FAIL, five gates are UNKNOWN, and the computed decision is NOT_ASSURED because the CG-07 FAIL ceiling controls. The mean is 77.27 over 11 scored controls (12 assessed, one UNKNOWN), and the band is WITHHELD.
 
 ### Explicit limitations
 
 - Only 12 representative controls are assessed.
-- Coverage equals 3.3333% of the 360-control universe.
+- Coverage equals 3.0556% of the 360-control universe (11 of 360 scored, 12 assessed).
 - Evidence is synthetic.
 - No real facility is assessed.
 - No production assurance conclusion is issued.
-- Independent T7 execution and signed review remain pending.
-- Runtime SHACL validation remains dependent on the available validation environment.
+- Independent execution and signed review remain pending.
+- The release manifest signature is PENDING.
 
 Do not convert the synthetic demonstration into a claim of full implementation, catalogue coverage or real-world assurance.
 
@@ -813,28 +839,31 @@ Each method retains its native semantics, findings and decisions. Conclusions mu
 Start with:
 
 ```text
-whitepaper/current/AIDCF_Technical_Whitepaper_v3.0_Validation_Candidate.md
+whitepaper/current/AIDCF_Technical_Whitepaper_v3.1_Validation_Candidate.md
 ```
 
 This provides the research problem, framework proposition, status boundaries, limitations and validation roadmap.
 
 ### 2. Understand the foundations
 
-Read the Manifesto and Core Conceptual Model, followed by AIDCF-003 through AIDCF-006.
+Read the Manifesto (AIDCF-001) and the Core Conceptual Model (AIDCF-002), followed by AIDCF-003 through AIDCF-006. AIDCF-002 defines the normative keywords, the canonical chain and the terms used everywhere else.
 
 ### 3. Inspect the canonical registry
 
 Review:
 
 ```text
-standards/aidcf-007a/registry/AIDCF-007A_Canonical_Master_Control_Registry_15-90-360_v1.0.xlsx
+standards/aidcf-007a/registry/AIDCF-007A_Canonical_Master_Control_Registry_15-90-360_v1.0.xlsx   (approved baseline)
+standards/aidcf-007a/registry/AIDCF-007A_Canonical_Master_Control_Registry_15-90-360_v1.1.xlsx   (PROPOSED)
 ```
+
+Then read the domain guide (AIDCF-018) for the domains in scope.
 
 Use only canonical `MCF-*` identifiers for new mappings and assessments.
 
 ### 4. Review the practitioner method
 
-Read AIDCF-008 through AIDCF-012 for evidence, assessment, scoring, programme governance and reporting requirements.
+Read AIDCF-008 through AIDCF-012 for evidence, assessment, scoring, programme governance and reporting requirements, and AIDCF-017 for capability maturity.
 
 ### 5. Review the architecture and data standards
 
@@ -842,11 +871,14 @@ Read AIDCF-013, AIDCF-014 and AIDCF-016.
 
 ### 6. Run the synthetic package
 
-From `implementation/aidcf-015-v1.2/`:
+From `implementation/aidcf-015-v1.3/`:
 
 ```bash
-python tools/run_all.py
+python3 -m pip install -r requirements.txt
+python3 -B tools/run_all.py
 ```
+
+The same run executes in CI on every push (`.github/workflows/ci.yml`).
 
 Review the captured outputs rather than relying only on terminal success.
 
@@ -994,7 +1026,7 @@ Until a DOI is assigned, cite the whitepaper as:
 
 ```text
 Sethumadhavan, S. AIDCF: AI Data Centre Facilities Assurance Framework.
-Technical Whitepaper v3.0, Validation Candidate for Independent Review, 2026.
+Technical Whitepaper v3.1, Validation Candidate for Independent Review, 2026.
 ```
 
 Citation metadata is in [CITATION.cff](CITATION.cff).

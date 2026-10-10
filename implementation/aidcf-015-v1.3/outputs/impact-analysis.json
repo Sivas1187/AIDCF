@@ -1,0 +1,52 @@
+{
+ "urn:aidcf:syn:event:EVT-001": {
+  "subject": "urn:aidcf:syn:asset:AST-BMS-CTRL",
+  "affected": [
+   "https://w3id.org/aidcf/id/control/MCF-CMP-001",
+   "https://w3id.org/aidcf/id/control/MCF-OPS-013",
+   "https://w3id.org/aidcf/id/control/MCF-SEC-005",
+   "https://w3id.org/aidcf/id/control/MCF-THM-009",
+   "https://w3id.org/aidcf/id/control/MCF-THM-010",
+   "https://w3id.org/aidcf/id/control/MCF-THM-019",
+   "urn:aidcf:syn:asset:AST-CDU-1",
+   "urn:aidcf:syn:asset:AST-CDU-2",
+   "urn:aidcf:syn:control-assessment:CA-004",
+   "urn:aidcf:syn:control-assessment:CA-005",
+   "urn:aidcf:syn:control-assessment:CA-008",
+   "urn:aidcf:syn:control-assessment:CA-011",
+   "urn:aidcf:syn:decision:AD-001",
+   "urn:aidcf:syn:fault-domain:FD-02",
+   "urn:aidcf:syn:function:RF-02",
+   "urn:aidcf:syn:function:RF-03",
+   "urn:aidcf:syn:function:RF-06",
+   "urn:aidcf:syn:gate-result:GR-CG-01",
+   "urn:aidcf:syn:gate-result:GR-CG-05",
+   "urn:aidcf:syn:gate-result:GR-CG-06",
+   "urn:aidcf:syn:gate-result:GR-CG-07",
+   "urn:aidcf:syn:gate-result:GR-CG-08",
+   "urn:aidcf:syn:gate-result:GR-CG-15",
+   "urn:aidcf:syn:outcome:SO-01",
+   "urn:aidcf:syn:outcome:SO-03",
+   "urn:aidcf:syn:safeguard:SAF-CDU-FAILOVER",
+   "urn:aidcf:syn:safeguard:SAF-LEAK",
+   "urn:aidcf:syn:system:SYS-CMP",
+   "urn:aidcf:syn:system:SYS-CTL",
+   "urn:aidcf:syn:system:SYS-THM",
+   "urn:aidcf:syn:zone:ZONE-BMS"
+  ],
+  "byClass": {
+   "Control": 6,
+   "AssetInstance": 2,
+   "ControlAssessment": 4,
+   "AssuranceDecision": 1,
+   "FaultDomain": 1,
+   "RequiredFunction": 3,
+   "GateResult": 6,
+   "ServiceOutcome": 2,
+   "Safeguard": 2,
+   "InfrastructureSystem": 2,
+   "IACS": 1,
+   "IACSZone": 1
+  }
+ }
+}

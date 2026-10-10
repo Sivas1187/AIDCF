@@ -1,0 +1,218 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://w3id.org/aidcf/schema/1.3/event.schema.json",
+  "title": "AIDCF Event (Event)",
+  "description": "An observed or reported occurrence (change, incident, test failure, evidence expiry) ingested for impact analysis.",
+  "x-aidcf-class": "https://w3id.org/aidcf/ontology#Event",
+  "x-aidcf-semantic-owner": "AIDCF-014",
+  "x-aidcf-registration": "canonical",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "semanticOwner",
+    "schemaVersion",
+    "version",
+    "status",
+    "releaseRef",
+    "sourceArtifact",
+    "name",
+    "effectiveFrom",
+    "createdAt",
+    "createdBy",
+    "classification",
+    "provenance",
+    "eventType",
+    "subjectRef",
+    "eventSource",
+    "sourceHealth",
+    "observedAt",
+    "effectiveAt",
+    "payload",
+    "eventSeverity",
+    "materiality",
+    "affectedAssertions",
+    "candidateTriggers",
+    "humanDisposition",
+    "snapshotRef",
+    "resultingDecisionEffect",
+    "reviewState"
+  ],
+  "properties": {
+    "@context": {
+      "$ref": "common-envelope.schema.json#/properties/@context"
+    },
+    "id": {
+      "$ref": "common-envelope.schema.json#/properties/id"
+    },
+    "type": {
+      "const": "Event"
+    },
+    "semanticOwner": {
+      "$ref": "common-envelope.schema.json#/properties/semanticOwner"
+    },
+    "schemaVersion": {
+      "$ref": "common-envelope.schema.json#/properties/schemaVersion"
+    },
+    "version": {
+      "$ref": "common-envelope.schema.json#/properties/version"
+    },
+    "status": {
+      "$ref": "common-envelope.schema.json#/properties/status"
+    },
+    "releaseRef": {
+      "$ref": "common-envelope.schema.json#/properties/releaseRef"
+    },
+    "sourceArtifact": {
+      "$ref": "common-envelope.schema.json#/properties/sourceArtifact"
+    },
+    "name": {
+      "$ref": "common-envelope.schema.json#/properties/name"
+    },
+    "effectiveFrom": {
+      "$ref": "common-envelope.schema.json#/properties/effectiveFrom"
+    },
+    "createdAt": {
+      "$ref": "common-envelope.schema.json#/properties/createdAt"
+    },
+    "createdBy": {
+      "$ref": "common-envelope.schema.json#/properties/createdBy"
+    },
+    "classification": {
+      "$ref": "common-envelope.schema.json#/properties/classification"
+    },
+    "provenance": {
+      "$ref": "common-envelope.schema.json#/properties/provenance"
+    },
+    "sourceRecord": {
+      "$ref": "common-envelope.schema.json#/properties/sourceRecord"
+    },
+    "description": {
+      "$ref": "common-envelope.schema.json#/properties/description"
+    },
+    "scope": {
+      "$ref": "common-envelope.schema.json#/properties/scope"
+    },
+    "effectiveTo": {
+      "$ref": "common-envelope.schema.json#/properties/effectiveTo"
+    },
+    "modifiedAt": {
+      "$ref": "common-envelope.schema.json#/properties/modifiedAt"
+    },
+    "modifiedBy": {
+      "$ref": "common-envelope.schema.json#/properties/modifiedBy"
+    },
+    "distributionControlRef": {
+      "$ref": "common-envelope.schema.json#/properties/distributionControlRef"
+    },
+    "reviewState": {
+      "$ref": "common-envelope.schema.json#/properties/reviewState"
+    },
+    "supersedes": {
+      "$ref": "common-envelope.schema.json#/properties/supersedes"
+    },
+    "externalIdentifiers": {
+      "$ref": "common-envelope.schema.json#/properties/externalIdentifiers"
+    },
+    "extensions": {
+      "$ref": "common-envelope.schema.json#/properties/extensions"
+    },
+    "nullReasons": {
+      "$ref": "common-envelope.schema.json#/properties/nullReasons"
+    },
+    "hasUnknown": {
+      "$ref": "common-envelope.schema.json#/properties/hasUnknown"
+    },
+    "reviewedBy": {
+      "$ref": "common-envelope.schema.json#/properties/reviewedBy"
+    },
+    "migratedFrom": {
+      "$ref": "common-envelope.schema.json#/properties/migratedFrom"
+    },
+    "integrationHandoff": {
+      "$ref": "common-envelope.schema.json#/properties/integrationHandoff"
+    },
+    "governedBy": {
+      "$ref": "common-envelope.schema.json#/properties/governedBy"
+    },
+    "eventType": {
+      "$ref": "definitions.schema.json#/$defs/code-EventType"
+    },
+    "subjectRef": {
+      "$ref": "definitions.schema.json#/$defs/iri"
+    },
+    "eventSource": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourceHealth": {
+      "$ref": "definitions.schema.json#/$defs/code-SourceHealth"
+    },
+    "observedAt": {
+      "$ref": "definitions.schema.json#/$defs/dateTime"
+    },
+    "effectiveAt": {
+      "$ref": "definitions.schema.json#/$defs/dateTime"
+    },
+    "payload": {
+      "type": "object"
+    },
+    "eventSeverity": {
+      "$ref": "definitions.schema.json#/$defs/code-EventSeverity"
+    },
+    "materiality": {
+      "$ref": "definitions.schema.json#/$defs/code-Materiality"
+    },
+    "affectedAssertions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/iri"
+      }
+    },
+    "candidateTriggers": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/iri"
+      }
+    },
+    "humanDisposition": {
+      "$ref": "definitions.schema.json#/$defs/code-HumanDisposition"
+    },
+    "snapshotRef": {
+      "$ref": "definitions.schema.json#/$defs/iri"
+    },
+    "resultingDecisionEffect": {
+      "type": "string",
+      "minLength": 1
+    },
+    "triggersReassessment": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/iri"
+      }
+    }
+  },
+  "if": {
+    "properties": {
+      "classification": {
+        "enum": [
+          "CLIENT_RESTRICTED",
+          "CONFIDENTIAL",
+          "HIGHLY_RESTRICTED"
+        ]
+      }
+    },
+    "required": [
+      "classification"
+    ]
+  },
+  "then": {
+    "required": [
+      "distributionControlRef"
+    ]
+  }
+}

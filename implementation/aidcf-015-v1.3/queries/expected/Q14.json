@@ -1,0 +1,10 @@
+{
+ "query": "Q14",
+ "description": "AIDCF-016 additional query: Gate Results that PASS while a CRITICAL input is not CONFORMING (must be none).",
+ "basis": "SPEC 6.2.",
+ "rows": [
+  [
+   0
+  ]
+ ]
+}

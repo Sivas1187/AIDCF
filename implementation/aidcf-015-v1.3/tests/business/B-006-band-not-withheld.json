@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-006",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "BR-006",
+ "description": "Score band B4 reported at 3.0556% coverage.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:score:SS-001",
+   "field": "band",
+   "value": "B4"
+  }
+ ]
+}

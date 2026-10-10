@@ -1,0 +1,91 @@
+aidcfFamilyId,aidcfFamilyName,externalRef,externalTitle,relationship,confidence,notes
+GOV-01,Governance architecture,CCoP-CII 2026 s.3; MAS TRM 2021 (technology risk governance and oversight),Governance Requirements; Board and senior management oversight,PARTIAL,MEDIUM,CCoP section 3 sets cybersecurity governance obligations for designated CII owners; MAS TRM expects board and senior-management oversight of technology risk for financial-sector tenants. AIDCF GOV-01 extends governance to infrastructure Assurance Decisions.
+GOV-02,Accountability and responsibility,CCoP-CII 2026 s.3; MAS TRM 2021 (accountable CIO and CISO); MAS BCM 2022 (oversight of critical business service recovery),Governance Requirements; Accountability of senior roles,PARTIAL,MEDIUM,Named accountability for cybersecurity (CII owners) and for technology risk and service recovery (MAS-regulated tenants) overlaps role ownership and critical-function accountability.
+GOV-03,Policy and standards management,CCoP-CII 2026 s.3,Governance Requirements,PARTIAL,LOW,Policy and standards obligations for CII owners; Technical Standard Baselines for facility engineering are outside scope.
+GOV-04,Risk and assurance governance,CCoP-CII 2026 s.2; MAS BCM 2022 (independent BCM audit),Audit Requirements; Independent audit of BCM framework and critical business services,PARTIAL,MEDIUM,Mandated cybersecurity audit (CII) and periodic independent BCM audit (MAS-regulated tenants) overlap independent review. No Critical Gate concept.
+GOV-05,Stakeholder and regulatory interface,Digital Infrastructure Bill (2026); Cybersecurity Act 2018 as amended 2024; IMDA Advisory Guidelines 2025,Licensing and incident reporting to IMDA; Designation of foundational digital infrastructure; Voluntary resilience and security measures,PARTIAL,MEDIUM,"Regulatory obligations for data centre operators and cloud providers are converging: voluntary guidelines (2025), FDI designation powers (2024 amendment, commencement to be verified) and a proposed licensing regime (Bill at First Reading). AIDCF GOV-05 requires these to be monitored and mapped to customer commitments."
+GOV-06,"Ethics, impartiality and competence",,,NO_MATCH,MEDIUM,
+CAP-01,Capability inventory,,,NO_MATCH,MEDIUM,
+CAP-02,Service outcome definition,MAS BCM 2022,Service recovery time objectives for critical business services,CONTEXT,MEDIUM,Financial-sector tenants set SRTOs for critical business services; these become inputs to AIDCF Recovery Outcomes and tolerances for the supporting infrastructure.
+CAP-03,Criticality and materiality,IMDA Advisory Guidelines 2025; MAS BCM 2022,Risk assessment and business impact analysis; Identification of critical business services,PARTIAL,MEDIUM,BIA and critical-service identification overlap criticality criteria and impact tolerance.
+CAP-04,Demand and growth modelling,,,NO_MATCH,MEDIUM,
+CAP-05,Operating envelope,SS 697:2023; SS 715:2025,Tropical Data Centre standard (raised operating temperature); Energy efficiency of data centre IT equipment (operation at higher temperature),PARTIAL,MEDIUM,SS 697 provides a method for safely raising operating temperatures in tropical climates and SS 715 expects IT equipment able to operate at higher temperatures. Both inform the environmental envelope parameters of the capability profile; neither defines state-specific limits.
+CAP-06,Capability lifecycle and change,,,NO_MATCH,MEDIUM,
+DEP-01,Dependency discovery,MAS BCM 2022,End-to-end dependency mapping,PARTIAL,MEDIUM,"Mapping of people, process, technology and data dependencies for critical business services overlaps asset-to-function and recovery-dependency mapping."
+DEP-02,Shared and common-mode dependencies,,,NO_MATCH,MEDIUM,
+DEP-03,External providers and utilities,MAS TRM 2021 (third-party management); MAS BCM 2022 (third-party recovery expectations),Third-party technology services; Measurable recovery expectations and utility redundancy,PARTIAL,MEDIUM,Third-party and utility dependency expectations for financial-sector tenants overlap external provider dependency.
+DEP-04,Concentration and substitutability,MAS BCM 2022,Concentration risk,PARTIAL,MEDIUM,Avoiding concentration in one zone or single provider overlaps capacity and supplier concentration.
+DEP-05,Boundary and interface control,CCoP-CII 2026 s.12,Securing CII interconnected systems,PARTIAL,LOW,Requirements on systems interconnected with CII overlap cross-boundary enforcement where a data centre hosts or connects to CII.
+DEP-06,Dependency monitoring and review,,,NO_MATCH,MEDIUM,
+PHY-01,Site and location resilience,IMDA Advisory Guidelines 2025,Risk assessment (physical hazards),CONTEXT,LOW,Physical hazards are named among the risks addressed; site hazard criteria are not specified at a level verified for this crosswalk.
+PHY-02,Building and structural integrity,,,NO_MATCH,MEDIUM,
+PHY-03,Physical zoning and segregation,,,NO_MATCH,MEDIUM,
+PHY-04,Access and surveillance,,,NO_MATCH,MEDIUM,
+PHY-05,Asset movement and custody,,,NO_MATCH,MEDIUM,
+PHY-06,"Fire, life safety and emergency interfaces",IMDA Advisory Guidelines 2025; Digital Infrastructure Bill (2026),Fire as an operational risk,CONTEXT,LOW,Both instruments name fire among the operational risks to be managed; fire safety itself is governed by Singapore fire-safety regulation (not mapped here).
+POW-01,Utility and grid interface,Digital Infrastructure Bill (2026),Resilience obligations for licensed data centres (power failure risk),CONTEXT,LOW,The Bill targets operational risks such as power failures for in-scope licensees; specific engineering requirements are expected in subsidiary instruments not yet verified.
+POW-02,Generation and fuel,,,NO_MATCH,MEDIUM,
+POW-03,UPS and energy storage,,,NO_MATCH,MEDIUM,
+POW-04,Distribution and protection,,,NO_MATCH,MEDIUM,
+POW-05,Power quality and transient response,,,NO_MATCH,MEDIUM,
+POW-06,"Electrical monitoring, maintenance and recovery",,,NO_MATCH,MEDIUM,
+THM-01,Thermal architecture and capacity,IMDA Advisory Guidelines 2025; Digital Infrastructure Bill (2026),Cooling failure as an operational risk,CONTEXT,LOW,Cooling failure is named among the risks; no capacity criteria verified.
+THM-02,Air cooling systems,,,NO_MATCH,MEDIUM,
+THM-03,Liquid cooling systems,SS 726:2026,Liquid cooling in tropical data centres,PARTIAL,LOW,"Guidance on implementing liquid cooling in tropical data centres, including alongside air cooling. Detailed scope (direct-to-chip, CDU, secondary loop) should be confirmed against the licensed text."
+THM-04,Heat rejection and water systems,,,NO_MATCH,MEDIUM,
+THM-05,Fluid quality and leak management,,,NO_MATCH,MEDIUM,
+THM-06,"Thermal control, maintenance and recovery",,,NO_MATCH,MEDIUM,
+ENV-01,Environmental operating conditions,SS 697:2023,Tropical Data Centre standard,PARTIAL,MEDIUM,Guidance on raising and controlling operating temperature in a tropical climate overlaps temperature control; humidity and contamination requirements should be confirmed against the licensed text.
+ENV-02,Energy performance,SS 564-1:2020; SS 564-2:2020; BCA-IMDA Green Mark for Data Centres 2024; Digital Infrastructure Bill (2026); SS 715:2025,Energy and environmental management system for green data centres; Energy efficiency criteria; PUE requirements for licensed DCs; IT equipment energy efficiency,PARTIAL,HIGH,SS 564 (aligned with ISO 50001) provides an energy management system and data-centre efficiency metrics; Green Mark rates facility energy performance; the Bill proposes PUE requirements for data centres of at least 3 MW critical IT load; SS 715 addresses IT equipment efficiency. Energy allocation to Capability Instances and the resilience-efficiency trade-off are AIDCF-specific.
+ENV-03,Water performance,BCA-IMDA Green Mark for Data Centres 2024 (scheme scope includes water); Digital Infrastructure Bill (2026),Water efficiency,CONTEXT,LOW,Water is within the Green Mark scheme scope; the Bill indicates further water-efficiency requirements may follow consultation.
+ENV-04,Carbon and resource reporting,BCA-IMDA Green Mark for Data Centres 2024,Carbon reduction,PARTIAL,LOW,Carbon reduction is a criteria area; accounting boundary and energy-attribute evidence should be confirmed against the criteria document.
+ENV-05,Hazardous materials and waste,,,NO_MATCH,MEDIUM,
+ENV-06,Climate adaptation and resource continuity,SS 697:2023,Tropical Data Centre standard,CONTEXT,LOW,Higher operating temperatures interact with heatwave readiness; climate adaptation is not the purpose of the standard.
+CMP-01,Compute architecture and configuration,CSA Guidelines and Companion Guide on Securing AI Systems (2024),Securing AI systems throughout the lifecycle,CONTEXT,LOW,AI system security practices are a context for compute baselines; accelerator architecture is not addressed.
+CMP-02,Cluster and scale-up domains,,,NO_MATCH,MEDIUM,
+CMP-03,"Capacity, scheduling and utilisation",SS 715:2025,Energy efficiency of data centre IT equipment (utilisation practices),CONTEXT,MEDIUM,IT energy management practices such as consolidation and virtualisation to raise utilisation relate to usable capacity and contention; scheduler controls are AIDCF-specific.
+CMP-04,"Firmware, driver and compatibility",,,NO_MATCH,MEDIUM,
+CMP-05,Compute health and observability,,,NO_MATCH,MEDIUM,
+CMP-06,Compute lifecycle and recovery,,,NO_MATCH,MEDIUM,
+STO-01,Storage architecture and tiering,,,NO_MATCH,MEDIUM,
+STO-02,Performance and capacity,,,NO_MATCH,MEDIUM,
+STO-03,Integrity and consistency,,,NO_MATCH,MEDIUM,
+STO-04,Protection and replication,,,NO_MATCH,MEDIUM,
+STO-05,Checkpoint and recovery services,,,NO_MATCH,MEDIUM,
+STO-06,Storage monitoring and lifecycle,,,NO_MATCH,MEDIUM,
+NET-01,Scale-up and scale-out fabrics,,,NO_MATCH,MEDIUM,
+NET-02,Performance and congestion control,,,NO_MATCH,MEDIUM,
+NET-03,Storage and service networks,,,NO_MATCH,MEDIUM,
+NET-04,Management and out-of-band networks,,,NO_MATCH,MEDIUM,
+NET-05,Physical connectivity and optics,,,NO_MATCH,MEDIUM,
+NET-06,Network control and observability,,,NO_MATCH,MEDIUM,
+OPS-01,Operating model and staffing,,,NO_MATCH,MEDIUM,
+OPS-02,Procedure and work control,,,NO_MATCH,MEDIUM,
+OPS-03,Maintenance and reliability,BCA-IMDA Green Mark for Data Centres 2024,Maintainability,CONTEXT,LOW,Maintainability is a criteria area; maintenance strategy and deferred-maintenance governance are AIDCF items.
+OPS-04,"Alarm, incident and problem management",Digital Infrastructure Bill (2026); CCoP-CII 2026 s.7,Incident and disruption reporting to IMDA; Response and Recovery Requirements,PARTIAL,MEDIUM,Mandatory reporting of specified incidents (proposed for licensees) and response obligations (CII owners) overlap incident management.
+OPS-05,Change and configuration management,,,NO_MATCH,MEDIUM,
+OPS-06,Capacity and service operations,,,NO_MATCH,MEDIUM,
+RES-01,Resilience strategy,IMDA Advisory Guidelines 2025; CCoP-CII 2026 s.8; MAS BCM 2022,Business continuity; Cyber Resiliency Requirements; Critical business services and SRTOs,PARTIAL,MEDIUM,Continuity and resilience strategy overlap minimum service outcome and resilience ownership.
+RES-02,Fault-domain and containment design,,,NO_MATCH,MEDIUM,
+RES-03,Continuity planning,IMDA Advisory Guidelines 2025; Digital Infrastructure Bill (2026); MAS BCM 2022,Business continuity planning and BCMS for data centres; BC and DR plans for licensees; Recovery strategies,PARTIAL,MEDIUM,Business continuity management (and a BCMS for data centres in the Advisory Guidelines) overlaps continuity strategy and site and provider continuity.
+RES-04,Recovery planning,IMDA Advisory Guidelines 2025 (cloud disaster recovery); Digital Infrastructure Bill (2026); MAS TRM 2021 s.8,Disaster recovery planning; DR plans for licensees; IT Resilience,PARTIAL,MEDIUM,Disaster recovery planning overlaps recovery dependencies and sequencing; MAS TRM section 8 (including data centre resilience) applies to financial-sector tenants.
+RES-05,Testing and exercising,MAS BCM 2022; CCoP-CII 2026 s.7,BCP testing; Response and Recovery Requirements (exercises),PARTIAL,MEDIUM,Regular testing matched to service criticality overlaps component and integrated scenario tests.
+RES-06,Crisis and adaptive response,CCoP-CII 2026 s.7; MAS TRM 2021,Response and Recovery Requirements; Crisis communication and cyber exercises,PARTIAL,LOW,Crisis communication and response planning overlap crisis command and stakeholder communications.
+SUP-01,Supplier due diligence,CCoP-CII 2026 s.3 (outsourcing management),Outsourcing management,PARTIAL,LOW,Management of external parties for CII; financial and operational resilience of infrastructure suppliers is not addressed at a verified level.
+SUP-02,Contract and service obligations,MAS TRM 2021 (third-party management); MAS BCM 2022,Third-party technology services; Measurable recovery expectations in agreements,PARTIAL,MEDIUM,Contracted recovery and service expectations for financial-sector tenants overlap service levels and incident notification.
+SUP-03,Hardware and component provenance,,,NO_MATCH,MEDIUM,
+SUP-04,"Software, firmware and update supply",CSA Guidelines and Companion Guide on Securing AI Systems (2024),Supply-chain security of AI systems,CONTEXT,LOW,"AI supply-chain security (models, libraries) is a context for software and firmware supply; scope at component-firmware level should be confirmed."
+SUP-05,"Spares, logistics and obsolescence",,,NO_MATCH,MEDIUM,
+SUP-06,Remote support and third-party access,,,NO_MATCH,MEDIUM,
+SEC-01,Identity and privileged access,CCoP-CII 2026 s.5; MAS TRM 2021 s.9,"Protection Requirements; Access Control (user, privileged and remote access)",PARTIAL,MEDIUM,Access control obligations overlap identity and privileged access for CII and financial-sector scope.
+SEC-02,Control-plane protection,CCoP-CII 2026 s.10,Operational Technology (OT) Security Requirements,PARTIAL,MEDIUM,"OT architecture and field-controller security overlap BMS and EPMS security where the data centre is, or hosts, CII."
+SEC-03,Network security and segmentation,CCoP-CII 2026 s.5; s.10; MAS TRM 2021 s.11,Protection Requirements; OT Security (segregation of OT from enterprise networks); Data and Infrastructure Security (network security),PARTIAL,MEDIUM,Segmentation and OT/IT segregation overlap security zoning and management-plane segmentation.
+SEC-04,"Configuration, vulnerability and patching",CCoP-CII 2026 s.5; MAS TRM 2021 s.7; s.13,Protection Requirements; IT Service Management (patch management); Cyber Security Assessment (vulnerability assessment),PARTIAL,MEDIUM,Vulnerability and patch management overlap.
+SEC-05,Detection and response,CCoP-CII 2026 s.6; s.7; MAS TRM 2021 s.12,Detection Requirements; Response and Recovery Requirements; Cyber Security Operations,PARTIAL,MEDIUM,Detection and response obligations overlap security telemetry and incident containment.
+SEC-06,AI-enabled and automated action,CSA Guidelines and Companion Guide on Securing AI Systems (2024),Securing AI systems throughout the lifecycle,PARTIAL,LOW,The guidelines secure AI systems across their lifecycle; their application to AI agents or automation with authority over infrastructure (AIDCF SEC-06) is by extension and should be reviewed.
+EVA-01,Evidence architecture,,,NO_MATCH,MEDIUM,
+EVA-02,Evidence provenance and quality,,,NO_MATCH,MEDIUM,
+EVA-03,Assessment planning and execution,CCoP-CII 2026 s.2; s.4,Audit Requirements; Identification Requirements,CONTEXT,LOW,Mandated audits and identification of critical assets for CII are a context for assessment scope and criteria.
+EVA-04,"Findings, UNKNOWN and limitations",,,NO_MATCH,MEDIUM,
+EVA-05,Critical gates and decisions,,,NO_MATCH,MEDIUM,
+EVA-06,Reassessment and continuing assurance,BCA-IMDA Green Mark for Data Centres (rating validity and renewal); CCoP-CII 2026 s.3 (Cyber Trust mark certification),Time-bounded ratings and certifications,SUPPORTS_EVIDENCE,LOW,Green Mark ratings and Cyber Trust mark certification are time-bounded E5 evidence. Their validity periods do not replace AIDCF evidence expiry or reassessment triggers.

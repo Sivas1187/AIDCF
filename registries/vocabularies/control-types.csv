@@ -1,0 +1,6 @@
+code,meaning
+DIRECTIVE,"Establishes required intent, authority, policy or criteria"
+PREVENTIVE,Stops an adverse event or condition from occurring
+DETECTIVE,Identifies an adverse event or condition when it occurs
+CORRECTIVE,"Limits, contains or corrects the effect of an event or condition"
+RECOVERY,Restores the function or outcome after disruption

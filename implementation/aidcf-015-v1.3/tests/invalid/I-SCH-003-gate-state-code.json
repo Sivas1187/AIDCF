@@ -1,0 +1,157 @@
+{
+ "fixtureId": "I-SCH-003",
+ "layer": "SCHEMA",
+ "expect": "FAIL",
+ "expectedText": "'PASSED' is not one of",
+ "description": "Gate state outside registries/vocabularies/gate-results.csv.",
+ "record": {
+  "id": "urn:aidcf:syn:gate-result:GR-CG-03",
+  "type": "GateResult",
+  "name": "Gate result CG-03",
+  "classification": "INTERNAL",
+  "constrains": [
+   "urn:aidcf:syn:recommendation:DR-001"
+  ],
+  "controlEvaluations": [
+   {
+    "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-001",
+    "gateRole": "CRITICAL",
+    "controlResult": "PARTIAL",
+    "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-002"
+   },
+   {
+    "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-002",
+    "gateRole": "CRITICAL",
+    "controlResult": "NOT_ASSESSED"
+   },
+   {
+    "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-005",
+    "gateRole": "CRITICAL",
+    "controlResult": "NOT_ASSESSED"
+   },
+   {
+    "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-007",
+    "gateRole": "CRITICAL",
+    "controlResult": "NOT_ASSESSED"
+   },
+   {
+    "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-009",
+    "gateRole": "CRITICAL",
+    "controlResult": "NOT_ASSESSED"
+   },
+   {
+    "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-010",
+    "gateRole": "CRITICAL",
+    "controlResult": "NOT_ASSESSED"
+   },
+   {
+    "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-012",
+    "gateRole": "CRITICAL",
+    "controlResult": "NOT_ASSESSED"
+   },
+   {
+    "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-017",
+    "gateRole": "CRITICAL",
+    "controlResult": "NOT_ASSESSED"
+   },
+   {
+    "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-001",
+    "gateRole": "SUPPORTING",
+    "controlResult": "CONFORMING",
+    "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-003"
+   },
+   {
+    "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-004",
+    "gateRole": "CRITICAL",
+    "controlResult": "NOT_ASSESSED"
+   }
+  ],
+  "createdAt": "2026-10-10T00:00:00Z",
+  "createdBy": "urn:aidcf:syn:party:BUILDER",
+  "criteriaResults": [
+   {
+    "criterionId": "GC-03-1",
+    "criterionOutcome": "NOT_MET",
+    "rationale": "F-001: facility water plant and recovery dependencies not mapped."
+   },
+   {
+    "criterionId": "GC-03-2",
+    "criterionOutcome": "NOT_EVALUATED"
+   },
+   {
+    "criterionId": "GC-03-3",
+    "criterionOutcome": "UNKNOWN",
+    "rationale": "U-003: shared facility water plant cannot be determined."
+   },
+   {
+    "criterionId": "GC-03-4",
+    "criterionOutcome": "NOT_EVALUATED"
+   },
+   {
+    "criterionId": "GC-03-5",
+    "criterionOutcome": "NOT_EVALUATED"
+   },
+   {
+    "criterionId": "GC-03-6",
+    "criterionOutcome": "NOT_EVALUATED"
+   },
+   {
+    "criterionId": "GC-03-7",
+    "criterionOutcome": "NOT_EVALUATED"
+   }
+  ],
+  "decisionEffect": "Gate FAIL caps the decision at LIMITED.",
+  "effectiveFrom": "2026-10-10T00:00:00Z",
+  "evaluatesGate": [
+   "https://w3id.org/aidcf/id/gate/CG-03"
+  ],
+  "evidenceSufficiency": "S2",
+  "evidencedBy": [
+   "urn:aidcf:syn:evidence:EV-002",
+   "urn:aidcf:syn:evidence:EV-003",
+   "urn:aidcf:syn:evidence:EV-015",
+   "urn:aidcf:syn:evidence:EV-016",
+   "urn:aidcf:syn:evidence:EV-017",
+   "urn:aidcf:syn:evidence:EV-018"
+  ],
+  "gateApplicability": "IN_SCOPE",
+  "gateCode": "CG-03",
+  "gateState": "PASSED",
+  "hasFinding": [
+   "urn:aidcf:syn:finding:F-001"
+  ],
+  "migratedFrom": [
+   "urn:aidcf:gate:CG-03"
+  ],
+  "provenance": {
+   "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+   "method": "SYNTHETIC_AUTHORING",
+   "synthetic": true,
+   "transformationVersion": "1.3"
+  },
+  "releaseRef": "AIDCF-REL-2026.10.1",
+  "reportedIn": [
+   "urn:aidcf:syn:report:RPT-001"
+  ],
+  "reviewState": "SUPPORTED",
+  "reviewedBy": [
+   "urn:aidcf:syn:review:RR-006"
+  ],
+  "rollupRationale": "FAIL: CRITICAL control(s) MCF-DEP-001 PARTIAL; criteria not met: GC-03-1.",
+  "schemaVersion": "1.3",
+  "scope": {
+   "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+   "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+  },
+  "semanticOwner": "AIDCF-010",
+  "sourceArtifact": "AIDCF-015",
+  "stateCoverage": [
+   "NORMAL"
+  ],
+  "status": "REVIEWED",
+  "summarisedBy": [
+   "urn:aidcf:syn:recommendation:DR-001"
+  ],
+  "version": "1.0"
+ }
+}

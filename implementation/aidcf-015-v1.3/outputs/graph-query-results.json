@@ -1,0 +1,434 @@
+{
+ "Q01": {
+  "rows": [
+   [
+    "SYS-CMP",
+    "DEP-09"
+   ],
+   [
+    "SYS-CMP",
+    "DEP-10"
+   ],
+   [
+    "SYS-CTL",
+    "DEP-17"
+   ],
+   [
+    "SYS-FWS",
+    "DEP-15"
+   ],
+   [
+    "SYS-NET",
+    "DEP-16"
+   ],
+   [
+    "SYS-POW",
+    "DEP-01"
+   ],
+   [
+    "SYS-STO",
+    "DEP-08"
+   ],
+   [
+    "SYS-THM",
+    "DEP-11"
+   ]
+  ],
+  "expected": [
+   [
+    "SYS-CMP",
+    "DEP-09"
+   ],
+   [
+    "SYS-CMP",
+    "DEP-10"
+   ],
+   [
+    "SYS-CTL",
+    "DEP-17"
+   ],
+   [
+    "SYS-FWS",
+    "DEP-15"
+   ],
+   [
+    "SYS-NET",
+    "DEP-16"
+   ],
+   [
+    "SYS-POW",
+    "DEP-01"
+   ],
+   [
+    "SYS-STO",
+    "DEP-08"
+   ],
+   [
+    "SYS-THM",
+    "DEP-11"
+   ]
+  ],
+  "match": true
+ },
+ "Q02": {
+  "rows": [
+   [
+    "FS-01",
+    "FD-01",
+    "NORMAL"
+   ],
+   [
+    "FS-02",
+    "FD-02",
+    "NORMAL"
+   ],
+   [
+    "FS-05",
+    "",
+    "NORMAL"
+   ]
+  ],
+  "expected": [
+   [
+    "FS-01",
+    "FD-01",
+    "NORMAL"
+   ],
+   [
+    "FS-02",
+    "FD-02",
+    "NORMAL"
+   ],
+   [
+    "FS-05",
+    "",
+    "NORMAL"
+   ]
+  ],
+  "match": true
+ },
+ "Q03": {
+  "rows": [
+   [
+    "CA-011",
+    "EFFECTIVENESS",
+    "PARTIAL",
+    "CI-001",
+    "EV-011",
+    "F-005"
+   ],
+   [
+    "CA-011",
+    "EFFECTIVENESS",
+    "PARTIAL",
+    "CI-001",
+    "EV-027",
+    "F-005"
+   ],
+   [
+    "CA-011",
+    "EFFECTIVENESS",
+    "PARTIAL",
+    "CI-001",
+    "EV-028",
+    "F-005"
+   ],
+   [
+    "CA-011",
+    "EFFECTIVENESS",
+    "PARTIAL",
+    "CI-001",
+    "EV-029",
+    "F-005"
+   ]
+  ],
+  "expected": [
+   [
+    "CA-011",
+    "EFFECTIVENESS",
+    "PARTIAL",
+    "CI-001",
+    "EV-011",
+    "F-005"
+   ],
+   [
+    "CA-011",
+    "EFFECTIVENESS",
+    "PARTIAL",
+    "CI-001",
+    "EV-027",
+    "F-005"
+   ],
+   [
+    "CA-011",
+    "EFFECTIVENESS",
+    "PARTIAL",
+    "CI-001",
+    "EV-028",
+    "F-005"
+   ],
+   [
+    "CA-011",
+    "EFFECTIVENESS",
+    "PARTIAL",
+    "CI-001",
+    "EV-029",
+    "F-005"
+   ]
+  ],
+  "match": true
+ },
+ "Q04": {
+  "rows": [
+   [
+    "CA-011",
+    "AD-001"
+   ]
+  ],
+  "expected": [
+   [
+    "CA-011",
+    "AD-001"
+   ]
+  ],
+  "match": true
+ },
+ "Q05": {
+  "rows": [
+   [
+    "FAIL",
+    "NOT_ASSURED",
+    6,
+    1,
+    "U-005"
+   ]
+  ],
+  "expected": [
+   [
+    "FAIL",
+    "NOT_ASSURED",
+    6,
+    1,
+    "U-005"
+   ]
+  ],
+  "match": true
+ },
+ "Q06": {
+  "rows": [
+   [
+    "NOT_ASSURED",
+    "SS-001",
+    "RR-002",
+    15,
+    5
+   ]
+  ],
+  "expected": [
+   [
+    "NOT_ASSURED",
+    "SS-001",
+    "RR-002",
+    15,
+    5
+   ]
+  ],
+  "match": true
+ },
+ "Q07": {
+  "rows": [
+   [
+    "AS-001",
+    "NOT_ASSURED",
+    "NOT_ASSURED"
+   ],
+   [
+    "RPT-001",
+    "NOT_ASSURED",
+    "NOT_ASSURED"
+   ]
+  ],
+  "expected": [
+   [
+    "AS-001",
+    "NOT_ASSURED",
+    "NOT_ASSURED"
+   ],
+   [
+    "RPT-001",
+    "NOT_ASSURED",
+    "NOT_ASSURED"
+   ]
+  ],
+  "match": true
+ },
+ "Q08": {
+  "rows": [
+   [
+    "CG-01"
+   ],
+   [
+    "CG-05"
+   ],
+   [
+    "CG-06"
+   ],
+   [
+    "CG-07"
+   ],
+   [
+    "CG-08"
+   ],
+   [
+    "CG-15"
+   ]
+  ],
+  "expected": [
+   [
+    "CG-01"
+   ],
+   [
+    "CG-05"
+   ],
+   [
+    "CG-06"
+   ],
+   [
+    "CG-07"
+   ],
+   [
+    "CG-08"
+   ],
+   [
+    "CG-15"
+   ]
+  ],
+  "match": true
+ },
+ "Q09": {
+  "rows": [
+   [
+    "AST-BMS-CTRL",
+    3
+   ],
+   [
+    "AST-CHL",
+    2
+   ],
+   [
+    "AST-SWB-01",
+    2
+   ],
+   [
+    "SYS-POW",
+    3
+   ]
+  ],
+  "expected": [
+   [
+    "AST-BMS-CTRL",
+    3
+   ],
+   [
+    "AST-CHL",
+    2
+   ],
+   [
+    "AST-SWB-01",
+    2
+   ],
+   [
+    "SYS-POW",
+    3
+   ]
+  ],
+  "match": true
+ },
+ "Q10": {
+  "rows": [
+   [
+    "CAP-CAP-01",
+    "CAP-CAP-02",
+    ""
+   ],
+   [
+    "DEC-001-v1.2",
+    "AD-001",
+    "MIG-002"
+   ]
+  ],
+  "expected": [
+   [
+    "CAP-CAP-01",
+    "CAP-CAP-02",
+    ""
+   ],
+   [
+    "DEC-001-v1.2",
+    "AD-001",
+    "MIG-002"
+   ]
+  ],
+  "match": true
+ },
+ "Q11": {
+  "rows": [
+   [
+    "EVT-001",
+    "MATERIAL",
+    "HIGH",
+    "2026-10-09T14:00:00"
+   ]
+  ],
+  "expected": [
+   [
+    "EVT-001",
+    "MATERIAL",
+    "HIGH",
+    "2026-10-09T14:00:00"
+   ]
+  ],
+  "match": true
+ },
+ "Q12": {
+  "rows": [
+   [
+    "CND-01",
+    "Conduit"
+   ]
+  ],
+  "expected": [
+   [
+    "CND-01",
+    "Conduit"
+   ]
+  ],
+  "match": true
+ },
+ "Q13": {
+  "rows": [
+   [
+    0
+   ]
+  ],
+  "expected": [
+   [
+    0
+   ]
+  ],
+  "match": true
+ },
+ "Q14": {
+  "rows": [
+   [
+    0
+   ]
+  ],
+  "expected": [
+   [
+    0
+   ]
+  ],
+  "match": true
+ }
+}

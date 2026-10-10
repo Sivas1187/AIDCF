@@ -1,0 +1,633 @@
+{
+ "@context": "../schemas/jsonld/aidcf-context-1.3.jsonld",
+ "@graph": [
+  {
+   "id": "urn:aidcf:syn:baseline-issue:BI-001",
+   "type": "BaselineIssue",
+   "name": "BI-001 Control-universe cardinality",
+   "baselineStatus": "RESOLVED",
+   "classification": "INTERNAL",
+   "closedBy": [
+    "urn:aidcf:syn:migration:MIG-001"
+   ],
+   "conflictSources": [
+    {
+     "artifact": "AIDCF-007",
+     "artifactVersion": "1.0",
+     "location": "control catalogue",
+     "value": "Pilot control set (PILOT-*)"
+    },
+    {
+     "artifact": "AIDCF-007A",
+     "artifactVersion": "1.1",
+     "location": "AMD-001",
+     "value": "15 domains, 90 families, 360 controls"
+    }
+   ],
+   "conflictType": "Control-universe cardinality",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "impact": "Resolved by adopting the AIDCF-007A registry (AIDCF-007A-AMD-001).",
+   "issueCode": "BI-001",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "resolution": "AIDCF-007A-AMD-001 adopted in v1.2.",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-014",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:baseline-issue:BI-002",
+   "type": "BaselineIssue",
+   "name": "BI-002 Registry status code outside the record lifecycle",
+   "baselineStatus": "CONDITIONALLY_BASELINED",
+   "classification": "INTERNAL",
+   "conflictSources": [
+    {
+     "artifact": "AIDCF-007A",
+     "artifactVersion": "1.1",
+     "location": "registries/controls/controls.csv status",
+     "value": "PROPOSED"
+    },
+    {
+     "artifact": "AIDCF-014",
+     "artifactVersion": "1.1",
+     "location": "section 11A.1",
+     "value": "DRAFT, CANDIDATE, REVIEWED, APPROVED, ACTIVE, SUSPENDED, WITHDRAWN, SUPERSEDED, RETIRED"
+    }
+   ],
+   "conflictType": "Registry status code outside the record lifecycle",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "impact": "Registry records are imported with status CANDIDATE and the original value in provenance.legacyValue.",
+   "issueCode": "BI-002",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "provisionalValue": "CANDIDATE",
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "requiresAction": [
+    "urn:aidcf:syn:action:ACT-012"
+   ],
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-014",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:baseline-issue:BI-003",
+   "type": "BaselineIssue",
+   "name": "BI-003 Gate ceilings stated as prose",
+   "baselineStatus": "CONDITIONALLY_BASELINED",
+   "classification": "INTERNAL",
+   "conflictSources": [
+    {
+     "artifact": "AIDCF-010",
+     "artifactVersion": "1.x",
+     "location": "registries/gates/critical-gates.csv failCeiling/unknownCeiling",
+     "value": "Prose ceilings with qualifiers"
+    },
+    {
+     "artifact": "AIDCF-016",
+     "artifactVersion": "1.0",
+     "location": "section 9.4",
+     "value": "One machine ceiling code per gate state"
+    }
+   ],
+   "conflictType": "Gate ceilings stated as prose",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "impact": "Machine ceilings are derived by the AIDCF-016 section 9.4 rule; the prose is kept on each Critical Gate.",
+   "issueCode": "BI-003",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "provisionalValue": "Derived ceilings (AIDCF-016 section 9.4)",
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "requiresAction": [
+    "urn:aidcf:syn:action:ACT-013"
+   ],
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-014",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:event:EVT-001",
+   "type": "Event",
+   "name": "Synthetic BMS controller firmware upgrade",
+   "affectedAssertions": [
+    "https://w3id.org/aidcf/id/control/MCF-CMP-001",
+    "https://w3id.org/aidcf/id/control/MCF-OPS-013",
+    "https://w3id.org/aidcf/id/control/MCF-SEC-005",
+    "https://w3id.org/aidcf/id/control/MCF-THM-009",
+    "https://w3id.org/aidcf/id/control/MCF-THM-010",
+    "https://w3id.org/aidcf/id/control/MCF-THM-019",
+    "urn:aidcf:syn:asset:AST-CDU-1",
+    "urn:aidcf:syn:asset:AST-CDU-2",
+    "urn:aidcf:syn:control-assessment:CA-004",
+    "urn:aidcf:syn:control-assessment:CA-005",
+    "urn:aidcf:syn:control-assessment:CA-008",
+    "urn:aidcf:syn:control-assessment:CA-011",
+    "urn:aidcf:syn:decision:AD-001",
+    "urn:aidcf:syn:fault-domain:FD-02",
+    "urn:aidcf:syn:function:RF-02",
+    "urn:aidcf:syn:function:RF-03",
+    "urn:aidcf:syn:function:RF-06",
+    "urn:aidcf:syn:gate-result:GR-CG-01",
+    "urn:aidcf:syn:gate-result:GR-CG-05",
+    "urn:aidcf:syn:gate-result:GR-CG-06",
+    "urn:aidcf:syn:gate-result:GR-CG-07",
+    "urn:aidcf:syn:gate-result:GR-CG-08",
+    "urn:aidcf:syn:gate-result:GR-CG-15",
+    "urn:aidcf:syn:outcome:SO-01",
+    "urn:aidcf:syn:outcome:SO-03",
+    "urn:aidcf:syn:safeguard:SAF-CDU-FAILOVER",
+    "urn:aidcf:syn:safeguard:SAF-LEAK",
+    "urn:aidcf:syn:system:SYS-CMP",
+    "urn:aidcf:syn:system:SYS-CTL",
+    "urn:aidcf:syn:system:SYS-THM",
+    "urn:aidcf:syn:zone:ZONE-BMS"
+   ],
+   "candidateTriggers": [
+    "urn:aidcf:syn:trigger:TRG-001"
+   ],
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveAt": "2026-10-09T13:30:00Z",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "eventSeverity": "HIGH",
+   "eventSource": "Synthetic BMS change feed",
+   "eventType": "CONFIGURATION_CHANGED",
+   "humanDisposition": "PENDING",
+   "materiality": "MATERIAL",
+   "observedAt": "2026-10-09T14:00:00Z",
+   "payload": {
+    "change": "firmware",
+    "from": "syn-4.1",
+    "to": "syn-4.2",
+    "ticket": "SYN-CHG-0042"
+   },
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "resultingDecisionEffect": "Pending human disposition; no record has been suspended (TDS-REQ-062).",
+   "reviewState": "CANDIDATE",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-014",
+   "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001",
+   "sourceArtifact": "AIDCF-015",
+   "sourceHealth": "HEALTHY",
+   "status": "CANDIDATE",
+   "subjectRef": "urn:aidcf:syn:asset:AST-BMS-CTRL",
+   "triggersReassessment": [
+    "https://w3id.org/aidcf/id/control/MCF-CMP-001",
+    "https://w3id.org/aidcf/id/control/MCF-THM-009",
+    "https://w3id.org/aidcf/id/control/MCF-THM-010",
+    "https://w3id.org/aidcf/id/control/MCF-THM-019",
+    "urn:aidcf:syn:control-assessment:CA-004",
+    "urn:aidcf:syn:control-assessment:CA-005",
+    "urn:aidcf:syn:control-assessment:CA-008",
+    "urn:aidcf:syn:control-assessment:CA-011",
+    "urn:aidcf:syn:decision:AD-001",
+    "urn:aidcf:syn:gate-result:GR-CG-01",
+    "urn:aidcf:syn:gate-result:GR-CG-05",
+    "urn:aidcf:syn:gate-result:GR-CG-06",
+    "urn:aidcf:syn:gate-result:GR-CG-07",
+    "urn:aidcf:syn:gate-result:GR-CG-08",
+    "urn:aidcf:syn:gate-result:GR-CG-15",
+    "urn:aidcf:syn:outcome:SO-01",
+    "urn:aidcf:syn:outcome:SO-03"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:migration:MIG-001",
+   "type": "MigrationRecord",
+   "name": "AIDCF-015 v1.1 to v1.2 control migration",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "description": "Recorded from migration/v1.1-to-v1.2-control-migration-matrix.csv (AIDCF-007A-AMD-001).",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "fallbackApplied": false,
+   "mappings": [
+    {
+     "fromId": "PILOT-CAP-001",
+     "toId": "MCF-CAP-001",
+     "changeType": "IDENTIFIER",
+     "rationale": "Capability register and architecture linkage"
+    },
+    {
+     "fromId": "PILOT-DEP-001",
+     "toId": "MCF-DEP-001",
+     "changeType": "IDENTIFIER",
+     "rationale": "Asset-to-function and dependency mapping"
+    },
+    {
+     "fromId": "PILOT-POW-001",
+     "toId": "MCF-POW-001",
+     "changeType": "IDENTIFIER",
+     "rationale": "Utility capacity and power-path definition"
+    },
+    {
+     "fromId": "PILOT-THM-001",
+     "toId": "MCF-THM-009",
+     "changeType": "IDENTIFIER",
+     "rationale": "Direct-to-chip liquid-cooling architecture"
+    },
+    {
+     "fromId": "PILOT-CMP-001",
+     "toId": "MCF-CMP-001",
+     "changeType": "IDENTIFIER",
+     "rationale": "Accelerator architecture baseline"
+    },
+    {
+     "fromId": "PILOT-STO-001",
+     "toId": "MCF-STO-017",
+     "changeType": "IDENTIFIER",
+     "rationale": "Checkpoint durability"
+    },
+    {
+     "fromId": "PILOT-NET-001",
+     "toId": "MCF-NET-001",
+     "changeType": "IDENTIFIER",
+     "rationale": "Scale-out fabric topology"
+    },
+    {
+     "fromId": "PILOT-OPS-001",
+     "toId": "MCF-OPS-013",
+     "changeType": "IDENTIFIER",
+     "rationale": "Alarm and incident response"
+    },
+    {
+     "fromId": "PILOT-RES-001",
+     "toId": "MCF-RES-017",
+     "changeType": "IDENTIFIER",
+     "rationale": "Integrated scenario testing"
+    },
+    {
+     "fromId": "PILOT-SUP-001",
+     "toId": "MCF-SUP-021",
+     "changeType": "IDENTIFIER",
+     "rationale": "Critical spares and lead-time readiness"
+    },
+    {
+     "fromId": "PILOT-SEC-001",
+     "toId": "MCF-SEC-005",
+     "changeType": "IDENTIFIER",
+     "rationale": "BMS and EPMS control-plane security"
+    },
+    {
+     "fromId": "PILOT-EVA-001",
+     "toId": "MCF-EVA-017",
+     "changeType": "IDENTIFIER",
+     "rationale": "Gate applicability and evidence"
+    }
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-014",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRelease": "AIDCF-015 v1.1",
+   "status": "REVIEWED",
+   "targetRelease": "AIDCF-015 v1.2",
+   "unmappedValues": [],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:migration:MIG-002",
+   "type": "MigrationRecord",
+   "name": "AIDCF-015 v1.2 to v1.3 migration",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "fallbackApplied": false,
+   "mappings": [
+    {
+     "fromId": "urn:aidcf:assessment:CA-001",
+     "toId": "urn:aidcf:syn:control-assessment:CA-001",
+     "changeType": "IDENTIFIER",
+     "rationale": "Synthetic record namespace urn:aidcf:syn (AIDCF-016 section 6)."
+    },
+    {
+     "fromId": "urn:aidcf:assessment:CA-002",
+     "toId": "urn:aidcf:syn:control-assessment:CA-002",
+     "changeType": "IDENTIFIER",
+     "rationale": "Synthetic record namespace urn:aidcf:syn (AIDCF-016 section 6)."
+    },
+    {
+     "fromId": "urn:aidcf:assessment:CA-003",
+     "toId": "urn:aidcf:syn:control-assessment:CA-003",
+     "changeType": "IDENTIFIER",
+     "rationale": "Synthetic record namespace urn:aidcf:syn (AIDCF-016 section 6)."
+    },
+    {
+     "fromId": "urn:aidcf:assessment:CA-004",
+     "toId": "urn:aidcf:syn:control-assessment:CA-004",
+     "changeType": "IDENTIFIER",
+     "rationale": "Synthetic record namespace urn:aidcf:syn (AIDCF-016 section 6)."
+    },
+    {
+     "fromId": "urn:aidcf:assessment:CA-005",
+     "toId": "urn:aidcf:syn:control-assessment:CA-005",
+     "changeType": "IDENTIFIER",
+     "rationale": "Synthetic record namespace urn:aidcf:syn (AIDCF-016 section 6)."
+    },
+    {
+     "fromId": "urn:aidcf:assessment:CA-006",
+     "toId": "urn:aidcf:syn:control-assessment:CA-006",
+     "changeType": "IDENTIFIER",
+     "rationale": "Synthetic record namespace urn:aidcf:syn (AIDCF-016 section 6)."
+    },
+    {
+     "fromId": "urn:aidcf:assessment:CA-007",
+     "toId": "urn:aidcf:syn:control-assessment:CA-007",
+     "changeType": "IDENTIFIER",
+     "rationale": "Synthetic record namespace urn:aidcf:syn (AIDCF-016 section 6)."
+    },
+    {
+     "fromId": "urn:aidcf:assessment:CA-008",
+     "toId": "urn:aidcf:syn:control-assessment:CA-008",
+     "changeType": "IDENTIFIER",
+     "rationale": "Synthetic record namespace urn:aidcf:syn (AIDCF-016 section 6)."
+    },
+    {
+     "fromId": "urn:aidcf:assessment:CA-009",
+     "toId": "urn:aidcf:syn:control-assessment:CA-009",
+     "changeType": "IDENTIFIER",
+     "rationale": "Synthetic record namespace urn:aidcf:syn (AIDCF-016 section 6)."
+    },
+    {
+     "fromId": "urn:aidcf:assessment:CA-010",
+     "toId": "urn:aidcf:syn:control-assessment:CA-010",
+     "changeType": "IDENTIFIER",
+     "rationale": "Synthetic record namespace urn:aidcf:syn (AIDCF-016 section 6)."
+    },
+    {
+     "fromId": "urn:aidcf:assessment:CA-011",
+     "toId": "urn:aidcf:syn:control-assessment:CA-011",
+     "changeType": "IDENTIFIER",
+     "rationale": "Synthetic record namespace urn:aidcf:syn (AIDCF-016 section 6)."
+    },
+    {
+     "fromId": "urn:aidcf:assessment:CA-012",
+     "toId": "urn:aidcf:syn:control-assessment:CA-012",
+     "changeType": "IDENTIFIER",
+     "rationale": "Synthetic record namespace urn:aidcf:syn (AIDCF-016 section 6)."
+    },
+    {
+     "fromId": "urn:aidcf:assessment:CA-009#result=PARTIAL",
+     "toId": "urn:aidcf:syn:control-assessment:CA-009#result=UNKNOWN",
+     "changeType": "RESULT_REINTERPRETATION",
+     "rationale": "Evidence below the S3 floor and no E4 class: SPEC 5.12 requires UNKNOWN, not PARTIAL."
+    },
+    {
+     "fromId": "urn:aidcf:gate:CG-01#state=PASS",
+     "toId": "urn:aidcf:syn:gate-result:GR-CG-01#state=UNKNOWN",
+     "changeType": "RESULT_REINTERPRETATION",
+     "rationale": "Recomputed by the SPEC 6.2 roll-up with registry gate-mappings.csv roles over the 12 assessed controls; unassessed CRITICAL controls are NOT_ASSESSED."
+    },
+    {
+     "fromId": "urn:aidcf:gate:CG-02#state=PASS",
+     "toId": "urn:aidcf:syn:gate-result:GR-CG-02#state=NOT_ASSESSED",
+     "changeType": "RESULT_REINTERPRETATION",
+     "rationale": "Recomputed by the SPEC 6.2 roll-up with registry gate-mappings.csv roles over the 12 assessed controls; unassessed CRITICAL controls are NOT_ASSESSED."
+    },
+    {
+     "fromId": "urn:aidcf:gate:CG-03#state=PASS",
+     "toId": "urn:aidcf:syn:gate-result:GR-CG-03#state=FAIL",
+     "changeType": "RESULT_REINTERPRETATION",
+     "rationale": "Recomputed by the SPEC 6.2 roll-up with registry gate-mappings.csv roles over the 12 assessed controls; unassessed CRITICAL controls are NOT_ASSESSED."
+    },
+    {
+     "fromId": "urn:aidcf:gate:CG-04#state=APPROVED_NA",
+     "toId": "urn:aidcf:syn:gate-result:GR-CG-04#state=NOT_ASSESSED",
+     "changeType": "RESULT_REINTERPRETATION",
+     "rationale": "Recomputed by the SPEC 6.2 roll-up with registry gate-mappings.csv roles over the 12 assessed controls; unassessed CRITICAL controls are NOT_ASSESSED."
+    },
+    {
+     "fromId": "urn:aidcf:gate:CG-05#state=PASS",
+     "toId": "urn:aidcf:syn:gate-result:GR-CG-05#state=UNKNOWN",
+     "changeType": "RESULT_REINTERPRETATION",
+     "rationale": "Recomputed by the SPEC 6.2 roll-up with registry gate-mappings.csv roles over the 12 assessed controls; unassessed CRITICAL controls are NOT_ASSESSED."
+    },
+    {
+     "fromId": "urn:aidcf:gate:CG-06#state=PASS",
+     "toId": "urn:aidcf:syn:gate-result:GR-CG-06#state=UNKNOWN",
+     "changeType": "RESULT_REINTERPRETATION",
+     "rationale": "Recomputed by the SPEC 6.2 roll-up with registry gate-mappings.csv roles over the 12 assessed controls; unassessed CRITICAL controls are NOT_ASSESSED."
+    },
+    {
+     "fromId": "urn:aidcf:gate:CG-07#state=PASS",
+     "toId": "urn:aidcf:syn:gate-result:GR-CG-07#state=FAIL",
+     "changeType": "RESULT_REINTERPRETATION",
+     "rationale": "Recomputed by the SPEC 6.2 roll-up with registry gate-mappings.csv roles over the 12 assessed controls; unassessed CRITICAL controls are NOT_ASSESSED."
+    },
+    {
+     "fromId": "urn:aidcf:gate:CG-08#state=PASS",
+     "toId": "urn:aidcf:syn:gate-result:GR-CG-08#state=UNKNOWN",
+     "changeType": "RESULT_REINTERPRETATION",
+     "rationale": "Recomputed by the SPEC 6.2 roll-up with registry gate-mappings.csv roles over the 12 assessed controls; unassessed CRITICAL controls are NOT_ASSESSED."
+    },
+    {
+     "fromId": "urn:aidcf:gate:CG-09#state=UNKNOWN",
+     "toId": "urn:aidcf:syn:gate-result:GR-CG-09#state=NOT_ASSESSED",
+     "changeType": "RESULT_REINTERPRETATION",
+     "rationale": "Recomputed by the SPEC 6.2 roll-up with registry gate-mappings.csv roles over the 12 assessed controls; unassessed CRITICAL controls are NOT_ASSESSED."
+    },
+    {
+     "fromId": "urn:aidcf:gate:CG-10#state=UNKNOWN",
+     "toId": "urn:aidcf:syn:gate-result:GR-CG-10#state=UNKNOWN",
+     "changeType": "RESULT_REINTERPRETATION",
+     "rationale": "Recomputed by the SPEC 6.2 roll-up with registry gate-mappings.csv roles over the 12 assessed controls; unassessed CRITICAL controls are NOT_ASSESSED."
+    },
+    {
+     "fromId": "urn:aidcf:gate:CG-11#state=PASS",
+     "toId": "urn:aidcf:syn:gate-result:GR-CG-11#state=NOT_ASSESSED",
+     "changeType": "RESULT_REINTERPRETATION",
+     "rationale": "Recomputed by the SPEC 6.2 roll-up with registry gate-mappings.csv roles over the 12 assessed controls; unassessed CRITICAL controls are NOT_ASSESSED."
+    },
+    {
+     "fromId": "urn:aidcf:gate:CG-12#state=PASS",
+     "toId": "urn:aidcf:syn:gate-result:GR-CG-12#state=NOT_ASSESSED",
+     "changeType": "RESULT_REINTERPRETATION",
+     "rationale": "Recomputed by the SPEC 6.2 roll-up with registry gate-mappings.csv roles over the 12 assessed controls; unassessed CRITICAL controls are NOT_ASSESSED."
+    },
+    {
+     "fromId": "urn:aidcf:gate:CG-13#state=PASS",
+     "toId": "urn:aidcf:syn:gate-result:GR-CG-13#state=NOT_ASSESSED",
+     "changeType": "RESULT_REINTERPRETATION",
+     "rationale": "Recomputed by the SPEC 6.2 roll-up with registry gate-mappings.csv roles over the 12 assessed controls; unassessed CRITICAL controls are NOT_ASSESSED."
+    },
+    {
+     "fromId": "urn:aidcf:gate:CG-14#state=PASS",
+     "toId": "urn:aidcf:syn:gate-result:GR-CG-14#state=NOT_ASSESSED",
+     "changeType": "RESULT_REINTERPRETATION",
+     "rationale": "Recomputed by the SPEC 6.2 roll-up with registry gate-mappings.csv roles over the 12 assessed controls; unassessed CRITICAL controls are NOT_ASSESSED."
+    },
+    {
+     "fromId": "urn:aidcf:gate:CG-15#state=PASS",
+     "toId": "urn:aidcf:syn:gate-result:GR-CG-15#state=FAIL",
+     "changeType": "RESULT_REINTERPRETATION",
+     "rationale": "Recomputed by the SPEC 6.2 roll-up with registry gate-mappings.csv roles over the 12 assessed controls; unassessed CRITICAL controls are NOT_ASSESSED."
+    },
+    {
+     "fromId": "urn:aidcf:decision:DEC-001-v1.2#state=LIMITED",
+     "toId": "urn:aidcf:syn:decision:AD-001#state=NOT_ASSURED",
+     "changeType": "RESULT_REINTERPRETATION",
+     "rationale": "Decision ceiling recomputed from gate ceilings and UNKNOWN severities (AIDCF-016 section 9.5)."
+    },
+    {
+     "fromId": "evidenceClass=CONFIGURATION (EV-001)",
+     "toId": "evidenceClass=E1",
+     "changeType": "VOCABULARY",
+     "rationale": "v1.2 used words; v1.3 uses registries/vocabularies/evidence-classes.csv codes (legacy value kept in provenance)."
+    },
+    {
+     "fromId": "evidenceClass=OPERATIONAL (EV-002)",
+     "toId": "evidenceClass=E1",
+     "changeType": "VOCABULARY",
+     "rationale": "v1.2 used words; v1.3 uses registries/vocabularies/evidence-classes.csv codes (legacy value kept in provenance)."
+    },
+    {
+     "fromId": "evidenceClass=VALIDATION (EV-003)",
+     "toId": "evidenceClass=E1",
+     "changeType": "VOCABULARY",
+     "rationale": "v1.2 used words; v1.3 uses registries/vocabularies/evidence-classes.csv codes (legacy value kept in provenance)."
+    },
+    {
+     "fromId": "evidenceClass=DOCUMENTARY (EV-004)",
+     "toId": "evidenceClass=E1",
+     "changeType": "VOCABULARY",
+     "rationale": "v1.2 used words; v1.3 uses registries/vocabularies/evidence-classes.csv codes (legacy value kept in provenance)."
+    },
+    {
+     "fromId": "evidenceClass=CONFIGURATION (EV-005)",
+     "toId": "evidenceClass=E1",
+     "changeType": "VOCABULARY",
+     "rationale": "v1.2 used words; v1.3 uses registries/vocabularies/evidence-classes.csv codes (legacy value kept in provenance)."
+    },
+    {
+     "fromId": "evidenceClass=OPERATIONAL (EV-006)",
+     "toId": "evidenceClass=E2",
+     "changeType": "VOCABULARY",
+     "rationale": "v1.2 used words; v1.3 uses registries/vocabularies/evidence-classes.csv codes (legacy value kept in provenance)."
+    },
+    {
+     "fromId": "evidenceClass=VALIDATION (EV-007)",
+     "toId": "evidenceClass=E1",
+     "changeType": "VOCABULARY",
+     "rationale": "v1.2 used words; v1.3 uses registries/vocabularies/evidence-classes.csv codes (legacy value kept in provenance)."
+    },
+    {
+     "fromId": "evidenceClass=DOCUMENTARY (EV-008)",
+     "toId": "evidenceClass=E2",
+     "changeType": "VOCABULARY",
+     "rationale": "v1.2 used words; v1.3 uses registries/vocabularies/evidence-classes.csv codes (legacy value kept in provenance)."
+    },
+    {
+     "fromId": "evidenceClass=CONFIGURATION (EV-009)",
+     "toId": "evidenceClass=E3",
+     "changeType": "VOCABULARY",
+     "rationale": "v1.2 used words; v1.3 uses registries/vocabularies/evidence-classes.csv codes (legacy value kept in provenance)."
+    },
+    {
+     "fromId": "evidenceClass=OPERATIONAL (EV-010)",
+     "toId": "evidenceClass=E1",
+     "changeType": "VOCABULARY",
+     "rationale": "v1.2 used words; v1.3 uses registries/vocabularies/evidence-classes.csv codes (legacy value kept in provenance)."
+    },
+    {
+     "fromId": "evidenceClass=VALIDATION (EV-011)",
+     "toId": "evidenceClass=E1",
+     "changeType": "VOCABULARY",
+     "rationale": "v1.2 used words; v1.3 uses registries/vocabularies/evidence-classes.csv codes (legacy value kept in provenance)."
+    },
+    {
+     "fromId": "evidenceClass=DOCUMENTARY (EV-012)",
+     "toId": "evidenceClass=E1",
+     "changeType": "VOCABULARY",
+     "rationale": "v1.2 used words; v1.3 uses registries/vocabularies/evidence-classes.csv codes (legacy value kept in provenance)."
+    }
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-014",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRelease": "AIDCF-015 v1.2",
+   "status": "REVIEWED",
+   "targetRelease": "AIDCF-015 v1.3",
+   "unmappedValues": [
+    "v1.2 synthetic gate-to-control lists (replaced by registry gate-mappings.csv roles)"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:trigger:TRG-001",
+   "type": "ReassessmentTrigger",
+   "name": "Synthetic OT configuration-change trigger",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "eventTypes": [
+    "CONFIGURATION_CHANGED"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-011",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "triggerRule": "Any BMS or EPMS controller firmware or logic change reassesses OT security and alarm controls.",
+   "triggerState": "CANDIDATE",
+   "triggersReassessment": [
+    "https://w3id.org/aidcf/id/control/MCF-SEC-005",
+    "https://w3id.org/aidcf/id/control/MCF-OPS-013"
+   ],
+   "version": "1.0"
+  }
+ ]
+}

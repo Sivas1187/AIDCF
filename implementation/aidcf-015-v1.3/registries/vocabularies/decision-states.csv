@@ -1,0 +1,6 @@
+code,meaning
+REASONABLY_ASSURED,Sufficient appropriate evidence supports the bounded top claim; all applicable gates PASS or APPROVED_NA; no undisposed US3 or higher UNKNOWN
+CONDITIONALLY_ASSURED,"Bounded top claim supported subject to named, owned, time-bound conditions; no gate FAIL or UNKNOWN"
+LIMITED,"Some sub-claims supported; material limitations, a gate UNKNOWN, or a gate FAIL whose AIDCF-010 ceiling is LIMITED prevent a broader conclusion"
+NOT_ASSURED,"Evidence demonstrates that the top claim, or a controlling gate, is not met"
+INCONCLUSIVE,"Evidence, method, boundary or definition cannot support any determination"

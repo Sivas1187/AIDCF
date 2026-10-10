@@ -1,0 +1,11 @@
+code,name,definition
+U1,Missing,Expected evidence not produced
+U2,Inaccessible,Evidence exists but access is restricted or unavailable
+U3,Stale,Evidence does not represent current state
+U4,Conflicting,Material sources disagree
+U5,Coverage gap,"Required population, state, period or scenario not represented"
+U6,Source unverified,Origin/authority cannot be established
+U7,Integrity uncertain,Alteration or custody cannot be ruled out
+U8,Method uncertain,Collection/test method insufficiently defined
+U9,Interpretation unresolved,Competent reviewers cannot yet determine meaning
+U10,Dependency unknown,Evidence cannot establish a material external/shared dependency

@@ -1,0 +1,19 @@
+{
+ "fixtureId": "I-SHA-011",
+ "layer": "SHACL",
+ "expect": "FAIL",
+ "expectedRule": "MDM-R10",
+ "expectedText": "asserted edge has no relationship record",
+ "description": "Asserted edge without a relationship record.",
+ "patch": [
+  {
+   "op": "append",
+   "id": "urn:aidcf:syn:system:SYS-STO",
+   "field": "dependsOn",
+   "value": "urn:aidcf:syn:system:SYS-CMP"
+  }
+ ],
+ "shapes": [
+  "EdgeRecordShape"
+ ]
+}

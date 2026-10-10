@@ -1,0 +1,6 @@
+code,label,definition,semanticOwner,version,status,replacedBy,severity,gateEffect
+CRITICAL_FINDING,Critical finding,Deficiency that causes a gate FAIL or defeats a Service Outcome tolerance.,AIDCF-009,1.3,CANDIDATE,,,A deficiency on a CRITICAL control or gate criterion: produces gate FAIL through the roll-up rule.
+IMPROVEMENT,Improvement opportunity,Criteria met; a practice could be strengthened.,AIDCF-009,1.3,CANDIDATE,,,No effect unless the control result changes.
+OBSERVATION,Observation,Condition noted without a criterion being unmet; no result effect.,AIDCF-009,1.3,CANDIDATE,,,No result effect.
+SIGNIFICANT_WEAKNESS,Significant weakness,"Control result NONCONFORMING, or a deficiency in a SUPPORTING-mapped control requiring gate-level evaluation.",AIDCF-009,1.3,CANDIDATE,,,"A NONCONFORMING result on a control relevant to a Service Outcome, or a SUPPORTING-control deficiency that required gate-level evaluation. Decision ≤ CONDITIONALLY_ASSURED for affected outcomes with a named, owned, time-bound condition."
+WEAKNESS,Weakness,A criterion partly unmet (control result PARTIAL) without gate effect.,AIDCF-009,1.3,CANDIDATE,,,Reflected in the control result (PARTIAL or NONCONFORMING on a non-critical control); listed in the decision record; no ceiling of its own.

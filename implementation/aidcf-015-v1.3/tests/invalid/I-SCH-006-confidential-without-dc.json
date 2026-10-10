@@ -1,0 +1,51 @@
+{
+ "fixtureId": "I-SCH-006",
+ "layer": "SCHEMA",
+ "expect": "FAIL",
+ "expectedText": "'distributionControlRef' is a required property",
+ "description": "A CONFIDENTIAL record must carry a DistributionControl (AIDCF-014 BR-012).",
+ "record": {
+  "id": "urn:aidcf:syn:finding:F-004",
+  "type": "Finding",
+  "name": "F-004 MCF-SUP-021",
+  "cause": "Standing vendor access retained for convenience.",
+  "classification": "CONFIDENTIAL",
+  "condition": "Vendor support accounts on the remote-access conduit are not time-bound.",
+  "consequence": "Third-party access is not revoked in a timely way.",
+  "createdAt": "2026-10-10T00:00:00Z",
+  "createdBy": "urn:aidcf:syn:party:BUILDER",
+  "criterionRef": "MCF-SUP-021",
+  "effectiveFrom": "2026-10-10T00:00:00Z",
+  "evidencedBy": [
+   "urn:aidcf:syn:evidence:EV-010"
+  ],
+  "findingClass": "SIGNIFICANT_WEAKNESS",
+  "findingStatus": "OPEN",
+  "gateEffect": "CRITICAL input to CG-15 is PARTIAL: CG-15 FAIL.",
+  "owner": "urn:aidcf:syn:party:OT-SEC",
+  "provenance": {
+   "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+   "method": "SYNTHETIC_AUTHORING",
+   "synthetic": true,
+   "transformationVersion": "1.3"
+  },
+  "releaseRef": "AIDCF-REL-2026.10.1",
+  "reportedIn": [
+   "urn:aidcf:syn:report:RPT-001"
+  ],
+  "requiresAction": [
+   "urn:aidcf:syn:action:ACT-004"
+  ],
+  "reviewState": "SUPPORTED",
+  "schemaVersion": "1.3",
+  "scope": {
+   "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+   "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+  },
+  "scoreEffect": "Scored PARTIAL (50).",
+  "semanticOwner": "AIDCF-009",
+  "sourceArtifact": "AIDCF-015",
+  "status": "REVIEWED",
+  "version": "1.0"
+ }
+}

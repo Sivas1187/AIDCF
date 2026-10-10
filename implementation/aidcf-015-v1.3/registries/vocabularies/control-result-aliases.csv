@@ -1,0 +1,15 @@
+legacyCode,canonicalCode,condition
+NOT_IMPLEMENTED,NONCONFORMING,always
+NOT IMPLEMENTED,NONCONFORMING,always
+INEFFECTIVE,NONCONFORMING,always
+IMPLEMENTED,CONFORMING,valid only for DESIGN or IMPLEMENTATION claims; for higher claim types map to UNKNOWN pending reassessment
+OPERATING_EFFECTIVELY,CONFORMING,for OPERATION or EFFECTIVENESS claims
+OPERATING EFFECTIVELY,CONFORMING,for OPERATION or EFFECTIVENESS claims
+STRONGLY_EFFECTIVE,CONFORMING,for OPERATION or EFFECTIVENESS claims
+STRONGLY EFFECTIVE,CONFORMING,for OPERATION or EFFECTIVENESS claims
+N/A,NOT_APPLICABLE,only with approved rationale and approver; otherwise NOT_ASSESSED
+NA,NOT_APPLICABLE,only with approved rationale and approver; otherwise NOT_ASSESSED
+SUSPENDED,UNKNOWN,set lifecycle state SUSPENDED on the ControlAssessment record; result reverts to UNKNOWN
+NOT ASSESSED,NOT_ASSESSED,always
+Not Assessed,NOT_ASSESSED,always
+PARTIAL,PARTIAL,score value changes from legacy 25 to 50

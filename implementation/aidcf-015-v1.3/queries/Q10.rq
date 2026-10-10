@@ -1,0 +1,11 @@
+# Q10 AIDCF-014 section 19 Q10: what succeeds the superseded and migrated records, and by which migration?
+# Expected result basis: CAP-CAP-02 SUPERSEDES CAP-CAP-01; AD-001 MIGRATED_FROM the v1.2 decision by MIG-002.
+PREFIX aidcf: <https://w3id.org/aidcf/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?predecessor ?successor ?migration WHERE {
+  { ?n aidcf:supersedes ?o . BIND ("" AS ?migration) }
+  UNION
+  { ?r a aidcf:RelationshipRecord ; aidcf:relationshipType "MIGRATED_FROM" ; aidcf:sourceRef ?n ; aidcf:targetRef ?o ; aidcf:migrationRef ?m .
+    ?n a aidcf:AssuranceDecision . BIND (REPLACE(STR(?m), "^.*[:/]", "") AS ?migration) }
+  BIND (REPLACE(STR(?o), "^.*[:/]", "") AS ?predecessor) BIND (REPLACE(STR(?n), "^.*[:/]", "") AS ?successor)
+} ORDER BY ?predecessor

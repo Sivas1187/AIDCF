@@ -1,0 +1,10 @@
+code,definition
+NORMAL,Approved architecture operates within declared envelope; no material planned impairment
+DEGRADED,"One or more functions, safeguards, paths or reserves are impaired while some capability remains"
+MAINTENANCE,"A planned intervention changes availability, configuration, staffing or safeguards"
+EMERGENCY,Exceptional condition requiring urgent protective action
+RECOVERY,Controlled restoration and validation after disruption
+TRANSITION,"Movement between architectures, states, locations or control regimes"
+SHUTDOWN,Intentional cessation with controlled residual dependencies
+FAILED,Required function is not delivered
+UNKNOWN,Current operating state cannot be determined

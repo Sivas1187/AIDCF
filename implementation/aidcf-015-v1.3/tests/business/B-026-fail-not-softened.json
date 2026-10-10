@@ -1,0 +1,40 @@
+{
+ "fixtureId": "B-026",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "MDM-R06",
+ "expectedText": "differs from computed ceiling NOT_ASSURED",
+ "description": "Decision, recommendation, statement and report set to INCONCLUSIVE: the US5 U-003 and the CG-01 UNKNOWN (INCONCLUSIVE) do not raise the CG-07 FAIL ceiling (NOT_ASSURED); the computed ceiling stays NOT_ASSURED (AIDCF-010 order, no tie-break).",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:recommendation:DR-001",
+   "field": "decisionCeiling",
+   "value": "INCONCLUSIVE"
+  },
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:recommendation:DR-001",
+   "field": "recommendedState",
+   "value": "INCONCLUSIVE"
+  },
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:decision:AD-001",
+   "field": "decisionState",
+   "value": "INCONCLUSIVE"
+  },
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:statement:AS-001",
+   "field": "decisionState",
+   "value": "INCONCLUSIVE"
+  },
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:report:RPT-001",
+   "field": "decisionState",
+   "value": "INCONCLUSIVE"
+  }
+ ]
+}

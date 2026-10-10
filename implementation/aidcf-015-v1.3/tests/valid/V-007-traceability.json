@@ -1,0 +1,7 @@
+{
+ "fixtureId": "V-007",
+ "layer": "TRACEABILITY",
+ "expect": "PASS",
+ "description": "The unpatched dataset satisfies TR-01 to TR-18.",
+ "patch": []
+}

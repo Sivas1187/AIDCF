@@ -1,0 +1,250 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://w3id.org/aidcf/schema/1.3/release-manifest.schema.json",
+  "title": "AIDCF Release Manifest (ReleaseManifest)",
+  "description": "Signed, immutable bill of materials pinning every artifact, registry, vocabulary, schema and ontology version of one release.",
+  "x-aidcf-class": "https://w3id.org/aidcf/ontology#ReleaseManifest",
+  "x-aidcf-semantic-owner": "AIDCF-014",
+  "x-aidcf-registration": "canonical",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "semanticOwner",
+    "schemaVersion",
+    "version",
+    "status",
+    "releaseRef",
+    "sourceArtifact",
+    "name",
+    "effectiveFrom",
+    "createdAt",
+    "createdBy",
+    "classification",
+    "provenance",
+    "releaseId",
+    "releaseStatus",
+    "artifactManifest",
+    "registryVersions",
+    "vocabularyVersions",
+    "schemaVersions",
+    "approvedCardinality",
+    "knownIssues",
+    "knownIssuesFile",
+    "migrationSet",
+    "testSuite",
+    "approvals",
+    "integrity",
+    "excludedPaths"
+  ],
+  "properties": {
+    "@context": {
+      "$ref": "common-envelope.schema.json#/properties/@context"
+    },
+    "id": {
+      "$ref": "common-envelope.schema.json#/properties/id"
+    },
+    "type": {
+      "const": "ReleaseManifest"
+    },
+    "semanticOwner": {
+      "$ref": "common-envelope.schema.json#/properties/semanticOwner"
+    },
+    "schemaVersion": {
+      "$ref": "common-envelope.schema.json#/properties/schemaVersion"
+    },
+    "version": {
+      "$ref": "common-envelope.schema.json#/properties/version"
+    },
+    "status": {
+      "$ref": "common-envelope.schema.json#/properties/status"
+    },
+    "releaseRef": {
+      "$ref": "common-envelope.schema.json#/properties/releaseRef"
+    },
+    "sourceArtifact": {
+      "$ref": "common-envelope.schema.json#/properties/sourceArtifact"
+    },
+    "name": {
+      "$ref": "common-envelope.schema.json#/properties/name"
+    },
+    "effectiveFrom": {
+      "$ref": "common-envelope.schema.json#/properties/effectiveFrom"
+    },
+    "createdAt": {
+      "$ref": "common-envelope.schema.json#/properties/createdAt"
+    },
+    "createdBy": {
+      "$ref": "common-envelope.schema.json#/properties/createdBy"
+    },
+    "classification": {
+      "$ref": "common-envelope.schema.json#/properties/classification"
+    },
+    "provenance": {
+      "$ref": "common-envelope.schema.json#/properties/provenance"
+    },
+    "sourceRecord": {
+      "$ref": "common-envelope.schema.json#/properties/sourceRecord"
+    },
+    "description": {
+      "$ref": "common-envelope.schema.json#/properties/description"
+    },
+    "scope": {
+      "$ref": "common-envelope.schema.json#/properties/scope"
+    },
+    "effectiveTo": {
+      "$ref": "common-envelope.schema.json#/properties/effectiveTo"
+    },
+    "modifiedAt": {
+      "$ref": "common-envelope.schema.json#/properties/modifiedAt"
+    },
+    "modifiedBy": {
+      "$ref": "common-envelope.schema.json#/properties/modifiedBy"
+    },
+    "distributionControlRef": {
+      "$ref": "common-envelope.schema.json#/properties/distributionControlRef"
+    },
+    "reviewState": {
+      "$ref": "common-envelope.schema.json#/properties/reviewState"
+    },
+    "supersedes": {
+      "$ref": "common-envelope.schema.json#/properties/supersedes"
+    },
+    "externalIdentifiers": {
+      "$ref": "common-envelope.schema.json#/properties/externalIdentifiers"
+    },
+    "extensions": {
+      "$ref": "common-envelope.schema.json#/properties/extensions"
+    },
+    "nullReasons": {
+      "$ref": "common-envelope.schema.json#/properties/nullReasons"
+    },
+    "hasUnknown": {
+      "$ref": "common-envelope.schema.json#/properties/hasUnknown"
+    },
+    "reviewedBy": {
+      "$ref": "common-envelope.schema.json#/properties/reviewedBy"
+    },
+    "migratedFrom": {
+      "$ref": "common-envelope.schema.json#/properties/migratedFrom"
+    },
+    "integrationHandoff": {
+      "$ref": "common-envelope.schema.json#/properties/integrationHandoff"
+    },
+    "governedBy": {
+      "$ref": "common-envelope.schema.json#/properties/governedBy"
+    },
+    "releaseId": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^AIDCF-REL-[0-9]{4}\\.(0[1-9]|1[0-2])\\.[1-9][0-9]*$"
+    },
+    "releaseStatus": {
+      "$ref": "definitions.schema.json#/$defs/code-RecordLifecycle"
+    },
+    "artifactManifest": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/obj-ManifestEntry"
+      },
+      "minItems": 1
+    },
+    "registryVersions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/obj-VersionEntry"
+      }
+    },
+    "vocabularyVersions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/obj-VersionEntry"
+      }
+    },
+    "schemaVersions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/obj-VersionEntry"
+      }
+    },
+    "approvedCardinality": {
+      "type": "string",
+      "minLength": 1
+    },
+    "knownIssues": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/iri"
+      }
+    },
+    "knownIssuesFile": {
+      "type": "string",
+      "minLength": 1
+    },
+    "migrationSet": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/iri"
+      }
+    },
+    "testSuite": {
+      "$ref": "definitions.schema.json#/$defs/obj-TestSuite"
+    },
+    "approvals": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/obj-Approval"
+      },
+      "minItems": 1
+    },
+    "integrity": {
+      "$ref": "definitions.schema.json#/$defs/obj-Integrity"
+    },
+    "excludedPaths": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "supersedesRelease": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approvedBy": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/iri"
+      }
+    }
+  },
+  "if": {
+    "properties": {
+      "classification": {
+        "enum": [
+          "CLIENT_RESTRICTED",
+          "CONFIDENTIAL",
+          "HIGHLY_RESTRICTED"
+        ]
+      }
+    },
+    "required": [
+      "classification"
+    ]
+  },
+  "then": {
+    "required": [
+      "distributionControlRef"
+    ]
+  }
+}

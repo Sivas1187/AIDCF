@@ -1,0 +1,7 @@
+code,name,question,scale
+P,Provenance,"Can origin, authority and collection lineage be established?",0-5
+F,Fitness/relevance,"Does the item bear directly on the precise assertion, scope and claim type?",0-5
+C,Coverage,"Does it cover the required population, period, state and boundary?",0-5
+R,Reliability,"Is the method/source repeatable, controlled and corroborated?",0-5
+T,Timeliness/currentness,Is the item sufficiently current and representative of the present state?,0-5
+I,Integrity,Is it protected against undetected alteration and custody loss?,0-5

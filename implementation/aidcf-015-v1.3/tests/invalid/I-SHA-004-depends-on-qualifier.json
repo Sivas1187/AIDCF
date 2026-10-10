@@ -1,0 +1,15 @@
+{
+ "fixtureId": "I-SHA-004",
+ "layer": "SHACL",
+ "expect": "FAIL",
+ "expectedRule": "MDM-R10",
+ "expectedText": "lacks mandatory qualifier dependencyRef",
+ "description": "DEPENDS_ON relationship record without dependencyRef.",
+ "patch": [
+  {
+   "op": "delete",
+   "id": "urn:aidcf:syn:rel:REL-1da21ba4ffd2462f",
+   "field": "dependencyRef"
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:aidcf:schema:evidence:1.1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "version": {
+      "const": "1.1"
+    },
+    "status": {
+      "type": "string"
+    },
+    "classification": {
+      "enum": [
+        "INTERNAL",
+        "CONFIDENTIAL"
+      ]
+    },
+    "sourceArtifact": {
+      "const": "AIDCF-015"
+    },
+    "name": {
+      "type": "string"
+    },
+    "evidenceClass": {
+      "type": "string"
+    },
+    "assertionRefs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "synthetic": {
+      "const": true
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "version",
+    "status",
+    "classification",
+    "sourceArtifact",
+    "name",
+    "evidenceClass",
+    "assertionRefs",
+    "sha256",
+    "synthetic"
+  ]
+}

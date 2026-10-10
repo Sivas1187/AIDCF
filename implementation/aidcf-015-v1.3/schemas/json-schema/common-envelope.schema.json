@@ -1,0 +1,181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://w3id.org/aidcf/schema/1.3/common-envelope.schema.json",
+  "title": "AIDCF common object envelope (AIDCF-014 v1.1 section 8; AIDCF-016)",
+  "description": "Envelope carried by every AIDCF record. Concrete record schemas reference these property definitions and repeat the required list, so that each concrete schema can be closed with additionalProperties false. reviewState is required for assertion-bearing classes and scope for assessable classes; distributionControlRef is required when classification is above INTERNAL.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "semanticOwner",
+    "schemaVersion",
+    "version",
+    "status",
+    "releaseRef",
+    "sourceArtifact",
+    "name",
+    "effectiveFrom",
+    "createdAt",
+    "createdBy",
+    "classification",
+    "provenance"
+  ],
+  "properties": {
+    "@context": {
+      "description": "JSON-LD context reference when the record is serialised standalone."
+    },
+    "id": {
+      "$ref": "definitions.schema.json#/$defs/iri"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Za-z]+$"
+    },
+    "semanticOwner": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^AIDCF-(0(0[1-9]|1[0-9])A?|0(0[1-9]|1[0-9])-[A-Z]{3}|VR-[0-9]{3}|WP-[0-9]{3})$"
+    },
+    "schemaVersion": {
+      "const": "1.3"
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+    },
+    "status": {
+      "$ref": "definitions.schema.json#/$defs/code-RecordLifecycle"
+    },
+    "releaseRef": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^AIDCF-REL-[0-9]{4}\\.(0[1-9]|1[0-2])\\.[1-9][0-9]*$"
+    },
+    "sourceArtifact": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^AIDCF-(0(0[1-9]|1[0-9])A?|0(0[1-9]|1[0-9])-[A-Z]{3}|VR-[0-9]{3}|WP-[0-9]{3})$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "effectiveFrom": {
+      "$ref": "definitions.schema.json#/$defs/dateTime"
+    },
+    "createdAt": {
+      "$ref": "definitions.schema.json#/$defs/dateTime"
+    },
+    "createdBy": {
+      "$ref": "definitions.schema.json#/$defs/iri"
+    },
+    "classification": {
+      "$ref": "definitions.schema.json#/$defs/code-Classification"
+    },
+    "provenance": {
+      "$ref": "definitions.schema.json#/$defs/obj-Provenance"
+    },
+    "sourceRecord": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "$ref": "definitions.schema.json#/$defs/obj-Scope"
+    },
+    "effectiveTo": {
+      "$ref": "definitions.schema.json#/$defs/dateTime"
+    },
+    "modifiedAt": {
+      "$ref": "definitions.schema.json#/$defs/dateTime"
+    },
+    "modifiedBy": {
+      "$ref": "definitions.schema.json#/$defs/iri"
+    },
+    "distributionControlRef": {
+      "$ref": "definitions.schema.json#/$defs/iri"
+    },
+    "reviewState": {
+      "$ref": "definitions.schema.json#/$defs/code-AssertionState"
+    },
+    "supersedes": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/iri"
+      }
+    },
+    "externalIdentifiers": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/obj-ExternalIdentifier"
+      }
+    },
+    "extensions": {
+      "type": "object"
+    },
+    "nullReasons": {
+      "type": "object"
+    },
+    "hasUnknown": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/iri"
+      }
+    },
+    "reviewedBy": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/iri"
+      }
+    },
+    "migratedFrom": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/iri"
+      }
+    },
+    "integrationHandoff": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/iri"
+      }
+    },
+    "governedBy": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/iri"
+      }
+    }
+  },
+  "if": {
+    "properties": {
+      "classification": {
+        "enum": [
+          "CLIENT_RESTRICTED",
+          "CONFIDENTIAL",
+          "HIGHLY_RESTRICTED"
+        ]
+      }
+    },
+    "required": [
+      "classification"
+    ]
+  },
+  "then": {
+    "required": [
+      "distributionControlRef"
+    ]
+  }
+}

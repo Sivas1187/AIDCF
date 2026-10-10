@@ -1,0 +1,15 @@
+{
+ "fixtureId": "I-SHA-003",
+ "layer": "SHACL",
+ "expect": "FAIL",
+ "expectedRule": "TR-11",
+ "expectedText": "UNKNOWN result without",
+ "description": "UNKNOWN result without an UNKNOWN Record.",
+ "patch": [
+  {
+   "op": "delete",
+   "id": "urn:aidcf:syn:control-assessment:CA-009",
+   "field": "hasUnknown"
+  }
+ ]
+}

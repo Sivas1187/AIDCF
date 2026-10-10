@@ -1,0 +1,144 @@
+{
+ "assessed": 12,
+ "inScope": 360,
+ "assessedPercent": 3.3333,
+ "scored": 11,
+ "coveragePercent": 3.0556,
+ "meanScore": 77.2727,
+ "band": "WITHHELD",
+ "bandWithheldReason": "coverage 3.0556% below 80%; US4/US5 UNKNOWN open in scope",
+ "calculationHash": "5783596f4e5330457c0fb74dd333f2be893a49b2cccf6bcc2787fd617f980060",
+ "domains": [
+  {
+   "domainCode": "GOV",
+   "inScopeCount": 24,
+   "scoredCount": 0,
+   "coveragePercent": 0.0,
+   "band": "WITHHELD",
+   "bandWithheldReason": "coverage 0.0000% below 80%; US4/US5 UNKNOWN open in scope"
+  },
+  {
+   "domainCode": "CAP",
+   "inScopeCount": 24,
+   "scoredCount": 1,
+   "coveragePercent": 4.1667,
+   "band": "WITHHELD",
+   "meanScore": 100.0,
+   "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+  },
+  {
+   "domainCode": "DEP",
+   "inScopeCount": 24,
+   "scoredCount": 1,
+   "coveragePercent": 4.1667,
+   "band": "WITHHELD",
+   "meanScore": 50.0,
+   "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+  },
+  {
+   "domainCode": "PHY",
+   "inScopeCount": 24,
+   "scoredCount": 0,
+   "coveragePercent": 0.0,
+   "band": "WITHHELD",
+   "bandWithheldReason": "coverage 0.0000% below 80%; US4/US5 UNKNOWN open in scope"
+  },
+  {
+   "domainCode": "POW",
+   "inScopeCount": 24,
+   "scoredCount": 1,
+   "coveragePercent": 4.1667,
+   "band": "WITHHELD",
+   "meanScore": 100.0,
+   "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+  },
+  {
+   "domainCode": "THM",
+   "inScopeCount": 24,
+   "scoredCount": 1,
+   "coveragePercent": 4.1667,
+   "band": "WITHHELD",
+   "meanScore": 50.0,
+   "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+  },
+  {
+   "domainCode": "ENV",
+   "inScopeCount": 24,
+   "scoredCount": 0,
+   "coveragePercent": 0.0,
+   "band": "WITHHELD",
+   "bandWithheldReason": "coverage 0.0000% below 80%; US4/US5 UNKNOWN open in scope"
+  },
+  {
+   "domainCode": "CMP",
+   "inScopeCount": 24,
+   "scoredCount": 1,
+   "coveragePercent": 4.1667,
+   "band": "WITHHELD",
+   "meanScore": 100.0,
+   "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+  },
+  {
+   "domainCode": "STO",
+   "inScopeCount": 24,
+   "scoredCount": 1,
+   "coveragePercent": 4.1667,
+   "band": "WITHHELD",
+   "meanScore": 100.0,
+   "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+  },
+  {
+   "domainCode": "NET",
+   "inScopeCount": 24,
+   "scoredCount": 1,
+   "coveragePercent": 4.1667,
+   "band": "WITHHELD",
+   "meanScore": 100.0,
+   "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+  },
+  {
+   "domainCode": "OPS",
+   "inScopeCount": 24,
+   "scoredCount": 1,
+   "coveragePercent": 4.1667,
+   "band": "WITHHELD",
+   "meanScore": 50.0,
+   "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+  },
+  {
+   "domainCode": "RES",
+   "inScopeCount": 24,
+   "scoredCount": 0,
+   "coveragePercent": 0.0,
+   "band": "WITHHELD",
+   "bandWithheldReason": "coverage 0.0000% below 80%; US4/US5 UNKNOWN open in scope"
+  },
+  {
+   "domainCode": "SUP",
+   "inScopeCount": 24,
+   "scoredCount": 1,
+   "coveragePercent": 4.1667,
+   "band": "WITHHELD",
+   "meanScore": 50.0,
+   "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+  },
+  {
+   "domainCode": "SEC",
+   "inScopeCount": 24,
+   "scoredCount": 1,
+   "coveragePercent": 4.1667,
+   "band": "WITHHELD",
+   "meanScore": 50.0,
+   "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+  },
+  {
+   "domainCode": "EVA",
+   "inScopeCount": 24,
+   "scoredCount": 1,
+   "coveragePercent": 4.1667,
+   "band": "WITHHELD",
+   "meanScore": 100.0,
+   "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+  }
+ ]
+}

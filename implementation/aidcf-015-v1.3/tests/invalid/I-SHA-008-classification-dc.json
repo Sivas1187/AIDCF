@@ -1,0 +1,14 @@
+{
+ "fixtureId": "I-SHA-008",
+ "layer": "SHACL",
+ "expect": "FAIL",
+ "expectedRule": "BR-012",
+ "description": "CONFIDENTIAL finding without a DistributionControl.",
+ "patch": [
+  {
+   "op": "delete",
+   "id": "urn:aidcf:syn:finding:F-004",
+   "field": "distributionControlRef"
+  }
+ ]
+}

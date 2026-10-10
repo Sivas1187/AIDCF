@@ -1,0 +1,10 @@
+legacyType,canonicalType,directionRule,note
+SUPPORTS_OUTCOME,IMPLEMENTED_BY,inverse: Function IMPLEMENTED_BY System,use HAS_OUTCOME / REQUIRES_FUNCTION for outcome links
+IMPLEMENTS,IMPLEMENTED_BY,inverse: swap subject and object,
+CONSTRAINS_GATE,CONSTRAINS,same,
+LIMITS_DECISION,CONSTRAINS,same,
+PROTECTS,PROTECTED_BY,inverse: swap subject and object,
+DISPUTES,CHALLENGES,same,
+EVALUATES,ASSESSED_BY,"inverse: Control ASSESSED_BY ControlAssessment",
+TESTED_BY,EVIDENCED_BY,same,target is a TestRecord-derived EvidenceObject
+RECOVERED_BY,RECOVERS_THROUGH,same,

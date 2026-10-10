@@ -1,0 +1,17 @@
+{
+  "id": "urn:aidcf:capability:synthetic-training-001",
+  "type": "CapabilityInstance",
+  "version": "1.1",
+  "status": "APPROVED",
+  "classification": "INTERNAL",
+  "sourceArtifact": "AIDCF-015",
+  "name": "Synthetic Liquid-Cooled Distributed Training Capability",
+  "outcomes": [
+    "urn:aidcf:outcome:SO-01",
+    "urn:aidcf:outcome:SO-02",
+    "urn:aidcf:outcome:SO-03",
+    "urn:aidcf:outcome:SO-04",
+    "urn:aidcf:outcome:SO-05"
+  ],
+  "boundary": "Synthetic facility, AI platform, operations and external services"
+}

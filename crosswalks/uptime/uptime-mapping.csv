@@ -1,0 +1,91 @@
+aidcfFamilyId,aidcfFamilyName,externalRef,externalTitle,relationship,confidence,notes
+GOV-01,Governance architecture,,,NO_MATCH,MEDIUM,
+GOV-02,Accountability and responsibility,,,NO_MATCH,MEDIUM,
+GOV-03,Policy and standards management,,,NO_MATCH,MEDIUM,
+GOV-04,Risk and assurance governance,,,NO_MATCH,MEDIUM,
+GOV-05,Stakeholder and regulatory interface,,,NO_MATCH,MEDIUM,
+GOV-06,"Ethics, impartiality and competence",,,NO_MATCH,MEDIUM,
+CAP-01,Capability inventory,,,NO_MATCH,MEDIUM,
+CAP-02,Service outcome definition,Tier Standard: Topology (Tier I to Tier IV objectives),Basic capacity; Redundant capacity components; Concurrent maintainability; Fault tolerance,CONTEXT,MEDIUM,"A Tier objective describes site-infrastructure behaviour during maintenance and failure. It does not define capability Service Outcomes, performance or integrity tolerances."
+CAP-03,Criticality and materiality,Tier Standard: Topology,Tier selection,CONTEXT,LOW,Tier selection reflects business need but the standard does not define criticality criteria.
+CAP-04,Demand and growth modelling,"Tier Standard: Operational Sustainability (planning, coordination and management)","Planning, coordination and management",CONTEXT,LOW,Capacity planning is an operational-sustainability concern; demand modelling for AI loads is AIDCF-specific.
+CAP-05,Operating envelope,Tier Standard: Operational Sustainability (operating conditions),Operating conditions (load relative to design),PARTIAL,LOW,Operating the site within design load overlaps the load envelope; environmental and state-specific limits are AIDCF parameters.
+CAP-06,Capability lifecycle and change,Tier Certification of Constructed Facility (TCCF),Demonstration of constructed topology,SUPPORTS_EVIDENCE,MEDIUM,TCCF outcomes are E5 evidence that the constructed facility demonstrated the design topology at the time of certification. They do not establish current configuration or post-certification changes.
+DEP-01,Dependency discovery,,,NO_MATCH,MEDIUM,
+DEP-02,Shared and common-mode dependencies,Tier Standard: Topology (Tier III and Tier IV),Independent distribution paths; Fault tolerance and compartmentalisation,PARTIAL,MEDIUM,Path independence and compartmentalisation address shared-source and shared-route common mode for power and cooling; common controllers and human dependencies require AIDCF analysis.
+DEP-03,External providers and utilities,Tier Standard: Topology (engine-generator as primary power),Utility treated as economic alternative,PARTIAL,MEDIUM,"The Tier concept that on-site generation is the reliable source bounds utility dependency; telecom, OEM and cloud dependencies are out of scope."
+DEP-04,Concentration and substitutability,,,NO_MATCH,MEDIUM,
+DEP-05,Boundary and interface control,,,NO_MATCH,MEDIUM,
+DEP-06,Dependency monitoring and review,,,NO_MATCH,MEDIUM,
+PHY-01,Site and location resilience,Tier Standard: Operational Sustainability (site location),Site location characteristics,PARTIAL,MEDIUM,Site-location risk factors overlap site hazard assessment and adjacent risk.
+PHY-02,Building and structural integrity,,,NO_MATCH,MEDIUM,
+PHY-03,Physical zoning and segregation,Tier Standard: Topology (Tier IV compartmentalisation),Compartmentalisation of complementary systems,PARTIAL,LOW,Compartmentalisation overlaps fire and water zone intent for site infrastructure; security zoning and tenant segregation are out of scope.
+PHY-04,Access and surveillance,,,NO_MATCH,MEDIUM,
+PHY-05,Asset movement and custody,,,NO_MATCH,MEDIUM,
+PHY-06,"Fire, life safety and emergency interfaces",,,NO_MATCH,MEDIUM,
+POW-01,Utility and grid interface,Tier Standard: Topology,Electrical topology,PARTIAL,MEDIUM,Utility is not relied upon for Tier objectives; utility capacity and grid quality remain AIDCF evidence items.
+POW-02,Generation and fuel,Tier Standard: Topology; Operational Sustainability,Engine-generator capacity and on-site fuel; Operations,PARTIAL,HIGH,Engine-generator as the primary power source with on-site fuel overlaps strongly; start reliability and fuel replenishment need operational evidence.
+POW-03,UPS and energy storage,Tier Standard: Topology,Electrical topology (UPS),PARTIAL,MEDIUM,UPS redundancy within the Tier topology overlaps; battery condition and runtime derating are operational.
+POW-04,Distribution and protection,Tier Standard: Topology,Electrical distribution paths,PARTIAL,MEDIUM,Distribution path redundancy and concurrent maintainability overlap; selective coordination and earthing are engineering-study items.
+POW-05,Power quality and transient response,,,NO_MATCH,MEDIUM,
+POW-06,"Electrical monitoring, maintenance and recovery",Tier Standard: Operational Sustainability (maintenance),Maintenance,PARTIAL,LOW,Maintenance programmes overlap preventive maintenance; switching procedures and black-start are AIDCF items.
+THM-01,Thermal architecture and capacity,Tier Standard: Topology,Mechanical topology; Continuous cooling (Tier IV),PARTIAL,MEDIUM,Cooling redundancy and continuous cooling overlap resilient capacity; seasonal derating needs site evidence.
+THM-02,Air cooling systems,Tier Standard: Topology,Mechanical topology,CONTEXT,LOW,Air distribution within the white space is largely outside Tier topology evaluation.
+THM-03,Liquid cooling systems,Tier Standard: Topology,Mechanical topology,CONTEXT,LOW,Application of Tier concepts to CDUs and secondary liquid loops should be confirmed with the Tier Standard owner.
+THM-04,Heat rejection and water systems,Tier Standard: Topology,Heat rejection and makeup water,PARTIAL,MEDIUM,Heat-rejection redundancy and on-site water provisions overlap; water continuity from utility is AIDCF evidence.
+THM-05,Fluid quality and leak management,,,NO_MATCH,MEDIUM,
+THM-06,"Thermal control, maintenance and recovery",Tier Standard: Operational Sustainability; Topology (continuous cooling),Maintenance; Continuous cooling,PARTIAL,LOW,Maintenance and continuous cooling overlap thermal recovery intent; sensor trust and control stability are AIDCF-specific.
+ENV-01,Environmental operating conditions,,,NO_MATCH,MEDIUM,
+ENV-02,Energy performance,,,NO_MATCH,MEDIUM,
+ENV-03,Water performance,,,NO_MATCH,MEDIUM,
+ENV-04,Carbon and resource reporting,,,NO_MATCH,MEDIUM,
+ENV-05,Hazardous materials and waste,,,NO_MATCH,MEDIUM,
+ENV-06,Climate adaptation and resource continuity,,,NO_MATCH,MEDIUM,
+CMP-01,Compute architecture and configuration,,,NO_MATCH,MEDIUM,
+CMP-02,Cluster and scale-up domains,,,NO_MATCH,MEDIUM,
+CMP-03,"Capacity, scheduling and utilisation",,,NO_MATCH,MEDIUM,
+CMP-04,"Firmware, driver and compatibility",,,NO_MATCH,MEDIUM,
+CMP-05,Compute health and observability,,,NO_MATCH,MEDIUM,
+CMP-06,Compute lifecycle and recovery,,,NO_MATCH,MEDIUM,
+STO-01,Storage architecture and tiering,,,NO_MATCH,MEDIUM,
+STO-02,Performance and capacity,,,NO_MATCH,MEDIUM,
+STO-03,Integrity and consistency,,,NO_MATCH,MEDIUM,
+STO-04,Protection and replication,,,NO_MATCH,MEDIUM,
+STO-05,Checkpoint and recovery services,,,NO_MATCH,MEDIUM,
+STO-06,Storage monitoring and lifecycle,,,NO_MATCH,MEDIUM,
+NET-01,Scale-up and scale-out fabrics,,,NO_MATCH,MEDIUM,
+NET-02,Performance and congestion control,,,NO_MATCH,MEDIUM,
+NET-03,Storage and service networks,,,NO_MATCH,MEDIUM,
+NET-04,Management and out-of-band networks,,,NO_MATCH,MEDIUM,
+NET-05,Physical connectivity and optics,,,NO_MATCH,MEDIUM,
+NET-06,Network control and observability,,,NO_MATCH,MEDIUM,
+OPS-01,Operating model and staffing,Tier Standard: Operational Sustainability (staffing and organisation),Staffing and organisation,PARTIAL,HIGH,"Staffing levels, qualifications and organisation overlap strongly."
+OPS-02,Procedure and work control,"Tier Standard: Operational Sustainability (planning, coordination and management)",Operating procedures,PARTIAL,MEDIUM,Procedures and coordination overlap SOPs and method statements; permit to work is governed by safety regulation.
+OPS-03,Maintenance and reliability,Tier Standard: Operational Sustainability (maintenance),Maintenance,PARTIAL,HIGH,Preventive maintenance programme and practices overlap strongly; calibration and deferred-maintenance governance need explicit evaluation.
+OPS-04,"Alarm, incident and problem management",Tier Standard: Operational Sustainability,Management and operations,PARTIAL,LOW,Failure response and lessons learned are part of operations practice; alarm rationalisation is AIDCF-specific.
+OPS-05,Change and configuration management,"Tier Standard: Operational Sustainability (planning, coordination and management)",Change coordination,PARTIAL,LOW,Change coordination overlaps change assessment; configuration baselines are AIDCF-specific.
+OPS-06,Capacity and service operations,Tier Standard: Operational Sustainability (operating conditions),Operating conditions,PARTIAL,LOW,Load and capacity management overlap capacity review.
+RES-01,Resilience strategy,Tier Standard: Topology,Tier objectives,CONTEXT,MEDIUM,Tier objectives express a resilience intent for site infrastructure only; minimum service outcome of the AI capability is AIDCF-specific.
+RES-02,Fault-domain and containment design,Tier Standard: Topology (Tier IV),Fault tolerance and compartmentalisation,PARTIAL,MEDIUM,"Fault tolerance and compartmentalisation overlap containment for power and cooling; compute, storage and network fault domains are out of scope."
+RES-03,Continuity planning,,,NO_MATCH,MEDIUM,
+RES-04,Recovery planning,,,NO_MATCH,MEDIUM,
+RES-05,Testing and exercising,Tier Certification of Constructed Facility (TCCF),Demonstrations of concurrent maintainability or fault tolerance,SUPPORTS_EVIDENCE,MEDIUM,TCCF demonstrations are E4/E5 evidence for component tests at the time of certification; integrated AI-capability scenario tests are AIDCF-specific.
+RES-06,Crisis and adaptive response,,,NO_MATCH,MEDIUM,
+SUP-01,Supplier due diligence,,,NO_MATCH,MEDIUM,
+SUP-02,Contract and service obligations,,,NO_MATCH,MEDIUM,
+SUP-03,Hardware and component provenance,,,NO_MATCH,MEDIUM,
+SUP-04,"Software, firmware and update supply",,,NO_MATCH,MEDIUM,
+SUP-05,"Spares, logistics and obsolescence",Tier Standard: Operational Sustainability (maintenance),Maintenance (spares),CONTEXT,LOW,Spares may be considered within maintenance practice; lead times and obsolescence are AIDCF-specific.
+SUP-06,Remote support and third-party access,,,NO_MATCH,MEDIUM,
+SEC-01,Identity and privileged access,,,NO_MATCH,MEDIUM,
+SEC-02,Control-plane protection,,,NO_MATCH,MEDIUM,
+SEC-03,Network security and segmentation,,,NO_MATCH,MEDIUM,
+SEC-04,"Configuration, vulnerability and patching",,,NO_MATCH,MEDIUM,
+SEC-05,Detection and response,,,NO_MATCH,MEDIUM,
+SEC-06,AI-enabled and automated action,,,NO_MATCH,MEDIUM,
+EVA-01,Evidence architecture,,,NO_MATCH,MEDIUM,
+EVA-02,Evidence provenance and quality,,,NO_MATCH,MEDIUM,
+EVA-03,Assessment planning and execution,,,NO_MATCH,MEDIUM,
+EVA-04,"Findings, UNKNOWN and limitations",,,NO_MATCH,MEDIUM,
+EVA-05,Critical gates and decisions,,,NO_MATCH,MEDIUM,
+EVA-06,Reassessment and continuing assurance,Tier Certification of Operational Sustainability (TCOS),Periodic recertification,CONTEXT,LOW,Operational Sustainability certification is time-bounded and renewed; AIDCF evidence expiry and decision suspension operate independently of the certification cycle.

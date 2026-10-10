@@ -1,0 +1,11 @@
+{
+ "query": "Q04",
+ "description": "AIDCF-014 section 19 Q04: for EvidenceObject EV-011, which assertions does it support or challenge, and which decisions depend on it?",
+ "basis": "EV-011 supports CA-011, an input to CG-05, CG-06, CG-07 and CG-15, all referenced by AD-001.",
+ "rows": [
+  [
+   "CA-011",
+   "AD-001"
+  ]
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "fixtureId": "I-SHA-005",
+ "layer": "SHACL",
+ "expect": "FAIL",
+ "expectedRule": "MDM-R08",
+ "description": "IMPLEMENTATION control with requiredAssuranceLevel AL2.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "https://w3id.org/aidcf/id/control/MCF-DEP-001",
+   "field": "requiredAssuranceLevel",
+   "value": "AL2"
+  }
+ ]
+}

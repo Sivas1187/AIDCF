@@ -1,0 +1,8 @@
+# Q11 AIDCF-014 section 19 Q11: which candidate events await review, with materiality, severity and age?
+# Expected result basis: EVT-001 design.
+PREFIX aidcf: <https://w3id.org/aidcf/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?event ?materiality ?severity ?observedAt WHERE {
+  ?e a aidcf:Event ; aidcf:reviewState "CANDIDATE" ; aidcf:humanDisposition "PENDING" ; aidcf:materiality ?materiality ;
+     aidcf:eventSeverity ?severity ; aidcf:observedAt ?o . BIND (REPLACE(STR(?e), "^.*[:/]", "") AS ?event) BIND (SUBSTR(STR(?o), 1, 19) AS ?observedAt)
+}

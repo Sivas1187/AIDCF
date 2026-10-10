@@ -1,0 +1,16 @@
+{
+ "fixtureId": "I-SHA-001",
+ "layer": "SHACL",
+ "expect": "FAIL",
+ "expectedRule": "MDM-R02",
+ "expectedText": "a CRITICAL input is PARTIAL",
+ "description": "GatePartialNeverPass: CG-03 recorded PASS with a PARTIAL CRITICAL input.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:gate-result:GR-CG-03",
+   "field": "gateState",
+   "value": "PASS"
+  }
+ ]
+}

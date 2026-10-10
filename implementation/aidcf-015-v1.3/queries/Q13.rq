@@ -1,0 +1,9 @@
+# Q13 AIDCF-016 additional query: edges created by the pending event that are not CANDIDATE (must be none; AIDCF-014 TDS-REQ-062).
+# Expected result basis: TDS-REQ-062.
+PREFIX aidcf: <https://w3id.org/aidcf/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT (COUNT(?r) AS ?n) WHERE {
+  ?e a aidcf:Event ; aidcf:humanDisposition "PENDING" .
+  ?r a aidcf:RelationshipRecord ; aidcf:reviewState ?st . { ?r aidcf:sourceRef ?e } UNION { ?r aidcf:targetRef ?e }
+  FILTER (?st != "CANDIDATE")
+}

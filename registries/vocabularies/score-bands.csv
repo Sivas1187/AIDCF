@@ -1,0 +1,7 @@
+code,name,lowerBoundInclusive,upperBoundExclusive,reportingCondition
+B5,Strong,90,,coverage >= 80% and no US4/US5 UNKNOWN in scope
+B4,Substantial,75,90,coverage >= 80% and no US4/US5 UNKNOWN in scope
+B3,Moderate,50,75,coverage >= 80% and no US4/US5 UNKNOWN in scope
+B2,Weak,25,50,coverage >= 80% and no US4/US5 UNKNOWN in scope
+B1,Very weak,0,25,coverage >= 80% and no US4/US5 UNKNOWN in scope
+WITHHELD,Band withheld (coverage/UNKNOWN),,,reported instead of a band when coverage < 80% or a US4/US5 UNKNOWN exists in scope

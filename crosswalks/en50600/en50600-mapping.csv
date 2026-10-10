@@ -1,0 +1,91 @@
+aidcfFamilyId,aidcfFamilyName,externalRef,externalTitle,relationship,confidence,notes
+GOV-01,Governance architecture,,,NO_MATCH,MEDIUM,
+GOV-02,Accountability and responsibility,EN 50600-3-1,Management and operational information,CONTEXT,LOW,"Part 3-1 assigns responsibilities within operational and management processes; it does not address critical-function accountability, risk-acceptance authority or evidence custody."
+GOV-03,Policy and standards management,,,NO_MATCH,MEDIUM,
+GOV-04,Risk and assurance governance,EN 50600-1,General concepts (business risk analysis),CONTEXT,LOW,The business risk analysis that drives availability and protection class selection is a context for risk appetite linkage; there is no assurance plan or independent review requirement.
+GOV-05,Stakeholder and regulatory interface,,,NO_MATCH,MEDIUM,
+GOV-06,"Ethics, impartiality and competence",,,NO_MATCH,MEDIUM,
+CAP-01,Capability inventory,EN 50600-1,General concepts,CONTEXT,LOW,Part 1 defines the facility and infrastructure decomposition used in the series; it does not require a register of capabilities.
+CAP-02,Service outcome definition,EN 50600-1,General concepts (availability classes),PARTIAL,MEDIUM,"Availability classes express the required availability of the infrastructure. AIDCF Service Outcomes are capability-level, with tolerances for performance, integrity and recovery, and are not reducible to a class."
+CAP-03,Criticality and materiality,EN 50600-1,General concepts (business risk analysis; availability and protection classes),PARTIAL,MEDIUM,Business risk analysis linking business impact to class selection overlaps criticality criteria and priority classification.
+CAP-04,Demand and growth modelling,EN 50600-1; EN 50600-3-1,General concepts; Management and operational information (capacity management),CONTEXT,LOW,"Capacity planning appears as an operational process; peak, transient and scenario demand for AI loads are not addressed."
+CAP-05,Operating envelope,EN 50600-2-3,Environmental control,PARTIAL,LOW,"Environmental conditions for spaces overlap the environmental envelope; load, duration and state-specific limits are AIDCF parameters."
+CAP-06,Capability lifecycle and change,EN 50600-1; EN 50600-3-1,General concepts (design process phases); Management and operational information,CONTEXT,MEDIUM,The design-phase model and operational information support design-to-operation traceability; commissioning acceptance against Service Outcomes is not defined.
+DEP-01,Dependency discovery,EN 50600-2-2; EN 50600-2-3,Power distribution; Environmental control,CONTEXT,LOW,Supply and distribution chains are described per infrastructure; asset-to-function and recovery-dependency mapping are not required.
+DEP-02,Shared and common-mode dependencies,EN 50600-2-2; EN 50600-2-3,Power distribution; Environmental control (availability-class topology),PARTIAL,LOW,"Higher availability classes reduce single points of failure in paths; common controllers, shared routes and shared human dependencies are not analysed."
+DEP-03,External providers and utilities,EN 50600-2-2; EN 50600-2-4,Power distribution (supply); Telecommunications cabling infrastructure (access provider entrance),PARTIAL,LOW,Utility supply and telecom entrance provisions overlap utility and telecom dependency; OEM and cloud dependency are out of scope.
+DEP-04,Concentration and substitutability,,,NO_MATCH,MEDIUM,
+DEP-05,Boundary and interface control,,,NO_MATCH,MEDIUM,
+DEP-06,Dependency monitoring and review,,,NO_MATCH,MEDIUM,
+PHY-01,Site and location resilience,EN 50600-2-1,Building construction (location and site),PARTIAL,MEDIUM,Site location and external risk considerations overlap site hazard assessment and external exposure.
+PHY-02,Building and structural integrity,EN 50600-2-1,Building construction,PARTIAL,MEDIUM,Building construction requirements overlap structural capacity and building envelope; rack loading and anchorage for high-density AI racks should be verified against the as-built design.
+PHY-03,Physical zoning and segregation,EN 50600-2-1; EN 50600-2-5,Building construction; Security systems (protection classes),PARTIAL,MEDIUM,Protection classes and space segregation overlap security and fire zones; tenant segregation is not specifically addressed.
+PHY-04,Access and surveillance,EN 50600-2-5,Security systems,PARTIAL,HIGH,"Physical access control, intrusion detection and surveillance overlap strongly; alarm-response performance is an operational matter."
+PHY-05,Asset movement and custody,EN 50600-3-1,Management and operational information,CONTEXT,LOW,"Asset management processes are a context; delivery, movement and media custody controls are not specified."
+PHY-06,"Fire, life safety and emergency interfaces",EN 50600-2-5,Security systems (protection against fire and other events),PARTIAL,MEDIUM,"Fire detection and suppression provisions overlap; life safety, egress and emergency shutdown remain governed by national fire and building regulation."
+POW-01,Utility and grid interface,EN 50600-2-2,Power distribution (supply),PARTIAL,HIGH,Utility supply provisions by availability class overlap utility capacity and connection reliability; grid quality and utility contingency need site evidence.
+POW-02,Generation and fuel,EN 50600-2-2,Power distribution (supply),PARTIAL,MEDIUM,Secondary and standby supply provisions overlap generation; fuel autonomy and replenishment are parameters for the capability profile.
+POW-03,UPS and energy storage,EN 50600-2-2,Power distribution,PARTIAL,MEDIUM,"Uninterruptible supply provisions overlap UPS topology; battery condition, runtime derating and bypass exposure need operational evidence."
+POW-04,Distribution and protection,EN 50600-2-2,Power distribution,PARTIAL,MEDIUM,Distribution topology overlaps switchgear and busway/PDU capacity; selective coordination and earthing require protection studies.
+POW-05,Power quality and transient response,EN 50600-2-2,Power distribution,CONTEXT,LOW,Power quality is a design consideration; transient ride-through and load-step response for AI training loads are AIDCF-specific.
+POW-06,"Electrical monitoring, maintenance and recovery",EN 50600-2-2; EN 50600-3-1,Power distribution (energy efficiency enablement and metering); Management and operational information,PARTIAL,MEDIUM,Metering granularity and operational processes overlap EPMS coverage and preventive maintenance; black-start and restoration are not addressed.
+THM-01,Thermal architecture and capacity,EN 50600-2-3,Environmental control,PARTIAL,HIGH,Cooling capacity and redundancy by availability class overlap design and resilient capacity; heat-load models for AI densities and seasonal derating need site evidence.
+THM-02,Air cooling systems,EN 50600-2-3,Environmental control,PARTIAL,MEDIUM,Air-side environmental control overlaps airflow management and containment.
+THM-03,Liquid cooling systems,EN 50600-2-3,Environmental control,CONTEXT,LOW,"Coverage of direct-to-chip liquid cooling, CDUs and secondary loops in the edition in use requires confirmation by a licensed holder."
+THM-04,Heat rejection and water systems,EN 50600-2-3,Environmental control,PARTIAL,MEDIUM,Heat rejection plant overlaps chiller and dry-cooler capacity; water continuity and heat-rejection dependency need site evidence.
+THM-05,Fluid quality and leak management,EN 50600-2-3; EN 50600-2-5,Environmental control; Security systems (protection against water),PARTIAL,LOW,Protection against water ingress and leakage overlaps leak detection; coolant compatibility and water quality are not addressed.
+THM-06,"Thermal control, maintenance and recovery",EN 50600-2-3; EN 50600-3-1,Environmental control; Management and operational information,PARTIAL,LOW,"Monitoring and operational processes overlap; control stability, sensor trust and thermal recovery are AIDCF-specific."
+ENV-01,Environmental operating conditions,EN 50600-2-3,Environmental control,PARTIAL,HIGH,"Temperature, humidity and contamination control for spaces overlaps; vibration and acoustic conditions are not central."
+ENV-02,Energy performance,EN 50600-4-1; EN 50600-4-2; EN 50600-4-7,KPI overview; Power usage effectiveness; Cooling efficiency ratio,PARTIAL,HIGH,PUE measurement and KPI framework overlap strongly. Energy allocation to Capability Instances and the resilience-efficiency trade-off are AIDCF-specific.
+ENV-03,Water performance,EN 50600-4-9,Water usage effectiveness,PARTIAL,MEDIUM,"WUE measurement overlaps; water-source quality, scarcity response and discharge control are not addressed."
+ENV-04,Carbon and resource reporting,EN 50600-4-3; EN 50600-4-8,Renewable energy factor; Carbon usage effectiveness,PARTIAL,MEDIUM,"Renewable and carbon KPIs overlap; accounting boundary, energy-attribute evidence and embodied resource data are not addressed."
+ENV-05,Hazardous materials and waste,CLC/TR 50600-99-2,Recommended practices for environmental sustainability,CONTEXT,LOW,Technical report (informative); no hazardous-materials handling requirements.
+ENV-06,Climate adaptation and resource continuity,,,NO_MATCH,MEDIUM,Climate adaptation is not addressed in the parts listed; site hazard assessment under EN 50600-2-1 is a partial input (see PHY-01).
+CMP-01,Compute architecture and configuration,,,NO_MATCH,MEDIUM,
+CMP-02,Cluster and scale-up domains,,,NO_MATCH,MEDIUM,
+CMP-03,"Capacity, scheduling and utilisation",EN 50600-4 series (IT equipment KPI parts),IT equipment utilisation KPI,CONTEXT,LOW,IT-equipment KPIs in the 4-x series measure server energy efficiency and utilisation; part numbers and applicability to accelerators should be confirmed by a licensed holder.
+CMP-04,"Firmware, driver and compatibility",,,NO_MATCH,MEDIUM,
+CMP-05,Compute health and observability,,,NO_MATCH,MEDIUM,
+CMP-06,Compute lifecycle and recovery,,,NO_MATCH,MEDIUM,
+STO-01,Storage architecture and tiering,,,NO_MATCH,MEDIUM,
+STO-02,Performance and capacity,,,NO_MATCH,MEDIUM,
+STO-03,Integrity and consistency,,,NO_MATCH,MEDIUM,
+STO-04,Protection and replication,,,NO_MATCH,MEDIUM,
+STO-05,Checkpoint and recovery services,,,NO_MATCH,MEDIUM,
+STO-06,Storage monitoring and lifecycle,,,NO_MATCH,MEDIUM,
+NET-01,Scale-up and scale-out fabrics,EN 50600-2-4,Telecommunications cabling infrastructure,CONTEXT,LOW,Cabling topology and redundancy by availability class; scale-up and scale-out fabric design is out of scope.
+NET-02,Performance and congestion control,,,NO_MATCH,MEDIUM,
+NET-03,Storage and service networks,,,NO_MATCH,MEDIUM,
+NET-04,Management and out-of-band networks,,,NO_MATCH,MEDIUM,
+NET-05,Physical connectivity and optics,EN 50600-2-4,Telecommunications cabling infrastructure,PARTIAL,HIGH,"Cabling infrastructure, pathways and administration overlap strongly; optics compatibility for AI fabrics is not addressed."
+NET-06,Network control and observability,,,NO_MATCH,MEDIUM,
+OPS-01,Operating model and staffing,EN 50600-3-1,Management and operational information,PARTIAL,MEDIUM,Operational organisation and roles overlap; 24x7 coverage levels and competence authorisation need site evidence.
+OPS-02,Procedure and work control,EN 50600-3-1,Management and operational information,PARTIAL,MEDIUM,Operational procedures overlap SOPs and work control; permit to work and lockout/tagout are governed by safety regulation.
+OPS-03,Maintenance and reliability,EN 50600-3-1,Management and operational information,PARTIAL,MEDIUM,Maintenance processes overlap; deferred-maintenance governance is AIDCF-specific.
+OPS-04,"Alarm, incident and problem management",EN 50600-3-1,Management and operational information,PARTIAL,MEDIUM,Incident and problem processes overlap; alarm rationalisation is not addressed.
+OPS-05,Change and configuration management,EN 50600-3-1,Management and operational information,PARTIAL,MEDIUM,Change and configuration processes overlap.
+OPS-06,Capacity and service operations,EN 50600-3-1,Management and operational information,PARTIAL,MEDIUM,Capacity and service-level processes overlap.
+RES-01,Resilience strategy,EN 50600-1,General concepts (availability classes),CONTEXT,MEDIUM,Availability classes express a resilience intent for infrastructure; minimum service outcome and graceful degradation of AI capability are AIDCF-specific.
+RES-02,Fault-domain and containment design,EN 50600-2-1; EN 50600-2-2; EN 50600-2-3,Building construction; Power distribution; Environmental control,PARTIAL,LOW,"Compartmentation and availability-class topology contribute to containment; fault-domain definition across compute, storage and network is not addressed."
+RES-03,Continuity planning,EN 50600-3-1,Management and operational information,CONTEXT,LOW,Continuity is touched by operational processes; site and provider continuity strategy is not specified.
+RES-04,Recovery planning,EN 50600-3-1,Management and operational information,CONTEXT,LOW,Recovery from incidents is an operational process; recovery sequencing across facility and AI infrastructure is AIDCF-specific.
+RES-05,Testing and exercising,,,NO_MATCH,MEDIUM,
+RES-06,Crisis and adaptive response,,,NO_MATCH,MEDIUM,
+SUP-01,Supplier due diligence,,,NO_MATCH,MEDIUM,
+SUP-02,Contract and service obligations,,,NO_MATCH,MEDIUM,
+SUP-03,Hardware and component provenance,,,NO_MATCH,MEDIUM,
+SUP-04,"Software, firmware and update supply",,,NO_MATCH,MEDIUM,
+SUP-05,"Spares, logistics and obsolescence",EN 50600-3-1,Management and operational information,CONTEXT,LOW,Spares may be addressed within maintenance and asset processes; lead times and obsolescence planning are not.
+SUP-06,Remote support and third-party access,,,NO_MATCH,MEDIUM,
+SEC-01,Identity and privileged access,,,NO_MATCH,MEDIUM,
+SEC-02,Control-plane protection,,,NO_MATCH,MEDIUM,
+SEC-03,Network security and segmentation,,,NO_MATCH,MEDIUM,
+SEC-04,"Configuration, vulnerability and patching",,,NO_MATCH,MEDIUM,
+SEC-05,Detection and response,,,NO_MATCH,MEDIUM,
+SEC-06,AI-enabled and automated action,,,NO_MATCH,MEDIUM,
+EVA-01,Evidence architecture,EN 50600-3-1,Management and operational information,CONTEXT,LOW,Operational information and documentation are a source of evidence; no evidence architecture.
+EVA-02,Evidence provenance and quality,,,NO_MATCH,MEDIUM,
+EVA-03,Assessment planning and execution,,,NO_MATCH,MEDIUM,
+EVA-04,"Findings, UNKNOWN and limitations",,,NO_MATCH,MEDIUM,
+EVA-05,Critical gates and decisions,,,NO_MATCH,MEDIUM,
+EVA-06,Reassessment and continuing assurance,,,NO_MATCH,MEDIUM,

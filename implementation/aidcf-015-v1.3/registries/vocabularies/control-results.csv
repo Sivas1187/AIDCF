@@ -1,0 +1,7 @@
+code,meaning,scoreValue,countsInCoverage
+CONFORMING,"All assessment criteria met for the claim type, evidence >= profile floor",100,numerator and denominator
+PARTIAL,Some criteria met; specific deficiencies recorded as Findings,50,numerator and denominator
+NONCONFORMING,"Criteria materially not met, or a safeguard demonstrated ineffective",0,numerator and denominator
+UNKNOWN,"Result cannot be determined (evidence below floor, conflict, inaccessible, etc.)",,denominator only; no value; excluded from mean; counted in UNKNOWN register
+NOT_APPLICABLE,Approved non-applicability with rationale and approver,,excluded
+NOT_ASSESSED,In scope but not yet assessed,,denominator only; excluded from mean; counted as coverage gap

@@ -1,0 +1,17 @@
+{
+ "fixtureId": "I-SHA-006",
+ "layer": "SHACL",
+ "expect": "FAIL",
+ "expectedRule": "MDM-R17",
+ "description": "APPROVED_BY pointing to a REVIEW record.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:decision:AD-001",
+   "field": "approvedBy",
+   "value": [
+    "urn:aidcf:syn:review:RR-001"
+   ]
+  }
+ ]
+}

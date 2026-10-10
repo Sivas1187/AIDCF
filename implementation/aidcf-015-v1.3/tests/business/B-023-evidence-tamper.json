@@ -1,0 +1,12 @@
+{
+ "fixtureId": "B-023",
+ "layer": "INTEGRITY",
+ "expect": "FAIL",
+ "expectedRule": "INT-01",
+ "description": "Evidence fixture altered after hashing.",
+ "patch": [],
+ "overrideFile": {
+  "path": "evidence-fixtures/EV-001.txt",
+  "content": "tampered"
+ }
+}

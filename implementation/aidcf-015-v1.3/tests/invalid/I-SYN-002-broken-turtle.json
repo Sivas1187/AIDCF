@@ -1,0 +1,8 @@
+{
+ "fixtureId": "I-SYN-002",
+ "layer": "SYNTAX",
+ "expect": "FAIL",
+ "format": "turtle",
+ "rawFile": "syntax-broken.ttl.txt",
+ "description": "Turtle with an unterminated statement; an RDF parse failure is a counted failure (v1.2 defect)."
+}

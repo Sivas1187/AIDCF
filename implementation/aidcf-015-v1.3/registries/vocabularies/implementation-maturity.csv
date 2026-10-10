@@ -1,0 +1,7 @@
+code,name,definition,typicalEvidence
+IM0,Absent,"The practice is not performed, or there is no evidence that it is",
+IM1,Initial,Performed ad hoc or reactively; depends on specific individuals; inconsistent; little or no documentation,E6 interviews; isolated E1 or E3 records
+IM2,Defined,"Documented, approved and owned; scope and responsibilities stated; not yet consistently implemented across the declared scope","E1 approved procedures, RACI, standards"
+IM3,Implemented,Implemented across the declared scope; records exist and reconcile to the definition; gaps known and tracked,E1 + E2 + sampled E3
+IM4,Operating,Operates consistently over a representative period and relevant states; measured; exceptions detected and handled,E3 over a representative period; exception and metric records
+IM5,Optimised,"Measured against objectives and improved through incidents, tests, exercises and independent challenge; improvements demonstrated",E4 lessons; E5 independent review; improvement trends

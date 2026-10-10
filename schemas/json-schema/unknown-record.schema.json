@@ -1,0 +1,251 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://w3id.org/aidcf/schema/1.3/unknown-record.schema.json",
+  "title": "AIDCF UNKNOWN Record (UnknownRecord)",
+  "description": "A material fact that cannot be determined, with type (U1\u2013U10), severity (US1\u2013US5), reason, decision effect, evidence needed and owner.",
+  "x-aidcf-class": "https://w3id.org/aidcf/ontology#UnknownRecord",
+  "x-aidcf-semantic-owner": "AIDCF-008",
+  "x-aidcf-registration": "canonical",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "semanticOwner",
+    "schemaVersion",
+    "version",
+    "status",
+    "releaseRef",
+    "sourceArtifact",
+    "name",
+    "effectiveFrom",
+    "createdAt",
+    "createdBy",
+    "classification",
+    "provenance",
+    "subjectRef",
+    "missingAttribute",
+    "unknownType",
+    "unknownSeverity",
+    "reason",
+    "material",
+    "decisionEffect",
+    "evidenceNeeded",
+    "owner",
+    "resolutionTrigger",
+    "unknownStatus",
+    "reviewState",
+    "scope"
+  ],
+  "properties": {
+    "@context": {
+      "$ref": "common-envelope.schema.json#/properties/@context"
+    },
+    "id": {
+      "$ref": "common-envelope.schema.json#/properties/id"
+    },
+    "type": {
+      "const": "UnknownRecord"
+    },
+    "semanticOwner": {
+      "$ref": "common-envelope.schema.json#/properties/semanticOwner"
+    },
+    "schemaVersion": {
+      "$ref": "common-envelope.schema.json#/properties/schemaVersion"
+    },
+    "version": {
+      "$ref": "common-envelope.schema.json#/properties/version"
+    },
+    "status": {
+      "$ref": "common-envelope.schema.json#/properties/status"
+    },
+    "releaseRef": {
+      "$ref": "common-envelope.schema.json#/properties/releaseRef"
+    },
+    "sourceArtifact": {
+      "$ref": "common-envelope.schema.json#/properties/sourceArtifact"
+    },
+    "name": {
+      "$ref": "common-envelope.schema.json#/properties/name"
+    },
+    "effectiveFrom": {
+      "$ref": "common-envelope.schema.json#/properties/effectiveFrom"
+    },
+    "createdAt": {
+      "$ref": "common-envelope.schema.json#/properties/createdAt"
+    },
+    "createdBy": {
+      "$ref": "common-envelope.schema.json#/properties/createdBy"
+    },
+    "classification": {
+      "$ref": "common-envelope.schema.json#/properties/classification"
+    },
+    "provenance": {
+      "$ref": "common-envelope.schema.json#/properties/provenance"
+    },
+    "sourceRecord": {
+      "$ref": "common-envelope.schema.json#/properties/sourceRecord"
+    },
+    "description": {
+      "$ref": "common-envelope.schema.json#/properties/description"
+    },
+    "scope": {
+      "$ref": "common-envelope.schema.json#/properties/scope"
+    },
+    "effectiveTo": {
+      "$ref": "common-envelope.schema.json#/properties/effectiveTo"
+    },
+    "modifiedAt": {
+      "$ref": "common-envelope.schema.json#/properties/modifiedAt"
+    },
+    "modifiedBy": {
+      "$ref": "common-envelope.schema.json#/properties/modifiedBy"
+    },
+    "distributionControlRef": {
+      "$ref": "common-envelope.schema.json#/properties/distributionControlRef"
+    },
+    "reviewState": {
+      "$ref": "common-envelope.schema.json#/properties/reviewState"
+    },
+    "supersedes": {
+      "$ref": "common-envelope.schema.json#/properties/supersedes"
+    },
+    "externalIdentifiers": {
+      "$ref": "common-envelope.schema.json#/properties/externalIdentifiers"
+    },
+    "extensions": {
+      "$ref": "common-envelope.schema.json#/properties/extensions"
+    },
+    "nullReasons": {
+      "$ref": "common-envelope.schema.json#/properties/nullReasons"
+    },
+    "hasUnknown": {
+      "$ref": "common-envelope.schema.json#/properties/hasUnknown"
+    },
+    "reviewedBy": {
+      "$ref": "common-envelope.schema.json#/properties/reviewedBy"
+    },
+    "migratedFrom": {
+      "$ref": "common-envelope.schema.json#/properties/migratedFrom"
+    },
+    "integrationHandoff": {
+      "$ref": "common-envelope.schema.json#/properties/integrationHandoff"
+    },
+    "governedBy": {
+      "$ref": "common-envelope.schema.json#/properties/governedBy"
+    },
+    "subjectRef": {
+      "$ref": "definitions.schema.json#/$defs/iri"
+    },
+    "missingAttribute": {
+      "type": "string",
+      "minLength": 1
+    },
+    "unknownType": {
+      "$ref": "definitions.schema.json#/$defs/code-UnknownType"
+    },
+    "unknownSeverity": {
+      "$ref": "definitions.schema.json#/$defs/code-UnknownSeverity"
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "material": {
+      "type": "boolean"
+    },
+    "decisionEffect": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidenceNeeded": {
+      "type": "string",
+      "minLength": 1
+    },
+    "owner": {
+      "$ref": "definitions.schema.json#/$defs/iri"
+    },
+    "resolutionTrigger": {
+      "type": "string",
+      "minLength": 1
+    },
+    "unknownStatus": {
+      "$ref": "definitions.schema.json#/$defs/code-UnknownStatus"
+    },
+    "disposition": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dueDate": {
+      "$ref": "definitions.schema.json#/$defs/date"
+    },
+    "constrains": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/iri"
+      }
+    },
+    "requiresAction": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/iri"
+      }
+    },
+    "challenges": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/iri"
+      }
+    },
+    "qualifies": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/iri"
+      }
+    },
+    "closedBy": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/iri"
+      }
+    },
+    "summarisedBy": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/iri"
+      }
+    },
+    "reportedIn": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "definitions.schema.json#/$defs/iri"
+      }
+    }
+  },
+  "if": {
+    "properties": {
+      "classification": {
+        "enum": [
+          "CLIENT_RESTRICTED",
+          "CONFIDENTIAL",
+          "HIGHLY_RESTRICTED"
+        ]
+      }
+    },
+    "required": [
+      "classification"
+    ]
+  },
+  "then": {
+    "required": [
+      "distributionControlRef"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+SYNTHETIC EVIDENCE FIXTURE - AIDCF-015 v1.3
+id: urn:aidcf:syn:evidence:EV-ARCH-02
+class: E2
+title: Synthetic BMS point list and controller configuration export
+Synthetic configuration evidence for the AIDCF-015 v1.3 architecture snapshot.
+This file describes no real facility, organisation or person.

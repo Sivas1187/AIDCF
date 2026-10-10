@@ -1,0 +1,89 @@
+name: AIDCF CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Registry, schema set and AIDCF-015 v1.3 validation
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install pinned requirements (AIDCF-015 v1.3)
+        run: python -m pip install -r implementation/aidcf-015-v1.3/requirements.txt
+
+      - name: Control registry cardinality (360 unique MCF IDs, 15 domains, 90 families)
+        run: |
+          python - <<'PY'
+          import csv, re, sys
+          rows = list(csv.DictReader(open("registries/controls/controls.csv", newline="", encoding="utf-8")))
+          ids = [r["controlId"] for r in rows]
+          pat = re.compile(r"^MCF-[A-Z]{3}-0[0-2][0-9]$")
+          errors = []
+          if len(ids) != 360: errors.append("expected 360 controls, found %d" % len(ids))
+          if len(set(ids)) != len(ids): errors.append("duplicate control IDs")
+          bad = [i for i in ids if not pat.match(i)]
+          if bad: errors.append("IDs not matching MCF-DOM-NNN: %s" % bad[:5])
+          doms = {r["domainId"] for r in rows}
+          fams = {r["familyId"] for r in rows}
+          if len(doms) != 15: errors.append("expected 15 domains, found %d" % len(doms))
+          if len(fams) != 90: errors.append("expected 90 families, found %d" % len(fams))
+          print("controls %d (unique %d), domains %d, families %d" % (len(ids), len(set(ids)), len(doms), len(fams)))
+          if errors:
+              print("\n".join(errors)); sys.exit(1)
+          PY
+
+      - name: Parse every Turtle and JSON-LD file in schemas/
+        run: |
+          python - <<'PY'
+          import glob, json, sys, rdflib
+          failed = 0
+          files = sorted(glob.glob("schemas/**/*.ttl", recursive=True) + glob.glob("schemas/**/*.jsonld", recursive=True))
+          for f in files:
+              try:
+                  if f.endswith(".ttl"):
+                      n = len(rdflib.Graph().parse(f, format="turtle"))
+                  else:
+                      json.load(open(f, encoding="utf-8"))
+                      n = len(rdflib.Graph().parse(f, format="json-ld"))
+                  print("OK   %s (%d triples)" % (f, n))
+              except Exception as e:
+                  failed += 1
+                  print("FAIL %s: %s" % (f, e))
+          print("%d files, %d failed" % (len(files), failed))
+          sys.exit(1 if failed or not files else 0)
+          PY
+
+      - name: Generated schema set is up to date (AIDCF-016)
+        run: python -B schemas/tools/build_schemas.py --check
+
+      - name: Registry catalogue is up to date (AIDCF-014 section 17)
+        run: python -B registries/tools/build_catalogue.py --check
+
+      - name: AIDCF-015 v1.3 run_all (all layers; fails the build on any failure)
+        run: python -B implementation/aidcf-015-v1.3/tools/run_all.py
+
+      - name: Upload v1.3 validation outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: aidcf-015-v1.3-outputs
+          path: implementation/aidcf-015-v1.3/outputs/
+
+      - name: AIDCF-015 v1.2 run_all in a temporary copy (informational only)
+        continue-on-error: true
+        run: |
+          tmp="$(mktemp -d)"
+          cp -r implementation/aidcf-015-v1.2 "$tmp/"
+          cd "$tmp/aidcf-015-v1.2"
+          python -B tools/run_all.py || echo "v1.2 run_all exited non-zero (informational; v1.2 is superseded by v1.3)"

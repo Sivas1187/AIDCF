@@ -1,0 +1,21 @@
+registryFile,path,owner,conformsToCommonColumns,missingColumns,rowCount,sources
+artifacts.csv,registries/catalogue/artifacts.csv,AIDCF-014,yes,,40,README.md (artifact catalogue); AIDCF-002 section 40; standards/aidcf-018-domain-guides/
+object-types.csv,registries/catalogue/object-types.csv,AIDCF-014,yes,,51,"schemas/tools/aidcf_model.py (CLASSES, REFERENCE_CLASSES, schema_file); AIDCF-014 section 7"
+relationship-types.csv,registries/catalogue/relationship-types.csv,AIDCF-014,yes,,41,schemas/tools/aidcf_model.py (REL); AIDCF-014 section 9
+vocabularies/*.csv,registries/vocabularies,Per AIDCF-014 section 11A,no,code (3 of 25 files)|label|definition (22 of 25 files)|semanticOwner|version|status|replacedBy|vocabulary|sortOrder|legacyAliases,179,AIDCF-002 Part VI
+domains.csv,registries/domains/domains.csv,AIDCF-007A,no,code|label|definition|semanticOwner|replacedBy,15,AIDCF-007A Canonical Master Control Registry v1.1 workbook
+control-families.csv,registries/families/control-families.csv,AIDCF-007A,no,code|label|definition|semanticOwner|replacedBy|domainCode|familyNumber|controlRange,90,AIDCF-007A Canonical Master Control Registry v1.1 workbook
+controls.csv,registries/controls/controls.csv,AIDCF-007A,no,code|label|definition|semanticOwner|replacedBy|gateMappings|amendmentRef,360,AIDCF-007A Canonical Master Control Registry v1.1 workbook
+critical-gates.csv,registries/gates/critical-gates.csv,AIDCF-010,no,code|label|definition|semanticOwner|version|status|replacedBy|criticalControlCount,15,AIDCF-010 Part VIII; AIDCF-002 section 35.1
+evidence-classes.csv,registries/catalogue/evidence-classes.csv,AIDCF-008,yes,,7,registries/vocabularies/evidence-classes.csv (AIDCF-008 Part IV)
+evidence-quality.csv,registries/catalogue/evidence-quality.csv,AIDCF-008,yes,,36,AIDCF-008 section 17 and Appendix B; registries/vocabularies/quality-dimensions.csv
+assessment-methods.csv,registries/catalogue/assessment-methods.csv,AIDCF-009,yes,,10,registries/vocabularies/assessment-methods.csv; AIDCF-009 Part A B10 and B13
+finding-classes.csv,registries/catalogue/finding-classes.csv,AIDCF-009,yes,,5,schemas/tools/aidcf_model.py (FindingClass); AIDCF-012 Part IX.1; AIDCF-010 Part X
+unknown-types.csv,registries/catalogue/unknown-types.csv,AIDCF-008,yes,,10,registries/vocabularies/unknown-types.csv; AIDCF-008 section 35A
+unknown-severity.csv,registries/catalogue/unknown-severity.csv,AIDCF-010,yes,,5,registries/vocabularies/unknown-severity.csv (AIDCF-010 Part IX)
+decision-states.csv,registries/catalogue/decision-states.csv,AIDCF-010,yes,,5,registries/vocabularies/decision-states.csv; AIDCF-010 Part XII; registries/gates/critical-gates.csv
+report-types.csv,registries/catalogue/report-types.csv,AIDCF-012,yes,,10,AIDCF-012 Part III and report templates
+architecture-patterns.csv,registries/catalogue/architecture-patterns.csv,AIDCF-013,yes,,12,AIDCF-013 Reference patterns
+external-mappings.csv,registries/catalogue/external-mappings.csv,AIDCF-019,yes,,720,crosswalks/*/*-mapping.csv (AIDCF-019)
+deprecated-terms.csv,registries/catalogue/deprecated-terms.csv,AIDCF-014,yes,,74,registries/vocabularies/*-aliases.csv and legacy columns; AIDCF-014 section 9.1; AIDCF-002 section 41
+migration-rules.csv,registries/catalogue/migration-rules.csv,AIDCF-014,yes,,12,AIDCF-014 sections 11A and 27; registries/vocabularies/*-aliases.csv; AIDCF-016 section 14

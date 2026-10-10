@@ -1,0 +1,509 @@
+controlId,name,unit,illustrativeDefault,basis
+MCF-GOV-001,Governance charter review interval,months,12,"Capability-profile parameter set by the governing body; illustrative, shortened where the capability is changing rapidly"
+MCF-GOV-002,Decision sample size per decision class,records,10 or the full population if smaller,"Judgemental sample per AIDCF-008 sampling principles; illustrative, increased if exceptions are found"
+MCF-GOV-003,Oversight meeting interval,months,3,"Capability-profile parameter; illustrative, shortened during build, major change or after a gate FAIL"
+MCF-GOV-003,Out-of-cycle notification time for gate FAIL or US4/US5 UNKNOWN,working days,5,Capability-profile parameter; illustrative
+MCF-GOV-005,RACI reconciliation interval,months,6,Capability-profile parameter; illustrative
+MCF-GOV-007,Maximum risk-acceptance validity,months,12,"Capability-profile parameter; illustrative, shorter for acceptances touching gate-critical controls"
+MCF-GOV-011,Maximum exception duration,months,6,"Capability-profile parameter; illustrative, renewable once by the approver"
+MCF-GOV-012,Runbook review interval,months,12,"Capability-profile parameter; illustrative, shorter for emergency runbooks after change"
+MCF-GOV-013,Assurance planning period,months,12,Programme parameter; illustrative
+MCF-GOV-016,Review effectiveness test frequency,tests per year,1,Programme parameter; illustrative
+MCF-GOV-018,Regulatory escalation time for safety or reporting-duty changes,working days,10,Programme parameter; illustrative
+MCF-GOV-020,External correction time after decision suspension,working days,10,Programme parameter; illustrative
+MCF-GOV-021,Self-review cooling-off period,months,12,Programme parameter; illustrative
+MCF-GOV-023,Competence currency period,months,24,"Programme parameter; illustrative, shorter for rapidly changing technologies"
+MCF-CAP-001,Capability register reconciliation interval,months,3,"Capability-profile parameter; illustrative, aligned to the rate of cluster expansion"
+MCF-CAP-004,Architecture reconciliation interval,months,6,Capability-profile parameter; illustrative
+MCF-CAP-005,Availability target,% of measurement window,99.5 (training) / 99.9 (inference),Capability-profile parameter set by the capability owner; illustrative only
+MCF-CAP-005,Availability measurement window,days,30,Capability-profile parameter; illustrative
+MCF-CAP-005,Maximum single-interruption duration,minutes,60,"Capability-profile parameter; illustrative, derived from impact tolerance"
+MCF-CAP-006,Training goodput floor,% of wall-clock time doing useful training progress,90,Capability-profile parameter; illustrative
+MCF-CAP-006,Inference latency percentile and bound,ms at p99,set per service,Capability-profile parameter; no generic default
+MCF-CAP-006,Throttling event tolerance,accelerator-hours throttled per week,0 attributable to facility conditions,Capability-profile parameter; illustrative
+MCF-CAP-007,Checkpoint integrity verification point,event,on write and before restore,Capability-profile parameter; illustrative
+MCF-CAP-007,Tolerated detection latency for dataset corruption,hours,24,Capability-profile parameter; illustrative
+MCF-CAP-008,Recovery time objective,hours to restore stated capacity,4 to 80% capacity,Capability-profile parameter; illustrative
+MCF-CAP-008,Recovery point objective (training),minutes of lost training,30,"Capability-profile parameter; illustrative, constrained by checkpoint write time"
+MCF-CAP-008,Recovered capacity fraction for RTO,% of committed accelerators,80,Capability-profile parameter; illustrative
+MCF-CAP-010,Maximum tolerable interruption,hours,8,Capability-profile parameter; illustrative
+MCF-CAP-010,Maximum tolerable capacity reduction,% of committed capacity for stated duration,50% for 24 h,Capability-profile parameter; illustrative
+MCF-CAP-010,Maximum tolerable lost training progress,hours of training,2,Capability-profile parameter; illustrative
+MCF-CAP-012,Priority reconciliation interval,months,6,Capability-profile parameter; illustrative
+MCF-CAP-013,Baseline period,days,90,"Capability-profile parameter; illustrative, should include representative workload cycles"
+MCF-CAP-013,Baseline telemetry resolution,seconds,60,"Capability-profile parameter; illustrative, transient characterisation is addressed in MCF-CAP-014"
+MCF-CAP-013,Baseline refresh interval,months,3,Capability-profile parameter; illustrative
+MCF-CAP-014,Transient measurement resolution,ms,100 or finer,"Capability-profile parameter; illustrative, must resolve the fastest step of interest"
+MCF-CAP-014,Maximum load step change,% of pod IT load,measured; no default,"Measured characteristic, not a design default"
+MCF-CAP-014,Maximum ramp rate,kW per second per pod,measured; no default,"Measured characteristic, not a design default"
+MCF-CAP-015,Planning horizon,months,36,Capability-profile parameter; illustrative
+MCF-CAP-015,Forecast review interval,months,6,Capability-profile parameter; illustrative
+MCF-CAP-016,Scenario demand exercise interval,months,12,Capability-profile parameter; illustrative
+MCF-CAP-016,Restart staging group size,% of instance accelerators per step,25,Capability-profile parameter; illustrative
+MCF-CAP-017,Design margin below lowest-rated element,% of rating,10,Capability-profile parameter; illustrative
+MCF-CAP-018,Air inlet temperature range,degC,18-27,ASHRAE TC 9.9 recommended envelope for air-cooled IT; OEM limits prevail where stricter
+MCF-CAP-018,Technology cooling system supply temperature upper limit,degC,per OEM specification,OEM specification; no generic default
+MCF-CAP-019,Duration validation interval,months,12,Capability-profile parameter; illustrative
+MCF-CAP-019,Thermal ride-through on loss of facility water,minutes,validated value; no default,"Validated characteristic, not a design default"
+MCF-CAP-019,Response margin before limit,% of validated duration,50,Capability-profile parameter; illustrative
+MCF-CAP-020,Maximum IT load in reduced-redundancy maintenance,% of normal envelope,per redundancy study; no default,Derived from POW/THM redundancy studies
+MCF-CAP-021,Traceability reconciliation interval,months,12,Capability-profile parameter; illustrative
+MCF-CAP-022,Commissioning test load,% of design IT load,100,"Capability-profile parameter; illustrative, using load banks or representative workloads"
+MCF-CAP-024,Record update time after retirement,working days,10,Capability-profile parameter; illustrative
+MCF-DEP-001,Mapping completeness for critical Required Functions,% of functions with verified mapping,100,"Illustrative; any unmapped critical function defeats dependency visibility, so the profile normally sets 100%."
+MCF-DEP-001,Reconciliation sample size,assets per InfrastructureSystem,10 or all if fewer,Illustrative; set by AIDCF-009 sampling rules and population size.
+MCF-DEP-001,Reconciliation interval,months,12,Illustrative; shorten for estates with high deployment churn such as accelerator cluster expansion.
+MCF-DEP-002,Minimum trace depth beyond boundary,upstream nodes,1 (first shared upstream node),Illustrative; deeper tracing is set in the profile where concentration risk is high.
+MCF-DEP-002,Corroboration sample,% of external dependency records,25 (minimum 5 records),Illustrative; set per AIDCF-009 sampling rules.
+MCF-DEP-003,Thermal ride-through at declared rack load,seconds,Site-specific (no default),"Derived from THM analysis and test; liquid-cooled high-density racks can have very short ride-through, so it is never assumed."
+MCF-DEP-003,Maximum training work lost per interruption,minutes of cluster time,Equal to checkpoint interval (illustrative 30),Illustrative; set from the Service Outcome tolerance in CAP.
+MCF-DEP-004,Maximum acceptable unresolved circular dependencies on critical functions,count,0,Illustrative; any unresolved cycle on a critical function defeats recovery planning.
+MCF-DEP-005,Upstream depth examined for shared source,levels,To grid supply point / carrier POP / fuel terminal,Illustrative; profile sets depth based on the declared external hazard set.
+MCF-DEP-007,Minimum physical separation for diverse routes,m,Site-specific (no default),Set in capability profile with reference to fire-zone design and the separation guidance in the cabling standard adopted (for example ANSI/TIA-942 or EN 50600-2-4).
+MCF-DEP-007,Route inspection interval,months,24,Illustrative; shorter where third-party works or construction occur nearby.
+MCF-DEP-008,Minimum authorised persons per critical switching task available within response time,persons,2,Illustrative; reflects a two-person rule for HV switching common in safe systems of work; set from the site safety rules.
+MCF-DEP-009,Firm capacity margin over declared peak demand,% of declared peak,10,Illustrative; set in the capability profile from load growth uncertainty and utility terms.
+MCF-DEP-009,Minimum fuel resupply commitment under emergency,hours from call-off to delivery,Site-specific (no default),Set from POW fuel autonomy (MCF-POW-007/008) so that autonomy exceeds the committed resupply time with margin.
+MCF-DEP-009,Power quality history reviewed,months,12,Illustrative; longer history improves estimate of event frequency.
+MCF-DEP-010,Minimum number of independent carriers for production connectivity,carriers,2,Illustrative; set by the connectivity Service Outcome.
+MCF-DEP-010,Carrier time-to-repair commitment,hours,4,Illustrative; compare against outcome tolerance.
+MCF-DEP-011,Support entitlement expiry warning,days before expiry,180,Illustrative; allows renewal or replacement before entitlement lapses.
+MCF-DEP-012,Maximum dependency of safety or continuity loops on cloud/SaaS services,count,0,Illustrative; profile may allow exceptions only with accountable acceptance.
+MCF-DEP-013,Maximum share of usable capability in one fault domain,% of usable capacity,Site-specific (no default),Derived from the CAP-03 impact tolerance; there is no universal value.
+MCF-DEP-014,Maximum share of a critical asset class from one supplier,% of installed base,Site-specific (no default),Set in capability profile; standardisation benefits must be weighed against common-mode exposure.
+MCF-DEP-015,Minimum independent holders per critical knowledge item,persons,2,Illustrative; external parties count only where contractually available within response time.
+MCF-DEP-016,Substitution validation interval,months,24,Illustrative; shorter for dependencies with high event frequency.
+MCF-DEP-016,Time-to-substitute margin,% of tolerance,75 (demonstrated time no more than 75% of tolerance),Illustrative; provides margin for real-event degradation.
+MCF-DEP-019,Per-tenant load-step limit,kW per second,Site-specific (no default),Derived from POW-05 load-step response analysis.
+MCF-DEP-020,Interface deviation review interval,months,1,Illustrative.
+MCF-DEP-021,Dependency trend review interval,months,3,Illustrative.
+MCF-DEP-022,Provider review interval,months,3,Illustrative.
+MCF-DEP-023,Maximum time to update dependency graph after detected change,working days,10,Illustrative.
+MCF-DEP-024,Revalidation interval for material dependencies,months,12,"Illustrative; shorter for high-churn dependencies (cloud services, carriers)."
+MCF-PHY-001,Design flood annual exceedance probability for critical plant,% per year,0.1 (illustrative),Capability profile; national flood-risk mapping commonly publishes 1% and 0.1% AEP extents
+MCF-PHY-001,Freeboard above design flood level for critical plant,mm,300 (illustrative),Capability profile; site flood-risk assessment
+MCF-PHY-001,Hazard assessment review interval,months,36 (illustrative),Capability profile
+MCF-PHY-002,External exposure assessment radius,km,2 (illustrative),Capability profile; threat assessment
+MCF-PHY-002,Hostile vehicle mitigation rating,vehicle mass / impact speed,"7,500 kg at 48 km/h (illustrative)",Threat assessment; rating per IWA 14-1 or PAS 68 test classification
+MCF-PHY-002,External exposure review interval,months,12 (illustrative),Capability profile
+MCF-PHY-003,Heaviest declared delivered item on IT route (crated rack),kg,"3,000 (illustrative)",Capability profile; rack OEM shipping data
+MCF-PHY-003,Independent access routes for fuel and emergency vehicles,count,2 (illustrative),Capability profile; emergency services consultation
+MCF-PHY-004,Adjacent-risk register review interval,months,12 (illustrative),Capability profile
+MCF-PHY-005,"Design uniformly distributed live load, data hall",kN/m²,20 (illustrative),Structural engineer of record; capability profile for dense liquid-cooled racks
+MCF-PHY-005,Planned-load utilisation threshold requiring structural re-check,% of rated capacity,80 (illustrative),Capability profile
+MCF-PHY-006,Maximum operating mass per rack position,kg,"2,000 (illustrative)",Structural capacity statement; capability profile
+MCF-PHY-006,Rack-load reconciliation sample,% of positions,10 (illustrative),Assessment sampling plan
+MCF-PHY-007,Transmitted vibration limit at IT equipment,mm/s RMS,per most restrictive OEM specification,OEM installation requirements
+MCF-PHY-008,Envelope inspection interval,months,6 (illustrative),Capability profile; roofing guidance
+MCF-PHY-009,Authentication factors at critical-space zone entry,count,2 (illustrative),Capability profile; threat assessment
+MCF-PHY-010,Fire resistance between compartments holding redundant paths,minutes,120 (illustrative),Fire strategy; national building regulations; capability profile
+MCF-PHY-010,Fire-stopping inspection sample per interval,% of penetrations,20 (illustrative),Capability profile
+MCF-PHY-011,Leak alarm to isolation time (automatic isolation zones),s,60 (illustrative),Capability profile; CDU OEM guidance
+MCF-PHY-011,Maximum credible leak rate for drainage sizing,L/min,per largest pipe and pump capacity in zone,Thermal design basis
+MCF-PHY-013,Critical-zone access review interval,days,90 (illustrative),Capability profile
+MCF-PHY-013,Leaver revocation latency,hours,4 (illustrative),Capability profile
+MCF-PHY-014,Maximum visitors per escort in critical zones,ratio,3:1 (illustrative),Capability profile
+MCF-PHY-015,Recording retention,days,90 (illustrative),Capability profile; local privacy law limits
+MCF-PHY-015,Pixel density for identification views,px/m,250,IEC 62676-4 operational requirement categories
+MCF-PHY-016,Alarm acknowledgement time,s,60 (illustrative),Capability profile
+MCF-PHY-016,Attendance time at critical-zone alarm,minutes,5 (illustrative),Capability profile
+MCF-PHY-016,Unannounced response exercises,per year,4 (illustrative),Capability profile
+MCF-PHY-017,Inbound critical shipments with seal inspection,%,100 (illustrative),Capability profile
+MCF-PHY-018,Rack or plant mass requiring an approved move plan,kg,"1,500 (illustrative)",Capability profile
+MCF-PHY-019,Media custody inventory reconciliation interval,days,30 (illustrative),Capability profile
+MCF-PHY-020,Decommissioned data-bearing devices with per-serial certificate,%,100 (illustrative),Capability profile
+MCF-PHY-021,Aspirating detection maximum transport time,s,per design; not greater than the EN 54-20 class limit,EN 54-20 (aspirating smoke detectors); system design
+MCF-PHY-021,Detection functional test interval,months,12 (illustrative),NFPA 72 or national fire code; capability profile
+MCF-PHY-021,Maximum detection impairment duration without compensating measure,hours,0 (illustrative),Capability profile
+MCF-PHY-022,Gaseous agent design hold time,minutes,10 (illustrative),NFPA 2001 or ISO 14520 design practice; fire engineer's design
+MCF-PHY-022,Enclosure integrity test interval,months,12 (illustrative),Capability profile; agent standard
+MCF-PHY-023,Emergency lighting full-duration test interval,months,12 (illustrative),National emergency lighting standard (e.g. EN 50172); capability profile
+MCF-PHY-024,Emergency shutdown functional test interval,months,12 (illustrative),Capability profile; applicable electrical code
+MCF-POW-001,Margin of firm import capacity over modelled peak demand,% of firm capacity,10 (illustrative),Capability profile
+MCF-POW-001,Demand forecast horizon,months,36 (illustrative),Capability profile; utility lead times
+MCF-POW-001,Metered demand integration interval,minutes,15 or finer,Utility tariff metering practice; finer resolution needed to capture AI load dynamics
+MCF-POW-002,Supply voltage variation assumed in design,% of nominal,±10 (illustrative),EN 50160 voltage characteristics or utility declaration
+MCF-POW-002,Power quality data retention,months,24 (illustrative),Capability profile
+MCF-POW-003,Interruption history period,years,5 (illustrative),Capability profile; network operator data
+MCF-POW-004,Time to achieve declared load reduction on curtailment instruction,minutes,15 (illustrative),Connection agreement; capability profile
+MCF-POW-004,Plan exercise interval,months,12 (illustrative),Capability profile
+MCF-POW-005,Generator redundancy,topology,N+1 (illustrative),Capability profile; outcome tolerance
+MCF-POW-005,Site design ambient for generator derating,°C,"site extreme design value (ASHRAE climatic data, n-year return; illustrative n=20)",ASHRAE Handbook climatic design data; capability profile
+MCF-POW-005,Periodic load-bank test duration at rated load,hours,4 (illustrative),NFPA 110 or national emergency power practice; capability profile
+MCF-POW-006,Maximum start-to-load-acceptance time,s,10 (illustrative; NFPA 110 Type 10 defines 10 s),NFPA 110 type classification; UPS autonomy
+MCF-POW-006,Monthly test load,% of nameplate,30 (illustrative),NFPA 110 monthly exercise practice
+MCF-POW-006,Start reliability threshold for incident review,failed or delayed starts per year,0 (illustrative),Capability profile
+MCF-POW-007,On-site fuel autonomy at declared load,hours,48 (illustrative),Capability profile; outcome tolerance and replenishment risk
+MCF-POW-007,Fuel quality test interval,months,6 (illustrative),"Capability profile; fuel specification (EN 590, ASTM D975 or EN 15940)"
+MCF-POW-008,Guaranteed emergency resupply lead time,hours,12 (illustrative),Supply contracts; capability profile
+MCF-POW-008,Independent fuel suppliers,count,2 (illustrative),Capability profile
+MCF-POW-009,Declared UPS redundancy,topology,2N or distributed redundant (illustrative),Capability profile
+MCF-POW-009,Maximum normal-state loading of each path in a 2N design,% of path rating,45 (illustrative),Capability profile; failure analysis
+MCF-POW-010,Battery end-of-life capacity threshold,% of rated capacity,80,IEEE 450 / IEEE 1188 replacement criterion for lead-acid; OEM criterion for lithium-ion
+MCF-POW-010,Battery capacity test interval,months,12 (illustrative),Capability profile; IEEE 450/1188
+MCF-POW-010,BMS critical alarm response time,minutes,15 (illustrative),Capability profile
+MCF-POW-011,"Minimum UPS/BESS runtime at declared load, end of life",minutes,5 (illustrative),Capability profile; generator start time and workload preservation time
+MCF-POW-011,Load growth threshold triggering runtime recalculation,% of declared load,10 (illustrative),Capability profile
+MCF-POW-012,Cumulative bypass exposure limit per UPS system,hours per year,24 (illustrative),Capability profile
+MCF-POW-012,Unplanned bypass escalation time,minutes,15 (illustrative),Capability profile
+MCF-POW-013,Arc-flash study review interval,years,5,NFPA 70E review requirement
+MCF-POW-013,Incident energy threshold requiring reduction measure,cal/cm²,8 (illustrative),Capability profile; NFPA 70E / IEEE 1584 methodology
+MCF-POW-013,Infrared thermography interval,months,12 (illustrative),NFPA 70B / capability profile
+MCF-POW-014,Protection setting extraction and comparison interval,months,24 (illustrative),Capability profile
+MCF-POW-014,Permitted deviation of as-found settings from study,count,0 (illustrative),Capability profile
+MCF-POW-015,Continuous load limit,% of device rating,80 (illustrative; for devices not rated for 100% continuous duty),NFPA 70 / IEC 60364 continuous-load sizing conventions; device rating
+MCF-POW-015,Maximum phase imbalance at PDU/busway,%,10 (illustrative),Capability profile
+MCF-POW-016,Periodic inspection and test interval,years,5 (illustrative),IEC 60364-6 / national wiring regulations; capability profile
+MCF-POW-017,Steady-state voltage envelope at critical boards,% of nominal,±5 (illustrative),Equipment PSU specifications; capability profile
+MCF-POW-017,Voltage unbalance limit,%,2 (illustrative),EN 50160 / IEC 61000-2 compatibility levels
+MCF-POW-018,"Voltage THD limit at PCC, 1 kV < V ≤ 69 kV",%,5,IEEE 519 voltage distortion limits
+MCF-POW-018,"Voltage THD limit at PCC, V ≤ 1 kV",%,8,IEEE 519 voltage distortion limits
+MCF-POW-019,Static transfer switch transfer time,ms,4 (illustrative; within PSU hold-up),STS OEM data; PSU hold-up specification
+MCF-POW-019,Maximum restart time for non-UPS cooling plant,s,per thermal ride-through analysis (THM),Thermal design basis
+MCF-POW-020,Maximum cluster power swing amplitude,% of cluster IT load,50 (illustrative),Measured cluster data or accelerator vendor specification
+MCF-POW-020,Power oscillation frequency band of concern,Hz,0.1 to 20 (illustrative),Cluster characterisation; generator and grid modal analysis
+MCF-POW-020,Maximum single load step on generator supply,% of generator rating,per ISO 8528-5 class and test data (illustrative: 50),ISO 8528-5 load acceptance performance classes
+MCF-POW-020,Measurement resolution for AI load dynamics,ms,100 or finer (illustrative),Capability profile
+MCF-POW-021,Critical-node metering coverage,% of critical nodes,100 (illustrative),Capability profile
+MCF-POW-021,Clock synchronisation accuracy for sequence of events,ms,1 (illustrative),Capability profile; IEC 61850 time-sync practice
+MCF-POW-021,Maximum EPMS data gap per point,% of period,1 (illustrative),Capability profile
+MCF-POW-022,On-time completion of critical electrical maintenance,%,95 (illustrative),Capability profile
+MCF-POW-022,Maximum overdue period without approved deferral,days,30 (illustrative),Capability profile
+MCF-POW-023,"Planned critical switching with approved, peer-checked MOP",%,100 (illustrative),Capability profile
+MCF-POW-024,Restoration time from dead site to full critical load,hours,4 (illustrative),Capability profile; recovery outcome
+MCF-POW-024,Black-start exercise interval,months,12 (illustrative),Capability profile
+MCF-THM-001,Rack design heat load (liquid-cooled AI rack),kW per rack,120 (illustrative),Platform OEM thermal design data; site-specific
+MCF-THM-001,Liquid-capture ratio (direct-to-chip platform),% of rack heat to liquid,80 (illustrative),OEM thermal data or measured; varies by platform generation
+MCF-THM-001,Synchronous load step,% of fault-domain design load within 1 s,50 (illustrative),Workload characterisation of synchronous training; to be measured
+MCF-THM-001,Model-to-measured reconciliation tolerance,% of measured heat load,±10 (illustrative),Capability profile
+MCF-THM-002,Design capacity margin above design heat load,%,10 (illustrative),Capability profile; design authority
+MCF-THM-002,Commissioning load-bank test level,% of design heat load,100 (illustrative),ASHRAE Guideline 0 practice; site commissioning plan
+MCF-THM-003,Declared redundancy for CDU stage,configuration,N+1 (illustrative),Capability profile
+MCF-THM-003,Chiller restart-to-capacity time after power interruption,s,300 (illustrative),Manufacturer rapid-restart data; verify by test
+MCF-THM-003,Thermal ride-through required,s,600 (illustrative),Derived: restart time plus margin; capability profile
+MCF-THM-003,Maximum TCS supply temperature rise during transient,K,5 (illustrative),OEM coolant inlet limit minus normal setpoint
+MCF-THM-004,Design ambient dry-bulb,°C,site-specific (illustrative: 0.4% annual extreme),ASHRAE climatic design conditions or national equivalent
+MCF-THM-004,Design ambient wet-bulb (evaporative systems),°C,site-specific,ASHRAE climatic design conditions
+MCF-THM-004,Climate-change allowance on design ambient,K,2 (illustrative),Capability profile; regional projections
+MCF-THM-004,High-ambient action threshold,% of derated capacity,90 (illustrative),Capability profile
+MCF-THM-005,IT inlet temperature envelope,°C,18–27,ASHRAE TC 9.9 recommended envelope (classes A1–A4); site may adopt narrower OEM limits
+MCF-THM-005,Air-handler ΔT lower bound (bypass indicator),K,8 (illustrative),Capability profile
+MCF-THM-005,Hot-spot closure time,h,24 (illustrative),Capability profile
+MCF-THM-006,Maximum leakage area of containment,% of containment area,declared by design (illustrative 2),Design authority
+MCF-THM-007,Air-side redundancy per zone,configuration,N+1 (illustrative),Capability profile
+MCF-THM-007,Entering-water temperature for rating,°C,site design value,Design basis
+MCF-THM-008,Inlet sensor density,sensors per row,≥ 3 (illustrative),Capability profile
+MCF-THM-008,Sensor accuracy,K,±0.5 (illustrative),Capability profile; instrument specification
+MCF-THM-008,Calibration interval,months,12 (illustrative),Instrument manufacturer / site metrology policy
+MCF-THM-009,Facility water class at CDU interface,ASHRAE W-class,W32 (illustrative),ASHRAE TC 9.9 liquid-cooling classes W17–W45 and W+
+MCF-THM-009,TCS supply temperature to cold plates,°C,OEM-specified (illustrative 30–40),Platform OEM specification
+MCF-THM-009,CDU heat-exchanger approach temperature,K,3 (illustrative),CDU manufacturer data
+MCF-THM-009,TCS filtration rating,µm,50 (illustrative; OEM may require finer),Platform OEM specification; OCP cold-plate guidance
+MCF-THM-010,CDU pump failover recovery time,s,10 (illustrative),CDU manufacturer data; verify by test
+MCF-THM-010,Minimum TCS flow per rack,l/min,OEM-specified,Platform OEM specification
+MCF-THM-010,CDU group redundancy,configuration,N+1 (illustrative),Capability profile
+MCF-THM-011,Pressure test level,× maximum operating pressure,1.5 (illustrative),Piping code or manufacturer specification
+MCF-THM-011,Pressure test hold time,min,30 (illustrative),Piping code or manufacturer specification
+MCF-THM-011,Unexplained make-up volume investigation threshold,l per week per loop,5 (illustrative),Capability profile
+MCF-THM-012,Coupling inspection interval,months,12 (illustrative),Coupling manufacturer guidance
+MCF-THM-012,Rated connect/disconnect cycles,cycles,manufacturer-rated,Coupling manufacturer data
+MCF-THM-013,Chiller restart-to-capacity,s,300 (illustrative),Manufacturer rapid-restart data
+MCF-THM-013,Chiller redundancy,configuration,N+1 (illustrative),Capability profile
+MCF-THM-014,Approach temperature degradation threshold,K above commissioned,2 (illustrative),Capability profile
+MCF-THM-015,Water autonomy at peak consumption,h,48 (illustrative),Capability profile; utility risk assessment
+MCF-THM-015,Peak water consumption,m³/h,site-calculated,Design calculation at design wet-bulb and load
+MCF-THM-017,Glycol concentration,% by volume,OEM-specified (illustrative 25),Platform OEM coolant specification; OCP propylene-glycol guidance
+MCF-THM-018,TCS sampling frequency,per month,1 (illustrative),OEM/fluid supplier guidance
+MCF-THM-018,Out-of-limit corrective-action time,days,7 (illustrative),Capability profile
+MCF-THM-018,Legionella risk assessment review interval,months,24 or on change (illustrative),Applicable national regulation/ACOP
+MCF-THM-019,Leak detection functional test interval,months,12 (illustrative),Manufacturer guidance; capability profile
+MCF-THM-019,Alarm-to-acknowledgement time,min,5 (illustrative),Capability profile
+MCF-THM-020,Maximum release volume per isolated section,l,design-specific (illustrative 50),Design authority
+MCF-THM-020,Valve exercise interval,months,12 (illustrative),Manufacturer guidance
+MCF-THM-021,Settling time after load step,s,120 (illustrative),Controls design; capability profile
+MCF-THM-021,Temperature control band,K,±1 (illustrative),Controls design
+MCF-THM-022,Control-critical sensor calibration interval,months,12 (illustrative),Instrument manufacturer / metrology policy
+MCF-THM-022,Redundant-sensor divergence alarm,K,1.5 (illustrative),Capability profile
+MCF-THM-023,Minimum residual redundancy during maintenance,configuration,N (illustrative),Capability profile; risk acceptance
+MCF-THM-024,Thermal recovery time objective,min,30 (illustrative),Capability profile
+MCF-THM-024,IT readmission step,% of fault-domain design load,25 (illustrative),Capability profile; recovering capacity
+MCF-ENV-001,Recommended IT inlet air temperature envelope,°C,18 to 27,ASHRAE TC 9.9 thermal guidelines recommended envelope
+MCF-ENV-001,Liquid-cooling facility/TCS supply class,ASHRAE W class,W32 or W45 (illustrative),ASHRAE TC 9.9 liquid cooling classes; OEM requirement
+MCF-ENV-001,Rack inlet sensor density,sensors per rack,"3 (top, middle, bottom; illustrative)",Capability profile; ASHRAE measurement practice
+MCF-ENV-001,Permitted excursion time outside recommended envelope,hours per year,per OEM allowable (illustrative: 50),Capability profile
+MCF-ENV-002,Recommended dew point envelope,°C dew point,"-9 to 15, and ≤ 60% RH",ASHRAE TC 9.9 thermal guidelines recommended envelope
+MCF-ENV-002,Minimum margin of coolant supply temperature above room dew point,K,2 (illustrative),Capability profile; CDU OEM guidance
+MCF-ENV-003,Gaseous corrosion severity level,ANSI/ISA-71.04 class,G1,ASHRAE TC 9.9 gaseous and particulate contamination guidance
+MCF-ENV-003,Particulate cleanliness,ISO 14644-1 class,8,ASHRAE TC 9.9 contamination guidance
+MCF-ENV-003,Corrosion coupon interval,months,3 (illustrative),Capability profile
+MCF-ENV-004,Occupational noise lower / upper exposure action values,dB(A) daily exposure,80 / 85,EU Directive 2003/10/EC (noise at work) or national equivalent
+MCF-ENV-004,Sound pressure limit at storage arrays during discharge,dB,per storage OEM threshold,Storage OEM guidance; suppression designer
+MCF-ENV-004,Site boundary noise limit,dB(A),per planning or environmental permit,Permit conditions
+MCF-ENV-005,PUE measurement period,months,12,ISO/IEC 30134-2
+MCF-ENV-005,PUE measurement category,category,Category 2 or higher (illustrative),ISO/IEC 30134-2; capability profile
+MCF-ENV-005,Revenue/sub-meter accuracy class,class,0.5S or better (illustrative),IEC 62053 series
+MCF-ENV-006,Maximum unallocated energy,% of site total,2 (illustrative),Capability profile
+MCF-ENV-007,IT load points for efficiency characterisation,% of design IT load,25 / 50 / 75 / 100 (illustrative),Capability profile
+MCF-ENV-007,Energy reuse factor reporting,ratio,measured annually,ISO/IEC 30134-6
+MCF-ENV-009,Legionella risk assessment review interval,months,24 (illustrative),"National Legionella guidance (e.g. HSE L8, ASHRAE 188); capability profile"
+MCF-ENV-010,WUE measurement period,months,12,ISO/IEC 30134-9
+MCF-ENV-011,On-site water storage autonomy at design-day consumption,hours,48 (illustrative),Capability profile
+MCF-ENV-011,Heat-rejection capacity in reduced-water mode at design ambient,% of design IT load,per thermal design (illustrative: 80),Thermal design basis
+MCF-ENV-012,Discharge monitoring frequency,per consent,per permit conditions,Discharge consent
+MCF-ENV-013,Materiality threshold for boundary exclusions,% of total emissions,5 (illustrative),Capability profile; GHG Protocol guidance on exclusions
+MCF-ENV-014,Temporal matching granularity,interval,annual or hourly (declared),GHG Protocol Scope 2 Guidance; hourly matching frameworks
+MCF-ENV-015,Embodied data coverage,% of hardware and plant by spend,80 (illustrative),Capability profile
+MCF-ENV-016,Restatement threshold,% change in reported metric,5 (illustrative),Capability profile
+MCF-ENV-017,Maximum state of charge for stored lithium-ion spares,% SoC,30 (illustrative),OEM guidance; aligns with air-transport limit for UN 3480 lithium-ion batteries
+MCF-ENV-018,Refrigerant leak-check frequency,per system,tiered by CO2e charge per applicable regulation,EU F-gas Regulation (EU) 2024/573 or national equivalent
+MCF-ENV-018,Refrigerant detector alarm setpoint,% of practical limit or ATEL/ODL,per EN 378 / ISO 5149 (illustrative: 50% of practical limit),EN 378 / ISO 5149 refrigerating systems safety
+MCF-ENV-019,Secondary containment capacity,% of largest tank volume,110 (illustrative),Common oil-storage regulation and bunding practice; local permit
+MCF-ENV-021,Design extreme ambient dry-bulb,°C,site n=20-year extreme (illustrative),ASHRAE Handbook climatic design data
+MCF-ENV-021,Climate-adjusted design ambient uplift,K,2 (illustrative),Owner-adopted climate projection (e.g. IPCC AR6 scenario)
+MCF-ENV-021,Forecast trigger margin below design ambient,K,3 (illustrative),Capability profile
+MCF-ENV-022,Water-stress planning horizon,years,20 (illustrative),Capability profile
+MCF-ENV-023,Climate scenario and horizon for flood adaptation,scenario / year,SSP2-4.5 to 2060 (illustrative),IPCC AR6 scenarios; owner-adopted projection
+MCF-ENV-023,Demountable defence deployment time,hours,less than flood warning lead time (illustrative: 4),Flood response plan
+MCF-ENV-024,Resource planning horizon,years,15 (illustrative),Capability profile
+MCF-CMP-001,Accelerators per scale-up domain,count,platform-specific (illustrative: 8 node-scale; 72 rack-scale),Platform OEM architecture
+MCF-CMP-001,Scale-out bandwidth per accelerator,Gb/s,400 (illustrative),Fabric design; platform OEM reference architecture
+MCF-CMP-001,Rack power envelope,kW,120 (illustrative),Platform OEM data; facility power budget
+MCF-CMP-002,Configuration conformance coverage,% of nodes,100 (illustrative),Capability profile
+MCF-CMP-002,Conformance scan interval,days,7 (illustrative),Capability profile
+MCF-CMP-002,Nonconforming node remediation time,days,3 (illustrative),Capability profile
+MCF-CMP-003,Rack weight,kg,"platform-specific (illustrative 1,500)",Platform OEM data; structural rating
+MCF-CMP-004,Fleet on current baseline,% of nodes,98 (illustrative),Capability profile
+MCF-CMP-004,Maximum exception age,days,30 (illustrative),Capability profile
+MCF-CMP-006,Minimum scale-up bandwidth,% of rated all-reduce bandwidth,90 (illustrative),Platform OEM performance data; capability profile
+MCF-CMP-006,Re-validation interval,days,30 (illustrative),Capability profile
+MCF-CMP-006,Link-error drain threshold,errors per hour per link,platform-specific,Platform OEM RAS guidance
+MCF-CMP-008,Maximum capacity fraction in a single facility fault domain,% of Capability Instance accelerators,25 (illustrative),Capability profile; outcome tolerance
+MCF-CMP-008,Job resumption time after fault-domain loss,min,60 (illustrative),Capability profile; checkpoint interval
+MCF-CMP-009,Required usable capacity,% of installed accelerators,92 (illustrative),Capability profile; Service Outcome
+MCF-CMP-009,Throttle performance threshold,% of rated clock or throughput,95 (illustrative),Capability profile
+MCF-CMP-010,Scheduler controller failover time,s,60 (illustrative),Capability profile
+MCF-CMP-011,Recovery reserve,% of job size,5 (illustrative),Capability profile; observed node failure rate
+MCF-CMP-011,Reclaim time,min,15 (illustrative),Capability profile
+MCF-CMP-012,Priority job slowdown tolerance,% versus baseline,10 (illustrative),Capability profile
+MCF-CMP-013,Firmware drift remediation time,days,7 (illustrative),Capability profile
+MCF-CMP-013,Firmware inventory coverage,% of devices,100 (illustrative),Capability profile
+MCF-CMP-015,Canary cohort size,% of fleet,2 (illustrative),Capability profile
+MCF-CMP-015,Soak period per stage,h,72 (illustrative),Capability profile
+MCF-CMP-015,Halt criterion: error-rate increase,× baseline,2 (illustrative),Capability profile
+MCF-CMP-016,Rollback time objective,h,4 (illustrative),Capability profile
+MCF-CMP-017,Telemetry interval,s,10 (illustrative),Capability profile
+MCF-CMP-017,Collection completeness,% of expected samples,99 (illustrative),Capability profile
+MCF-CMP-017,Retention,days,90 (illustrative),Capability profile
+MCF-CMP-018,Periodic health-check interval,h,24 (illustrative),Capability profile
+MCF-CMP-018,Maximum drained-node age before escalation,days,5 (illustrative),Capability profile
+MCF-CMP-019,Drain time after fatal error event,min,5 (illustrative),Capability profile
+MCF-CMP-019,SDC screening interval,days,30 (illustrative),Capability profile; OCP SDC practice
+MCF-CMP-019,Correctable ECC escalation threshold,events per day per accelerator,platform-specific,Platform OEM RAS guidance
+MCF-CMP-020,Performance regression threshold,% below baseline,5 (illustrative),Capability profile
+MCF-CMP-021,Burn-in duration,h,48 (illustrative),Capability profile; OEM guidance
+MCF-CMP-022,On-site spares,% of installed by class,3 (illustrative),Capability profile; failure-rate analysis
+MCF-CMP-022,RMA turnaround obligation,days,contractual,Supplier contract
+MCF-CMP-023,Single-node rebuild time objective,h,2 (illustrative),Capability profile
+MCF-CMP-023,Mass rebuild fraction,% of cluster,25 (illustrative),Capability profile
+MCF-CMP-023,Mass rebuild time objective,h,12 (illustrative),Capability profile
+MCF-STO-001,Data-loader read throughput per accelerator,GB/s,workload-specific (illustrative 1),Workload characterisation
+MCF-STO-001,Permitted data jurisdictions,list,capability-specific,Data owner; applicable law and contracts
+MCF-STO-002,Checkpoint size (large training job),TB,job-specific (illustrative 10),Model architecture and optimiser state
+MCF-STO-002,Checkpoint write window,s,120 (illustrative),Capability profile; acceptable step stall
+MCF-STO-002,Checkpoint interval,min,derived (illustrative 30),Young/Daly model using measured interruption rate
+MCF-STO-002,Retained good checkpoints,count,3 (illustrative),Capability profile
+MCF-STO-004,Archive copies,count,2 (illustrative),Capability profile
+MCF-STO-004,Retrieval time objective,h,48 (illustrative),Capability profile
+MCF-STO-005,Required aggregate checkpoint write throughput,GB/s,derived: checkpoint size ÷ window (illustrative 100),MCF-STO-002 derivation
+MCF-STO-005,Degraded-state minimum,% of required throughput,70 (illustrative),Capability profile
+MCF-STO-005,Required aggregate read throughput,GB/s,derived from MCF-STO-001,Workload characterisation
+MCF-STO-006,Metadata operation p99 latency,ms,10 (illustrative),Capability profile
+MCF-STO-006,Required metadata operations,ops/s,workload-specific,Workload characterisation
+MCF-STO-007,Critical utilisation threshold,% of usable capacity,80 (illustrative),Storage vendor guidance; capability profile
+MCF-STO-007,Warning threshold,% of usable capacity,70 (illustrative),Capability profile
+MCF-STO-008,Concurrent checkpointing jobs,count,3 (illustrative),Workload characterisation
+MCF-STO-008,Restart read-storm completion time,min,15 (illustrative),Capability profile
+MCF-STO-009,Checksum coverage of checkpoints and artefacts,%,100 (illustrative),Capability profile
+MCF-STO-010,Metadata failover time,s,60 (illustrative),Capability profile; vendor data
+MCF-STO-010,Consistency check interval,days,30 (illustrative),Vendor guidance
+MCF-STO-011,Scrub cycle,days,30 (illustrative),Vendor guidance; capability profile
+MCF-STO-013,Snapshot recovery point objective,h,4 (illustrative),Capability profile
+MCF-STO-013,Snapshot retention,days,14 (illustrative),Capability profile
+MCF-STO-014,Replication RPO (checkpoints),min,60 (illustrative),Capability profile
+MCF-STO-014,Replication RPO (datasets and artefacts),h,24 (illustrative),Capability profile
+MCF-STO-015,Protection scheme,k+m,8+2 (illustrative),Capability profile; vendor options
+MCF-STO-015,Concurrent failure-domain tolerance,count,2 (illustrative),Capability profile
+MCF-STO-015,Rebuild time objective,h,24 (illustrative),Capability profile; vendor data
+MCF-STO-016,Immutable retention,days,30 (illustrative),Capability profile
+MCF-STO-016,Restore time from immutable copy,h,24 (illustrative),Capability profile
+MCF-STO-017,Retained good checkpoints,count,3 (illustrative),Capability profile
+MCF-STO-018,Restart time objective,min,30 (illustrative),Capability profile
+MCF-STO-018,Lost work tolerance,min of training,60 (illustrative),Capability profile; checkpoint interval
+MCF-STO-019,Storage recovery time objective,h,4 (illustrative),Capability profile
+MCF-STO-020,Restore test interval,months,3 (illustrative),Capability profile
+MCF-STO-021,Telemetry interval,s,30 (illustrative),Capability profile
+MCF-STO-022,Forecast horizon,months,9 (illustrative),Procurement lead time
+MCF-STO-023,NVMe wear replacement threshold,% of rated endurance used,90 (illustrative),Vendor endurance rating
+MCF-STO-023,AFR investigation threshold,%,2× fleet baseline (illustrative),Capability profile
+MCF-NET-001,Rail-mapping conformance,% of accelerator ports on design rail/leaf,100 (illustrative),Rail-optimised designs assume ordinal NIC n connects to rail n; any deviation alters collective paths. Site-specific.
+MCF-NET-001,Maximum topology reconciliation age,days,90 (illustrative),Capability-profile parameter; shorten where change rate is high.
+MCF-NET-002,Minimum physical separation between diverse routes,m,Site-specific; set by risk analysis (illustrative: separate containment and entry points),Capability-profile parameter; no universal distance applies.
+MCF-NET-002,Route evidence age,months,12 (illustrative),Carriers re-groom circuits; evidence ages.
+MCF-NET-003,Back-end fabric design oversubscription,ratio (downlink:uplink),1:1 (illustrative),Common design choice for large training fabrics; site and workload specific.
+MCF-NET-003,Front-end/storage uplink oversubscription,ratio,Workload-derived (illustrative 3:1),Capability-profile parameter justified by traffic analysis.
+MCF-NET-003,Minimum tolerated effective ratio under N-1,ratio,Set per Service Outcome (illustrative 1.15:1 for back-end),Derived from performance outcome tolerance.
+MCF-NET-004,Maximum endpoints affected by a single switch failure,accelerator ports,Equal to leaf downlink count (illustrative),Derived from topology; outcome-specific tolerance.
+MCF-NET-004,Maximum reroute/reconvergence time after single spine loss,s,Set by job collective timeout margin (illustrative 30),Must be below framework collective timeouts; site-specific.
+MCF-NET-004,Subnet-manager failover time,s,Vendor- and scale-dependent (illustrative 60),Capability-profile parameter verified by test.
+MCF-NET-005,Latency deviation alert threshold,% above baseline at p99,25 (illustrative),Capability-profile parameter tuned to measurement noise.
+MCF-NET-005,Baseline percentile set,percentiles,"p50, p99, p99.9 (illustrative)",Tail latency drives synchronous collective step time.
+MCF-NET-006,Link flap isolation threshold,flaps per hour,3 (illustrative),Capability-profile parameter.
+MCF-NET-006,Post-FEC uncorrectable codeword threshold,count per interval,Any non-zero sustained (illustrative),Post-FEC errors become packet loss; vendor guidance applies.
+MCF-NET-006,Pre-FEC BER warning threshold,BER,Vendor/PHY specific (illustrative: one order of magnitude below FEC limit),Set from IEEE 802.3 FEC capability and vendor guidance.
+MCF-NET-007,PFC watchdog detection time,ms,Vendor default unless tuned (illustrative 200),Configured per NOS; verified by test.
+MCF-NET-007,Maximum tolerated pause propagation,hops from congestion point,1 (illustrative),Design objective to keep pause local.
+MCF-NET-007,Lossless traffic classes,count,1 or 2 (illustrative),Fewer lossless classes reduce deadlock and headroom exposure.
+MCF-NET-008,Collective acceptance target,% of design bus bandwidth,90 (illustrative),Capability-profile parameter derived from performance outcome.
+MCF-NET-008,Benchmark periodic interval,days,30 (illustrative),Detects slow drift.
+MCF-NET-009,Checkpoint write window,s,Derived from checkpoint size and goodput target (illustrative 120),Capability-profile parameter; see RES-016.
+MCF-NET-009,Tolerated collective degradation during checkpoint,% bus bandwidth reduction,10 (illustrative),Capability-profile parameter.
+MCF-NET-010,Front-end peak utilisation ceiling,% of uplink capacity,70 (illustrative),Capability-profile parameter for headroom.
+MCF-NET-011,Gateway capacity alert threshold,% of rated connections/throughput,70 (illustrative),Capability-profile parameter.
+MCF-NET-011,Tolerated failover disruption,s,Set by inference availability outcome (illustrative 5),Derived from Service Outcome.
+MCF-NET-012,Guaranteed bandwidth share per tenant class,% of link,Contract-specific (illustrative 25),Set by tenant commitments (GOV-021).
+MCF-NET-012,Tolerated cross-tenant degradation,% throughput reduction,5 (illustrative),Capability-profile parameter.
+MCF-NET-014,Console reachability check interval,days,30 (illustrative),Capability-profile parameter.
+MCF-NET-015,OOB power autonomy,h,Equal to or greater than black-start sequence duration (illustrative 4),Derived from RES-014 restoration sequence.
+MCF-NET-015,OOB test interval,months,6 (illustrative),Capability-profile parameter.
+MCF-NET-016,Break-glass post-use review time,h,24 (illustrative),Capability-profile parameter.
+MCF-NET-016,Break-glass test interval,months,6 (illustrative),Capability-profile parameter.
+MCF-NET-017,Maximum containment fill,% cross-section,Per adopted standard (illustrative 50),From adopted cabling standard; site-specific.
+MCF-NET-017,Fibre link loss acceptance margin,dB below transceiver budget,Set from optics budget (illustrative 1.0),Ensures operating margin; see NET-018.
+MCF-NET-018,Rx power warning margin,dB above receiver sensitivity,2 (illustrative),Capability-profile parameter derived from vendor budget.
+MCF-NET-018,Optics failure-rate review trigger,failures per 1000 per month,Site baseline-derived (illustrative),Triggers lot-level analysis.
+MCF-NET-019,Record update time after change,h,24 (illustrative),Capability-profile parameter.
+MCF-NET-020,Path record accuracy target,% of audited links correct end-to-end,99 (illustrative),Capability-profile parameter.
+MCF-NET-020,Audit sample size,links per audit,Statistically justified (illustrative 200),Sampling per AIDCF-009.
+MCF-NET-021,Controller failover time tolerance,s,Below job collective timeout margin (illustrative 60),Capability-profile parameter.
+MCF-NET-021,Controller failover test interval,months,12 (illustrative),Capability-profile parameter.
+MCF-NET-022,Drift detection interval,h,24 (illustrative),Capability-profile parameter.
+MCF-NET-022,Canary stage size,% of devices,≤5 (illustrative),Limits firmware common-mode exposure (X08).
+MCF-NET-023,Telemetry collection interval for congestion counters,s,10 (illustrative),Capability-profile parameter; finer for diagnosis.
+MCF-NET-023,Telemetry retention,days,Per evidence retention class (illustrative 395),AIDCF-008 retention classes.
+MCF-NET-024,Time offset tolerance,ms,Workload- and log-correlation-dependent (illustrative 1 for NTP; sub-microsecond for PTP where required),Capability-profile parameter.
+MCF-NET-024,Holdover duration,h,Covers time-source repair time (illustrative 24),Capability-profile parameter.
+MCF-OPS-001,Minimum on-site staff per shift,persons by discipline,Site-specific (no default),Derived from emergency task analysis; there is no universal staffing ratio.
+MCF-OPS-001,On-call specialist attendance time,minutes,60,Illustrative; must be shorter than the time available after on-site staff stabilise the event.
+MCF-OPS-001,Maximum shift length,hours,12,Illustrative; set with reference to HSE HSG256 guidance and local working-time law.
+MCF-OPS-004,Authorisation revalidation interval,months,36,Illustrative; set by site safety rules and legal requirements.
+MCF-OPS-005,Procedure review interval,months,12,Illustrative.
+MCF-OPS-007,Permit audit frequency,audits per month,4,Illustrative.
+MCF-OPS-008,LOTO field audit interval,months,3,Illustrative.
+MCF-OPS-009,Generator load test frequency,per year,Per NFPA 110 or site standard (no default),Set from the adopted standard and OEM requirements.
+MCF-OPS-010,Thermography frequency for critical switchgear and busway,per year,1,Illustrative; NFPA 70B provides guidance.
+MCF-OPS-010,Coolant quality sampling interval,weeks,4,Illustrative; set from CDU and cold-plate OEM requirements.
+MCF-OPS-011,Calibration interval for control-loop temperature sensors,months,12,Illustrative; set from OEM and criticality.
+MCF-OPS-012,Maximum deferral without re-approval,days,30,Illustrative.
+MCF-OPS-013,Target average alarm rate per operator in normal operation,alarms per hour,Per alarm philosophy (no default),Set in the alarm philosophy with reference to IEC 62682 / ANSI/ISA-18.2 and EEMUA 191 benchmarks.
+MCF-OPS-013,Alarm performance review interval,months,1,Illustrative.
+MCF-OPS-014,Escalation time for Service Outcome-impacting incidents,minutes,15,Illustrative.
+MCF-OPS-015,RCA completion time,working days,20,Illustrative.
+MCF-OPS-016,Effectiveness verification period,months,6,Illustrative.
+MCF-OPS-017,Baseline reconciliation interval,months,6,Illustrative; continuous automated drift detection where available.
+MCF-OPS-018,Emergency change retrospective review time,working days,5,Illustrative.
+MCF-OPS-019,Maximum temporary configuration duration without re-approval,days,7,Illustrative.
+MCF-OPS-020,Post-change observation period for facility control changes,hours,24,Illustrative.
+MCF-OPS-021,Capacity planning threshold,% of N-1 available capacity,80,Illustrative.
+MCF-OPS-022,Indicator reporting interval,months,1,Illustrative.
+MCF-OPS-023,Maximum phase imbalance,%,Site-specific (no default),Set from UPS and transformer OEM limits.
+MCF-OPS-024,Operational reporting interval,months,1,Illustrative.
+MCF-RES-001,Maximum tolerable disruption (training outcome),h,Business-impact derived (illustrative 24),ISO/TS 22317-style impact analysis; capability-specific.
+MCF-RES-001,Maximum tolerable disruption (inference outcome),min,Business-impact derived (illustrative 15),Capability-specific.
+MCF-RES-001,Maximum lost training progress,h of cluster time,Equal to checkpoint interval plus restart time (illustrative 2),Links to RES-016.
+MCF-RES-001,Minimum retained capacity in DEGRADED state,% of nominal,50 (illustrative),Capability-profile parameter.
+MCF-RES-002,Time to shed load to residual target,min,Less than UPS autonomy minus margin (illustrative 5),Derived from POW and THM ride-through.
+MCF-RES-002,Accelerator power-cap floor,% of TDP,Vendor-supported range (illustrative 60),Capability-profile parameter; vendor limits apply.
+MCF-RES-005,Fault-domain model reconciliation age,days,180 (illustrative),Capability-profile parameter.
+MCF-RES-007,Maximum blast radius per single credible failure,% of Capability Instance capacity,Impact-tolerance derived (illustrative 25),Capability-profile parameter.
+MCF-RES-008,Isolation validation cycle,months,24 (illustrative),Capability-profile parameter.
+MCF-RES-010,Alternate capacity activation time,h,Within maximum tolerable disruption (illustrative 8),Derived from RES-001.
+MCF-RES-010,Relocation test interval,months,12 (illustrative),Capability-profile parameter.
+MCF-RES-011,Provider continuity evidence age,months,12 (illustrative),Capability-profile parameter.
+MCF-RES-014,Target black-start-to-service time,h,Within RTO (illustrative 12),Derived from RES-001.
+MCF-RES-014,Maximum IT load step during restoration,% of generator rating,Generator- and UPS-specific (illustrative 25),From POW-020 load-step analysis.
+MCF-RES-014,Integrated restoration test interval,months,24 (illustrative),Capability-profile parameter.
+MCF-RES-015,Configuration backup interval,h,24 or on change (illustrative),Capability-profile parameter.
+MCF-RES-015,Restore test interval per class,months,12 (illustrative),Capability-profile parameter.
+MCF-RES-016,Checkpoint interval,min,Optimised from failure rate and checkpoint cost (illustrative 60),Young/Daly-style approximation; capability-specific.
+MCF-RES-016,Durable checkpoint copies outside cluster failure domain,count,1 (illustrative),Capability-profile parameter.
+MCF-RES-016,Restart-from-checkpoint time,min,Within RTO (illustrative 30),Derived from RES-001.
+MCF-RES-017,Programme adherence target,% of scheduled tests completed on time,95 (illustrative),Capability-profile parameter.
+MCF-RES-018,Integrated test cycle,months,24 (illustrative),Capability-profile parameter.
+MCF-RES-018,Representative load during test,% of design IT load,As high as safely authorised (illustrative 70),Load banks or real workload; site-specific.
+MCF-RES-019,Tabletop cycle,months,6 (illustrative),Capability-profile parameter.
+MCF-RES-020,Maximum age of open gate-critical lesson,days,90 (illustrative),Capability-profile parameter.
+MCF-RES-021,Crisis command activation time,min from trigger,30 (illustrative),Capability-profile parameter.
+MCF-RES-023,Emergency change retrospective review deadline,working days,5 (illustrative),Capability-profile parameter.
+MCF-RES-024,Post-event review deadline,days,30 (illustrative),Capability-profile parameter.
+MCF-SUP-002,Supplier monitoring interval,months,6,Illustrative; quarterly for sole-source suppliers.
+MCF-SUP-004,Sub-tier depth for critical classes,tiers,2,Illustrative; deeper where single-source components are known.
+MCF-SUP-005,Maximum on-site attendance time for critical electrical/mechanical faults,hours,4,Illustrative; set from DEP-003 time-to-impact and spares held.
+MCF-SUP-006,Evidence delivery time on request,working days,10,Illustrative.
+MCF-SUP-007,Notification intake test interval,months,6,Illustrative.
+MCF-SUP-008,Minimum transition assistance period,months,12,Illustrative.
+MCF-SUP-010,Serial verification coverage for safety-critical protection devices,% of units received,100,Illustrative.
+MCF-SUP-012,Target time to identify all affected units,hours,24,Illustrative.
+MCF-SUP-012,Traceability exercise interval,months,12,Illustrative.
+MCF-SUP-015,Maximum share of a redundant group updated per wave,% of group,50 (and never all members),Illustrative.
+MCF-SUP-015,Soak time between waves,hours,24,Illustrative.
+MCF-SUP-016,"Remediation target for critical, exposed vulnerabilities",days,14,Illustrative; OT may require longer with compensating controls.
+MCF-SUP-017,Spares stock review interval,months,6,Illustrative.
+MCF-SUP-017,Spare-to-installed ratio for accelerator trays,% of installed,Site-specific (no default),"Derived from observed failure rates, RMA turnaround and the compute availability outcome."
+MCF-SUP-018,Lead-time refresh interval,months,6,Illustrative; lead times for electrical equipment can change materially within a year.
+MCF-SUP-019,Logistics continuity validation interval,months,24,Illustrative.
+MCF-SUP-020,Obsolescence planning horizon,months,24,Illustrative.
+MCF-SUP-022,Maximum default session duration,hours,4,Illustrative.
+MCF-SUP-022,Emergency activation review time,hours,24,Illustrative.
+MCF-SUP-023,Session recording retention,days,90,Illustrative.
+MCF-SUP-024,Maximum revocation time after notification,hours,24,Illustrative.
+MCF-SUP-024,Recertification interval,months,3,Illustrative.
+MCF-SEC-001,Leaver access removal deadline,h,24 (illustrative),Capability-profile parameter.
+MCF-SEC-001,Access recertification interval,months,"3 for privileged, 6 for standard (illustrative)",Capability-profile parameter.
+MCF-SEC-002,Maximum static credential lifetime (consequential authority),days,90 (illustrative),Capability-profile parameter.
+MCF-SEC-002,Certificate expiry warning window,days,30 (illustrative),Capability-profile parameter.
+MCF-SEC-003,Maximum JIT elevation duration,h,4 (illustrative),Capability-profile parameter.
+MCF-SEC-003,Privilege boundary test interval,months,6 (illustrative),Capability-profile parameter.
+MCF-SEC-004,Break-glass rotation after use,h,24 (illustrative),Capability-profile parameter.
+MCF-SEC-005,Target security level for power and cooling control zones,SL (ISA/IEC 62443),SL-T 2 minimum; SL-T 3 for zones whose compromise defeats CG-05/CG-06 (illustrative),Assigned by risk assessment per ISA/IEC 62443-3-2.
+MCF-SEC-005,Controller logic integrity check interval,days,7 (illustrative),Capability-profile parameter.
+MCF-SEC-006,Escalation test interval,months,12 (illustrative),Capability-profile parameter.
+MCF-SEC-008,Destructive-operation delay,h,24 (illustrative),Capability-profile parameter.
+MCF-SEC-009,Zone reconciliation interval,months,6 (illustrative),Capability-profile parameter.
+MCF-SEC-010,Management segmentation test interval,months,6 (illustrative),Capability-profile parameter.
+MCF-SEC-011,Rule review interval,months,6 (illustrative),Capability-profile parameter.
+MCF-SEC-012,Maximum vendor session duration,h,8 (illustrative),Capability-profile parameter.
+MCF-SEC-012,Revocation effect time,min,15 (illustrative),Capability-profile parameter.
+MCF-SEC-013,Baseline compliance assessment interval,days,30 (illustrative),Capability-profile parameter.
+MCF-SEC-013,Baseline compliance target,% devices compliant,98 (illustrative),Capability-profile parameter.
+MCF-SEC-014,Remediation time for known-exploited vulnerabilities on reachable management planes,days,14 (illustrative),Capability-profile parameter.
+MCF-SEC-015,Maximum fraction of a redundancy group patched in one stage,%,50 (illustrative),Avoids common-mode failure (X08).
+MCF-SEC-016,Maximum exception duration,months,12 (illustrative),Capability-profile parameter.
+MCF-SEC-017,Silent-source alert threshold,min,60 (illustrative),Capability-profile parameter.
+MCF-SEC-018,Detection-to-triage target,min,15 (illustrative),Capability-profile parameter.
+MCF-SEC-018,Detection validation interval,months,6 (illustrative),Capability-profile parameter.
+MCF-SEC-019,Containment decision time target,min,30 (illustrative),Capability-profile parameter.
+MCF-SEC-019,Playbook exercise interval,months,12 (illustrative),Capability-profile parameter.
+MCF-SEC-021,Maximum automated setpoint change per interval,units per min,System-specific (illustrative: 1 °C per 5 min for supply temperature),Capability-profile parameter set by engineering authority.
+MCF-SEC-021,Maximum nodes acted on per automated action,count,Fault-domain size (illustrative),Limits blast radius.
+MCF-SEC-023,Allowlist test interval,months,6 (illustrative),Capability-profile parameter.
+MCF-SEC-024,Kill-switch halt time,s,60 (illustrative),Capability-profile parameter.
+MCF-EVA-002,Evidence request response time,working days,10,Engagement parameter; illustrative
+MCF-EVA-004,Evidence repository restoration test interval,months,12,Programme parameter; illustrative
+MCF-EVA-006,Integrity detection test interval,months,12,Programme parameter; illustrative
+MCF-EVA-007,Independent re-rating sample,% of supporting Evidence Objects,10,"Programme parameter; illustrative, minimum of 10 objects"
+MCF-EVA-014,UNKNOWN traceability test set size,UNKNOWN Records,10,Programme parameter; illustrative
+MCF-EVA-021,Expiry response time,working days,20,Programme parameter; illustrative
+MCF-EVA-022,Trigger test interval,months,6,Programme parameter; illustrative
+MCF-EVA-023,Maximum tolerated feed gap,% of period,5,Programme parameter; illustrative
+MCF-EVA-024,Suspension time after qualifying trigger,working days,5,Programme parameter; illustrative
+MCF-EVA-024,Suspension rehearsal interval,months,12,Programme parameter; illustrative

@@ -51,9 +51,13 @@ Do not open a public issue containing:
 
 ## 5. Private reporting channel
 
-Before public launch, repository maintainers must configure and publish a private security-reporting channel, such as GitHub private vulnerability reporting or a dedicated monitored mailbox.
+Report privately through GitHub private vulnerability reporting:
 
-Until that channel is configured, do not publish sensitive reports in the repository. Contact the repository owner through an approved private channel.
+```text
+https://github.com/Sivas1187/AIDCF/security/advisories/new
+```
+
+The report is visible only to the repository maintainers and the reporter. The repository owner enables this channel under **Settings → Code security → Private vulnerability reporting**. If the link does not open a report form, the channel is not yet enabled: do not publish the report anywhere in the repository, and wait until it is.
 
 A private report should include:
 

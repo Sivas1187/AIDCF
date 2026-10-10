@@ -1,0 +1,67 @@
+{
+ "fixtureId": "I-SCH-010",
+ "layer": "SCHEMA",
+ "expect": "FAIL",
+ "expectedText": "'provenance' is a required property",
+ "description": "Envelope field provenance missing.",
+ "record": {
+  "id": "urn:aidcf:syn:control-assessment:CA-001",
+  "type": "ControlAssessment",
+  "name": "CA-001 assessment of MCF-CAP-001",
+  "applicabilityBasis": "In scope: the control applies to the synthetic capability boundary.",
+  "assessedAt": "2026-10-01",
+  "assessmentMethods": [
+   "RECONCILIATION",
+   "INSPECTION",
+   "DOCUMENT_REVIEW",
+   "ANALYSIS"
+  ],
+  "assessor": "urn:aidcf:syn:party:ASSESSOR-A",
+  "claimType": "IMPLEMENTATION",
+  "classification": "INTERNAL",
+  "confidence": "CONF-3",
+  "createdAt": "2026-10-10T00:00:00Z",
+  "createdBy": "urn:aidcf:syn:party:BUILDER",
+  "effectiveFrom": "2026-10-10T00:00:00Z",
+  "evaluatesGate": [
+   "urn:aidcf:syn:gate-result:GR-CG-01"
+  ],
+  "evidenceSufficiency": "S3",
+  "evidencedBy": [
+   "urn:aidcf:syn:evidence:EV-001",
+   "urn:aidcf:syn:evidence:EV-013",
+   "urn:aidcf:syn:evidence:EV-014"
+  ],
+  "governedBy": [
+   "urn:aidcf:syn:procedure:AP-001",
+   "https://w3id.org/aidcf/id/control/MCF-CAP-001"
+  ],
+  "implementationMaturity": "IM3",
+  "migratedFrom": [
+   "urn:aidcf:assessment:CA-001"
+  ],
+  "operatingStates": [
+   "NORMAL"
+  ],
+  "releaseRef": "AIDCF-REL-2026.10.1",
+  "result": "CONFORMING",
+  "resultRationale": "Synthetic capability register entry with owner, lifecycle and approval; configuration extract and traceability analysis cover all three required classes at S3.",
+  "reviewState": "SUPPORTED",
+  "reviewedBy": [
+   "urn:aidcf:syn:review:RR-001"
+  ],
+  "schemaVersion": "1.3",
+  "scope": {
+   "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+   "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+  },
+  "semanticOwner": "AIDCF-009",
+  "sourceArtifact": "AIDCF-015",
+  "status": "REVIEWED",
+  "subjectRef": "urn:aidcf:syn:capability:CI-001",
+  "summarisedBy": [
+   "urn:aidcf:syn:score:SS-001"
+  ],
+  "version": "1.0"
+ }
+}

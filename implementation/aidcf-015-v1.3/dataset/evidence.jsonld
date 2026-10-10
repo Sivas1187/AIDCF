@@ -1,0 +1,1777 @@
+{
+ "@context": "../schemas/jsonld/aidcf-context-1.3.jsonld",
+ "@graph": [
+  {
+   "id": "urn:aidcf:syn:evidence-package:EP-001",
+   "type": "EvidencePackage",
+   "name": "Synthetic evidence package",
+   "classification": "INTERNAL",
+   "composedOf": [
+    "urn:aidcf:syn:evidence:EV-001",
+    "urn:aidcf:syn:evidence:EV-002",
+    "urn:aidcf:syn:evidence:EV-003",
+    "urn:aidcf:syn:evidence:EV-004",
+    "urn:aidcf:syn:evidence:EV-005",
+    "urn:aidcf:syn:evidence:EV-006",
+    "urn:aidcf:syn:evidence:EV-007",
+    "urn:aidcf:syn:evidence:EV-008",
+    "urn:aidcf:syn:evidence:EV-009",
+    "urn:aidcf:syn:evidence:EV-010",
+    "urn:aidcf:syn:evidence:EV-011",
+    "urn:aidcf:syn:evidence:EV-012",
+    "urn:aidcf:syn:evidence:EV-013",
+    "urn:aidcf:syn:evidence:EV-014",
+    "urn:aidcf:syn:evidence:EV-015",
+    "urn:aidcf:syn:evidence:EV-016",
+    "urn:aidcf:syn:evidence:EV-017",
+    "urn:aidcf:syn:evidence:EV-018",
+    "urn:aidcf:syn:evidence:EV-019",
+    "urn:aidcf:syn:evidence:EV-020",
+    "urn:aidcf:syn:evidence:EV-021",
+    "urn:aidcf:syn:evidence:EV-022",
+    "urn:aidcf:syn:evidence:EV-023",
+    "urn:aidcf:syn:evidence:EV-024",
+    "urn:aidcf:syn:evidence:EV-025",
+    "urn:aidcf:syn:evidence:EV-026",
+    "urn:aidcf:syn:evidence:EV-027",
+    "urn:aidcf:syn:evidence:EV-028",
+    "urn:aidcf:syn:evidence:EV-029",
+    "urn:aidcf:syn:evidence:EV-030",
+    "urn:aidcf:syn:evidence:EV-031",
+    "urn:aidcf:syn:evidence:EV-ARCH-01",
+    "urn:aidcf:syn:evidence:EV-ARCH-02",
+    "urn:aidcf:syn:evidence:EV-ARCH-03"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "sealedAt": "2026-10-10T00:00:00Z",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "6e28b297fbde4ec5491437e170ca7656c33439f08968eb212798e7926c68a8f7",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S3",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-001",
+   "type": "EvidenceObject",
+   "name": "Synthetic documentary evidence for MCF-CAP-001",
+   "byteSize": 281,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-A",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E1",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-001.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "migratedFrom": [
+    "urn:aidcf:evidence:EV-001"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "6a984eaa3a9168512238edfc5f658766ec5598779e8a772793778343d535ca11",
+    "legacyValue": "v1.2 evidenceClass=CONFIGURATION"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "6a984eaa3a9168512238edfc5f658766ec5598779e8a772793778343d535ca11",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S3",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-002",
+   "type": "EvidenceObject",
+   "name": "Synthetic documentary evidence for MCF-DEP-001",
+   "byteSize": 281,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-B",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E1",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-002.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "migratedFrom": [
+    "urn:aidcf:evidence:EV-002"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "0ffd34236f20eb21387e5b7036b3e7bb626f7cbec119fcd367d7b31cbec91635",
+    "legacyValue": "v1.2 evidenceClass=OPERATIONAL"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "0ffd34236f20eb21387e5b7036b3e7bb626f7cbec119fcd367d7b31cbec91635",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S4",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-002"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-003",
+   "type": "EvidenceObject",
+   "name": "Synthetic documentary evidence for MCF-POW-001",
+   "byteSize": 281,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-A",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E1",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-003.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "migratedFrom": [
+    "urn:aidcf:evidence:EV-003"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "e3ec453ad2158a69f27c606e7624eeb182eccb1705c37f2abc2800df92f2cf16",
+    "legacyValue": "v1.2 evidenceClass=VALIDATION"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "e3ec453ad2158a69f27c606e7624eeb182eccb1705c37f2abc2800df92f2cf16",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S5",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-003"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-004",
+   "type": "EvidenceObject",
+   "name": "Synthetic documentary evidence for MCF-THM-009",
+   "byteSize": 281,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-B",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E1",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-004.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "migratedFrom": [
+    "urn:aidcf:evidence:EV-004"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "319e02480e9e1174819a9e10c4df15af8a6e50df711bbd4fbd49fa2c03b0dd68",
+    "legacyValue": "v1.2 evidenceClass=DOCUMENTARY"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "319e02480e9e1174819a9e10c4df15af8a6e50df711bbd4fbd49fa2c03b0dd68",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S3",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-004"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-005",
+   "type": "EvidenceObject",
+   "name": "Synthetic documentary evidence for MCF-CMP-001",
+   "byteSize": 281,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-A",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E1",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-005.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "migratedFrom": [
+    "urn:aidcf:evidence:EV-005"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "7e1f888a762a21a2ea270666e8bf40bbddb0939f4c0790523286647908c029cd",
+    "legacyValue": "v1.2 evidenceClass=CONFIGURATION"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "7e1f888a762a21a2ea270666e8bf40bbddb0939f4c0790523286647908c029cd",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S3",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-005"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-006",
+   "type": "EvidenceObject",
+   "name": "Synthetic configuration evidence for MCF-STO-017",
+   "byteSize": 285,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-B",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E2",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-006.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "migratedFrom": [
+    "urn:aidcf:evidence:EV-006"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "b817b417d6a868aec53fd68a7ce266e9ee5d59e5dad368da06fe12f22539cb3a",
+    "legacyValue": "v1.2 evidenceClass=OPERATIONAL"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "b817b417d6a868aec53fd68a7ce266e9ee5d59e5dad368da06fe12f22539cb3a",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S4",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-006"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-007",
+   "type": "EvidenceObject",
+   "name": "Synthetic documentary evidence for MCF-NET-001",
+   "byteSize": 281,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-A",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E1",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-007.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "migratedFrom": [
+    "urn:aidcf:evidence:EV-007"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "0add3f9486537d277a5eeeb2c0803e9ddc6e018d43e773e12c4191b133e09ef1",
+    "legacyValue": "v1.2 evidenceClass=VALIDATION"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "0add3f9486537d277a5eeeb2c0803e9ddc6e018d43e773e12c4191b133e09ef1",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S4",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-007"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-008",
+   "type": "EvidenceObject",
+   "name": "Synthetic configuration evidence for MCF-OPS-013",
+   "byteSize": 285,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-B",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E2",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-008.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "migratedFrom": [
+    "urn:aidcf:evidence:EV-008"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "aa887ca9f675d5bf8b4a6bcd7bfd1553b1a6d07a4b90a399313e879389783fa9",
+    "legacyValue": "v1.2 evidenceClass=DOCUMENTARY"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "aa887ca9f675d5bf8b4a6bcd7bfd1553b1a6d07a4b90a399313e879389783fa9",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S4",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-008"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-009",
+   "type": "EvidenceObject",
+   "name": "Synthetic operational evidence for MCF-RES-017",
+   "byteSize": 281,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-A",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E3",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-009.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "migratedFrom": [
+    "urn:aidcf:evidence:EV-009"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "98e81f65c863d0b87c3afca011c3b93f1722deccc1a937f098dbf876945da9e3",
+    "legacyValue": "v1.2 evidenceClass=CONFIGURATION"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "98e81f65c863d0b87c3afca011c3b93f1722deccc1a937f098dbf876945da9e3",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S2",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-009"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-010",
+   "type": "EvidenceObject",
+   "name": "Synthetic documentary evidence for MCF-SUP-021",
+   "byteSize": 281,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-B",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E1",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-010.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "migratedFrom": [
+    "urn:aidcf:evidence:EV-010"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "2a5cd9b408b3c60f6e7bde4b8bf66cc704fd36ef0e2edcf39bbc0a27f14c86fc",
+    "legacyValue": "v1.2 evidenceClass=OPERATIONAL"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "2a5cd9b408b3c60f6e7bde4b8bf66cc704fd36ef0e2edcf39bbc0a27f14c86fc",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S4",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-010"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-011",
+   "type": "EvidenceObject",
+   "name": "Synthetic documentary evidence for MCF-SEC-005",
+   "byteSize": 281,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-A",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E1",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-011.txt",
+   "integrityLevel": "I3",
+   "invalidatedBy": [
+    "urn:aidcf:syn:event:EVT-001"
+   ],
+   "mediaType": "text/plain",
+   "migratedFrom": [
+    "urn:aidcf:evidence:EV-011"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "2aa3f765215621db8dc7e38a4c6c1a55163cd566093f61d6161327a132364c94",
+    "legacyValue": "v1.2 evidenceClass=VALIDATION"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "2aa3f765215621db8dc7e38a4c6c1a55163cd566093f61d6161327a132364c94",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S4",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-011"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-012",
+   "type": "EvidenceObject",
+   "name": "Synthetic documentary evidence for MCF-EVA-017",
+   "byteSize": 281,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-B",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E1",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-012.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "migratedFrom": [
+    "urn:aidcf:evidence:EV-012"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "9c0e9cdfc26f29cd5a75698a93dd1da929005d21bf553a058759a64263c0ccd1",
+    "legacyValue": "v1.2 evidenceClass=DOCUMENTARY"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "9c0e9cdfc26f29cd5a75698a93dd1da929005d21bf553a058759a64263c0ccd1",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S3",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-012"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-013",
+   "type": "EvidenceObject",
+   "name": "Synthetic configuration evidence for MCF-CAP-001",
+   "byteSize": 285,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-A",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E2",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-013.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "4cef85e73bac50eea2b075a4e1e86c345edcad3fc3e685a9460b480745c9c70d"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "4cef85e73bac50eea2b075a4e1e86c345edcad3fc3e685a9460b480745c9c70d",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S3",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-014",
+   "type": "EvidenceObject",
+   "name": "Synthetic analytical evidence for MCF-CAP-001",
+   "byteSize": 279,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-A",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E7",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-014.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "fceeb78003cd529faae29810d45eeaf38575d3ddf3b8f9fcb5bc257096ca61a0"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "fceeb78003cd529faae29810d45eeaf38575d3ddf3b8f9fcb5bc257096ca61a0",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S3",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-015",
+   "type": "EvidenceObject",
+   "name": "Synthetic configuration evidence for MCF-DEP-001",
+   "byteSize": 285,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-B",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E2",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-015.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "d83466b987b0ee104cf56608195d24aecaaca5b233eb04080ce254b5ae2ac525"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "d83466b987b0ee104cf56608195d24aecaaca5b233eb04080ce254b5ae2ac525",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S4",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-002"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-016",
+   "type": "EvidenceObject",
+   "name": "Synthetic configuration evidence for MCF-POW-001",
+   "byteSize": 285,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-A",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E2",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-016.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "da1159436b9d59ec0447d9e3e759767352f7531ff4ff49d3b0c339257525e644"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "da1159436b9d59ec0447d9e3e759767352f7531ff4ff49d3b0c339257525e644",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S5",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-003"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-017",
+   "type": "EvidenceObject",
+   "name": "Synthetic operational evidence for MCF-POW-001",
+   "byteSize": 281,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-A",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E3",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-017.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "e38bde77c2595aaf31183e5feea7bd2aad98d4c00b52ced828ec2fa8e3168131"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "e38bde77c2595aaf31183e5feea7bd2aad98d4c00b52ced828ec2fa8e3168131",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S5",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-003"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-018",
+   "type": "EvidenceObject",
+   "name": "Synthetic analytical evidence for MCF-POW-001",
+   "byteSize": 279,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-A",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E7",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-018.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "186e1e87b0eb88c9e0772c1c33df81b39087c4ea26fc95bd523fe90078bf0581"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "186e1e87b0eb88c9e0772c1c33df81b39087c4ea26fc95bd523fe90078bf0581",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S5",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-003"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-019",
+   "type": "EvidenceObject",
+   "name": "Synthetic analytical evidence for MCF-THM-009",
+   "byteSize": 279,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-B",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E7",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-019.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "ef2ecad410485ef7c639b7cddedbd8d6ce873e58c6abf43fae277271004ae2fc"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "ef2ecad410485ef7c639b7cddedbd8d6ce873e58c6abf43fae277271004ae2fc",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S3",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-004"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-020",
+   "type": "EvidenceObject",
+   "name": "Synthetic analytical evidence for MCF-CMP-001",
+   "byteSize": 279,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-A",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E7",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-020.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "55a59f4bc8a5372ec2ff54052925042d0a78a2eb520b9c2d5738c536aa3b1bc3"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "55a59f4bc8a5372ec2ff54052925042d0a78a2eb520b9c2d5738c536aa3b1bc3",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S3",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-005"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-021",
+   "type": "EvidenceObject",
+   "name": "Synthetic operational evidence for MCF-STO-017",
+   "byteSize": 281,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-B",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E3",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-021.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "913f2cc48aa3387a1f4589c4f436b113342833596ba589eb4fdc6a6b236d6b58"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "913f2cc48aa3387a1f4589c4f436b113342833596ba589eb4fdc6a6b236d6b58",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S4",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-006"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-022",
+   "type": "EvidenceObject",
+   "name": "Synthetic test evidence for MCF-STO-017",
+   "byteSize": 267,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-B",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E4",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-022.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "2b0862753b76f59b489459a7f853858524c1625c97027ab05afb224a69249156"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "2b0862753b76f59b489459a7f853858524c1625c97027ab05afb224a69249156",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S4",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-006"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-023",
+   "type": "EvidenceObject",
+   "name": "Synthetic configuration evidence for MCF-NET-001",
+   "byteSize": 285,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-A",
+   "confidenceFlags": [
+    "STALE"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E2",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-023.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "ed0005f2bd0a3b61d995787c764b30cc8457d17faf996f6c30c79c3bab2b9ba9"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "ed0005f2bd0a3b61d995787c764b30cc8457d17faf996f6c30c79c3bab2b9ba9",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S4",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-007"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-024",
+   "type": "EvidenceObject",
+   "name": "Synthetic operational evidence for MCF-NET-001",
+   "byteSize": 281,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-A",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E3",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-024.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "daa80804ad1641917f1dbe5a02efbdce2b64df7b8599d512ef46747619e0500d"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "daa80804ad1641917f1dbe5a02efbdce2b64df7b8599d512ef46747619e0500d",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S4",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-007"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-025",
+   "type": "EvidenceObject",
+   "name": "Synthetic operational evidence for MCF-OPS-013",
+   "byteSize": 281,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-B",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E3",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-025.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "b3542a9bc10c3723dccfe65c5946bb317fdc0f2bf2a9eb82514f5709f0624565"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "b3542a9bc10c3723dccfe65c5946bb317fdc0f2bf2a9eb82514f5709f0624565",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S4",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-008"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-026",
+   "type": "EvidenceObject",
+   "name": "Synthetic configuration evidence for MCF-SUP-021",
+   "byteSize": 285,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-B",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E2",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-026.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "b875285198414b11a727142e4dc8b3a59e8f331d88efe2abb7156dcfd71743f9"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "b875285198414b11a727142e4dc8b3a59e8f331d88efe2abb7156dcfd71743f9",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S4",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-010"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-027",
+   "type": "EvidenceObject",
+   "name": "Synthetic configuration evidence for MCF-SEC-005",
+   "byteSize": 285,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-A",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E2",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-027.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "b1fd6a14a815c0c338e71fd90ea093c0b217e464de5196558f7c883752180e60"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "b1fd6a14a815c0c338e71fd90ea093c0b217e464de5196558f7c883752180e60",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S4",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-011"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-028",
+   "type": "EvidenceObject",
+   "name": "Synthetic operational evidence for MCF-SEC-005",
+   "byteSize": 281,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-A",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E3",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-028.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "ce2262ceb07f3fc234fb85d889495b84bfd457b787837cb5fab3a8d7a8de6c6f"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "ce2262ceb07f3fc234fb85d889495b84bfd457b787837cb5fab3a8d7a8de6c6f",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S4",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-011"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-029",
+   "type": "EvidenceObject",
+   "name": "Synthetic test evidence for MCF-SEC-005",
+   "byteSize": 267,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-A",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E4",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-029.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "c5d9dc2c90adb22d821b22f7250129ad9c4ba8e67c6a732f96575147fc723bae"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "c5d9dc2c90adb22d821b22f7250129ad9c4ba8e67c6a732f96575147fc723bae",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S4",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-011"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-030",
+   "type": "EvidenceObject",
+   "name": "Synthetic analytical evidence for MCF-EVA-017",
+   "byteSize": 279,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:ASSESSOR-B",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E7",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-030.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "0a355eda707ccc7a7b1b5fe2ba6f5a19a753fb742cc868420e09907fe1e540da"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "0a355eda707ccc7a7b1b5fe2ba6f5a19a753fb742cc868420e09907fe1e540da",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S3",
+   "supports": [
+    "urn:aidcf:syn:control-assessment:CA-012"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-031",
+   "type": "EvidenceObject",
+   "name": "Synthetic UPS load and runtime metering",
+   "byteSize": 251,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:FAC-OPS",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E3",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-031.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "bad9fd569c4cac77cafc6225bacdb863945715f8ba4f99ba4de13de0b332cd93"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "bad9fd569c4cac77cafc6225bacdb863945715f8ba4f99ba4de13de0b332cd93",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S4",
+   "supports": [
+    "urn:aidcf:syn:capacity-assertion:CAP-CAP-02"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-ARCH-01",
+   "type": "EvidenceObject",
+   "name": "Synthetic single-line diagram and as-built drawing register",
+   "byteSize": 298,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:FAC-OPS",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E1",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-ARCH-01.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "a04a23fecab727ff0a0927807b075206d6c3b8449f338634880d0ed3a2383d36"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "a04a23fecab727ff0a0927807b075206d6c3b8449f338634880d0ed3a2383d36",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S3",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-ARCH-02",
+   "type": "EvidenceObject",
+   "name": "Synthetic BMS point list and controller configuration export",
+   "byteSize": 301,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:FAC-OPS",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E2",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-ARCH-02.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "caa3d175e76d5426c5ced6d81e546e997e0ed84caf45e75fda6a506a76974bae"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "caa3d175e76d5426c5ced6d81e546e997e0ed84caf45e75fda6a506a76974bae",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S3",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:evidence:EV-ARCH-03",
+   "type": "EvidenceObject",
+   "name": "Synthetic fabric and storage topology export",
+   "byteSize": 285,
+   "classification": "INTERNAL",
+   "collector": "urn:aidcf:syn:party:FAC-OPS",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "custodian": "urn:aidcf:syn:party:QA",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceClass": "E2",
+   "evidenceSource": "Synthetic source system",
+   "fixturePath": "evidence-fixtures/EV-ARCH-03.txt",
+   "integrityLevel": "I3",
+   "mediaType": "text/plain",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "periodEnd": "2026-09-30",
+   "periodStart": "2026-07-01",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3",
+    "sha256": "693f08800b9fab415c570f277cf445826ce4c9c75bda44cbe74bf70ddac66a6f"
+   },
+   "qualityBand": "Q3",
+   "qualityVector": {
+    "provenanceRating": 3,
+    "fitnessRating": 3,
+    "coverageRating": 3,
+    "reliabilityRating": 3,
+    "timelinessRating": 3,
+    "integrityRating": 3
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-008",
+   "sha256": "693f08800b9fab415c570f277cf445826ce4c9c75bda44cbe74bf70ddac66a6f",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "sufficiency": "S3",
+   "version": "1.0"
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+SYNTHETIC EVIDENCE FIXTURE - AIDCF-015 v1.3
+id: urn:aidcf:syn:evidence:EV-025
+class: E3
+title: Synthetic operational evidence for MCF-OPS-013
+Synthetic operational evidence supporting the MCF-OPS-013 assessment CA-008.
+This file describes no real facility, organisation or person.

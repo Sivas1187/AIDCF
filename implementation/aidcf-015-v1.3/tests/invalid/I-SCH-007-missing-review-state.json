@@ -1,0 +1,44 @@
+{
+ "fixtureId": "I-SCH-007",
+ "layer": "SCHEMA",
+ "expect": "FAIL",
+ "expectedText": "'reviewState' is a required property",
+ "description": "Assertion-bearing class without reviewState.",
+ "record": {
+  "id": "urn:aidcf:syn:dependency:DEP-02",
+  "type": "Dependency",
+  "name": "AST-UPS-A depends on AST-SWB-01",
+  "classification": "INTERNAL",
+  "confidence": "CONF-3",
+  "createdAt": "2026-10-10T00:00:00Z",
+  "createdBy": "urn:aidcf:syn:party:BUILDER",
+  "dependencyCriticality": "Illustrative: loss degrades or stops the dependent function.",
+  "dependencyType": "ELECTRICAL",
+  "direction": "AST-UPS-A relies on AST-SWB-01",
+  "effectiveFrom": "2026-10-10T00:00:00Z",
+  "evidencedBy": [
+   "urn:aidcf:syn:evidence:EV-ARCH-01"
+  ],
+  "faultDomainRef": "urn:aidcf:syn:fault-domain:FD-01",
+  "operatingStates": [
+   "NORMAL",
+   "MAINTENANCE"
+  ],
+  "provenance": {
+   "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+   "method": "SYNTHETIC_AUTHORING",
+   "synthetic": true,
+   "transformationVersion": "1.3"
+  },
+  "releaseRef": "AIDCF-REL-2026.10.1",
+  "schemaVersion": "1.3",
+  "semanticOwner": "AIDCF-003",
+  "sourceArtifact": "AIDCF-015",
+  "sourceRef": "urn:aidcf:syn:asset:AST-UPS-A",
+  "status": "REVIEWED",
+  "strength": "ABSOLUTE",
+  "substitutability": "Illustrative: no substitute within the outcome tolerance.",
+  "targetRef": "urn:aidcf:syn:asset:AST-SWB-01",
+  "version": "1.0"
+ }
+}

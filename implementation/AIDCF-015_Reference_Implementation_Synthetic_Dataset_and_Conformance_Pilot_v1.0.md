@@ -1,4 +1,4 @@
-> Markdown edition (source of truth). PDF: [AIDCF-015_Reference_Implementation_Synthetic_Dataset_and_Conformance_Pilot_v1.0.pdf](AIDCF-015_Reference_Implementation_Synthetic_Dataset_and_Conformance_Pilot_v1.0.pdf)
+> Markdown edition (source of truth). PDF edition, generated from this file: [AIDCF-015_Reference_Implementation_Synthetic_Dataset_and_Conformance_Pilot_v1.0.pdf](AIDCF-015_Reference_Implementation_Synthetic_Dataset_and_Conformance_Pilot_v1.0.pdf).
 
 **AIDCF**
 

@@ -1,0 +1,91 @@
+aidcfFamilyId,aidcfFamilyName,externalRef,externalTitle,relationship,confidence,notes
+GOV-01,Governance architecture,IEC 62443-2-1,Security program requirements for IACS asset owners,PARTIAL,MEDIUM,The asset-owner security program establishes governance for IACS security; AIDCF GOV-01 governs the whole assurance methodology and Assurance Decisions.
+GOV-02,Accountability and responsibility,IEC 62443-2-1,Security program requirements for IACS asset owners,PARTIAL,MEDIUM,Roles and responsibilities for IACS security overlap; critical-function accountability for non-OT infrastructure is out of scope.
+GOV-03,Policy and standards management,IEC 62443-2-1,Security program requirements for IACS asset owners,PARTIAL,MEDIUM,IACS security policies and procedures overlap; engineering Technical Standard Baselines are out of scope.
+GOV-04,Risk and assurance governance,IEC 62443-2-1; IEC 62443-3-2,Security program; Security risk assessment for system design,PARTIAL,LOW,IACS risk management overlaps; no Critical Gate governance.
+GOV-05,Stakeholder and regulatory interface,,,NO_MATCH,MEDIUM,
+GOV-06,"Ethics, impartiality and competence",IEC 62443-2-1; IEC 62443-2-4,Security program (training); Security program requirements for IACS service providers (personnel competence),CONTEXT,LOW,Competence and training of IACS personnel; assessor independence and appeal are certification-scheme matters.
+CAP-01,Capability inventory,IEC 62443-3-2,Security risk assessment for system design (system under consideration),CONTEXT,LOW,Identification of the system under consideration is a context for the capability register and architecture linkage.
+CAP-02,Service outcome definition,,,NO_MATCH,MEDIUM,
+CAP-03,Criticality and materiality,IEC 62443-3-2,Security risk assessment for system design (target security levels),CONTEXT,MEDIUM,Consequence-based SL-T determination per zone overlaps criticality classification for OT; it does not define impact tolerance for Service Outcomes.
+CAP-04,Demand and growth modelling,,,NO_MATCH,MEDIUM,
+CAP-05,Operating envelope,,,NO_MATCH,MEDIUM,
+CAP-06,Capability lifecycle and change,IEC 62443-4-1; IEC 62443-2-4,Secure product development lifecycle; Service provider security program,CONTEXT,LOW,Lifecycle security for products and integration services; commissioning acceptance of infrastructure capability is AIDCF-specific.
+DEP-01,Dependency discovery,IEC 62443-3-2,Security risk assessment for system design (zone and conduit model),CONTEXT,MEDIUM,Zone and conduit diagrams document OT communication dependencies; functional and recovery dependencies are AIDCF-specific.
+DEP-02,Shared and common-mode dependencies,,,NO_MATCH,MEDIUM,
+DEP-03,External providers and utilities,IEC 62443-2-4,Security program requirements for IACS service providers,PARTIAL,LOW,Service-provider security capability overlaps OEM dependency for control systems.
+DEP-04,Concentration and substitutability,,,NO_MATCH,MEDIUM,
+DEP-05,Boundary and interface control,IEC 62443-3-2; IEC 62443-3-3 (FR5),Zones and conduits; Restricted data flow,PARTIAL,HIGH,Zones and conduits with enforced data-flow restrictions overlap boundary definition and cross-boundary enforcement for OT and control planes.
+DEP-06,Dependency monitoring and review,,,NO_MATCH,MEDIUM,
+PHY-01,Site and location resilience,,,NO_MATCH,MEDIUM,
+PHY-02,Building and structural integrity,,,NO_MATCH,MEDIUM,
+PHY-03,Physical zoning and segregation,,,NO_MATCH,MEDIUM,
+PHY-04,Access and surveillance,IEC 62443-2-1,Security program (physical security of IACS),CONTEXT,LOW,Physical protection of IACS assets is considered within the program; site access control is out of scope.
+PHY-05,Asset movement and custody,,,NO_MATCH,MEDIUM,
+PHY-06,"Fire, life safety and emergency interfaces",,,NO_MATCH,MEDIUM,
+POW-01,Utility and grid interface,,,NO_MATCH,MEDIUM,
+POW-02,Generation and fuel,,,NO_MATCH,MEDIUM,
+POW-03,UPS and energy storage,,,NO_MATCH,MEDIUM,
+POW-04,Distribution and protection,,,NO_MATCH,MEDIUM,
+POW-05,Power quality and transient response,,,NO_MATCH,MEDIUM,
+POW-06,"Electrical monitoring, maintenance and recovery",,,NO_MATCH,MEDIUM,
+THM-01,Thermal architecture and capacity,,,NO_MATCH,MEDIUM,
+THM-02,Air cooling systems,,,NO_MATCH,MEDIUM,
+THM-03,Liquid cooling systems,,,NO_MATCH,MEDIUM,
+THM-04,Heat rejection and water systems,,,NO_MATCH,MEDIUM,
+THM-05,Fluid quality and leak management,,,NO_MATCH,MEDIUM,
+THM-06,"Thermal control, maintenance and recovery",,,NO_MATCH,MEDIUM,
+ENV-01,Environmental operating conditions,,,NO_MATCH,MEDIUM,
+ENV-02,Energy performance,,,NO_MATCH,MEDIUM,
+ENV-03,Water performance,,,NO_MATCH,MEDIUM,
+ENV-04,Carbon and resource reporting,,,NO_MATCH,MEDIUM,
+ENV-05,Hazardous materials and waste,,,NO_MATCH,MEDIUM,
+ENV-06,Climate adaptation and resource continuity,,,NO_MATCH,MEDIUM,
+CMP-01,Compute architecture and configuration,,,NO_MATCH,MEDIUM,
+CMP-02,Cluster and scale-up domains,,,NO_MATCH,MEDIUM,
+CMP-03,"Capacity, scheduling and utilisation",,,NO_MATCH,MEDIUM,
+CMP-04,"Firmware, driver and compatibility",IEC 62443-4-2,Technical security requirements for IACS components (software and firmware integrity and update),CONTEXT,LOW,Component update integrity requirements are a context for accelerator firmware baselines; compatibility and rollback readiness are AIDCF-specific.
+CMP-05,Compute health and observability,,,NO_MATCH,MEDIUM,
+CMP-06,Compute lifecycle and recovery,,,NO_MATCH,MEDIUM,
+STO-01,Storage architecture and tiering,,,NO_MATCH,MEDIUM,
+STO-02,Performance and capacity,,,NO_MATCH,MEDIUM,
+STO-03,Integrity and consistency,,,NO_MATCH,MEDIUM,
+STO-04,Protection and replication,,,NO_MATCH,MEDIUM,
+STO-05,Checkpoint and recovery services,,,NO_MATCH,MEDIUM,
+STO-06,Storage monitoring and lifecycle,,,NO_MATCH,MEDIUM,
+NET-01,Scale-up and scale-out fabrics,,,NO_MATCH,MEDIUM,
+NET-02,Performance and congestion control,,,NO_MATCH,MEDIUM,
+NET-03,Storage and service networks,IEC 62443-3-3 (FR5),Restricted data flow,CONTEXT,LOW,Restricted data flow informs traffic isolation where storage or service networks connect to OT.
+NET-04,Management and out-of-band networks,IEC 62443-3-3 (FR1; FR2; FR5),Identification and authentication control; Use control; Restricted data flow,PARTIAL,LOW,Management-network separation and controlled access overlap for OT; AI-fabric management networks are out of scope.
+NET-05,Physical connectivity and optics,,,NO_MATCH,MEDIUM,
+NET-06,Network control and observability,IEC 62443-3-3 (FR3; FR6),System integrity; Timely response to events,CONTEXT,LOW,Integrity and event response requirements are a context for configuration management and telemetry of OT networks.
+OPS-01,Operating model and staffing,IEC 62443-2-4,Security program requirements for IACS service providers,CONTEXT,LOW,Service-provider personnel requirements; operational staffing is out of scope.
+OPS-02,Procedure and work control,,,NO_MATCH,MEDIUM,
+OPS-03,Maintenance and reliability,,,NO_MATCH,MEDIUM,
+OPS-04,"Alarm, incident and problem management",IEC 62443-2-1; IEC 62443-3-3 (FR6),Security program (incident handling); Timely response to events,PARTIAL,LOW,IACS security incident handling overlaps; facility alarm management and non-security incidents are out of scope.
+OPS-05,Change and configuration management,IEC 62443-2-1; IEC 62443-2-4,Security program (configuration and change); Service provider program,PARTIAL,LOW,IACS configuration and change management overlap; non-OT configuration is out of scope.
+OPS-06,Capacity and service operations,,,NO_MATCH,MEDIUM,
+RES-01,Resilience strategy,,,NO_MATCH,MEDIUM,
+RES-02,Fault-domain and containment design,IEC 62443-3-2,Zones and conduits,PARTIAL,MEDIUM,Zones and conduits define containment boundaries for cyber propagation; physical and electrical fault domains are AIDCF-specific.
+RES-03,Continuity planning,,,NO_MATCH,MEDIUM,
+RES-04,Recovery planning,IEC 62443-3-3 (FR7),"Resource availability (backup, recovery and reconstitution)",PARTIAL,MEDIUM,"System backup, recovery and reconstitution overlap configuration restoration for control systems."
+RES-05,Testing and exercising,,,NO_MATCH,MEDIUM,
+RES-06,Crisis and adaptive response,,,NO_MATCH,MEDIUM,
+SUP-01,Supplier due diligence,IEC 62443-2-4; IEC 62443-4-1,Service provider security program; Secure product development lifecycle (maturity),PARTIAL,MEDIUM,Service-provider and product-supplier security capability overlap due diligence; financial resilience and sub-tier visibility are out of scope.
+SUP-02,Contract and service obligations,IEC 62443-2-4,Security program requirements for IACS service providers,CONTEXT,LOW,Service-provider capabilities can be referenced in contracts; evidence and exit rights are AIDCF-specific.
+SUP-03,Hardware and component provenance,IEC 62443-4-1; IEC 62443-4-2,Secure product development lifecycle; Component technical requirements,CONTEXT,LOW,Product integrity is a context; counterfeit prevention and chain of custody are not addressed.
+SUP-04,"Software, firmware and update supply",IEC 62443-4-1; IEC 62443-4-2,Secure product development lifecycle (security update management); Component technical requirements (software authenticity),PARTIAL,MEDIUM,"Security update management, authenticity of software and firmware and vulnerability handling overlap strongly for OT components."
+SUP-05,"Spares, logistics and obsolescence",,,NO_MATCH,MEDIUM,
+SUP-06,Remote support and third-party access,IEC 62443-2-4; IEC 62443-3-3 (FR1; FR2; FR6),Service provider remote access; Identification and authentication; Use control; Timely response to events,PARTIAL,MEDIUM,Remote access by service providers and its control and monitoring overlap strongly.
+SEC-01,Identity and privileged access,IEC 62443-3-3 (FR1; FR2); IEC 62443-4-2,Identification and authentication control; Use control; Component requirements,PARTIAL,HIGH,Human and machine identity and privileged use control overlap strongly for IACS; break-glass governance requires explicit evaluation.
+SEC-02,Control-plane protection,IEC 62443-2-1; IEC 62443-3-3 (FR1 to FR7); IEC 62443-4-2,Security program; System security requirements; Component requirements,PARTIAL,MEDIUM,"BMS, EPMS and CDU control systems are IACS and are covered strongly. Cluster manager, fabric controller and storage controller security are outside the IACS scope."
+SEC-03,Network security and segmentation,IEC 62443-3-2; IEC 62443-3-3 (FR5),Zones and conduits; Restricted data flow,PARTIAL,HIGH,"Security zoning, filtering and remote access via conduits overlap strongly for OT."
+SEC-04,"Configuration, vulnerability and patching",IEC 62443-2-1; IEC 62443-4-1,Security program (patch management); Secure product development lifecycle,PARTIAL,MEDIUM,Patch and vulnerability management for IACS overlap (see also IEC TR 62443-2-3 on patch management); compensating controls where patching is constrained are characteristic of OT.
+SEC-05,Detection and response,IEC 62443-3-3 (FR3; FR6),System integrity; Timely response to events,PARTIAL,MEDIUM,"Audit logging, event monitoring and response overlap; forensic readiness needs explicit evaluation."
+SEC-06,AI-enabled and automated action,IEC 62443-3-3 (FR2),Use control (authorisation enforcement),CONTEXT,LOW,"Authorisation enforcement applies to any actor, including automation; AI-agent authority, approval and allowlisting are AIDCF-specific."
+EVA-01,Evidence architecture,,,NO_MATCH,MEDIUM,
+EVA-02,Evidence provenance and quality,,,NO_MATCH,MEDIUM,
+EVA-03,Assessment planning and execution,IEC 62443-3-2,Security risk assessment for system design,CONTEXT,LOW,Structured risk assessment and SL-T/SL-A comparison are a context for assessment planning of OT controls.
+EVA-04,"Findings, UNKNOWN and limitations",,,NO_MATCH,MEDIUM,
+EVA-05,Critical gates and decisions,IEC 62443-3-3 (security levels),"SL-T, SL-C and SL-A",CONTEXT,LOW,Comparing achieved against target security level parallels gate evaluation for OT security; it is not an Assurance Decision.
+EVA-06,Reassessment and continuing assurance,,,NO_MATCH,MEDIUM,

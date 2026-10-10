@@ -1,0 +1,8 @@
+# Q12 AIDCF-014 section 19 Q12: which sensitive records are visible only under disclosure profile DC-002 (highly restricted)?
+# Expected result basis: The remote-access conduit is the only HIGHLY_RESTRICTED record.
+PREFIX aidcf: <https://w3id.org/aidcf/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?record ?type WHERE {
+  ?x aidcf:distributionControlRef <urn:aidcf:syn:distribution-control:DC-002> ; a ?t . FILTER (?t != aidcf:RelationshipRecord)
+  BIND (REPLACE(STR(?x), "^.*[:/]", "") AS ?record) BIND (REPLACE(STR(?t), "^.*#", "") AS ?type)
+}

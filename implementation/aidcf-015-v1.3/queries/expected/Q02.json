@@ -1,0 +1,22 @@
+{
+ "query": "Q02",
+ "description": "AIDCF-014 section 19 Q02: which failure scenarios and fault domains can defeat Service Outcome SO-01, and from which operating state?",
+ "basis": "Scenarios FS-01 to FS-05 and fault domains FD-01, FD-02.",
+ "rows": [
+  [
+   "FS-01",
+   "FD-01",
+   "NORMAL"
+  ],
+  [
+   "FS-02",
+   "FD-02",
+   "NORMAL"
+  ],
+  [
+   "FS-05",
+   "",
+   "NORMAL"
+  ]
+ ]
+}

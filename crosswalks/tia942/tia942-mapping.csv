@@ -1,0 +1,91 @@
+aidcfFamilyId,aidcfFamilyName,externalRef,externalTitle,relationship,confidence,notes
+GOV-01,Governance architecture,,,NO_MATCH,MEDIUM,
+GOV-02,Accountability and responsibility,,,NO_MATCH,MEDIUM,
+GOV-03,Policy and standards management,,,NO_MATCH,MEDIUM,
+GOV-04,Risk and assurance governance,,,NO_MATCH,MEDIUM,
+GOV-05,Stakeholder and regulatory interface,,,NO_MATCH,MEDIUM,
+GOV-06,"Ethics, impartiality and competence",,,NO_MATCH,MEDIUM,
+CAP-01,Capability inventory,,,NO_MATCH,MEDIUM,
+CAP-02,Service outcome definition,ANSI/TIA-942 (rated levels),Rated-1 to Rated-4 infrastructure ratings,CONTEXT,MEDIUM,A rated level expresses design redundancy intent per subsystem. It does not define capability Service Outcomes or tolerances.
+CAP-03,Criticality and materiality,ANSI/TIA-942 (rated levels),Rated-1 to Rated-4 infrastructure ratings,CONTEXT,LOW,"Rating selection reflects business criticality, but the standard does not define criticality criteria or impact tolerance."
+CAP-04,Demand and growth modelling,ANSI/TIA-942 (space planning),Data centre space planning,CONTEXT,LOW,Space planning considers growth; power and thermal demand modelling for AI loads is not addressed.
+CAP-05,Operating envelope,ANSI/TIA-942 (mechanical subsystem),Mechanical infrastructure (environmental conditions),CONTEXT,LOW,Environmental conditions reference external thermal guidance (ASHRAE TC 9.9); load and duration envelopes are AIDCF parameters.
+CAP-06,Capability lifecycle and change,,,NO_MATCH,MEDIUM,
+DEP-01,Dependency discovery,,,NO_MATCH,MEDIUM,
+DEP-02,Shared and common-mode dependencies,ANSI/TIA-942 (rated levels),Redundant paths and components by rated level,PARTIAL,LOW,Higher ratings require redundant paths and components; common controllers and shared human dependencies are not analysed.
+DEP-03,External providers and utilities,ANSI/TIA-942 (telecommunications subsystem),Entrance rooms and diverse access-provider entrance pathways,PARTIAL,MEDIUM,Diverse entrance pathways and entrance rooms overlap telecom dependency; utility and OEM dependency are partly addressed in the electrical subsystem only.
+DEP-04,Concentration and substitutability,,,NO_MATCH,MEDIUM,
+DEP-05,Boundary and interface control,,,NO_MATCH,MEDIUM,
+DEP-06,Dependency monitoring and review,,,NO_MATCH,MEDIUM,
+PHY-01,Site and location resilience,ANSI/TIA-942 (architectural subsystem),Site selection,PARTIAL,MEDIUM,"Site selection guidance overlaps site hazard assessment, access and adjacent risk."
+PHY-02,Building and structural integrity,ANSI/TIA-942 (architectural and structural subsystem),Architectural and structural infrastructure (floor loading),PARTIAL,MEDIUM,Structural provisions overlap structural capacity and rack loading; high-density AI racks require verification against current loads.
+PHY-03,Physical zoning and segregation,ANSI/TIA-942 (architectural subsystem),Space separation and fire separation,PARTIAL,LOW,Separation of spaces overlaps zoning; tenant segregation is not a central topic.
+PHY-04,Access and surveillance,"ANSI/TIA-942 (architectural subsystem, security)",Physical security by rated level,PARTIAL,MEDIUM,Access control and surveillance expectations by rating overlap; alarm-response performance is operational.
+PHY-05,Asset movement and custody,,,NO_MATCH,MEDIUM,
+PHY-06,"Fire, life safety and emergency interfaces",ANSI/TIA-942 (fire protection),Fire protection,CONTEXT,LOW,Fire protection is addressed by reference to fire codes; egress and emergency shutdown governance are local code matters.
+POW-01,Utility and grid interface,ANSI/TIA-942 (electrical subsystem),Utility service entrance,PARTIAL,MEDIUM,Utility service provisions by rating overlap utility capacity and connection reliability.
+POW-02,Generation and fuel,ANSI/TIA-942 (electrical subsystem),Standby generation,PARTIAL,MEDIUM,Generator provisions by rating overlap; fuel autonomy and start reliability need operational evidence.
+POW-03,UPS and energy storage,ANSI/TIA-942 (electrical subsystem),UPS,PARTIAL,MEDIUM,UPS redundancy by rating overlaps UPS topology; battery condition and runtime derating need operational evidence.
+POW-04,Distribution and protection,ANSI/TIA-942 (electrical subsystem),"Distribution, bonding and grounding",PARTIAL,MEDIUM,Distribution redundancy and bonding/grounding (with reference to the TIA-607 series) overlap; selective coordination requires protection studies.
+POW-05,Power quality and transient response,ANSI/TIA-942 (electrical subsystem),Electrical infrastructure,CONTEXT,LOW,Power quality is not a central topic; transient behaviour of AI loads is AIDCF-specific.
+POW-06,"Electrical monitoring, maintenance and recovery",ANSI/TIA-942 (electrical subsystem),Electrical infrastructure (monitoring),CONTEXT,LOW,Monitoring is mentioned at design level; maintenance and black-start are operational.
+THM-01,Thermal architecture and capacity,ANSI/TIA-942 (mechanical subsystem),Mechanical infrastructure (cooling capacity and redundancy),PARTIAL,MEDIUM,Cooling redundancy by rating overlaps design and resilient capacity.
+THM-02,Air cooling systems,ANSI/TIA-942 (mechanical subsystem),Hot-aisle/cold-aisle arrangement and air distribution,PARTIAL,MEDIUM,Air distribution and aisle arrangement overlap airflow management and containment.
+THM-03,Liquid cooling systems,ANSI/TIA-942 (mechanical subsystem),Mechanical infrastructure,CONTEXT,LOW,Coverage of direct-to-chip liquid cooling in the edition in use requires confirmation.
+THM-04,Heat rejection and water systems,ANSI/TIA-942 (mechanical subsystem),Heat rejection plant,PARTIAL,LOW,Plant redundancy by rating overlaps; water continuity is not addressed.
+THM-05,Fluid quality and leak management,ANSI/TIA-942 (mechanical subsystem),Leak detection,CONTEXT,LOW,Leak detection is a design consideration; coolant compatibility and isolation are not addressed.
+THM-06,"Thermal control, maintenance and recovery",,,NO_MATCH,MEDIUM,
+ENV-01,Environmental operating conditions,ANSI/TIA-942 (mechanical subsystem),Environmental conditions,CONTEXT,LOW,Refers to external thermal guidance; no measurement or control requirements beyond design.
+ENV-02,Energy performance,ANSI/TIA-942 (energy efficiency),Energy efficiency considerations,CONTEXT,LOW,Energy efficiency is addressed as design guidance; no PUE measurement requirement.
+ENV-03,Water performance,,,NO_MATCH,MEDIUM,
+ENV-04,Carbon and resource reporting,,,NO_MATCH,MEDIUM,
+ENV-05,Hazardous materials and waste,,,NO_MATCH,MEDIUM,
+ENV-06,Climate adaptation and resource continuity,,,NO_MATCH,MEDIUM,
+CMP-01,Compute architecture and configuration,,,NO_MATCH,MEDIUM,
+CMP-02,Cluster and scale-up domains,,,NO_MATCH,MEDIUM,
+CMP-03,"Capacity, scheduling and utilisation",,,NO_MATCH,MEDIUM,
+CMP-04,"Firmware, driver and compatibility",,,NO_MATCH,MEDIUM,
+CMP-05,Compute health and observability,,,NO_MATCH,MEDIUM,
+CMP-06,Compute lifecycle and recovery,,,NO_MATCH,MEDIUM,
+STO-01,Storage architecture and tiering,,,NO_MATCH,MEDIUM,
+STO-02,Performance and capacity,,,NO_MATCH,MEDIUM,
+STO-03,Integrity and consistency,,,NO_MATCH,MEDIUM,
+STO-04,Protection and replication,,,NO_MATCH,MEDIUM,
+STO-05,Checkpoint and recovery services,,,NO_MATCH,MEDIUM,
+STO-06,Storage monitoring and lifecycle,,,NO_MATCH,MEDIUM,
+NET-01,Scale-up and scale-out fabrics,ANSI/TIA-942 (telecommunications subsystem),"Data centre cabling topology (ER, MDA, IDA, HDA, ZDA, EDA)",PARTIAL,LOW,Structured cabling topology and redundant backbone paths overlap physical path diversity; logical fabric topology and oversubscription are out of scope.
+NET-02,Performance and congestion control,,,NO_MATCH,MEDIUM,
+NET-03,Storage and service networks,,,NO_MATCH,MEDIUM,
+NET-04,Management and out-of-band networks,,,NO_MATCH,MEDIUM,
+NET-05,Physical connectivity and optics,ANSI/TIA-942 (telecommunications subsystem),"Cabling, pathways, spaces and cross-connects",PARTIAL,HIGH,"Cabling, cross-connects, pathways and administration (with the TIA-606 series) overlap strongly; optics compatibility is not addressed."
+NET-06,Network control and observability,,,NO_MATCH,MEDIUM,
+OPS-01,Operating model and staffing,,,NO_MATCH,MEDIUM,
+OPS-02,Procedure and work control,,,NO_MATCH,MEDIUM,
+OPS-03,Maintenance and reliability,,,NO_MATCH,MEDIUM,
+OPS-04,"Alarm, incident and problem management",,,NO_MATCH,MEDIUM,
+OPS-05,Change and configuration management,,,NO_MATCH,MEDIUM,
+OPS-06,Capacity and service operations,,,NO_MATCH,MEDIUM,
+RES-01,Resilience strategy,ANSI/TIA-942 (rated levels),Rated-1 to Rated-4 infrastructure ratings,CONTEXT,LOW,Ratings express a resilience intent; minimum service outcome and graceful degradation are AIDCF-specific.
+RES-02,Fault-domain and containment design,ANSI/TIA-942 (rated levels),Redundancy and separation by rated level,PARTIAL,LOW,Separation of redundant paths contributes to containment; fault-domain definition across AI infrastructure is not addressed.
+RES-03,Continuity planning,,,NO_MATCH,MEDIUM,
+RES-04,Recovery planning,,,NO_MATCH,MEDIUM,
+RES-05,Testing and exercising,,,NO_MATCH,MEDIUM,
+RES-06,Crisis and adaptive response,,,NO_MATCH,MEDIUM,
+SUP-01,Supplier due diligence,,,NO_MATCH,MEDIUM,
+SUP-02,Contract and service obligations,,,NO_MATCH,MEDIUM,
+SUP-03,Hardware and component provenance,,,NO_MATCH,MEDIUM,
+SUP-04,"Software, firmware and update supply",,,NO_MATCH,MEDIUM,
+SUP-05,"Spares, logistics and obsolescence",,,NO_MATCH,MEDIUM,
+SUP-06,Remote support and third-party access,,,NO_MATCH,MEDIUM,
+SEC-01,Identity and privileged access,,,NO_MATCH,MEDIUM,
+SEC-02,Control-plane protection,,,NO_MATCH,MEDIUM,
+SEC-03,Network security and segmentation,,,NO_MATCH,MEDIUM,
+SEC-04,"Configuration, vulnerability and patching",,,NO_MATCH,MEDIUM,
+SEC-05,Detection and response,,,NO_MATCH,MEDIUM,
+SEC-06,AI-enabled and automated action,,,NO_MATCH,MEDIUM,
+EVA-01,Evidence architecture,,,NO_MATCH,MEDIUM,
+EVA-02,Evidence provenance and quality,,,NO_MATCH,MEDIUM,
+EVA-03,Assessment planning and execution,,,NO_MATCH,MEDIUM,
+EVA-04,"Findings, UNKNOWN and limitations",,,NO_MATCH,MEDIUM,
+EVA-05,Critical gates and decisions,,,NO_MATCH,MEDIUM,
+EVA-06,Reassessment and continuing assurance,,,NO_MATCH,MEDIUM,

@@ -1,0 +1,6 @@
+SYNTHETIC EVIDENCE FIXTURE - AIDCF-015 v1.3
+id: urn:aidcf:syn:evidence:EV-014
+class: E7
+title: Synthetic analytical evidence for MCF-CAP-001
+Synthetic analytical evidence supporting the MCF-CAP-001 assessment CA-001.
+This file describes no real facility, organisation or person.

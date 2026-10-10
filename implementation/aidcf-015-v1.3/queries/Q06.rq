@@ -1,0 +1,8 @@
+# Q06 AIDCF-014 section 19 Q06: for Decision AD-001, which gates, UNKNOWNs, score and approvals produced it?
+# Expected result basis: AD-001 design.
+PREFIX aidcf: <https://w3id.org/aidcf/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?state ?score ?approval (COUNT(DISTINCT ?g) AS ?gates) (COUNT(DISTINCT ?u) AS ?unknowns) WHERE {
+  <urn:aidcf:syn:decision:AD-001> aidcf:decisionState ?state ; aidcf:scoreRef ?s ; aidcf:approvedBy ?a ; aidcf:gateResultRefs ?g ; aidcf:unknownRefs ?u .
+  BIND (REPLACE(STR(?s), "^.*[:/]", "") AS ?score) BIND (REPLACE(STR(?a), "^.*[:/]", "") AS ?approval)
+} GROUP BY ?state ?score ?approval

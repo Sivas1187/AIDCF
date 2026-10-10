@@ -1,0 +1,7 @@
+code,name,meaning
+S0,None,No usable evidence
+S1,Insufficient,Some evidence exists but cannot support the claim
+S2,Minimum descriptive,Supports a bounded description or design intent
+S3,Reasonable,Supports design or implementation within declared scope
+S4,Strong,Supports operating effectiveness for representative conditions
+S5,Highly defensible,"Supports high-consequence gate/resilience claim with diverse, current, traceable and appropriately independent evidence"

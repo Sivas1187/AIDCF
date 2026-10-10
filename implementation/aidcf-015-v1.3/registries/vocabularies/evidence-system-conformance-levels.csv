@@ -1,0 +1,7 @@
+code,name,minimumExpectation,legacyCode
+EC0,Vocabulary aligned,Uses canonical evidence terms and source ownership,E0
+EC1,Metadata complete,Implements mandatory EvidenceObject fields,E1
+EC2,Provenance controlled,"Adds source, collection, integrity, custody and classification",E2
+EC3,Assertion linked,"Evaluates relevance, quality, freshness and coverage for precise assertions",E3
+EC4,Decision ready,"Supports sufficiency, confidence, gates, conflict, UNKNOWN and bounded decisions",E4
+EC5,Machine conformant,"Passes schemas, validation shapes, versioning and audit tests",E5

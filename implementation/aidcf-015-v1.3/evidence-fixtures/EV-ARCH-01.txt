@@ -1,0 +1,6 @@
+SYNTHETIC EVIDENCE FIXTURE - AIDCF-015 v1.3
+id: urn:aidcf:syn:evidence:EV-ARCH-01
+class: E1
+title: Synthetic single-line diagram and as-built drawing register
+Synthetic documentary evidence for the AIDCF-015 v1.3 architecture snapshot.
+This file describes no real facility, organisation or person.

@@ -1,0 +1,3866 @@
+{
+ "@context": "../schemas/jsonld/aidcf-context-1.3.jsonld",
+ "@graph": [
+  {
+   "id": "urn:aidcf:syn:decision:AD-001",
+   "type": "AssuranceDecision",
+   "name": "Synthetic assurance decision",
+   "approvedBy": [
+    "urn:aidcf:syn:review:RR-002"
+   ],
+   "classification": "INTERNAL",
+   "controllingReasons": [
+    "CG-07 FAIL (failCeiling NOT_ASSURED)"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "decisionLifecycle": "APPROVED",
+   "decisionQuestion": "Can the synthetic AI training and inference capability CI-001 be relied on to meet SO-01 to SO-03 in NORMAL and MAINTENANCE states, as at 2026-10-10?",
+   "decisionScope": "Synthetic capability CI-001 within snapshot SNAP-001; NORMAL and MAINTENANCE states.",
+   "decisionState": "NOT_ASSURED",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "effectiveTo": "2027-04-10T00:00:00Z",
+   "gateResultRefs": [
+    "urn:aidcf:syn:gate-result:GR-CG-01",
+    "urn:aidcf:syn:gate-result:GR-CG-02",
+    "urn:aidcf:syn:gate-result:GR-CG-03",
+    "urn:aidcf:syn:gate-result:GR-CG-04",
+    "urn:aidcf:syn:gate-result:GR-CG-05",
+    "urn:aidcf:syn:gate-result:GR-CG-06",
+    "urn:aidcf:syn:gate-result:GR-CG-07",
+    "urn:aidcf:syn:gate-result:GR-CG-08",
+    "urn:aidcf:syn:gate-result:GR-CG-09",
+    "urn:aidcf:syn:gate-result:GR-CG-10",
+    "urn:aidcf:syn:gate-result:GR-CG-11",
+    "urn:aidcf:syn:gate-result:GR-CG-12",
+    "urn:aidcf:syn:gate-result:GR-CG-13",
+    "urn:aidcf:syn:gate-result:GR-CG-14",
+    "urn:aidcf:syn:gate-result:GR-CG-15"
+   ],
+   "integrationHandoff": [
+    "urn:aidcf:syn:handoff:IH-001"
+   ],
+   "limitations": [
+    "Synthetic data only; describes no real facility.",
+    "Approval is a synthetic record; no human approval was given."
+   ],
+   "migratedFrom": [
+    "urn:aidcf:decision:DEC-001-v1.2"
+   ],
+   "notCertification": true,
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "requiresAction": [
+    "urn:aidcf:syn:action:ACT-011"
+   ],
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "scoreRef": "urn:aidcf:syn:score:SS-001",
+   "semanticOwner": "AIDCF-010",
+   "sourceArtifact": "AIDCF-015",
+   "status": "APPROVED",
+   "subjectRef": "urn:aidcf:syn:capability:CI-001",
+   "unknownRefs": [
+    "urn:aidcf:syn:unknown:U-001",
+    "urn:aidcf:syn:unknown:U-002",
+    "urn:aidcf:syn:unknown:U-003",
+    "urn:aidcf:syn:unknown:U-004",
+    "urn:aidcf:syn:unknown:U-005"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:gate-result:GR-CG-01",
+   "type": "GateResult",
+   "name": "Gate result CG-01",
+   "classification": "INTERNAL",
+   "constrains": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "controlEvaluations": [
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-001",
+     "gateRole": "CRITICAL",
+     "controlResult": "CONFORMING",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-001"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-005",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-006",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-007",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-008",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-010",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-001",
+     "gateRole": "SUPPORTING",
+     "controlResult": "CONFORMING",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-005"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-009",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    }
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criteriaResults": [
+    {
+     "criterionId": "GC-01-1",
+     "criterionOutcome": "MET",
+     "rationale": "CAP-001 register entry and approval evidenced at S3."
+    },
+    {
+     "criterionId": "GC-01-2",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-01-3",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-01-4",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-01-5",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-01-6",
+     "criterionOutcome": "NOT_EVALUATED"
+    }
+   ],
+   "decisionEffect": "Gate UNKNOWN caps the decision at INCONCLUSIVE.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "https://w3id.org/aidcf/id/gate/CG-01"
+   ],
+   "evidenceSufficiency": "S2",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-001",
+    "urn:aidcf:syn:evidence:EV-005",
+    "urn:aidcf:syn:evidence:EV-013",
+    "urn:aidcf:syn:evidence:EV-014",
+    "urn:aidcf:syn:evidence:EV-020"
+   ],
+   "gateApplicability": "IN_SCOPE",
+   "gateCode": "CG-01",
+   "gateState": "UNKNOWN",
+   "migratedFrom": [
+    "urn:aidcf:gate:CG-01"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-006"
+   ],
+   "rollupRationale": "UNKNOWN: 6 of 7 CRITICAL controls UNKNOWN or NOT_ASSESSED; criteria not demonstrated met: GC-01-2, GC-01-3, GC-01-4, GC-01-5, GC-01-6; gate evidence S2 below floor S3.",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-010",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL"
+   ],
+   "status": "REVIEWED",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:gate-result:GR-CG-02",
+   "type": "GateResult",
+   "name": "Gate result CG-02",
+   "classification": "INTERNAL",
+   "constrains": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "controlEvaluations": [
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-004",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-001",
+     "gateRole": "SUPPORTING",
+     "controlResult": "PARTIAL",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-002"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-017",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-010",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-001",
+     "gateRole": "SUPPORTING",
+     "controlResult": "CONFORMING",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-007"
+    }
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criteriaResults": [
+    {
+     "criterionId": "GC-02-1",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-02-2",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-02-3",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-02-4",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-02-5",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-02-6",
+     "criterionOutcome": "NOT_EVALUATED"
+    }
+   ],
+   "decisionEffect": "Gate NOT_ASSESSED caps the decision at LIMITED.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "https://w3id.org/aidcf/id/gate/CG-02"
+   ],
+   "evidenceSufficiency": "S2",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-002",
+    "urn:aidcf:syn:evidence:EV-007",
+    "urn:aidcf:syn:evidence:EV-015",
+    "urn:aidcf:syn:evidence:EV-023",
+    "urn:aidcf:syn:evidence:EV-024"
+   ],
+   "gateApplicability": "IN_SCOPE",
+   "gateCode": "CG-02",
+   "gateState": "NOT_ASSESSED",
+   "migratedFrom": [
+    "urn:aidcf:gate:CG-02"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-006"
+   ],
+   "rollupRationale": "No CRITICAL control of this gate (3 in the registry) was assessed and no gate criterion was evaluated.",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-010",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL"
+   ],
+   "status": "REVIEWED",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:gate-result:GR-CG-03",
+   "type": "GateResult",
+   "name": "Gate result CG-03",
+   "classification": "INTERNAL",
+   "constrains": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "controlEvaluations": [
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-001",
+     "gateRole": "CRITICAL",
+     "controlResult": "PARTIAL",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-002"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-002",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-005",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-007",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-009",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-010",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-012",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-017",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-001",
+     "gateRole": "SUPPORTING",
+     "controlResult": "CONFORMING",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-003"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-004",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    }
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criteriaResults": [
+    {
+     "criterionId": "GC-03-1",
+     "criterionOutcome": "NOT_MET",
+     "rationale": "F-001: facility water plant and recovery dependencies not mapped."
+    },
+    {
+     "criterionId": "GC-03-2",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-03-3",
+     "criterionOutcome": "UNKNOWN",
+     "rationale": "U-003: shared facility water plant cannot be determined."
+    },
+    {
+     "criterionId": "GC-03-4",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-03-5",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-03-6",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-03-7",
+     "criterionOutcome": "NOT_EVALUATED"
+    }
+   ],
+   "decisionEffect": "Gate FAIL caps the decision at LIMITED.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "https://w3id.org/aidcf/id/gate/CG-03"
+   ],
+   "evidenceSufficiency": "S2",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-002",
+    "urn:aidcf:syn:evidence:EV-003",
+    "urn:aidcf:syn:evidence:EV-015",
+    "urn:aidcf:syn:evidence:EV-016",
+    "urn:aidcf:syn:evidence:EV-017",
+    "urn:aidcf:syn:evidence:EV-018"
+   ],
+   "gateApplicability": "IN_SCOPE",
+   "gateCode": "CG-03",
+   "gateState": "FAIL",
+   "hasFinding": [
+    "urn:aidcf:syn:finding:F-001"
+   ],
+   "migratedFrom": [
+    "urn:aidcf:gate:CG-03"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-006"
+   ],
+   "rollupRationale": "FAIL: CRITICAL control(s) MCF-DEP-001 PARTIAL; criteria not met: GC-03-1.",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-010",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL"
+   ],
+   "status": "REVIEWED",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:gate-result:GR-CG-04",
+   "type": "GateResult",
+   "name": "Gate result CG-04",
+   "classification": "INTERNAL",
+   "constrains": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "controlEvaluations": [
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-018",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-004",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-007",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-008",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-021",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-022",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-023",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-024",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-010",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-013",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-016",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-023",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-018",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    }
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criteriaResults": [
+    {
+     "criterionId": "GC-04-1",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-04-2",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-04-3",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-04-4",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-04-5",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-04-6",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-04-7",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-04-8",
+     "criterionOutcome": "NOT_EVALUATED"
+    }
+   ],
+   "decisionEffect": "Gate NOT_ASSESSED caps the decision at LIMITED.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "https://w3id.org/aidcf/id/gate/CG-04"
+   ],
+   "evidenceSufficiency": "S0",
+   "gateApplicability": "IN_SCOPE",
+   "gateCode": "CG-04",
+   "gateState": "NOT_ASSESSED",
+   "migratedFrom": [
+    "urn:aidcf:gate:CG-04"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-006"
+   ],
+   "rollupRationale": "No CRITICAL control of this gate (13 in the registry) was assessed and no gate criterion was evaluated.",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-010",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL"
+   ],
+   "status": "REVIEWED",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:gate-result:GR-CG-05",
+   "type": "GateResult",
+   "name": "Gate result CG-05",
+   "classification": "INTERNAL",
+   "constrains": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "controlEvaluations": [
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-013",
+     "gateRole": "SUPPORTING",
+     "controlResult": "PARTIAL",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-008"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-001",
+     "gateRole": "CRITICAL",
+     "controlResult": "CONFORMING",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-003"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-005",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-006",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-007",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-009",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-011",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-019",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-020",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-017",
+     "gateRole": "SUPPORTING",
+     "controlResult": "UNKNOWN",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-009"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-005",
+     "gateRole": "SUPPORTING",
+     "controlResult": "PARTIAL",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-011"
+    }
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criteriaResults": [
+    {
+     "criterionId": "GC-05-1",
+     "criterionOutcome": "MET",
+     "rationale": "POW-001 utility capacity evidenced at S5."
+    },
+    {
+     "criterionId": "GC-05-2",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-05-3",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-05-4",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-05-5",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-05-6",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-05-7",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-05-8",
+     "criterionOutcome": "NOT_EVALUATED"
+    }
+   ],
+   "decisionEffect": "Gate UNKNOWN caps the decision at INCONCLUSIVE.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "https://w3id.org/aidcf/id/gate/CG-05"
+   ],
+   "evidenceSufficiency": "S2",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-003",
+    "urn:aidcf:syn:evidence:EV-008",
+    "urn:aidcf:syn:evidence:EV-009",
+    "urn:aidcf:syn:evidence:EV-011",
+    "urn:aidcf:syn:evidence:EV-016",
+    "urn:aidcf:syn:evidence:EV-017",
+    "urn:aidcf:syn:evidence:EV-018",
+    "urn:aidcf:syn:evidence:EV-025",
+    "urn:aidcf:syn:evidence:EV-027",
+    "urn:aidcf:syn:evidence:EV-028",
+    "urn:aidcf:syn:evidence:EV-029"
+   ],
+   "gateApplicability": "IN_SCOPE",
+   "gateCode": "CG-05",
+   "gateState": "UNKNOWN",
+   "migratedFrom": [
+    "urn:aidcf:gate:CG-05"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-006"
+   ],
+   "rollupRationale": "UNKNOWN: 7 of 8 CRITICAL controls UNKNOWN or NOT_ASSESSED; criteria not demonstrated met: GC-05-2, GC-05-3, GC-05-4, GC-05-5, GC-05-6, GC-05-7, GC-05-8; gate evidence S2 below floor S5.",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-010",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL"
+   ],
+   "status": "REVIEWED",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:gate-result:GR-CG-06",
+   "type": "GateResult",
+   "name": "Gate result CG-06",
+   "classification": "INTERNAL",
+   "constrains": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "controlEvaluations": [
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-013",
+     "gateRole": "SUPPORTING",
+     "controlResult": "PARTIAL",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-008"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-017",
+     "gateRole": "SUPPORTING",
+     "controlResult": "UNKNOWN",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-009"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-005",
+     "gateRole": "SUPPORTING",
+     "controlResult": "PARTIAL",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-011"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-002",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-003",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-004",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-009",
+     "gateRole": "SUPPORTING",
+     "controlResult": "PARTIAL",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-004"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-010",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-011",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-013",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-015",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    }
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criteriaResults": [
+    {
+     "criterionId": "GC-06-1",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-06-2",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-06-3",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-06-4",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-06-5",
+     "criterionOutcome": "UNKNOWN",
+     "rationale": "U-003: water continuity depends on an undetermined shared plant."
+    },
+    {
+     "criterionId": "GC-06-6",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-06-7",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-06-8",
+     "criterionOutcome": "NOT_EVALUATED"
+    }
+   ],
+   "decisionEffect": "Gate UNKNOWN caps the decision at LIMITED.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "https://w3id.org/aidcf/id/gate/CG-06"
+   ],
+   "evidenceSufficiency": "S2",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-004",
+    "urn:aidcf:syn:evidence:EV-008",
+    "urn:aidcf:syn:evidence:EV-009",
+    "urn:aidcf:syn:evidence:EV-011",
+    "urn:aidcf:syn:evidence:EV-019",
+    "urn:aidcf:syn:evidence:EV-025",
+    "urn:aidcf:syn:evidence:EV-027",
+    "urn:aidcf:syn:evidence:EV-028",
+    "urn:aidcf:syn:evidence:EV-029"
+   ],
+   "gateApplicability": "IN_SCOPE",
+   "gateCode": "CG-06",
+   "gateState": "UNKNOWN",
+   "migratedFrom": [
+    "urn:aidcf:gate:CG-06"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-006"
+   ],
+   "rollupRationale": "UNKNOWN: 7 of 7 CRITICAL controls UNKNOWN or NOT_ASSESSED; criteria not demonstrated met: GC-06-1, GC-06-2, GC-06-3, GC-06-4, GC-06-5, GC-06-6, GC-06-7, GC-06-8; gate evidence S2 below floor S5; US4/US5 UNKNOWN attached: urn:aidcf:syn:unknown:U-003.",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-010",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL"
+   ],
+   "status": "REVIEWED",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:gate-result:GR-CG-07",
+   "type": "GateResult",
+   "name": "Gate result CG-07",
+   "classification": "INTERNAL",
+   "constrains": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "controlEvaluations": [
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-013",
+     "gateRole": "CRITICAL",
+     "controlResult": "PARTIAL",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-008"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-021",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-005",
+     "gateRole": "CRITICAL",
+     "controlResult": "PARTIAL",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-011"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-009",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-023",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-021",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    }
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criteriaResults": [
+    {
+     "criterionId": "GC-07-1",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-07-2",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-07-3",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-07-4",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-07-5",
+     "criterionOutcome": "UNKNOWN",
+     "rationale": "U-005: SL-A not evidenced; write authority partly restricted (F-005)."
+    },
+    {
+     "criterionId": "GC-07-6",
+     "criterionOutcome": "NOT_MET",
+     "rationale": "F-003: cooling and leak alarms not rationalised."
+    },
+    {
+     "criterionId": "GC-07-7",
+     "criterionOutcome": "NOT_EVALUATED"
+    }
+   ],
+   "decisionEffect": "Gate FAIL caps the decision at NOT_ASSURED.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "https://w3id.org/aidcf/id/gate/CG-07"
+   ],
+   "evidenceSufficiency": "S2",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-008",
+    "urn:aidcf:syn:evidence:EV-011",
+    "urn:aidcf:syn:evidence:EV-025",
+    "urn:aidcf:syn:evidence:EV-027",
+    "urn:aidcf:syn:evidence:EV-028",
+    "urn:aidcf:syn:evidence:EV-029"
+   ],
+   "gateApplicability": "IN_SCOPE",
+   "gateCode": "CG-07",
+   "gateState": "FAIL",
+   "hasFinding": [
+    "urn:aidcf:syn:finding:F-003",
+    "urn:aidcf:syn:finding:F-005"
+   ],
+   "migratedFrom": [
+    "urn:aidcf:gate:CG-07"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-006"
+   ],
+   "rollupRationale": "FAIL: CRITICAL control(s) MCF-OPS-013 PARTIAL, MCF-SEC-005 PARTIAL; criteria not met: GC-07-6.",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-010",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL"
+   ],
+   "status": "REVIEWED",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:gate-result:GR-CG-08",
+   "type": "GateResult",
+   "name": "Gate result CG-08",
+   "classification": "INTERNAL",
+   "constrains": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "controlEvaluations": [
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-001",
+     "gateRole": "SUPPORTING",
+     "controlResult": "CONFORMING",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-005"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-006",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-009",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-013",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-019",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-001",
+     "gateRole": "CRITICAL",
+     "controlResult": "CONFORMING",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-007"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-007",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-008",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-009",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-005",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-009",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-010",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-017",
+     "gateRole": "CRITICAL",
+     "controlResult": "CONFORMING",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-006"
+    }
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criteriaResults": [
+    {
+     "criterionId": "GC-08-1",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-08-2",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-08-3",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-08-4",
+     "criterionOutcome": "MET",
+     "rationale": "STO-017 checkpoint throughput and headroom evidenced at S4."
+    },
+    {
+     "criterionId": "GC-08-5",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-08-6",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-08-7",
+     "criterionOutcome": "NOT_EVALUATED"
+    }
+   ],
+   "decisionEffect": "Gate UNKNOWN caps the decision at LIMITED.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "https://w3id.org/aidcf/id/gate/CG-08"
+   ],
+   "evidenceSufficiency": "S2",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-005",
+    "urn:aidcf:syn:evidence:EV-006",
+    "urn:aidcf:syn:evidence:EV-007",
+    "urn:aidcf:syn:evidence:EV-020",
+    "urn:aidcf:syn:evidence:EV-021",
+    "urn:aidcf:syn:evidence:EV-022",
+    "urn:aidcf:syn:evidence:EV-023",
+    "urn:aidcf:syn:evidence:EV-024"
+   ],
+   "gateApplicability": "IN_SCOPE",
+   "gateCode": "CG-08",
+   "gateState": "UNKNOWN",
+   "migratedFrom": [
+    "urn:aidcf:gate:CG-08"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-006"
+   ],
+   "rollupRationale": "UNKNOWN: 10 of 12 CRITICAL controls UNKNOWN or NOT_ASSESSED; criteria not demonstrated met: GC-08-1, GC-08-2, GC-08-3, GC-08-5, GC-08-6, GC-08-7; gate evidence S2 below floor S4.",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-010",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL"
+   ],
+   "status": "REVIEWED",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:gate-result:GR-CG-09",
+   "type": "GateResult",
+   "name": "Gate result CG-09",
+   "classification": "INTERNAL",
+   "constrains": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "controlEvaluations": [
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-008",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-004",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-010",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-014",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-005",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-007",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-008",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-015",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-020",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    }
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criteriaResults": [
+    {
+     "criterionId": "GC-09-1",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-09-2",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-09-3",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-09-4",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-09-5",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-09-6",
+     "criterionOutcome": "NOT_EVALUATED"
+    }
+   ],
+   "decisionEffect": "Gate NOT_ASSESSED caps the decision at LIMITED.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "https://w3id.org/aidcf/id/gate/CG-09"
+   ],
+   "evidenceSufficiency": "S0",
+   "gateApplicability": "IN_SCOPE",
+   "gateCode": "CG-09",
+   "gateState": "NOT_ASSESSED",
+   "migratedFrom": [
+    "urn:aidcf:gate:CG-09"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-006"
+   ],
+   "rollupRationale": "No CRITICAL control of this gate (9 in the registry) was assessed and no gate criterion was evaluated.",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-010",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL"
+   ],
+   "status": "REVIEWED",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:gate-result:GR-CG-10",
+   "type": "GateResult",
+   "name": "Gate result CG-10",
+   "classification": "INTERNAL",
+   "constrains": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "controlEvaluations": [
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-023",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-015",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-024",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-013",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-014",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-016",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-017",
+     "gateRole": "SUPPORTING",
+     "controlResult": "UNKNOWN",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-009"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-018",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-016",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-017",
+     "gateRole": "SUPPORTING",
+     "controlResult": "CONFORMING",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-006"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-018",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-020",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-024",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    }
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criteriaResults": [
+    {
+     "criterionId": "GC-10-1",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-10-2",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-10-3",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-10-4",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-10-5",
+     "criterionOutcome": "UNKNOWN",
+     "rationale": "U-004: no integrated cross-domain recovery exercise."
+    },
+    {
+     "criterionId": "GC-10-6",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-10-7",
+     "criterionOutcome": "NOT_EVALUATED"
+    }
+   ],
+   "decisionEffect": "Gate UNKNOWN caps the decision at LIMITED.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "https://w3id.org/aidcf/id/gate/CG-10"
+   ],
+   "evidenceSufficiency": "S2",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-006",
+    "urn:aidcf:syn:evidence:EV-009",
+    "urn:aidcf:syn:evidence:EV-021",
+    "urn:aidcf:syn:evidence:EV-022"
+   ],
+   "gateApplicability": "IN_SCOPE",
+   "gateCode": "CG-10",
+   "gateState": "UNKNOWN",
+   "hasUnknown": [
+    "urn:aidcf:syn:unknown:U-004"
+   ],
+   "migratedFrom": [
+    "urn:aidcf:gate:CG-10"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-006"
+   ],
+   "rollupRationale": "UNKNOWN: 11 of 11 CRITICAL controls UNKNOWN or NOT_ASSESSED; criteria not demonstrated met: GC-10-1, GC-10-2, GC-10-3, GC-10-4, GC-10-5, GC-10-6, GC-10-7; gate evidence S2 below floor S5; US4/US5 UNKNOWN attached: urn:aidcf:syn:unknown:U-004.",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-010",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL"
+   ],
+   "status": "REVIEWED",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:gate-result:GR-CG-11",
+   "type": "GateResult",
+   "name": "Gate result CG-11",
+   "classification": "INTERNAL",
+   "constrains": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "controlEvaluations": [],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criteriaResults": [
+    {
+     "criterionId": "GC-11-1",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-11-2",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-11-3",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-11-4",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-11-5",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-11-6",
+     "criterionOutcome": "NOT_EVALUATED"
+    }
+   ],
+   "decisionEffect": "Gate NOT_ASSESSED caps the decision at LIMITED.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "https://w3id.org/aidcf/id/gate/CG-11"
+   ],
+   "evidenceSufficiency": "S0",
+   "gateApplicability": "IN_SCOPE",
+   "gateCode": "CG-11",
+   "gateState": "NOT_ASSESSED",
+   "migratedFrom": [
+    "urn:aidcf:gate:CG-11"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-006"
+   ],
+   "rollupRationale": "No CRITICAL control of this gate (0 in the registry) was assessed and no gate criterion was evaluated.",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-010",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL"
+   ],
+   "status": "REVIEWED",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:gate-result:GR-CG-12",
+   "type": "GateResult",
+   "name": "Gate result CG-12",
+   "classification": "INTERNAL",
+   "constrains": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "controlEvaluations": [],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criteriaResults": [
+    {
+     "criterionId": "GC-12-1",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-12-2",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-12-3",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-12-4",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-12-5",
+     "criterionOutcome": "NOT_EVALUATED"
+    }
+   ],
+   "decisionEffect": "Gate NOT_ASSESSED caps the decision at LIMITED.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "https://w3id.org/aidcf/id/gate/CG-12"
+   ],
+   "evidenceSufficiency": "S0",
+   "gateApplicability": "IN_SCOPE",
+   "gateCode": "CG-12",
+   "gateState": "NOT_ASSESSED",
+   "migratedFrom": [
+    "urn:aidcf:gate:CG-12"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-006"
+   ],
+   "rollupRationale": "No CRITICAL control of this gate (0 in the registry) was assessed and no gate criterion was evaluated.",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-010",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL"
+   ],
+   "status": "REVIEWED",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:gate-result:GR-CG-13",
+   "type": "GateResult",
+   "name": "Gate result CG-13",
+   "classification": "INTERNAL",
+   "constrains": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "controlEvaluations": [
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-002",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-018",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-002",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-005",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-006",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-007",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-002",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-021",
+     "gateRole": "SUPPORTING",
+     "controlResult": "PARTIAL",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-010"
+    }
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criteriaResults": [
+    {
+     "criterionId": "GC-13-1",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-13-2",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-13-3",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-13-4",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-13-5",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-13-6",
+     "criterionOutcome": "NOT_EVALUATED"
+    }
+   ],
+   "decisionEffect": "Gate NOT_ASSESSED caps the decision at LIMITED.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "https://w3id.org/aidcf/id/gate/CG-13"
+   ],
+   "evidenceSufficiency": "S2",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-010",
+    "urn:aidcf:syn:evidence:EV-026"
+   ],
+   "gateApplicability": "IN_SCOPE",
+   "gateCode": "CG-13",
+   "gateState": "NOT_ASSESSED",
+   "migratedFrom": [
+    "urn:aidcf:gate:CG-13"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-006"
+   ],
+   "rollupRationale": "No CRITICAL control of this gate (7 in the registry) was assessed and no gate criterion was evaluated.",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-010",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL"
+   ],
+   "status": "REVIEWED",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:gate-result:GR-CG-14",
+   "type": "GateResult",
+   "name": "Gate result CG-14",
+   "classification": "INTERNAL",
+   "constrains": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "controlEvaluations": [
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-023",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-015",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-022",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-006",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-017",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-018",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-020",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    }
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criteriaResults": [
+    {
+     "criterionId": "GC-14-1",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-14-2",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-14-3",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-14-4",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-14-5",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-14-6",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-14-7",
+     "criterionOutcome": "NOT_EVALUATED"
+    }
+   ],
+   "decisionEffect": "Gate NOT_ASSESSED caps the decision at LIMITED.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "https://w3id.org/aidcf/id/gate/CG-14"
+   ],
+   "evidenceSufficiency": "S0",
+   "gateApplicability": "IN_SCOPE",
+   "gateCode": "CG-14",
+   "gateState": "NOT_ASSESSED",
+   "migratedFrom": [
+    "urn:aidcf:gate:CG-14"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-006"
+   ],
+   "rollupRationale": "No CRITICAL control of this gate (7 in the registry) was assessed and no gate criterion was evaluated.",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-010",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL"
+   ],
+   "status": "REVIEWED",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:gate-result:GR-CG-15",
+   "type": "GateResult",
+   "name": "Gate result CG-15",
+   "classification": "INTERNAL",
+   "constrains": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "controlEvaluations": [
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-003",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-005",
+     "gateRole": "SUPPORTING",
+     "controlResult": "PARTIAL",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-011"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-006",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-010",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-012",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-021",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-021",
+     "gateRole": "CRITICAL",
+     "controlResult": "PARTIAL",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-010"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-022",
+     "gateRole": "CRITICAL",
+     "controlResult": "NOT_ASSESSED"
+    }
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criteriaResults": [
+    {
+     "criterionId": "GC-15-1",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-15-2",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-15-3",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-15-4",
+     "criterionOutcome": "NOT_MET",
+     "rationale": "F-004: vendor remote access not time-bound."
+    },
+    {
+     "criterionId": "GC-15-5",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-15-6",
+     "criterionOutcome": "NOT_EVALUATED"
+    },
+    {
+     "criterionId": "GC-15-7",
+     "criterionOutcome": "NOT_EVALUATED"
+    }
+   ],
+   "decisionEffect": "Gate FAIL caps the decision at LIMITED.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "https://w3id.org/aidcf/id/gate/CG-15"
+   ],
+   "evidenceSufficiency": "S2",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-010",
+    "urn:aidcf:syn:evidence:EV-011",
+    "urn:aidcf:syn:evidence:EV-026",
+    "urn:aidcf:syn:evidence:EV-027",
+    "urn:aidcf:syn:evidence:EV-028",
+    "urn:aidcf:syn:evidence:EV-029"
+   ],
+   "gateApplicability": "IN_SCOPE",
+   "gateCode": "CG-15",
+   "gateState": "FAIL",
+   "hasFinding": [
+    "urn:aidcf:syn:finding:F-004"
+   ],
+   "migratedFrom": [
+    "urn:aidcf:gate:CG-15"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-006"
+   ],
+   "rollupRationale": "FAIL: CRITICAL control(s) MCF-SUP-021 PARTIAL; criteria not met: GC-15-4.",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-010",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL"
+   ],
+   "status": "REVIEWED",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:recommendation:DR-001",
+   "type": "DecisionRecommendation",
+   "name": "Synthetic decision recommendation",
+   "ceilingDrivers": [
+    "CG-07 FAIL (failCeiling NOT_ASSURED)"
+   ],
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "decisionCeiling": "NOT_ASSURED",
+   "decisionQuestion": "Can the synthetic AI training and inference capability CI-001 be relied on to meet SO-01 to SO-03 in NORMAL and MAINTENANCE states, as at 2026-10-10?",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "limitations": [
+    "Synthetic data only.",
+    "12 of 360 controls assessed; 11 scored and 1 UNKNOWN; coverage 3.0556% (scored / (in scope - NOT_APPLICABLE)).",
+    "Ceilings that are not controlling: CG-01 UNKNOWN (INCONCLUSIVE); CG-02 NOT_ASSESSED (LIMITED); CG-03 FAIL (LIMITED); CG-04 NOT_ASSESSED (LIMITED); CG-05 UNKNOWN (INCONCLUSIVE); CG-06 UNKNOWN (LIMITED); CG-08 UNKNOWN (LIMITED); CG-09 NOT_ASSESSED (LIMITED); CG-10 UNKNOWN (LIMITED); CG-11 NOT_ASSESSED (LIMITED); CG-12 NOT_ASSESSED (LIMITED); CG-13 NOT_ASSESSED (LIMITED); CG-14 NOT_ASSESSED (LIMITED); CG-15 FAIL (LIMITED); U-001 US3 (CONDITIONALLY_ASSURED); U-003 US5 (INCONCLUSIVE); U-004 US4 (LIMITED); U-005 US4 (LIMITED)."
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "recommendedState": "NOT_ASSURED",
+   "recommends": [
+    "urn:aidcf:syn:decision:AD-001"
+   ],
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-010",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:report:RPT-001",
+   "type": "AssuranceReport",
+   "name": "Synthetic technical assessment report",
+   "assessmentRef": "urn:aidcf:syn:assessment:ASM-001",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "decisionRef": "urn:aidcf:syn:decision:AD-001",
+   "decisionState": "NOT_ASSURED",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "effectiveTo": "2027-04-10T00:00:00Z",
+   "intendedUse": "Conformance demonstration of AIDCF-016 MDM 1.3 only.",
+   "intendedUsers": [
+    "Synthetic decision authority"
+   ],
+   "issuer": "urn:aidcf:syn:party:PROGRAMME-OWNER",
+   "limitations": [
+    "Synthetic data only.",
+    "No independent execution."
+   ],
+   "programRef": "urn:aidcf:syn:programme:PRG-001",
+   "prohibitedClaims": [
+    "Certification."
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "reportClass": "R2",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "sections": [
+    "Scope",
+    "Gate results",
+    "UNKNOWN register",
+    "Score",
+    "Decision"
+   ],
+   "semanticOwner": "AIDCF-012",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:score:SS-001",
+   "type": "ScoreSnapshot",
+   "name": "Synthetic score snapshot",
+   "band": "WITHHELD",
+   "bandWithheldReason": "coverage 3.0556% below 80%; US4/US5 UNKNOWN open in scope",
+   "calculationHash": "5783596f4e5330457c0fb74dd333f2be893a49b2cccf6bcc2787fd617f980060",
+   "calculationMethod": "AIDCF-016 MDM score 1.3: mean of CONFORMING 100, PARTIAL 50, NONCONFORMING 0 over scored controls; coverage = scored / (in scope - NOT_APPLICABLE); band WITHHELD below 80% coverage or with an open US4/US5 UNKNOWN; hash = sha256 of canonical JSON {method, weighting, inputs}.",
+   "classification": "INTERNAL",
+   "coverage": {
+    "inScopeCount": 360,
+    "notApplicableCount": 0,
+    "assessedCount": 12,
+    "scoredCount": 11,
+    "unknownCount": 1,
+    "notAssessedCount": 348,
+    "coveragePercent": 3.0556
+   },
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "domainScores": [
+    {
+     "domainCode": "GOV",
+     "inScopeCount": 24,
+     "scoredCount": 0,
+     "coveragePercent": 0.0,
+     "band": "WITHHELD",
+     "bandWithheldReason": "coverage 0.0000% below 80%; US4/US5 UNKNOWN open in scope"
+    },
+    {
+     "domainCode": "CAP",
+     "inScopeCount": 24,
+     "scoredCount": 1,
+     "coveragePercent": 4.1667,
+     "band": "WITHHELD",
+     "meanScore": 100.0,
+     "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+    },
+    {
+     "domainCode": "DEP",
+     "inScopeCount": 24,
+     "scoredCount": 1,
+     "coveragePercent": 4.1667,
+     "band": "WITHHELD",
+     "meanScore": 50.0,
+     "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+    },
+    {
+     "domainCode": "PHY",
+     "inScopeCount": 24,
+     "scoredCount": 0,
+     "coveragePercent": 0.0,
+     "band": "WITHHELD",
+     "bandWithheldReason": "coverage 0.0000% below 80%; US4/US5 UNKNOWN open in scope"
+    },
+    {
+     "domainCode": "POW",
+     "inScopeCount": 24,
+     "scoredCount": 1,
+     "coveragePercent": 4.1667,
+     "band": "WITHHELD",
+     "meanScore": 100.0,
+     "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+    },
+    {
+     "domainCode": "THM",
+     "inScopeCount": 24,
+     "scoredCount": 1,
+     "coveragePercent": 4.1667,
+     "band": "WITHHELD",
+     "meanScore": 50.0,
+     "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+    },
+    {
+     "domainCode": "ENV",
+     "inScopeCount": 24,
+     "scoredCount": 0,
+     "coveragePercent": 0.0,
+     "band": "WITHHELD",
+     "bandWithheldReason": "coverage 0.0000% below 80%; US4/US5 UNKNOWN open in scope"
+    },
+    {
+     "domainCode": "CMP",
+     "inScopeCount": 24,
+     "scoredCount": 1,
+     "coveragePercent": 4.1667,
+     "band": "WITHHELD",
+     "meanScore": 100.0,
+     "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+    },
+    {
+     "domainCode": "STO",
+     "inScopeCount": 24,
+     "scoredCount": 1,
+     "coveragePercent": 4.1667,
+     "band": "WITHHELD",
+     "meanScore": 100.0,
+     "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+    },
+    {
+     "domainCode": "NET",
+     "inScopeCount": 24,
+     "scoredCount": 1,
+     "coveragePercent": 4.1667,
+     "band": "WITHHELD",
+     "meanScore": 100.0,
+     "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+    },
+    {
+     "domainCode": "OPS",
+     "inScopeCount": 24,
+     "scoredCount": 1,
+     "coveragePercent": 4.1667,
+     "band": "WITHHELD",
+     "meanScore": 50.0,
+     "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+    },
+    {
+     "domainCode": "RES",
+     "inScopeCount": 24,
+     "scoredCount": 0,
+     "coveragePercent": 0.0,
+     "band": "WITHHELD",
+     "bandWithheldReason": "coverage 0.0000% below 80%; US4/US5 UNKNOWN open in scope"
+    },
+    {
+     "domainCode": "SUP",
+     "inScopeCount": 24,
+     "scoredCount": 1,
+     "coveragePercent": 4.1667,
+     "band": "WITHHELD",
+     "meanScore": 50.0,
+     "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+    },
+    {
+     "domainCode": "SEC",
+     "inScopeCount": 24,
+     "scoredCount": 1,
+     "coveragePercent": 4.1667,
+     "band": "WITHHELD",
+     "meanScore": 50.0,
+     "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+    },
+    {
+     "domainCode": "EVA",
+     "inScopeCount": 24,
+     "scoredCount": 1,
+     "coveragePercent": 4.1667,
+     "band": "WITHHELD",
+     "meanScore": 100.0,
+     "bandWithheldReason": "coverage 4.1667% below 80%; US4/US5 UNKNOWN open in scope"
+    }
+   ],
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "gateOverlay": "Gates are non-compensating: CG-01 UNKNOWN, CG-02 NOT_ASSESSED, CG-03 FAIL, CG-04 NOT_ASSESSED, CG-05 UNKNOWN, CG-06 UNKNOWN, CG-07 FAIL, CG-08 UNKNOWN, CG-09 NOT_ASSESSED, CG-10 UNKNOWN, CG-11 NOT_ASSESSED, CG-12 NOT_ASSESSED, CG-13 NOT_ASSESSED, CG-14 NOT_ASSESSED, CG-15 FAIL.",
+   "meanScore": 77.2727,
+   "migratedFrom": [
+    "urn:aidcf:score:SNAP-001-v1.2"
+   ],
+   "profileVersion": "AIDCF-007A v1.1 (360 controls, unweighted)",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "scoreInputs": [
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-001",
+     "controlResult": "CONFORMING",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-001",
+     "scoreValue": 100
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-002",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-003",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-004",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-005",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-006",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-007",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-008",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-009",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-010",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-011",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-012",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-013",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-014",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-015",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-016",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-017",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-018",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-019",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-020",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-021",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-022",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-023",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-024",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-001",
+     "controlResult": "CONFORMING",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-005",
+     "scoreValue": 100
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-002",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-003",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-004",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-005",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-006",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-007",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-008",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-009",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-010",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-011",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-012",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-013",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-014",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-015",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-016",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-017",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-018",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-019",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-020",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-021",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-022",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-023",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-024",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-001",
+     "controlResult": "PARTIAL",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-002",
+     "scoreValue": 50
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-002",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-003",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-004",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-005",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-006",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-007",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-008",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-009",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-010",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-011",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-012",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-013",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-014",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-015",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-016",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-017",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-018",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-019",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-020",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-021",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-022",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-023",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-024",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-001",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-002",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-003",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-004",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-005",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-006",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-007",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-008",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-009",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-010",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-011",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-012",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-013",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-014",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-015",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-016",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-017",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-018",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-019",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-020",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-021",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-022",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-023",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-ENV-024",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-001",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-002",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-003",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-004",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-005",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-006",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-007",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-008",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-009",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-010",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-011",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-012",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-013",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-014",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-015",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-016",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-017",
+     "controlResult": "CONFORMING",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-012",
+     "scoreValue": 100
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-018",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-019",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-020",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-021",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-022",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-023",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-024",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-001",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-002",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-003",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-004",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-005",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-006",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-007",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-008",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-009",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-010",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-011",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-012",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-013",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-014",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-015",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-016",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-017",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-018",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-019",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-020",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-021",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-022",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-023",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-GOV-024",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-001",
+     "controlResult": "CONFORMING",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-007",
+     "scoreValue": 100
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-002",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-003",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-004",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-005",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-006",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-007",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-008",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-009",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-010",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-011",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-012",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-013",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-014",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-015",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-016",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-017",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-018",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-019",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-020",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-021",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-022",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-023",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-024",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-001",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-002",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-003",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-004",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-005",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-006",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-007",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-008",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-009",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-010",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-011",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-012",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-013",
+     "controlResult": "PARTIAL",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-008",
+     "scoreValue": 50
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-014",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-015",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-016",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-017",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-018",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-019",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-020",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-021",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-022",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-023",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-024",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-001",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-002",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-003",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-004",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-005",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-006",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-007",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-008",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-009",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-010",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-011",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-012",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-013",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-014",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-015",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-016",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-017",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-018",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-019",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-020",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-021",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-022",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-023",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-PHY-024",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-001",
+     "controlResult": "CONFORMING",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-003",
+     "scoreValue": 100
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-002",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-003",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-004",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-005",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-006",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-007",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-008",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-009",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-010",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-011",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-012",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-013",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-014",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-015",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-016",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-017",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-018",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-019",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-020",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-021",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-022",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-023",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-024",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-001",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-002",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-003",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-004",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-005",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-006",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-007",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-008",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-009",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-010",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-011",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-012",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-013",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-014",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-015",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-016",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-017",
+     "controlResult": "UNKNOWN",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-009"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-018",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-019",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-020",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-021",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-022",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-023",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-024",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-001",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-002",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-003",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-004",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-005",
+     "controlResult": "PARTIAL",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-011",
+     "scoreValue": 50
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-006",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-007",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-008",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-009",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-010",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-011",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-012",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-013",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-014",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-015",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-016",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-017",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-018",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-019",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-020",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-021",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-022",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-023",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-024",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-001",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-002",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-003",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-004",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-005",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-006",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-007",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-008",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-009",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-010",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-011",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-012",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-013",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-014",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-015",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-016",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-017",
+     "controlResult": "CONFORMING",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-006",
+     "scoreValue": 100
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-018",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-019",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-020",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-021",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-022",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-023",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-024",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-001",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-002",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-003",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-004",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-005",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-006",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-007",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-008",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-009",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-010",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-011",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-012",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-013",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-014",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-015",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-016",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-017",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-018",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-019",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-020",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-021",
+     "controlResult": "PARTIAL",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-010",
+     "scoreValue": 50
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-022",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-023",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-024",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-001",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-002",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-003",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-004",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-005",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-006",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-007",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-008",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-009",
+     "controlResult": "PARTIAL",
+     "controlAssessmentRef": "urn:aidcf:syn:control-assessment:CA-004",
+     "scoreValue": 50
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-010",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-011",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-012",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-013",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-014",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-015",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-016",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-017",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-018",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-019",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-020",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-021",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-022",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-023",
+     "controlResult": "NOT_ASSESSED"
+    },
+    {
+     "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-024",
+     "controlResult": "NOT_ASSESSED"
+    }
+   ],
+   "semanticOwner": "AIDCF-010",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:capability:CI-001",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "unknownOverlay": {
+    "us1Count": 0,
+    "us2Count": 1,
+    "us3Count": 1,
+    "us4Count": 2,
+    "us5Count": 1
+   },
+   "version": "1.0",
+   "weighting": "UNWEIGHTED"
+  },
+  {
+   "id": "urn:aidcf:syn:statement:AS-001",
+   "type": "AssuranceStatement",
+   "name": "Synthetic assurance statement",
+   "audience": "Synthetic internal stakeholders",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "decisionRef": "urn:aidcf:syn:decision:AD-001",
+   "decisionState": "NOT_ASSURED",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "effectiveTo": "2027-04-10T00:00:00Z",
+   "permittedClaims": [
+    "The synthetic capability was assessed against 12 of 360 AIDCF-007A controls."
+   ],
+   "prohibitedClaims": [
+    "Any claim of certification.",
+    "Any claim of assurance stronger than NOT_ASSURED, including INCONCLUSIVE: the CG-07 failure is demonstrated, not undetermined."
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.3 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.3"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.1",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-012",
+   "sourceArtifact": "AIDCF-015",
+   "statementText": "The synthetic assessment is NOT_ASSURED. CG-07 (critical control-system integrity) FAILS on PARTIAL CRITICAL controls MCF-OPS-013 and MCF-SEC-005, and its FAIL ceiling is NOT_ASSURED for the Service Outcomes that depend on BMS supervision of power and cooling (RF-06, required by SO-01); the decision question is not partitioned by outcome, so that ceiling applies to SO-01 to SO-03. CG-03 and CG-15 also FAIL (NOT_ASSURED for the outcomes their defeated dependency and authority paths reach; LIMITED for the decision as a whole). The CG-01 and CG-05 UNKNOWN gates and the systemic US5 UNKNOWN U-003 on the facility water plant each cap the decision at INCONCLUSIVE; none raises it above NOT_ASSURED, because a demonstrated gate failure is not softened by undetermined positions.",
+   "status": "REVIEWED",
+   "version": "1.0"
+  }
+ ]
+}

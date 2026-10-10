@@ -1,0 +1,37 @@
+code,label,definition,semanticOwner,version,status,replacedBy,dimension,level,criterion
+C0,Coverage 0,Unknown coverage,AIDCF-008,1.3,CANDIDATE,,C,0,Unknown coverage
+C1,Coverage 1,Anecdotal or isolated,AIDCF-008,1.3,CANDIDATE,,C,1,Anecdotal or isolated
+C2,Coverage 2,Limited sample/state,AIDCF-008,1.3,CANDIDATE,,C,2,Limited sample/state
+C3,Coverage 3,Representative core scope,AIDCF-008,1.3,CANDIDATE,,C,3,Representative core scope
+C4,Coverage 4,Broad scope and relevant states,AIDCF-008,1.3,CANDIDATE,,C,4,Broad scope and relevant states
+C5,Coverage 5,"Comprehensive declared population, period and states",AIDCF-008,1.3,CANDIDATE,,C,5,"Comprehensive population, period and states"
+F0,Fitness/relevance 0,"Relevance not established, or the item is not linked to the assertion",AIDCF-008,1.3,CANDIDATE,,F,0,Not established / unlinked
+F1,Fitness/relevance 1,"Indirect: concerns a related system, population or design generation, not the asserted subject",AIDCF-008,1.3,CANDIDATE,,F,1,Indirect subject
+F2,Fitness/relevance 2,"Partial: correct subject but a different claim type, configuration version or operating state",AIDCF-008,1.3,CANDIDATE,,F,2,"Partial: other claim type, version or state"
+F3,Fitness/relevance 3,"Relevant: addresses the asserted subject, claim type and period, and is linked to the assertion",AIDCF-008,1.3,CANDIDATE,,F,3,Relevant and linked to assertion
+F4,Fitness/relevance 4,"Specific: addresses the precise assessment criterion, configuration version and declared operating states",AIDCF-008,1.3,CANDIDATE,,F,4,"Specific to criterion, version and states"
+F5,Fitness/relevance 5,Discriminating: designed for the criterion (e.g. a test with pre-declared acceptance criteria) so that a nonconforming condition would have been detected,AIDCF-008,1.3,CANDIDATE,,F,5,Discriminating for the criterion
+I0,Integrity 0,Unknown integrity,AIDCF-008,1.3,CANDIDATE,,I,0,Unknown integrity
+I1,Integrity 1,Basic repository controls,AIDCF-008,1.3,CANDIDATE,,I,1,Basic repository controls
+I2,Integrity 2,Verified source copy,AIDCF-008,1.3,CANDIDATE,,I,2,Verified source copy
+I3,Integrity 3,Hash verified,AIDCF-008,1.3,CANDIDATE,,I,3,Hash verified
+I4,Integrity 4,Signature/timestamp verified,AIDCF-008,1.3,CANDIDATE,,I,4,Signature/timestamp verified
+I5,Integrity 5,Tamper-evident end-to-end custody,AIDCF-008,1.3,CANDIDATE,,I,5,Tamper-evident end-to-end custody
+P0,Provenance 0,Unknown origin,AIDCF-008,1.3,CANDIDATE,,P,0,Unknown origin
+P1,Provenance 1,Identified but uncontrolled source,AIDCF-008,1.3,CANDIDATE,,P,1,"Identified, uncontrolled source"
+P2,Provenance 2,Accountable internal source,AIDCF-008,1.3,CANDIDATE,,P,2,Accountable internal source
+P3,Provenance 3,Controlled authoritative source,AIDCF-008,1.3,CANDIDATE,,P,3,Controlled authoritative source
+P4,Provenance 4,Corroborated authoritative source,AIDCF-008,1.3,CANDIDATE,,P,4,Corroborated authoritative source
+P5,Provenance 5,Independently verified origin and lineage,AIDCF-008,1.3,CANDIDATE,,P,5,Independently verified origin and lineage
+R0,Reliability 0,Unassessed,AIDCF-008,1.3,CANDIDATE,,R,0,Unassessed
+R1,Reliability 1,Weak/uncontrolled method,AIDCF-008,1.3,CANDIDATE,,R,1,Weak/uncontrolled method
+R2,Reliability 2,Plausible but lightly corroborated,AIDCF-008,1.3,CANDIDATE,,R,2,"Plausible, lightly corroborated"
+R3,Reliability 3,Controlled repeatable method,AIDCF-008,1.3,CANDIDATE,,R,3,Controlled repeatable method
+R4,Reliability 4,Strong and independently corroborated,AIDCF-008,1.3,CANDIDATE,,R,4,"Strong, independently corroborated"
+R5,Reliability 5,Validated method and independent verification,AIDCF-008,1.3,CANDIDATE,,R,5,"Validated method, independent verification"
+T0,Timeliness/currentness 0,Unknown age or state,AIDCF-008,1.3,CANDIDATE,,T,0,Unknown age or state
+T1,Timeliness/currentness 1,Obsolete for represented state,AIDCF-008,1.3,CANDIDATE,,T,1,Obsolete for represented state
+T2,Timeliness/currentness 2,Stale or change-sensitive,AIDCF-008,1.3,CANDIDATE,,T,2,Stale or change-sensitive
+T3,Timeliness/currentness 3,Acceptable for decision,AIDCF-008,1.3,CANDIDATE,,T,3,Acceptable for decision
+T4,Timeliness/currentness 4,Current and aligned to baseline,AIDCF-008,1.3,CANDIDATE,,T,4,Current and aligned to baseline
+T5,Timeliness/currentness 5,Near-real-time or event-current with healthy collection,AIDCF-008,1.3,CANDIDATE,,T,5,"Near-real-time, healthy collection"

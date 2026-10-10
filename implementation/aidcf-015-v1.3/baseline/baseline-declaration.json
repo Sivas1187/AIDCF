@@ -1,0 +1,43 @@
+{
+ "release": "AIDCF-REL-2026.10.1",
+ "package": "AIDCF-015 v1.3",
+ "dataModel": "AIDCF-016 MDM 1.3",
+ "status": "Draft for controlled review",
+ "date": "2026-10-10",
+ "author": "Siva Sethumadhavan",
+ "pinnedSources": [
+  {
+   "artifact": "AIDCF-007A",
+   "version": "1.1",
+   "use": "registries/controls, families, domains (15/90/360) and gate-mappings.csv roles",
+   "amendment": "AIDCF-007A-AMD-001"
+  },
+  {
+   "artifact": "AIDCF-010",
+   "version": "as copied in registries/gates",
+   "use": "critical-gates.csv and critical-gate-criteria.csv"
+  },
+  {
+   "artifact": "AIDCF-014",
+   "version": "1.1",
+   "use": "classes (section 7), relationships (section 9), business rules (section 18), traceability (section 11)"
+  },
+  {
+   "artifact": "AIDCF-016",
+   "version": "1.0 (Draft for controlled review)",
+   "use": "serialisations, canonical rules MDM-R01 to MDM-R20, conformance tests"
+  },
+  {
+   "artifact": "SPEC",
+   "version": "as referenced by AIDCF-016",
+   "use": "5.12 score method; 6.2 gate roll-up"
+  }
+ ],
+ "baselineIssues": [
+  "BI-001 (RESOLVED)",
+  "BI-002 (CONDITIONALLY_BASELINED)",
+  "BI-003 (CONDITIONALLY_BASELINED)"
+ ],
+ "gateRoles": "Per-control CRITICAL and SUPPORTING roles from registries/controls/gate-mappings.csv (106 CRITICAL, 483 SUPPORTING mappings over 13 gates). The v1.2 synthetic gate-to-control lists are withdrawn.",
+ "scopeRule": "Every registry CRITICAL control is in scope for its gate. Controls without a Control Assessment are NOT_ASSESSED. A gate with no assessed CRITICAL control, no evaluated criterion and no attached US4/US5 UNKNOWN is NOT_ASSESSED and applies its unknownCeiling (AIDCF-016 section 9.3)."
+}

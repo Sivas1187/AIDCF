@@ -1,0 +1,91 @@
+aidcfFamilyId,aidcfFamilyName,externalRef,externalTitle,relationship,confidence,notes
+GOV-01,Governance architecture,GOVERN 1; GOVERN 2,"Policies, processes, procedures and practices for AI risk; Accountability structures",PARTIAL,MEDIUM,"GOVERN establishes organisational AI risk governance. AIDCF GOV-01 adds decision rights over infrastructure Assurance Decisions, committee oversight of gates and methodology ownership."
+GOV-02,Accountability and responsibility,GOVERN 2,Accountability structures,PARTIAL,HIGH,"Roles, responsibilities and lines of communication for AI risk overlap RACI and role ownership. Critical-function accountability for facility and AI infrastructure and evidence custody are AIDCF-specific."
+GOV-03,Policy and standards management,GOVERN 1,"Policies, processes, procedures and practices for AI risk",PARTIAL,MEDIUM,Policy coverage overlaps; Technical Standard Baselines and exception governance for engineering standards are not addressed.
+GOV-04,Risk and assurance governance,GOVERN 1; MANAGE 1,Policies and risk tolerance; Prioritisation of and response to assessed AI risks,PARTIAL,MEDIUM,Risk tolerance and prioritised risk response align with Risk Appetite Linkage. The AI RMF has no Critical Gate concept.
+GOV-05,Stakeholder and regulatory interface,GOVERN 1; GOVERN 5,Policies (legal and regulatory requirements); Engagement with relevant AI actors,PARTIAL,MEDIUM,GOVERN 1.1 (legal and regulatory requirements understood and managed) and GOVERN 5 (engagement with external AI actors) overlap stakeholder and regulatory interface.
+GOV-06,"Ethics, impartiality and competence",GOVERN 2; GOVERN 3; MEASURE 1,Training; Workforce diversity and team composition; Independent assessors in measurement,PARTIAL,LOW,Training and independent assessment (MEASURE 1.3) overlap competence and independence. Conflict management and appeal are not addressed.
+CAP-01,Capability inventory,GOVERN 1,Inventory of AI systems,PARTIAL,MEDIUM,GOVERN 1.6 calls for an inventory of AI systems. AIDCF CAP-01 registers infrastructure Capability Instances; the AI system inventory can be linked as the demand-side consumer.
+CAP-02,Service outcome definition,MAP 1; MAP 3,"Context established; AI capabilities, targeted usage and goals understood",CONTEXT,MEDIUM,Intended purpose and expected benefits of the AI system frame which infrastructure Service Outcomes matter; tolerances are not defined.
+CAP-03,Criticality and materiality,MAP 1; MAP 5,Context established; Impacts characterised,CONTEXT,MEDIUM,Likelihood and magnitude of impacts inform criticality and stakeholder consequence; infrastructure impact tolerance is not defined.
+CAP-04,Demand and growth modelling,,,NO_MATCH,MEDIUM,
+CAP-05,Operating envelope,,,NO_MATCH,MEDIUM,
+CAP-06,Capability lifecycle and change,GOVERN 1,Decommissioning and phasing out AI systems,CONTEXT,MEDIUM,"GOVERN 1.7 addresses safe decommissioning of AI systems; AIDCF CAP-06 addresses design-to-operation traceability, commissioning acceptance and retirement of infrastructure capability."
+DEP-01,Dependency discovery,MAP 4,"Risks and benefits mapped for all components, including third-party",CONTEXT,MEDIUM,"Component-level risk mapping is the AI-system analogue of dependency discovery; upstream facility, recovery-only and downstream consequence paths are not addressed."
+DEP-02,Shared and common-mode dependencies,,,NO_MATCH,MEDIUM,
+DEP-03,External providers and utilities,GOVERN 6; MANAGE 3,"Third-party software, data and supply-chain risk; Management of third-party AI risks",PARTIAL,MEDIUM,Third-party AI risk overlaps external provider dependency. Utility and telecom dependency are outside scope.
+DEP-04,Concentration and substitutability,GOVERN 6,Contingency processes for third-party failures,CONTEXT,LOW,GOVERN 6.2 contingency for failures in high-risk third-party data or systems is a context for substitution readiness; concentration analysis is not addressed.
+DEP-05,Boundary and interface control,MAP 1,Context established,CONTEXT,LOW,"Context-setting informs boundaries but defines no assessment, provider or tenant boundary."
+DEP-06,Dependency monitoring and review,MANAGE 3,Management of third-party AI risks,PARTIAL,LOW,Regular monitoring of third-party resources overlaps provider performance review; dependency health indicators and revalidation are not addressed.
+PHY-01,Site and location resilience,,,NO_MATCH,MEDIUM,
+PHY-02,Building and structural integrity,,,NO_MATCH,MEDIUM,
+PHY-03,Physical zoning and segregation,,,NO_MATCH,MEDIUM,
+PHY-04,Access and surveillance,,,NO_MATCH,MEDIUM,
+PHY-05,Asset movement and custody,,,NO_MATCH,MEDIUM,
+PHY-06,"Fire, life safety and emergency interfaces",,,NO_MATCH,MEDIUM,
+POW-01,Utility and grid interface,,,NO_MATCH,MEDIUM,
+POW-02,Generation and fuel,,,NO_MATCH,MEDIUM,
+POW-03,UPS and energy storage,,,NO_MATCH,MEDIUM,
+POW-04,Distribution and protection,,,NO_MATCH,MEDIUM,
+POW-05,Power quality and transient response,,,NO_MATCH,MEDIUM,
+POW-06,"Electrical monitoring, maintenance and recovery",,,NO_MATCH,MEDIUM,
+THM-01,Thermal architecture and capacity,,,NO_MATCH,MEDIUM,
+THM-02,Air cooling systems,,,NO_MATCH,MEDIUM,
+THM-03,Liquid cooling systems,,,NO_MATCH,MEDIUM,
+THM-04,Heat rejection and water systems,,,NO_MATCH,MEDIUM,
+THM-05,Fluid quality and leak management,,,NO_MATCH,MEDIUM,
+THM-06,"Thermal control, maintenance and recovery",,,NO_MATCH,MEDIUM,
+ENV-01,Environmental operating conditions,,,NO_MATCH,MEDIUM,
+ENV-02,Energy performance,MEASURE 2,Evaluation of trustworthy characteristics (environmental impact),CONTEXT,MEDIUM,"MEASURE 2.12 asks that environmental impact and sustainability of AI training and management be assessed and documented. AIDCF ENV-02 requires measured facility energy performance (PUE, allocation, efficiency under load)."
+ENV-03,Water performance,MEASURE 2,Evaluation of trustworthy characteristics (environmental impact),CONTEXT,LOW,Environmental impact assessment may include water; no WUE or water-scarcity response requirements.
+ENV-04,Carbon and resource reporting,MEASURE 2,Evaluation of trustworthy characteristics (environmental impact),CONTEXT,MEDIUM,"Environmental impact documentation is a context for carbon accounting; boundary, energy-attribute evidence and reporting traceability are not addressed."
+ENV-05,Hazardous materials and waste,,,NO_MATCH,MEDIUM,
+ENV-06,Climate adaptation and resource continuity,,,NO_MATCH,MEDIUM,
+CMP-01,Compute architecture and configuration,,,NO_MATCH,MEDIUM,
+CMP-02,Cluster and scale-up domains,,,NO_MATCH,MEDIUM,
+CMP-03,"Capacity, scheduling and utilisation",,,NO_MATCH,MEDIUM,
+CMP-04,"Firmware, driver and compatibility",,,NO_MATCH,MEDIUM,
+CMP-05,Compute health and observability,MEASURE 2; MANAGE 4,Evaluation in deployment (functionality and behaviour monitored); Post-deployment monitoring,CONTEXT,LOW,Production monitoring of AI system behaviour sits above accelerator and node health telemetry; it can surface symptoms of infrastructure degradation.
+CMP-06,Compute lifecycle and recovery,,,NO_MATCH,MEDIUM,
+STO-01,Storage architecture and tiering,,,NO_MATCH,MEDIUM,
+STO-02,Performance and capacity,,,NO_MATCH,MEDIUM,
+STO-03,Integrity and consistency,,,NO_MATCH,MEDIUM,
+STO-04,Protection and replication,,,NO_MATCH,MEDIUM,
+STO-05,Checkpoint and recovery services,,,NO_MATCH,MEDIUM,
+STO-06,Storage monitoring and lifecycle,,,NO_MATCH,MEDIUM,
+NET-01,Scale-up and scale-out fabrics,,,NO_MATCH,MEDIUM,
+NET-02,Performance and congestion control,,,NO_MATCH,MEDIUM,
+NET-03,Storage and service networks,,,NO_MATCH,MEDIUM,
+NET-04,Management and out-of-band networks,,,NO_MATCH,MEDIUM,
+NET-05,Physical connectivity and optics,,,NO_MATCH,MEDIUM,
+NET-06,Network control and observability,,,NO_MATCH,MEDIUM,
+OPS-01,Operating model and staffing,GOVERN 2,Accountability structures (training),CONTEXT,LOW,AI-risk training; no operational staffing or authorisation requirements.
+OPS-02,Procedure and work control,,,NO_MATCH,MEDIUM,
+OPS-03,Maintenance and reliability,,,NO_MATCH,MEDIUM,
+OPS-04,"Alarm, incident and problem management",MANAGE 4,"Risk treatments, response and recovery, and communication",CONTEXT,MEDIUM,"MANAGE 4.3 (incidents and errors communicated and tracked) is a context for incident and problem management of AI systems, not of facility infrastructure."
+OPS-05,Change and configuration management,,,NO_MATCH,MEDIUM,
+OPS-06,Capacity and service operations,MEASURE 3,Tracking identified AI risks over time,CONTEXT,LOW,Tracking risk over time; no capacity review or service-level monitoring.
+RES-01,Resilience strategy,MANAGE 2,"Strategies to maximise benefit and minimise negative impact (supersede, disengage, deactivate)",CONTEXT,LOW,MANAGE 2.4 mechanisms to disengage or deactivate AI systems relate to graceful degradation at the AI-system layer.
+RES-02,Fault-domain and containment design,,,NO_MATCH,MEDIUM,
+RES-03,Continuity planning,GOVERN 6,Contingency processes for third-party failures,CONTEXT,LOW,Contingency for third-party failure is one input to continuity strategy.
+RES-04,Recovery planning,MANAGE 4,"Risk treatments, including response and recovery",CONTEXT,LOW,Response and recovery for AI risks; no infrastructure recovery sequencing or configuration restoration.
+RES-05,Testing and exercising,MEASURE 2,Evaluation of trustworthy characteristics (security and resilience),CONTEXT,MEDIUM,"MEASURE 2.7 evaluates AI system security and resilience; AIDCF RES-05 requires component, integrated scenario and tabletop tests of infrastructure."
+RES-06,Crisis and adaptive response,MANAGE 4,Communication plans,CONTEXT,LOW,Communication of risk treatments; crisis command not addressed.
+SUP-01,Supplier due diligence,GOVERN 6,"Third-party software, data and supply-chain risk",PARTIAL,MEDIUM,Policies for third-party AI risk overlap supplier due diligence at objective level.
+SUP-02,Contract and service obligations,GOVERN 6,"Third-party software, data and supply-chain risk",CONTEXT,MEDIUM,Third-party risk policies (including intellectual property) are a context for contracts; evidence rights and exit rights are not specified.
+SUP-03,Hardware and component provenance,GOVERN 6; MAP 4,Supply-chain risk; Component risk mapping,CONTEXT,LOW,No hardware provenance or counterfeit-prevention requirements.
+SUP-04,"Software, firmware and update supply",GOVERN 6; MANAGE 3,Third-party software risk; Monitoring of pre-trained models and third-party resources,CONTEXT,LOW,Third-party software monitoring is a context for firmware and update supply; signature validation and release provenance are not addressed.
+SUP-05,"Spares, logistics and obsolescence",,,NO_MATCH,MEDIUM,
+SUP-06,Remote support and third-party access,,,NO_MATCH,MEDIUM,
+SEC-01,Identity and privileged access,,,NO_MATCH,MEDIUM,
+SEC-02,Control-plane protection,,,NO_MATCH,MEDIUM,
+SEC-03,Network security and segmentation,,,NO_MATCH,MEDIUM,
+SEC-04,"Configuration, vulnerability and patching",,,NO_MATCH,MEDIUM,
+SEC-05,Detection and response,MEASURE 2,Evaluation of trustworthy characteristics (security and resilience),CONTEXT,LOW,AI system security evaluation; no security telemetry or forensic readiness for infrastructure.
+SEC-06,AI-enabled and automated action,GOVERN 3; MAP 3; MANAGE 2,"Human-AI configurations and oversight; Human oversight processes defined; Mechanisms to supersede, disengage or deactivate",PARTIAL,MEDIUM,"Human oversight and deactivation of AI systems overlap AIDCF SEC-06 objectives. AIDCF adds bounded authority, approval controls, command allowlisting and safe rollback for AI or automation acting on infrastructure."
+EVA-01,Evidence architecture,GOVERN 1,"Policies, processes, procedures and practices (transparency and documentation)",CONTEXT,LOW,Documentation expectations; no evidence taxonomy or repository requirements.
+EVA-02,Evidence provenance and quality,MEASURE 1; MEASURE 2,"Appropriate methods and metrics; Test sets, metrics and tools documented",CONTEXT,LOW,Documenting TEVV methods supports evidence relevance and reliability; provenance and custody are not addressed.
+EVA-03,Assessment planning and execution,MEASURE 1,Appropriate methods and metrics identified and applied,PARTIAL,MEDIUM,Selection of methods and metrics and involvement of independent assessors overlap assessment planning.
+EVA-04,"Findings, UNKNOWN and limitations",MEASURE 1; MEASURE 3; MEASURE 4,Risks not measured documented; Risk tracking; Feedback on measurement efficacy,PARTIAL,MEDIUM,"MEASURE 1.1 asks that risks that cannot be measured be documented, which parallels UNKNOWN preservation. The AI RMF has no UNKNOWN severity or decision effect."
+EVA-05,Critical gates and decisions,MANAGE 1,Determination whether the AI system achieves its purpose and whether deployment should proceed,PARTIAL,MEDIUM,"MANAGE 1.1 go/no-go determination parallels the Assurance Decision. Gate applicability, gate evidence floors and bounded claim language are AIDCF-specific."
+EVA-06,Reassessment and continuing assurance,GOVERN 1; MANAGE 4,Ongoing monitoring and periodic review; Post-deployment monitoring,PARTIAL,MEDIUM,Periodic review and post-deployment monitoring overlap continuing assurance; evidence expiry and decision suspension are AIDCF-specific.

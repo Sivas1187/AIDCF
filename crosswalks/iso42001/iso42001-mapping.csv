@@ -1,0 +1,91 @@
+aidcfFamilyId,aidcfFamilyName,externalRef,externalTitle,relationship,confidence,notes
+GOV-01,Governance architecture,Cl. 5.1; Cl. 5.3; Annex A.3,"Leadership and commitment; Roles, responsibilities and authorities; Internal organization",PARTIAL,MEDIUM,"42001 establishes top-management direction and roles for the AI management system. AIDCF GOV-01 additionally requires decision rights over infrastructure Assurance Decisions, committee oversight of gates and ownership of the assessment methodology."
+GOV-02,Accountability and responsibility,Cl. 5.3; Annex A.3,"Roles, responsibilities and authorities; Internal organization",PARTIAL,MEDIUM,"Role assignment for the AIMS overlaps RACI and role ownership. 42001 does not address accountability for Required Functions of facility infrastructure, risk-acceptance authority for gate outcomes or evidence custody."
+GOV-03,Policy and standards management,Cl. 5.2; Cl. 7.5; Annex A.2,AI policy; Documented information; Policies related to AI,PARTIAL,HIGH,"Policy hierarchy and document lifecycle overlap directly. Technical Standard Baselines for power, thermal, compute, storage and network engineering are outside 42001."
+GOV-04,Risk and assurance governance,Cl. 6.1; Cl. 9.2; Cl. 9.3,Actions to address risks and opportunities; Internal audit; Management review,PARTIAL,MEDIUM,Risk-based planning and review of the management system align with assurance planning and independent review. 42001 has no equivalent of Critical Gate governance.
+GOV-05,Stakeholder and regulatory interface,Cl. 4.2; Annex A.8,Understanding the needs and expectations of interested parties; Information for interested parties of AI systems,PARTIAL,MEDIUM,"Interested-party requirements (including regulatory and customer obligations) overlap. Infrastructure customer commitments (availability, recovery tolerances) are not specifically addressed."
+GOV-06,"Ethics, impartiality and competence",Cl. 7.2,Competence,PARTIAL,LOW,"Competence overlaps. Conflict management, assessor independence and appeal are certification-body matters addressed by conformity-assessment standards rather than by 42001 itself."
+CAP-01,Capability inventory,Annex A.4,Resources for AI systems,PARTIAL,MEDIUM,"A.4 expects the organisation to identify and document resources for AI systems, including system and computing resources. AIDCF CAP-01 requires a register of bounded Capability Instances with owners, lifecycle status and architecture linkage."
+CAP-02,Service outcome definition,Cl. 6.2,AI objectives and planning to achieve them,CONTEXT,MEDIUM,"AI objectives concern the AI system; AIDCF Service Outcomes (availability, performance, integrity, recovery with tolerances) are infrastructure outcomes that support them."
+CAP-03,Criticality and materiality,Cl. 6.1.4; Cl. 8.4; Annex A.5,AI system impact assessment; Assessing impacts of AI systems,CONTEXT,MEDIUM,Impact assessment of AI systems on individuals and society informs stakeholder consequence and criticality of the infrastructure supporting them. It does not define infrastructure impact tolerances.
+CAP-04,Demand and growth modelling,Annex A.4,Resources for AI systems,CONTEXT,LOW,"Resource documentation may record current compute allocation. Demand modelling (peak, transient, growth, scenario) is not addressed."
+CAP-05,Operating envelope,,,NO_MATCH,MEDIUM,
+CAP-06,Capability lifecycle and change,Cl. 6.3; Cl. 8.1; Annex A.6,Planning of changes; Operational planning and control; AI system life cycle,CONTEXT,MEDIUM,"AI system lifecycle controls (design, verification, deployment, operation) are a context for infrastructure commissioning acceptance and material-change impact, but do not address them."
+DEP-01,Dependency discovery,Annex A.4,Resources for AI systems,CONTEXT,LOW,"Resource documentation can seed asset-to-function mapping. Upstream, downstream and recovery dependency mapping are not required."
+DEP-02,Shared and common-mode dependencies,,,NO_MATCH,MEDIUM,
+DEP-03,External providers and utilities,Annex A.10; Cl. 8.1,Third-party and customer relationships; Operational planning and control (externally provided processes),PARTIAL,MEDIUM,"Third-party relationships for AI systems overlap at objective level. Utility, telecom and OEM dependency of facility infrastructure is outside the AIMS scope unless deliberately included."
+DEP-04,Concentration and substitutability,,,NO_MATCH,MEDIUM,
+DEP-05,Boundary and interface control,Cl. 4.3,Determining the scope of the AI management system,CONTEXT,MEDIUM,"An AIMS scope statement is an input to, not a substitute for, the AIDCF assessment boundary, provider boundary and tenant boundary."
+DEP-06,Dependency monitoring and review,Cl. 9.1; Annex A.10,"Monitoring, measurement, analysis and evaluation; Third-party and customer relationships",CONTEXT,LOW,General monitoring of the management system and third parties; no dependency health indicators or periodic revalidation of dependency maps.
+PHY-01,Site and location resilience,,,NO_MATCH,MEDIUM,
+PHY-02,Building and structural integrity,,,NO_MATCH,MEDIUM,
+PHY-03,Physical zoning and segregation,,,NO_MATCH,MEDIUM,
+PHY-04,Access and surveillance,,,NO_MATCH,MEDIUM,
+PHY-05,Asset movement and custody,,,NO_MATCH,MEDIUM,
+PHY-06,"Fire, life safety and emergency interfaces",,,NO_MATCH,MEDIUM,
+POW-01,Utility and grid interface,,,NO_MATCH,MEDIUM,
+POW-02,Generation and fuel,,,NO_MATCH,MEDIUM,
+POW-03,UPS and energy storage,,,NO_MATCH,MEDIUM,
+POW-04,Distribution and protection,,,NO_MATCH,MEDIUM,
+POW-05,Power quality and transient response,,,NO_MATCH,MEDIUM,
+POW-06,"Electrical monitoring, maintenance and recovery",,,NO_MATCH,MEDIUM,
+THM-01,Thermal architecture and capacity,,,NO_MATCH,MEDIUM,
+THM-02,Air cooling systems,,,NO_MATCH,MEDIUM,
+THM-03,Liquid cooling systems,,,NO_MATCH,MEDIUM,
+THM-04,Heat rejection and water systems,,,NO_MATCH,MEDIUM,
+THM-05,Fluid quality and leak management,,,NO_MATCH,MEDIUM,
+THM-06,"Thermal control, maintenance and recovery",,,NO_MATCH,MEDIUM,
+ENV-01,Environmental operating conditions,,,NO_MATCH,MEDIUM,
+ENV-02,Energy performance,,,NO_MATCH,MEDIUM,42001 does not set energy-performance requirements; see EN 50600 and Singapore crosswalks.
+ENV-03,Water performance,,,NO_MATCH,MEDIUM,
+ENV-04,Carbon and resource reporting,,,NO_MATCH,MEDIUM,
+ENV-05,Hazardous materials and waste,,,NO_MATCH,MEDIUM,
+ENV-06,Climate adaptation and resource continuity,,,NO_MATCH,MEDIUM,
+CMP-01,Compute architecture and configuration,Annex A.4,Resources for AI systems,SUPPORTS_EVIDENCE,MEDIUM,Records of system and computing resources produced under A.4 can corroborate the compute inventory (E1 evidence). They do not establish architecture adequacy or an approved baseline.
+CMP-02,Cluster and scale-up domains,,,NO_MATCH,MEDIUM,
+CMP-03,"Capacity, scheduling and utilisation",Annex A.4,Resources for AI systems,CONTEXT,LOW,Resource provisioning for AI systems is a context for usable accelerator capacity; scheduler controls and contention management are not addressed.
+CMP-04,"Firmware, driver and compatibility",,,NO_MATCH,MEDIUM,
+CMP-05,Compute health and observability,,,NO_MATCH,MEDIUM,
+CMP-06,Compute lifecycle and recovery,,,NO_MATCH,MEDIUM,
+STO-01,Storage architecture and tiering,Annex A.7,Data for AI systems,CONTEXT,LOW,"A.7 addresses data acquisition, quality and provenance for AI systems, not the storage tiers that hold training data, checkpoints and artefacts."
+STO-02,Performance and capacity,,,NO_MATCH,MEDIUM,
+STO-03,Integrity and consistency,Annex A.7,Data for AI systems,CONTEXT,LOW,"Data quality and provenance objectives are a context for storage data integrity; checksum, scrubbing and metadata integrity are not addressed."
+STO-04,Protection and replication,,,NO_MATCH,MEDIUM,
+STO-05,Checkpoint and recovery services,,,NO_MATCH,MEDIUM,
+STO-06,Storage monitoring and lifecycle,,,NO_MATCH,MEDIUM,
+NET-01,Scale-up and scale-out fabrics,,,NO_MATCH,MEDIUM,
+NET-02,Performance and congestion control,,,NO_MATCH,MEDIUM,
+NET-03,Storage and service networks,,,NO_MATCH,MEDIUM,
+NET-04,Management and out-of-band networks,,,NO_MATCH,MEDIUM,
+NET-05,Physical connectivity and optics,,,NO_MATCH,MEDIUM,
+NET-06,Network control and observability,,,NO_MATCH,MEDIUM,
+OPS-01,Operating model and staffing,Cl. 7.1; Cl. 7.2; Annex A.4,Resources; Competence; Resources for AI systems (human resources),CONTEXT,MEDIUM,"Resourcing and competence for the AIMS; no 24x7 coverage, shift handover or authorisation-to-operate requirements for facility operations."
+OPS-02,Procedure and work control,Cl. 8.1,Operational planning and control,CONTEXT,LOW,"Operational control of AIMS processes; method statements, permit to work and lockout/tagout are outside scope."
+OPS-03,Maintenance and reliability,,,NO_MATCH,MEDIUM,
+OPS-04,"Alarm, incident and problem management",Cl. 10.2; Annex A.8,Nonconformity and corrective action; Information for interested parties of AI systems,CONTEXT,MEDIUM,Corrective action and communication about AI system incidents to interested parties are a context for incident and problem management. Alarm rationalisation and infrastructure incident response are not addressed.
+OPS-05,Change and configuration management,Cl. 6.3,Planning of changes,CONTEXT,MEDIUM,Planned change to the management system; configuration baselines and rollback for infrastructure are not addressed.
+OPS-06,Capacity and service operations,Cl. 9.1,"Monitoring, measurement, analysis and evaluation",CONTEXT,LOW,Generic performance evaluation; no capacity review or service-level monitoring of infrastructure.
+RES-01,Resilience strategy,,,NO_MATCH,MEDIUM,
+RES-02,Fault-domain and containment design,,,NO_MATCH,MEDIUM,
+RES-03,Continuity planning,,,NO_MATCH,MEDIUM,
+RES-04,Recovery planning,,,NO_MATCH,MEDIUM,
+RES-05,Testing and exercising,,,NO_MATCH,MEDIUM,
+RES-06,Crisis and adaptive response,Cl. 7.4,Communication,CONTEXT,LOW,Determination of internal and external communication; crisis command and emergency change are not addressed.
+SUP-01,Supplier due diligence,Annex A.10,Third-party and customer relationships,PARTIAL,MEDIUM,Supplier responsibilities for AI systems overlap with supplier due diligence. Financial and operational resilience and sub-tier visibility of infrastructure suppliers are not addressed.
+SUP-02,Contract and service obligations,Annex A.10,Third-party and customer relationships,PARTIAL,LOW,"Allocation of responsibilities with suppliers and customers overlaps service obligations. Evidence rights, incident notification and exit rights are not specified."
+SUP-03,Hardware and component provenance,Annex A.10,Third-party and customer relationships,CONTEXT,LOW,"No hardware provenance, counterfeit prevention or component traceability requirements."
+SUP-04,"Software, firmware and update supply",Annex A.4; Annex A.10,Resources for AI systems (tooling); Third-party and customer relationships,CONTEXT,LOW,"Tooling and third-party resources are documented; release provenance, signature validation and vulnerability response for firmware are not addressed."
+SUP-05,"Spares, logistics and obsolescence",,,NO_MATCH,MEDIUM,
+SUP-06,Remote support and third-party access,,,NO_MATCH,MEDIUM,
+SEC-01,Identity and privileged access,,,NO_MATCH,MEDIUM,42001 relies on the organisation's information-security management for access control; use the ISO/IEC 27001 crosswalk.
+SEC-02,Control-plane protection,,,NO_MATCH,MEDIUM,
+SEC-03,Network security and segmentation,,,NO_MATCH,MEDIUM,
+SEC-04,"Configuration, vulnerability and patching",,,NO_MATCH,MEDIUM,
+SEC-05,Detection and response,,,NO_MATCH,MEDIUM,
+SEC-06,AI-enabled and automated action,Annex A.6; Annex A.9,AI system life cycle; Use of AI systems,PARTIAL,MEDIUM,"42001 governs responsible use of AI systems, including human oversight objectives. AIDCF SEC-06 applies this to AI agents or automation acting on infrastructure: bounded authority, approval controls, command allowlisting and safe rollback, which 42001 does not specify."
+EVA-01,Evidence architecture,Cl. 7.5,Documented information,PARTIAL,MEDIUM,"Creation, control and retention of documented information overlap evidence taxonomy, repository and retention. 42001 has no evidence classes or quality model."
+EVA-02,Evidence provenance and quality,Cl. 7.5,Documented information (control of documented information),CONTEXT,LOW,"Document control supports integrity and custody; provenance, relevance, reliability and currency ratings (AIDCF-008 P/F/C/R/T/I) are not addressed."
+EVA-03,Assessment planning and execution,Cl. 9.2,Internal audit,PARTIAL,MEDIUM,"Audit programme, criteria and scope overlap assessment planning. Decision questions, claim types and specialist technical testing are AIDCF-specific."
+EVA-04,"Findings, UNKNOWN and limitations",Cl. 10.2,Nonconformity and corrective action,PARTIAL,LOW,"Nonconformities map to Findings. 42001 has no concept equivalent to UNKNOWN Records, conflict handling or limitation disclosure."
+EVA-05,Critical gates and decisions,Cl. 9.3,Management review,CONTEXT,LOW,Management review takes decisions about the AIMS; it has no gate evaluation or bounded claim language.
+EVA-06,Reassessment and continuing assurance,Cl. 9.1; Cl. 10.1,"Monitoring, measurement, analysis and evaluation; Continual improvement",PARTIAL,LOW,"Ongoing evaluation and improvement overlap continuing assurance. Evidence expiry, change triggers and decision suspension are AIDCF-specific."
