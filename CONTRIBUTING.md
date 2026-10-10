@@ -216,7 +216,7 @@ Contributors must:
 - avoid misleading claims of endorsement, accreditation or certification;
 - accept that evidence may require revision of the framework.
 
-A separate `CODE_OF_CONDUCT.md` should be adopted before large-scale public collaboration.
+The project Code of Conduct is in [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
 ## 14. Licensing
 

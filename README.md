@@ -52,7 +52,7 @@ Choose the path that matches your purpose.
 
 ### Executive or decision-maker
 
-1. Read the [technical whitepaper](whitepaper/AIDCF_Technical_Whitepaper_v3.0_Validation_Candidate.pdf).
+1. Read the [technical whitepaper](whitepaper/current/AIDCF_Technical_Whitepaper_v3.0_Validation_Candidate.pdf).
 2. Review [The Problem AIDCF Solves](#the-problem-aidcf-solves).
 3. Review [Example Use Cases](#example-use-cases).
 4. Review the framework's status and limitations before relying on any conclusion.
@@ -76,7 +76,7 @@ Choose the path that matches your purpose.
 
 1. Review AIDCF-014 and AIDCF-016.
 2. Inspect the CSV registries, JSON Schemas, JSON-LD context, RDF/Turtle and SHACL files.
-3. Extract AIDCF-015 v1.2 and run:
+3. From `implementation/aidcf-015-v1.2/`, run:
 
 ```bash
 python tools/run_all.py
@@ -535,77 +535,48 @@ Stable identity does not imply that control wording can never evolve. Meaning-ch
 
 ## Repository map
 
-The recommended public repository structure is:
-
 ```text
 AIDCF/
-├── README.md
-├── LICENSE
-├── CITATION.cff
-├── CHANGELOG.md
-├── CONTRIBUTING.md
-├── CODE_OF_CONDUCT.md
-├── SECURITY.md
-│
+├── README.md, LICENSE (pending), CITATION.cff, CHANGELOG.md,
+│   GOVERNANCE.md, CONTRIBUTING.md, SECURITY.md, CODE_OF_CONDUCT.md
+├── docs/            images, diagrams, presentations, publications
 ├── whitepaper/
-│   ├── AIDCF_Technical_Whitepaper_v3.0_Validation_Candidate.pdf
-│   └── AIDCF_Technical_Whitepaper_v3.0_Validation_Candidate.docx
-│
-├── foundation/
-│   ├── AIDCF_Manifesto_v1.0.pdf
-│   ├── AIDCF_Core_Conceptual_Model_v1.0.pdf
-│   ├── AIDCF-003_Infrastructure_Ontology_and_Taxonomy_v1.0.pdf
-│   ├── AIDCF-004_Threat_Hazard_and_Failure_Model_v1.0.pdf
-│   ├── AIDCF-005_AIDCF_AI_Trust_Graph_Integration_Standard_v1.0.pdf
-│   └── AIDCF-006_Assurance_Principles_Standard_v1.0.pdf
-│
-├── controls/
-│   ├── AIDCF-007A_Control_Universe_Constitutional_Amendment_v1.0.pdf
-│   ├── AIDCF-007A_Canonical_Master_Control_Registry_15-90-360_v1.0.xlsx
-│   └── registry/
-│       ├── domains.csv
-│       ├── control-families.csv
-│       ├── controls.csv
-│       └── critical-gates.csv
-│
-├── methodology/
-│   ├── AIDCF-008_Evidence_Model_v1.0.pdf
-│   ├── AIDCF-009_Assessment_Methodology_Enhanced_Practitioner_Handbook_v1.1.pdf
-│   ├── AIDCF-010_Scoring_and_Decision_Framework_v1.0.pdf
-│   ├── AIDCF-011_Assurance_Program_Framework_v1.0.pdf
-│   └── AIDCF-012_Reporting_and_Assurance_Statement_Standard_v1.0.pdf
-│
-├── architecture/
-│   ├── AIDCF-013_AI_Data_Centre_Assurance_Reference_Architecture_v1.0.pdf
-│   ├── AIDCF-014_End-to-End_Traceability_and_Machine-Executable_Data_Standard_v1.0.pdf
-│   └── AIDCF-016_Machine_Executable_Data_Model_Standard_v1.0.pdf
-│
+│   ├── current/     Technical Whitepaper v3.0 (PDF + DOCX)
+│   └── archive/     earlier whitepaper versions
+├── foundations/
+│   ├── manifesto/             AIDCF Manifesto v1.0
+│   ├── conceptual-model/      Core Conceptual Model (to be added)
+│   ├── ontology-taxonomy/     AIDCF-003
+│   ├── threat-model/          AIDCF-004
+│   ├── aitg-integration/      AIDCF-005
+│   └── assurance-principles/  AIDCF-006
+├── standards/
+│   ├── aidcf-007a/            amendment/ and registry/ (15-90-360 workbook)
+│   ├── aidcf-008-evidence-model/
+│   ├── aidcf-009-assessment-methodology/
+│   ├── aidcf-010-scoring-framework/
+│   ├── aidcf-011-assurance-program/
+│   ├── aidcf-012-reporting-standard/
+│   ├── aidcf-013-reference-architecture/
+│   ├── aidcf-014-traceability-standard/
+│   └── aidcf-016-machine-executable-model/  (to be added)
+├── registries/      domains, families, controls, gates, states (CSV)
+├── schemas/         json-schema, jsonld, rdf, owl, shacl
 ├── implementation/
-│   └── AIDCF-015-v1.2/
-│       ├── baseline/
-│       ├── registries/
-│       ├── schemas/
-│       ├── semantic/
-│       ├── dataset/
-│       ├── evidence-fixtures/
-│       ├── tests/
-│       ├── tools/
-│       ├── outputs/
-│       └── reports/
-│
-├── validation/
-│   ├── AIDCF-015_Full_Stack_Validation_Report_v1.0.pdf
-│   ├── reviewer-dispositions/
-│   ├── critical-gate-approvals/
-│   ├── derivation-records/
-│   └── pilot-records/
-│
-├── examples/
-├── docs/
-└── archive/
+│   └── aidcf-015-v1.2/        synthetic reference implementation
+├── assurance/       assessment, scoring, decision and report models; statements
+├── validation/      validation-report (AIDCF-016 Full Stack Validation Report),
+│                    independent review, dispositions, derivations, gate approvals
+├── pilots/          framework, authorisation, results, lessons learned
+├── crosswalks/      ISO 42001, NIST AI RMF, ISO 27001, EN 50600, TIA-942, Uptime, ISA/IEC 62443
+├── research/        review papers, derivations, literature, hypotheses, questions
+├── examples/        worked assessment, evidence, report, decision, capability
+└── archive/         superseded, duplicates, working drafts, historical releases
 ```
 
-The public repository should use PDF and Markdown as the main reading formats. Editable Word files can be retained as source artifacts, while structured registries and machine-readable files should remain in their native formats.
+Folders marked "to be added", and folders holding only a README, are reserved for planned content.
+
+PDF and Markdown are the main reading formats. Editable Word files are retained as source artifacts, and structured registries and machine-readable files stay in their native formats.
 
 ---
 
@@ -842,7 +813,7 @@ Each method retains its native semantics, findings and decisions. Conclusions mu
 Start with:
 
 ```text
-whitepaper/AIDCF_Technical_Whitepaper_v3.0_Validation_Candidate.pdf
+whitepaper/current/AIDCF_Technical_Whitepaper_v3.0_Validation_Candidate.pdf
 ```
 
 This provides the research problem, framework proposition, status boundaries, limitations and validation roadmap.
@@ -856,7 +827,7 @@ Read the Manifesto and Core Conceptual Model, followed by AIDCF-003 through AIDC
 Review:
 
 ```text
-controls/AIDCF-007A_Canonical_Master_Control_Registry_15-90-360_v1.0.xlsx
+standards/aidcf-007a/registry/AIDCF-007A_Canonical_Master_Control_Registry_15-90-360_v1.0.xlsx
 ```
 
 Use only canonical `MCF-*` identifiers for new mappings and assessments.
@@ -871,7 +842,7 @@ Read AIDCF-013, AIDCF-014 and AIDCF-016.
 
 ### 6. Run the synthetic package
 
-After extracting AIDCF-015 v1.2:
+From `implementation/aidcf-015-v1.2/`:
 
 ```bash
 python tools/run_all.py
@@ -1026,7 +997,7 @@ Sethumadhavan, S. AIDCF: AI Data Centre Facilities Assurance Framework.
 Technical Whitepaper v3.0, Validation Candidate for Independent Review, 2026.
 ```
 
-The repository should include a `CITATION.cff` file before public release.
+Citation metadata is in [CITATION.cff](CITATION.cff).
 
 ---
 

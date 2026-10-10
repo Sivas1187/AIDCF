@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use AIDCF, please cite it as below."
+title: "AIDCF: AI Data Centre Facilities Assurance Framework"
+abstract: >-
+  Capability-centred, evidence-gated and graph-native assurance framework
+  connecting AI service outcomes to the infrastructure dependencies, failure
+  scenarios, safeguards, controls, evidence, assessments, critical gates and
+  accountable decisions on which they depend.
+type: software
+authors:
+  - family-names: Sethumadhavan
+    given-names: Siva
+version: "3.0"
+date-released: "2026-10-10"
+repository-code: "https://github.com/Sivas1187/AIDCF"
+keywords:
+  - AI infrastructure
+  - data centre
+  - assurance
+  - controls
+  - evidence
+  - critical gates
+preferred-citation:
+  type: report
+  title: "AIDCF: AI Data Centre Facilities Assurance Framework. Technical Whitepaper v3.0, Validation Candidate for Independent Review"
+  authors:
+    - family-names: Sethumadhavan
+      given-names: Siva
+  year: 2026
+# Add a `license:` field once licences are selected, and a `doi:` field once a DOI is assigned.
