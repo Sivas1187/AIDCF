@@ -1,4 +1,4 @@
-> Markdown edition. Source: [AIDCF_Manifesto_v1.0.docx](AIDCF_Manifesto_v1.0.docx) · PDF: [AIDCF_Manifesto_v1.0.pdf](AIDCF_Manifesto_v1.0.pdf)
+> Markdown edition (source of truth). PDF: [AIDCF_Manifesto_v1.0.pdf](AIDCF_Manifesto_v1.0.pdf)
 
 **AIDCF**™
 

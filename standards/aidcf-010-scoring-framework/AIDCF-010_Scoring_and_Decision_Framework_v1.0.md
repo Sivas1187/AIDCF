@@ -1,4 +1,4 @@
-> Markdown edition. Source: [AIDCF-010_Scoring_and_Decision_Framework_v1.0.docx](AIDCF-010_Scoring_and_Decision_Framework_v1.0.docx) · PDF: [AIDCF-010_Scoring_and_Decision_Framework_v1.0.pdf](AIDCF-010_Scoring_and_Decision_Framework_v1.0.pdf)
+> Markdown edition (source of truth). PDF: [AIDCF-010_Scoring_and_Decision_Framework_v1.0.pdf](AIDCF-010_Scoring_and_Decision_Framework_v1.0.pdf)
 
 **AIDCF**
 

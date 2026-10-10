@@ -541,7 +541,7 @@ AIDCF/
 │   GOVERNANCE.md, CONTRIBUTING.md, SECURITY.md, CODE_OF_CONDUCT.md
 ├── docs/            images, diagrams, presentations, publications
 ├── whitepaper/
-│   ├── current/     Technical Whitepaper v3.0 (Markdown, PDF, DOCX)
+│   ├── current/     Technical Whitepaper v3.0 (Markdown, PDF)
 │   └── archive/     earlier whitepaper versions
 ├── foundations/
 │   ├── manifesto/             AIDCF Manifesto v1.0
@@ -576,7 +576,7 @@ AIDCF/
 
 Folders marked "to be added", and folders holding only a README, are reserved for planned content.
 
-Every document has a Markdown edition (`.md`) next to its PDF and Word source, and the registry workbooks have Markdown renderings. Markdown is the main reading format; Word files are retained as source artifacts, and structured registries and machine-readable files stay in their native formats.
+Markdown (`.md`) is the source of truth for every document, with an archival PDF alongside. Excel workbooks remain authoritative for the control registry and have Markdown renderings. Structured registries and machine-readable files stay in their native formats.
 
 ---
 

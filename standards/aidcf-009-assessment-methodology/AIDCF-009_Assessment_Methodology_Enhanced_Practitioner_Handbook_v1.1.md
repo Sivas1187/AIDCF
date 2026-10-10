@@ -1,4 +1,4 @@
-> Markdown edition. Source: [AIDCF-009_Assessment_Methodology_Enhanced_Practitioner_Handbook_v1.1.docx](AIDCF-009_Assessment_Methodology_Enhanced_Practitioner_Handbook_v1.1.docx) · PDF: [AIDCF-009_Assessment_Methodology_Enhanced_Practitioner_Handbook_v1.1.pdf](AIDCF-009_Assessment_Methodology_Enhanced_Practitioner_Handbook_v1.1.pdf)
+> Markdown edition (source of truth). PDF: [AIDCF-009_Assessment_Methodology_Enhanced_Practitioner_Handbook_v1.1.pdf](AIDCF-009_Assessment_Methodology_Enhanced_Practitioner_Handbook_v1.1.pdf)
 
 **AIDCF**
 

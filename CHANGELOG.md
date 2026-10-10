@@ -21,8 +21,11 @@ All notable changes to this repository are recorded here. Versions refer to the 
 - AIDCF-016 Full Stack Validation Report v1.0
 - Licensing: CC BY 4.0 for documentation, standards, registries and data; Apache 2.0 for schemas and software
 - Governance, contribution, security, conduct and citation files
-- PDF copies of all Word artifacts
-- Markdown editions of all Word documents and Excel registries
+- PDF editions of all documents
+- Markdown editions of all documents (source of truth) and Markdown renderings of the Excel registries
+
+### Removed
+- Word (.docx) source files, superseded by the Markdown editions (available in git history)
 
 ### Archived
 - AIDCF-007 Control Catalogue v1.0 (superseded by AIDCF-007A)

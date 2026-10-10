@@ -1,4 +1,4 @@
-> Markdown edition. Source: [AIDCF-011_Assurance_Program_Framework_v1.0.docx](AIDCF-011_Assurance_Program_Framework_v1.0.docx) · PDF: [AIDCF-011_Assurance_Program_Framework_v1.0.pdf](AIDCF-011_Assurance_Program_Framework_v1.0.pdf)
+> Markdown edition (source of truth). PDF: [AIDCF-011_Assurance_Program_Framework_v1.0.pdf](AIDCF-011_Assurance_Program_Framework_v1.0.pdf)
 
 **AIDCF**
 

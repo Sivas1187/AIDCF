@@ -1,4 +1,4 @@
-> Markdown edition. Source: [AIDCF-004_Threat_Hazard_and_Failure_Model_v1.0.docx](AIDCF-004_Threat_Hazard_and_Failure_Model_v1.0.docx) · PDF: [AIDCF-004_Threat_Hazard_and_Failure_Model_v1.0.pdf](AIDCF-004_Threat_Hazard_and_Failure_Model_v1.0.pdf)
+> Markdown edition (source of truth). PDF: [AIDCF-004_Threat_Hazard_and_Failure_Model_v1.0.pdf](AIDCF-004_Threat_Hazard_and_Failure_Model_v1.0.pdf)
 
 Capability-first adverse-condition, failure-propagation and resilience analysis
 

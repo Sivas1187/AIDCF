@@ -1,4 +1,4 @@
-> Markdown edition. Source: [AIDCF-006_Assurance_Principles_Standard_v1.0.docx](AIDCF-006_Assurance_Principles_Standard_v1.0.docx) · PDF: [AIDCF-006_Assurance_Principles_Standard_v1.0.pdf](AIDCF-006_Assurance_Principles_Standard_v1.0.pdf)
+> Markdown edition (source of truth). PDF: [AIDCF-006_Assurance_Principles_Standard_v1.0.pdf](AIDCF-006_Assurance_Principles_Standard_v1.0.pdf)
 
 The constitutional rules governing claims, evidence, uncertainty, critical gates, decisions, independence and responsible use
 

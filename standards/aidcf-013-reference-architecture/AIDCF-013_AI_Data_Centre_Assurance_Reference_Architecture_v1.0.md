@@ -1,4 +1,4 @@
-> Markdown edition. Source: [AIDCF-013_AI_Data_Centre_Assurance_Reference_Architecture_v1.0.docx](AIDCF-013_AI_Data_Centre_Assurance_Reference_Architecture_v1.0.docx) · PDF: [AIDCF-013_AI_Data_Centre_Assurance_Reference_Architecture_v1.0.pdf](AIDCF-013_AI_Data_Centre_Assurance_Reference_Architecture_v1.0.pdf)
+> Markdown edition (source of truth). PDF: [AIDCF-013_AI_Data_Centre_Assurance_Reference_Architecture_v1.0.pdf](AIDCF-013_AI_Data_Centre_Assurance_Reference_Architecture_v1.0.pdf)
 
 **AIDCF**
 

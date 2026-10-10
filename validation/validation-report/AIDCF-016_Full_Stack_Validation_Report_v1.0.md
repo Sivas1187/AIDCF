@@ -1,4 +1,4 @@
-> Markdown edition. Source: [AIDCF-016_Full_Stack_Validation_Report_v1.0.docx](AIDCF-016_Full_Stack_Validation_Report_v1.0.docx) · PDF: [AIDCF-016_Full_Stack_Validation_Report_v1.0.pdf](AIDCF-016_Full_Stack_Validation_Report_v1.0.pdf)
+> Markdown edition (source of truth). PDF: [AIDCF-016_Full_Stack_Validation_Report_v1.0.pdf](AIDCF-016_Full_Stack_Validation_Report_v1.0.pdf)
 
 **AIDCF-015**
 

@@ -1,4 +1,4 @@
-> Markdown edition. Source: [AIDCF_Technical_Whitepaper_v3.0_Validation_Candidate.docx](AIDCF_Technical_Whitepaper_v3.0_Validation_Candidate.docx) · PDF: [AIDCF_Technical_Whitepaper_v3.0_Validation_Candidate.pdf](AIDCF_Technical_Whitepaper_v3.0_Validation_Candidate.pdf)
+> Markdown edition (source of truth). PDF: [AIDCF_Technical_Whitepaper_v3.0_Validation_Candidate.pdf](AIDCF_Technical_Whitepaper_v3.0_Validation_Candidate.pdf)
 
 **AIDCF**
 

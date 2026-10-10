@@ -1,4 +1,4 @@
-> Markdown edition. Source: [AIDCF-008_Evidence_Model_v1.0.docx](AIDCF-008_Evidence_Model_v1.0.docx) · PDF: [AIDCF-008_Evidence_Model_v1.0.pdf](AIDCF-008_Evidence_Model_v1.0.pdf)
+> Markdown edition (source of truth). PDF: [AIDCF-008_Evidence_Model_v1.0.pdf](AIDCF-008_Evidence_Model_v1.0.pdf)
 
 A normative evidence architecture for traceable, current, sufficient and reviewable AI infrastructure assurance
 

@@ -1,4 +1,4 @@
-> Markdown edition. Source: [AIDCF-014_End-to-End_Traceability_and_Machine-Executable_Data_Standard_v1.0.docx](AIDCF-014_End-to-End_Traceability_and_Machine-Executable_Data_Standard_v1.0.docx) · PDF: [AIDCF-014_End-to-End_Traceability_and_Machine-Executable_Data_Standard_v1.0.pdf](AIDCF-014_End-to-End_Traceability_and_Machine-Executable_Data_Standard_v1.0.pdf)
+> Markdown edition (source of truth). PDF: [AIDCF-014_End-to-End_Traceability_and_Machine-Executable_Data_Standard_v1.0.pdf](AIDCF-014_End-to-End_Traceability_and_Machine-Executable_Data_Standard_v1.0.pdf)
 
 **AIDCF**
 

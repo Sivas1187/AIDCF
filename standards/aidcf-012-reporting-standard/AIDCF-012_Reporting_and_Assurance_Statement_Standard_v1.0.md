@@ -1,4 +1,4 @@
-> Markdown edition. Source: [AIDCF-012_Reporting_and_Assurance_Statement_Standard_v1.0.docx](AIDCF-012_Reporting_and_Assurance_Statement_Standard_v1.0.docx) · PDF: [AIDCF-012_Reporting_and_Assurance_Statement_Standard_v1.0.pdf](AIDCF-012_Reporting_and_Assurance_Statement_Standard_v1.0.pdf)
+> Markdown edition (source of truth). PDF: [AIDCF-012_Reporting_and_Assurance_Statement_Standard_v1.0.pdf](AIDCF-012_Reporting_and_Assurance_Statement_Standard_v1.0.pdf)
 
 **AIDCF**
 

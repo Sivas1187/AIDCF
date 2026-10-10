@@ -1,4 +1,4 @@
-> Markdown edition. Source: [AIDCF-005_AIDCF_AI_Trust_Graph_Integration_Standard_v1.0.docx](AIDCF-005_AIDCF_AI_Trust_Graph_Integration_Standard_v1.0.docx) · PDF: [AIDCF-005_AIDCF_AI_Trust_Graph_Integration_Standard_v1.0.pdf](AIDCF-005_AIDCF_AI_Trust_Graph_Integration_Standard_v1.0.pdf)
+> Markdown edition (source of truth). PDF: [AIDCF-005_AIDCF_AI_Trust_Graph_Integration_Standard_v1.0.pdf](AIDCF-005_AIDCF_AI_Trust_Graph_Integration_Standard_v1.0.pdf)
 
 A graph-native interoperability and semantic handoff standard for infrastructure assurance, digital trust, failure propagation, evidence and accountable decisions
 

@@ -1,4 +1,4 @@
-> Markdown edition. Source: [AIDCF-003_Infrastructure_Ontology_and_Taxonomy_v1.0.docx](AIDCF-003_Infrastructure_Ontology_and_Taxonomy_v1.0.docx) · PDF: [AIDCF-003_Infrastructure_Ontology_and_Taxonomy_v1.0.pdf](AIDCF-003_Infrastructure_Ontology_and_Taxonomy_v1.0.pdf)
+> Markdown edition (source of truth). PDF: [AIDCF-003_Infrastructure_Ontology_and_Taxonomy_v1.0.pdf](AIDCF-003_Infrastructure_Ontology_and_Taxonomy_v1.0.pdf)
 
 Canonical semantics for capability-centred AI infrastructure assurance
 

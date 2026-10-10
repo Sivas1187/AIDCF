@@ -1,4 +1,4 @@
-> Markdown edition. Source: [AIDCF-007A_Control_Universe_Constitutional_Amendment_v1.0.docx](AIDCF-007A_Control_Universe_Constitutional_Amendment_v1.0.docx) · PDF: [AIDCF-007A_Control_Universe_Constitutional_Amendment_v1.0.pdf](AIDCF-007A_Control_Universe_Constitutional_Amendment_v1.0.pdf)
+> Markdown edition (source of truth). PDF: [AIDCF-007A_Control_Universe_Constitutional_Amendment_v1.0.pdf](AIDCF-007A_Control_Universe_Constitutional_Amendment_v1.0.pdf)
 
 **Approved 15 / 90 / 360 Baseline**
 

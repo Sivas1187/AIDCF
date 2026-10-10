@@ -1,4 +1,4 @@
-> Markdown edition. Source: [AIDCF-009_Assessment_Methodology_Practitioner_Handbook_v1.0.docx](AIDCF-009_Assessment_Methodology_Practitioner_Handbook_v1.0.docx) · PDF: [AIDCF-009_Assessment_Methodology_Practitioner_Handbook_v1.0.pdf](AIDCF-009_Assessment_Methodology_Practitioner_Handbook_v1.0.pdf)
+> Markdown edition (source of truth). PDF: [AIDCF-009_Assessment_Methodology_Practitioner_Handbook_v1.0.pdf](AIDCF-009_Assessment_Methodology_Practitioner_Handbook_v1.0.pdf)
 
 Complete fieldwork procedures, domain playbooks, decision rules and reusable workpapers
 
