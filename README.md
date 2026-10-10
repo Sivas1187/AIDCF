@@ -52,7 +52,7 @@ Choose the path that matches your purpose.
 
 ### Executive or decision-maker
 
-1. Read the [technical whitepaper](whitepaper/current/AIDCF_Technical_Whitepaper_v3.0_Validation_Candidate.pdf).
+1. Read the [technical whitepaper](whitepaper/current/AIDCF_Technical_Whitepaper_v3.0_Validation_Candidate.md).
 2. Review [The Problem AIDCF Solves](#the-problem-aidcf-solves).
 3. Review [Example Use Cases](#example-use-cases).
 4. Review the framework's status and limitations before relying on any conclusion.
@@ -541,7 +541,7 @@ AIDCF/
 │   GOVERNANCE.md, CONTRIBUTING.md, SECURITY.md, CODE_OF_CONDUCT.md
 ├── docs/            images, diagrams, presentations, publications
 ├── whitepaper/
-│   ├── current/     Technical Whitepaper v3.0 (PDF + DOCX)
+│   ├── current/     Technical Whitepaper v3.0 (Markdown, PDF, DOCX)
 │   └── archive/     earlier whitepaper versions
 ├── foundations/
 │   ├── manifesto/             AIDCF Manifesto v1.0
@@ -576,7 +576,7 @@ AIDCF/
 
 Folders marked "to be added", and folders holding only a README, are reserved for planned content.
 
-PDF and Markdown are the main reading formats. Editable Word files are retained as source artifacts, and structured registries and machine-readable files stay in their native formats.
+Every document has a Markdown edition (`.md`) next to its PDF and Word source, and the registry workbooks have Markdown renderings. Markdown is the main reading format; Word files are retained as source artifacts, and structured registries and machine-readable files stay in their native formats.
 
 ---
 
@@ -813,7 +813,7 @@ Each method retains its native semantics, findings and decisions. Conclusions mu
 Start with:
 
 ```text
-whitepaper/current/AIDCF_Technical_Whitepaper_v3.0_Validation_Candidate.pdf
+whitepaper/current/AIDCF_Technical_Whitepaper_v3.0_Validation_Candidate.md
 ```
 
 This provides the research problem, framework proposition, status boundaries, limitations and validation roadmap.

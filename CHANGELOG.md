@@ -22,6 +22,7 @@ All notable changes to this repository are recorded here. Versions refer to the 
 - Licensing: CC BY 4.0 for documentation, standards, registries and data; Apache 2.0 for schemas and software
 - Governance, contribution, security, conduct and citation files
 - PDF copies of all Word artifacts
+- Markdown editions of all Word documents and Excel registries
 
 ### Archived
 - AIDCF-007 Control Catalogue v1.0 (superseded by AIDCF-007A)
