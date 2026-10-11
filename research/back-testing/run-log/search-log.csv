@@ -1,0 +1,116 @@
+query_ref,partition,date,source_family,query_or_url,results_seen,candidates_logged
+Q-A-01,A,2026-10-11,S1,https://aws.amazon.com/premiumsupport/technology/pes/ (index; fetched each 2015+ summary),18,11
+Q-A-02,A,2026-10-11,S1,"https://status.cloud.google.com/incidents.json (current incident feed, ~1 year window)",4,3
+Q-A-03,A,2026-10-11,S1,web search: status.cloud.google.com incident report europe-west9 water intrusion fire Paris,10,1
+Q-A-04,A,2026-10-11,S1,web search: status.cloud.google.com incident report europe-west2 cooling high temperature July 2022,9,1
+Q-A-05,A,2026-10-11,S1,web search: Google Cloud incident report power cooling zone outage root cause status.cloud.google.com/incidents,9,2
+Q-A-06,A,2026-10-11,S1,web search: status.cloud.google.com incident lightning strikes europe-west1-b persistent disk August 2015,9,1
+Q-A-07,A,2026-10-11,S1,web search: status.cloud.google.com incident report utility power OR power event zone Google Compute Engine,9,4
+Q-A-08,A,2026-10-11,S1,web search: Google Cloud incident report June 2 2019 network congestion 19009,9,1
+Q-A-09,A,2026-10-11,S1,web search: site:status.cloud.google.com incident report root cause power distribution zone datacenter,9,6
+Q-A-10,A,2026-10-11,S1,web search: site:status.cloud.google.com cooling incident report zone,9,2
+Q-A-11,A,2026-10-11,S1,web search: site:status.cloud.google.com incident report fiber cut network region outage root cause,9,7
+Q-A-12,A,2026-10-11,S1,web search: Google Cloud incident report December 14 2020 authentication User ID Service quota,9,1
+Q-A-13,A,2026-10-11,S1,web search: Google Cloud incident report June 12 2025 Service Control outage; then status.cloud.google.com/incidents/ow5i3PPK96RduMcb1SsW,9,1
+Q-A-14,A,2026-10-11,S1,web search: Google Cloud load balancing incident report November 16 2021,10,3
+Q-A-15,A,2026-10-11,S1,web search: Google Cloud blog UniSuper incident details private cloud deletion,9,1
+Q-A-16,A,2026-10-11,S1,web search: site:status.cloud.google.com incident report TPU OR GPU capacity zone root cause,9,4
+Q-A-17,A,2026-10-11,S2,"web search: regulator investigation report AWS OR Google Cloud outage (FCC, Ofcom, ACMA, APRA, ECB, Bank of England)",10,0
+Q-B-01,B,2026-10-11,S1,blog.cloudflare.com direct fetch of known post-mortem URLs (12 posts),12,12
+Q-B-02,B,2026-10-11,S1,WebSearch site:blog.cloudflare.com 'post-mortem data center power failure OR cooling OR fiber cut'; then https://blog.cloudflare.com/tag/post-mortem/,28,4
+Q-B-03,B,2026-10-11,S1,github.blog direct fetch: oct21-post-incident-analysis; january-28th-incident-report,2,2
+Q-B-04,B,2026-10-11,S1,"WebSearch site:github.blog 'GitHub availability report power OR datacenter OR network OR storage'; fetched Jul 2026, Aug 2026, Oct 2025, Jun 2025, Sep 2024, Feb 2023 reports and Aug 17 2026 post",10,11
+Q-B-05,B,2026-10-11,S1,engineering.fb.com direct fetch 2021-10-05 outage-details,1,1
+Q-B-06,B,2026-10-11,S1,fastly.com/blog direct fetch summary-of-june-8-outage,1,1
+Q-B-07,B,2026-10-11,S1,https://azure.status.microsoft/en-us/status/history/ (landing page),3,2
+Q-B-08,B,2026-10-11,S1,"azure.status.microsoft history ?trackingId= direct fetch: VVTQ-J98, VSG1-B90, 1K80-N_8, KTY1-HW8, YKYN-BWZ",5,5
+Q-B-09,B,2026-10-11,S1,WebSearch 'azure.status.microsoft post incident review power event datacenter cooling thermal trackingId',9,4
+Q-B-10,B,2026-10-11,S4,https://medhacloud.com/blog/azure-outage-history (compilation; candidates only),12,0
+Q-B-11,B,2026-10-11,S3,WebSearch 'Azure South Central US September 4 2018 root cause analysis lightning cooling'; DCD article; Internet Archive (blocked),9,1
+Q-B-12,B,2026-10-11,S1,WebSearch site:azure.status.microsoft 'trackingId fiber cut OR power OR cooling post incident review 2022-2025',10,5
+Q-B-13,B,2026-10-11,S1,WebSearch site:azure.status.microsoft 'storage scale unit OR storage hardware failure trackingId',10,1
+Q-B-14,B,2026-10-11,S3,WebSearch 'Azure post incident review fiber cut OR power availability zone 2025 2026',10,1
+Q-B-15,B,2026-10-11,S3,WebSearch 'Alibaba Cloud Hong Kong Region Zone C December 18 2022 service interruption cooling',9,1
+Q-B-16,B,2026-10-11,S1,WebSearch (zh) Alibaba Cloud Hong Kong Zone C incident statement; fetched alibabacloud.com/zh/notice/066572,9,0
+Q-B-17,B,2026-10-11,S3,WebSearch 'IBM Cloud June 9 2020 outage root cause external network provider BGP',10,1
+Q-B-18,B,2026-10-11,S1,Direct fetch: atlassian.com post-incident-review-april-2022; datadoghq.com 2023-03-08 deep dive; slack.engineering Jan 4 2021; heroku.com summary-of-june-10-outage,4,4
+Q-B-19,B,2026-10-11,S3,WebSearch 'Salesforce May 11 2021 DNS outage root cause analysis',10,1
+Q-B-20,B,2026-10-11,S3,WebSearch 'OVHcloud Strasbourg SBG2 fire 10 March 2021 incident report cause official',10,1
+Q-B-21,B,2026-10-11,S1,WebSearch 'corporate.ovhcloud.com Strasbourg datacentre incident latest information SBG2 fire',9,0
+Q-B-22,B,2026-10-11,S3,WebSearch 'Oracle Cloud Infrastructure UK South London July 19 2022 cooling heat outage'; ocistatus.oraclecloud.com fetch (script-only),10,1
+Q-B-23,B,2026-10-11,S1,Direct fetch/search: Roblox return-to-service post (blog.roblox.com robots-blocked; about.roblox.com OK); GitLab Jan 31 2017 postmortem; slack.engineering 2-22-22; akamai.com blog,4,4
+Q-B-24,B,2026-10-11,S1,WebSearch 'GPU cluster outage post-mortem infrastructure root cause status page OpenAI OR Anthropic OR CoreWeave OR Hugging Face OR Lambda'; fetched status.openai.com incidents,9,1
+Q-B-25,B,2026-10-11,S3,WebSearch 'post-mortem cooling failure data center outage engineering blog hosting provider chiller 2023-2025',9,0
+Q-B-26,B,2026-10-11,S3,WebSearch 'Azure Red Sea undersea fiber cuts September 6 2025 tracking ID post incident review',10,0
+Q-C-01,C,2026-10-11,S3,web search: MAS statement DBS Citibank data centre outage Equinix October 2023 cooling,10,0
+Q-C-02,C,2026-10-11,S2,web search (mas.gov.sg): disruption DBS Citibank data centre 2023 supervisory action; fetched MAS replies/releases,10,4
+Q-C-03,C,2026-10-11,S3,web search: IMDA statement data centre fire Singapore Digital Realty 2024 outage,10,0
+Q-C-04,C,2026-10-11,S2,web search (imda.gov.sg): IMDA financial penalty Singtel outage investigation findings,10,1
+Q-C-05,C,2026-10-11,S2,web search extended (imda.gov.sg): IMDA imposes financial penalty disruption broadband mobile StarHub M1 Singtel,10,3
+Q-C-06,C,2026-10-11,S2,web search: MAS statement SGX trading disruption hardware failure investigation 2016,9,1
+Q-C-07,C,2026-10-11,S2,web search (mas.gov.sg): MAS SGX disruption 2014 power supply outage reprimand,10,1
+Q-C-08,C,2026-10-11,S3,web search: MSIT announcement Pangyo SK C&C data center fire Kakao cause investigation,10,0
+Q-C-09,C,2026-10-11,S2,"web search (msit.go.kr, korea.kr): press release Kakao outage data center fire battery UPS December 2022",3,0
+Q-C-10,C,2026-10-11,S3,web search (Korean): MSIT Kakao service outage investigation results SK C&C Pangyo fire lithium battery,9,0
+Q-C-11,C,2026-10-11,S3,web search (Korean): korea.kr policy briefing Pangyo data centre fire investigation results 2022-12-06,8,0
+Q-C-12,C,2026-10-11,S3,web search extended: korea.kr Kakao outage fire data center ministry findings battery,9,0
+Q-C-13,C,2026-10-11,S2,"web search extended (Korean): Pangyo data centre fire investigation results press release korea.kr; korea.kr pages robots-blocked, archive.org blocked",9,0
+Q-C-14,C,2026-10-11,S2,web search (msit.go.kr): eng Kakao service disruption data center fire measures press release,0,0
+Q-C-15,C,2026-10-11,S3,web search: NIRS Daejeon fire September 2025 lithium-ion battery government investigation results,10,1
+Q-C-16,C,2026-10-11,S3,web search: KT network outage October 25 2021 Ministry of Science and ICT investigation routing error,9,1
+Q-C-17,C,2026-10-11,S2,web search extended (fcc.gov): PSHSB report network outage investigation findings recommendations; https://www.fcc.gov/public-safety-and-homeland-security-bureau-reports,10,2
+Q-C-18,C,2026-10-11,S2,web search (fcc.gov): FCC report T-Mobile June 15 2020 outage leased fiber link failure,10,1
+Q-C-19,C,2026-10-11,S2,web search (fcc.gov): FCC report September 28 2020 911 outage Intrado Lumen findings,10,2
+Q-C-20,C,2026-10-11,S2,web search (fcc.gov): FCC consent decree outage 911 Level 3 Verizon outage investigation order,10,1
+Q-C-21,C,2026-10-11,S2,web search (fcc.gov): Intrado consent decree September 28 2020 911 outage,2,2
+Q-C-22,C,2026-10-11,S3,web search: CRTC Rogers July 8 2022 outage report Xona Partners findings,9,0
+Q-C-23,C,2026-10-11,S2,web search (crtc.gc.ca): Assessment of Rogers Networks for Resiliency and Reliability; https://crtc.gc.ca/eng/resilience.htm; https://crtc.gc.ca/otf/eng/2019/8000/c12-201909780.htm,10,1
+Q-C-24,C,2026-10-11,S2,web search: Optus outage post-incident review Richard Bean 8 November 2023 infrastructure.gov.au,10,0
+Q-C-25,C,2026-10-11,S2,web search (aph.gov.au): Senate Environment and Communications References Committee Optus network outage report,10,1
+Q-C-26,C,2026-10-11,S3,web search: Optus triple zero outage 18 September 2025 firewall upgrade Senate ACMA,9,1
+Q-C-27,C,2026-10-11,S2,"web search (aph.gov.au, acma.gov.au): Triple Zero outage inquiry report Optus September 2025 (committee pages returned fetch errors)",10,0
+Q-C-28,C,2026-10-11,S2,web search (acma.gov.au): ACMA investigation Telstra triple zero outage March 2024 findings penalty,10,2
+Q-C-29,C,2026-10-11,S2,"web search (asic.gov.au, rba.gov.au): ASIC report ASX trading platform outage 16 November 2020",10,1
+Q-C-30,C,2026-10-11,S2,"web search (asic.gov.au, rba.gov.au, asx.com.au): ASX outage 19 September 2016 hardware failure review",10,2
+Q-C-31,C,2026-10-11,S2,web search (ofcom.org.uk): Ofcom investigation BT 999 emergency call outage 25 June 2023,10,3
+Q-C-32,C,2026-10-11,S2,web search extended (ofcom.org.uk): Ofcom network outage security resilience investigation decision,10,3
+Q-C-33,C,2026-10-11,S2,"web search (fca.org.uk, bankofengland.co.uk): FCA final notice TSB Bank 2022 IT migration April 2018",9,1
+Q-C-34,C,2026-10-11,S2,web search (parliament.uk): Visa Europe letter Treasury Committee June 2018 outage,10,1
+Q-C-35,C,2026-10-11,S2,web search (parliament.uk): Treasury Committee bank IT failures letters Barclays outage January 2025,10,1
+Q-C-36,C,2026-10-11,S2,web search (soumu.go.jp): MIC KDDI outage 2022-07-02 administrative guidance; fetched MIC verification report and FY2022 accident status report,10,8
+Q-C-37,C,2026-10-11,S2,web search (soumu.go.jp): MIC telecom accident status FY2023 serious accidents; fetched Accident Review Council report index and FY2024/FY2025 summaries,10,4
+Q-C-38,C,2026-10-11,S3,web search: Equinix statement SG3 Singapore outage 14 October 2023 contractor (press only; used to cross-check row 1),10,0
+Q-C-39,C,2026-10-11,S2,"web search (mddi.gov.sg, imda.gov.sg, parl): Minister reply data centre resilience DBS Citibank outage cooling",10,2
+Q-C-40,C,2026-10-11,S2,web search (fcc.gov): FCC report nationwide AT&T Mobility outage February 22 2024 (report PDF fetch failed repeatedly),10,1
+Q-C-41,C,2026-10-11,S2,web search (Dutch): KPN 112 outage 24 June 2019 Agentschap Telecom investigation report,9,1
+Q-D-01,D,2026-10-11,S1,WebSearch: OpenAI status incident root cause analysis June 10 2025 GPU host operating system update network routes; fetched status.openai.com write-ups,9,7
+Q-D-02,D,2026-10-11,S1,WebSearch: status.openai.com write-up December 26 2024 cloud provider data center power failure,10,1
+Q-D-03,D,2026-10-11,S1,https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues,1,1
+Q-D-04,D,2026-10-11,S1,WebSearch: status.claude.com incident postmortem root cause infrastructure capacity outage Claude,10,2
+Q-D-05,D,2026-10-11,S1,WebSearch: OVHcloud incident report 13 October 2021 network outage human error BGP Vint Hill,9,1
+Q-D-06,D,2026-10-11,S1,WebSearch: OVH incident 9 November 2017 Strasbourg SBG power outage generators; network.status-ovhcloud.com,9,2
+Q-D-07,D,2026-10-11,S3,WebSearch (extended): supercomputer outage incident report cooling failure liquid cooling leak HPC centre post-mortem; follow-up Cambridge Dawn search,18,1
+Q-D-08,D,2026-10-11,S1,https://docs.hpc.cam.ac.uk/data_centre_upgrade.html,1,1
+Q-D-09,D,2026-10-11,S1,WebSearch: ARCHER2 service incident report cooling power outage EPCC; archer2.ac.uk alerts history and SP_Report_3Q25,9,2
+Q-D-10,D,2026-10-11,S3,WebSearch: Kyoto University supercomputer file loss 2021 report HPE backup (Japanese query),9,1
+Q-D-11,D,2026-10-11,S1,WebSearch: NERSC Perlmutter unplanned outage cause power cooling incident report,10,1
+Q-D-12,D,2026-10-11,S1,WebSearch (extended): research computing cluster outage post-mortem OR root cause chiller data center university HPC,9,4
+Q-D-13,D,2026-10-11,S1,WebSearch: FASRC MGHPCC outage cooling power post-mortem Cannon cluster,10,2
+Q-D-14,D,2026-10-11,S1,WebSearch: LUMI supercomputer unplanned break cooling OR power incident Kajaani,9,1
+Q-D-15,D,2026-10-11,S1,WebSearch: OLCF Frontier OR Summit unplanned outage facility power event cooling cause,9,2
+Q-D-16,D,2026-10-11,S3,WebSearch: CyrusOne statement CHI1 Aurora cooling chiller failure November 2025; cyrusone.com news (fetch failed),20,1
+Q-D-17,D,2026-10-11,S3,WebSearch: Equinix statement SG3 Singapore October 2023 cooling system,10,1
+Q-D-18,D,2026-10-11,S1,WebSearch: CoreWeave / Hugging Face / Lambda incident postmortem root cause (3 queries); status.coreweave.com fetch failed,30,1
+Q-D-19,D,2026-10-11,S1,WebSearch: Pawsey Setonix outage incident cause cooling OR power OR filesystem post-incident; fetched 7 status.pawsey.org.au incidents,9,6
+Q-D-20,D,2026-10-11,S1,WebSearch (extended): cluster outage CDU OR coolant distribution unit failure nodes down research computing status; rcac.purdue.edu outages page 40 (pre-2015 only),10,0
+Q-D-21,D,2026-10-11,S1,WebSearch: SciNet Niagara outage cooling tower chiller power root cause; CSCS Alps Piz Daint unplanned outage (2 queries),18,0
+Q-D-22,D,2026-10-11,S3,WebSearch: network.status-ovhcloud.com incidents post-mortem datacenter power cooling Gravelines OR Roubaix OR Beauharnois; followed travaux.ovh.net redirect,9,1
+Q-D-23,D,2026-10-11,S1,WebSearch (extended): status-ovhcloud.com post-mortem incident cooling OR electrical; corporate.ovhcloud.com Strasbourg page; BEA-RI PDF fetch failed,9,1
+Q-D-24,D,2026-10-11,S1,WebSearch: Scaleway datacenter incident post-mortem DC3 OR DC2 OR DC5 power cooling outage report; fetched 5 status.scaleway.com incidents,10,2
+Q-D-25,D,2026-10-11,S1,WebSearch: status.scaleway.com postmortem root cause datacenter power OR cooling OR network; plus Scaleway blog transformer query (undated incident not logged),20,4
+Q-D-26,D,2026-10-11,S1,WebSearch: heatwave July 2022 HPC cluster shut down university data centre cooling statement,9,2
+Q-D-27,D,2026-10-11,S1,WebSearch (extended): water leak OR coolant leak supercomputer OR cluster outage university research computing,10,3
+Q-D-28,D,2026-10-11,S3,WebSearch: Digital Realty OR Interxion OR Global Switch OR Telehouse OR NTT incident statement outage cause,9,2
+Q-D-29,D,2026-10-11,S4,WebSearch (extended): paper case study specific outage during LLM training cluster cooling power network arXiv; BigScience chronicles,10,1
+Q-D-30,D,2026-10-11,S1,WebSearch: GPU cloud postmortem Together/Modal/Replicate/RunPod/Fireworks; replicatestatus.com and status.modal.com history pages,18,1
+Q-D-31,D,2026-10-11,S1,WebSearch (extended): HPC filesystem outage post-mortem Lustre OR GPFS metadata root cause,9,0

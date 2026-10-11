@@ -377,15 +377,17 @@ def check_register(path, chk, controls_ref=None):
             chk.err(w, "register holds real candidates only: incident_id INC-NNN")
         if r["operator_type"] not in OPERATOR_TYPES:
             chk.err(w, "operator_type invalid")
-        if r["failure_category"] not in CATEGORIES:
-            chk.err(w, "failure_category invalid")
+        if r["failure_category"] not in CATEGORIES and not (r["failure_category"] == "" and r["eligibility_status"] == "EXCLUDED"):
+            chk.err(w, "failure_category invalid (blank allowed only on EXCLUDED rows)")
         if any(t not in TAGS for t in split(r["tags"])):
             chk.err(w, "tags invalid")
         if r["primary_source_type"] not in SOURCE_TYPES - {"SECONDARY_PRESS"} and r["eligibility_status"] != "EXCLUDED":
             chk.err(w, "primary_source_type must be PRIMARY or REGULATOR unless EXCLUDED")
         for col in ("incident_date", "access_date"):
-            if not DATE_RE.match(r[col]):
-                chk.err(w, "%s must be YYYY-MM-DD" % col)
+            if col == "incident_date" and r[col] == "" and "DATE_UNRESOLVED" in r["notes"]:
+                chk.warn(w, "incident_date unresolved (DATE_UNRESOLVED); resolve before selection")
+            elif not DATE_RE.match(r[col]):
+                chk.err(w, "%s must be YYYY-MM-DD (or blank with DATE_UNRESOLVED in notes)" % col)
         if r["detail_level"] not in DETAIL_LEVELS:
             chk.err(w, "detail_level invalid")
         if r["eligibility_status"] not in ELIGIBILITY:

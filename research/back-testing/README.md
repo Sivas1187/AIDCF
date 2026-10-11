@@ -1,6 +1,6 @@
 # Incident back-testing kit (AIDCF-VAL-001)
 
-**Status: protocol ready; no incidents coded yet.** The incident register is empty, and the only rows in the coding sheet are two fictional training examples (`INC-EXAMPLE-01`). Nothing in this folder reports a back-testing result.
+**Status: frame built and screened; nothing selected or coded yet.** The incident register holds 221 real candidates (140 eligible, 81 excluded), found and screened on 2026-10-11 by an AI research assistant (screener code C90). Human second checks are still pending. See [`run-log/run-log.md`](run-log/run-log.md) for the flow, the shortfalls and the open items before selection. The only rows in the coding sheet are two fictional training examples (`INC-EXAMPLE-01`). Nothing in this folder reports a back-testing result.
 
 ## What this is
 
@@ -17,7 +17,8 @@ The result is evidence of **content validity and detection coverage** for README
 | [`AIDCF-VAL-001_Incident_Back-Testing_Protocol_v1.0.md`](AIDCF-VAL-001_Incident_Back-Testing_Protocol_v1.0.md) | The protocol: eligibility, sampling, hindsight controls, coding procedure, judgement scales, gap handling, agreement, metrics, threats, ethics |
 | [`coding-sheet.csv`](coding-sheet.csv) | Coding dataset: header plus two FICTIONAL example rows (one CONTROL row, one GATE row) |
 | [`coding-sheet-dictionary.csv`](coding-sheet-dictionary.csv) | Definition, allowed values and source of values for every coding-sheet column |
-| [`incident-register.csv`](incident-register.csv) | Sampling frame and selection log: header only |
+| [`incident-register.csv`](incident-register.csv) | Sampling frame and selection log: 221 screened candidates |
+| [`run-log/`](run-log/run-log.md) | Run log (frame flow, shortfalls, open items) and the search log of 115 queries |
 | [`backtest_check.py`](backtest_check.py) | Standard-library validator (`--check`), agreement statistics (`--agreement`), metrics (`--metrics`) and the list of valid scenario-family codes (`--list-families`) |
 
 ## How to run it, in order
@@ -51,7 +52,7 @@ Do not add an incident unless a source has been retrieved and checked. The regis
 | `neutral_descriptor` | Short factual label naming no cause, for example "Regional storage service disruption" | Free text |
 | `operator_name_as_published` | Organisation name exactly as it appears in its own report or the regulator report | Free text |
 | `operator_type` | As in the dictionary | `HYPERSCALE_CLOUD`, `COLOCATION`, `ENTERPRISE`, `AI_HPC_FACILITY`, `TELECOM_NETWORK`, `MANAGED_SERVICE`, `PUBLIC_SECTOR`, `OTHER` |
-| `incident_date` | Date of the initiating event | `YYYY-MM-DD` |
+| `incident_date` | Date of the initiating event | `YYYY-MM-DD`; blank only with `DATE_UNRESOLVED` in `notes` (must be resolved before selection) |
 | `failure_category` | Provisional sampling stratum, confirmed at coding | `POWER`, `COOLING`, `NETWORK_FABRIC`, `STORAGE`, `CONTROL_PLANE_OT`, `CHANGE_HUMAN`, `EXTERNAL_DEPENDENCY` |
 | `tags` | Sub-quota tags, semicolon-separated | `HEAT_EVENT`, `LIQUID_COOLING`, `AI_HPC`, `FIRE`, `WATER_INGRESS`, `BATTERY`, `MULTI_SITE`, `REGULATOR_REPORT` |
 | `primary_source_url` | Operator, provider or regulator report | URL |
