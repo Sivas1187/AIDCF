@@ -325,6 +325,14 @@ NIST describes the AI RMF as voluntary and intended to improve organisations' ab
 
 AIDCF is designed to be challenged through explicit research questions.
 
+Three validation instruments are ready to run. None has been executed yet.
+
+| Instrument | Method | Informs | Location |
+|---|---|---|---|
+| AIDCF-VAL-001 Incident Back-Testing Protocol | Retrospective coding of publicly reported incidents against AIDCF controls, failure scenarios and gates, with two coders and hindsight-bias controls | RQ2, RQ4, RQ5, RQ8 | [`research/back-testing/`](research/back-testing/README.md) |
+| AIDCF-VAL-002 Expert Panel Content Validation | Modified Delphi rating of a 48-control stratified sample and all 15 gates; content validity indices and modified kappa | RQ3, RQ8 | [`validation/expert-panel/`](validation/expert-panel/README.md) |
+| AIDCF-PIL-001 Mini-Pilot Protocol | Authorised research assessment of one bounded AI cluster at AL3 using the 58-control Starter Profile | RQ1 to RQ4, RQ6 to RQ8, RQ10, RQ11, RQ13, RQ15 | [`pilots/`](pilots/README.md) |
+
 ### RQ1: Subject definition
 
 Can independent assessors consistently define the same bounded Capability Instance, Service Outcomes and operating envelope for a real AI infrastructure service?
@@ -578,16 +586,19 @@ AIDCF/
 │   └── aidcf-015-v1.2/        previous package, retained unchanged for comparison
 ├── assurance/       assessment, scoring, decision and report models; statements
 ├── validation/      AIDCF-VR-001 Full Stack Validation Report v1.1,
-│                    independent review, dispositions, derivations, gate approvals
-├── pilots/          framework, authorisation, results, lessons learned
+│                    expert-panel/ (AIDCF-VAL-002 content-validation kit), independent review,
+│                    dispositions, derivations, gate approvals
+├── pilots/          mini-pilot pack AIDCF-PIL-001 to 005: protocol, Starter Profile,
+│                    authorisation, evidence request, result and lessons-learned templates
 ├── crosswalks/      AIDCF-019: ISO/IEC 42001, NIST AI RMF, ISO/IEC 27001, EN 50600,
 │                    TIA-942, Uptime, ISA/IEC 62443, Singapore baselines
-├── research/        review papers, derivations, literature, hypotheses, questions
+├── research/        back-testing/ (AIDCF-VAL-001 incident back-testing kit), review papers,
+│                    derivations, literature, hypotheses, questions
 ├── examples/        worked assessment, evidence, report, decision, capability
 └── archive/         superseded, duplicates, working drafts, historical releases
 ```
 
-Folders holding only a README (pilots, research, examples, parts of validation and assurance) are reserved for records that do not yet exist. They are empty on purpose: no pilot or independent review has taken place.
+Folders holding only a README (examples, and parts of research, validation and assurance) are reserved for records that do not yet exist. They are empty on purpose: no pilot, expert panel, back-test or independent review has taken place yet.
 
 Markdown (`.md`) is the source of truth for every document, with an archival PDF alongside. Excel workbooks remain authoritative for the control registry and have Markdown renderings. Structured registries and machine-readable files stay in their native formats.
 
@@ -961,13 +972,13 @@ The framework specifically seeks independent challenge from:
 - ontology and semantic-web reviewers;
 - independent practitioners not involved in the framework's development.
 
-Independent review should challenge the framework, not endorse it by default.
+Independent review should challenge the framework, not endorse it by default. The structured instrument for this is the expert-panel kit in [`validation/expert-panel/`](validation/expert-panel/README.md).
 
 ---
 
 ## Pilot programme
 
-AIDCF includes a pilot-authorisation and execution package, but no real authorised pilot is claimed by this repository unless signed pilot records are published.
+AIDCF includes a mini-pilot pack in [`pilots/`](pilots/README.md): the AIDCF-PIL-001 protocol, a 58-control Starter Profile covering gates CG-01, CG-02, CG-03, CG-05, CG-06, CG-07 and CG-10 at AL3 (no disruptive testing), and authorisation, evidence-request, result and lessons-learned templates. The best decision such a pilot can reach is LIMITED, because the other gates are out of scope. No authorised pilot is claimed by this repository unless signed pilot records are published.
 
 A legitimate pilot requires:
 
@@ -1069,7 +1080,8 @@ No external organisational endorsement is claimed unless expressly and verifiabl
 - perform independent T7 execution;
 - complete runtime semantic validation;
 - approve licences and publication metadata;
-- execute one authorised pilot.
+- execute one authorised pilot (pack ready in `pilots/`);
+- run the incident back-test (AIDCF-VAL-001) and the expert panel (AIDCF-VAL-002).
 
 ### After pilot evidence
 

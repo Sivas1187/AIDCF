@@ -1,0 +1,16 @@
+gateId,name,criteriaCount,criticalControlsInRegistry,criticalControlsInSample
+CG-01,Capability and outcome definition,6,7,2
+CG-02,Boundary and architecture integrity,6,3,2
+CG-03,Critical dependency visibility,7,9,2
+CG-04,Life safety and hazardous energy,8,13,2
+CG-05,Resilient electrical supply,8,8,2
+CG-06,Thermal continuity,8,7,2
+CG-07,Critical control-system integrity,7,6,2
+CG-08,"Compute, storage and network functional integrity",7,12,2
+CG-09,Failure containment,6,9,2
+CG-10,Recovery readiness,7,11,2
+CG-11,Evidence sufficiency,6,0,0
+CG-12,Critical UNKNOWN,5,0,0
+CG-13,Responsibility and authority,6,7,3
+CG-14,Change control,7,7,2
+CG-15,Integrated digital authority over infrastructure,7,7,2

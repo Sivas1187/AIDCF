@@ -22,6 +22,8 @@ This repository uses two licences. Full texts are in the LICENSES/ folder.
      implementation/aidcf-015-v1.3/ (code, schemas, tests and synthetic data),
      implementation/aidcf-015-v1.2/ (code, schemas, tests and synthetic data),
      registries/tools/ (registry and catalogue generators),
+     the Python tools in research/back-testing/, validation/expert-panel/tools/
+       and pilots/pilot-framework/tools/,
      .github/workflows/,
      archive/historical-releases/ (earlier executable packages).
 

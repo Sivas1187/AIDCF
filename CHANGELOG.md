@@ -4,7 +4,11 @@ All notable changes to this repository are recorded here. Versions refer to the 
 
 ## [Unreleased]
 
-No changes since 3.1.
+### Added
+- **AIDCF-VAL-001 Incident Back-Testing Protocol v1.0** (`research/back-testing/`): retrospective coding of publicly reported incidents against AIDCF controls, AIDCF-004 failure scenarios and critical gates; two coders with hindsight-bias controls; coding sheet, data dictionary, empty incident register and a checker (`backtest_check.py`, including Cohen's kappa). No incidents coded yet.
+- **AIDCF-VAL-002 Expert Panel Content Validation v1.0** (`validation/expert-panel/`): modified Delphi protocol, deterministic 48-control stratified sample plus all 15 gates, Round 1 questionnaire, item booklet and response template, participant information and consent template, and an analysis script (I-CVI, modified kappa, S-CVI/Ave) with a synthetic self-test. No panel convened.
+- **Mini-pilot pack AIDCF-PIL-001 to 005** (`pilots/`): protocol for an authorised AL3 research assessment of one AI cluster, a 58-control Starter Profile and its generator (gates CG-01, CG-02, CG-03, CG-05, CG-06, CG-07 and CG-10 plus the meta-gates), authorisation and evidence-request templates, result record, metrics and lessons-learned templates. No pilot has taken place.
+- CI checks for the three new generators and checkers.
 
 ## [3.1 Validation Candidate] - 2026-10-10
 

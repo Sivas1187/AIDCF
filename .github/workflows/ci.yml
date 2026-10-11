@@ -70,6 +70,13 @@ jobs:
       - name: Registry catalogue is up to date (AIDCF-014 section 17)
         run: python -B registries/tools/build_catalogue.py --check
 
+      - name: Validation instruments are consistent (back-test, expert panel, pilot Starter Profile)
+        run: |
+          python -B research/back-testing/backtest_check.py --check
+          python -B validation/expert-panel/tools/build_sample.py --check
+          python -B validation/expert-panel/tools/analyse_round.py --self-test
+          python -B pilots/pilot-framework/tools/build_starter_profile.py --check
+
       - name: AIDCF-015 v1.3 run_all (all layers; fails the build on any failure)
         run: python -B implementation/aidcf-015-v1.3/tools/run_all.py
 
