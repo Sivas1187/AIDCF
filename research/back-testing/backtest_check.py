@@ -384,10 +384,13 @@ def check_register(path, chk, controls_ref=None):
         if r["primary_source_type"] not in SOURCE_TYPES - {"SECONDARY_PRESS"} and r["eligibility_status"] != "EXCLUDED":
             chk.err(w, "primary_source_type must be PRIMARY or REGULATOR unless EXCLUDED")
         for col in ("incident_date", "access_date"):
-            if col == "incident_date" and r[col] == "" and "DATE_UNRESOLVED" in r["notes"]:
-                chk.warn(w, "incident_date unresolved (DATE_UNRESOLVED); resolve before selection")
+            if col == "incident_date" and r[col] == "" and "DATE_APPROXIMATE" in r["notes"]:
+                pass  # exact day not stated in any primary or regulator source; approximation recorded in notes
+            elif col == "incident_date" and r[col] == "" and "DATE_UNRESOLVED" in r["notes"]:
+                if r["eligibility_status"] != "EXCLUDED":
+                    chk.warn(w, "incident_date unresolved (DATE_UNRESOLVED); resolve before selection")
             elif not DATE_RE.match(r[col]):
-                chk.err(w, "%s must be YYYY-MM-DD (or blank with DATE_UNRESOLVED in notes)" % col)
+                chk.err(w, "%s must be YYYY-MM-DD (or blank with DATE_APPROXIMATE or DATE_UNRESOLVED in notes)" % col)
         if r["detail_level"] not in DETAIL_LEVELS:
             chk.err(w, "detail_level invalid")
         if r["eligibility_status"] not in ELIGIBILITY:

@@ -71,8 +71,8 @@ Sub-quota tags among eligible incidents:
 
 ## Open items before selection
 
-1. Resolve the three DATE_UNRESOLVED rows (INC-045, INC-124, INC-125). INC-045 is ELIGIBLE: neither primary source gives a start date, and press accounts differ.
-2. A human second check of every EX-02 and EX-04 exclusion, recorded in `exclusion_checked_by`.
+1. ~~Resolve the three undated rows.~~ Done 2026-10-12. INC-045 (ELIGIBLE) is recorded as DATE_APPROXIMATE, first week of May 2024: neither primary source states the day, and press accounts differ (30 April and about 2 May). The date does not affect its stratum. INC-124 and INC-125 are EXCLUDED, so their dates are not needed.
+2. A human second check of every EX-02 and EX-04 exclusion (59 rows), recorded in `exclusion_checked_by`. Agreed procedure: an independent AI cross-check (KAI or DeepSeek) using [`cross-check/PROMPT.md`](cross-check/PROMPT.md) on four batches, then `cross-check/compare.py` lists the disagreements and Siva decides each of those. The run log will record it as "AI cross-check (model, date), human-confirmed".
 3. Confirm the provisional categories flagged in `notes`. These are mainly change-initiated incidents filed as CHANGE_HUMAN rather than CONTROL_PLANE_OT, and utility-triggered incidents filed as POWER or COOLING rather than EXTERNAL_DEPENDENCY.
 4. Archive every selected source. The Internet Archive could not be reached from the screening environment, so `archive_refs` is empty.
 5. Retry these EX-06 sources:

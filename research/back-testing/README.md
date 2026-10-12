@@ -52,7 +52,7 @@ Do not add an incident unless a source has been retrieved and checked. The regis
 | `neutral_descriptor` | Short factual label naming no cause, for example "Regional storage service disruption" | Free text |
 | `operator_name_as_published` | Organisation name exactly as it appears in its own report or the regulator report | Free text |
 | `operator_type` | As in the dictionary | `HYPERSCALE_CLOUD`, `COLOCATION`, `ENTERPRISE`, `AI_HPC_FACILITY`, `TELECOM_NETWORK`, `MANAGED_SERVICE`, `PUBLIC_SECTOR`, `OTHER` |
-| `incident_date` | Date of the initiating event | `YYYY-MM-DD`; blank only with `DATE_UNRESOLVED` in `notes` (must be resolved before selection) |
+| `incident_date` | Date of the initiating event | `YYYY-MM-DD`. Blank only with `DATE_APPROXIMATE` in `notes` (no primary or regulator source states the day; the approximation is recorded), or with `DATE_UNRESOLVED` (allowed on EXCLUDED rows; must be resolved before selection on any other row) |
 | `failure_category` | Provisional sampling stratum, confirmed at coding | `POWER`, `COOLING`, `NETWORK_FABRIC`, `STORAGE`, `CONTROL_PLANE_OT`, `CHANGE_HUMAN`, `EXTERNAL_DEPENDENCY` |
 | `tags` | Sub-quota tags, semicolon-separated | `HEAT_EVENT`, `LIQUID_COOLING`, `AI_HPC`, `FIRE`, `WATER_INGRESS`, `BATTERY`, `MULTI_SITE`, `REGULATOR_REPORT` |
 | `primary_source_url` | Operator, provider or regulator report | URL |
