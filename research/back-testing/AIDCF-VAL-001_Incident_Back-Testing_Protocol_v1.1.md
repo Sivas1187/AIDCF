@@ -10,7 +10,7 @@ Retrospective validation of AIDCF controls, failure scenarios and critical gates
 | Title | Incident Back-Testing Protocol |
 | Version | 1.1 |
 | Date | 2026-10-13 |
-| Status | Draft – not approved. Implemented on branch `val-001-v1.1-draft` for pre-merge review; v1.0 remains the protocol in force. |
+| Status | Draft – not approved. Merged into `main` for review on 2026-10-13 (PR #1, merge commit b4335e6); v1.0 remains the protocol in force until v1.1 is approved. |
 | Author | Siva Sethumadhavan |
 | Instruments | [`coding-sheet.csv`](coding-sheet.csv), [`coding-sheet-dictionary.csv`](coding-sheet-dictionary.csv), [`incident-register.csv`](incident-register.csv), [`backtest_check.py`](backtest_check.py); for section 10A also [`baselines.csv`](baselines.csv), [`comparative-sheet.csv`](comparative-sheet.csv), [`comparative-sheet-dictionary.csv`](comparative-sheet-dictionary.csv), [`comparative.py`](comparative.py), [`run-log/comparative-locks.csv`](run-log/comparative-locks.csv), [`tests/`](tests/) |
 | Execution status | Frame built and screened under v1.0. No incident has been coded, and no comparative coding has started. `baselines.csv` is DRAFT pending practitioner review. |
