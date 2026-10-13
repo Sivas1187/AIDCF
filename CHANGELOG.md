@@ -12,6 +12,9 @@ All notable changes to this repository are recorded here. Versions refer to the 
 - AIDCF-VAL-001 sampling frame: 221 real incident candidates screened from 115 searches of provider post-incident reports and regulator reports (140 eligible), with a run log of the flow, shortfalls (liquid cooling, storage) and open items. Not yet second-checked, selected or coded.
 - `backtest_check.py` accepts a blank incident date only when flagged DATE_UNRESOLVED, and a blank category only on EXCLUDED rows.
 
+### Errata
+- **E-001** (`ERRATA.md`): the AIDCF-015 v1.3 synthetic decision question scopes SO-01 to SO-03 to NORMAL and MAINTENANCE states, but SO-02 applies only in RECOVERY and SO-03 in NORMAL and DEGRADED. Recorded as an erratum against AIDCF-REL-2026.10.1 rather than edited in place, so the released package still matches its manifest. The computed decision is unaffected. To be corrected in the next AIDCF-015 release.
+
 ## [3.1 Validation Candidate] - 2026-10-10
 
 Release identifier AIDCF-REL-2026.10.1. This release acts on the architecture review of 2026-10-10: it adds the missing artifacts, makes the controls testable, gives every term one source of truth and makes the machine-executable layer validate real data. Every new or revised document is a draft for controlled review. No independent review, inter-rater trial or authorised pilot has taken place.
