@@ -105,7 +105,11 @@ def baseline_row(n, f, m, j, sampled, round_="RECONCILED", coder="C09"):
     if m == "BL-ENG":
         r.update(eng_discipline="COOLING" if CATEGORY[n] == "COOLING" else "POWER", eng_technique="FMEA")
     if sampled:
-        r.update(eod="POSSIBLE", eod_assumptions="FICTIONAL: two-day review, sampled settings", eod_confidence="LOW")
+        v = ["POSSIBLE", "LIKELY", "UNLIKELY", "INDETERMINATE"][(n + f + len(m)) % 4]
+        if v == "INDETERMINATE":
+            r.update(eod=v, eod_assumptions="FICTIONAL: the dossier does not say how the review would be scoped")
+        else:
+            r.update(eod=v, eod_assumptions="FICTIONAL: two-day review, sampled settings", eod_confidence="LOW")
     return r
 
 
@@ -143,11 +147,23 @@ def main():
         for m, j in js.items():
             rows.append(baseline_row(n, f, m, j, s))
         if s:
-            rows.append(comp_row(incident_id=inc(n), record_type="AIDCF_EOD", factor_id="CF-%02d" % f, eod="LIKELY",
+            rows.append(comp_row(incident_id=inc(n), record_type="AIDCF_EOD", factor_id="CF-%02d" % f,
+                                 eod=["LIKELY", "POSSIBLE", "UNLIKELY"][n % 3],
                                  eod_assumptions="FICTIONAL: AIDCF-009 plan, three-day assessment", eod_confidence="MEDIUM"))
-    # two independent BL-ENG reviewers (rounds A and B) on one factor, for the reviewer count
-    rows.append(baseline_row(1, 1, "BL-ENG", "NOT_ADDRESSED", (inc(1), "CF-01") in sample, "A", "C21"))
-    rows.append(baseline_row(1, 1, "BL-ENG", "NOT_ADDRESSED", (inc(1), "CF-01") in sample, "B", "C22"))
+    # two independent BL-ENG reviewers (rounds A and B) on every BL-ENG factor of incidents 1 to 6, for the
+    # reviewer count and round agreement; B differs from the reconciled judgement on two factors
+    flip = {"DETECTED": "PARTIALLY_DETECTED", "PARTIALLY_DETECTED": "DETECTED", "NOT_ADDRESSED": "NOT_DETECTED",
+            "NOT_DETECTED": "NOT_ADDRESSED", "NOT_APPLICABLE": "NOT_ADDRESSED", "OUT_OF_SCOPE": "NOT_ADDRESSED",
+            "INSUFFICIENT_INFORMATION": "NOT_ADDRESSED"}
+    differ = 0
+    for n, f, _, _, _, _, js in FACTORS:
+        if n <= 6 and "BL-ENG" in js:
+            s = (inc(n), "CF-%02d" % f) in sample
+            j = js["BL-ENG"]
+            rows.append(baseline_row(n, f, "BL-ENG", j, s, "A", "C21"))
+            b = flip[j] if differ < 2 and j != "NOT_APPLICABLE" else j
+            differ += b != j
+            rows.append(baseline_row(n, f, "BL-ENG", b, s, "B", "C22"))
     # gap dispositions for every baseline-only pair under either reading
     import backtest_check  # noqa: F401
     data = cp.build_pairs(rows, {r["baseline_id"]: dict(r) for r in base}, coding)

@@ -26,20 +26,20 @@ INC-EXAMPLE-12,FACTOR,C09,RECONCILED,Y,NONE,CF-02,AIDCF,C05 pass 1; FICTIONAL do
 INC-EXAMPLE-01,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,NOT_ADDRESSED,,,,COOLING,FMEA,,,,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
 INC-EXAMPLE-01,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-CX,NOT_ADDRESSED,,,,,,,,,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
 INC-EXAMPLE-01,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-OT,NOT_APPLICABLE,,,APP-01,,,,,,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-01,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-ENG,NOT_ADDRESSED,,,,COOLING,FMEA,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
+INC-EXAMPLE-01,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-ENG,NOT_ADDRESSED,,,,COOLING,FMEA,LIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
 INC-EXAMPLE-01,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-CX,DETECTED,FICTIONAL clause 4.2,,,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-01,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-OT,NOT_APPLICABLE,,,APP-01,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-01,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-02,,,,,,,,,,,,,LIKELY,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-02,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,NOT_ADDRESSED,,,,POWER,FMEA,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
+INC-EXAMPLE-01,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-02,,,,,,,,,,,,,POSSIBLE,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-02,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,NOT_ADDRESSED,,,,POWER,FMEA,LIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
 INC-EXAMPLE-02,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-CX,NOT_ADDRESSED,,,,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
 INC-EXAMPLE-02,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-OT,PARTIALLY_DETECTED,FICTIONAL clause 4.2,,,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-02,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-01,,,,,,,,,,,,,LIKELY,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-02,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-01,,,,,,,,,,,,,UNLIKELY,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-02,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-ENG,OUT_OF_SCOPE,,EXC-01,,POWER,FMEA,,,,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-02,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-CX,NOT_ADDRESSED,,,,,,,,,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
 INC-EXAMPLE-02,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-OT,NOT_APPLICABLE,,,APP-01,,,,,,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-03,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,DETECTED,FICTIONAL clause 4.2,,,COOLING,FMEA,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-03,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-CX,INSUFFICIENT_INFORMATION,,,,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-03,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-OT,NOT_APPLICABLE,,,APP-01,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-03,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,DETECTED,FICTIONAL clause 4.2,,,COOLING,FMEA,UNLIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-03,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-CX,INSUFFICIENT_INFORMATION,,,,,,LIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-03,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-OT,NOT_APPLICABLE,,,APP-01,,,LIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-03,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-01,,,,,,,,,,,,,LIKELY,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-03,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-ENG,DETECTED,FICTIONAL clause 4.2,,,COOLING,FMEA,,,,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-03,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-CX,DETECTED,FICTIONAL clause 4.2,,,,,,,,,,FICTIONAL comparative fixture.
@@ -48,24 +48,24 @@ INC-EXAMPLE-04,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,DETECTED,FICTION
 INC-EXAMPLE-04,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-CX,NOT_ADDRESSED,,,,,,,,,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
 INC-EXAMPLE-04,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-OT,NOT_APPLICABLE,,,APP-01,,,,,,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-04,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-ENG,NOT_DETECTED,FICTIONAL clause 4.2,,,POWER,FMEA,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-04,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-CX,INSUFFICIENT_INFORMATION,,,,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-04,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-OT,NOT_APPLICABLE,,,APP-01,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-04,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-02,,,,,,,,,,,,,LIKELY,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-04,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-CX,INSUFFICIENT_INFORMATION,,,,,,INDETERMINATE,FICTIONAL: the dossier does not say how the review would be scoped,,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-04,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-OT,NOT_APPLICABLE,,,APP-01,,,INDETERMINATE,FICTIONAL: the dossier does not say how the review would be scoped,,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-04,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-02,,,,,,,,,,,,,POSSIBLE,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-05,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,NOT_APPLICABLE,,,APP-01,POWER,FMEA,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-05,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-CX,NOT_APPLICABLE,,,APP-01,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-05,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-OT,NOT_APPLICABLE,,,APP-01,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-05,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-01,,,,,,,,,,,,,LIKELY,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-05,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-CX,NOT_APPLICABLE,,,APP-01,,,INDETERMINATE,FICTIONAL: the dossier does not say how the review would be scoped,,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-05,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-OT,NOT_APPLICABLE,,,APP-01,,,INDETERMINATE,FICTIONAL: the dossier does not say how the review would be scoped,,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-05,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-01,,,,,,,,,,,,,UNLIKELY,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-05,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-ENG,NOT_APPLICABLE,,,APP-01,POWER,FMEA,,,,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-05,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-CX,NOT_APPLICABLE,,,APP-01,,,,,,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-05,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-OT,DETECTED,FICTIONAL clause 4.2,,,,,,,,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-06,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,NOT_ADDRESSED,,,,COOLING,FMEA,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
+INC-EXAMPLE-06,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,NOT_ADDRESSED,,,,COOLING,FMEA,LIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
 INC-EXAMPLE-06,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-CX,PARTIALLY_DETECTED,FICTIONAL clause 4.2,,,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-06,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-OT,NOT_APPLICABLE,,,APP-01,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-06,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-01,,,,,,,,,,,,,LIKELY,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-07,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,DETECTED,FICTIONAL clause 4.2,,,POWER,FMEA,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-07,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-CX,NOT_ADDRESSED,,,,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
-INC-EXAMPLE-07,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-OT,INSUFFICIENT_INFORMATION,,,,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-07,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-01,,,,,,,,,,,,,LIKELY,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-07,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,DETECTED,FICTIONAL clause 4.2,,,POWER,FMEA,UNLIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-07,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-CX,NOT_ADDRESSED,,,,,,LIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
+INC-EXAMPLE-07,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-OT,INSUFFICIENT_INFORMATION,,,,,,LIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-07,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-01,,,,,,,,,,,,,POSSIBLE,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-07,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-ENG,NOT_ADDRESSED,,,,POWER,FMEA,,,,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
 INC-EXAMPLE-07,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-CX,NOT_ADDRESSED,,,,,,,,,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
 INC-EXAMPLE-07,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-OT,INSUFFICIENT_INFORMATION,,,,,,,,,,,FICTIONAL comparative fixture.
@@ -75,37 +75,57 @@ INC-EXAMPLE-07,BASELINE,C09,RECONCILED,Y,NONE,CF-03,,,,,,BL-OT,INSUFFICIENT_INFO
 INC-EXAMPLE-07,BASELINE,C09,RECONCILED,Y,NONE,CF-04,,,,,,BL-ENG,NOT_ADDRESSED,,,,POWER,FMEA,,,,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
 INC-EXAMPLE-07,BASELINE,C09,RECONCILED,Y,NONE,CF-04,,,,,,BL-CX,NOT_ADDRESSED,,,,,,,,,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
 INC-EXAMPLE-07,BASELINE,C09,RECONCILED,Y,NONE,CF-04,,,,,,BL-OT,NOT_ADDRESSED,,,,,,,,,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
-INC-EXAMPLE-08,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,NOT_APPLICABLE,,,APP-01,POWER,FMEA,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-08,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-CX,NOT_ADDRESSED,,,,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
-INC-EXAMPLE-08,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-OT,DETECTED,FICTIONAL clause 4.2,,,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-08,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-01,,,,,,,,,,,,,LIKELY,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-08,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,NOT_APPLICABLE,,,APP-01,POWER,FMEA,INDETERMINATE,FICTIONAL: the dossier does not say how the review would be scoped,,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-08,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-CX,NOT_ADDRESSED,,,,,,UNLIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
+INC-EXAMPLE-08,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-OT,DETECTED,FICTIONAL clause 4.2,,,,,UNLIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-08,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-01,,,,,,,,,,,,,UNLIKELY,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-08,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-ENG,NOT_APPLICABLE,,,APP-01,POWER,FMEA,,,,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-08,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-CX,NOT_ADDRESSED,,,,,,,,,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
 INC-EXAMPLE-08,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-OT,DETECTED,FICTIONAL clause 4.2,,,,,,,,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-09,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,NOT_ADDRESSED,,,,COOLING,FMEA,,,,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
 INC-EXAMPLE-09,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-CX,NOT_ADDRESSED,,,,,,,,,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
 INC-EXAMPLE-09,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-OT,NOT_APPLICABLE,,,APP-01,,,,,,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-09,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-ENG,DETECTED,FICTIONAL clause 4.2,,,COOLING,FMEA,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-09,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-ENG,DETECTED,FICTIONAL clause 4.2,,,COOLING,FMEA,LIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-09,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-CX,DETECTED,FICTIONAL clause 4.2,,,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-09,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-OT,NOT_APPLICABLE,,,APP-01,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-09,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-02,,,,,,,,,,,,,LIKELY,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-10,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,NOT_ADDRESSED,,,,POWER,FMEA,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
+INC-EXAMPLE-10,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,NOT_ADDRESSED,,,,POWER,FMEA,LIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
 INC-EXAMPLE-10,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-CX,NOT_ADDRESSED,,,,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
 INC-EXAMPLE-10,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-OT,NOT_APPLICABLE,,,APP-01,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-10,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-01,,,,,,,,,,,,,LIKELY,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-10,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-01,,,,,,,,,,,,,POSSIBLE,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-10,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-ENG,DETECTED,FICTIONAL clause 4.2,,,POWER,FMEA,,,,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-10,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-CX,NOT_ADDRESSED,,,,,,,,,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
 INC-EXAMPLE-10,BASELINE,C09,RECONCILED,Y,NONE,CF-02,,,,,,BL-OT,NOT_APPLICABLE,,,APP-01,,,,,,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-11,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,PARTIALLY_DETECTED,FICTIONAL clause 4.2,,,COOLING,FMEA,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-11,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-CX,NOT_ADDRESSED,,,,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
-INC-EXAMPLE-11,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-OT,NOT_APPLICABLE,,,APP-01,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-11,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-01,,,,,,,,,,,,,LIKELY,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-12,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,NOT_ADDRESSED,,,,POWER,FMEA,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
-INC-EXAMPLE-12,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-CX,OUT_OF_SCOPE,,EXC-01,,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
-INC-EXAMPLE-12,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-OT,NOT_APPLICABLE,,,APP-01,,,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-11,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,PARTIALLY_DETECTED,FICTIONAL clause 4.2,,,COOLING,FMEA,UNLIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-11,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-CX,NOT_ADDRESSED,,,,,,LIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
+INC-EXAMPLE-11,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-OT,NOT_APPLICABLE,,,APP-01,,,LIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-11,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-01,,,,,,,,,,,,,UNLIKELY,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-12,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-ENG,NOT_ADDRESSED,,,,POWER,FMEA,INDETERMINATE,FICTIONAL: the dossier does not say how the review would be scoped,,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
+INC-EXAMPLE-12,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-CX,OUT_OF_SCOPE,,EXC-01,,,,UNLIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-12,BASELINE,C09,RECONCILED,Y,NONE,CF-01,,,,,,BL-OT,NOT_APPLICABLE,,,APP-01,,,UNLIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-12,AIDCF_EOD,C09,RECONCILED,Y,NONE,CF-01,,,,,,,,,,,,,LIKELY,"FICTIONAL: AIDCF-009 plan, three-day assessment",MEDIUM,,,FICTIONAL comparative fixture.
 INC-EXAMPLE-01,BASELINE,C21,A,Y,NONE,CF-01,,,,,,BL-ENG,NOT_ADDRESSED,,,,COOLING,FMEA,,,,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
-INC-EXAMPLE-01,BASELINE,C22,B,Y,NONE,CF-01,,,,,,BL-ENG,NOT_ADDRESSED,,,,COOLING,FMEA,,,,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
+INC-EXAMPLE-01,BASELINE,C22,B,Y,NONE,CF-01,,,,,,BL-ENG,NOT_DETECTED,FICTIONAL clause 4.2,,,COOLING,FMEA,,,,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-01,BASELINE,C21,A,Y,NONE,CF-02,,,,,,BL-ENG,NOT_ADDRESSED,,,,COOLING,FMEA,LIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
+INC-EXAMPLE-01,BASELINE,C22,B,Y,NONE,CF-02,,,,,,BL-ENG,NOT_DETECTED,FICTIONAL clause 4.2,,,COOLING,FMEA,LIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-02,BASELINE,C21,A,Y,NONE,CF-01,,,,,,BL-ENG,NOT_ADDRESSED,,,,POWER,FMEA,LIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
+INC-EXAMPLE-02,BASELINE,C22,B,Y,NONE,CF-01,,,,,,BL-ENG,NOT_ADDRESSED,,,,POWER,FMEA,LIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
+INC-EXAMPLE-02,BASELINE,C21,A,Y,NONE,CF-02,,,,,,BL-ENG,OUT_OF_SCOPE,,EXC-01,,POWER,FMEA,,,,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-02,BASELINE,C22,B,Y,NONE,CF-02,,,,,,BL-ENG,OUT_OF_SCOPE,,EXC-01,,POWER,FMEA,,,,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-03,BASELINE,C21,A,Y,NONE,CF-01,,,,,,BL-ENG,DETECTED,FICTIONAL clause 4.2,,,COOLING,FMEA,UNLIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-03,BASELINE,C22,B,Y,NONE,CF-01,,,,,,BL-ENG,DETECTED,FICTIONAL clause 4.2,,,COOLING,FMEA,UNLIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-03,BASELINE,C21,A,Y,NONE,CF-02,,,,,,BL-ENG,DETECTED,FICTIONAL clause 4.2,,,COOLING,FMEA,,,,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-03,BASELINE,C22,B,Y,NONE,CF-02,,,,,,BL-ENG,DETECTED,FICTIONAL clause 4.2,,,COOLING,FMEA,,,,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-04,BASELINE,C21,A,Y,NONE,CF-01,,,,,,BL-ENG,DETECTED,FICTIONAL clause 4.2,,,POWER,FMEA,,,,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-04,BASELINE,C22,B,Y,NONE,CF-01,,,,,,BL-ENG,DETECTED,FICTIONAL clause 4.2,,,POWER,FMEA,,,,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-04,BASELINE,C21,A,Y,NONE,CF-02,,,,,,BL-ENG,NOT_DETECTED,FICTIONAL clause 4.2,,,POWER,FMEA,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-04,BASELINE,C22,B,Y,NONE,CF-02,,,,,,BL-ENG,NOT_DETECTED,FICTIONAL clause 4.2,,,POWER,FMEA,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-05,BASELINE,C21,A,Y,NONE,CF-01,,,,,,BL-ENG,NOT_APPLICABLE,,,APP-01,POWER,FMEA,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-05,BASELINE,C22,B,Y,NONE,CF-01,,,,,,BL-ENG,NOT_APPLICABLE,,,APP-01,POWER,FMEA,POSSIBLE,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-05,BASELINE,C21,A,Y,NONE,CF-02,,,,,,BL-ENG,NOT_APPLICABLE,,,APP-01,POWER,FMEA,,,,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-05,BASELINE,C22,B,Y,NONE,CF-02,,,,,,BL-ENG,NOT_APPLICABLE,,,APP-01,POWER,FMEA,,,,,,FICTIONAL comparative fixture.
+INC-EXAMPLE-06,BASELINE,C21,A,Y,NONE,CF-01,,,,,,BL-ENG,NOT_ADDRESSED,,,,COOLING,FMEA,LIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
+INC-EXAMPLE-06,BASELINE,C22,B,Y,NONE,CF-01,,,,,,BL-ENG,NOT_ADDRESSED,,,,COOLING,FMEA,LIKELY,"FICTIONAL: two-day review, sampled settings",LOW,,,FICTIONAL: whole frozen scope searched; no criterion covers it.
 INC-EXAMPLE-01,GAP_DISPOSITION,C40,RECONCILED,Y,NONE,CF-02,,,,,,BL-CX,,,,,,,,,,OUTSIDE_DECLARED_BOUNDARY,FICTIONAL AIDCF clause 3.1,FICTIONAL.
 INC-EXAMPLE-02,GAP_DISPOSITION,C40,RECONCILED,Y,NONE,CF-01,,,,,,BL-OT,,,,,,,,,,ACTIONABLE_GAP,G2_NO_CRITERION FICTIONAL,FICTIONAL.
 INC-EXAMPLE-05,GAP_DISPOSITION,C40,RECONCILED,Y,NONE,CF-02,,,,,,BL-OT,,,,,,,,,,DELEGATED_TO_STANDARD,FICTIONAL AIDCF clause 3.1,FICTIONAL.

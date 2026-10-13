@@ -442,7 +442,7 @@ def check_eod(w, r, sampled, chk):
             chk.err(w, "EOD is coded only for factors in the EOD sample")
         return
     if not v:
-        return  # sampled factor not yet estimated; completeness is enforced by --comparative
+        return  # sampled factor not yet estimated; --comparative refuses to report until it is
     if v not in EOD_VALUES:
         chk.err(w, "eod must be LIKELY, POSSIBLE, UNLIKELY or INDETERMINATE")
     elif v != "INDETERMINATE" and (not r["eod_assumptions"].strip() or r["eod_confidence"] not in EOD_CONFIDENCE):
@@ -598,6 +598,24 @@ def fmt_table(counts):
             (counts["a"], counts["b"], counts["c"], counts["d"], n, ex if ex else "{}"))
 
 
+def round_agreement(rows, keys, method):
+    """Cohen's kappa between baseline rounds A and B on the detection judgement (v1.0 section 13)."""
+    keyset = set(keys)
+    by_round = defaultdict(dict)
+    for r in rows:
+        k = (r["incident_id"], r["factor_id"])
+        if r["record_type"] == "BASELINE" and r["baseline_id"] == method and r["coding_round"] in {"A", "B"} and k in keyset:
+            by_round[r["coding_round"]][k] = r["detection_judgement"]
+    pairs = [(by_round["A"][k], by_round["B"][k]) for k in sorted(set(by_round["A"]) & set(by_round["B"]))]
+    n = len(pairs)
+    if not n:
+        return None, None, 0
+    po = sum(1 for a, b in pairs if a == b) / n
+    ca, cb = Counter(a for a, _ in pairs), Counter(b for _, b in pairs)
+    pe = sum(ca[c] * cb[c] for c in set(ca) | set(cb)) / (n * n)
+    return po, (None if pe == 1 else (po - pe) / (1 - pe)), n
+
+
 def comparative_report(rows, spec, locks, coding_rows, category_of, threshold=PRIMARY_THRESHOLD):
     """Full comparative report. Raises ValueError if the run is not in a reportable state."""
     data = build_pairs(rows, spec, coding_rows)
@@ -621,6 +639,17 @@ def comparative_report(rows, spec, locks, coding_rows, category_of, threshold=PR
                 cls, _, _ = classify(data, k, m, reading)
                 if cls == "c" and (k[0], k[1], m) not in data["disp"]:
                     problems.append("%s %s %s is baseline-only (%s) without a GAP_DISPOSITION row" % (k[0], k[1], m, reading))
+    sampled_keys = [k for k in keys if data["factors"][k]["eod_sampled"] == "Y"]
+    eod_aidcf = {(r["incident_id"], r["factor_id"]) for r in rows
+                 if r["record_type"] == "AIDCF_EOD" and r["coding_round"] == "RECONCILED" and r["eod"]}
+    eod_base = {(r["incident_id"], r["factor_id"], r["baseline_id"]) for r in rows
+                if r["record_type"] == "BASELINE" and r["coding_round"] == "RECONCILED" and r["eod"]}
+    for k in sampled_keys:
+        if k not in eod_aidcf:
+            problems.append("%s %s is in the EOD sample but has no RECONCILED AIDCF_EOD estimate" % k)
+        for m in active:
+            if judgement_for(data, k, m) not in (None, "NOT_APPLICABLE") and (k[0], k[1], m) not in eod_base:
+                problems.append("%s %s is in the EOD sample but has no RECONCILED %s EOD estimate" % (k[0], k[1], m))
     for (inc, fid, m) in sorted(data["disp"]):
         if not any(classify(data, (inc, fid), m, rd)[0] == "c" for rd in ("strict", "inclusive")):
             problems.append("GAP_DISPOSITION %s %s %s is not on a baseline-only pair" % (inc, fid, m))
@@ -653,6 +682,10 @@ def comparative_report(rows, spec, locks, coding_rows, category_of, threshold=PR
         n_rev = len(reviewers[m])
         out.append("Independent reviewers for %s: %d%s" % (m, n_rev, "" if n_rev >= 2 else
                                                             " (below the target of 2: results for this method are exploratory)"))
+        po, kappa, n_pairs = round_agreement(rows, keys, m)
+        out.append("  rounds A and B, comparable factors coded by both: %d%s" % (
+            n_pairs, "" if not n_pairs else "; percentage agreement %.3f; Cohen's kappa %s" % (
+                po, "undefined" if kappa is None else "%.3f" % kappa)))
 
     for origin in ("ALL", "AIDCF", "BASELINE"):
         ks = subset(data, keys, origin)

@@ -360,7 +360,7 @@ Comparative data are kept in `comparative-sheet.csv`, separate from `coding-shee
 - Baseline coders do not see any AIDCF judgement until their judgements are locked. AIDCF coders do not see baseline judgements until theirs are locked. Each lock is a `FILE:<path>` entry in `run-log/comparative-locks.csv`.
 - Only factors with `knowability` STATED_KNOWN or DISCOVERABLE and `coding_phase` PRE_REVEAL enter the comparison.
 - Baseline coders and the adjudicator are not the framework author and have no role in AIDCF's development. BASELINE rows must have `independent_of_author` Y. Each coder declares `prior_familiarity` with the incident.
-- **Coder counts (owner ruling 2).** The target is two independent practitioners per evaluated method, coding rounds A and B, with separate adjudication. A smaller pool is allowed for exploratory work if it is disclosed. Every comparative output prints the number of distinct independent reviewers per method, and labels a method with fewer than two as exploratory.
+- **Coder counts (owner ruling 2).** The target is two independent practitioners per evaluated method, coding rounds A and B, with separate adjudication. A smaller pool is allowed for exploratory work if it is disclosed. Rounds A and B are reconciled as in section 13.3, and their agreement on the detection judgement (percentage agreement and Cohen's κ, section 13.1) is reported per method. Every comparative output prints the number of distinct independent reviewers per method, and labels a method with fewer than two as exploratory.
 - **Locks.** Each artefact in `run-log/comparative-locks.csv` is locked once: BASELINES (SHA-256 of `baselines.csv`), EOD_FRAME (digest of the frozen factor frame), EOD_SEED, BOOTSTRAP_SEED and FILE:<path> for each locked coding file.
 
 ### 10A.5 Paired analysis
@@ -446,14 +446,14 @@ No single figure is the headline. For each method and for the union, the headlin
 
 - **Criterion coverage** is the 10A.5.1 judgement under the section 4 assumptions. It is the primary comparative measure and is coded for every comparable factor and evaluated method.
 - **Estimated operational detectability (EOD)** is a coder's estimate of whether a competent practitioner, applying the method under the constraints declared in `baselines.csv` (for AIDCF, the AIDCF row), would reasonably have surfaced the factor. It is an expert estimate, not observed performance.
-- Values LIKELY, POSSIBLE, UNLIKELY and INDETERMINATE. Every value except INDETERMINATE records `eod_assumptions` and `eod_confidence` (LOW, MEDIUM, HIGH).
+- Values LIKELY, POSSIBLE, UNLIKELY and INDETERMINATE. LIKELY, POSSIBLE and UNLIKELY record `eod_assumptions` and `eod_confidence` (LOW, MEDIUM, HIGH). INDETERMINATE states in `eod_assumptions` why no credible estimate is possible.
 - **Frame and sample (owner ruling 4).** After the FACTOR list is consolidated and before any detection judgement exists on either side, the adjudicator:
   1. locks EOD_SEED;
   2. runs `backtest_check.py --draw-eod-sample`, which refuses if any detection judgement exists, and prints the frame digest and the sample;
   3. locks EOD_FRAME with that digest and sets `eod_sampled` Y on the sampled FACTOR rows.
 
   The frame is every comparable factor. The draw takes at least one factor per incident, then fills each `failure_category` to 30% of its comparable factors (rounded up), in a seeded order. The checker recomputes the draw and reports an error if `eod_sampled` differs from it or the frame digest differs from the lock.
-- EOD is coded on BASELINE rows and AIDCF_EOD rows for sampled factors only. EOD results are reported in separate tables, never combined with criterion coverage, and never described as detection rates.
+- EOD is coded on BASELINE rows and AIDCF_EOD rows for sampled factors only, and on both sides for every sampled factor and applicable evaluated method; `--comparative` refuses to report while any is missing. EOD results are reported in separate tables, never combined with criterion coverage, and never described as detection rates.
 
 ### 10A.7 Baseline-only results and gap disposition
 
@@ -499,15 +499,15 @@ The comparative steps run alongside section 9.
 | T-02 | OUT_OF_SCOPE cites a declared `EXC-NN` |
 | T-03 | NOT_APPLICABLE cites a declared `APP-NN` |
 | T-04 | DETECTED, PARTIALLY_DETECTED and NOT_DETECTED cite a clause; NOT_ADDRESSED is explained in notes |
-| T-05 | EOD only on sampled factors; the sample equals the seeded draw from the locked frame |
-| T-06 | LIKELY, POSSIBLE and UNLIKELY record assumptions and confidence |
+| T-05 | EOD only on sampled factors, and present on both sides for each; the sample equals the seeded draw from the locked frame |
+| T-06 | LIKELY, POSSIBLE and UNLIKELY record assumptions and confidence; INDETERMINATE states why |
 | T-07 | Incident-level common set |
 | T-08 | 50% incident eligibility (W10) and the threshold sensitivity |
 | T-09 | No interval below 10 incidents; no metric for an empty table; the differential-indeterminacy flag |
 | T-10 | Every class-c pair has one disposition, and only class-c pairs have one; changing dispositions leaves every table unchanged |
 | T-11 | ACTIONABLE_GAP cites a G1–G3 record; other dispositions except DISPUTED cite a clause |
 | T-12 | W1–W9 give the expected strict and inclusive classes |
-| Further | NOT_EVALUATED methods cannot be judged; the union label; the BASELINES lock; DRAFT methods block results; baseline coders are independent; the factor list matches `coding-sheet.csv`; each lock is set once; the draw is refused once judgements exist; v1.0 outputs unchanged |
+| Further | NOT_EVALUATED methods cannot be judged; the union label; the BASELINES lock; DRAFT methods block results; baseline coders are independent; the factor list matches `coding-sheet.csv`; each lock is set once; the draw is refused once judgements exist; round A/B κ; v1.0 outputs unchanged |
 
 
 ## 11. Gate judgement

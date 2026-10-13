@@ -185,6 +185,26 @@ class IncidentLevel(unittest.TestCase):
         self.assertEqual(cp.net({"b": 0, "c": 2, "a": 0, "d": 2}), (-0.5, 4))
 
 
+class RoundAgreement(unittest.TestCase):
+    """Baseline rounds A and B are reconciled as in v1.0 section 13, with kappa reported."""
+
+    def test_hand_computed_kappa(self):
+        def row(k, rnd, j):
+            return {"record_type": "BASELINE", "baseline_id": "BL-ENG", "coding_round": rnd, "incident_id": "INC-X",
+                    "factor_id": k, "detection_judgement": j}
+        keys = [("INC-X", "CF-%02d" % i) for i in range(1, 5)]
+        a = [D, D, ND, ND]
+        b = [D, ND, ND, ND]
+        rows = [row(k[1], "A", x) for k, x in zip(keys, a)] + [row(k[1], "B", x) for k, x in zip(keys, b)]
+        po, kappa, n = cp.round_agreement(rows, keys, "BL-ENG")
+        # po = 3/4; pe = (2*1 + 2*3)/16 = 0.5; kappa = (0.75 - 0.5) / 0.5 = 0.5
+        self.assertEqual((po, kappa, n), (0.75, 0.5, 4))
+
+    def test_reported(self):
+        _, out = run("--comparative")
+        self.assertIn("comparable factors coded by both: 10; percentage agreement 0.800; Cohen's kappa 0.750", out)
+
+
 class Labels(unittest.TestCase):
     """BL-ANY-3 and the six-method BL-ANY cannot be confused."""
 
@@ -360,6 +380,25 @@ class Validation(unittest.TestCase):
         self.assertEqual(by_file("comparative-sheet.csv"), cp.SHEET_COLUMNS)
         self.assertEqual(by_file("baselines.csv"), cp.BASELINE_COLUMNS)
         self.assertEqual(by_file("run-log/comparative-locks.csv"), cp.LOCK_COLUMNS)
+
+    def test_t05_eod_required_for_both_sides_on_sampled_factors(self):
+        self.check(lambda m: m.drop("comparative-sheet.csv", lambda r: r["record_type"] == "AIDCF_EOD"),
+                   "has no RECONCILED AIDCF_EOD estimate", mode="--comparative")
+
+        def blank(m):
+            cols, rows = m.rows("comparative-sheet.csv")
+            sampled = {(r["incident_id"], r["factor_id"]) for r in rows if r["record_type"] == "FACTOR" and r["eod_sampled"] == "Y"}
+            for r in rows:
+                if r["record_type"] == "BASELINE" and r["coding_round"] == "RECONCILED" and r["baseline_id"] == "BL-CX" \
+                        and (r["incident_id"], r["factor_id"]) in sampled and r["detection_judgement"] != "NOT_APPLICABLE":
+                    r.update(eod="", eod_assumptions="", eod_confidence="")
+                    break
+            m.write("comparative-sheet.csv", cols, rows)
+        self.check(blank, "has no RECONCILED BL-CX EOD estimate", mode="--comparative")
+
+    def test_eod_indeterminate_states_why(self):
+        self.check(lambda m: m.edit("comparative-sheet.csv", lambda r: r["eod"] == "INDETERMINATE", eod_assumptions=""),
+                   "INDETERMINATE states in eod_assumptions why")
 
     def test_locks_are_set_once(self):
         def mut(m):

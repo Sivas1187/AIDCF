@@ -8,8 +8,11 @@ baselines.csv locked digest: 5c6fb51fc21f949b6f25313ae25a15b453b8be0bd1853720525
 Comparable factors (knowable, PRE_REVEAL, in the consolidated list): 21; by origin {'ADJUDICATOR': 1, 'AIDCF': 13, 'BASELINE': 4, 'BOTH': 3}
 Factors in the list but not comparable: 3
 Independent reviewers for BL-CX: 0 (below the target of 2: results for this method are exploratory)
+  rounds A and B, comparable factors coded by both: 0
 Independent reviewers for BL-ENG: 2
+  rounds A and B, comparable factors coded by both: 10; percentage agreement 0.800; Cohen's kappa 0.750
 Independent reviewers for BL-OT: 0 (below the target of 2: results for this method are exploratory)
+  rounds A and B, comparable factors coded by both: 0
 
 == Factor level, factors of origin ALL (21) ==
 BL-CX     strict    a shared 1 | b AIDCF-only 7 | c baseline-only 1 | d neither 7 | N 16 | excluded {'EXCLUDED_INDETERMINATE_AIDCF': 1, 'EXCLUDED_INDETERMINATE_BASELINE': 2, 'EXCLUDED_NOT_APPLICABLE': 2} | net incremental +0.375 (no interval: 9 eligible incidents < 10)
@@ -133,6 +136,6 @@ Gap dispositions: {'ACTIONABLE_GAP': 1, 'BELOW_INTENDED_GRANULARITY': 1, 'DELEGA
 
 == Estimated operational detectability (expert estimate, not observed performance) ==
 Sampled factors: 12 of 21 comparable
-  BL-CX     (AIDCF, BL-CX) counts: {('LIKELY', 'POSSIBLE'): 11}
-  BL-ENG    (AIDCF, BL-ENG) counts: {('LIKELY', 'POSSIBLE'): 10}
-  BL-OT     (AIDCF, BL-OT) counts: {('LIKELY', 'POSSIBLE'): 3}
+  BL-CX     (AIDCF, BL-CX) counts: {('LIKELY', 'LIKELY'): 1, ('LIKELY', 'POSSIBLE'): 2, ('LIKELY', 'UNLIKELY'): 1, ('POSSIBLE', 'INDETERMINATE'): 1, ('POSSIBLE', 'LIKELY'): 1, ('POSSIBLE', 'POSSIBLE'): 2, ('UNLIKELY', 'LIKELY'): 1, ('UNLIKELY', 'POSSIBLE'): 1, ('UNLIKELY', 'UNLIKELY'): 1}
+  BL-ENG    (AIDCF, BL-ENG) counts: {('LIKELY', 'INDETERMINATE'): 1, ('LIKELY', 'LIKELY'): 2, ('LIKELY', 'UNLIKELY'): 1, ('POSSIBLE', 'LIKELY'): 2, ('POSSIBLE', 'POSSIBLE'): 1, ('POSSIBLE', 'UNLIKELY'): 1, ('UNLIKELY', 'LIKELY'): 1, ('UNLIKELY', 'UNLIKELY'): 1}
+  BL-OT     (AIDCF, BL-OT) counts: {('POSSIBLE', 'LIKELY'): 1, ('UNLIKELY', 'POSSIBLE'): 1, ('UNLIKELY', 'UNLIKELY'): 1}
