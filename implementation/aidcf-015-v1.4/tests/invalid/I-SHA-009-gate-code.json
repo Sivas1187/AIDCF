@@ -1,0 +1,16 @@
+{
+ "fixtureId": "I-SHA-009",
+ "layer": "SHACL",
+ "expect": "FAIL",
+ "expectedRule": "MDM-R01",
+ "expectedText": "gateCode",
+ "description": "Gate Result gateCode differs from the evaluated gate.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:gate-result:GR-CG-03",
+   "field": "gateCode",
+   "value": "CG-04"
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+code,name,anchor
+I0,Unknown,Integrity method absent or unverified
+I1,Basic controlled,Repository permissions and version history
+I2,Verified copy,Source comparison or controlled export metadata
+I3,Hashed,Cryptographic digest recorded in manifest
+I4,Signed / trusted timestamp,Digital signature or trusted timestamp validated
+I5,Tamper-evident custody,"End-to-end signed custody, immutable storage or equivalent control"

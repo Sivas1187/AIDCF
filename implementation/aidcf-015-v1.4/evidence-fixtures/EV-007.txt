@@ -1,0 +1,6 @@
+SYNTHETIC EVIDENCE FIXTURE - AIDCF-015 v1.4
+id: urn:aidcf:syn:evidence:EV-007
+class: E1
+title: Synthetic documentary evidence for MCF-NET-001
+Synthetic documentary evidence supporting the MCF-NET-001 assessment CA-007.
+This file describes no real facility, organisation or person.

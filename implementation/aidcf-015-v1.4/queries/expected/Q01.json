@@ -1,0 +1,39 @@
+{
+ "query": "Q01",
+ "description": "AIDCF-014 section 19 Q01: which systems, assets and dependencies implement the functions required by Capability CI-001?",
+ "basis": "Required Functions RF-01 to RF-06 and Dependency records DEP-01 to DEP-17 of the dataset design.",
+ "rows": [
+  [
+   "SYS-CMP",
+   "DEP-09"
+  ],
+  [
+   "SYS-CMP",
+   "DEP-10"
+  ],
+  [
+   "SYS-CTL",
+   "DEP-17"
+  ],
+  [
+   "SYS-FWS",
+   "DEP-15"
+  ],
+  [
+   "SYS-NET",
+   "DEP-16"
+  ],
+  [
+   "SYS-POW",
+   "DEP-01"
+  ],
+  [
+   "SYS-STO",
+   "DEP-08"
+  ],
+  [
+   "SYS-THM",
+   "DEP-11"
+  ]
+ ]
+}

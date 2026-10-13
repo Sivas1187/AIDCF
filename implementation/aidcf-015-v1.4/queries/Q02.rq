@@ -1,0 +1,10 @@
+# Q02 AIDCF-014 section 19 Q02: which failure scenarios and fault domains can defeat Service Outcome SO-01, and from which operating state?
+# Expected result basis: Scenarios FS-01, FS-02, FS-05 to FS-07 and FS-09 to FS-12 (FS-03, FS-04 and FS-08 affect SO-02 or SO-03 only) and fault domains FD-01, FD-02.
+PREFIX aidcf: <https://w3id.org/aidcf/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?scenario ?faultDomain ?state WHERE {
+  ?fs a aidcf:FailureScenario ; aidcf:preState ?state ; aidcf:outcomeEffects ?oe .
+  ?oe aidcf:outcomeRef <urn:aidcf:syn:outcome:SO-01> ; aidcf:exceedsTolerance true .
+  OPTIONAL { ?r aidcf:scenarioRef ?fs . { ?r aidcf:sourceRef ?m } UNION { ?r aidcf:targetRef ?m } ?fd aidcf:faultDomainMembers ?m . }
+  BIND (REPLACE(STR(?fs), "^.*[:/]", "") AS ?scenario) BIND (IF(BOUND(?fd), REPLACE(STR(?fd), "^.*[:/]", ""), "") AS ?faultDomain)
+} GROUP BY ?scenario ?faultDomain ?state ORDER BY ?scenario

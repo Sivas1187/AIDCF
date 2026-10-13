@@ -1,0 +1,356 @@
+{
+ "@context": "../schemas/jsonld/aidcf-context-1.3.jsonld",
+ "@graph": [
+  {
+   "id": "urn:aidcf:syn:capability:CI-001",
+   "type": "CapabilityInstance",
+   "name": "Synthetic AI training and inference capability",
+   "architectureBaseline": "urn:aidcf:syn:snapshot:SNAP-001",
+   "boundary": "Synthetic data hall A, its power, cooling, facility water, compute, storage, fabric and supervisory control; the utility is external.",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criticality": "HIGH",
+   "demandProfile": "Illustrative: 2.0 MW IT load with accelerator transients; training jobs of up to 14 days.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "exposedTo": [
+    "urn:aidcf:syn:hazard:HZ-02"
+   ],
+   "hasOutcome": [
+    "urn:aidcf:syn:outcome:SO-01",
+    "urn:aidcf:syn:outcome:SO-02",
+    "urn:aidcf:syn:outcome:SO-03"
+   ],
+   "lifecycle": "OPERATE",
+   "migratedFrom": [
+    "urn:aidcf:capability:synthetic-training-001"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:IT-OPS"
+   ],
+   "operatingEnvelope": "Illustrative: design ambient 35 C; inlet supply 30 C; NORMAL and MAINTENANCE states.",
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE",
+    "DEGRADED",
+    "RECOVERY"
+   ],
+   "owner": "urn:aidcf:syn:party:CAP-OWNER",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "APPROVED",
+   "version": "1.0",
+   "workload": [
+    "TRAINING",
+    "INFERENCE"
+   ]
+  },
+  {
+   "id": "urn:aidcf:syn:function:RF-01",
+   "type": "RequiredFunction",
+   "name": "Deliver conditioned power",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "functionStatement": "Deliver conditioned power to IT and cooling loads at design demand.",
+   "implementedBy": [
+    "urn:aidcf:syn:system:SYS-POW"
+   ],
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:outcome:SO-01"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "recoversThrough": [
+    "urn:aidcf:syn:safeguard:SAF-UPS-RT"
+   ],
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "APPROVED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:function:RF-02",
+   "type": "RequiredFunction",
+   "name": "Remove heat",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "functionStatement": "Remove 100% of rack heat at design inlet temperature (illustrative).",
+   "implementedBy": [
+    "urn:aidcf:syn:system:SYS-THM",
+    "urn:aidcf:syn:system:SYS-FWS"
+   ],
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:outcome:SO-01"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "APPROVED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:function:RF-03",
+   "type": "RequiredFunction",
+   "name": "Provide accelerator compute",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "functionStatement": "Provide the declared usable accelerator capacity.",
+   "implementedBy": [
+    "urn:aidcf:syn:system:SYS-CMP"
+   ],
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:outcome:SO-03",
+    "urn:aidcf:syn:outcome:SO-01"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "APPROVED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:function:RF-04",
+   "type": "RequiredFunction",
+   "name": "Persist checkpoints",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "functionStatement": "Persist and restore training checkpoints within the recovery tolerance.",
+   "implementedBy": [
+    "urn:aidcf:syn:system:SYS-STO"
+   ],
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:outcome:SO-02"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "APPROVED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:function:RF-05",
+   "type": "RequiredFunction",
+   "name": "Provide fabric connectivity",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "functionStatement": "Provide scale-out fabric connectivity between compute and storage.",
+   "implementedBy": [
+    "urn:aidcf:syn:system:SYS-NET"
+   ],
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:outcome:SO-01"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "APPROVED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:function:RF-06",
+   "type": "RequiredFunction",
+   "name": "Supervise facility systems",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "functionStatement": "Supervise and command power and cooling plant through the BMS.",
+   "implementedBy": [
+    "urn:aidcf:syn:system:SYS-CTL"
+   ],
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "APPROVED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:outcome:SO-01",
+   "type": "ServiceOutcome",
+   "name": "Training availability",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "duration": "P30D",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "measure": "Illustrative: training cluster available for scheduled jobs",
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "requiresFunction": [
+    "urn:aidcf:syn:function:RF-01",
+    "urn:aidcf:syn:function:RF-02",
+    "urn:aidcf:syn:function:RF-03",
+    "urn:aidcf:syn:function:RF-05",
+    "urn:aidcf:syn:function:RF-06"
+   ],
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "APPROVED",
+   "tolerance": "Illustrative: at most 4 hours unplanned unavailability per 30 days",
+   "version": "1.0",
+   "workloadClass": "TRAINING"
+  },
+  {
+   "id": "urn:aidcf:syn:outcome:SO-02",
+   "type": "ServiceOutcome",
+   "name": "Training checkpoint recovery",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "duration": "PT2H",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "measure": "Illustrative: restart from last checkpoint after disruption",
+   "operatingStates": [
+    "RECOVERY"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "recoversThrough": [
+    "urn:aidcf:syn:safeguard:SAF-CKPT"
+   ],
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "requiresFunction": [
+    "urn:aidcf:syn:function:RF-04",
+    "urn:aidcf:syn:function:RF-05"
+   ],
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "APPROVED",
+   "tolerance": "Illustrative: restart within 2 hours, losing at most 30 minutes of training progress",
+   "version": "1.0",
+   "workloadClass": "TRAINING"
+  },
+  {
+   "id": "urn:aidcf:syn:outcome:SO-03",
+   "type": "ServiceOutcome",
+   "name": "Inference latency",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "duration": "PT1H",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "measure": "Illustrative: p99 request latency at the service edge",
+   "operatingStates": [
+    "NORMAL",
+    "DEGRADED"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "requiresFunction": [
+    "urn:aidcf:syn:function:RF-02",
+    "urn:aidcf:syn:function:RF-03",
+    "urn:aidcf:syn:function:RF-05"
+   ],
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "APPROVED",
+   "tolerance": "Illustrative: p99 below 300 ms at declared load",
+   "version": "1.0",
+   "workloadClass": "INFERENCE"
+  }
+ ]
+}

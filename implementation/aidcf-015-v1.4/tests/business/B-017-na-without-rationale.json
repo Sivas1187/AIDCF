@@ -1,0 +1,20 @@
+{
+ "fixtureId": "B-017",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "BR-002",
+ "description": "NOT_APPLICABLE result without rationale and review.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:control-assessment:CA-012",
+   "field": "result",
+   "value": "NOT_APPLICABLE"
+  },
+  {
+   "op": "delete",
+   "id": "urn:aidcf:syn:control-assessment:CA-012",
+   "field": "reviewedBy"
+  }
+ ]
+}

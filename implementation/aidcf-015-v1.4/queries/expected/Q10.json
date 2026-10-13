@@ -1,0 +1,17 @@
+{
+ "query": "Q10",
+ "description": "AIDCF-014 section 19 Q10: what succeeds the superseded and migrated records, and by which migration?",
+ "basis": "CAP-CAP-02 SUPERSEDES CAP-CAP-01; AD-001 MIGRATED_FROM the v1.2 decision by MIG-002.",
+ "rows": [
+  [
+   "CAP-CAP-01",
+   "CAP-CAP-02",
+   ""
+  ],
+  [
+   "DEC-001-v1.2",
+   "AD-001",
+   "MIG-002"
+  ]
+ ]
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:aidcf:schema:system:1.1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "version": {
+      "const": "1.1"
+    },
+    "status": {
+      "type": "string"
+    },
+    "classification": {
+      "enum": [
+        "INTERNAL",
+        "CONFIDENTIAL"
+      ]
+    },
+    "sourceArtifact": {
+      "const": "AIDCF-015"
+    },
+    "name": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "functions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "version",
+    "status",
+    "classification",
+    "sourceArtifact",
+    "name",
+    "domain"
+  ]
+}

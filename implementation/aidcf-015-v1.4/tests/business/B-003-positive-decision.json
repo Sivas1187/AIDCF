@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-003",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "MDM-R03",
+ "description": "Decision REASONABLY_ASSURED while gates FAIL and a US5 UNKNOWN is open.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:decision:AD-001",
+   "field": "decisionState",
+   "value": "REASONABLY_ASSURED"
+  }
+ ]
+}

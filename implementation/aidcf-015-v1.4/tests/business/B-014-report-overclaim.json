@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-014",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "BR-007",
+ "description": "Report states REASONABLY_ASSURED.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:report:RPT-001",
+   "field": "decisionState",
+   "value": "REASONABLY_ASSURED"
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "query": "Q09",
+ "description": "AIDCF-014 section 19 Q09: which providers are points of concentration (two or more Dependency records rely on them)?",
+ "basis": "DEP-02/03, DEP-04/05, DEP-06/07/14, DEP-09/16/17.",
+ "rows": [
+  [
+   "AST-BMS-CTRL",
+   3
+  ],
+  [
+   "AST-CHL",
+   2
+  ],
+  [
+   "AST-SWB-01",
+   2
+  ],
+  [
+   "SYS-POW",
+   3
+  ]
+ ]
+}

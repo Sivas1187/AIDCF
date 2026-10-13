@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-001",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "MDM-R01",
+ "description": "CG-07 recorded PASS although its CRITICAL inputs OPS-013 and SEC-005 are PARTIAL (v1.2 defect).",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:gate-result:GR-CG-07",
+   "field": "gateState",
+   "value": "PASS"
+  }
+ ]
+}

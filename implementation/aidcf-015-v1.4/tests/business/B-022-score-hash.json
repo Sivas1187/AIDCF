@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-022",
+ "layer": "SCORE",
+ "expect": "FAIL",
+ "expectedRule": "SCORE-04",
+ "description": "Score input changed without recomputing the hash.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:score:SS-001",
+   "field": "scoreInputs.0.controlResult",
+   "value": "PARTIAL"
+  }
+ ]
+}

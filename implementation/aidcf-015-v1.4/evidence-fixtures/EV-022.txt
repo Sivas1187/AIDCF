@@ -1,0 +1,6 @@
+SYNTHETIC EVIDENCE FIXTURE - AIDCF-015 v1.4
+id: urn:aidcf:syn:evidence:EV-022
+class: E4
+title: Synthetic test evidence for MCF-STO-017
+Synthetic test evidence supporting the MCF-STO-017 assessment CA-006.
+This file describes no real facility, organisation or person.

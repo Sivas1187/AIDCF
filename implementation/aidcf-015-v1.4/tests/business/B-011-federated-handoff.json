@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-011",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "BR-010",
+ "description": "Integration handoff federates AIDCF conclusions.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:handoff:IH-001",
+   "field": "conclusionsFederated",
+   "value": true
+  }
+ ]
+}

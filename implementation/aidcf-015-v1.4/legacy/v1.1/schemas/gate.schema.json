@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:aidcf:schema:gate:1.1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "version": {
+      "const": "1.1"
+    },
+    "status": {
+      "type": "string"
+    },
+    "classification": {
+      "enum": [
+        "INTERNAL",
+        "CONFIDENTIAL"
+      ]
+    },
+    "sourceArtifact": {
+      "const": "AIDCF-015"
+    },
+    "gateId": {
+      "type": "string",
+      "pattern": "^CG-(0[1-9]|1[0-5])$"
+    },
+    "result": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "UNKNOWN",
+        "APPROVED_NA",
+        "NOT_ASSESSED"
+      ]
+    },
+    "evidenceRefs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "conditionRefs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "decisionEffect": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "version",
+    "status",
+    "classification",
+    "sourceArtifact",
+    "gateId",
+    "result",
+    "evidenceRefs",
+    "conditionRefs",
+    "decisionEffect"
+  ]
+}

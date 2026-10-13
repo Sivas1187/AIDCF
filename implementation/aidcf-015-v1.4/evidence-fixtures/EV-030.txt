@@ -1,0 +1,6 @@
+SYNTHETIC EVIDENCE FIXTURE - AIDCF-015 v1.4
+id: urn:aidcf:syn:evidence:EV-030
+class: E7
+title: Synthetic analytical evidence for MCF-EVA-017
+Synthetic analytical evidence supporting the MCF-EVA-017 assessment CA-012.
+This file describes no real facility, organisation or person.

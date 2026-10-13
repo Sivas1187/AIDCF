@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-007",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "MDM-R07",
+ "description": "MCF-RES-017 recorded CONFORMING with S2 evidence and no E4 class.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:control-assessment:CA-009",
+   "field": "result",
+   "value": "CONFORMING"
+  }
+ ]
+}

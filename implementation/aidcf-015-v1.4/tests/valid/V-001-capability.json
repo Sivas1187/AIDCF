@@ -1,0 +1,58 @@
+{
+ "fixtureId": "V-001",
+ "layer": "SCHEMA",
+ "expect": "PASS",
+ "description": "v1.3 Capability Instance from the dataset (successor of the v1.1 capability-valid fixture).",
+ "record": {
+  "id": "urn:aidcf:syn:capability:CI-001",
+  "type": "CapabilityInstance",
+  "name": "Synthetic AI training and inference capability",
+  "architectureBaseline": "urn:aidcf:syn:snapshot:SNAP-001",
+  "boundary": "Synthetic data hall A, its power, cooling, facility water, compute, storage, fabric and supervisory control; the utility is external.",
+  "classification": "INTERNAL",
+  "createdAt": "2026-10-10T00:00:00Z",
+  "createdBy": "urn:aidcf:syn:party:BUILDER",
+  "criticality": "HIGH",
+  "demandProfile": "Illustrative: 2.0 MW IT load with accelerator transients; training jobs of up to 14 days.",
+  "effectiveFrom": "2026-10-10T00:00:00Z",
+  "exposedTo": [
+   "urn:aidcf:syn:hazard:HZ-02"
+  ],
+  "hasOutcome": [
+   "urn:aidcf:syn:outcome:SO-01",
+   "urn:aidcf:syn:outcome:SO-02",
+   "urn:aidcf:syn:outcome:SO-03"
+  ],
+  "lifecycle": "OPERATE",
+  "migratedFrom": [
+   "urn:aidcf:capability:synthetic-training-001"
+  ],
+  "operatedBy": [
+   "urn:aidcf:syn:party:IT-OPS"
+  ],
+  "operatingEnvelope": "Illustrative: design ambient 35 C; inlet supply 30 C; NORMAL and MAINTENANCE states.",
+  "operatingStates": [
+   "NORMAL",
+   "MAINTENANCE",
+   "DEGRADED",
+   "RECOVERY"
+  ],
+  "owner": "urn:aidcf:syn:party:CAP-OWNER",
+  "provenance": {
+   "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+   "method": "SYNTHETIC_AUTHORING",
+   "synthetic": true,
+   "transformationVersion": "1.4"
+  },
+  "releaseRef": "AIDCF-REL-2026.10.2",
+  "schemaVersion": "1.3",
+  "semanticOwner": "AIDCF-003",
+  "sourceArtifact": "AIDCF-015",
+  "status": "APPROVED",
+  "version": "1.0",
+  "workload": [
+   "TRAINING",
+   "INFERENCE"
+  ]
+ }
+}

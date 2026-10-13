@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-016",
+ "layer": "TRACEABILITY",
+ "expect": "FAIL",
+ "expectedRule": "TR-17",
+ "description": "Event no longer triggers reassessment of an impacted Gate Result.",
+ "patch": [
+  {
+   "op": "remove_value",
+   "id": "urn:aidcf:syn:event:EVT-001",
+   "field": "triggersReassessment",
+   "value": "urn:aidcf:syn:gate-result:GR-CG-07"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "fixtureId": "I-SHA-007",
+ "layer": "SHACL",
+ "expect": "FAIL",
+ "expectedRule": "BR-007",
+ "expectedText": "statement",
+ "description": "Statement claims LIMITED while the decision is NOT_ASSURED.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:statement:AS-001",
+   "field": "decisionState",
+   "value": "LIMITED"
+  }
+ ]
+}

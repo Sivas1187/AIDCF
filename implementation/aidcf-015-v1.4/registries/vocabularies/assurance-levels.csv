@@ -1,0 +1,8 @@
+code,name,permittedConclusion,highestClaimTypes,usableAsRequiredAssuranceLevel,legacyAlias
+AL0,Discovery,Inventory and decision discovery; no assurance conclusion,,false,
+AL1,Readiness,"Scope, ownership, applicability and evidence readiness; readiness conclusion only",,false,
+AL2,Design,"Requirements, architecture and safeguard design",DESIGN,true,A2
+AL3,Implementation,Reconciliation to implemented/as-built state,IMPLEMENTATION,true,A3
+AL4,Operational,"Representative operation, monitoring, maintenance and incidents",OPERATION,true,A4
+AL5,Effectiveness and resilience,"Safeguard effectiveness, failure containment and recovery",EFFECTIVENESS|RESILIENCE,true,A5
+AL6,Continuing,"Refresh of approved claims, evidence, gates and triggers; no claim higher than already established at AL2-AL5",,false,

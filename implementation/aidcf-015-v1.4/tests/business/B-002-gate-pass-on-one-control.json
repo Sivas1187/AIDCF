@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-002",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "BR-004",
+ "description": "CG-02 recorded PASS with none of its 3 registry CRITICAL controls assessed (v1.2: PASS on 1 of 72).",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:gate-result:GR-CG-02",
+   "field": "gateState",
+   "value": "PASS"
+  }
+ ]
+}

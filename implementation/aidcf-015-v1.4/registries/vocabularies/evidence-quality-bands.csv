@@ -1,0 +1,7 @@
+code,name,rule,permittedUse,legacyEvidenceGrade
+Q0,Unusable,"Any critical dimension P0, R0, T0 or I0 without accepted limitation",Context only; no positive assertion,E0
+Q1,Weak,Multiple dimensions 0-1 or unsupported source,Candidate/UNKNOWN; remediation priority,E1
+Q2,Limited,"Core provenance established but limited coverage, currentness or corroboration",Descriptive or limited implementation claim,E2
+Q3,Adequate,All claim-critical dimensions at least 3,Design/implementation claim where appropriate,E3
+Q4,Strong,"Most dimensions 4 or higher, with no claim-critical dimension below 3",Operating effectiveness with sufficient package coverage,E4
+Q5,Highly defensible,"Independent/corroborated, representative, current and traceable with strong integrity","High-consequence gate or resilience claim, subject to method and sufficiency",E5

@@ -1,0 +1,6 @@
+# Q09 AIDCF-014 section 19 Q09: which providers are points of concentration (two or more Dependency records rely on them)?
+# Expected result basis: DEP-02/03, DEP-04/05, DEP-06/07/14, DEP-09/16/17.
+PREFIX aidcf: <https://w3id.org/aidcf/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?provider (COUNT(?d) AS ?dependents) WHERE { ?d a aidcf:Dependency ; aidcf:targetRef ?t . BIND (REPLACE(STR(?t), "^.*[:/]", "") AS ?provider) }
+GROUP BY ?provider HAVING (COUNT(?d) >= 2) ORDER BY ?provider

@@ -1,0 +1,17 @@
+{
+ "query": "Q07",
+ "description": "AIDCF-014 section 19 Q07: is every statement and report consistent with its decision (BR-007)?",
+ "basis": "BR-007.",
+ "rows": [
+  [
+   "AS-001",
+   "NOT_ASSURED",
+   "NOT_ASSURED"
+  ],
+  [
+   "RPT-001",
+   "NOT_ASSURED",
+   "NOT_ASSURED"
+  ]
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-020",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "MDM-R13",
+ "description": "Control claim type differs from the registry.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "https://w3id.org/aidcf/id/control/MCF-POW-001",
+   "field": "claimType",
+   "value": "DESIGN"
+  }
+ ]
+}

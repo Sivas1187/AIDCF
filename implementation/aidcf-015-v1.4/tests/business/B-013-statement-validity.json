@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-013",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "BR-007",
+ "description": "Statement valid beyond the decision validity.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:statement:AS-001",
+   "field": "effectiveTo",
+   "value": "2028-01-01T00:00:00Z"
+  }
+ ]
+}

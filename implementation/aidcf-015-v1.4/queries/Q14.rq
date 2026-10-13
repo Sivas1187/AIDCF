@@ -1,0 +1,8 @@
+# Q14 AIDCF-016 additional query: Gate Results that PASS while a CRITICAL input is not CONFORMING (must be none).
+# Expected result basis: SPEC 6.2.
+PREFIX aidcf: <https://w3id.org/aidcf/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT (COUNT(?gr) AS ?n) WHERE {
+  ?gr a aidcf:GateResult ; aidcf:gateState "PASS" ; aidcf:controlEvaluations ?e .
+  ?e aidcf:gateRole "CRITICAL" ; aidcf:controlResult ?r . FILTER (?r != "CONFORMING")
+}

@@ -1,0 +1,11 @@
+code,meaning
+INQUIRY,Questioning competent persons; corroboration required for technical claims
+DOCUMENT_REVIEW,"Examination of approved documents, drawings, studies and records"
+INSPECTION,"Physical or logical examination of an asset, configuration or installation"
+OBSERVATION,Watching a process or activity being performed
+RECONCILIATION,"Comparing two representations (for example design and as-built, register and discovered state) and resolving differences"
+ANALYSIS,"Engineering or data analysis (calculation, trend, model, dependency graph)"
+SAMPLING,Selecting a documented subset of a population for examination
+TEST,"Performing or witnessing a controlled test with defined initial state, method and expected result"
+REPERFORMANCE,Independently re-executing a procedure or calculation to confirm its result
+SCENARIO_EXERCISE,"Tabletop, simulation or live exercise of a defined scenario under authorisation"

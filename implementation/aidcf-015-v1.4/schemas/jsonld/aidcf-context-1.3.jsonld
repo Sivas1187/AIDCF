@@ -1,0 +1,856 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "@vocab": "https://w3id.org/aidcf/ontology#",
+    "aidcf": "https://w3id.org/aidcf/ontology#",
+    "aidcfv": "https://w3id.org/aidcf/vocab/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "id": "@id",
+    "type": "@type",
+    "Action": "aidcf:Action",
+    "ArchitectureSnapshot": "aidcf:ArchitectureSnapshot",
+    "Assertion": "aidcf:Assertion",
+    "Assessment": "aidcf:Assessment",
+    "AssessmentProcedure": "aidcf:AssessmentProcedure",
+    "AssetInstance": "aidcf:AssetInstance",
+    "AssuranceDecision": "aidcf:AssuranceDecision",
+    "AssuranceProgram": "aidcf:AssuranceProgram",
+    "AssuranceReport": "aidcf:AssuranceReport",
+    "AssuranceStatement": "aidcf:AssuranceStatement",
+    "BaselineIssue": "aidcf:BaselineIssue",
+    "CapabilityInstance": "aidcf:CapabilityInstance",
+    "CapacityAssertion": "aidcf:CapacityAssertion",
+    "Component": "aidcf:Component",
+    "Conduit": "aidcf:Conduit",
+    "Control": "aidcf:Control",
+    "ControlAssessment": "aidcf:ControlAssessment",
+    "ControlDomain": "aidcf:ControlDomain",
+    "ControlFamily": "aidcf:ControlFamily",
+    "CriticalGate": "aidcf:CriticalGate",
+    "DecisionRecommendation": "aidcf:DecisionRecommendation",
+    "Dependency": "aidcf:Dependency",
+    "DistributionControl": "aidcf:DistributionControl",
+    "Event": "aidcf:Event",
+    "EvidenceObject": "aidcf:EvidenceObject",
+    "EvidencePackage": "aidcf:EvidencePackage",
+    "EvidenceRequirement": "aidcf:EvidenceRequirement",
+    "FailureMode": "aidcf:FailureMode",
+    "FailureScenario": "aidcf:FailureScenario",
+    "FaultDomain": "aidcf:FaultDomain",
+    "Finding": "aidcf:Finding",
+    "FoundationalRequirement": "aidcf:FoundationalRequirement",
+    "GateResult": "aidcf:GateResult",
+    "Hazard": "aidcf:Hazard",
+    "IACS": "aidcf:IACS",
+    "IACSZone": "aidcf:IACSZone",
+    "InfrastructureSystem": "aidcf:InfrastructureSystem",
+    "IntegrationHandoff": "aidcf:IntegrationHandoff",
+    "Interface": "aidcf:Interface",
+    "Location": "aidcf:Location",
+    "MigrationRecord": "aidcf:MigrationRecord",
+    "OperatingState": "aidcf:OperatingState",
+    "PartyEntity": "aidcf:PartyEntity",
+    "ReassessmentTrigger": "aidcf:ReassessmentTrigger",
+    "RelationshipRecord": "aidcf:RelationshipRecord",
+    "ReleaseManifest": "aidcf:ReleaseManifest",
+    "RequiredFunction": "aidcf:RequiredFunction",
+    "Resource": "aidcf:Resource",
+    "ReviewRecord": "aidcf:ReviewRecord",
+    "Safeguard": "aidcf:Safeguard",
+    "Sample": "aidcf:Sample",
+    "ScoreSnapshot": "aidcf:ScoreSnapshot",
+    "SecurityLevel": "aidcf:SecurityLevel",
+    "ServiceOutcome": "aidcf:ServiceOutcome",
+    "TestRecord": "aidcf:TestRecord",
+    "Threat": "aidcf:Threat",
+    "UnknownRecord": "aidcf:UnknownRecord",
+    "ValidationResult": "aidcf:ValidationResult",
+    "actionStatus": "aidcf:actionStatus",
+    "activation": "aidcf:activation",
+    "activationTrigger": "aidcf:activationTrigger",
+    "affectedAssertions": {
+      "@id": "aidcf:affectedAssertions",
+      "@type": "@id"
+    },
+    "aitgRefs": "aidcf:aitgRefs",
+    "amendmentRef": "aidcf:amendmentRef",
+    "applicability": "aidcf:applicability",
+    "applicabilityBasis": "aidcf:applicabilityBasis",
+    "approvalOutcome": "aidcf:approvalOutcome",
+    "approvals": "aidcf:approvals",
+    "approvedBy": {
+      "@id": "aidcf:approvedBy",
+      "@type": "@id"
+    },
+    "approvedCardinality": "aidcf:approvedCardinality",
+    "approvedNaConditions": "aidcf:approvedNaConditions",
+    "approverRole": "aidcf:approverRole",
+    "architectureBaseline": {
+      "@id": "aidcf:architectureBaseline",
+      "@type": "@id"
+    },
+    "artifact": "aidcf:artifact",
+    "artifactManifest": "aidcf:artifactManifest",
+    "artifactVersion": "aidcf:artifactVersion",
+    "assertedValue": "aidcf:assertedValue",
+    "assertionConditions": "aidcf:assertionConditions",
+    "assertionRefs": {
+      "@id": "aidcf:assertionRefs",
+      "@type": "@id"
+    },
+    "assessedAt": {
+      "@id": "aidcf:assessedAt",
+      "@type": "xsd:date"
+    },
+    "assessedBy": {
+      "@id": "aidcf:assessedBy",
+      "@type": "@id"
+    },
+    "assessedCount": "aidcf:assessedCount",
+    "assessmentCriteria": "aidcf:assessmentCriteria",
+    "assessmentMethods": "aidcf:assessmentMethods",
+    "assessmentRef": {
+      "@id": "aidcf:assessmentRef",
+      "@type": "@id"
+    },
+    "assessor": {
+      "@id": "aidcf:assessor",
+      "@type": "@id"
+    },
+    "assetKind": "aidcf:assetKind",
+    "assetOwner": {
+      "@id": "aidcf:assetOwner",
+      "@type": "@id"
+    },
+    "audience": "aidcf:audience",
+    "authority": {
+      "@id": "aidcf:authority",
+      "@type": "@id"
+    },
+    "band": "aidcf:band",
+    "bandWithheldReason": "aidcf:bandWithheldReason",
+    "baselineStatus": "aidcf:baselineStatus",
+    "basis": "aidcf:basis",
+    "blastRadius": "aidcf:blastRadius",
+    "boundary": "aidcf:boundary",
+    "boundaryDescription": "aidcf:boundaryDescription",
+    "boundaryNote": "aidcf:boundaryNote",
+    "byteSize": "aidcf:byteSize",
+    "cadence": "aidcf:cadence",
+    "calculationHash": "aidcf:calculationHash",
+    "calculationMethod": "aidcf:calculationMethod",
+    "candidateTriggers": {
+      "@id": "aidcf:candidateTriggers",
+      "@type": "@id"
+    },
+    "canonicalisation": "aidcf:canonicalisation",
+    "capabilityRef": {
+      "@id": "aidcf:capabilityRef",
+      "@type": "@id"
+    },
+    "cause": "aidcf:cause",
+    "ceilingDerivation": "aidcf:ceilingDerivation",
+    "ceilingDrivers": "aidcf:ceilingDrivers",
+    "challenges": {
+      "@id": "aidcf:challenges",
+      "@type": "@id"
+    },
+    "changeType": "aidcf:changeType",
+    "channels": "aidcf:channels",
+    "charter": "aidcf:charter",
+    "claimType": "aidcf:claimType",
+    "classification": "aidcf:classification",
+    "closedBy": {
+      "@id": "aidcf:closedBy",
+      "@type": "@id"
+    },
+    "closureCriteria": "aidcf:closureCriteria",
+    "collector": {
+      "@id": "aidcf:collector",
+      "@type": "@id"
+    },
+    "comments": "aidcf:comments",
+    "commonMode": "aidcf:commonMode",
+    "componentKind": "aidcf:componentKind",
+    "composedOf": {
+      "@id": "aidcf:composedOf",
+      "@type": "@id"
+    },
+    "conclusionsFederated": "aidcf:conclusionsFederated",
+    "condition": "aidcf:condition",
+    "conditionText": "aidcf:conditionText",
+    "conditions": "aidcf:conditions",
+    "confidence": "aidcf:confidence",
+    "confidenceFlags": "aidcf:confidenceFlags",
+    "conflictSources": "aidcf:conflictSources",
+    "conflictType": "aidcf:conflictType",
+    "connectsTo": {
+      "@id": "aidcf:connectsTo",
+      "@type": "@id"
+    },
+    "consequence": "aidcf:consequence",
+    "constrains": {
+      "@id": "aidcf:constrains",
+      "@type": "@id"
+    },
+    "constraintType": "aidcf:constraintType",
+    "consumesResource": {
+      "@id": "aidcf:consumesResource",
+      "@type": "@id"
+    },
+    "controlAssessmentRef": {
+      "@id": "aidcf:controlAssessmentRef",
+      "@type": "@id"
+    },
+    "controlCode": "aidcf:controlCode",
+    "controlEvaluations": "aidcf:controlEvaluations",
+    "controlRef": {
+      "@id": "aidcf:controlRef",
+      "@type": "@id"
+    },
+    "controlResult": "aidcf:controlResult",
+    "controlType": "aidcf:controlType",
+    "controlUniverseCount": "aidcf:controlUniverseCount",
+    "controlledBy": {
+      "@id": "aidcf:controlledBy",
+      "@type": "@id"
+    },
+    "controlledFunctions": {
+      "@id": "aidcf:controlledFunctions",
+      "@type": "@id"
+    },
+    "controllingReasons": "aidcf:controllingReasons",
+    "countermeasures": "aidcf:countermeasures",
+    "coverage": "aidcf:coverage",
+    "coveragePercent": "aidcf:coveragePercent",
+    "coverageRating": "aidcf:coverageRating",
+    "createdAt": {
+      "@id": "aidcf:createdAt",
+      "@type": "xsd:dateTime"
+    },
+    "createdBy": {
+      "@id": "aidcf:createdBy",
+      "@type": "@id"
+    },
+    "criteriaResults": "aidcf:criteriaResults",
+    "criterion": "aidcf:criterion",
+    "criterionId": "aidcf:criterionId",
+    "criterionOutcome": "aidcf:criterionOutcome",
+    "criterionRef": "aidcf:criterionRef",
+    "criticality": "aidcf:criticality",
+    "custodian": {
+      "@id": "aidcf:custodian",
+      "@type": "@id"
+    },
+    "decisionAuthority": {
+      "@id": "aidcf:decisionAuthority",
+      "@type": "@id"
+    },
+    "decisionCeiling": "aidcf:decisionCeiling",
+    "decisionEffect": "aidcf:decisionEffect",
+    "decisionLifecycle": "aidcf:decisionLifecycle",
+    "decisionQuestion": "aidcf:decisionQuestion",
+    "decisionRef": {
+      "@id": "aidcf:decisionRef",
+      "@type": "@id"
+    },
+    "decisionScope": "aidcf:decisionScope",
+    "decisionState": "aidcf:decisionState",
+    "demandProfile": "aidcf:demandProfile",
+    "dependencyCriticality": "aidcf:dependencyCriticality",
+    "dependencyRef": {
+      "@id": "aidcf:dependencyRef",
+      "@type": "@id"
+    },
+    "dependencyRefs": {
+      "@id": "aidcf:dependencyRefs",
+      "@type": "@id"
+    },
+    "dependencyType": "aidcf:dependencyType",
+    "dependsOn": {
+      "@id": "aidcf:dependsOn",
+      "@type": "@id"
+    },
+    "derating": "aidcf:derating",
+    "description": "aidcf:description",
+    "digestAlgorithm": "aidcf:digestAlgorithm",
+    "direction": "aidcf:direction",
+    "disposition": "aidcf:disposition",
+    "distributionControlRef": {
+      "@id": "aidcf:distributionControlRef",
+      "@type": "@id"
+    },
+    "domainCode": "aidcf:domainCode",
+    "domainScores": "aidcf:domainScores",
+    "dueDate": {
+      "@id": "aidcf:dueDate",
+      "@type": "xsd:date"
+    },
+    "duration": "aidcf:duration",
+    "edgeEvidenceRefs": {
+      "@id": "aidcf:edgeEvidenceRefs",
+      "@type": "@id"
+    },
+    "effect": "aidcf:effect",
+    "effectiveAt": {
+      "@id": "aidcf:effectiveAt",
+      "@type": "xsd:dateTime"
+    },
+    "effectiveFrom": {
+      "@id": "aidcf:effectiveFrom",
+      "@type": "xsd:dateTime"
+    },
+    "effectiveTo": {
+      "@id": "aidcf:effectiveTo",
+      "@type": "xsd:dateTime"
+    },
+    "entryConditions": "aidcf:entryConditions",
+    "environment": "aidcf:environment",
+    "evaluatesGate": {
+      "@id": "aidcf:evaluatesGate",
+      "@type": "@id"
+    },
+    "eventSeverity": "aidcf:eventSeverity",
+    "eventSource": "aidcf:eventSource",
+    "eventType": "aidcf:eventType",
+    "eventTypes": "aidcf:eventTypes",
+    "evidenceClass": "aidcf:evidenceClass",
+    "evidenceDate": {
+      "@id": "aidcf:evidenceDate",
+      "@type": "xsd:date"
+    },
+    "evidenceFloor": "aidcf:evidenceFloor",
+    "evidenceManifest": {
+      "@id": "aidcf:evidenceManifest",
+      "@type": "@id"
+    },
+    "evidenceNeeded": "aidcf:evidenceNeeded",
+    "evidenceSource": "aidcf:evidenceSource",
+    "evidenceSufficiency": "aidcf:evidenceSufficiency",
+    "evidencedBy": {
+      "@id": "aidcf:evidencedBy",
+      "@type": "@id"
+    },
+    "exceedsTolerance": "aidcf:exceedsTolerance",
+    "excludedPaths": "aidcf:excludedPaths",
+    "executedAt": {
+      "@id": "aidcf:executedAt",
+      "@type": "xsd:dateTime"
+    },
+    "expectedSafeguards": {
+      "@id": "aidcf:expectedSafeguards",
+      "@type": "@id"
+    },
+    "exportConditions": "aidcf:exportConditions",
+    "exposedTo": {
+      "@id": "aidcf:exposedTo",
+      "@type": "@id"
+    },
+    "extensions": {
+      "@id": "aidcf:extensions",
+      "@type": "@json"
+    },
+    "external": "aidcf:external",
+    "externalIdentifiers": "aidcf:externalIdentifiers",
+    "failCeiling": "aidcf:failCeiling",
+    "failCeilingText": "aidcf:failCeilingText",
+    "failureMechanism": "aidcf:failureMechanism",
+    "fallbackApplied": "aidcf:fallbackApplied",
+    "familyCode": "aidcf:familyCode",
+    "faultDomainMembers": {
+      "@id": "aidcf:faultDomainMembers",
+      "@type": "@id"
+    },
+    "faultDomainRef": {
+      "@id": "aidcf:faultDomainRef",
+      "@type": "@id"
+    },
+    "faultDomainRefs": {
+      "@id": "aidcf:faultDomainRefs",
+      "@type": "@id"
+    },
+    "filePath": "aidcf:filePath",
+    "findingClass": "aidcf:findingClass",
+    "findingStatus": "aidcf:findingStatus",
+    "fitnessRating": "aidcf:fitnessRating",
+    "fixturePath": "aidcf:fixturePath",
+    "fr1": "aidcf:fr1",
+    "fr2": "aidcf:fr2",
+    "fr3": "aidcf:fr3",
+    "fr4": "aidcf:fr4",
+    "fr5": "aidcf:fr5",
+    "fr6": "aidcf:fr6",
+    "fr7": "aidcf:fr7",
+    "frCode": "aidcf:frCode",
+    "fromId": "aidcf:fromId",
+    "functionStatement": "aidcf:functionStatement",
+    "gateApplicability": "aidcf:gateApplicability",
+    "gateCode": "aidcf:gateCode",
+    "gateCriteria": "aidcf:gateCriteria",
+    "gateEffect": "aidcf:gateEffect",
+    "gateLevelEvaluation": "aidcf:gateLevelEvaluation",
+    "gateMappings": "aidcf:gateMappings",
+    "gateOverlay": "aidcf:gateOverlay",
+    "gateRef": {
+      "@id": "aidcf:gateRef",
+      "@type": "@id"
+    },
+    "gateResultRefs": {
+      "@id": "aidcf:gateResultRefs",
+      "@type": "@id"
+    },
+    "gateRole": "aidcf:gateRole",
+    "gateScope": "aidcf:gateScope",
+    "gateState": "aidcf:gateState",
+    "governedBy": {
+      "@id": "aidcf:governedBy",
+      "@type": "@id"
+    },
+    "handoffDirection": "aidcf:handoffDirection",
+    "handoffType": "aidcf:handoffType",
+    "hasEvidenceRequirement": {
+      "@id": "aidcf:hasEvidenceRequirement",
+      "@type": "@id"
+    },
+    "hasFinding": {
+      "@id": "aidcf:hasFinding",
+      "@type": "@id"
+    },
+    "hasOutcome": {
+      "@id": "aidcf:hasOutcome",
+      "@type": "@id"
+    },
+    "hasUnknown": {
+      "@id": "aidcf:hasUnknown",
+      "@type": "@id"
+    },
+    "hazardType": "aidcf:hazardType",
+    "humanDisposition": "aidcf:humanDisposition",
+    "identifierScheme": "aidcf:identifierScheme",
+    "identifierValue": "aidcf:identifierValue",
+    "illustrative": "aidcf:illustrative",
+    "impact": "aidcf:impact",
+    "implementationMaturity": "aidcf:implementationMaturity",
+    "implementedBy": {
+      "@id": "aidcf:implementedBy",
+      "@type": "@id"
+    },
+    "inScopeCount": "aidcf:inScopeCount",
+    "independence": "aidcf:independence",
+    "initiates": {
+      "@id": "aidcf:initiates",
+      "@type": "@id"
+    },
+    "integrationHandoff": {
+      "@id": "aidcf:integrationHandoff",
+      "@type": "@id"
+    },
+    "integrator": {
+      "@id": "aidcf:integrator",
+      "@type": "@id"
+    },
+    "integrity": "aidcf:integrity",
+    "integrityLevel": "aidcf:integrityLevel",
+    "integrityRating": "aidcf:integrityRating",
+    "intendedUse": "aidcf:intendedUse",
+    "intendedUsers": "aidcf:intendedUsers",
+    "interfaceKind": "aidcf:interfaceKind",
+    "invalidatedBy": {
+      "@id": "aidcf:invalidatedBy",
+      "@type": "@id"
+    },
+    "issueCode": "aidcf:issueCode",
+    "issuer": {
+      "@id": "aidcf:issuer",
+      "@type": "@id"
+    },
+    "knownIssues": {
+      "@id": "aidcf:knownIssues",
+      "@type": "@id"
+    },
+    "knownIssuesFile": "aidcf:knownIssuesFile",
+    "legacyValue": "aidcf:legacyValue",
+    "lifecycle": "aidcf:lifecycle",
+    "limitations": "aidcf:limitations",
+    "locatedIn": {
+      "@id": "aidcf:locatedIn",
+      "@type": "@id"
+    },
+    "location": "aidcf:location",
+    "locationKind": "aidcf:locationKind",
+    "maintainer": {
+      "@id": "aidcf:maintainer",
+      "@type": "@id"
+    },
+    "mandatoryItems": "aidcf:mandatoryItems",
+    "manifestDigest": "aidcf:manifestDigest",
+    "mappingType": "aidcf:mappingType",
+    "mappings": "aidcf:mappings",
+    "material": "aidcf:material",
+    "materiality": "aidcf:materiality",
+    "maxClassification": "aidcf:maxClassification",
+    "meanScore": "aidcf:meanScore",
+    "measure": "aidcf:measure",
+    "mediaType": "aidcf:mediaType",
+    "message": "aidcf:message",
+    "method": "aidcf:method",
+    "metric": "aidcf:metric",
+    "migratedFrom": {
+      "@id": "aidcf:migratedFrom",
+      "@type": "@id"
+    },
+    "migrationRef": {
+      "@id": "aidcf:migrationRef",
+      "@type": "@id"
+    },
+    "migrationSet": {
+      "@id": "aidcf:migrationSet",
+      "@type": "@id"
+    },
+    "missingAttribute": "aidcf:missingAttribute",
+    "modifiedAt": {
+      "@id": "aidcf:modifiedAt",
+      "@type": "xsd:dateTime"
+    },
+    "modifiedBy": {
+      "@id": "aidcf:modifiedBy",
+      "@type": "@id"
+    },
+    "monitoredBy": {
+      "@id": "aidcf:monitoredBy",
+      "@type": "@id"
+    },
+    "naRationale": "aidcf:naRationale",
+    "name": "aidcf:name",
+    "notApplicableCount": "aidcf:notApplicableCount",
+    "notAssessedCount": "aidcf:notAssessedCount",
+    "notCertification": "aidcf:notCertification",
+    "nullReasons": {
+      "@id": "aidcf:nullReasons",
+      "@type": "@json"
+    },
+    "objectRef": {
+      "@id": "aidcf:objectRef",
+      "@type": "@id"
+    },
+    "objectValue": "aidcf:objectValue",
+    "objective": "aidcf:objective",
+    "observations": "aidcf:observations",
+    "observedAt": {
+      "@id": "aidcf:observedAt",
+      "@type": "xsd:dateTime"
+    },
+    "operatedBy": {
+      "@id": "aidcf:operatedBy",
+      "@type": "@id"
+    },
+    "operatingEnvelope": "aidcf:operatingEnvelope",
+    "operatingStates": "aidcf:operatingStates",
+    "optionalClasses": "aidcf:optionalClasses",
+    "outcome": "aidcf:outcome",
+    "outcomeEffects": "aidcf:outcomeEffects",
+    "outcomeRef": {
+      "@id": "aidcf:outcomeRef",
+      "@type": "@id"
+    },
+    "owner": {
+      "@id": "aidcf:owner",
+      "@type": "@id"
+    },
+    "ownershipStatement": "aidcf:ownershipStatement",
+    "partyKind": "aidcf:partyKind",
+    "payload": {
+      "@id": "aidcf:payload",
+      "@type": "@json"
+    },
+    "periodCoverage": "aidcf:periodCoverage",
+    "periodEnd": {
+      "@id": "aidcf:periodEnd",
+      "@type": "xsd:date"
+    },
+    "periodStart": {
+      "@id": "aidcf:periodStart",
+      "@type": "xsd:date"
+    },
+    "permittedClaims": "aidcf:permittedClaims",
+    "permittedRecipients": "aidcf:permittedRecipients",
+    "population": "aidcf:population",
+    "preState": "aidcf:preState",
+    "preconditions": "aidcf:preconditions",
+    "predicate": "aidcf:predicate",
+    "procedureRef": {
+      "@id": "aidcf:procedureRef",
+      "@type": "@id"
+    },
+    "procedureSteps": {
+      "@id": "aidcf:procedureSteps",
+      "@container": "@list"
+    },
+    "profileRef": "aidcf:profileRef",
+    "profileTier": "aidcf:profileTier",
+    "profileVersion": "aidcf:profileVersion",
+    "programOwner": {
+      "@id": "aidcf:programOwner",
+      "@type": "@id"
+    },
+    "programRef": {
+      "@id": "aidcf:programRef",
+      "@type": "@id"
+    },
+    "prohibitedClaims": "aidcf:prohibitedClaims",
+    "propagatesTo": {
+      "@id": "aidcf:propagatesTo",
+      "@type": "@id"
+    },
+    "propagationSteps": {
+      "@id": "aidcf:propagationSteps",
+      "@type": "@id",
+      "@container": "@list"
+    },
+    "protectedBy": {
+      "@id": "aidcf:protectedBy",
+      "@type": "@id"
+    },
+    "provenance": "aidcf:provenance",
+    "provenanceRating": "aidcf:provenanceRating",
+    "provisionalValue": "aidcf:provisionalValue",
+    "publicId": "aidcf:publicId",
+    "purpose": "aidcf:purpose",
+    "qualifies": {
+      "@id": "aidcf:qualifies",
+      "@type": "@id"
+    },
+    "qualityBand": "aidcf:qualityBand",
+    "qualityFloor": "aidcf:qualityFloor",
+    "qualityVector": "aidcf:qualityVector",
+    "rationale": "aidcf:rationale",
+    "reason": "aidcf:reason",
+    "recommendedState": "aidcf:recommendedState",
+    "recommends": {
+      "@id": "aidcf:recommends",
+      "@type": "@id"
+    },
+    "reconciliationEvidenceRef": {
+      "@id": "aidcf:reconciliationEvidenceRef",
+      "@type": "@id"
+    },
+    "reconciliationStatus": "aidcf:reconciliationStatus",
+    "recordCount": "aidcf:recordCount",
+    "recoversThrough": {
+      "@id": "aidcf:recoversThrough",
+      "@type": "@id"
+    },
+    "redactionProfile": "aidcf:redactionProfile",
+    "registryVersions": "aidcf:registryVersions",
+    "relatedRefs": {
+      "@id": "aidcf:relatedRefs",
+      "@type": "@id"
+    },
+    "relationshipType": "aidcf:relationshipType",
+    "releaseId": "aidcf:releaseId",
+    "releaseRef": "aidcf:releaseRef",
+    "releaseStatus": "aidcf:releaseStatus",
+    "reliabilityRating": "aidcf:reliabilityRating",
+    "remoteAccess": "aidcf:remoteAccess",
+    "reportClass": "aidcf:reportClass",
+    "reportedIn": {
+      "@id": "aidcf:reportedIn",
+      "@type": "@id"
+    },
+    "requiredAssuranceLevel": "aidcf:requiredAssuranceLevel",
+    "requiredClasses": "aidcf:requiredClasses",
+    "requirement": "aidcf:requirement",
+    "requiresAction": {
+      "@id": "aidcf:requiresAction",
+      "@type": "@id"
+    },
+    "requiresFunction": {
+      "@id": "aidcf:requiresFunction",
+      "@type": "@id"
+    },
+    "residualState": "aidcf:residualState",
+    "resolution": "aidcf:resolution",
+    "resolutionTrigger": "aidcf:resolutionTrigger",
+    "resourceKind": "aidcf:resourceKind",
+    "result": "aidcf:result",
+    "resultRationale": "aidcf:resultRationale",
+    "resultingDecisionEffect": "aidcf:resultingDecisionEffect",
+    "resultsIn": {
+      "@id": "aidcf:resultsIn",
+      "@type": "@id"
+    },
+    "reviewIndependence": "aidcf:reviewIndependence",
+    "reviewOutcome": "aidcf:reviewOutcome",
+    "reviewRef": {
+      "@id": "aidcf:reviewRef",
+      "@type": "@id"
+    },
+    "reviewState": "aidcf:reviewState",
+    "reviewType": "aidcf:reviewType",
+    "reviewedAt": {
+      "@id": "aidcf:reviewedAt",
+      "@type": "xsd:date"
+    },
+    "reviewedBy": {
+      "@id": "aidcf:reviewedBy",
+      "@type": "@id"
+    },
+    "reviewer": {
+      "@id": "aidcf:reviewer",
+      "@type": "@id"
+    },
+    "reviewerRole": "aidcf:reviewerRole",
+    "riskAssessmentRef": "aidcf:riskAssessmentRef",
+    "rollupRationale": "aidcf:rollupRationale",
+    "ruleId": "aidcf:ruleId",
+    "safeguardFailureModes": "aidcf:safeguardFailureModes",
+    "safeguardFunction": "aidcf:safeguardFunction",
+    "safetyControls": "aidcf:safetyControls",
+    "sampleSize": "aidcf:sampleSize",
+    "scenarioRef": {
+      "@id": "aidcf:scenarioRef",
+      "@type": "@id"
+    },
+    "schemaVersion": "aidcf:schemaVersion",
+    "schemaVersions": "aidcf:schemaVersions",
+    "scope": "aidcf:scope",
+    "scopeReviewed": "aidcf:scopeReviewed",
+    "scoreEffect": "aidcf:scoreEffect",
+    "scoreInputs": "aidcf:scoreInputs",
+    "scoreRef": {
+      "@id": "aidcf:scoreRef",
+      "@type": "@id"
+    },
+    "scoreValue": "aidcf:scoreValue",
+    "scoredCount": "aidcf:scoredCount",
+    "sealedAt": {
+      "@id": "aidcf:sealedAt",
+      "@type": "xsd:dateTime"
+    },
+    "sections": "aidcf:sections",
+    "securityLevelKind": "aidcf:securityLevelKind",
+    "selectionMethod": "aidcf:selectionMethod",
+    "semanticOwner": "aidcf:semanticOwner",
+    "sha256": "aidcf:sha256",
+    "sharesFaultDomainWith": {
+      "@id": "aidcf:sharesFaultDomainWith",
+      "@type": "@id"
+    },
+    "signatureMethod": "aidcf:signatureMethod",
+    "signaturePath": "aidcf:signaturePath",
+    "signatureStatus": "aidcf:signatureStatus",
+    "sizeRationale": "aidcf:sizeRationale",
+    "slVector": "aidcf:slVector",
+    "snapshotDate": {
+      "@id": "aidcf:snapshotDate",
+      "@type": "xsd:date"
+    },
+    "snapshotRef": {
+      "@id": "aidcf:snapshotRef",
+      "@type": "@id"
+    },
+    "sourceArtifact": "aidcf:sourceArtifact",
+    "sourceHealth": "aidcf:sourceHealth",
+    "sourceRecord": "aidcf:sourceRecord",
+    "sourceRef": {
+      "@id": "aidcf:sourceRef",
+      "@type": "@id"
+    },
+    "sourceRelease": "aidcf:sourceRelease",
+    "sourceSystem": "aidcf:sourceSystem",
+    "stateCode": "aidcf:stateCode",
+    "stateCoverage": "aidcf:stateCoverage",
+    "statementText": "aidcf:statementText",
+    "status": "aidcf:status",
+    "stepOrdinal": "aidcf:stepOrdinal",
+    "strength": "aidcf:strength",
+    "subjectPaths": "aidcf:subjectPaths",
+    "subjectRef": {
+      "@id": "aidcf:subjectRef",
+      "@type": "@id"
+    },
+    "substitutability": "aidcf:substitutability",
+    "sufficiency": "aidcf:sufficiency",
+    "sufficiencyFloor": "aidcf:sufficiencyFloor",
+    "suiteVersion": "aidcf:suiteVersion",
+    "summarisedBy": {
+      "@id": "aidcf:summarisedBy",
+      "@type": "@id"
+    },
+    "supersedes": {
+      "@id": "aidcf:supersedes",
+      "@type": "@id"
+    },
+    "supersedesRelease": "aidcf:supersedesRelease",
+    "supports": {
+      "@id": "aidcf:supports",
+      "@type": "@id"
+    },
+    "synthetic": "aidcf:synthetic",
+    "systemKind": "aidcf:systemKind",
+    "targetAssuranceLevel": "aidcf:targetAssuranceLevel",
+    "targetRef": {
+      "@id": "aidcf:targetRef",
+      "@type": "@id"
+    },
+    "targetRelease": "aidcf:targetRelease",
+    "targetSystem": "aidcf:targetSystem",
+    "team": "aidcf:team",
+    "testAuthority": {
+      "@id": "aidcf:testAuthority",
+      "@type": "@id"
+    },
+    "testDate": {
+      "@id": "aidcf:testDate",
+      "@type": "xsd:date"
+    },
+    "testMethod": "aidcf:testMethod",
+    "testOutcome": "aidcf:testOutcome",
+    "testSuite": "aidcf:testSuite",
+    "threatSource": "aidcf:threatSource",
+    "timeToAct": "aidcf:timeToAct",
+    "timelinessRating": "aidcf:timelinessRating",
+    "toId": "aidcf:toId",
+    "tolerance": "aidcf:tolerance",
+    "transformationVersion": "aidcf:transformationVersion",
+    "transitionRules": "aidcf:transitionRules",
+    "triggerRule": "aidcf:triggerRule",
+    "triggerState": "aidcf:triggerState",
+    "triggersReassessment": {
+      "@id": "aidcf:triggersReassessment",
+      "@type": "@id"
+    },
+    "unit": "aidcf:unit",
+    "unknownCeiling": "aidcf:unknownCeiling",
+    "unknownCeilingText": "aidcf:unknownCeilingText",
+    "unknownCount": "aidcf:unknownCount",
+    "unknownOverlay": "aidcf:unknownOverlay",
+    "unknownRefs": {
+      "@id": "aidcf:unknownRefs",
+      "@type": "@id"
+    },
+    "unknownSeverity": "aidcf:unknownSeverity",
+    "unknownStatus": "aidcf:unknownStatus",
+    "unknownType": "aidcf:unknownType",
+    "unmappedValues": "aidcf:unmappedValues",
+    "us1Count": "aidcf:us1Count",
+    "us2Count": "aidcf:us2Count",
+    "us3Count": "aidcf:us3Count",
+    "us4Count": "aidcf:us4Count",
+    "us5Count": "aidcf:us5Count",
+    "validationLayer": "aidcf:validationLayer",
+    "validationResultsPath": "aidcf:validationResultsPath",
+    "validator": "aidcf:validator",
+    "value": "aidcf:value",
+    "version": "aidcf:version",
+    "vocabularyVersions": "aidcf:vocabularyVersions",
+    "weighting": "aidcf:weighting",
+    "workload": "aidcf:workload",
+    "workloadCharacteristics": "aidcf:workloadCharacteristics",
+    "workloadClass": "aidcf:workloadClass"
+  }
+}

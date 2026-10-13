@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-021",
+ "layer": "SCORE",
+ "expect": "FAIL",
+ "expectedRule": "SCORE-01",
+ "description": "Coverage inflated to 85%.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:score:SS-001",
+   "field": "coverage.coveragePercent",
+   "value": 85.0
+  }
+ ]
+}

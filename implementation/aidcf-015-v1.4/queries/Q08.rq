@@ -1,0 +1,7 @@
+# Q08 AIDCF-014 section 19 Q08: which Gate Results are affected by Event EVT-001 (BMS controller firmware change)?
+# Expected result basis: Derived by hand from section 22: the change reaches SYS-THM, SYS-CMP, SYS-CTL and ZONE-BMS, assessed by CA-004, CA-005, CA-008 and CA-011, whose registry gate mappings are CG-06; CG-08, CG-01; CG-07, CG-06, CG-05; CG-07, CG-15, CG-05, CG-06.
+PREFIX aidcf: <https://w3id.org/aidcf/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?gateCode WHERE {
+  <urn:aidcf:syn:event:EVT-001> aidcf:affectedAssertions ?gr . ?gr a aidcf:GateResult ; aidcf:gateCode ?gateCode .
+} ORDER BY ?gateCode

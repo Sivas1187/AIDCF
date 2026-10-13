@@ -1,0 +1,16 @@
+{
+ "fixtureId": "I-SHA-010",
+ "layer": "SHACL",
+ "expect": "FAIL",
+ "expectedRule": "MDM-R09",
+ "expectedText": "gate PASS while",
+ "description": "CG-10 recorded PASS while US4 U-004 is attached.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:gate-result:GR-CG-10",
+   "field": "gateState",
+   "value": "PASS"
+  }
+ ]
+}

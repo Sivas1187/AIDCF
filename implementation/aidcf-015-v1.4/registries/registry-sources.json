@@ -1,0 +1,627 @@
+{
+  "description": "Files copied into this package by tools/build_registries.py, unmodified, with SHA-256 at copy time.",
+  "files": [
+    {
+      "source": "registries/controls/controls.csv",
+      "target": "registries/controls/controls.csv",
+      "sha256": "a02925fc84836104f62db3f4af8fd55fad14b545d5059a6d237705724ae897fa",
+      "bytes": 307405,
+      "rows": 360
+    },
+    {
+      "source": "registries/controls/controls.json",
+      "target": "registries/controls/controls.json",
+      "sha256": "39bc7f1f2ab5981b933e7b95957bf44a668a98b4c0df54f0d88dba0701b6a91e",
+      "bytes": 1688891
+    },
+    {
+      "source": "registries/controls/gate-mappings.csv",
+      "target": "registries/controls/gate-mappings.csv",
+      "sha256": "9f257b0e34822dfaf9f3923170611467b379ae48d4523a5aed80110537552246",
+      "bytes": 17481,
+      "rows": 589
+    },
+    {
+      "source": "registries/controls/evidence-profiles.csv",
+      "target": "registries/controls/evidence-profiles.csv",
+      "sha256": "3b30522eb569de2658ee9dd89b565e7c93db073041ea7d07be94309ae58dad7c",
+      "bytes": 197302,
+      "rows": 360
+    },
+    {
+      "source": "registries/controls/parameters.csv",
+      "target": "registries/controls/parameters.csv",
+      "sha256": "28e40f110ff0cf61eeba1f09d905ee081395c39a82a2b915b1bc44e40757b532",
+      "bytes": 59429,
+      "rows": 508
+    },
+    {
+      "source": "registries/families/control-families.csv",
+      "target": "registries/families/control-families.csv",
+      "sha256": "57e1d0d5aca13707f4244c6f1d03a28bbd9e33165abe15a9608316428c1809d2",
+      "bytes": 5852,
+      "rows": 90
+    },
+    {
+      "source": "registries/domains/domains.csv",
+      "target": "registries/domains/domains.csv",
+      "sha256": "5876afdca26cb0b9334224974210e16e6798e57fbc4a7020bbab3aeb9c26117d",
+      "bytes": 1375,
+      "rows": 15
+    },
+    {
+      "source": "registries/gates/critical-gates.csv",
+      "target": "registries/gates/critical-gates.csv",
+      "sha256": "a3309497f8369d5bf4f16c12bc0b1d52fc2ca1d2b27cea0e8ea57462104dc72c",
+      "bytes": 8126,
+      "rows": 15
+    },
+    {
+      "source": "registries/gates/critical-gate-criteria.csv",
+      "target": "registries/gates/critical-gate-criteria.csv",
+      "sha256": "bcabb53b5515ed21e7891d15d293a889d7414a189befa91852d77a10cdbcf2e2",
+      "bytes": 29087,
+      "rows": 101
+    },
+    {
+      "source": "registries/states/states.csv",
+      "target": "registries/states/states.csv",
+      "sha256": "d2cb57ad701d2ffc8e6b57a19c4f3cf932a3ac3c7f03d24baea8be09feb26bfc",
+      "bytes": 532,
+      "rows": 24
+    },
+    {
+      "source": "registries/vocabularies/assessment-methods.csv",
+      "target": "registries/vocabularies/assessment-methods.csv",
+      "sha256": "c4beaea1b3e92d3c657cd580ce7b676e3ffb990b8e8418745cb87da1d41a5f64",
+      "bytes": 916,
+      "rows": 10
+    },
+    {
+      "source": "registries/vocabularies/assurance-levels.csv",
+      "target": "registries/vocabularies/assurance-levels.csv",
+      "sha256": "aaed50e2ce4ad792a5dd188973f7114d90e0806c01c918031471cb6ae6c2f5bf",
+      "bytes": 801,
+      "rows": 7
+    },
+    {
+      "source": "registries/vocabularies/claim-types.csv",
+      "target": "registries/vocabularies/claim-types.csv",
+      "sha256": "74c11ac546f2aa01de82fa993528375e4dfb15a65783e47091eac840639623d1",
+      "bytes": 447,
+      "rows": 5
+    },
+    {
+      "source": "registries/vocabularies/confidence.csv",
+      "target": "registries/vocabularies/confidence.csv",
+      "sha256": "376f138ab27f765944973514d1f89745248859c0ba1b06a16fca13bc225f6382",
+      "bytes": 575,
+      "rows": 7
+    },
+    {
+      "source": "registries/vocabularies/control-profile-tiers.csv",
+      "target": "registries/vocabularies/control-profile-tiers.csv",
+      "sha256": "a6bd7344e723c26613f946763b9d8d4ff383fc7400a024bf2374d3973383e397",
+      "bytes": 565,
+      "rows": 5
+    },
+    {
+      "source": "registries/vocabularies/control-result-aliases.csv",
+      "target": "registries/vocabularies/control-result-aliases.csv",
+      "sha256": "87bea424c81dc680605ad398c9beedadfb1b8b2ded6096c6da4003d0eba4dbfc",
+      "bytes": 949,
+      "rows": 14
+    },
+    {
+      "source": "registries/vocabularies/control-results.csv",
+      "target": "registries/vocabularies/control-results.csv",
+      "sha256": "caa75602a65f5e81943f7693c2d2f666ef64f47b29882b7ea8f22444e713391e",
+      "bytes": 724,
+      "rows": 6
+    },
+    {
+      "source": "registries/vocabularies/control-types.csv",
+      "target": "registries/vocabularies/control-types.csv",
+      "sha256": "49bda25e227c4253d90c2e1b9a2a94b1eea06fb4849f07195ef4b22ea2e8dfd0",
+      "bytes": 349,
+      "rows": 5
+    },
+    {
+      "source": "registries/vocabularies/decision-aliases.csv",
+      "target": "registries/vocabularies/decision-aliases.csv",
+      "sha256": "aa53e69d5c91d456f21ee0698ca07e550fc7b9ed0c3dbfcc3670620f93ee3154",
+      "bytes": 857,
+      "rows": 13
+    },
+    {
+      "source": "registries/vocabularies/decision-lifecycle.csv",
+      "target": "registries/vocabularies/decision-lifecycle.csv",
+      "sha256": "c6555086a6acaf121340190a92e9e87d856737b6e4e039f7af3b0216e9ec987a",
+      "bytes": 539,
+      "rows": 8
+    },
+    {
+      "source": "registries/vocabularies/decision-states.csv",
+      "target": "registries/vocabularies/decision-states.csv",
+      "sha256": "d25ef8aa363eb945fbac0ea237952bd4fcbab3d3c223d1e32c434a826a5c8c01",
+      "bytes": 631,
+      "rows": 5
+    },
+    {
+      "source": "registries/vocabularies/evidence-classes.csv",
+      "target": "registries/vocabularies/evidence-classes.csv",
+      "sha256": "2e406cd9585ce4eef4c4a9780a55584cf0155a7c7ac0885e9f8512d3005207bb",
+      "bytes": 1446,
+      "rows": 7
+    },
+    {
+      "source": "registries/vocabularies/evidence-quality-bands.csv",
+      "target": "registries/vocabularies/evidence-quality-bands.csv",
+      "sha256": "f9baaa55d3157352c4c25b974f7665d6c4745f7adbad31144609c621883a6bd8",
+      "bytes": 840,
+      "rows": 6
+    },
+    {
+      "source": "registries/vocabularies/evidence-system-conformance-levels.csv",
+      "target": "registries/vocabularies/evidence-system-conformance-levels.csv",
+      "sha256": "baf2d02a25615991f71457f596f89cabb575df24dd38f91e248334f797c1c729",
+      "bytes": 576,
+      "rows": 6
+    },
+    {
+      "source": "registries/vocabularies/gate-results.csv",
+      "target": "registries/vocabularies/gate-results.csv",
+      "sha256": "fda7811d2787cdf4f558a065bb48502d23fa79fc0b5f887ef985558103429be2",
+      "bytes": 624,
+      "rows": 5
+    },
+    {
+      "source": "registries/vocabularies/implementation-maturity.csv",
+      "target": "registries/vocabularies/implementation-maturity.csv",
+      "sha256": "fb0a0d26006641dfa062184e54f3640154f807e613fcc6382b4e4328740f72ba",
+      "bytes": 994,
+      "rows": 6
+    },
+    {
+      "source": "registries/vocabularies/integrity-levels.csv",
+      "target": "registries/vocabularies/integrity-levels.csv",
+      "sha256": "e23b497e12b0591dd467c42b9212a7eb020634e2a9682fd06d0644c974fe0669",
+      "bytes": 420,
+      "rows": 6
+    },
+    {
+      "source": "registries/vocabularies/lifecycle-stages.csv",
+      "target": "registries/vocabularies/lifecycle-stages.csv",
+      "sha256": "c7aee4d3203cd5ccda413252a2f9f2bf2c463121bea6472c3fff3299c70560d7",
+      "bytes": 756,
+      "rows": 7
+    },
+    {
+      "source": "registries/vocabularies/operating-states.csv",
+      "target": "registries/vocabularies/operating-states.csv",
+      "sha256": "977d7b8b971d49b5d754c10c23c5ead12422e03c84d35059c71b0bd3057cdc1a",
+      "bytes": 692,
+      "rows": 9
+    },
+    {
+      "source": "registries/vocabularies/quality-dimensions.csv",
+      "target": "registries/vocabularies/quality-dimensions.csv",
+      "sha256": "a669231040de5661be1d2b8a5cef7b594a28c8b0ef6cbeb6826c7f4a2525bd8e",
+      "bytes": 556,
+      "rows": 6
+    },
+    {
+      "source": "registries/vocabularies/relationship-aliases.csv",
+      "target": "registries/vocabularies/relationship-aliases.csv",
+      "sha256": "e1afe8530c107f0820e14aee3c9a259f1c772eada39e18bb88729dbdb3251e76",
+      "bytes": 560,
+      "rows": 9
+    },
+    {
+      "source": "registries/vocabularies/score-bands.csv",
+      "target": "registries/vocabularies/score-bands.csv",
+      "sha256": "e7706290ec7db75c68d724500d08b198a25bf8ec90ab712317e55accb4e7ae34",
+      "bytes": 522,
+      "rows": 6
+    },
+    {
+      "source": "registries/vocabularies/sufficiency-levels.csv",
+      "target": "registries/vocabularies/sufficiency-levels.csv",
+      "sha256": "23ab765722288a2c2b237b8569dc8fed2e815f32aa30acc54b47ffdc1f24b1a7",
+      "bytes": 468,
+      "rows": 6
+    },
+    {
+      "source": "registries/vocabularies/unknown-severity.csv",
+      "target": "registries/vocabularies/unknown-severity.csv",
+      "sha256": "4b667d49b6fa71cb3a2dacc3412153f0df65bffe53e584b09bab4647dbccf10e",
+      "bytes": 666,
+      "rows": 5
+    },
+    {
+      "source": "registries/vocabularies/unknown-types.csv",
+      "target": "registries/vocabularies/unknown-types.csv",
+      "sha256": "000441438197e15b2e9cde24b1020429ae0cfd96bbbe23e3f4972d2706f7f338",
+      "bytes": 664,
+      "rows": 10
+    },
+    {
+      "source": "schemas/json-schema/action.schema.json",
+      "target": "schemas/json-schema/action.schema.json",
+      "sha256": "814607c5f2b27c9cca06141ae34f5fcdc083a81b60952936021fbe40737be2e0",
+      "bytes": 4629
+    },
+    {
+      "source": "schemas/json-schema/architecture.schema.json",
+      "target": "schemas/json-schema/architecture.schema.json",
+      "sha256": "52416ddbd5c3ac29d9b407fd4f5933146a6d96392a757a4b9b398b8f5279bfbd",
+      "bytes": 5730
+    },
+    {
+      "source": "schemas/json-schema/assertion.schema.json",
+      "target": "schemas/json-schema/assertion.schema.json",
+      "sha256": "c9e822663135bf703574061dfac9e329334abe33c63fb3bbd07a3d7e04c9a624",
+      "bytes": 4762
+    },
+    {
+      "source": "schemas/json-schema/assessment-procedure.schema.json",
+      "target": "schemas/json-schema/assessment-procedure.schema.json",
+      "sha256": "2ed65656f4de90478da23b11d82c49413f00f282a8986658a8e167b93c144d64",
+      "bytes": 4922
+    },
+    {
+      "source": "schemas/json-schema/assessment.schema.json",
+      "target": "schemas/json-schema/assessment.schema.json",
+      "sha256": "034ce7b1ef48c9347aabc5f426a897faaeee7e2ae59816d6bb746f1348389aec",
+      "bytes": 5740
+    },
+    {
+      "source": "schemas/json-schema/asset-instance.schema.json",
+      "target": "schemas/json-schema/asset-instance.schema.json",
+      "sha256": "a2d68443278aa1976ab3b9105f02deae316f2ef980d88915e7a90f6d4986c9a9",
+      "bytes": 6434
+    },
+    {
+      "source": "schemas/json-schema/assurance-statement.schema.json",
+      "target": "schemas/json-schema/assurance-statement.schema.json",
+      "sha256": "c9c2752a1caa7e5a65780be6d90ba9e36dd58142f995f6fc5293680617c1c8a7",
+      "bytes": 5395
+    },
+    {
+      "source": "schemas/json-schema/baseline-issue.schema.json",
+      "target": "schemas/json-schema/baseline-issue.schema.json",
+      "sha256": "82d39f6604ca61313ba1c9bfd09e02f892355f81aaa6ca81945afbbabbd1d9c2",
+      "bytes": 5590
+    },
+    {
+      "source": "schemas/json-schema/capability.schema.json",
+      "target": "schemas/json-schema/capability.schema.json",
+      "sha256": "d1cb0616f4a6c1427a2dc6ae20184ba604ab911b701f8b8b0a94f2a21fc320ed",
+      "bytes": 5877
+    },
+    {
+      "source": "schemas/json-schema/capacity-assertion.schema.json",
+      "target": "schemas/json-schema/capacity-assertion.schema.json",
+      "sha256": "6865fc1c70d760f2d5c999b6131ea9db69f544085a65a47537e863774ff407ba",
+      "bytes": 5590
+    },
+    {
+      "source": "schemas/json-schema/common-envelope.schema.json",
+      "target": "schemas/json-schema/common-envelope.schema.json",
+      "sha256": "715a49899e689be992451f91f37dc2188d137905272c0358cbd136d39c587ca6",
+      "bytes": 4653
+    },
+    {
+      "source": "schemas/json-schema/component.schema.json",
+      "target": "schemas/json-schema/component.schema.json",
+      "sha256": "7238d65742d582326ea7d1a9a874e19e743a81276ee01c0b379e41c360ae1dcb",
+      "bytes": 4148
+    },
+    {
+      "source": "schemas/json-schema/conduit.schema.json",
+      "target": "schemas/json-schema/conduit.schema.json",
+      "sha256": "51b1353825a57c75b08f302c4c27ec9e7634b12867406966a615a34689a6d512",
+      "bytes": 5731
+    },
+    {
+      "source": "schemas/json-schema/control-assessment.schema.json",
+      "target": "schemas/json-schema/control-assessment.schema.json",
+      "sha256": "52eba475063b1e56c978982c111204d851d9e22896f2b2475ba33f3c540b282f",
+      "bytes": 6614
+    },
+    {
+      "source": "schemas/json-schema/control-domain.schema.json",
+      "target": "schemas/json-schema/control-domain.schema.json",
+      "sha256": "ee1c9156c2d27a08d410bd9c671b6519be0b61db3354f6f1137ce268e2c25c04",
+      "bytes": 4356
+    },
+    {
+      "source": "schemas/json-schema/control-family.schema.json",
+      "target": "schemas/json-schema/control-family.schema.json",
+      "sha256": "028361163b289d35139f6933dec08450423bb1efcb6f73c167df732749d2ed25",
+      "bytes": 4555
+    },
+    {
+      "source": "schemas/json-schema/control.schema.json",
+      "target": "schemas/json-schema/control.schema.json",
+      "sha256": "17fd8818250bf4d633e99b7d22eac58b47ffd44c20871bec4574f9c1b757245e",
+      "bytes": 6611
+    },
+    {
+      "source": "schemas/json-schema/critical-gate.schema.json",
+      "target": "schemas/json-schema/critical-gate.schema.json",
+      "sha256": "01f1538bd87f0792422d1207c17056d84748ac61063027729a316663c328e735",
+      "bytes": 5723
+    },
+    {
+      "source": "schemas/json-schema/decision-recommendation.schema.json",
+      "target": "schemas/json-schema/decision-recommendation.schema.json",
+      "sha256": "91a54f7d10e59f6a8b9cca11bbcf6c53914904945cb6687928ee9480006103f2",
+      "bytes": 5246
+    },
+    {
+      "source": "schemas/json-schema/decision.schema.json",
+      "target": "schemas/json-schema/decision.schema.json",
+      "sha256": "fd5317fc77f6eb71b6afddb5fb8c37710738d5477df71ae2b38e1bdf587e0ff0",
+      "bytes": 6421
+    },
+    {
+      "source": "schemas/json-schema/definitions.schema.json",
+      "target": "schemas/json-schema/definitions.schema.json",
+      "sha256": "2fe8af269891ceded8ed54cddf3f5082905579108929cdd419f0e52c40ac20df",
+      "bytes": 37970
+    },
+    {
+      "source": "schemas/json-schema/dependency.schema.json",
+      "target": "schemas/json-schema/dependency.schema.json",
+      "sha256": "99c9b3f01663072a654f3b5c2cf14a37cf101d5c670109ccbab5b892ee5c1f8c",
+      "bytes": 5669
+    },
+    {
+      "source": "schemas/json-schema/distribution-control.schema.json",
+      "target": "schemas/json-schema/distribution-control.schema.json",
+      "sha256": "61b52b0d9e68456a3da4544afed55742717261834db8ed1a6a7e12c6c91c025b",
+      "bytes": 4778
+    },
+    {
+      "source": "schemas/json-schema/event.schema.json",
+      "target": "schemas/json-schema/event.schema.json",
+      "sha256": "e59c0a36ac7881177903b0b544b8143b01db12405042b7322d28749dd286cb9a",
+      "bytes": 5889
+    },
+    {
+      "source": "schemas/json-schema/evidence-package.schema.json",
+      "target": "schemas/json-schema/evidence-package.schema.json",
+      "sha256": "7853cf9ee05e36932cae4bd27f0431cc128d8318ba976f505ca031ccc526c264",
+      "bytes": 4761
+    },
+    {
+      "source": "schemas/json-schema/evidence-requirement.schema.json",
+      "target": "schemas/json-schema/evidence-requirement.schema.json",
+      "sha256": "471946f31f9587619814618f28c1fa812d5c465f0f5658302a99940ca6f966fe",
+      "bytes": 5693
+    },
+    {
+      "source": "schemas/json-schema/evidence.schema.json",
+      "target": "schemas/json-schema/evidence.schema.json",
+      "sha256": "e1ed71213b5050c43e7063c742293071ae282eb5f314daf2954eb02aedc9c2fd",
+      "bytes": 6534
+    },
+    {
+      "source": "schemas/json-schema/failure-mode.schema.json",
+      "target": "schemas/json-schema/failure-mode.schema.json",
+      "sha256": "d68c8cce3a3d04966f5c6b70eb96375613ace83aa48b6d919516c716efb6b6a8",
+      "bytes": 4393
+    },
+    {
+      "source": "schemas/json-schema/failure-scenario.schema.json",
+      "target": "schemas/json-schema/failure-scenario.schema.json",
+      "sha256": "4e9b39a1b3edb84d895dd572e9322614b3bb18245ecd5eb1ff36c875676ade3d",
+      "bytes": 5126
+    },
+    {
+      "source": "schemas/json-schema/fault-domain.schema.json",
+      "target": "schemas/json-schema/fault-domain.schema.json",
+      "sha256": "29bb2d769f452f199e479d728b55c34e8c8d1be2caa8c2891c24ab66f6e8d506",
+      "bytes": 4929
+    },
+    {
+      "source": "schemas/json-schema/finding.schema.json",
+      "target": "schemas/json-schema/finding.schema.json",
+      "sha256": "98c2d6c632ac85a780baaccd5a7f5e4adf9f68c8e32fcef6a97d4bd2d351b384",
+      "bytes": 5965
+    },
+    {
+      "source": "schemas/json-schema/foundational-requirement.schema.json",
+      "target": "schemas/json-schema/foundational-requirement.schema.json",
+      "sha256": "9963f2abf3a1b5509bd147fcf548ee8569ece9e5dde5de96315a6d6225473dc2",
+      "bytes": 4294
+    },
+    {
+      "source": "schemas/json-schema/gate-result.schema.json",
+      "target": "schemas/json-schema/gate-result.schema.json",
+      "sha256": "8469d2fb9081444031f9265d52790b3c76e9025686fcb4001c92542a0597a9a4",
+      "bytes": 6659
+    },
+    {
+      "source": "schemas/json-schema/hazard.schema.json",
+      "target": "schemas/json-schema/hazard.schema.json",
+      "sha256": "a65d950a6dac33174a72313edb42116dfbf2a1995fb1bdbe02c34889a15ca93f",
+      "bytes": 4367
+    },
+    {
+      "source": "schemas/json-schema/iacs-zone.schema.json",
+      "target": "schemas/json-schema/iacs-zone.schema.json",
+      "sha256": "f9fb809a356070153c2e0e835c03ea4d70c28548513065db102ddf8c2d0795ff",
+      "bytes": 6861
+    },
+    {
+      "source": "schemas/json-schema/iacs.schema.json",
+      "target": "schemas/json-schema/iacs.schema.json",
+      "sha256": "c244ac6b5a7ca18d3389ecf0f4e7345cf9c94c63182f4a2ad028a2df9adaa03a",
+      "bytes": 7024
+    },
+    {
+      "source": "schemas/json-schema/integration-handoff.schema.json",
+      "target": "schemas/json-schema/integration-handoff.schema.json",
+      "sha256": "df26069ffcd76ec50c7224e0236a8dc3a2c6f7a959ca53ced464b69c8cde254d",
+      "bytes": 4939
+    },
+    {
+      "source": "schemas/json-schema/interface.schema.json",
+      "target": "schemas/json-schema/interface.schema.json",
+      "sha256": "65d16d9ac8f99e565027778e817d2d54d797c123fb1d4e7059ae26ddae3134cc",
+      "bytes": 5340
+    },
+    {
+      "source": "schemas/json-schema/location.schema.json",
+      "target": "schemas/json-schema/location.schema.json",
+      "sha256": "e63eb875c3a3dfc31c54828ff966c677a39e8d062107f7d0fd3fcbf3c93c7dc1",
+      "bytes": 4173
+    },
+    {
+      "source": "schemas/json-schema/migration-record.schema.json",
+      "target": "schemas/json-schema/migration-record.schema.json",
+      "sha256": "6228633cd6977910fa422add357aaca4ece1ba46c382a8e8fc3f1fcece0d63d3",
+      "bytes": 4957
+    },
+    {
+      "source": "schemas/json-schema/operating-state.schema.json",
+      "target": "schemas/json-schema/operating-state.schema.json",
+      "sha256": "a0d00cd2169a58d102b1f0c79bc0ec5026582372cd5e0f4fc58c49cfc8c47fc2",
+      "bytes": 4433
+    },
+    {
+      "source": "schemas/json-schema/party-entity.schema.json",
+      "target": "schemas/json-schema/party-entity.schema.json",
+      "sha256": "3e7acd375ee9468002107575ce7054341f459428f287039e8d73c274d5f98bae",
+      "bytes": 4148
+    },
+    {
+      "source": "schemas/json-schema/program.schema.json",
+      "target": "schemas/json-schema/program.schema.json",
+      "sha256": "c2403415ff9bf885eca61dfbab202b28010167a11c8a29db88903c106313d93e",
+      "bytes": 4922
+    },
+    {
+      "source": "schemas/json-schema/reassessment-trigger.schema.json",
+      "target": "schemas/json-schema/reassessment-trigger.schema.json",
+      "sha256": "9398b48fc687246ac8faea8adc2ea6a487d18e681a19f14098f98dc32559075a",
+      "bytes": 4742
+    },
+    {
+      "source": "schemas/json-schema/relationship-record.schema.json",
+      "target": "schemas/json-schema/relationship-record.schema.json",
+      "sha256": "8d43ea63a33d69eb10283046a149ac9f5ba9145333280326a1850421bf0da524",
+      "bytes": 5543
+    },
+    {
+      "source": "schemas/json-schema/release-manifest.schema.json",
+      "target": "schemas/json-schema/release-manifest.schema.json",
+      "sha256": "cbeafea34c47dd408ff59c339624de0fd693c83239374f980244f16a32849346",
+      "bytes": 6623
+    },
+    {
+      "source": "schemas/json-schema/report.schema.json",
+      "target": "schemas/json-schema/report.schema.json",
+      "sha256": "ec222e359787f367282b94df95e16f6083dd59c7d1f8027354dcd3e88d3c2c3c",
+      "bytes": 5692
+    },
+    {
+      "source": "schemas/json-schema/required-function.schema.json",
+      "target": "schemas/json-schema/required-function.schema.json",
+      "sha256": "4e13bda415e1a9096c3eed70eaef65fa16d770ffb6bf6d85434d299a07c73494",
+      "bytes": 5477
+    },
+    {
+      "source": "schemas/json-schema/resource.schema.json",
+      "target": "schemas/json-schema/resource.schema.json",
+      "sha256": "e5fb14ca94dcc03dffa81c37c13ccad83386a5b4a69d101f1261e48584813180",
+      "bytes": 5327
+    },
+    {
+      "source": "schemas/json-schema/review-record.schema.json",
+      "target": "schemas/json-schema/review-record.schema.json",
+      "sha256": "ce9fce8250b70577de112521c9021b3911236f45fb571b245e0efba1fa322fe1",
+      "bytes": 5231
+    },
+    {
+      "source": "schemas/json-schema/safeguard.schema.json",
+      "target": "schemas/json-schema/safeguard.schema.json",
+      "sha256": "e717a280a12308073a123018e1004cec3fadac60ec63b01b1b1f7e01cec2df00",
+      "bytes": 6317
+    },
+    {
+      "source": "schemas/json-schema/sample.schema.json",
+      "target": "schemas/json-schema/sample.schema.json",
+      "sha256": "c5cd0db2303f0933ddb6239c55a83c2f206a93e2d94fcd52e1d58d4e659252e1",
+      "bytes": 4664
+    },
+    {
+      "source": "schemas/json-schema/score.schema.json",
+      "target": "schemas/json-schema/score.schema.json",
+      "sha256": "61ebb0b3f9d83b9aa11bb700a31a188ee8c69f61a030677b8c86aa757db62137",
+      "bytes": 6128
+    },
+    {
+      "source": "schemas/json-schema/security-level.schema.json",
+      "target": "schemas/json-schema/security-level.schema.json",
+      "sha256": "b4d282d9d3516e9a480c772d2ff9b96071917c41b39a02b9807ad8307ac7753b",
+      "bytes": 4683
+    },
+    {
+      "source": "schemas/json-schema/service-outcome.schema.json",
+      "target": "schemas/json-schema/service-outcome.schema.json",
+      "sha256": "a375aa092f54057ab5ce8fe730c601d90174b782e2c6cd5ef573e74b01cb2436",
+      "bytes": 5265
+    },
+    {
+      "source": "schemas/json-schema/system.schema.json",
+      "target": "schemas/json-schema/system.schema.json",
+      "sha256": "ec4677599d8d9ec866e276f38906980791b27f55e2497e6147761edc3ce0cfec",
+      "bytes": 6453
+    },
+    {
+      "source": "schemas/json-schema/test-record.schema.json",
+      "target": "schemas/json-schema/test-record.schema.json",
+      "sha256": "aea5b5406439a5b70af2dad68ce1b31f1fc629a731969cd26bb7efdef35a3f83",
+      "bytes": 5169
+    },
+    {
+      "source": "schemas/json-schema/threat.schema.json",
+      "target": "schemas/json-schema/threat.schema.json",
+      "sha256": "f139f36311ada2da207a4f00170af13502a09d8233b54297f481673bb41c4d6a",
+      "bytes": 4349
+    },
+    {
+      "source": "schemas/json-schema/unknown-record.schema.json",
+      "target": "schemas/json-schema/unknown-record.schema.json",
+      "sha256": "a8cab65affc1f6c4f6014573b00c21815998ee2a61a1fdc5222e6724cb64fab0",
+      "bytes": 6511
+    },
+    {
+      "source": "schemas/json-schema/validation-result.schema.json",
+      "target": "schemas/json-schema/validation-result.schema.json",
+      "sha256": "76fd20690e220996f822e96828d05fd8affa0f7325fb4a2462842c0c20331e09",
+      "bytes": 4963
+    },
+    {
+      "source": "schemas/owl/aidcf-core-1.3.ttl",
+      "target": "schemas/owl/aidcf-core-1.3.ttl",
+      "sha256": "ce84216cff9356f939a70e7380b39e34597cc963c0ce44d91e266f66efe45a9d",
+      "bytes": 308256
+    },
+    {
+      "source": "schemas/jsonld/aidcf-context-1.3.jsonld",
+      "target": "schemas/jsonld/aidcf-context-1.3.jsonld",
+      "sha256": "30455612e4adf4d49da5da2f8f5fd6dfc92c077851da534cceb9ae9439163229",
+      "bytes": 26518
+    },
+    {
+      "source": "schemas/shacl/aidcf-shapes-1.3.ttl",
+      "target": "schemas/shacl/aidcf-shapes-1.3.ttl",
+      "sha256": "80e8303f3f636e668af79868212c4e8e66c3f3cdf554e0a07a03f16088d18193",
+      "bytes": 179290
+    }
+  ]
+}

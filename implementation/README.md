@@ -3,6 +3,7 @@
 | Item | Content |
 |---|---|
 | `AIDCF-015_Reference_Implementation_Synthetic_Dataset_and_Conformance_Pilot_v1.0` (.md, .pdf) | The AIDCF-015 specification. It describes the v1.0 to v1.2 package design and is kept as a historical record; the v1.3 package README describes the current package. |
+| [`aidcf-015-v1.4/`](aidcf-015-v1.4/README.md) | **Draft** successor to v1.3 (release AIDCF-REL-2026.10.2): the same package with seven more failure scenarios, FS-06 to FS-12, instantiated from AIDCF-004 library scenarios. Gate results and decision unchanged. v1.3 stays current until v1.4 is approved. |
 | [`aidcf-015-v1.3/`](aidcf-015-v1.3/README.md) | **Current** synthetic reference implementation, built on the AIDCF-016 MDM 1.3 schema set in `../schemas/` and the AIDCF-007A registry v1.1 in `../registries/`. |
 | `aidcf-015-v1.2/` | Previous package, left unchanged as released so its manifest and hashes stay valid. Its `registries/controls.csv` has placeholder control titles and requirement text. |
 

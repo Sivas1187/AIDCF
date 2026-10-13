@@ -1,0 +1,11 @@
+{
+ "query": "Q12",
+ "description": "AIDCF-014 section 19 Q12: which sensitive records are visible only under disclosure profile DC-002 (highly restricted)?",
+ "basis": "The remote-access conduit is the only HIGHLY_RESTRICTED record.",
+ "rows": [
+  [
+   "CND-01",
+   "Conduit"
+  ]
+ ]
+}

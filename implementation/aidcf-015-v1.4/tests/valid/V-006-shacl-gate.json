@@ -1,0 +1,13 @@
+{
+ "fixtureId": "V-006",
+ "layer": "SHACL",
+ "expect": "PASS",
+ "description": "The dataset Gate Results and decision conform to the SHACL shapes.",
+ "patch": [],
+ "focus": [
+  "urn:aidcf:syn:gate-result:GR-CG-03",
+  "urn:aidcf:syn:gate-result:GR-CG-07",
+  "urn:aidcf:syn:gate-result:GR-CG-10",
+  "urn:aidcf:syn:decision:AD-001"
+ ]
+}

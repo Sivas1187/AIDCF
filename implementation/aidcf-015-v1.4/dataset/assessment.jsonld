@@ -1,0 +1,2326 @@
+{
+ "@context": "../schemas/jsonld/aidcf-context-1.3.jsonld",
+ "@graph": [
+  {
+   "id": "urn:aidcf:syn:action:ACT-001",
+   "type": "Action",
+   "name": "ACT-001 Extend asset-to-function mapping to facility water and recov",
+   "actionStatus": "OPEN",
+   "classification": "INTERNAL",
+   "closureCriteria": "Extend asset-to-function mapping to facility water and recovery dependencies (F-001).",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dueDate": "2026-12-15",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "owner": "urn:aidcf:syn:party:PROGRAMME-OWNER",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-011",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:action:ACT-002",
+   "type": "Action",
+   "name": "ACT-002 Add transient cold-plate flow to the design basis (F-002).",
+   "actionStatus": "OPEN",
+   "classification": "INTERNAL",
+   "closureCriteria": "Add transient cold-plate flow to the design basis (F-002).",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dueDate": "2026-12-15",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "owner": "urn:aidcf:syn:party:PROGRAMME-OWNER",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-011",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:action:ACT-003",
+   "type": "Action",
+   "name": "ACT-003 Rationalise cooling and leak alarms (F-003).",
+   "actionStatus": "OPEN",
+   "classification": "INTERNAL",
+   "closureCriteria": "Rationalise cooling and leak alarms (F-003).",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dueDate": "2026-12-15",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "owner": "urn:aidcf:syn:party:PROGRAMME-OWNER",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-011",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:action:ACT-004",
+   "type": "Action",
+   "name": "ACT-004 Make vendor support accounts time-bound (F-004).",
+   "actionStatus": "OPEN",
+   "classification": "INTERNAL",
+   "closureCriteria": "Make vendor support accounts time-bound (F-004).",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dueDate": "2026-12-15",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "owner": "urn:aidcf:syn:party:PROGRAMME-OWNER",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-011",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:action:ACT-005",
+   "type": "Action",
+   "name": "ACT-005 Restrict BMS write authority to named identities (F-005).",
+   "actionStatus": "OPEN",
+   "classification": "INTERNAL",
+   "closureCriteria": "Restrict BMS write authority to named identities (F-005).",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dueDate": "2026-12-15",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "owner": "urn:aidcf:syn:party:PROGRAMME-OWNER",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-011",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:action:ACT-006",
+   "type": "Action",
+   "name": "ACT-006 Obtain E4 component test evidence for MCF-RES-017 (U-001).",
+   "actionStatus": "OPEN",
+   "classification": "INTERNAL",
+   "closureCriteria": "Obtain E4 component test evidence for MCF-RES-017 (U-001).",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dueDate": "2026-12-15",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "owner": "urn:aidcf:syn:party:PROGRAMME-OWNER",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-011",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:action:ACT-007",
+   "type": "Action",
+   "name": "ACT-007 Refresh the fabric topology export (U-002).",
+   "actionStatus": "OPEN",
+   "classification": "INTERNAL",
+   "closureCriteria": "Refresh the fabric topology export (U-002).",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dueDate": "2026-12-15",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "owner": "urn:aidcf:syn:party:PROGRAMME-OWNER",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-011",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:action:ACT-008",
+   "type": "Action",
+   "name": "ACT-008 Obtain the facility water service agreement (U-003).",
+   "actionStatus": "OPEN",
+   "classification": "INTERNAL",
+   "closureCriteria": "Obtain the facility water service agreement (U-003).",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dueDate": "2026-12-15",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "owner": "urn:aidcf:syn:party:PROGRAMME-OWNER",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-011",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:action:ACT-009",
+   "type": "Action",
+   "name": "ACT-009 Run an integrated cross-domain recovery exercise (U-004).",
+   "actionStatus": "OPEN",
+   "classification": "INTERNAL",
+   "closureCriteria": "Run an integrated cross-domain recovery exercise (U-004).",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dueDate": "2026-12-15",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "owner": "urn:aidcf:syn:party:PROGRAMME-OWNER",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-011",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:action:ACT-010",
+   "type": "Action",
+   "name": "ACT-010 Assess SL-A for the BMS zone (U-005).",
+   "actionStatus": "OPEN",
+   "classification": "INTERNAL",
+   "closureCriteria": "Assess SL-A for the BMS zone (U-005).",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dueDate": "2026-12-15",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "owner": "urn:aidcf:syn:party:PROGRAMME-OWNER",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-011",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:action:ACT-011",
+   "type": "Action",
+   "name": "ACT-011 Reassess the decision when F-003 and F-005 (CG-07), F-001 (C",
+   "actionStatus": "OPEN",
+   "classification": "INTERNAL",
+   "closureCriteria": "Reassess the decision when F-003 and F-005 (CG-07), F-001 (CG-03), F-004 (CG-15), U-003 and U-004 are closed (AD-001).",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dueDate": "2026-12-15",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "owner": "urn:aidcf:syn:party:PROGRAMME-OWNER",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-011",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:action:ACT-012",
+   "type": "Action",
+   "name": "ACT-012 Obtain an AIDCF-007A registry status code from RecordLifecyc",
+   "actionStatus": "OPEN",
+   "classification": "INTERNAL",
+   "closureCriteria": "Obtain an AIDCF-007A registry status code from RecordLifecycle (BI-002).",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dueDate": "2026-12-15",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "owner": "urn:aidcf:syn:party:PROGRAMME-OWNER",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-011",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:action:ACT-013",
+   "type": "Action",
+   "name": "ACT-013 Obtain AIDCF-010 machine-readable gate ceilings (BI-003).",
+   "actionStatus": "OPEN",
+   "classification": "INTERNAL",
+   "closureCriteria": "Obtain AIDCF-010 machine-readable gate ceilings (BI-003).",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dueDate": "2026-12-15",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "owner": "urn:aidcf:syn:party:PROGRAMME-OWNER",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-011",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:assessment:ASM-001",
+   "type": "Assessment",
+   "name": "Synthetic assessment ASM-001",
+   "architectureBaseline": "urn:aidcf:syn:snapshot:SNAP-001",
+   "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+   "classification": "INTERNAL",
+   "composedOf": [
+    "urn:aidcf:syn:control-assessment:CA-001",
+    "urn:aidcf:syn:control-assessment:CA-002",
+    "urn:aidcf:syn:control-assessment:CA-003",
+    "urn:aidcf:syn:control-assessment:CA-004",
+    "urn:aidcf:syn:control-assessment:CA-005",
+    "urn:aidcf:syn:control-assessment:CA-006",
+    "urn:aidcf:syn:control-assessment:CA-007",
+    "urn:aidcf:syn:control-assessment:CA-008",
+    "urn:aidcf:syn:control-assessment:CA-009",
+    "urn:aidcf:syn:control-assessment:CA-010",
+    "urn:aidcf:syn:control-assessment:CA-011",
+    "urn:aidcf:syn:control-assessment:CA-012",
+    "urn:aidcf:syn:gate-result:GR-CG-01",
+    "urn:aidcf:syn:gate-result:GR-CG-02",
+    "urn:aidcf:syn:gate-result:GR-CG-03",
+    "urn:aidcf:syn:gate-result:GR-CG-04",
+    "urn:aidcf:syn:gate-result:GR-CG-05",
+    "urn:aidcf:syn:gate-result:GR-CG-06",
+    "urn:aidcf:syn:gate-result:GR-CG-07",
+    "urn:aidcf:syn:gate-result:GR-CG-08",
+    "urn:aidcf:syn:gate-result:GR-CG-09",
+    "urn:aidcf:syn:gate-result:GR-CG-10",
+    "urn:aidcf:syn:gate-result:GR-CG-11",
+    "urn:aidcf:syn:gate-result:GR-CG-12",
+    "urn:aidcf:syn:gate-result:GR-CG-13",
+    "urn:aidcf:syn:gate-result:GR-CG-14",
+    "urn:aidcf:syn:gate-result:GR-CG-15",
+    "urn:aidcf:syn:sample:SMP-001",
+    "urn:aidcf:syn:test:TST-001",
+    "urn:aidcf:syn:test:TST-002"
+   ],
+   "controlUniverseCount": 360,
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "decisionQuestion": "Can the synthetic AI training and inference capability CI-001 be relied on to meet SO-01 to SO-03 in NORMAL and MAINTENANCE states, as at 2026-10-10?",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceManifest": [
+    "urn:aidcf:syn:evidence-package:EP-001"
+   ],
+   "governedBy": [
+    "urn:aidcf:syn:programme:PRG-001"
+   ],
+   "hasFinding": [
+    "urn:aidcf:syn:finding:F-006"
+   ],
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "profileRef": "AIDCF-007A v1.1 full catalogue (unweighted)",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "team": [
+    "Synthetic assessor A",
+    "Synthetic assessor B",
+    "Synthetic quality reviewer"
+   ],
+   "version": "1.0",
+   "weighting": "UNWEIGHTED"
+  },
+  {
+   "id": "urn:aidcf:syn:control-assessment:CA-001",
+   "type": "ControlAssessment",
+   "name": "CA-001 assessment of MCF-CAP-001",
+   "applicabilityBasis": "In scope: the control applies to the synthetic capability boundary.",
+   "assessedAt": "2026-10-01",
+   "assessmentMethods": [
+    "RECONCILIATION",
+    "INSPECTION",
+    "DOCUMENT_REVIEW",
+    "ANALYSIS"
+   ],
+   "assessor": "urn:aidcf:syn:party:ASSESSOR-A",
+   "claimType": "IMPLEMENTATION",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "urn:aidcf:syn:gate-result:GR-CG-01"
+   ],
+   "evidenceSufficiency": "S3",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-001",
+    "urn:aidcf:syn:evidence:EV-013",
+    "urn:aidcf:syn:evidence:EV-014"
+   ],
+   "governedBy": [
+    "urn:aidcf:syn:procedure:AP-001",
+    "https://w3id.org/aidcf/id/control/MCF-CAP-001"
+   ],
+   "implementationMaturity": "IM3",
+   "migratedFrom": [
+    "urn:aidcf:assessment:CA-001"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "result": "CONFORMING",
+   "resultRationale": "Synthetic capability register entry with owner, lifecycle and approval; configuration extract and traceability analysis cover all three required classes at S3.",
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-001"
+   ],
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:capability:CI-001",
+   "summarisedBy": [
+    "urn:aidcf:syn:score:SS-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:control-assessment:CA-002",
+   "type": "ControlAssessment",
+   "name": "CA-002 assessment of MCF-DEP-001",
+   "applicabilityBasis": "In scope: the control applies to the synthetic capability boundary.",
+   "assessedAt": "2026-10-01",
+   "assessmentMethods": [
+    "DOCUMENT_REVIEW",
+    "RECONCILIATION",
+    "INSPECTION",
+    "SAMPLING"
+   ],
+   "assessor": "urn:aidcf:syn:party:ASSESSOR-B",
+   "claimType": "IMPLEMENTATION",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "urn:aidcf:syn:gate-result:GR-CG-02",
+    "urn:aidcf:syn:gate-result:GR-CG-03"
+   ],
+   "evidenceSufficiency": "S4",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-002",
+    "urn:aidcf:syn:evidence:EV-015"
+   ],
+   "governedBy": [
+    "urn:aidcf:syn:procedure:AP-002",
+    "https://w3id.org/aidcf/id/control/MCF-DEP-001"
+   ],
+   "hasFinding": [
+    "urn:aidcf:syn:finding:F-001"
+   ],
+   "implementationMaturity": "IM2",
+   "migratedFrom": [
+    "urn:aidcf:assessment:CA-002"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "result": "PARTIAL",
+   "resultRationale": "Asset-to-function mapping covers power, cooling and compute but omits the facility water plant and recovery dependencies (F-001).",
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-001"
+   ],
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:snapshot:SNAP-001",
+   "summarisedBy": [
+    "urn:aidcf:syn:score:SS-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:control-assessment:CA-003",
+   "type": "ControlAssessment",
+   "name": "CA-003 assessment of MCF-POW-001",
+   "applicabilityBasis": "In scope: the control applies to the synthetic capability boundary.",
+   "assessedAt": "2026-10-01",
+   "assessmentMethods": [
+    "DOCUMENT_REVIEW",
+    "ANALYSIS",
+    "RECONCILIATION"
+   ],
+   "assessor": "urn:aidcf:syn:party:ASSESSOR-A",
+   "claimType": "OPERATION",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "urn:aidcf:syn:gate-result:GR-CG-03",
+    "urn:aidcf:syn:gate-result:GR-CG-05"
+   ],
+   "evidenceSufficiency": "S5",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-003",
+    "urn:aidcf:syn:evidence:EV-016",
+    "urn:aidcf:syn:evidence:EV-017",
+    "urn:aidcf:syn:evidence:EV-018"
+   ],
+   "governedBy": [
+    "urn:aidcf:syn:procedure:AP-003",
+    "https://w3id.org/aidcf/id/control/MCF-POW-001"
+   ],
+   "implementationMaturity": "IM4",
+   "migratedFrom": [
+    "urn:aidcf:assessment:CA-003"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "result": "CONFORMING",
+   "resultRationale": "Utility capacity evidenced by documentary, configuration, operational metering and analytical evidence at S5.",
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-001"
+   ],
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:system:SYS-POW",
+   "summarisedBy": [
+    "urn:aidcf:syn:score:SS-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:control-assessment:CA-004",
+   "type": "ControlAssessment",
+   "name": "CA-004 assessment of MCF-THM-009",
+   "applicabilityBasis": "In scope: the control applies to the synthetic capability boundary.",
+   "assessedAt": "2026-10-01",
+   "assessmentMethods": [
+    "DOCUMENT_REVIEW",
+    "ANALYSIS",
+    "INQUIRY"
+   ],
+   "assessor": "urn:aidcf:syn:party:ASSESSOR-B",
+   "claimType": "DESIGN",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "urn:aidcf:syn:gate-result:GR-CG-06"
+   ],
+   "evidenceSufficiency": "S3",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-004",
+    "urn:aidcf:syn:evidence:EV-019"
+   ],
+   "governedBy": [
+    "urn:aidcf:syn:procedure:AP-004",
+    "https://w3id.org/aidcf/id/control/MCF-THM-009"
+   ],
+   "hasFinding": [
+    "urn:aidcf:syn:finding:F-002"
+   ],
+   "implementationMaturity": "IM2",
+   "migratedFrom": [
+    "urn:aidcf:assessment:CA-004"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "result": "PARTIAL",
+   "resultRationale": "Direct-to-chip design reviewed; the design basis does not state cold-plate flow at the transient envelope (F-002).",
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-001"
+   ],
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:system:SYS-THM",
+   "summarisedBy": [
+    "urn:aidcf:syn:score:SS-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:control-assessment:CA-005",
+   "type": "ControlAssessment",
+   "name": "CA-005 assessment of MCF-CMP-001",
+   "applicabilityBasis": "In scope: the control applies to the synthetic capability boundary.",
+   "assessedAt": "2026-10-01",
+   "assessmentMethods": [
+    "DOCUMENT_REVIEW",
+    "ANALYSIS",
+    "INQUIRY",
+    "RECONCILIATION"
+   ],
+   "assessor": "urn:aidcf:syn:party:ASSESSOR-A",
+   "claimType": "DESIGN",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "urn:aidcf:syn:gate-result:GR-CG-01",
+    "urn:aidcf:syn:gate-result:GR-CG-08"
+   ],
+   "evidenceSufficiency": "S3",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-005",
+    "urn:aidcf:syn:evidence:EV-020"
+   ],
+   "governedBy": [
+    "urn:aidcf:syn:procedure:AP-005",
+    "https://w3id.org/aidcf/id/control/MCF-CMP-001"
+   ],
+   "implementationMaturity": "IM3",
+   "migratedFrom": [
+    "urn:aidcf:assessment:CA-005"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "result": "CONFORMING",
+   "resultRationale": "Accelerator architecture design and analysis evidence meet the DESIGN claim at S3.",
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-001"
+   ],
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:system:SYS-CMP",
+   "summarisedBy": [
+    "urn:aidcf:syn:score:SS-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:control-assessment:CA-006",
+   "type": "ControlAssessment",
+   "name": "CA-006 assessment of MCF-STO-017",
+   "applicabilityBasis": "In scope: the control applies to the synthetic capability boundary.",
+   "assessedAt": "2026-10-01",
+   "assessmentMethods": [
+    "TEST",
+    "REPERFORMANCE",
+    "SAMPLING"
+   ],
+   "assessor": "urn:aidcf:syn:party:ASSESSOR-B",
+   "claimType": "EFFECTIVENESS",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "urn:aidcf:syn:gate-result:GR-CG-08",
+    "urn:aidcf:syn:gate-result:GR-CG-10"
+   ],
+   "evidenceSufficiency": "S4",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-006",
+    "urn:aidcf:syn:evidence:EV-021",
+    "urn:aidcf:syn:evidence:EV-022"
+   ],
+   "governedBy": [
+    "urn:aidcf:syn:procedure:AP-006",
+    "https://w3id.org/aidcf/id/control/MCF-STO-017"
+   ],
+   "implementationMaturity": "IM4",
+   "migratedFrom": [
+    "urn:aidcf:assessment:CA-006"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "result": "CONFORMING",
+   "resultRationale": "Checkpoint durability shown by configuration, operational logs and a synthetic restore test (TST-001) at S4.",
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-001"
+   ],
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:system:SYS-STO",
+   "summarisedBy": [
+    "urn:aidcf:syn:score:SS-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:control-assessment:CA-007",
+   "type": "ControlAssessment",
+   "name": "CA-007 assessment of MCF-NET-001",
+   "applicabilityBasis": "In scope: the control applies to the synthetic capability boundary.",
+   "assessedAt": "2026-10-01",
+   "assessmentMethods": [
+    "DOCUMENT_REVIEW",
+    "RECONCILIATION",
+    "ANALYSIS",
+    "SAMPLING",
+    "INSPECTION"
+   ],
+   "assessor": "urn:aidcf:syn:party:ASSESSOR-A",
+   "claimType": "IMPLEMENTATION",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "urn:aidcf:syn:gate-result:GR-CG-02",
+    "urn:aidcf:syn:gate-result:GR-CG-08"
+   ],
+   "evidenceSufficiency": "S4",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-007",
+    "urn:aidcf:syn:evidence:EV-023",
+    "urn:aidcf:syn:evidence:EV-024"
+   ],
+   "governedBy": [
+    "urn:aidcf:syn:procedure:AP-007",
+    "https://w3id.org/aidcf/id/control/MCF-NET-001"
+   ],
+   "hasUnknown": [
+    "urn:aidcf:syn:unknown:U-002"
+   ],
+   "implementationMaturity": "IM3",
+   "migratedFrom": [
+    "urn:aidcf:assessment:CA-007"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "result": "CONFORMING",
+   "resultRationale": "Fabric topology documented, exported and observed at S4; topology export age recorded as U-002 (US2).",
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-001"
+   ],
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:system:SYS-NET",
+   "summarisedBy": [
+    "urn:aidcf:syn:score:SS-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:control-assessment:CA-008",
+   "type": "ControlAssessment",
+   "name": "CA-008 assessment of MCF-OPS-013",
+   "applicabilityBasis": "In scope: the control applies to the synthetic capability boundary.",
+   "assessedAt": "2026-10-01",
+   "assessmentMethods": [
+    "DOCUMENT_REVIEW",
+    "ANALYSIS",
+    "SAMPLING",
+    "OBSERVATION"
+   ],
+   "assessor": "urn:aidcf:syn:party:ASSESSOR-B",
+   "claimType": "OPERATION",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "urn:aidcf:syn:gate-result:GR-CG-05",
+    "urn:aidcf:syn:gate-result:GR-CG-06",
+    "urn:aidcf:syn:gate-result:GR-CG-07"
+   ],
+   "evidenceSufficiency": "S4",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-008",
+    "urn:aidcf:syn:evidence:EV-025"
+   ],
+   "governedBy": [
+    "urn:aidcf:syn:procedure:AP-008",
+    "https://w3id.org/aidcf/id/control/MCF-OPS-013"
+   ],
+   "hasFinding": [
+    "urn:aidcf:syn:finding:F-003"
+   ],
+   "implementationMaturity": "IM2",
+   "migratedFrom": [
+    "urn:aidcf:assessment:CA-008"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "result": "PARTIAL",
+   "resultRationale": "Alarm rationalisation completed for power but not for cooling and leak alarms (F-003).",
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-001"
+   ],
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:system:SYS-CTL",
+   "summarisedBy": [
+    "urn:aidcf:syn:score:SS-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:control-assessment:CA-009",
+   "type": "ControlAssessment",
+   "name": "CA-009 assessment of MCF-RES-017",
+   "applicabilityBasis": "In scope: the control applies to the synthetic capability boundary.",
+   "assessedAt": "2026-10-01",
+   "assessmentMethods": [
+    "SAMPLING",
+    "DOCUMENT_REVIEW",
+    "ANALYSIS"
+   ],
+   "assessor": "urn:aidcf:syn:party:ASSESSOR-A",
+   "claimType": "OPERATION",
+   "classification": "INTERNAL",
+   "confidence": "CONF-1",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "urn:aidcf:syn:gate-result:GR-CG-05",
+    "urn:aidcf:syn:gate-result:GR-CG-06",
+    "urn:aidcf:syn:gate-result:GR-CG-10"
+   ],
+   "evidenceSufficiency": "S2",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-009"
+   ],
+   "governedBy": [
+    "urn:aidcf:syn:procedure:AP-009",
+    "https://w3id.org/aidcf/id/control/MCF-RES-017"
+   ],
+   "hasUnknown": [
+    "urn:aidcf:syn:unknown:U-001"
+   ],
+   "migratedFrom": [
+    "urn:aidcf:assessment:CA-009"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "result": "UNKNOWN",
+   "resultRationale": "Component tests evidenced only by operational records; no E4 test evidence at the S3 floor, so the result is UNKNOWN (U-001).",
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-001"
+   ],
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:system:SYS-POW",
+   "summarisedBy": [
+    "urn:aidcf:syn:score:SS-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:control-assessment:CA-010",
+   "type": "ControlAssessment",
+   "name": "CA-010 assessment of MCF-SUP-021",
+   "applicabilityBasis": "In scope: the control applies to the synthetic capability boundary.",
+   "assessedAt": "2026-10-01",
+   "assessmentMethods": [
+    "DOCUMENT_REVIEW",
+    "INSPECTION",
+    "RECONCILIATION",
+    "SAMPLING"
+   ],
+   "assessor": "urn:aidcf:syn:party:ASSESSOR-B",
+   "claimType": "IMPLEMENTATION",
+   "classification": "CONFIDENTIAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "distributionControlRef": "urn:aidcf:syn:distribution-control:DC-001",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "urn:aidcf:syn:gate-result:GR-CG-13",
+    "urn:aidcf:syn:gate-result:GR-CG-15"
+   ],
+   "evidenceSufficiency": "S4",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-010",
+    "urn:aidcf:syn:evidence:EV-026"
+   ],
+   "governedBy": [
+    "urn:aidcf:syn:procedure:AP-010",
+    "https://w3id.org/aidcf/id/control/MCF-SUP-021"
+   ],
+   "hasFinding": [
+    "urn:aidcf:syn:finding:F-004"
+   ],
+   "implementationMaturity": "IM2",
+   "migratedFrom": [
+    "urn:aidcf:assessment:CA-010"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "result": "PARTIAL",
+   "resultRationale": "Support identity controls exist for the remote-access conduit, but vendor accounts are not time-bound (F-004).",
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-001"
+   ],
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:conduit:CND-01",
+   "summarisedBy": [
+    "urn:aidcf:syn:score:SS-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:control-assessment:CA-011",
+   "type": "ControlAssessment",
+   "name": "CA-011 assessment of MCF-SEC-005",
+   "applicabilityBasis": "In scope: the control applies to the synthetic capability boundary.",
+   "assessedAt": "2026-10-01",
+   "assessmentMethods": [
+    "DOCUMENT_REVIEW",
+    "INSPECTION",
+    "ANALYSIS",
+    "TEST",
+    "RECONCILIATION"
+   ],
+   "assessor": "urn:aidcf:syn:party:ASSESSOR-A",
+   "claimType": "EFFECTIVENESS",
+   "classification": "CONFIDENTIAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "distributionControlRef": "urn:aidcf:syn:distribution-control:DC-001",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evaluatesGate": [
+    "urn:aidcf:syn:gate-result:GR-CG-05",
+    "urn:aidcf:syn:gate-result:GR-CG-06",
+    "urn:aidcf:syn:gate-result:GR-CG-07",
+    "urn:aidcf:syn:gate-result:GR-CG-15"
+   ],
+   "evidenceSufficiency": "S4",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-011",
+    "urn:aidcf:syn:evidence:EV-027",
+    "urn:aidcf:syn:evidence:EV-028",
+    "urn:aidcf:syn:evidence:EV-029"
+   ],
+   "governedBy": [
+    "urn:aidcf:syn:procedure:AP-011",
+    "https://w3id.org/aidcf/id/control/MCF-SEC-005"
+   ],
+   "hasFinding": [
+    "urn:aidcf:syn:finding:F-005"
+   ],
+   "implementationMaturity": "IM2",
+   "migratedFrom": [
+    "urn:aidcf:assessment:CA-011"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "result": "PARTIAL",
+   "resultRationale": "BMS and EPMS security controls partly effective; write authority to the BMS controller is not restricted to named identities (F-005).",
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-001"
+   ],
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:zone:ZONE-BMS",
+   "summarisedBy": [
+    "urn:aidcf:syn:score:SS-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:control-assessment:CA-012",
+   "type": "ControlAssessment",
+   "name": "CA-012 assessment of MCF-EVA-017",
+   "applicabilityBasis": "In scope: the control applies to the synthetic capability boundary.",
+   "assessedAt": "2026-10-01",
+   "assessmentMethods": [
+    "DOCUMENT_REVIEW",
+    "RECONCILIATION"
+   ],
+   "assessor": "urn:aidcf:syn:party:ASSESSOR-B",
+   "claimType": "DESIGN",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceSufficiency": "S3",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-012",
+    "urn:aidcf:syn:evidence:EV-030"
+   ],
+   "governedBy": [
+    "urn:aidcf:syn:procedure:AP-012",
+    "https://w3id.org/aidcf/id/control/MCF-EVA-017"
+   ],
+   "implementationMaturity": "IM3",
+   "migratedFrom": [
+    "urn:aidcf:assessment:CA-012"
+   ],
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "result": "CONFORMING",
+   "resultRationale": "Gate applicability recorded for all fifteen gates with rationale and no APPROVED_NA claim.",
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-001"
+   ],
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:assessment:ASM-001",
+   "summarisedBy": [
+    "urn:aidcf:syn:score:SS-001"
+   ],
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:finding:F-001",
+   "type": "Finding",
+   "name": "F-001 MCF-DEP-001",
+   "cause": "Mapping scope limited to IT-adjacent plant.",
+   "classification": "INTERNAL",
+   "condition": "Asset-to-function mapping omits the facility water plant and recovery dependencies.",
+   "consequence": "Shared-source dependencies for RF-02 cannot be analysed.",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criterionRef": "MCF-DEP-001",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-002"
+   ],
+   "findingClass": "WEAKNESS",
+   "findingStatus": "OPEN",
+   "gateEffect": "CRITICAL input to CG-03 is PARTIAL: CG-03 FAIL.",
+   "owner": "urn:aidcf:syn:party:FAC-OPS",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "requiresAction": [
+    "urn:aidcf:syn:action:ACT-001"
+   ],
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "scoreEffect": "Scored PARTIAL (50).",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:finding:F-002",
+   "type": "Finding",
+   "name": "F-002 MCF-THM-009",
+   "cause": "Vendor data not incorporated.",
+   "classification": "INTERNAL",
+   "condition": "Design basis does not state cold-plate flow at the transient envelope.",
+   "consequence": "Thermal margin under transients is not demonstrated.",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criterionRef": "MCF-THM-009",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-004"
+   ],
+   "findingClass": "WEAKNESS",
+   "findingStatus": "OPEN",
+   "gateEffect": "SUPPORTING input to CG-06; no gate-level defeat on its own.",
+   "owner": "urn:aidcf:syn:party:FAC-OPS",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "requiresAction": [
+    "urn:aidcf:syn:action:ACT-002"
+   ],
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "scoreEffect": "Scored PARTIAL (50).",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:finding:F-003",
+   "type": "Finding",
+   "name": "F-003 MCF-OPS-013",
+   "cause": "Rationalisation programme incomplete.",
+   "classification": "INTERNAL",
+   "condition": "Cooling and leak alarms are not rationalised.",
+   "consequence": "Critical alarms may not reach the operator with a defined response.",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criterionRef": "MCF-OPS-013",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-008"
+   ],
+   "findingClass": "SIGNIFICANT_WEAKNESS",
+   "findingStatus": "OPEN",
+   "gateEffect": "CRITICAL input to CG-07 is PARTIAL: CG-07 FAIL.",
+   "owner": "urn:aidcf:syn:party:FAC-OPS",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "requiresAction": [
+    "urn:aidcf:syn:action:ACT-003"
+   ],
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "scoreEffect": "Scored PARTIAL (50).",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:finding:F-004",
+   "type": "Finding",
+   "name": "F-004 MCF-SUP-021",
+   "cause": "Standing vendor access retained for convenience.",
+   "classification": "CONFIDENTIAL",
+   "condition": "Vendor support accounts on the remote-access conduit are not time-bound.",
+   "consequence": "Third-party access is not revoked in a timely way.",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criterionRef": "MCF-SUP-021",
+   "distributionControlRef": "urn:aidcf:syn:distribution-control:DC-001",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-010"
+   ],
+   "findingClass": "SIGNIFICANT_WEAKNESS",
+   "findingStatus": "OPEN",
+   "gateEffect": "CRITICAL input to CG-15 is PARTIAL: CG-15 FAIL.",
+   "owner": "urn:aidcf:syn:party:OT-SEC",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "requiresAction": [
+    "urn:aidcf:syn:action:ACT-004"
+   ],
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "scoreEffect": "Scored PARTIAL (50).",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:finding:F-005",
+   "type": "Finding",
+   "name": "F-005 MCF-SEC-005",
+   "cause": "Shared engineering account in use.",
+   "classification": "CONFIDENTIAL",
+   "condition": "Write authority to the BMS controller is not restricted to named identities.",
+   "consequence": "Unattributable commands to cooling and power plant are possible.",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criterionRef": "MCF-SEC-005",
+   "distributionControlRef": "urn:aidcf:syn:distribution-control:DC-001",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-011"
+   ],
+   "findingClass": "SIGNIFICANT_WEAKNESS",
+   "findingStatus": "OPEN",
+   "gateEffect": "CRITICAL input to CG-07 is PARTIAL: CG-07 FAIL.",
+   "owner": "urn:aidcf:syn:party:OT-SEC",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "requiresAction": [
+    "urn:aidcf:syn:action:ACT-005"
+   ],
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "scoreEffect": "Scored PARTIAL (50).",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:finding:F-006",
+   "type": "Finding",
+   "name": "F-006 evidence register naming",
+   "cause": "Manual naming.",
+   "classification": "INTERNAL",
+   "closedBy": [
+    "urn:aidcf:syn:review:RR-003"
+   ],
+   "condition": "Two evidence fixtures used inconsistent file naming.",
+   "consequence": "Minor retrieval delay.",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "criterionRef": "MCF-EVA-017",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-012"
+   ],
+   "findingClass": "OBSERVATION",
+   "findingStatus": "CLOSED",
+   "gateEffect": "None.",
+   "owner": "urn:aidcf:syn:party:FAC-OPS",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "reviewedBy": [
+    "urn:aidcf:syn:review:RR-003"
+   ],
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "scoreEffect": "None.",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:procedure:AP-001",
+   "type": "AssessmentProcedure",
+   "name": "Procedure for MCF-CAP-001",
+   "assessmentMethods": [
+    "RECONCILIATION",
+    "INSPECTION",
+    "DOCUMENT_REVIEW",
+    "ANALYSIS"
+   ],
+   "claimType": "IMPLEMENTATION",
+   "classification": "INTERNAL",
+   "controlRef": "https://w3id.org/aidcf/id/control/MCF-CAP-001",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "procedureSteps": [
+    "Obtain the register extract and check each instance for the required attributes.",
+    "Extract the scheduler or orchestration inventory and reconcile clusters, pods and node counts to Capability Instances.",
+    "Reconcile instance locations to the facility asset register.",
+    "Analyse unmatched items and their dispositions; treat unexplained differences as Findings.",
+    "Check reconciliation dates against the interval and change events.",
+    "Compare capabilities named in reports issued in the period with the register."
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "resultsIn": [
+    "urn:aidcf:syn:control-assessment:CA-001"
+   ],
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:procedure:AP-002",
+   "type": "AssessmentProcedure",
+   "name": "Procedure for MCF-DEP-001",
+   "assessmentMethods": [
+    "DOCUMENT_REVIEW",
+    "RECONCILIATION",
+    "INSPECTION",
+    "SAMPLING"
+   ],
+   "claimType": "IMPLEMENTATION",
+   "classification": "INTERNAL",
+   "controlRef": "https://w3id.org/aidcf/id/control/MCF-DEP-001",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "procedureSteps": [
+    "Obtain the Required Function list for the Capability Instance and the current asset-to-function map with its version and effective date.",
+    "Check that every Required Function has implementing systems and assets per declared operating state; list gaps.",
+    "Select a reconciliation sample per InfrastructureSystem using AIDCF-009 sampling rules, weighted towards assets in recent changes.",
+    "Verify sampled assets by walk-down or authoritative E2 export (tag, location, serial, model) against the map and as-built register.",
+    "Extract assets in the register that are not mapped and confirm their disposition.",
+    "Confirm map re-validation after each material change in the period by cross-referencing the change log.",
+    "Record Findings for mismatches and UNKNOWN Records for unmappable functions or assets."
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "resultsIn": [
+    "urn:aidcf:syn:control-assessment:CA-002"
+   ],
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:procedure:AP-003",
+   "type": "AssessmentProcedure",
+   "name": "Procedure for MCF-POW-001",
+   "assessmentMethods": [
+    "DOCUMENT_REVIEW",
+    "ANALYSIS",
+    "RECONCILIATION"
+   ],
+   "claimType": "OPERATION",
+   "classification": "INTERNAL",
+   "controlRef": "https://w3id.org/aidcf/id/control/MCF-POW-001",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "procedureSteps": [
+    "Extract firm and non-firm capacity and curtailment terms from the agreement.",
+    "Rebuild the demand model from rack power limits, mechanical design data and recharge rates.",
+    "Compare with metered peaks at the finest available resolution.",
+    "Check margin and forecast deployments against firm capacity.",
+    "Reconcile incomer and transformer ratings on the single-line diagram."
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "resultsIn": [
+    "urn:aidcf:syn:control-assessment:CA-003"
+   ],
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:procedure:AP-004",
+   "type": "AssessmentProcedure",
+   "name": "Procedure for MCF-THM-009",
+   "assessmentMethods": [
+    "DOCUMENT_REVIEW",
+    "ANALYSIS",
+    "INQUIRY"
+   ],
+   "claimType": "DESIGN",
+   "classification": "INTERNAL",
+   "controlRef": "https://w3id.org/aidcf/id/control/MCF-THM-009",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "procedureSteps": [
+    "Obtain design basis, P&ID and OEM requirements.",
+    "Compare each design parameter with the OEM requirement.",
+    "Check approach temperature: worst-case FWS supply + approach ≤ maximum TCS supply.",
+    "Confirm OEM compatibility statements.",
+    "Record mismatches as Findings."
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "resultsIn": [
+    "urn:aidcf:syn:control-assessment:CA-004"
+   ],
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:procedure:AP-005",
+   "type": "AssessmentProcedure",
+   "name": "Procedure for MCF-CMP-001",
+   "assessmentMethods": [
+    "DOCUMENT_REVIEW",
+    "ANALYSIS",
+    "INQUIRY",
+    "RECONCILIATION"
+   ],
+   "claimType": "DESIGN",
+   "classification": "INTERNAL",
+   "controlRef": "https://w3id.org/aidcf/id/control/MCF-CMP-001",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "procedureSteps": [
+    "Obtain the architecture record and workload statement.",
+    "Trace each attribute to a workload requirement.",
+    "Reconcile rack power and heat with facility budgets.",
+    "Check consistency with fabric design.",
+    "Record untraced attributes as Findings and missing workload inputs as UNKNOWN Records."
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "resultsIn": [
+    "urn:aidcf:syn:control-assessment:CA-005"
+   ],
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:procedure:AP-006",
+   "type": "AssessmentProcedure",
+   "name": "Procedure for MCF-STO-017",
+   "assessmentMethods": [
+    "TEST",
+    "REPERFORMANCE",
+    "SAMPLING"
+   ],
+   "claimType": "EFFECTIVENESS",
+   "classification": "INTERNAL",
+   "controlRef": "https://w3id.org/aidcf/id/control/MCF-STO-017",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "procedureSteps": [
+    "Sample production jobs and their checkpoint manifests.",
+    "Verify shard checksums against the manifest.",
+    "Review retention of previous good checkpoints.",
+    "Review the interrupted-write test result."
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "resultsIn": [
+    "urn:aidcf:syn:control-assessment:CA-006"
+   ],
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:procedure:AP-007",
+   "type": "AssessmentProcedure",
+   "name": "Procedure for MCF-NET-001",
+   "assessmentMethods": [
+    "DOCUMENT_REVIEW",
+    "RECONCILIATION",
+    "ANALYSIS",
+    "SAMPLING",
+    "INSPECTION"
+   ],
+   "claimType": "IMPLEMENTATION",
+   "classification": "INTERNAL",
+   "controlRef": "https://w3id.org/aidcf/id/control/MCF-NET-001",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "procedureSteps": [
+    "Obtain the approved topology design and confirm its version applies to the assessed Capability Instance.",
+    "Extract discovered topology from switches or the subnet manager using read-only collection.",
+    "Run or reperform the reconciliation of discovered links, port speeds and neighbours against design port maps.",
+    "Verify rail and plane assignment for a sample of nodes of each type, including recently replaced nodes.",
+    "Trace design bisection bandwidth to the Service Outcome performance requirement and to NET-003 oversubscription analysis.",
+    "Disposition every mismatch as approved variance or Finding and record residual UNKNOWNs."
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "resultsIn": [
+    "urn:aidcf:syn:control-assessment:CA-007"
+   ],
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:procedure:AP-008",
+   "type": "AssessmentProcedure",
+   "name": "Procedure for MCF-OPS-013",
+   "assessmentMethods": [
+    "DOCUMENT_REVIEW",
+    "ANALYSIS",
+    "SAMPLING",
+    "OBSERVATION"
+   ],
+   "claimType": "OPERATION",
+   "classification": "INTERNAL",
+   "controlRef": "https://w3id.org/aidcf/id/control/MCF-OPS-013",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "procedureSteps": [
+    "Obtain philosophy and database.",
+    "Sample critical alarms and check rationalisation fields.",
+    "Cross-check priorities with DEP-003 time-to-impact.",
+    "Compute alarm rates and standing/chattering counts from raw logs.",
+    "Review shelving log.",
+    "Observe console annunciation and escalation."
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "resultsIn": [
+    "urn:aidcf:syn:control-assessment:CA-008"
+   ],
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:procedure:AP-009",
+   "type": "AssessmentProcedure",
+   "name": "Procedure for MCF-RES-017",
+   "assessmentMethods": [
+    "SAMPLING",
+    "DOCUMENT_REVIEW",
+    "ANALYSIS"
+   ],
+   "claimType": "OPERATION",
+   "classification": "INTERNAL",
+   "controlRef": "https://w3id.org/aidcf/id/control/MCF-RES-017",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "procedureSteps": [
+    "Review programme coverage.",
+    "Sample components from asset registers and trace tests.",
+    "Review defects and closure.",
+    "Review adherence reviews."
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "resultsIn": [
+    "urn:aidcf:syn:control-assessment:CA-009"
+   ],
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:procedure:AP-010",
+   "type": "AssessmentProcedure",
+   "name": "Procedure for MCF-SUP-021",
+   "assessmentMethods": [
+    "DOCUMENT_REVIEW",
+    "INSPECTION",
+    "RECONCILIATION",
+    "SAMPLING"
+   ],
+   "claimType": "IMPLEMENTATION",
+   "classification": "INTERNAL",
+   "controlRef": "https://w3id.org/aidcf/id/control/MCF-SUP-021",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "procedureSteps": [
+    "Obtain register.",
+    "Export accounts from a sample of systems including facility controllers.",
+    "Reconcile accounts to named identities.",
+    "Check MFA and exceptions."
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "resultsIn": [
+    "urn:aidcf:syn:control-assessment:CA-010"
+   ],
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:procedure:AP-011",
+   "type": "AssessmentProcedure",
+   "name": "Procedure for MCF-SEC-005",
+   "assessmentMethods": [
+    "DOCUMENT_REVIEW",
+    "INSPECTION",
+    "ANALYSIS",
+    "TEST",
+    "RECONCILIATION"
+   ],
+   "claimType": "EFFECTIVENESS",
+   "classification": "INTERNAL",
+   "controlRef": "https://w3id.org/aidcf/id/control/MCF-SEC-005",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "procedureSteps": [
+    "Review the risk assessment, zone/conduit model and SL-T assignments.",
+    "Review SL gap assessment by foundational requirement area.",
+    "Trace protection and safety functions to confirm independence from BMS/EPMS networks.",
+    "Inspect credential and protocol restrictions on a sample of controllers.",
+    "Review or witness write/command blocking tests from non-permitted zones.",
+    "Review fail-safe evidence and logic integrity monitoring."
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "resultsIn": [
+    "urn:aidcf:syn:control-assessment:CA-011"
+   ],
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:procedure:AP-012",
+   "type": "AssessmentProcedure",
+   "name": "Procedure for MCF-EVA-017",
+   "assessmentMethods": [
+    "DOCUMENT_REVIEW",
+    "RECONCILIATION"
+   ],
+   "claimType": "DESIGN",
+   "classification": "INTERNAL",
+   "controlRef": "https://w3id.org/aidcf/id/control/MCF-EVA-017",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "procedureSteps": [
+    "Obtain the applicability record and check all fifteen gates.",
+    "Review APPROVED_NA rationale and approvals.",
+    "Reconcile gate-control lists to registry mappings filtered by scope.",
+    "Confirm gate criteria and floors match the declared AIDCF-010 version."
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "resultsIn": [
+    "urn:aidcf:syn:control-assessment:CA-012"
+   ],
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:sample:SMP-001",
+   "type": "Sample",
+   "name": "Synthetic sample of required functions for MCF-DEP-001",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "population": "Six required functions RF-01 to RF-06",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "resultsIn": [
+    "urn:aidcf:syn:control-assessment:CA-002"
+   ],
+   "sampleSize": 6,
+   "schemaVersion": "1.3",
+   "selectionMethod": "Whole population",
+   "semanticOwner": "AIDCF-009",
+   "sizeRationale": "Population is small enough to examine in full.",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:test:TST-001",
+   "type": "TestRecord",
+   "name": "Synthetic checkpoint restore test",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "observations": "Synthetic restore within tolerance.",
+   "preconditions": "Synthetic test cluster; no production workload.",
+   "procedureRef": "urn:aidcf:syn:procedure:AP-006",
+   "procedureSteps": [
+    "Write checkpoint",
+    "Fail job",
+    "Restore",
+    "Verify state hash"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "resultsIn": [
+    "urn:aidcf:syn:control-assessment:CA-006"
+   ],
+   "safetyControls": "Non-intrusive; synthetic environment only.",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "testAuthority": "urn:aidcf:syn:party:IT-OPS",
+   "testDate": "2026-09-20",
+   "testOutcome": "Synthetic: passed",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:test:TST-002",
+   "type": "TestRecord",
+   "name": "Synthetic BMS write-authority test",
+   "classification": "CONFIDENTIAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "distributionControlRef": "urn:aidcf:syn:distribution-control:DC-001",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "observations": "Synthetic: write accepted from shared engineering account.",
+   "preconditions": "Synthetic controller simulator only.",
+   "procedureRef": "urn:aidcf:syn:procedure:AP-011",
+   "procedureSteps": [
+    "Attempt write with unnamed account",
+    "Record result"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "resultsIn": [
+    "urn:aidcf:syn:control-assessment:CA-011"
+   ],
+   "safetyControls": "No live controller; simulator only.",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-009",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "testAuthority": "urn:aidcf:syn:party:OT-SEC",
+   "testDate": "2026-09-22",
+   "testOutcome": "Synthetic: failed criterion",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:unknown:U-001",
+   "type": "UnknownRecord",
+   "name": "U-001 E4 test evidence for MCF-RES-017",
+   "classification": "INTERNAL",
+   "constrains": [
+    "urn:aidcf:syn:recommendation:DR-001",
+    "urn:aidcf:syn:decision:AD-001"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "decisionEffect": "Control result UNKNOWN; decision capped at CONDITIONALLY_ASSURED by this UNKNOWN alone.",
+   "disposition": "Owner accepted; evidence requested; decision effect applied until resolved.",
+   "dueDate": "2026-12-15",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceNeeded": "Component test reports (E4).",
+   "material": true,
+   "missingAttribute": "E4 test evidence for MCF-RES-017",
+   "owner": "urn:aidcf:syn:party:IT-OPS",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "reason": "No component test records at the S3 floor were provided.",
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "requiresAction": [
+    "urn:aidcf:syn:action:ACT-006"
+   ],
+   "resolutionTrigger": "Receipt of E4 test records",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-008",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:control-assessment:CA-009",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "unknownSeverity": "US3",
+   "unknownStatus": "DISPOSITIONED",
+   "unknownType": "U1",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:unknown:U-002",
+   "type": "UnknownRecord",
+   "name": "U-002 Current fabric topology export",
+   "classification": "INTERNAL",
+   "constrains": [
+    "urn:aidcf:syn:gate-result:GR-CG-08"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "decisionEffect": "Limitation recorded; no ceiling.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceNeeded": "Fresh topology export.",
+   "material": false,
+   "missingAttribute": "Current fabric topology export",
+   "owner": "urn:aidcf:syn:party:IT-OPS",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "qualifies": [
+    "urn:aidcf:syn:control-assessment:CA-007"
+   ],
+   "reason": "Topology export is older than the evidence currency window.",
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "requiresAction": [
+    "urn:aidcf:syn:action:ACT-007"
+   ],
+   "resolutionTrigger": "Next topology export",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-008",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:control-assessment:CA-007",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "unknownSeverity": "US2",
+   "unknownStatus": "OPEN",
+   "unknownType": "U3",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:unknown:U-003",
+   "type": "UnknownRecord",
+   "name": "U-003 Exclusivity of the facility water plant",
+   "challenges": [
+    "urn:aidcf:syn:assertion:ASR-02"
+   ],
+   "classification": "INTERNAL",
+   "constrains": [
+    "urn:aidcf:syn:gate-result:GR-CG-03",
+    "urn:aidcf:syn:gate-result:GR-CG-06",
+    "urn:aidcf:syn:recommendation:DR-001",
+    "urn:aidcf:syn:decision:AD-001"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "decisionEffect": "Systemic: decision capped at INCONCLUSIVE by this UNKNOWN alone; CG-03 and CG-06 cannot pass.",
+   "disposition": "Owner accepted; evidence requested; decision effect applied until resolved.",
+   "dueDate": "2026-12-15",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceNeeded": "Facility water service agreement and plant schematic.",
+   "material": true,
+   "missingAttribute": "Exclusivity of the facility water plant",
+   "owner": "urn:aidcf:syn:party:FAC-OPS",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "reason": "It cannot be determined whether the facility water plant is shared with other tenants.",
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "requiresAction": [
+    "urn:aidcf:syn:action:ACT-008"
+   ],
+   "resolutionTrigger": "Receipt of the water service agreement",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-008",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:system:SYS-FWS",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "unknownSeverity": "US5",
+   "unknownStatus": "DISPOSITIONED",
+   "unknownType": "U10",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:unknown:U-004",
+   "type": "UnknownRecord",
+   "name": "U-004 Integrated cross-domain recovery exercise (GC-10-5)",
+   "classification": "INTERNAL",
+   "constrains": [
+    "urn:aidcf:syn:gate-result:GR-CG-10",
+    "urn:aidcf:syn:recommendation:DR-001",
+    "urn:aidcf:syn:decision:AD-001"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "decisionEffect": "Critical: CG-10 UNKNOWN; decision capped at LIMITED by this UNKNOWN alone.",
+   "disposition": "Owner accepted; evidence requested; decision effect applied until resolved.",
+   "dueDate": "2026-12-15",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceNeeded": "Integrated recovery exercise report.",
+   "material": true,
+   "missingAttribute": "Integrated cross-domain recovery exercise (GC-10-5)",
+   "owner": "urn:aidcf:syn:party:IT-OPS",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "reason": "No integrated recovery exercise within the evidence currency window was provided.",
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "requiresAction": [
+    "urn:aidcf:syn:action:ACT-009"
+   ],
+   "resolutionTrigger": "Completion of a synthetic integrated exercise",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-008",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:gate-result:GR-CG-10",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "unknownSeverity": "US4",
+   "unknownStatus": "DISPOSITIONED",
+   "unknownType": "U1",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:unknown:U-005",
+   "type": "UnknownRecord",
+   "name": "U-005 Achieved security level (SL-A) of the BMS zone",
+   "classification": "CONFIDENTIAL",
+   "constrains": [
+    "urn:aidcf:syn:gate-result:GR-CG-07",
+    "urn:aidcf:syn:recommendation:DR-001",
+    "urn:aidcf:syn:decision:AD-001"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "decisionEffect": "Critical: CG-07 cannot pass; decision capped at LIMITED by this UNKNOWN alone.",
+   "disposition": "Owner accepted; evidence requested; decision effect applied until resolved.",
+   "distributionControlRef": "urn:aidcf:syn:distribution-control:DC-001",
+   "dueDate": "2026-12-15",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidenceNeeded": "Zone SL-A assessment.",
+   "material": true,
+   "missingAttribute": "Achieved security level (SL-A) of the BMS zone",
+   "owner": "urn:aidcf:syn:party:OT-SEC",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "reason": "SL-T and SL-C are recorded but no assessment of SL-A was provided.",
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reportedIn": [
+    "urn:aidcf:syn:report:RPT-001"
+   ],
+   "requiresAction": [
+    "urn:aidcf:syn:action:ACT-010"
+   ],
+   "resolutionTrigger": "Completion of the SL-A assessment",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "scope": {
+    "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+    "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+   },
+   "semanticOwner": "AIDCF-008",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:zone:ZONE-BMS",
+   "summarisedBy": [
+    "urn:aidcf:syn:recommendation:DR-001"
+   ],
+   "unknownSeverity": "US4",
+   "unknownStatus": "DISPOSITIONED",
+   "unknownType": "U1",
+   "version": "1.0"
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+{
+ "fixtureId": "V-008",
+ "layer": "SCORE",
+ "expect": "PASS",
+ "description": "The unpatched score snapshot reperforms exactly.",
+ "patch": []
+}

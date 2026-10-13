@@ -1,0 +1,9 @@
+# Q01 AIDCF-014 section 19 Q01: which systems, assets and dependencies implement the functions required by Capability CI-001?
+# Expected result basis: Required Functions RF-01 to RF-06 and Dependency records DEP-01 to DEP-17 of the dataset design.
+PREFIX aidcf: <https://w3id.org/aidcf/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?element ?dependency WHERE {
+  <urn:aidcf:syn:capability:CI-001> aidcf:hasOutcome/aidcf:requiresFunction/aidcf:implementedBy ?e .
+  OPTIONAL { ?d a aidcf:Dependency ; aidcf:sourceRef ?e . }
+  BIND (REPLACE(STR(?e), "^.*[:/]", "") AS ?element) BIND (IF(BOUND(?d), REPLACE(STR(?d), "^.*[:/]", ""), "") AS ?dependency)
+} GROUP BY ?element ?dependency ORDER BY ?element ?dependency

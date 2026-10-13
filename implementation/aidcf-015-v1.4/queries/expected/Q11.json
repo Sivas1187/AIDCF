@@ -1,0 +1,13 @@
+{
+ "query": "Q11",
+ "description": "AIDCF-014 section 19 Q11: which candidate events await review, with materiality, severity and age?",
+ "basis": "EVT-001 design.",
+ "rows": [
+  [
+   "EVT-001",
+   "MATERIAL",
+   "HIGH",
+   "2026-10-09T14:00:00"
+  ]
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-008",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "MDM-R02",
+ "description": "MCF-DEP-001 evaluated as SUPPORTING on CG-03 (registry role CRITICAL).",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:gate-result:GR-CG-03",
+   "field": "controlEvaluations.0.gateRole",
+   "value": "SUPPORTING"
+  }
+ ]
+}
