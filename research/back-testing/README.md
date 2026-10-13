@@ -1,6 +1,6 @@
 # Incident back-testing kit (AIDCF-VAL-001)
 
-**Status: frame built and screened; nothing selected or coded yet.** The incident register holds 221 real candidates (140 eligible, 81 excluded), found and screened on 2026-10-11 by an AI research assistant (screener code C90). Human second checks are still pending. See [`run-log/run-log.md`](run-log/run-log.md) for the flow, the shortfalls and the open items before selection. The only rows in the coding sheet are two fictional training examples (`INC-EXAMPLE-01`). Nothing in this folder reports a back-testing result.
+**Status: frame built and screened; nothing selected or coded yet.** The incident register holds 221 real candidates (137 eligible, 84 excluded; three were excluded on 2026-10-13 under EX-09, see the run log), found and screened on 2026-10-11 by an AI research assistant (screener code C90). Human second checks are still pending. See [`run-log/run-log.md`](run-log/run-log.md) for the flow, the shortfalls and the open items before selection. The only rows in the coding sheet are two fictional training examples (`INC-EXAMPLE-01`). Nothing in this folder reports a back-testing result.
 
 **Protocol v1.1 (draft, not approved).** v1.1 adds section 10A, an exploratory comparison with conventional review methods. Its staged pilot evaluates BL-ENG, BL-CX and BL-OT, and labels their union BL-ANY-3. `baselines.csv` is DRAFT until practitioner reviewers fix each method's edition and profile. No comparative coding has started: `comparative-sheet.csv` and `run-log/comparative-locks.csv` hold headers only. Protocol v1.0 remains in force until v1.1 is approved.
 
@@ -71,7 +71,7 @@ Do not add an incident unless a source has been retrieved and checked. The regis
 | `found_via` | Search source family and query reference from the run log | `S1`–`S4` plus query reference |
 | `detail_level` | Protocol section 6.3 | `HIGH`, `MEDIUM`, `LOW` |
 | `eligibility_status` | Screening and selection state | `CANDIDATE`, `ELIGIBLE`, `EXCLUDED`, `SELECTED`, `RESERVE`, `WITHDRAWN` |
-| `exclusion_code` | Required if and only if EXCLUDED | `EX-01` to `EX-08` (protocol section 6.4) |
+| `exclusion_code` | Required if and only if EXCLUDED | `EX-01` to `EX-09` (protocol section 6.4; EX-09 from v1.1) |
 | `screened_by` | Screener coder code | `C01`... |
 | `exclusion_checked_by` | Second checker for EX-02 and EX-04 | `C01`... |
 | `stratum_draw_rank` | Position in the seeded within-stratum draw | Integer |

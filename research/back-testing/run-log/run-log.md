@@ -99,3 +99,16 @@ Not started. Before any comparative coding, this log shall record, with dates an
 6. The number of distinct independent reviewers per evaluated method, and any method run with fewer than two (exploratory).
 7. The FILE locks of the reconciled `coding-sheet.csv` and `comparative-sheet.csv` analysed by the final report, set after reconciliation and disposition. Locked files are kept unchanged.
 8. Any deviation from section 10A (BT-REQ-016).
+
+## Illustrative case studies (2026-10-13, not part of the back-test)
+
+At the owner's request, C90 prepared three illustrative write-ups ([`illustrations/VAL-001_illustrative_case_studies.md`](../illustrations/VAL-001_illustrative_case_studies.md)). They follow the section 8 to 11 logic with one non-independent coder and are not coding-sheet rows.
+
+| Field | Value |
+|---|---|
+| Pool | ELIGIBLE, detail_level HIGH, primary_source_type PRIMARY or REGULATOR: 92 incidents |
+| Draw | Pool sorted by ID, shuffled with `random.Random(20261013)`; first three with no repeated failure_category, operator or operator_type |
+| Recusal | Rank 2, INC-175 (Anthropic): the preparing model is Anthropic's |
+| Selected | INC-040 (rank 1), INC-068 (rank 3), INC-120 (rank 7) |
+| Effect on the frame | **Deviation D-01 (BT-REQ-016):** on 2026-10-13 the owner decided to exclude the three incidents. They are EXCLUDED with new code EX-09 (protocol v1.1 section 6.4). Eligible incidents fall from 140 to 137, and HIGH-detail eligible from 92 to 89. Reason: blind coding is no longer possible once the analysis is in the repository. Likely effect: one fewer eligible incident in each of CONTROL_PLANE_OT, CHANGE_HUMAN and NETWORK_FABRIC; every affected stratum's capped capacity stays above its target of 8 (CONTROL_PLANE_OT 13 to 12, NETWORK_FABRIC 21 to 20, CHANGE_HUMAN 39 to 38). |
+| Publication | Not to be published until legal review (BT-REQ-017) |
