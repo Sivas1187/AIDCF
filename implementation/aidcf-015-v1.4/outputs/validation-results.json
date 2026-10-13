@@ -1,8 +1,8 @@
 {
  "tool": "tools/run_all.py",
  "release": "AIDCF-REL-2026.10.2",
- "executedAt": "2026-10-13T06:57:30Z",
- "seconds": 188.9,
+ "executedAt": "2026-10-13T07:01:15Z",
+ "seconds": 189.7,
  "independent": false,
  "note": "Self-validation by the package author's tooling; no independent execution.",
  "layers": {

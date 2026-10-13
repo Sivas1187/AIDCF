@@ -11,8 +11,8 @@
    "releaseRef": "AIDCF-REL-2026.10.2",
    "sourceArtifact": "AIDCF-015",
    "name": "Validation layer REGISTRY",
-   "effectiveFrom": "2026-10-13T06:57:30Z",
-   "createdAt": "2026-10-13T06:57:30Z",
+   "effectiveFrom": "2026-10-13T07:01:15Z",
+   "createdAt": "2026-10-13T07:01:15Z",
    "createdBy": "urn:aidcf:syn:party:BUILDER",
    "classification": "INTERNAL",
    "provenance": {
@@ -25,7 +25,7 @@
    "outcome": "PASS",
    "message": "1870 checks, 0 failed, 0 warnings",
    "validator": "AIDCF-015 v1.4 tools/run_all.py (self-validation; not independent)",
-   "executedAt": "2026-10-13T06:57:30Z"
+   "executedAt": "2026-10-13T07:01:15Z"
   },
   {
    "id": "urn:aidcf:syn:validation:SYNTAX",
@@ -37,8 +37,8 @@
    "releaseRef": "AIDCF-REL-2026.10.2",
    "sourceArtifact": "AIDCF-015",
    "name": "Validation layer SYNTAX",
-   "effectiveFrom": "2026-10-13T06:57:30Z",
-   "createdAt": "2026-10-13T06:57:30Z",
+   "effectiveFrom": "2026-10-13T07:01:15Z",
+   "createdAt": "2026-10-13T07:01:15Z",
    "createdBy": "urn:aidcf:syn:party:BUILDER",
    "classification": "INTERNAL",
    "provenance": {
@@ -51,7 +51,7 @@
    "outcome": "PASS",
    "message": "173 checks, 0 failed, 0 warnings",
    "validator": "AIDCF-015 v1.4 tools/run_all.py (self-validation; not independent)",
-   "executedAt": "2026-10-13T06:57:30Z"
+   "executedAt": "2026-10-13T07:01:15Z"
   },
   {
    "id": "urn:aidcf:syn:validation:SCHEMA",
@@ -63,8 +63,8 @@
    "releaseRef": "AIDCF-REL-2026.10.2",
    "sourceArtifact": "AIDCF-015",
    "name": "Validation layer SCHEMA",
-   "effectiveFrom": "2026-10-13T06:57:30Z",
-   "createdAt": "2026-10-13T06:57:30Z",
+   "effectiveFrom": "2026-10-13T07:01:15Z",
+   "createdAt": "2026-10-13T07:01:15Z",
    "createdBy": "urn:aidcf:syn:party:BUILDER",
    "classification": "INTERNAL",
    "provenance": {
@@ -77,7 +77,7 @@
    "outcome": "PASS",
    "message": "3450 checks, 0 failed, 0 warnings",
    "validator": "AIDCF-015 v1.4 tools/run_all.py (self-validation; not independent)",
-   "executedAt": "2026-10-13T06:57:30Z"
+   "executedAt": "2026-10-13T07:01:15Z"
   },
   {
    "id": "urn:aidcf:syn:validation:SHACL",
@@ -89,8 +89,8 @@
    "releaseRef": "AIDCF-REL-2026.10.2",
    "sourceArtifact": "AIDCF-015",
    "name": "Validation layer SHACL",
-   "effectiveFrom": "2026-10-13T06:57:30Z",
-   "createdAt": "2026-10-13T06:57:30Z",
+   "effectiveFrom": "2026-10-13T07:01:15Z",
+   "createdAt": "2026-10-13T07:01:15Z",
    "createdBy": "urn:aidcf:syn:party:BUILDER",
    "classification": "INTERNAL",
    "provenance": {
@@ -103,7 +103,7 @@
    "outcome": "PASS",
    "message": "3390 checks, 0 failed, 0 warnings",
    "validator": "AIDCF-015 v1.4 tools/run_all.py (self-validation; not independent)",
-   "executedAt": "2026-10-13T06:57:30Z"
+   "executedAt": "2026-10-13T07:01:15Z"
   },
   {
    "id": "urn:aidcf:syn:validation:BUSINESS_RULE",
@@ -115,8 +115,8 @@
    "releaseRef": "AIDCF-REL-2026.10.2",
    "sourceArtifact": "AIDCF-015",
    "name": "Validation layer BUSINESS_RULE",
-   "effectiveFrom": "2026-10-13T06:57:30Z",
-   "createdAt": "2026-10-13T06:57:30Z",
+   "effectiveFrom": "2026-10-13T07:01:15Z",
+   "createdAt": "2026-10-13T07:01:15Z",
    "createdBy": "urn:aidcf:syn:party:BUILDER",
    "classification": "INTERNAL",
    "provenance": {
@@ -129,7 +129,7 @@
    "outcome": "PASS",
    "message": "34 checks, 0 failed, 0 warnings",
    "validator": "AIDCF-015 v1.4 tools/run_all.py (self-validation; not independent)",
-   "executedAt": "2026-10-13T06:57:30Z"
+   "executedAt": "2026-10-13T07:01:15Z"
   },
   {
    "id": "urn:aidcf:syn:validation:TRACEABILITY",
@@ -141,8 +141,8 @@
    "releaseRef": "AIDCF-REL-2026.10.2",
    "sourceArtifact": "AIDCF-015",
    "name": "Validation layer TRACEABILITY",
-   "effectiveFrom": "2026-10-13T06:57:30Z",
-   "createdAt": "2026-10-13T06:57:30Z",
+   "effectiveFrom": "2026-10-13T07:01:15Z",
+   "createdAt": "2026-10-13T07:01:15Z",
    "createdBy": "urn:aidcf:syn:party:BUILDER",
    "classification": "INTERNAL",
    "provenance": {
@@ -155,7 +155,7 @@
    "outcome": "PASS",
    "message": "491 checks, 0 failed, 0 warnings",
    "validator": "AIDCF-015 v1.4 tools/run_all.py (self-validation; not independent)",
-   "executedAt": "2026-10-13T06:57:30Z"
+   "executedAt": "2026-10-13T07:01:15Z"
   },
   {
    "id": "urn:aidcf:syn:validation:GRAPH_QUERY",
@@ -167,8 +167,8 @@
    "releaseRef": "AIDCF-REL-2026.10.2",
    "sourceArtifact": "AIDCF-015",
    "name": "Validation layer GRAPH_QUERY",
-   "effectiveFrom": "2026-10-13T06:57:30Z",
-   "createdAt": "2026-10-13T06:57:30Z",
+   "effectiveFrom": "2026-10-13T07:01:15Z",
+   "createdAt": "2026-10-13T07:01:15Z",
    "createdBy": "urn:aidcf:syn:party:BUILDER",
    "classification": "INTERNAL",
    "provenance": {
@@ -181,7 +181,7 @@
    "outcome": "PASS",
    "message": "14 checks, 0 failed, 0 warnings",
    "validator": "AIDCF-015 v1.4 tools/run_all.py (self-validation; not independent)",
-   "executedAt": "2026-10-13T06:57:30Z"
+   "executedAt": "2026-10-13T07:01:15Z"
   },
   {
    "id": "urn:aidcf:syn:validation:SCORE",
@@ -193,8 +193,8 @@
    "releaseRef": "AIDCF-REL-2026.10.2",
    "sourceArtifact": "AIDCF-015",
    "name": "Validation layer SCORE",
-   "effectiveFrom": "2026-10-13T06:57:30Z",
-   "createdAt": "2026-10-13T06:57:30Z",
+   "effectiveFrom": "2026-10-13T07:01:15Z",
+   "createdAt": "2026-10-13T07:01:15Z",
    "createdBy": "urn:aidcf:syn:party:BUILDER",
    "classification": "INTERNAL",
    "provenance": {
@@ -207,7 +207,7 @@
    "outcome": "PASS",
    "message": "14 checks, 0 failed, 0 warnings",
    "validator": "AIDCF-015 v1.4 tools/run_all.py (self-validation; not independent)",
-   "executedAt": "2026-10-13T06:57:30Z"
+   "executedAt": "2026-10-13T07:01:15Z"
   },
   {
    "id": "urn:aidcf:syn:validation:INTEGRITY",
@@ -219,8 +219,8 @@
    "releaseRef": "AIDCF-REL-2026.10.2",
    "sourceArtifact": "AIDCF-015",
    "name": "Validation layer INTEGRITY",
-   "effectiveFrom": "2026-10-13T06:57:30Z",
-   "createdAt": "2026-10-13T06:57:30Z",
+   "effectiveFrom": "2026-10-13T07:01:15Z",
+   "createdAt": "2026-10-13T07:01:15Z",
    "createdBy": "urn:aidcf:syn:party:BUILDER",
    "classification": "INTERNAL",
    "provenance": {
@@ -233,7 +233,7 @@
    "outcome": "PASS",
    "message": "104 checks, 0 failed, 0 warnings",
    "validator": "AIDCF-015 v1.4 tools/run_all.py (self-validation; not independent)",
-   "executedAt": "2026-10-13T06:57:30Z"
+   "executedAt": "2026-10-13T07:01:15Z"
   },
   {
    "id": "urn:aidcf:syn:validation:MANIFEST",
@@ -245,8 +245,8 @@
    "releaseRef": "AIDCF-REL-2026.10.2",
    "sourceArtifact": "AIDCF-015",
    "name": "Validation layer MANIFEST",
-   "effectiveFrom": "2026-10-13T06:57:30Z",
-   "createdAt": "2026-10-13T06:57:30Z",
+   "effectiveFrom": "2026-10-13T07:01:15Z",
+   "createdAt": "2026-10-13T07:01:15Z",
    "createdBy": "urn:aidcf:syn:party:BUILDER",
    "classification": "INTERNAL",
    "provenance": {
@@ -259,7 +259,7 @@
    "outcome": "PASS",
    "message": "271 checks, 0 failed, 0 warnings",
    "validator": "AIDCF-015 v1.4 tools/run_all.py (self-validation; not independent)",
-   "executedAt": "2026-10-13T06:57:30Z"
+   "executedAt": "2026-10-13T07:01:15Z"
   },
   {
    "id": "urn:aidcf:syn:validation:VOCABULARY",
@@ -271,8 +271,8 @@
    "releaseRef": "AIDCF-REL-2026.10.2",
    "sourceArtifact": "AIDCF-015",
    "name": "Validation layer VOCABULARY",
-   "effectiveFrom": "2026-10-13T06:57:30Z",
-   "createdAt": "2026-10-13T06:57:30Z",
+   "effectiveFrom": "2026-10-13T07:01:15Z",
+   "createdAt": "2026-10-13T07:01:15Z",
    "createdBy": "urn:aidcf:syn:party:BUILDER",
    "classification": "INTERNAL",
    "provenance": {
@@ -285,7 +285,7 @@
    "outcome": "PASS",
    "message": "82 checks, 0 failed, 0 warnings",
    "validator": "AIDCF-015 v1.4 tools/run_all.py (self-validation; not independent)",
-   "executedAt": "2026-10-13T06:57:30Z"
+   "executedAt": "2026-10-13T07:01:15Z"
   },
   {
    "id": "urn:aidcf:syn:validation:EXPORT",
@@ -297,8 +297,8 @@
    "releaseRef": "AIDCF-REL-2026.10.2",
    "sourceArtifact": "AIDCF-015",
    "name": "Validation layer EXPORT",
-   "effectiveFrom": "2026-10-13T06:57:30Z",
-   "createdAt": "2026-10-13T06:57:30Z",
+   "effectiveFrom": "2026-10-13T07:01:15Z",
+   "createdAt": "2026-10-13T07:01:15Z",
    "createdBy": "urn:aidcf:syn:party:BUILDER",
    "classification": "INTERNAL",
    "provenance": {
@@ -311,7 +311,7 @@
    "outcome": "PASS",
    "message": "5504 checks, 0 failed, 0 warnings",
    "validator": "AIDCF-015 v1.4 tools/run_all.py (self-validation; not independent)",
-   "executedAt": "2026-10-13T06:57:30Z"
+   "executedAt": "2026-10-13T07:01:15Z"
   },
   {
    "id": "urn:aidcf:syn:validation:FIXTURE",
@@ -323,8 +323,8 @@
    "releaseRef": "AIDCF-REL-2026.10.2",
    "sourceArtifact": "AIDCF-015",
    "name": "Validation layer FIXTURE",
-   "effectiveFrom": "2026-10-13T06:57:30Z",
-   "createdAt": "2026-10-13T06:57:30Z",
+   "effectiveFrom": "2026-10-13T07:01:15Z",
+   "createdAt": "2026-10-13T07:01:15Z",
    "createdBy": "urn:aidcf:syn:party:BUILDER",
    "classification": "INTERNAL",
    "provenance": {
@@ -337,7 +337,7 @@
    "outcome": "PASS",
    "message": "60 checks, 0 failed, 0 warnings",
    "validator": "AIDCF-015 v1.4 tools/run_all.py (self-validation; not independent)",
-   "executedAt": "2026-10-13T06:57:30Z"
+   "executedAt": "2026-10-13T07:01:15Z"
   }
  ]
 }

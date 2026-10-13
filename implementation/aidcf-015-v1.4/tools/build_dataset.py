@@ -930,8 +930,9 @@ def subordinate_ceilings(states, ceilings, open_us, ceil):
     return out
 
 
-DECISION_Q = ("Can the synthetic AI training and inference capability CI-001 be relied on to meet SO-01 to SO-03 in NORMAL and "
-              "MAINTENANCE states, as at 2026-10-10?")
+DECISION_Q = ("Can the synthetic AI training and inference capability CI-001 be relied on to meet SO-01 to SO-03, as far as they "
+              "apply in NORMAL and MAINTENANCE states, as at 2026-10-10? SO-02 (RECOVERY only) and the DEGRADED state of SO-03 "
+              "are outside the assessed scope.")  # v1.4: corrects erratum E-001
 
 
 def build_governance(AD, reg):

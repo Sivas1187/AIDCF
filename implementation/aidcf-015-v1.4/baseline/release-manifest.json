@@ -24,8 +24,8 @@
  "artifactManifest": [
   {
    "filePath": "CHANGELOG.md",
-   "sha256": "bc0354840d0d0078ec70965f53893bd987e101ffc4018a4cb43187329f26e28e",
-   "byteSize": 4862,
+   "sha256": "2eaa8f89dc7d6a62e8643d522ec29f54f0b6dbcd88745cddaf45c38303649703",
+   "byteSize": 5180,
    "mediaType": "text/markdown"
   },
   {
@@ -60,8 +60,8 @@
   },
   {
    "filePath": "dataset/assessment.jsonld",
-   "sha256": "a8bb7ce896871e37fa1fbbbe73caaa61a45141941deb8dcaa9b87d55ebf36fcc",
-   "byteSize": 76189,
+   "sha256": "c1b85d316057dfd4b204fdd8c039a2d1f4b3522d41b814bf2c0c61e527f2dbbf",
+   "byteSize": 76297,
    "mediaType": "application/ld+json"
   },
   {
@@ -78,8 +78,8 @@
   },
   {
    "filePath": "dataset/decision.jsonld",
-   "sha256": "598427b7ecb3b81f2656fd04524d7f93b62080e746e178230f56d0593a556b6e",
-   "byteSize": 113977,
+   "sha256": "da9dd85ac4a7cf590d002d2e314cf72f63acb45e89b859156cbbf8cf224caee5",
+   "byteSize": 114193,
    "mediaType": "application/ld+json"
   },
   {
@@ -1536,8 +1536,8 @@
   },
   {
    "filePath": "tools/build_dataset.py",
-   "sha256": "d76d850c905bfb8b83f23f328741be3b708abe74f7111d8f68a64616dc286b7d",
-   "byteSize": 87946,
+   "sha256": "9e6b67d067ff8a82ba9f97b24422300b2b11903cdb0104439a966076b3567f3a",
+   "byteSize": 88103,
    "mediaType": "text/x-python"
   },
   {
@@ -2223,7 +2223,7 @@
   "digestAlgorithm": "SHA-256",
   "canonicalisation": "RFC 8785 (JCS) over the manifest with integrity.manifestDigest removed",
   "signatureStatus": "PENDING",
-  "manifestDigest": "8279e0dc655e52ef0518a7ba9ca844c18beea41828562110143134278a7cb61b"
+  "manifestDigest": "1429ed8e41a990aead7b1995aff0f22f617f964811150d9e7142135e06544635"
  },
  "excludedPaths": [
   "outputs/",

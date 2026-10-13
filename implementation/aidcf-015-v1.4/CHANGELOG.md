@@ -6,6 +6,7 @@
 - Initiators added for them: hazards HZ-03 (FLUID), HZ-04 (CHEMICAL) and HZ-05 (UTILITY_DISTURBANCE); failure modes FM-04 to FM-08.
 - Scenarios may now start from a state other than NORMAL (FS-08 RECOVERY, FS-11 MAINTENANCE) and may affect more than one outcome (FS-07: SO-01 and SO-02).
 - Q02 expected result updated: nine scenarios can defeat SO-01 (FS-01, FS-02, FS-05 to FS-07, FS-09 to FS-12). The old basis line named FS-01 to FS-05, although FS-03 and FS-04 never affected SO-01; it now states the rows.
+- Erratum E-001 corrected: the decision question now says SO-01 to SO-03 are assessed as far as they apply in NORMAL and MAINTENANCE states, and that SO-02 (RECOVERY only) and the DEGRADED state of SO-03 are outside the assessed scope. FS-08 (pre-state RECOVERY) is a scenario model of SO-02, not an assessment of it.
 - Gate results, score, coverage and the NOT_ASSURED decision are unchanged from v1.3.
 - `implementation/aidcf-015-v1.3/` is unchanged as released.
 

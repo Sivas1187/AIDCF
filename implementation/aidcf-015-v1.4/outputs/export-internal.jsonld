@@ -2187,7 +2187,7 @@
    "controlUniverseCount": 360,
    "createdAt": "2026-10-10T00:00:00Z",
    "createdBy": "urn:aidcf:syn:party:BUILDER",
-   "decisionQuestion": "Can the synthetic AI training and inference capability CI-001 be relied on to meet SO-01 to SO-03 in NORMAL and MAINTENANCE states, as at 2026-10-10?",
+   "decisionQuestion": "Can the synthetic AI training and inference capability CI-001 be relied on to meet SO-01 to SO-03, as far as they apply in NORMAL and MAINTENANCE states, as at 2026-10-10? SO-02 (RECOVERY only) and the DEGRADED state of SO-03 are outside the assessed scope.",
    "effectiveFrom": "2026-10-10T00:00:00Z",
    "evidenceManifest": [
     "urn:aidcf:syn:evidence-package:EP-001"
@@ -4802,7 +4802,7 @@
    "createdAt": "2026-10-10T00:00:00Z",
    "createdBy": "urn:aidcf:syn:party:BUILDER",
    "decisionLifecycle": "APPROVED",
-   "decisionQuestion": "Can the synthetic AI training and inference capability CI-001 be relied on to meet SO-01 to SO-03 in NORMAL and MAINTENANCE states, as at 2026-10-10?",
+   "decisionQuestion": "Can the synthetic AI training and inference capability CI-001 be relied on to meet SO-01 to SO-03, as far as they apply in NORMAL and MAINTENANCE states, as at 2026-10-10? SO-02 (RECOVERY only) and the DEGRADED state of SO-03 are outside the assessed scope.",
    "decisionScope": "Synthetic capability CI-001 within snapshot SNAP-001; NORMAL and MAINTENANCE states.",
    "decisionState": "NOT_ASSURED",
    "effectiveFrom": "2026-10-10T00:00:00Z",
@@ -6870,7 +6870,7 @@
    "createdAt": "2026-10-10T00:00:00Z",
    "createdBy": "urn:aidcf:syn:party:BUILDER",
    "decisionCeiling": "NOT_ASSURED",
-   "decisionQuestion": "Can the synthetic AI training and inference capability CI-001 be relied on to meet SO-01 to SO-03 in NORMAL and MAINTENANCE states, as at 2026-10-10?",
+   "decisionQuestion": "Can the synthetic AI training and inference capability CI-001 be relied on to meet SO-01 to SO-03, as far as they apply in NORMAL and MAINTENANCE states, as at 2026-10-10? SO-02 (RECOVERY only) and the DEGRADED state of SO-03 are outside the assessed scope.",
    "effectiveFrom": "2026-10-10T00:00:00Z",
    "limitations": [
     "Synthetic data only.",
