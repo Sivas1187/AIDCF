@@ -1,0 +1,8 @@
+code,meaning,legacyStages
+PLAN,"Capability intent, candidate site, constraints, assumptions and target outcomes",Concept
+DESIGN,"Required functions, systems, architecture, capacity, fault domains and interfaces",Design
+BUILD,"Construction and installation; asset instances, installation state, deviations and provenance",Construction
+COMMISSION,"Tests, acceptance, outstanding defects, accepted limitations and handover to operation",Commissioning|Operational readiness
+OPERATE,"Current state, telemetry, maintenance, incidents, evidence and drift",Operation
+CHANGE,"Impact, configuration transition, temporary states, evidence and revalidation",Change
+DECOMMISSION,"Isolation, removal, sanitisation, residual hazards and record retention",Decommissioning

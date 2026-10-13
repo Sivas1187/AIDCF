@@ -1,0 +1,6 @@
+code,name,meaning,minimumAssuranceLevel
+DESIGN,Design,Requirement and design are adequate,AL2
+IMPLEMENTATION,Implementation,As-built/configured state reconciles to approved design,AL3
+OPERATION,Operation,Operates as intended over a representative period and states,AL4
+EFFECTIVENESS,Effectiveness,Achieves its objective under tested/observed adverse conditions,AL5
+RESILIENCE,Resilience,Contains failure and supports recovery within tolerance,AL5

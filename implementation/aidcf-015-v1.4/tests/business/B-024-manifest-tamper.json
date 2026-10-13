@@ -1,0 +1,12 @@
+{
+ "fixtureId": "B-024",
+ "layer": "MANIFEST",
+ "expect": "FAIL",
+ "expectedRule": "MAN-01",
+ "description": "Dataset file changed after the manifest was built.",
+ "patch": [],
+ "overrideFile": {
+  "path": "dataset/capability.jsonld",
+  "append": " "
+ }
+}

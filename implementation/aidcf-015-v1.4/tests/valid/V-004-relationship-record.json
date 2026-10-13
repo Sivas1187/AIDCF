@@ -1,0 +1,41 @@
+{
+ "fixtureId": "V-004",
+ "layer": "SCHEMA",
+ "expect": "PASS",
+ "description": "DEPENDS_ON relationship record with its qualifiers.",
+ "record": {
+  "id": "urn:aidcf:syn:rel:REL-1da21ba4ffd2462f",
+  "type": "RelationshipRecord",
+  "name": "AST-UPS-B DEPENDS_ON AST-SWB-01",
+  "classification": "INTERNAL",
+  "confidence": "CONF-3",
+  "createdAt": "2026-10-10T00:00:00Z",
+  "createdBy": "urn:aidcf:syn:party:BUILDER",
+  "dependencyRef": "urn:aidcf:syn:dependency:DEP-03",
+  "effectiveFrom": "2026-10-10T00:00:00Z",
+  "operatingStates": [
+   "NORMAL",
+   "MAINTENANCE"
+  ],
+  "provenance": {
+   "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+   "method": "SYNTHETIC_AUTHORING",
+   "synthetic": true,
+   "transformationVersion": "1.4"
+  },
+  "relationshipType": "DEPENDS_ON",
+  "releaseRef": "AIDCF-REL-2026.10.2",
+  "reviewState": "SUPPORTED",
+  "schemaVersion": "1.3",
+  "scope": {
+   "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+   "snapshotRef": "urn:aidcf:syn:snapshot:SNAP-001"
+  },
+  "semanticOwner": "AIDCF-014",
+  "sourceArtifact": "AIDCF-015",
+  "sourceRef": "urn:aidcf:syn:asset:AST-UPS-B",
+  "status": "REVIEWED",
+  "targetRef": "urn:aidcf:syn:asset:AST-SWB-01",
+  "version": "1.0"
+ }
+}

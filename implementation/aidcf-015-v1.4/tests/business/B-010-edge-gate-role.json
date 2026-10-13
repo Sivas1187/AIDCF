@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-010",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "MDM-R10",
+ "description": "Control-to-gate relationship record carries a role that differs from gate-mappings.csv.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:rel:REL-1825dd93de783cc2",
+   "field": "gateRole",
+   "value": "SUPPORTING"
+  }
+ ]
+}

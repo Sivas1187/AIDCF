@@ -1,0 +1,89 @@
+{
+ "tool": "tools/run_all.py",
+ "release": "AIDCF-REL-2026.10.2",
+ "executedAt": "2026-10-13T07:01:15Z",
+ "seconds": 189.7,
+ "independent": false,
+ "note": "Self-validation by the package author's tooling; no independent execution.",
+ "layers": {
+  "REGISTRY": {
+   "checks": 1870,
+   "failed": 0,
+   "warnings": 0,
+   "outcome": "PASS"
+  },
+  "SYNTAX": {
+   "checks": 173,
+   "failed": 0,
+   "warnings": 0,
+   "outcome": "PASS"
+  },
+  "SCHEMA": {
+   "checks": 3450,
+   "failed": 0,
+   "warnings": 0,
+   "outcome": "PASS"
+  },
+  "SHACL": {
+   "checks": 3390,
+   "failed": 0,
+   "warnings": 0,
+   "outcome": "PASS"
+  },
+  "BUSINESS_RULE": {
+   "checks": 34,
+   "failed": 0,
+   "warnings": 0,
+   "outcome": "PASS"
+  },
+  "TRACEABILITY": {
+   "checks": 491,
+   "failed": 0,
+   "warnings": 0,
+   "outcome": "PASS"
+  },
+  "GRAPH_QUERY": {
+   "checks": 14,
+   "failed": 0,
+   "warnings": 0,
+   "outcome": "PASS"
+  },
+  "SCORE": {
+   "checks": 14,
+   "failed": 0,
+   "warnings": 0,
+   "outcome": "PASS"
+  },
+  "INTEGRITY": {
+   "checks": 104,
+   "failed": 0,
+   "warnings": 0,
+   "outcome": "PASS"
+  },
+  "MANIFEST": {
+   "checks": 271,
+   "failed": 0,
+   "warnings": 0,
+   "outcome": "PASS"
+  },
+  "VOCABULARY": {
+   "checks": 82,
+   "failed": 0,
+   "warnings": 0,
+   "outcome": "PASS"
+  },
+  "EXPORT": {
+   "checks": 5504,
+   "failed": 0,
+   "warnings": 0,
+   "outcome": "PASS"
+  },
+  "FIXTURE": {
+   "checks": 60,
+   "failed": 0,
+   "warnings": 0,
+   "outcome": "PASS"
+  }
+ },
+ "validationResultRecordsSchemaErrors": 0
+}

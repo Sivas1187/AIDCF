@@ -1,0 +1,2054 @@
+{
+ "@context": "../schemas/jsonld/aidcf-context-1.3.jsonld",
+ "@graph": [
+  {
+   "id": "urn:aidcf:syn:assertion:ASR-01",
+   "type": "Assertion",
+   "name": "Synthetic BMS zone boundary assertion",
+   "assertionConditions": "NORMAL state; current firmware baseline",
+   "classification": "CONFIDENTIAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "distributionControlRef": "urn:aidcf:syn:distribution-control:DC-001",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "objectValue": "SYN-RA-OT-001 (synthetic)",
+   "predicate": "boundaryDefinedBy",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-002",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:zone:ZONE-BMS",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:assertion:ASR-02",
+   "type": "Assertion",
+   "name": "Synthetic facility water exclusivity assertion",
+   "assertionConditions": "All states; cannot be determined (U-003)",
+   "classification": "INTERNAL",
+   "confidence": "CONF-0",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "hasUnknown": [
+    "urn:aidcf:syn:unknown:U-003"
+   ],
+   "objectRef": "urn:aidcf:syn:capability:CI-001",
+   "predicate": "dedicatedToCapability",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "UNKNOWN",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-002",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:system:SYS-FWS",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:asset:AST-BMS-CTRL",
+   "type": "AssetInstance",
+   "name": "Synthetic BMS controller",
+   "assetKind": "BMS_CONTROLLER",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "domainCode": "SEC",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "exposedTo": [
+    "urn:aidcf:syn:failure-mode:FM-02",
+    "urn:aidcf:syn:threat:TH-01"
+   ],
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-PLANT"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:OT-SEC"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:asset:AST-CDU-1",
+    "urn:aidcf:syn:asset:AST-CDU-2"
+   ],
+   "protectedBy": [
+    "urn:aidcf:syn:safeguard:SAF-SEG"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:asset:AST-CDU-1",
+   "type": "AssetInstance",
+   "name": "Synthetic CDU 1",
+   "assetKind": "CDU",
+   "classification": "INTERNAL",
+   "connectsTo": [
+    "urn:aidcf:syn:interface:IF-FWS-CDU"
+   ],
+   "controlledBy": [
+    "urn:aidcf:syn:asset:AST-BMS-CTRL"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependsOn": [
+    "urn:aidcf:syn:asset:AST-CHL",
+    "urn:aidcf:syn:asset:AST-BMS-CTRL",
+    "urn:aidcf:syn:party:CDU-VENDOR"
+   ],
+   "domainCode": "THM",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "exposedTo": [
+    "urn:aidcf:syn:failure-mode:FM-04"
+   ],
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-HALL-A"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:FAC-OPS"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:system:SYS-THM"
+   ],
+   "protectedBy": [
+    "urn:aidcf:syn:safeguard:SAF-LEAK"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sharesFaultDomainWith": [
+    "urn:aidcf:syn:asset:AST-CDU-2"
+   ],
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:asset:AST-CDU-2",
+   "type": "AssetInstance",
+   "name": "Synthetic CDU 2",
+   "assetKind": "CDU",
+   "classification": "INTERNAL",
+   "connectsTo": [
+    "urn:aidcf:syn:interface:IF-FWS-CDU"
+   ],
+   "controlledBy": [
+    "urn:aidcf:syn:asset:AST-BMS-CTRL"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependsOn": [
+    "urn:aidcf:syn:asset:AST-CHL",
+    "urn:aidcf:syn:asset:AST-BMS-CTRL"
+   ],
+   "domainCode": "THM",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "exposedTo": [
+    "urn:aidcf:syn:failure-mode:FM-04"
+   ],
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-HALL-A"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:FAC-OPS"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:system:SYS-THM"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:asset:AST-CHL",
+   "type": "AssetInstance",
+   "name": "Synthetic chiller",
+   "assetKind": "CHILLER",
+   "classification": "INTERNAL",
+   "connectsTo": [
+    "urn:aidcf:syn:interface:IF-FWS-CDU"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "domainCode": "THM",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-PLANT"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:FAC-OPS"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:asset:AST-CDU-2"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:asset:AST-FAB-SPINE",
+   "type": "AssetInstance",
+   "name": "Synthetic fabric spine",
+   "assetKind": "SPINE_SWITCH_SET",
+   "classification": "INTERNAL",
+   "connectsTo": [
+    "urn:aidcf:syn:interface:IF-FABRIC"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "domainCode": "NET",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "exposedTo": [
+    "urn:aidcf:syn:failure-mode:FM-03",
+    "urn:aidcf:syn:failure-mode:FM-05"
+   ],
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-HALL-A"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:IT-OPS"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:system:SYS-NET"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:asset:AST-GPU-NODES",
+   "type": "AssetInstance",
+   "name": "Synthetic GPU node pool",
+   "assetKind": "GPU_NODE_POOL",
+   "classification": "INTERNAL",
+   "composedOf": [
+    "urn:aidcf:syn:component:CMPT-BMC"
+   ],
+   "connectsTo": [
+    "urn:aidcf:syn:interface:IF-PWR-RACK",
+    "urn:aidcf:syn:interface:IF-FABRIC"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependsOn": [
+    "urn:aidcf:syn:asset:AST-FAB-SPINE"
+   ],
+   "domainCode": "CMP",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-HALL-A"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:IT-OPS"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:asset:AST-OT-GW",
+   "type": "AssetInstance",
+   "name": "Synthetic OT remote-access gateway",
+   "assetKind": "OT_GATEWAY",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "domainCode": "SEC",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-PLANT"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:OT-SEC"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:asset:AST-STO-ARRAY",
+   "type": "AssetInstance",
+   "name": "Synthetic checkpoint storage array",
+   "assetKind": "STORAGE_ARRAY",
+   "classification": "INTERNAL",
+   "connectsTo": [
+    "urn:aidcf:syn:interface:IF-FABRIC"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "domainCode": "STO",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "exposedTo": [
+    "urn:aidcf:syn:failure-mode:FM-06"
+   ],
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-HALL-A"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:IT-OPS"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:system:SYS-STO"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:asset:AST-SWB-01",
+   "type": "AssetInstance",
+   "name": "Synthetic main switchboard",
+   "assetKind": "SWITCHBOARD",
+   "classification": "INTERNAL",
+   "connectsTo": [
+    "urn:aidcf:syn:interface:IF-PWR-RACK"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "domainCode": "POW",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "exposedTo": [
+    "urn:aidcf:syn:failure-mode:FM-01"
+   ],
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-PLANT"
+   ],
+   "monitoredBy": [
+    "urn:aidcf:syn:asset:AST-BMS-CTRL"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:FAC-OPS"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:asset:AST-UPS-A",
+    "urn:aidcf:syn:asset:AST-UPS-B",
+    "urn:aidcf:syn:system:SYS-POW"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:asset:AST-UPS-A",
+   "type": "AssetInstance",
+   "name": "Synthetic UPS A",
+   "assetKind": "UPS",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependsOn": [
+    "urn:aidcf:syn:asset:AST-SWB-01"
+   ],
+   "domainCode": "POW",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "exposedTo": [
+    "urn:aidcf:syn:failure-mode:FM-07"
+   ],
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-PLANT"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:FAC-OPS"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:system:SYS-POW"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sharesFaultDomainWith": [
+    "urn:aidcf:syn:asset:AST-UPS-B"
+   ],
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:asset:AST-UPS-B",
+   "type": "AssetInstance",
+   "name": "Synthetic UPS B",
+   "assetKind": "UPS",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependsOn": [
+    "urn:aidcf:syn:asset:AST-SWB-01"
+   ],
+   "domainCode": "POW",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-PLANT"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:FAC-OPS"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:asset:AST-UTILITY",
+   "type": "AssetInstance",
+   "name": "Synthetic utility connection",
+   "assetKind": "UTILITY_SERVICE",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "description": "External utility supply; represented as an asset because it is a material resource provider.",
+   "domainCode": "POW",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "exposedTo": [
+    "urn:aidcf:syn:hazard:HZ-05"
+   ],
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-SITE"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:UTILITY"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:system:SYS-POW",
+    "urn:aidcf:syn:system:SYS-CTL"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:capacity-assertion:CAP-CAP-01",
+   "type": "CapacityAssertion",
+   "name": "Synthetic UPS capacity (superseded)",
+   "assertedValue": 1.8,
+   "classification": "INTERNAL",
+   "confidence": "CONF-2",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "derating": "Illustrative: none applied",
+   "duration": "PT10M",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "environment": "Illustrative: 35 C plant-room ambient",
+   "evidenceDate": "2026-06-30",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-01"
+   ],
+   "illustrative": true,
+   "metric": "UPS output capacity",
+   "operatingStates": [
+    "NORMAL"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPERSEDED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "SUPERSEDED",
+   "subjectRef": "urn:aidcf:syn:system:SYS-POW",
+   "unit": "MW",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:capacity-assertion:CAP-CAP-02",
+   "type": "CapacityAssertion",
+   "name": "Synthetic UPS capacity",
+   "assertedValue": 2.0,
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "derating": "Illustrative: 10% derating for ambient",
+   "duration": "PT10M",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "environment": "Illustrative: 35 C plant-room ambient",
+   "evidenceDate": "2026-09-30",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-031"
+   ],
+   "illustrative": true,
+   "metric": "UPS output capacity",
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:system:SYS-POW",
+   "supersedes": [
+    "urn:aidcf:syn:capacity-assertion:CAP-CAP-01"
+   ],
+   "unit": "MW",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:component:CMPT-BMC",
+   "type": "Component",
+   "name": "Synthetic node baseboard management controller",
+   "classification": "INTERNAL",
+   "componentKind": "BMC",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:conduit:CND-01",
+   "type": "Conduit",
+   "name": "Synthetic remote-access conduit",
+   "channels": [
+    "Synthetic vendor remote-support channel"
+   ],
+   "classification": "HIGHLY_RESTRICTED",
+   "countermeasures": [
+    "Synthetic jump host with session recording",
+    "Synthetic time-bound activation"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "distributionControlRef": "urn:aidcf:syn:distribution-control:DC-002",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "interfaceKind": "IACS_CONDUIT",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "remoteAccess": true,
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:dependency:DEP-01",
+   "type": "Dependency",
+   "name": "SYS-POW depends on AST-UTILITY",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependencyCriticality": "Illustrative: loss degrades or stops the dependent function.",
+   "dependencyType": "UTILITY",
+   "direction": "SYS-POW relies on AST-UTILITY",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-01"
+   ],
+   "external": true,
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRef": "urn:aidcf:syn:system:SYS-POW",
+   "status": "REVIEWED",
+   "strength": "MATERIAL",
+   "substitutability": "Illustrative: partial substitution available.",
+   "targetRef": "urn:aidcf:syn:asset:AST-UTILITY",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:dependency:DEP-02",
+   "type": "Dependency",
+   "name": "AST-UPS-A depends on AST-SWB-01",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependencyCriticality": "Illustrative: loss degrades or stops the dependent function.",
+   "dependencyType": "ELECTRICAL",
+   "direction": "AST-UPS-A relies on AST-SWB-01",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-01"
+   ],
+   "faultDomainRef": "urn:aidcf:syn:fault-domain:FD-01",
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRef": "urn:aidcf:syn:asset:AST-UPS-A",
+   "status": "REVIEWED",
+   "strength": "ABSOLUTE",
+   "substitutability": "Illustrative: no substitute within the outcome tolerance.",
+   "targetRef": "urn:aidcf:syn:asset:AST-SWB-01",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:dependency:DEP-03",
+   "type": "Dependency",
+   "name": "AST-UPS-B depends on AST-SWB-01",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependencyCriticality": "Illustrative: loss degrades or stops the dependent function.",
+   "dependencyType": "ELECTRICAL",
+   "direction": "AST-UPS-B relies on AST-SWB-01",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-01"
+   ],
+   "faultDomainRef": "urn:aidcf:syn:fault-domain:FD-01",
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRef": "urn:aidcf:syn:asset:AST-UPS-B",
+   "status": "REVIEWED",
+   "strength": "ABSOLUTE",
+   "substitutability": "Illustrative: no substitute within the outcome tolerance.",
+   "targetRef": "urn:aidcf:syn:asset:AST-SWB-01",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:dependency:DEP-04",
+   "type": "Dependency",
+   "name": "AST-CDU-1 depends on AST-CHL",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependencyCriticality": "Illustrative: loss degrades or stops the dependent function.",
+   "dependencyType": "FLUID",
+   "direction": "AST-CDU-1 relies on AST-CHL",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-01"
+   ],
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRef": "urn:aidcf:syn:asset:AST-CDU-1",
+   "status": "REVIEWED",
+   "strength": "ABSOLUTE",
+   "substitutability": "Illustrative: no substitute within the outcome tolerance.",
+   "targetRef": "urn:aidcf:syn:asset:AST-CHL",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:dependency:DEP-05",
+   "type": "Dependency",
+   "name": "AST-CDU-2 depends on AST-CHL",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependencyCriticality": "Illustrative: loss degrades or stops the dependent function.",
+   "dependencyType": "FLUID",
+   "direction": "AST-CDU-2 relies on AST-CHL",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-01"
+   ],
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRef": "urn:aidcf:syn:asset:AST-CDU-2",
+   "status": "REVIEWED",
+   "strength": "ABSOLUTE",
+   "substitutability": "Illustrative: no substitute within the outcome tolerance.",
+   "targetRef": "urn:aidcf:syn:asset:AST-CHL",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:dependency:DEP-06",
+   "type": "Dependency",
+   "name": "AST-CDU-1 depends on AST-BMS-CTRL",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependencyCriticality": "Illustrative: loss degrades or stops the dependent function.",
+   "dependencyType": "CONTROL",
+   "direction": "AST-CDU-1 relies on AST-BMS-CTRL",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-02"
+   ],
+   "faultDomainRef": "urn:aidcf:syn:fault-domain:FD-02",
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRef": "urn:aidcf:syn:asset:AST-CDU-1",
+   "status": "REVIEWED",
+   "strength": "MATERIAL",
+   "substitutability": "Illustrative: partial substitution available.",
+   "targetRef": "urn:aidcf:syn:asset:AST-BMS-CTRL",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:dependency:DEP-07",
+   "type": "Dependency",
+   "name": "AST-CDU-2 depends on AST-BMS-CTRL",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependencyCriticality": "Illustrative: loss degrades or stops the dependent function.",
+   "dependencyType": "CONTROL",
+   "direction": "AST-CDU-2 relies on AST-BMS-CTRL",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-02"
+   ],
+   "faultDomainRef": "urn:aidcf:syn:fault-domain:FD-02",
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRef": "urn:aidcf:syn:asset:AST-CDU-2",
+   "status": "REVIEWED",
+   "strength": "MATERIAL",
+   "substitutability": "Illustrative: partial substitution available.",
+   "targetRef": "urn:aidcf:syn:asset:AST-BMS-CTRL",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:dependency:DEP-08",
+   "type": "Dependency",
+   "name": "SYS-STO depends on SYS-NET",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependencyCriticality": "Illustrative: loss degrades or stops the dependent function.",
+   "dependencyType": "NETWORK",
+   "direction": "SYS-STO relies on SYS-NET",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-03"
+   ],
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRef": "urn:aidcf:syn:system:SYS-STO",
+   "status": "REVIEWED",
+   "strength": "ABSOLUTE",
+   "substitutability": "Illustrative: no substitute within the outcome tolerance.",
+   "targetRef": "urn:aidcf:syn:system:SYS-NET",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:dependency:DEP-09",
+   "type": "Dependency",
+   "name": "SYS-CMP depends on SYS-POW",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependencyCriticality": "Illustrative: loss degrades or stops the dependent function.",
+   "dependencyType": "ELECTRICAL",
+   "direction": "SYS-CMP relies on SYS-POW",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-01"
+   ],
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRef": "urn:aidcf:syn:system:SYS-CMP",
+   "status": "REVIEWED",
+   "strength": "ABSOLUTE",
+   "substitutability": "Illustrative: no substitute within the outcome tolerance.",
+   "targetRef": "urn:aidcf:syn:system:SYS-POW",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:dependency:DEP-10",
+   "type": "Dependency",
+   "name": "SYS-CMP depends on SYS-THM",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependencyCriticality": "Illustrative: loss degrades or stops the dependent function.",
+   "dependencyType": "THERMAL",
+   "direction": "SYS-CMP relies on SYS-THM",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-01"
+   ],
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRef": "urn:aidcf:syn:system:SYS-CMP",
+   "status": "REVIEWED",
+   "strength": "ABSOLUTE",
+   "substitutability": "Illustrative: no substitute within the outcome tolerance.",
+   "targetRef": "urn:aidcf:syn:system:SYS-THM",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:dependency:DEP-11",
+   "type": "Dependency",
+   "name": "SYS-THM depends on SYS-FWS",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependencyCriticality": "Illustrative: loss degrades or stops the dependent function.",
+   "dependencyType": "FLUID",
+   "direction": "SYS-THM relies on SYS-FWS",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-01"
+   ],
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRef": "urn:aidcf:syn:system:SYS-THM",
+   "status": "REVIEWED",
+   "strength": "ABSOLUTE",
+   "substitutability": "Illustrative: no substitute within the outcome tolerance.",
+   "targetRef": "urn:aidcf:syn:system:SYS-FWS",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:dependency:DEP-12",
+   "type": "Dependency",
+   "name": "AST-CDU-1 depends on CDU-VENDOR",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependencyCriticality": "Illustrative: loss degrades or stops the dependent function.",
+   "dependencyType": "SUPPLIER",
+   "direction": "AST-CDU-1 relies on CDU-VENDOR",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-01"
+   ],
+   "external": true,
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRef": "urn:aidcf:syn:asset:AST-CDU-1",
+   "status": "REVIEWED",
+   "strength": "CONDITIONAL",
+   "substitutability": "Illustrative: partial substitution available.",
+   "targetRef": "urn:aidcf:syn:party:CDU-VENDOR",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:dependency:DEP-13",
+   "type": "Dependency",
+   "name": "AST-GPU-NODES depends on AST-FAB-SPINE",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependencyCriticality": "Illustrative: loss degrades or stops the dependent function.",
+   "dependencyType": "NETWORK",
+   "direction": "AST-GPU-NODES relies on AST-FAB-SPINE",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-03"
+   ],
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRef": "urn:aidcf:syn:asset:AST-GPU-NODES",
+   "status": "REVIEWED",
+   "strength": "ABSOLUTE",
+   "substitutability": "Illustrative: no substitute within the outcome tolerance.",
+   "targetRef": "urn:aidcf:syn:asset:AST-FAB-SPINE",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:dependency:DEP-14",
+   "type": "Dependency",
+   "name": "SAF-CDU-FAILOVER depends on AST-BMS-CTRL",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependencyCriticality": "Illustrative: loss degrades or stops the dependent function.",
+   "dependencyType": "CONTROL",
+   "direction": "SAF-CDU-FAILOVER relies on AST-BMS-CTRL",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-02"
+   ],
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRef": "urn:aidcf:syn:safeguard:SAF-CDU-FAILOVER",
+   "status": "REVIEWED",
+   "strength": "MATERIAL",
+   "substitutability": "Illustrative: partial substitution available.",
+   "targetRef": "urn:aidcf:syn:asset:AST-BMS-CTRL",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:dependency:DEP-15",
+   "type": "Dependency",
+   "name": "SYS-FWS depends on RES-WATER",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependencyCriticality": "Illustrative: loss degrades or stops the dependent function.",
+   "dependencyType": "UTILITY",
+   "direction": "SYS-FWS relies on RES-WATER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-01"
+   ],
+   "external": true,
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRef": "urn:aidcf:syn:system:SYS-FWS",
+   "status": "REVIEWED",
+   "strength": "ABSOLUTE",
+   "substitutability": "Illustrative: no substitute within the outcome tolerance.",
+   "targetRef": "urn:aidcf:syn:resource:RES-WATER",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:dependency:DEP-16",
+   "type": "Dependency",
+   "name": "SYS-NET depends on SYS-POW",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependencyCriticality": "Illustrative: loss degrades or stops the dependent function.",
+   "dependencyType": "ELECTRICAL",
+   "direction": "SYS-NET relies on SYS-POW",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-01"
+   ],
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRef": "urn:aidcf:syn:system:SYS-NET",
+   "status": "REVIEWED",
+   "strength": "ABSOLUTE",
+   "substitutability": "Illustrative: no substitute within the outcome tolerance.",
+   "targetRef": "urn:aidcf:syn:system:SYS-POW",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:dependency:DEP-17",
+   "type": "Dependency",
+   "name": "SYS-CTL depends on SYS-POW",
+   "classification": "INTERNAL",
+   "confidence": "CONF-3",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependencyCriticality": "Illustrative: loss degrades or stops the dependent function.",
+   "dependencyType": "ELECTRICAL",
+   "direction": "SYS-CTL relies on SYS-POW",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-01"
+   ],
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRef": "urn:aidcf:syn:system:SYS-CTL",
+   "status": "REVIEWED",
+   "strength": "MATERIAL",
+   "substitutability": "Illustrative: partial substitution available.",
+   "targetRef": "urn:aidcf:syn:system:SYS-POW",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:fault-domain:FD-01",
+   "type": "FaultDomain",
+   "name": "Synthetic fault domain FD-01",
+   "blastRadius": "Both redundant units fail together.",
+   "boundary": "Plant room",
+   "classification": "INTERNAL",
+   "commonMode": "Common main switchboard upstream of both UPS units.",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-01"
+   ],
+   "faultDomainMembers": [
+    "urn:aidcf:syn:asset:AST-UPS-A",
+    "urn:aidcf:syn:asset:AST-UPS-B",
+    "urn:aidcf:syn:asset:AST-SWB-01"
+   ],
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-PLANT"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:fault-domain:FD-02",
+   "type": "FaultDomain",
+   "name": "Synthetic fault domain FD-02",
+   "blastRadius": "Both redundant units fail together.",
+   "boundary": "Plant room",
+   "classification": "INTERNAL",
+   "commonMode": "Single BMS controller commanding both CDUs.",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "evidencedBy": [
+    "urn:aidcf:syn:evidence:EV-ARCH-02"
+   ],
+   "faultDomainMembers": [
+    "urn:aidcf:syn:asset:AST-CDU-1",
+    "urn:aidcf:syn:asset:AST-CDU-2",
+    "urn:aidcf:syn:asset:AST-BMS-CTRL"
+   ],
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-PLANT"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:interface:IF-FABRIC",
+   "type": "Interface",
+   "name": "Synthetic compute-storage fabric interface",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "interfaceKind": "NETWORK",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:interface:IF-FWS-CDU",
+   "type": "Interface",
+   "name": "Synthetic facility-water to CDU interface",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "interfaceKind": "FLUID",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:interface:IF-PWR-RACK",
+   "type": "Interface",
+   "name": "Synthetic rack power interface",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "interfaceKind": "ELECTRICAL",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:resource:RES-UTIL",
+   "type": "Resource",
+   "name": "Synthetic utility electrical capacity",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "resourceKind": "POWER",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:resource:RES-WATER",
+   "type": "Resource",
+   "name": "Synthetic make-up water supply",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "propagatesTo": [
+    "urn:aidcf:syn:system:SYS-FWS"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "resourceKind": "WATER",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:security-level:SL-01",
+   "type": "SecurityLevel",
+   "name": "Synthetic SL-T for the BMS zone",
+   "basis": "Synthetic zone risk assessment SYN-RA-OT-001 (illustrative values).",
+   "classification": "CONFIDENTIAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "distributionControlRef": "urn:aidcf:syn:distribution-control:DC-001",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "securityLevelKind": "SL-T",
+   "semanticOwner": "AIDCF-003",
+   "slVector": {
+    "fr1": 2,
+    "fr2": 2,
+    "fr3": 2,
+    "fr4": 1,
+    "fr5": 2,
+    "fr6": 2,
+    "fr7": 2
+   },
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:zone:ZONE-BMS",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:security-level:SL-02",
+   "type": "SecurityLevel",
+   "name": "Synthetic SL-C for the BMS controller",
+   "basis": "Synthetic vendor capability statement (illustrative values).",
+   "classification": "CONFIDENTIAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "distributionControlRef": "urn:aidcf:syn:distribution-control:DC-001",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "securityLevelKind": "SL-C",
+   "semanticOwner": "AIDCF-003",
+   "slVector": {
+    "fr1": 2,
+    "fr2": 1,
+    "fr3": 2,
+    "fr4": 1,
+    "fr5": 2,
+    "fr6": 1,
+    "fr7": 2
+   },
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "subjectRef": "urn:aidcf:syn:asset:AST-BMS-CTRL",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:snapshot:SNAP-001",
+   "type": "ArchitectureSnapshot",
+   "name": "Synthetic architecture snapshot",
+   "approvedBy": [
+    "urn:aidcf:syn:review:RR-005"
+   ],
+   "assertionRefs": [
+    "urn:aidcf:syn:capacity-assertion:CAP-CAP-02",
+    "urn:aidcf:syn:assertion:ASR-01",
+    "urn:aidcf:syn:assertion:ASR-02"
+   ],
+   "capabilityRef": "urn:aidcf:syn:capability:CI-001",
+   "classification": "INTERNAL",
+   "composedOf": [
+    "urn:aidcf:syn:system:SYS-POW",
+    "urn:aidcf:syn:system:SYS-THM",
+    "urn:aidcf:syn:system:SYS-FWS",
+    "urn:aidcf:syn:system:SYS-CMP",
+    "urn:aidcf:syn:system:SYS-STO",
+    "urn:aidcf:syn:system:SYS-NET",
+    "urn:aidcf:syn:system:SYS-CTL",
+    "urn:aidcf:syn:interface:IF-PWR-RACK",
+    "urn:aidcf:syn:interface:IF-FWS-CDU",
+    "urn:aidcf:syn:interface:IF-FABRIC",
+    "urn:aidcf:syn:conduit:CND-01",
+    "urn:aidcf:syn:resource:RES-UTIL",
+    "urn:aidcf:syn:resource:RES-WATER",
+    "urn:aidcf:syn:asset:AST-UTILITY"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependencyRefs": [
+    "urn:aidcf:syn:dependency:DEP-01",
+    "urn:aidcf:syn:dependency:DEP-02",
+    "urn:aidcf:syn:dependency:DEP-03",
+    "urn:aidcf:syn:dependency:DEP-04",
+    "urn:aidcf:syn:dependency:DEP-05",
+    "urn:aidcf:syn:dependency:DEP-06",
+    "urn:aidcf:syn:dependency:DEP-07",
+    "urn:aidcf:syn:dependency:DEP-08",
+    "urn:aidcf:syn:dependency:DEP-09",
+    "urn:aidcf:syn:dependency:DEP-10",
+    "urn:aidcf:syn:dependency:DEP-11",
+    "urn:aidcf:syn:dependency:DEP-12",
+    "urn:aidcf:syn:dependency:DEP-13",
+    "urn:aidcf:syn:dependency:DEP-14",
+    "urn:aidcf:syn:dependency:DEP-15",
+    "urn:aidcf:syn:dependency:DEP-16",
+    "urn:aidcf:syn:dependency:DEP-17"
+   ],
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "faultDomainRefs": [
+    "urn:aidcf:syn:fault-domain:FD-01",
+    "urn:aidcf:syn:fault-domain:FD-02"
+   ],
+   "operatingStates": [
+    "NORMAL",
+    "MAINTENANCE",
+    "DEGRADED",
+    "RECOVERY"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "reconciliationEvidenceRef": "urn:aidcf:syn:evidence:EV-ARCH-01",
+   "reconciliationStatus": "PARTIALLY_RECONCILED",
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-013",
+   "snapshotDate": "2026-09-30",
+   "sourceArtifact": "AIDCF-015",
+   "status": "APPROVED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:system:SYS-CMP",
+   "type": "InfrastructureSystem",
+   "name": "Synthetic accelerator compute cluster",
+   "classification": "INTERNAL",
+   "composedOf": [
+    "urn:aidcf:syn:asset:AST-GPU-NODES"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependsOn": [
+    "urn:aidcf:syn:system:SYS-POW",
+    "urn:aidcf:syn:system:SYS-THM"
+   ],
+   "domainCode": "CMP",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-HALL-A"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:IT-OPS"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:function:RF-03",
+    "urn:aidcf:syn:system:SYS-THM"
+   ],
+   "protectedBy": [
+    "urn:aidcf:syn:safeguard:SAF-THROTTLE"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "systemKind": "COMPUTE_CLUSTER",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:system:SYS-CTL",
+   "type": "IACS",
+   "name": "Synthetic supervisory control IACS",
+   "assetOwner": "urn:aidcf:syn:party:FAC-OPS",
+   "classification": "INTERNAL",
+   "composedOf": [
+    "urn:aidcf:syn:zone:ZONE-BMS",
+    "urn:aidcf:syn:zone:ZONE-REMOTE"
+   ],
+   "controlledFunctions": [
+    "urn:aidcf:syn:function:RF-02",
+    "urn:aidcf:syn:function:RF-06"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependsOn": [
+    "urn:aidcf:syn:system:SYS-POW"
+   ],
+   "domainCode": "SEC",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "exposedTo": [
+    "urn:aidcf:syn:failure-mode:FM-08"
+   ],
+   "integrator": "urn:aidcf:syn:party:OT-SEC",
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-PLANT"
+   ],
+   "maintainer": "urn:aidcf:syn:party:CDU-VENDOR",
+   "operatedBy": [
+    "urn:aidcf:syn:party:OT-SEC"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:asset:AST-SWB-01"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "systemKind": "IACS",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:system:SYS-FWS",
+   "type": "InfrastructureSystem",
+   "name": "Synthetic facility water system",
+   "classification": "INTERNAL",
+   "composedOf": [
+    "urn:aidcf:syn:asset:AST-CHL"
+   ],
+   "consumesResource": [
+    "urn:aidcf:syn:resource:RES-WATER"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependsOn": [
+    "urn:aidcf:syn:resource:RES-WATER"
+   ],
+   "domainCode": "THM",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "exposedTo": [
+    "urn:aidcf:syn:hazard:HZ-02",
+    "urn:aidcf:syn:hazard:HZ-04"
+   ],
+   "hasUnknown": [
+    "urn:aidcf:syn:unknown:U-003"
+   ],
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-PLANT"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:FAC-OPS"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:asset:AST-CHL",
+    "urn:aidcf:syn:asset:AST-CDU-1",
+    "urn:aidcf:syn:asset:AST-CDU-2"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "systemKind": "FACILITY_WATER",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:system:SYS-NET",
+   "type": "InfrastructureSystem",
+   "name": "Synthetic scale-out fabric",
+   "classification": "INTERNAL",
+   "composedOf": [
+    "urn:aidcf:syn:asset:AST-FAB-SPINE"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependsOn": [
+    "urn:aidcf:syn:system:SYS-POW"
+   ],
+   "domainCode": "NET",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-HALL-A"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:IT-OPS"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:system:SYS-STO",
+    "urn:aidcf:syn:function:RF-05",
+    "urn:aidcf:syn:system:SYS-CMP"
+   ],
+   "protectedBy": [
+    "urn:aidcf:syn:safeguard:SAF-FAB-RR"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "recoversThrough": [
+    "urn:aidcf:syn:safeguard:SAF-FAB-RR"
+   ],
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "systemKind": "SCALE_OUT_FABRIC",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:system:SYS-POW",
+   "type": "InfrastructureSystem",
+   "name": "Synthetic electrical power system",
+   "classification": "INTERNAL",
+   "composedOf": [
+    "urn:aidcf:syn:asset:AST-SWB-01",
+    "urn:aidcf:syn:asset:AST-UPS-A",
+    "urn:aidcf:syn:asset:AST-UPS-B"
+   ],
+   "consumesResource": [
+    "urn:aidcf:syn:resource:RES-UTIL"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependsOn": [
+    "urn:aidcf:syn:asset:AST-UTILITY"
+   ],
+   "domainCode": "POW",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "exposedTo": [
+    "urn:aidcf:syn:hazard:HZ-01"
+   ],
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-PLANT"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:FAC-OPS"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:function:RF-01",
+    "urn:aidcf:syn:system:SYS-NET",
+    "urn:aidcf:syn:system:SYS-CMP",
+    "urn:aidcf:syn:system:SYS-THM"
+   ],
+   "protectedBy": [
+    "urn:aidcf:syn:safeguard:SAF-UPS-RT"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "systemKind": "POWER_DISTRIBUTION",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:system:SYS-STO",
+   "type": "InfrastructureSystem",
+   "name": "Synthetic checkpoint storage system",
+   "classification": "INTERNAL",
+   "composedOf": [
+    "urn:aidcf:syn:asset:AST-STO-ARRAY"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependsOn": [
+    "urn:aidcf:syn:system:SYS-NET"
+   ],
+   "domainCode": "STO",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-HALL-A"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:IT-OPS"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:function:RF-04",
+    "urn:aidcf:syn:system:SYS-NET"
+   ],
+   "protectedBy": [
+    "urn:aidcf:syn:safeguard:SAF-CKPT"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "systemKind": "CHECKPOINT_STORAGE",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:system:SYS-THM",
+   "type": "InfrastructureSystem",
+   "name": "Synthetic liquid-cooling secondary loop",
+   "classification": "INTERNAL",
+   "composedOf": [
+    "urn:aidcf:syn:asset:AST-CDU-1",
+    "urn:aidcf:syn:asset:AST-CDU-2"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependsOn": [
+    "urn:aidcf:syn:system:SYS-FWS"
+   ],
+   "domainCode": "THM",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "exposedTo": [
+    "urn:aidcf:syn:hazard:HZ-03"
+   ],
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-HALL-A"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:FAC-OPS"
+   ],
+   "propagatesTo": [
+    "urn:aidcf:syn:function:RF-02",
+    "urn:aidcf:syn:system:SYS-CMP",
+    "urn:aidcf:syn:system:SYS-POW"
+   ],
+   "protectedBy": [
+    "urn:aidcf:syn:safeguard:SAF-CDU-FAILOVER",
+    "urn:aidcf:syn:safeguard:SAF-LEAK"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "systemKind": "CDU_SECONDARY_LOOP",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:zone:ZONE-BMS",
+   "type": "IACSZone",
+   "name": "Synthetic BMS IACS zone",
+   "boundaryDescription": "BMS controller and its supervisory network segment.",
+   "classification": "CONFIDENTIAL",
+   "composedOf": [
+    "urn:aidcf:syn:asset:AST-BMS-CTRL"
+   ],
+   "connectsTo": [
+    "urn:aidcf:syn:conduit:CND-01"
+   ],
+   "controlledFunctions": [
+    "urn:aidcf:syn:function:RF-02",
+    "urn:aidcf:syn:function:RF-06"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "distributionControlRef": "urn:aidcf:syn:distribution-control:DC-001",
+   "domainCode": "SEC",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "hasUnknown": [
+    "urn:aidcf:syn:unknown:U-005"
+   ],
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-PLANT"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:OT-SEC"
+   ],
+   "protectedBy": [
+    "urn:aidcf:syn:safeguard:SAF-SEG"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "riskAssessmentRef": "SYN-RA-OT-001 (synthetic)",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "systemKind": "IACS_ZONE",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:zone:ZONE-REMOTE",
+   "type": "IACSZone",
+   "name": "Synthetic remote-access IACS zone",
+   "boundaryDescription": "Remote-access gateway segment for vendor support.",
+   "classification": "CONFIDENTIAL",
+   "composedOf": [
+    "urn:aidcf:syn:asset:AST-OT-GW"
+   ],
+   "connectsTo": [
+    "urn:aidcf:syn:conduit:CND-01"
+   ],
+   "controlledFunctions": [
+    "urn:aidcf:syn:function:RF-06"
+   ],
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "distributionControlRef": "urn:aidcf:syn:distribution-control:DC-001",
+   "domainCode": "SEC",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "locatedIn": [
+    "urn:aidcf:syn:location:LOC-PLANT"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:OT-SEC"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "riskAssessmentRef": "SYN-RA-OT-001 (synthetic)",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-003",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "systemKind": "IACS_ZONE",
+   "version": "1.0"
+  }
+ ]
+}

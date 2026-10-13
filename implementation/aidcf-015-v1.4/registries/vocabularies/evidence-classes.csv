@@ -1,0 +1,8 @@
+code,name,primaryClaimSupported,representativeSubtypes
+E1,Documentary and declarative,"Intent, governance and approved design",policy; standard; procedure; runbook; design basis; architecture; drawing; contract; attestation; inventory
+E2,Configuration and technical state,Implementation and technical state,device configuration; firmware inventory; cluster manifest; access policy; protection setting; topology export; configuration snapshot
+E3,Operational and observational,"Operation, performance and incidents over a period",telemetry; log; alarm; event; ticket; work order; capacity metric; performance metric; physical observation; inspection record
+E4,Validation and test,Effectiveness and resilience under stated conditions,commissioning; load test; failover test; recovery test; simulation; scenario exercise; functional test; calibration; witnessed demonstration
+E5,Independent and third-party,Independent corroboration,independent engineering review; audit; provider assurance; witnessed test; laboratory result; accredited certificate; regulatory inspection
+E6,Human and experiential,"Practice, competence and context",interview; workshop; walkthrough; operator demonstration; expert judgment; shift observation; competency evidence
+E7,Derived and analytical,Analysis and relationship synthesis,trend; correlation; capacity analysis; failure analysis; dependency path; reconciled inventory; score; model output; AI-assisted extraction

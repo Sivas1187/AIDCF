@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-004",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "MDM-R04",
+ "description": "Decision LIMITED although the open US5 U-003 caps it at INCONCLUSIVE (the computed ceiling is NOT_ASSURED).",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:decision:AD-001",
+   "field": "decisionState",
+   "value": "LIMITED"
+  }
+ ]
+}

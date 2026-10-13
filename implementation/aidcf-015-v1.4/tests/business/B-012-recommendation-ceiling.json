@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-012",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "MDM-R06",
+ "description": "Recommendation ceiling LIMITED although the computed ceiling is NOT_ASSURED (CG-07 FAIL).",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:recommendation:DR-001",
+   "field": "decisionCeiling",
+   "value": "LIMITED"
+  }
+ ]
+}

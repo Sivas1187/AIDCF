@@ -1,0 +1,13 @@
+{
+  "charterId": "AIDCF-015-v1.3-CHAR-001",
+  "purpose": "Rebuild the synthetic reference package on the AIDCF-016 machine-executable model with registry gate roles, canonical roll-up rules and executed validation layers.",
+  "roles": {
+    "sponsor": "Methodology owner",
+    "registrySteward": "Registry steward",
+    "validator": "Conformance reviewer (self-validation; independent T7 review pending)",
+    "decisionAuthority": "Accountable methodology authority (synthetic party urn:aidcf:syn:party:DECISION-AUTH in the dataset)"
+  },
+  "independence": "Synthetic self-validation only; independent T7 execution and signed review remain pending.",
+  "safety": "No live engineering, switching, intrusion or destructive test. All test records are synthetic.",
+  "supersedes": "AIDCF-015-v1.2-CHAR-001"
+}

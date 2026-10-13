@@ -1,0 +1,8 @@
+code,name,kind,meaning
+CONF-0,UNKNOWN,level,No defensible confidence state
+CONF-1,LOW,level,Weak or limited evidence; high sensitivity to assumptions
+CONF-2,MODERATE,level,Reasonable support with material limitations
+CONF-3,HIGH,level,Strong support with no unresolved material conflict within scope
+CONF-4,VERY_HIGH,level,"Highly defensible, independently corroborated and representative support for the bounded claim"
+CONFLICTING,CONFLICTING,flag,Material evidence supports incompatible propositions
+STALE,STALE,flag,Previously supported but no longer sufficiently current

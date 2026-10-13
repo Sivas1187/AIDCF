@@ -1,0 +1,6 @@
+code,name,testOrder,test,decisionEffect,legacyLabel
+US5,Systemic,1,"Affects the boundary, a Capability/Outcome definition, or two or more gates",Decision <= INCONCLUSIVE,Systemic
+US4,Critical,2,Affects a gate-critical control or a gate criterion (CG-12 trigger),Gate -> UNKNOWN; decision <= LIMITED or INCONCLUSIVE per gate ceiling,Critical
+US3,Material,3,Could change a control result or a decision condition but no gate,Decision <= CONDITIONALLY_ASSURED; condition recorded,Material
+US2,Moderate,4,Affects confidence but not any result,Confidence ceiling CONF-2 for affected claims,Moderate
+US1,Low,5,No plausible effect on any result or condition,Record only,Low

@@ -1,0 +1,17 @@
+{
+ "fixtureId": "B-009",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "BR-013",
+ "description": "Event affectedAssertions truncated to one record.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:event:EVT-001",
+   "field": "affectedAssertions",
+   "value": [
+    "https://w3id.org/aidcf/id/control/MCF-CMP-001"
+   ]
+  }
+ ]
+}

@@ -88,6 +88,16 @@ jobs:
           name: aidcf-015-v1.3-outputs
           path: implementation/aidcf-015-v1.3/outputs/
 
+      - name: AIDCF-015 v1.4 run_all (all layers; fails the build on any failure)
+        run: python -B implementation/aidcf-015-v1.4/tools/run_all.py
+
+      - name: Upload v1.4 validation outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: aidcf-015-v1.4-outputs
+          path: implementation/aidcf-015-v1.4/outputs/
+
       - name: AIDCF-015 v1.2 run_all in a temporary copy (informational only)
         continue-on-error: true
         run: |

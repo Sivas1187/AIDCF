@@ -1,0 +1,10 @@
+{
+ "query": "Q13",
+ "description": "AIDCF-016 additional query: edges created by the pending event that are not CANDIDATE (must be none; AIDCF-014 TDS-REQ-062).",
+ "basis": "TDS-REQ-062.",
+ "rows": [
+  [
+   0
+  ]
+ ]
+}

@@ -1,0 +1,1200 @@
+{
+ "@context": "../schemas/jsonld/aidcf-context-1.3.jsonld",
+ "@graph": [
+  {
+   "id": "urn:aidcf:syn:failure-mode:FM-01",
+   "type": "FailureMode",
+   "name": "Synthetic switchboard busbar fault",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "failureMechanism": "Busbar insulation breakdown",
+   "initiates": [
+    "urn:aidcf:syn:scenario:FS-01"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:failure-mode:FM-02",
+   "type": "FailureMode",
+   "name": "Synthetic BMS controller failure",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "failureMechanism": "Controller CPU lock-up after firmware fault",
+   "initiates": [
+    "urn:aidcf:syn:scenario:FS-02"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:failure-mode:FM-03",
+   "type": "FailureMode",
+   "name": "Synthetic fabric spine optic failure",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "failureMechanism": "Optic degradation and link flap",
+   "initiates": [
+    "urn:aidcf:syn:scenario:FS-05"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:failure-mode:FM-04",
+   "type": "FailureMode",
+   "name": "Synthetic CDU controller firmware fault",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "failureMechanism": "A CDU firmware release, deployed to every CDU through the vendor management tool, mishandles a failed differential-pressure sensor and stops the duty and standby pumps",
+   "initiates": [
+    "urn:aidcf:syn:scenario:FS-06"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:failure-mode:FM-05",
+   "type": "FailureMode",
+   "name": "Synthetic lossless-class misconfiguration on a fabric switch",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "failureMechanism": "Inconsistent priority mapping makes one port generate PFC pause frames continuously",
+   "initiates": [
+    "urn:aidcf:syn:scenario:FS-07"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:failure-mode:FM-06",
+   "type": "FailureMode",
+   "name": "Synthetic checkpoint tier read storm on mass restart",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "failureMechanism": "Every interrupted job restarts at once; read demand and metadata operations exceed the tier, which retention had already filled",
+   "initiates": [
+    "urn:aidcf:syn:scenario:FS-08"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:failure-mode:FM-07",
+   "type": "FailureMode",
+   "name": "Synthetic rack cord misallocation exposed by A-path maintenance",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "failureMechanism": "Racks with both cords on the A path lose power when it is isolated; the B path then carries all remaining load at peak",
+   "initiates": [
+    "urn:aidcf:syn:scenario:FS-11"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:failure-mode:FM-08",
+   "type": "FailureMode",
+   "name": "Synthetic operator mis-switching under an alarm flood",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "failureMechanism": "The alarm flood masks the root alarm and the operator opens the breaker on the healthy side",
+   "initiates": [
+    "urn:aidcf:syn:scenario:FS-12"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:hazard:HZ-01",
+   "type": "Hazard",
+   "name": "Synthetic utility voltage sag",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "hazardType": "UTILITY_DISTURBANCE",
+   "initiates": [
+    "urn:aidcf:syn:scenario:FS-03"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:hazard:HZ-02",
+   "type": "Hazard",
+   "name": "Synthetic heatwave above design ambient",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "hazardType": "ENVIRONMENTAL",
+   "initiates": [
+    "urn:aidcf:syn:scenario:FS-04"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:hazard:HZ-03",
+   "type": "Hazard",
+   "name": "Synthetic coolant leak at a rack manifold quick-disconnect",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "hazardType": "FLUID",
+   "initiates": [
+    "urn:aidcf:syn:scenario:FS-09"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:hazard:HZ-04",
+   "type": "Hazard",
+   "name": "Synthetic facility water chemistry excursion",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "hazardType": "CHEMICAL",
+   "initiates": [
+    "urn:aidcf:syn:scenario:FS-10"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:hazard:HZ-05",
+   "type": "Hazard",
+   "name": "Synthetic medium-voltage feed fault",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "hazardType": "UTILITY_DISTURBANCE",
+   "initiates": [
+    "urn:aidcf:syn:scenario:FS-12"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:safeguard:SAF-CDU-FAILOVER",
+   "type": "Safeguard",
+   "name": "Synthetic CDU failover",
+   "activation": "AUTOMATIC",
+   "activationTrigger": "CDU trip or low flow",
+   "authority": "urn:aidcf:syn:system:SYS-CTL",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "dependsOn": [
+    "urn:aidcf:syn:asset:AST-BMS-CTRL"
+   ],
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "governedBy": [
+    "https://w3id.org/aidcf/id/control/MCF-THM-010"
+   ],
+   "implementedBy": [
+    "urn:aidcf:syn:asset:AST-CDU-2"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:FAC-OPS"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "safeguardFailureModes": [
+    "Controller failure prevents failover"
+   ],
+   "safeguardFunction": "CORRECT",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "status": "REVIEWED",
+   "timeToAct": "PT30S",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:safeguard:SAF-CKPT",
+   "type": "Safeguard",
+   "name": "Synthetic checkpoint and restore",
+   "activation": "AUTOMATIC",
+   "activationTrigger": "Job failure",
+   "authority": "urn:aidcf:syn:party:IT-OPS",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "governedBy": [
+    "https://w3id.org/aidcf/id/control/MCF-STO-017",
+    "https://w3id.org/aidcf/id/control/MCF-RES-016"
+   ],
+   "implementedBy": [
+    "urn:aidcf:syn:asset:AST-STO-ARRAY"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:IT-OPS"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "safeguardFailureModes": [
+    "Corrupt checkpoint"
+   ],
+   "safeguardFunction": "RECOVER",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "status": "REVIEWED",
+   "timeToAct": "PT30M",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:safeguard:SAF-FAB-RR",
+   "type": "Safeguard",
+   "name": "Synthetic fabric re-routing",
+   "activation": "AUTOMATIC",
+   "activationTrigger": "Link or switch failure",
+   "authority": "urn:aidcf:syn:system:SYS-NET",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "governedBy": [
+    "https://w3id.org/aidcf/id/control/MCF-NET-002"
+   ],
+   "implementedBy": [
+    "urn:aidcf:syn:asset:AST-FAB-SPINE"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:IT-OPS"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "safeguardFailureModes": [
+    "Insufficient path diversity"
+   ],
+   "safeguardFunction": "CORRECT",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "status": "REVIEWED",
+   "timeToAct": "PT1S",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:safeguard:SAF-LEAK",
+   "type": "Safeguard",
+   "name": "Synthetic leak detection and isolation",
+   "activation": "HYBRID",
+   "activationTrigger": "Leak sensor alarm",
+   "authority": "urn:aidcf:syn:party:FAC-OPS",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "governedBy": [
+    "https://w3id.org/aidcf/id/control/MCF-THM-019",
+    "https://w3id.org/aidcf/id/control/MCF-OPS-013"
+   ],
+   "implementedBy": [
+    "urn:aidcf:syn:asset:AST-BMS-CTRL"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:FAC-OPS"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "safeguardFailureModes": [
+    "Sensor fault",
+    "Alarm not acknowledged"
+   ],
+   "safeguardFunction": "DETECT",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "status": "REVIEWED",
+   "timeToAct": "PT2M",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:safeguard:SAF-SEG",
+   "type": "Safeguard",
+   "name": "Synthetic OT segmentation and remote-access control",
+   "activation": "AUTOMATIC",
+   "activationTrigger": "Any remote session request",
+   "authority": "urn:aidcf:syn:party:OT-SEC",
+   "classification": "CONFIDENTIAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "distributionControlRef": "urn:aidcf:syn:distribution-control:DC-001",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "governedBy": [
+    "https://w3id.org/aidcf/id/control/MCF-SEC-005",
+    "https://w3id.org/aidcf/id/control/MCF-SEC-010",
+    "https://w3id.org/aidcf/id/control/MCF-SUP-021"
+   ],
+   "implementedBy": [
+    "urn:aidcf:syn:conduit:CND-01",
+    "urn:aidcf:syn:asset:AST-OT-GW"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:OT-SEC"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "safeguardFailureModes": [
+    "Rule misconfiguration"
+   ],
+   "safeguardFunction": "PREVENT",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "status": "REVIEWED",
+   "timeToAct": "PT0S",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:safeguard:SAF-THROTTLE",
+   "type": "Safeguard",
+   "name": "Synthetic accelerator thermal throttling",
+   "activation": "AUTOMATIC",
+   "activationTrigger": "Inlet over-temperature",
+   "authority": "urn:aidcf:syn:system:SYS-CMP",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "governedBy": [
+    "https://w3id.org/aidcf/id/control/MCF-CMP-019"
+   ],
+   "implementedBy": [
+    "urn:aidcf:syn:asset:AST-GPU-NODES"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:IT-OPS"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "safeguardFailureModes": [
+    "Firmware disables throttling"
+   ],
+   "safeguardFunction": "CONTAIN",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "status": "REVIEWED",
+   "timeToAct": "PT5S",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:safeguard:SAF-UPS-RT",
+   "type": "Safeguard",
+   "name": "Synthetic UPS ride-through",
+   "activation": "AUTOMATIC",
+   "activationTrigger": "Loss of mains",
+   "authority": "urn:aidcf:syn:system:SYS-POW",
+   "classification": "INTERNAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "governedBy": [
+    "https://w3id.org/aidcf/id/control/MCF-POW-009",
+    "https://w3id.org/aidcf/id/control/MCF-POW-019"
+   ],
+   "implementedBy": [
+    "urn:aidcf:syn:asset:AST-UPS-A",
+    "urn:aidcf:syn:asset:AST-UPS-B"
+   ],
+   "operatedBy": [
+    "urn:aidcf:syn:party:FAC-OPS"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "safeguardFailureModes": [
+    "Battery end of life",
+    "Static switch failure"
+   ],
+   "safeguardFunction": "CORRECT",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "stateCoverage": [
+    "NORMAL",
+    "MAINTENANCE"
+   ],
+   "status": "REVIEWED",
+   "timeToAct": "PT0S",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:scenario:FS-01",
+   "type": "FailureScenario",
+   "name": "Synthetic switchboard failure",
+   "classification": "INTERNAL",
+   "confidence": "CONF-2",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "expectedSafeguards": [
+    "urn:aidcf:syn:safeguard:SAF-UPS-RT"
+   ],
+   "outcomeEffects": [
+    {
+     "outcomeRef": "urn:aidcf:syn:outcome:SO-01",
+     "effect": "Illustrative: outcome breaches tolerance without the expected safeguards.",
+     "exceedsTolerance": true
+    }
+   ],
+   "preState": "NORMAL",
+   "propagationSteps": [
+    "urn:aidcf:syn:rel:REL-6afa6610434af5be",
+    "urn:aidcf:syn:rel:REL-bc2fa3a1c1fe2ed3",
+    "urn:aidcf:syn:rel:REL-a75905a7153840fa",
+    "urn:aidcf:syn:rel:REL-622a21d24581e63d",
+    "urn:aidcf:syn:rel:REL-455f65db9b701429"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "residualState": "FAILED",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:scenario:FS-02",
+   "type": "FailureScenario",
+   "name": "Synthetic BMS controller loss or unauthorised command",
+   "classification": "CONFIDENTIAL",
+   "confidence": "CONF-2",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "distributionControlRef": "urn:aidcf:syn:distribution-control:DC-001",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "expectedSafeguards": [
+    "urn:aidcf:syn:safeguard:SAF-CDU-FAILOVER",
+    "urn:aidcf:syn:safeguard:SAF-SEG",
+    "urn:aidcf:syn:safeguard:SAF-LEAK"
+   ],
+   "outcomeEffects": [
+    {
+     "outcomeRef": "urn:aidcf:syn:outcome:SO-01",
+     "effect": "Illustrative: outcome breaches tolerance without the expected safeguards.",
+     "exceedsTolerance": true
+    }
+   ],
+   "preState": "NORMAL",
+   "propagationSteps": [
+    "urn:aidcf:syn:rel:REL-5be06d1f2e29e1b4",
+    "urn:aidcf:syn:rel:REL-5fc5b3738a41a5e1",
+    "urn:aidcf:syn:rel:REL-17ec1904920fe272",
+    "urn:aidcf:syn:rel:REL-73bd9c1d6cdaf2d2",
+    "urn:aidcf:syn:rel:REL-db50ec8f7d91c0d4"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "residualState": "DEGRADED",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:scenario:FS-03",
+   "type": "FailureScenario",
+   "name": "Synthetic utility sag affecting fabric and checkpoints",
+   "classification": "INTERNAL",
+   "confidence": "CONF-2",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "expectedSafeguards": [
+    "urn:aidcf:syn:safeguard:SAF-UPS-RT",
+    "urn:aidcf:syn:safeguard:SAF-CKPT"
+   ],
+   "outcomeEffects": [
+    {
+     "outcomeRef": "urn:aidcf:syn:outcome:SO-02",
+     "effect": "Illustrative: outcome breaches tolerance without the expected safeguards.",
+     "exceedsTolerance": true
+    }
+   ],
+   "preState": "NORMAL",
+   "propagationSteps": [
+    "urn:aidcf:syn:rel:REL-a2e5745f7f1a948a",
+    "urn:aidcf:syn:rel:REL-3c1214dc8ae1c23c",
+    "urn:aidcf:syn:rel:REL-a414692040f3a6e7",
+    "urn:aidcf:syn:rel:REL-24d74852f84953d2",
+    "urn:aidcf:syn:rel:REL-4677aafb699344b0"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "residualState": "RECOVERY",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:scenario:FS-04",
+   "type": "FailureScenario",
+   "name": "Synthetic heatwave and chiller trip",
+   "classification": "INTERNAL",
+   "confidence": "CONF-2",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "expectedSafeguards": [
+    "urn:aidcf:syn:safeguard:SAF-THROTTLE",
+    "urn:aidcf:syn:safeguard:SAF-LEAK"
+   ],
+   "outcomeEffects": [
+    {
+     "outcomeRef": "urn:aidcf:syn:outcome:SO-03",
+     "effect": "Illustrative: outcome breaches tolerance without the expected safeguards.",
+     "exceedsTolerance": true
+    }
+   ],
+   "preState": "NORMAL",
+   "propagationSteps": [
+    "urn:aidcf:syn:rel:REL-9236518bfdcf67c1",
+    "urn:aidcf:syn:rel:REL-70a7459c09ee611b",
+    "urn:aidcf:syn:rel:REL-05a2cc12bbaddfef",
+    "urn:aidcf:syn:rel:REL-e73b17cb5e3372c0",
+    "urn:aidcf:syn:rel:REL-be0f6ec82da55b84",
+    "urn:aidcf:syn:rel:REL-350e286991999488",
+    "urn:aidcf:syn:rel:REL-eeb94403faeadf37"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "residualState": "DEGRADED",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:scenario:FS-05",
+   "type": "FailureScenario",
+   "name": "Synthetic fabric spine optic failure",
+   "classification": "INTERNAL",
+   "confidence": "CONF-2",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "expectedSafeguards": [
+    "urn:aidcf:syn:safeguard:SAF-FAB-RR"
+   ],
+   "outcomeEffects": [
+    {
+     "outcomeRef": "urn:aidcf:syn:outcome:SO-01",
+     "effect": "Illustrative: outcome breaches tolerance without the expected safeguards.",
+     "exceedsTolerance": true
+    }
+   ],
+   "preState": "NORMAL",
+   "propagationSteps": [
+    "urn:aidcf:syn:rel:REL-1622c96306ad2bbb",
+    "urn:aidcf:syn:rel:REL-7f8b9ff278e3ba05",
+    "urn:aidcf:syn:rel:REL-ad8466f4b27e82ce"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "residualState": "DEGRADED",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:scenario:FS-06",
+   "type": "FailureScenario",
+   "name": "Synthetic CDU controller firmware fault stops both CDUs",
+   "classification": "INTERNAL",
+   "confidence": "CONF-2",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "description": "Instantiates AIDCF-004 library scenario X02 in the synthetic case. One firmware release defeats CDU redundancy: the standby pump depends on the same controller, so CDU failover does not help.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "expectedSafeguards": [
+    "urn:aidcf:syn:safeguard:SAF-THROTTLE",
+    "urn:aidcf:syn:safeguard:SAF-CKPT"
+   ],
+   "outcomeEffects": [
+    {
+     "outcomeRef": "urn:aidcf:syn:outcome:SO-01",
+     "effect": "Illustrative: outcome breaches tolerance without the expected safeguards.",
+     "exceedsTolerance": true
+    }
+   ],
+   "preState": "NORMAL",
+   "propagationSteps": [
+    "urn:aidcf:syn:rel:REL-d79cc097de0714b9",
+    "urn:aidcf:syn:rel:REL-b628898570eed972",
+    "urn:aidcf:syn:rel:REL-f8c167139f93dc26",
+    "urn:aidcf:syn:rel:REL-afdfc8c27796e730",
+    "urn:aidcf:syn:rel:REL-e47357ef163b97ac"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "residualState": "FAILED",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRecord": "foundations/threat-model/AIDCF-004_Threat_Hazard_and_Failure_Model_v1.1.md#X02",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:scenario:FS-07",
+   "type": "FailureScenario",
+   "name": "Synthetic PFC storm from a misconfigured fabric switch",
+   "classification": "INTERNAL",
+   "confidence": "CONF-2",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "description": "Instantiates AIDCF-004 library scenario X03 in the synthetic case. Pause frames spread hop by hop, so collectives stall across the cluster and checkpoint writes stall while links still report healthy.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "expectedSafeguards": [
+    "urn:aidcf:syn:safeguard:SAF-FAB-RR",
+    "urn:aidcf:syn:safeguard:SAF-CKPT"
+   ],
+   "outcomeEffects": [
+    {
+     "outcomeRef": "urn:aidcf:syn:outcome:SO-01",
+     "effect": "Illustrative: outcome breaches tolerance without the expected safeguards.",
+     "exceedsTolerance": true
+    },
+    {
+     "outcomeRef": "urn:aidcf:syn:outcome:SO-02",
+     "effect": "Illustrative: outcome breaches tolerance without the expected safeguards.",
+     "exceedsTolerance": true
+    }
+   ],
+   "preState": "NORMAL",
+   "propagationSteps": [
+    "urn:aidcf:syn:rel:REL-4216f2deeb197d83",
+    "urn:aidcf:syn:rel:REL-1db52bc59c5701c4",
+    "urn:aidcf:syn:rel:REL-61f260f8865dd6f6",
+    "urn:aidcf:syn:rel:REL-4be0a7d31502a076",
+    "urn:aidcf:syn:rel:REL-553e06f80d79f620",
+    "urn:aidcf:syn:rel:REL-e6e87f9f5dadc9c2",
+    "urn:aidcf:syn:rel:REL-40578b873738f9a2"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "residualState": "DEGRADED",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRecord": "foundations/threat-model/AIDCF-004_Threat_Hazard_and_Failure_Model_v1.1.md#X03",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:scenario:FS-08",
+   "type": "FailureScenario",
+   "name": "Synthetic checkpoint storage saturation during recovery",
+   "classification": "INTERNAL",
+   "confidence": "CONF-2",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "description": "Instantiates AIDCF-004 library scenario X04 in the synthetic case. Starts in recovery after a facility event such as FS-03; the restore storm congests the fabric and recovery exceeds tolerance.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "expectedSafeguards": [
+    "urn:aidcf:syn:safeguard:SAF-CKPT"
+   ],
+   "outcomeEffects": [
+    {
+     "outcomeRef": "urn:aidcf:syn:outcome:SO-02",
+     "effect": "Illustrative: outcome breaches tolerance without the expected safeguards.",
+     "exceedsTolerance": true
+    }
+   ],
+   "preState": "RECOVERY",
+   "propagationSteps": [
+    "urn:aidcf:syn:rel:REL-9697d7fc3ae8d0b2",
+    "urn:aidcf:syn:rel:REL-f3debb6810075894",
+    "urn:aidcf:syn:rel:REL-ed90bc76fcfdcedb",
+    "urn:aidcf:syn:rel:REL-217bf7ed98f5819d"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "residualState": "RECOVERY",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRecord": "foundations/threat-model/AIDCF-004_Threat_Hazard_and_Failure_Model_v1.1.md#X04",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:scenario:FS-09",
+   "type": "FailureScenario",
+   "name": "Synthetic coolant leak at a rack manifold",
+   "classification": "INTERNAL",
+   "confidence": "CONF-2",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "description": "Instantiates AIDCF-004 library scenario X07 in the synthetic case. CDU make-up masks the leak until coolant reaches rack power. The library's primary outcome, electrical safety, has no outcome in this case and is not recorded.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "expectedSafeguards": [
+    "urn:aidcf:syn:safeguard:SAF-LEAK"
+   ],
+   "outcomeEffects": [
+    {
+     "outcomeRef": "urn:aidcf:syn:outcome:SO-01",
+     "effect": "Illustrative: outcome breaches tolerance without the expected safeguards.",
+     "exceedsTolerance": true
+    }
+   ],
+   "preState": "NORMAL",
+   "propagationSteps": [
+    "urn:aidcf:syn:rel:REL-df2a7b71831d53c1",
+    "urn:aidcf:syn:rel:REL-474848c6e1cf33fd",
+    "urn:aidcf:syn:rel:REL-ffe1d0500e9c29aa",
+    "urn:aidcf:syn:rel:REL-4a5dc02b2a23a7e6"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "residualState": "FAILED",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRecord": "foundations/threat-model/AIDCF-004_Threat_Hazard_and_Failure_Model_v1.1.md#X07",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:scenario:FS-10",
+   "type": "FailureScenario",
+   "name": "Synthetic facility water contamination fouls CDU heat exchangers",
+   "classification": "INTERNAL",
+   "confidence": "CONF-2",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "description": "Instantiates AIDCF-004 library scenario X08 in the synthetic case. Fouling raises the approach temperature on both CDUs fed by the same loop (common cause); accelerators throttle at peak load.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "expectedSafeguards": [
+    "urn:aidcf:syn:safeguard:SAF-THROTTLE"
+   ],
+   "outcomeEffects": [
+    {
+     "outcomeRef": "urn:aidcf:syn:outcome:SO-01",
+     "effect": "Illustrative: outcome breaches tolerance without the expected safeguards.",
+     "exceedsTolerance": true
+    }
+   ],
+   "preState": "NORMAL",
+   "propagationSteps": [
+    "urn:aidcf:syn:rel:REL-9954334723645c66",
+    "urn:aidcf:syn:rel:REL-3ef09b843ab458c8",
+    "urn:aidcf:syn:rel:REL-b721838157ccb0ab",
+    "urn:aidcf:syn:rel:REL-a5f069a50683cf07",
+    "urn:aidcf:syn:rel:REL-8652b1148ffbdc51",
+    "urn:aidcf:syn:rel:REL-dd493c22d2ccc9e3",
+    "urn:aidcf:syn:rel:REL-62e9e11224168d3e"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "residualState": "DEGRADED",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRecord": "foundations/threat-model/AIDCF-004_Threat_Hazard_and_Failure_Model_v1.1.md#X08",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:scenario:FS-11",
+   "type": "FailureScenario",
+   "name": "Synthetic concurrent maintenance exposes a shared electrical path",
+   "classification": "INTERNAL",
+   "confidence": "CONF-2",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "description": "Instantiates AIDCF-004 library scenario X11 in the synthetic case. Starts in maintenance with UPS A isolated; the load drop and restart surge then disturb cooling control.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "expectedSafeguards": [
+    "urn:aidcf:syn:safeguard:SAF-UPS-RT",
+    "urn:aidcf:syn:safeguard:SAF-CKPT"
+   ],
+   "outcomeEffects": [
+    {
+     "outcomeRef": "urn:aidcf:syn:outcome:SO-01",
+     "effect": "Illustrative: outcome breaches tolerance without the expected safeguards.",
+     "exceedsTolerance": true
+    }
+   ],
+   "preState": "MAINTENANCE",
+   "propagationSteps": [
+    "urn:aidcf:syn:rel:REL-98dd9c928a39e06d",
+    "urn:aidcf:syn:rel:REL-ce4cd956891de309",
+    "urn:aidcf:syn:rel:REL-849d6b30d14a628d",
+    "urn:aidcf:syn:rel:REL-4df07fe25af7bd43",
+    "urn:aidcf:syn:rel:REL-c6cf25c50158fc6f"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "residualState": "DEGRADED",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRecord": "foundations/threat-model/AIDCF-004_Threat_Hazard_and_Failure_Model_v1.1.md#X11",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:scenario:FS-12",
+   "type": "FailureScenario",
+   "name": "Synthetic alarm flood and operator mis-switching",
+   "classification": "INTERNAL",
+   "confidence": "CONF-2",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "description": "Instantiates AIDCF-004 library scenario X16 in the synthetic case. The feed fault floods supervisory alarms; the operator opens the healthy-side breaker at the switchboard, stopping CDUs and compute on that block.",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "expectedSafeguards": [
+    "urn:aidcf:syn:safeguard:SAF-UPS-RT",
+    "urn:aidcf:syn:safeguard:SAF-CKPT"
+   ],
+   "outcomeEffects": [
+    {
+     "outcomeRef": "urn:aidcf:syn:outcome:SO-01",
+     "effect": "Illustrative: outcome breaches tolerance without the expected safeguards.",
+     "exceedsTolerance": true
+    }
+   ],
+   "preState": "NORMAL",
+   "propagationSteps": [
+    "urn:aidcf:syn:rel:REL-d13b4f1c771cfd90",
+    "urn:aidcf:syn:rel:REL-2a3c5696d7ac0e20",
+    "urn:aidcf:syn:rel:REL-65c74f4d44b0578a",
+    "urn:aidcf:syn:rel:REL-ffc1e8138eb5e1b0",
+    "urn:aidcf:syn:rel:REL-20e42d08b86abb99",
+    "urn:aidcf:syn:rel:REL-06ec8329a0506393",
+    "urn:aidcf:syn:rel:REL-e673fba305469759",
+    "urn:aidcf:syn:rel:REL-7dfd05765d1a9f00"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "residualState": "FAILED",
+   "reviewState": "SUPPORTED",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "sourceRecord": "foundations/threat-model/AIDCF-004_Threat_Hazard_and_Failure_Model_v1.1.md#X16",
+   "status": "REVIEWED",
+   "version": "1.0"
+  },
+  {
+   "id": "urn:aidcf:syn:threat:TH-01",
+   "type": "Threat",
+   "name": "Synthetic unauthorised remote command to BMS",
+   "classification": "CONFIDENTIAL",
+   "createdAt": "2026-10-10T00:00:00Z",
+   "createdBy": "urn:aidcf:syn:party:BUILDER",
+   "distributionControlRef": "urn:aidcf:syn:distribution-control:DC-001",
+   "effectiveFrom": "2026-10-10T00:00:00Z",
+   "initiates": [
+    "urn:aidcf:syn:scenario:FS-02"
+   ],
+   "provenance": {
+    "sourceSystem": "AIDCF-015 v1.4 tools/build_dataset.py",
+    "method": "SYNTHETIC_AUTHORING",
+    "synthetic": true,
+    "transformationVersion": "1.4"
+   },
+   "releaseRef": "AIDCF-REL-2026.10.2",
+   "schemaVersion": "1.3",
+   "semanticOwner": "AIDCF-004",
+   "sourceArtifact": "AIDCF-015",
+   "status": "REVIEWED",
+   "threatSource": "Synthetic external actor using a vendor remote-access path",
+   "version": "1.0"
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+# Q04 AIDCF-014 section 19 Q04: for EvidenceObject EV-011, which assertions does it support or challenge, and which decisions depend on it?
+# Expected result basis: EV-011 supports CA-011, an input to CG-05, CG-06, CG-07 and CG-15, all referenced by AD-001.
+PREFIX aidcf: <https://w3id.org/aidcf/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT DISTINCT ?assertion ?decision WHERE {
+  { <urn:aidcf:syn:evidence:EV-011> aidcf:supports ?a } UNION { <urn:aidcf:syn:evidence:EV-011> aidcf:challenges ?a }
+  OPTIONAL { ?a aidcf:evaluatesGate ?gr . ?d aidcf:gateResultRefs ?gr . }
+  BIND (REPLACE(STR(?a), "^.*[:/]", "") AS ?assertion) BIND (IF(BOUND(?d), REPLACE(STR(?d), "^.*[:/]", ""), "") AS ?decision)
+}

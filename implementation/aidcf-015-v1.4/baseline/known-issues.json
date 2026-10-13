@@ -1,0 +1,96 @@
+{
+ "release": "AIDCF-REL-2026.10.2",
+ "package": "AIDCF-015 v1.4",
+ "status": "Draft for controlled review",
+ "date": "2026-10-13",
+ "author": "Siva Sethumadhavan",
+ "summary": "Every layer of tools/run_all.py passes on the synthetic dataset. The items below limit what that result means.",
+ "issues": [
+  {
+   "id": "KI-01",
+   "severity": "HIGH",
+   "title": "No independent execution",
+   "description": "All validation was run by the package author's own tooling. No independent T7 execution or review has taken place (validation report NC-09 remains open)."
+  },
+  {
+   "id": "KI-02",
+   "severity": "HIGH",
+   "title": "Manifest not signed",
+   "description": "baseline/release-manifest.json carries an RFC 8785 digest but no signature: integrity.signatureStatus is PENDING and no signature file exists. Both release approvals are PENDING."
+  },
+  {
+   "id": "KI-03",
+   "severity": "HIGH",
+   "title": "Synthetic data only",
+   "description": "The dataset describes no real facility, organisation or person. All capacities, tolerances, security levels and test outcomes are illustrative."
+  },
+  {
+   "id": "KI-04",
+   "severity": "HIGH",
+   "title": "Coverage 12 of 360 controls",
+   "description": "12 of 360 controls are assessed (3.3333%); 11 are scored (3.0556%) because MCF-RES-017 is UNKNOWN. The score band is WITHHELD. The 348 unassessed controls, including every unassessed registry CRITICAL control, are carried as NOT_ASSESSED."
+  },
+  {
+   "id": "KI-05",
+   "severity": "MODERATE",
+   "title": "Synthetic approval and review records",
+   "description": "ReviewRecords RR-001 to RR-006, including the APPROVAL records RR-002 (decision) and RR-005 (snapshot), were produced by tools/build_dataset.py. No human reviewed or approved anything."
+  },
+  {
+   "id": "KI-06",
+   "severity": "MODERATE",
+   "title": "Registry status outside the record lifecycle (BI-002)",
+   "description": "The AIDCF-007A v1.1 registry status PROPOSED is not an AIDCF-014 section 11A.1 code. Registry records are imported as CANDIDATE with the original value in provenance.legacyValue."
+  },
+  {
+   "id": "KI-07",
+   "severity": "MODERATE",
+   "title": "Gate ceilings derived from prose (BI-003)",
+   "description": "AIDCF-010 states gate ceilings as prose. failCeiling and unknownCeiling codes are derived by the AIDCF-016 section 9.4 rule and the prose is kept on each Critical Gate."
+  },
+  {
+   "id": "KI-08",
+   "severity": "MODERATE",
+   "title": "Gate evidence requirement claim types derived",
+   "description": "critical-gates.csv gives no claim type for gate evidence requirements. The highest claim type of the gate's mapped controls is used; CG-11 and CG-12 have no mapped controls and use DESIGN."
+  },
+  {
+   "id": "KI-09",
+   "severity": "MODERATE",
+   "title": "Supporting classes pending registration",
+   "description": "IACS, IACSZone, Conduit, SecurityLevel, FoundationalRequirement and Assertion are used beyond the 48 AIDCF-014 classes, pending AIDCF-014 registration."
+  },
+  {
+   "id": "KI-10",
+   "severity": "LOW",
+   "title": "w3id IRIs not registered",
+   "description": "https://w3id.org/aidcf/ IRIs are used but the w3id redirect has not been registered; the IRIs do not resolve."
+  },
+  {
+   "id": "KI-11",
+   "severity": "LOW",
+   "title": "Scope of the JCS implementation",
+   "description": "tools/run_all.py canonicalises the manifest per RFC 8785 only for JSON without floating-point numbers; it refuses a manifest that contains floats."
+  },
+  {
+   "id": "KI-12",
+   "severity": "LOW",
+   "title": "SHACL fixture runs omit one graph-level shape",
+   "description": "Focused SHACL fixture runs exclude EdgeRecordShape (about 12 s per run) unless a fixture names it. The full-dataset SHACL layer runs every shape, and rule MDM-R10 is also checked in the BUSINESS_RULE layer."
+  },
+  {
+   "id": "KI-13",
+   "severity": "LOW",
+   "title": "CI not executed here",
+   "description": "The package was run locally on CPython 3.13. The GitHub Actions workflow (Python 3.11) has not been run by the author of this release."
+  }
+ ],
+ "coverage": {
+  "assessed": 12,
+  "inScope": 360,
+  "assessedPercent": 3.3333,
+  "scored": 11,
+  "scoredPercent": 3.0556,
+  "band": "WITHHELD"
+ }
+}

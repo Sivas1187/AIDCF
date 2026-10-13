@@ -1,0 +1,16 @@
+domainId,domainName,familyCount,controlCount,criticalGates,status,version
+GOV,"Governance, Accountability and Assurance Direction",6,24,CG-13,CANDIDATE,1.1
+CAP,"AI Capability, Service Outcome and Demand Management",6,24,CG-01;CG-02;CG-13;CG-14,CANDIDATE,1.1
+DEP,"Dependency, Concentration and External Reliance Management",6,24,CG-02;CG-03;CG-13,CANDIDATE,1.1
+PHY,"Physical Site, Building and Security Infrastructure",6,24,CG-04;CG-09,CANDIDATE,1.1
+POW,Electrical Power Infrastructure and Energy Continuity,6,24,CG-04;CG-05;CG-07;CG-09;CG-10,CANDIDATE,1.1
+THM,"Cooling, Thermal and Fluid Infrastructure",6,24,CG-04;CG-06;CG-07;CG-09;CG-10,CANDIDATE,1.1
+ENV,Environmental and Resource Performance,6,24,CG-04,CANDIDATE,1.1
+CMP,AI Compute Infrastructure,6,24,CG-08;CG-09;CG-10;CG-14,CANDIDATE,1.1
+STO,AI Storage and Data Infrastructure,6,24,CG-08;CG-09;CG-10,CANDIDATE,1.1
+NET,AI Network and Interconnect Architecture,6,24,CG-08;CG-09;CG-10;CG-14,CANDIDATE,1.1
+OPS,Building Operations and Service Management,6,24,CG-04;CG-07;CG-13;CG-14,CANDIDATE,1.1
+RES,"Resilience, Continuity and Recovery",6,24,CG-09;CG-10,CANDIDATE,1.1
+SUP,"Supply Chain, OEM and Ecosystem Assurance",6,24,CG-03;CG-15,CANDIDATE,1.1
+SEC,"Digital, OT and Control-Plane Security",6,24,CG-07;CG-15,CANDIDATE,1.1
+EVA,"Evidence, Assessment and Assurance Management",6,24,CG-01;CG-02,CANDIDATE,1.1

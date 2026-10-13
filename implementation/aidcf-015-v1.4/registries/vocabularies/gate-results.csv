@@ -1,0 +1,6 @@
+code,meaning
+PASS,All in-scope CRITICAL controls CONFORMING at required claim type; all gate criteria met with evidence >= floor; every NONCONFORMING SUPPORTING control has a documented gate-level evaluation concluding no defeat
+FAIL,"An in-scope CRITICAL control is NONCONFORMING or PARTIAL, or a gate criterion is demonstrated not met"
+UNKNOWN,"No FAIL condition, but an in-scope CRITICAL control is UNKNOWN or NOT_ASSESSED, gate evidence is below floor, or a US4 UNKNOWN is attached"
+APPROVED_NA,"Gate not applicable to the declared scope, with approved boundary rationale"
+NOT_ASSESSED,Applicable gate not yet evaluated

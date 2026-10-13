@@ -1,0 +1,6 @@
+SYNTHETIC EVIDENCE FIXTURE - AIDCF-015 v1.4
+id: urn:aidcf:syn:evidence:EV-002
+class: E1
+title: Synthetic documentary evidence for MCF-DEP-001
+Synthetic documentary evidence supporting the MCF-DEP-001 assessment CA-002.
+This file describes no real facility, organisation or person.

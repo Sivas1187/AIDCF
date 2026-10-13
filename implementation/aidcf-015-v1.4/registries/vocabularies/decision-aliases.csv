@@ -1,0 +1,14 @@
+legacyCode,canonicalCode,field,note
+ADVERSE,NOT_ASSURED,decisionState,
+ADVERSE_NOT_ASSURED,NOT_ASSURED,decisionState,
+Adverse / Not assured,NOT_ASSURED,decisionState,
+UNKNOWN,INCONCLUSIVE,decisionState,
+UNKNOWN_INCONCLUSIVE,INCONCLUSIVE,decisionState,
+UNKNOWN_OR_INCONCLUSIVE,INCONCLUSIVE,decisionState,
+Withheld,INCONCLUSIVE,decisionState,
+CONDITIONAL,CONDITIONALLY_ASSURED,decisionState,
+REASONABLY ASSURED,REASONABLY_ASSURED,decisionState,spelling normalisation
+SUSPENDED,SUSPENDED,decisionLifecycle,legacy decision state becomes lifecycle state; decision state retained
+WITHDRAWN,WITHDRAWN,decisionLifecycle,legacy decision state becomes lifecycle state; decision state retained
+SUPERSEDED,SUPERSEDED,decisionLifecycle,legacy decision state becomes lifecycle state; decision state retained
+NOT ASSESSED,,none,not a decision state; no decision is issued

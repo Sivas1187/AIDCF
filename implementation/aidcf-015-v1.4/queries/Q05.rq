@@ -1,0 +1,10 @@
+# Q05 AIDCF-014 section 19 Q05: for Gate CG-07, which CRITICAL controls, criteria outcomes and UNKNOWNs determine its result, and what ceiling follows?
+# Expected result basis: CG-07: 6 registry CRITICAL controls (OPS-013 and SEC-005 PARTIAL), GC-07-6 NOT_MET, U-005 attached; failCeiling NOT_ASSURED derived from the AIDCF-010 text.
+PREFIX aidcf: <https://w3id.org/aidcf/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?state ?ceiling (COUNT(DISTINCT ?e) AS ?criticalControls) (COUNT(DISTINCT ?nm) AS ?criteriaNotMet) (GROUP_CONCAT(DISTINCT ?unknown) AS ?unknowns) WHERE {
+  ?gr a aidcf:GateResult ; aidcf:gateCode "CG-07" ; aidcf:gateState ?state ; aidcf:evaluatesGate ?g ; aidcf:controlEvaluations ?e .
+  ?e aidcf:gateRole "CRITICAL" . ?g aidcf:failCeiling ?ceiling .
+  OPTIONAL { ?gr aidcf:criteriaResults ?nm . ?nm aidcf:criterionOutcome "NOT_MET" . }
+  OPTIONAL { ?u aidcf:constrains ?gr ; a aidcf:UnknownRecord . BIND (REPLACE(STR(?u), "^.*[:/]", "") AS ?unknown) }
+} GROUP BY ?state ?ceiling

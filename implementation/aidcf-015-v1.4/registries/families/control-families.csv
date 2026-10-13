@@ -1,0 +1,91 @@
+familyId,domainId,familyName,controlCount,criticalGates,status,version
+GOV-01,GOV,Governance architecture,4,CG-13,CANDIDATE,1.1
+GOV-02,GOV,Accountability and responsibility,4,CG-13,CANDIDATE,1.1
+GOV-03,GOV,Policy and standards management,4,,CANDIDATE,1.1
+GOV-04,GOV,Risk and assurance governance,4,,CANDIDATE,1.1
+GOV-05,GOV,Stakeholder and regulatory interface,4,,CANDIDATE,1.1
+GOV-06,GOV,"Ethics, impartiality and competence",4,,CANDIDATE,1.1
+CAP-01,CAP,Capability inventory,4,CG-01;CG-02;CG-13,CANDIDATE,1.1
+CAP-02,CAP,Service outcome definition,4,CG-01,CANDIDATE,1.1
+CAP-03,CAP,Criticality and materiality,4,CG-01,CANDIDATE,1.1
+CAP-04,CAP,Demand and growth modelling,4,,CANDIDATE,1.1
+CAP-05,CAP,Operating envelope,4,,CANDIDATE,1.1
+CAP-06,CAP,Capability lifecycle and change,4,CG-14,CANDIDATE,1.1
+DEP-01,DEP,Dependency discovery,4,CG-03,CANDIDATE,1.1
+DEP-02,DEP,Shared and common-mode dependencies,4,CG-03,CANDIDATE,1.1
+DEP-03,DEP,External providers and utilities,4,CG-03,CANDIDATE,1.1
+DEP-04,DEP,Concentration and substitutability,4,,CANDIDATE,1.1
+DEP-05,DEP,Boundary and interface control,4,CG-02;CG-03;CG-13,CANDIDATE,1.1
+DEP-06,DEP,Dependency monitoring and review,4,,CANDIDATE,1.1
+PHY-01,PHY,Site and location resilience,4,,CANDIDATE,1.1
+PHY-02,PHY,Building and structural integrity,4,,CANDIDATE,1.1
+PHY-03,PHY,Physical zoning and segregation,4,CG-09,CANDIDATE,1.1
+PHY-04,PHY,Access and surveillance,4,,CANDIDATE,1.1
+PHY-05,PHY,Asset movement and custody,4,,CANDIDATE,1.1
+PHY-06,PHY,"Fire, life safety and emergency interfaces",4,CG-04,CANDIDATE,1.1
+POW-01,POW,Utility and grid interface,4,CG-05,CANDIDATE,1.1
+POW-02,POW,Generation and fuel,4,CG-05,CANDIDATE,1.1
+POW-03,POW,UPS and energy storage,4,CG-04;CG-05,CANDIDATE,1.1
+POW-04,POW,Distribution and protection,4,CG-04;CG-09,CANDIDATE,1.1
+POW-05,POW,Power quality and transient response,4,CG-05,CANDIDATE,1.1
+POW-06,POW,"Electrical monitoring, maintenance and recovery",4,CG-04;CG-07;CG-10,CANDIDATE,1.1
+THM-01,THM,Thermal architecture and capacity,4,CG-06,CANDIDATE,1.1
+THM-02,THM,Air cooling systems,4,,CANDIDATE,1.1
+THM-03,THM,Liquid cooling systems,4,CG-06,CANDIDATE,1.1
+THM-04,THM,Heat rejection and water systems,4,CG-06,CANDIDATE,1.1
+THM-05,THM,Fluid quality and leak management,4,CG-04;CG-09,CANDIDATE,1.1
+THM-06,THM,"Thermal control, maintenance and recovery",4,CG-07;CG-10,CANDIDATE,1.1
+ENV-01,ENV,Environmental operating conditions,4,,CANDIDATE,1.1
+ENV-02,ENV,Energy performance,4,,CANDIDATE,1.1
+ENV-03,ENV,Water performance,4,,CANDIDATE,1.1
+ENV-04,ENV,Carbon and resource reporting,4,,CANDIDATE,1.1
+ENV-05,ENV,Hazardous materials and waste,4,CG-04,CANDIDATE,1.1
+ENV-06,ENV,Climate adaptation and resource continuity,4,,CANDIDATE,1.1
+CMP-01,CMP,Compute architecture and configuration,4,,CANDIDATE,1.1
+CMP-02,CMP,Cluster and scale-up domains,4,CG-08;CG-09,CANDIDATE,1.1
+CMP-03,CMP,"Capacity, scheduling and utilisation",4,CG-08,CANDIDATE,1.1
+CMP-04,CMP,"Firmware, driver and compatibility",4,CG-08;CG-14,CANDIDATE,1.1
+CMP-05,CMP,Compute health and observability,4,CG-08,CANDIDATE,1.1
+CMP-06,CMP,Compute lifecycle and recovery,4,CG-10,CANDIDATE,1.1
+STO-01,STO,Storage architecture and tiering,4,,CANDIDATE,1.1
+STO-02,STO,Performance and capacity,4,CG-08,CANDIDATE,1.1
+STO-03,STO,Integrity and consistency,4,CG-08,CANDIDATE,1.1
+STO-04,STO,Protection and replication,4,CG-09;CG-10,CANDIDATE,1.1
+STO-05,STO,Checkpoint and recovery services,4,CG-08;CG-10,CANDIDATE,1.1
+STO-06,STO,Storage monitoring and lifecycle,4,,CANDIDATE,1.1
+NET-01,NET,Scale-up and scale-out fabrics,4,CG-08;CG-09,CANDIDATE,1.1
+NET-02,NET,Performance and congestion control,4,CG-08,CANDIDATE,1.1
+NET-03,NET,Storage and service networks,4,CG-08,CANDIDATE,1.1
+NET-04,NET,Management and out-of-band networks,4,CG-10,CANDIDATE,1.1
+NET-05,NET,Physical connectivity and optics,4,,CANDIDATE,1.1
+NET-06,NET,Network control and observability,4,CG-14,CANDIDATE,1.1
+OPS-01,OPS,Operating model and staffing,4,CG-04;CG-13,CANDIDATE,1.1
+OPS-02,OPS,Procedure and work control,4,CG-04;CG-14,CANDIDATE,1.1
+OPS-03,OPS,Maintenance and reliability,4,,CANDIDATE,1.1
+OPS-04,OPS,"Alarm, incident and problem management",4,CG-07,CANDIDATE,1.1
+OPS-05,OPS,Change and configuration management,4,CG-14,CANDIDATE,1.1
+OPS-06,OPS,Capacity and service operations,4,,CANDIDATE,1.1
+RES-01,RES,Resilience strategy,4,,CANDIDATE,1.1
+RES-02,RES,Fault-domain and containment design,4,CG-09,CANDIDATE,1.1
+RES-03,RES,Continuity planning,4,,CANDIDATE,1.1
+RES-04,RES,Recovery planning,4,CG-10,CANDIDATE,1.1
+RES-05,RES,Testing and exercising,4,CG-10,CANDIDATE,1.1
+RES-06,RES,Crisis and adaptive response,4,,CANDIDATE,1.1
+SUP-01,SUP,Supplier due diligence,4,CG-03,CANDIDATE,1.1
+SUP-02,SUP,Contract and service obligations,4,,CANDIDATE,1.1
+SUP-03,SUP,Hardware and component provenance,4,,CANDIDATE,1.1
+SUP-04,SUP,"Software, firmware and update supply",4,,CANDIDATE,1.1
+SUP-05,SUP,"Spares, logistics and obsolescence",4,,CANDIDATE,1.1
+SUP-06,SUP,Remote support and third-party access,4,CG-15,CANDIDATE,1.1
+SEC-01,SEC,Identity and privileged access,4,CG-15,CANDIDATE,1.1
+SEC-02,SEC,Control-plane protection,4,CG-07;CG-15,CANDIDATE,1.1
+SEC-03,SEC,Network security and segmentation,4,CG-07;CG-15,CANDIDATE,1.1
+SEC-04,SEC,"Configuration, vulnerability and patching",4,,CANDIDATE,1.1
+SEC-05,SEC,Detection and response,4,,CANDIDATE,1.1
+SEC-06,SEC,AI-enabled and automated action,4,CG-07;CG-15,CANDIDATE,1.1
+EVA-01,EVA,Evidence architecture,4,,CANDIDATE,1.1
+EVA-02,EVA,Evidence provenance and quality,4,,CANDIDATE,1.1
+EVA-03,EVA,Assessment planning and execution,4,CG-01;CG-02,CANDIDATE,1.1
+EVA-04,EVA,"Findings, UNKNOWN and limitations",4,,CANDIDATE,1.1
+EVA-05,EVA,Critical gates and decisions,4,,CANDIDATE,1.1
+EVA-06,EVA,Reassessment and continuing assurance,4,,CANDIDATE,1.1

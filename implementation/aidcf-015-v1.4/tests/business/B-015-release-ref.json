@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-015",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "MDM-R20",
+ "description": "Record bound to a different release.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:capability:CI-001",
+   "field": "releaseRef",
+   "value": "AIDCF-REL-2026.09.1"
+  }
+ ]
+}

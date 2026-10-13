@@ -1,0 +1,14 @@
+{
+ "query": "Q06",
+ "description": "AIDCF-014 section 19 Q06: for Decision AD-001, which gates, UNKNOWNs, score and approvals produced it?",
+ "basis": "AD-001 design.",
+ "rows": [
+  [
+   "NOT_ASSURED",
+   "SS-001",
+   "RR-002",
+   15,
+   5
+  ]
+ ]
+}

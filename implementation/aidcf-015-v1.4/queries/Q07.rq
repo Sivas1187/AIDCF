@@ -1,0 +1,7 @@
+# Q07 AIDCF-014 section 19 Q07: is every statement and report consistent with its decision (BR-007)?
+# Expected result basis: BR-007.
+PREFIX aidcf: <https://w3id.org/aidcf/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?item ?stated ?decided WHERE {
+  ?x aidcf:decisionRef ?d ; aidcf:decisionState ?stated . ?d aidcf:decisionState ?decided . BIND (REPLACE(STR(?x), "^.*[:/]", "") AS ?item)
+} ORDER BY ?item

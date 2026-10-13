@@ -1,0 +1,74 @@
+{
+ "fixtureId": "I-SCH-004",
+ "layer": "SCHEMA",
+ "expect": "FAIL",
+ "expectedText": "does not match",
+ "description": "Control code outside the MCF-DOM-NNN pattern.",
+ "record": {
+  "id": "https://w3id.org/aidcf/id/control/MCF-DEP-001",
+  "type": "Control",
+  "name": "Asset-to-Function Mapping",
+  "amendmentRef": "AIDCF-007A-AMD-002",
+  "applicability": "Applies to every assessment where a Capability Instance is declared. Not applicable only for a pure DESIGN-stage assessment where no asset yet exists; in that case MCF-DEP-003 and the design-stage dependency model carry the obligation.",
+  "assessedBy": [
+   "urn:aidcf:syn:control-assessment:CA-002"
+  ],
+  "assessmentCriteria": [
+   "Every Required Function in the assessment boundary has at least one IMPLEMENTED_BY relationship to an InfrastructureSystem, and every InfrastructureSystem resolves to identified AssetInstances.",
+   "Mappings are stated per operating state; at minimum NORMAL, MAINTENANCE (each planned maintenance configuration of a redundant path) and DEGRADED are distinguished where the implementing set differs.",
+   "A reconciliation sample of physical assets (by asset tag and location) and configuration items matches the map with no unexplained discrepancy above the profile tolerance.",
+   "Assets present in the as-built register but not mapped to any function are listed and dispositioned (mapped, excluded with rationale, or UNKNOWN).",
+   "The map is versioned, carries an effective date, and was re-validated after each material change recorded in the change log for the period."
+  ],
+  "assessmentMethods": [
+   "DOCUMENT_REVIEW",
+   "RECONCILIATION",
+   "INSPECTION",
+   "SAMPLING"
+  ],
+  "claimType": "IMPLEMENTATION",
+  "classification": "INTERNAL",
+  "controlCode": "MCF-XYZ-999",
+  "controlType": "PREVENTIVE",
+  "createdAt": "2026-10-10T00:00:00Z",
+  "createdBy": "urn:aidcf:syn:party:BUILDER",
+  "domainCode": "DEP",
+  "effectiveFrom": "2026-10-10T00:00:00Z",
+  "evaluatesGate": [
+   "https://w3id.org/aidcf/id/gate/CG-02",
+   "https://w3id.org/aidcf/id/gate/CG-03"
+  ],
+  "familyCode": "DEP-01",
+  "gateMappings": [
+   {
+    "gateRef": "https://w3id.org/aidcf/id/gate/CG-02",
+    "gateRole": "SUPPORTING"
+   },
+   {
+    "gateRef": "https://w3id.org/aidcf/id/gate/CG-03",
+    "gateRole": "CRITICAL"
+   }
+  ],
+  "hasEvidenceRequirement": [
+   "https://w3id.org/aidcf/id/evidence-requirement/MCF-DEP-001-IMPLEMENTATION"
+  ],
+  "objective": "Every Required Function of the declared Capability Instance is traceable to the specific InfrastructureSystems and AssetInstances that implement it in each declared operating state, so that the consequence of losing, maintaining or changing any asset is known before it happens.",
+  "profileTier": "CP-2",
+  "provenance": {
+   "sourceSystem": "AIDCF-007A registry v1.1 (controls.csv)",
+   "method": "REGISTRY_IMPORT",
+   "synthetic": false,
+   "transformationVersion": "1.4",
+   "legacyValue": "status=CANDIDATE"
+  },
+  "releaseRef": "AIDCF-REL-2026.10.2",
+  "requiredAssuranceLevel": "AL3",
+  "requirement": "The capability owner shall maintain a versioned asset-to-function map that links each Required Function to the InfrastructureSystems and AssetInstances (including redundant and standby units) that implement it, stated separately for each declared operating state. The facility operator shall reconcile the map against the as-built asset register and current configuration at least at the interval set in the capability profile and after every material change, and shall record every asset that cannot be mapped, or every function with no identified implementing asset, as an UNKNOWN Record.",
+  "schemaVersion": "1.3",
+  "semanticOwner": "AIDCF-007A",
+  "sourceArtifact": "AIDCF-007A",
+  "sourceRecord": "registries/controls/controls.csv#MCF-DEP-001",
+  "status": "CANDIDATE",
+  "version": "1.0"
+ }
+}

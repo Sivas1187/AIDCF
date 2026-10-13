@@ -1,0 +1,6 @@
+SYNTHETIC EVIDENCE FIXTURE - AIDCF-015 v1.4
+id: urn:aidcf:syn:evidence:EV-026
+class: E2
+title: Synthetic configuration evidence for MCF-SUP-021
+Synthetic configuration evidence supporting the MCF-SUP-021 assessment CA-010.
+This file describes no real facility, organisation or person.

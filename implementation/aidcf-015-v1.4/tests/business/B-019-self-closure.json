@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-019",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "BR-008",
+ "description": "F-006 closure reviewed by the finding owner.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:review:RR-003",
+   "field": "reviewer",
+   "value": "urn:aidcf:syn:party:FAC-OPS"
+  }
+ ]
+}

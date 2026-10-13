@@ -1,0 +1,15 @@
+{
+ "fixtureId": "I-SHA-002",
+ "layer": "SHACL",
+ "expect": "FAIL",
+ "expectedRule": "MDM-R03 / BR-005",
+ "description": "Decision REASONABLY_ASSURED with FAIL and UNKNOWN gates.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:decision:AD-001",
+   "field": "decisionState",
+   "value": "REASONABLY_ASSURED"
+  }
+ ]
+}

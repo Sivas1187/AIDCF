@@ -1,0 +1,6 @@
+code,name,use,minimumEvidencePattern
+CP-1,Foundational,"Governance, inventory, design intent",E1 plus accountable source; S2/S3
+CP-2,Technical state,"Configuration, topology and implementation",E1+E2 with observation/reconciliation; S3
+CP-3,Operational,"Operation, monitoring and maintenance",E2+E3 across representative period; S3/S4
+CP-4,Effectiveness,Controls tested under defined conditions,E2+E3+E4; S4
+CP-5,Critical/resilience,"Critical gate, compound scenario or high-consequence outcome",Diverse E1-E4 and appropriate E5; S5 or profile-defined strong floor

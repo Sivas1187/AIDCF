@@ -1,0 +1,9 @@
+code,meaning,reliancePermitted
+DRAFT,Being prepared,false
+RECOMMENDED,Decision Recommendation issued for review,false
+APPROVED,"Approved by the accountable authority, not yet in effect",false
+ACTIVE,In effect within its validity period,true
+SUSPENDED,"Reliance withdrawn pending reassessment (trigger fired, gate failed, evidence expired)",false
+WITHDRAWN,Removed by the decision authority for integrity or governance reasons,false
+SUPERSEDED,Replaced by a newer approved decision,false
+EXPIRED,Validity period ended without renewal,false

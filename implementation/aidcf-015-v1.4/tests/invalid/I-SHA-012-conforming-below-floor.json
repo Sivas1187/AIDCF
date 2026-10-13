@@ -1,0 +1,15 @@
+{
+ "fixtureId": "I-SHA-012",
+ "layer": "SHACL",
+ "expect": "FAIL",
+ "expectedRule": "MDM-R07",
+ "description": "CONFORMING result with evidence below the control floor.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:control-assessment:CA-003",
+   "field": "evidenceSufficiency",
+   "value": "S3"
+  }
+ ]
+}

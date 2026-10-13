@@ -1,0 +1,3 @@
+@prefix aidcf: <https://w3id.org/aidcf/ontology#> .
+<urn:aidcf:syn:x:1> a aidcf:Action ;
+  aidcf:name "unterminated

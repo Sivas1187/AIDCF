@@ -1,0 +1,15 @@
+{
+ "fixtureId": "B-005",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "BR-008",
+ "description": "U-004 marked RESOLVED without closure evidence.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:unknown:U-004",
+   "field": "unknownStatus",
+   "value": "RESOLVED"
+  }
+ ]
+}

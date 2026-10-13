@@ -1,0 +1,9 @@
+# Q03 AIDCF-014 section 19 Q03: for Control MCF-SEC-005, which evidence, results and findings exist, by claim type and scope?
+# Expected result basis: CA-011 evidence classes E1 (EV-011), E2, E3, E4 (EV-027 to EV-029 in build order) and finding F-005.
+PREFIX aidcf: <https://w3id.org/aidcf/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?assessment ?claimType ?result ?capability ?evidence ?finding WHERE {
+  <https://w3id.org/aidcf/id/control/MCF-SEC-005> aidcf:assessedBy ?ca .
+  ?ca aidcf:claimType ?claimType ; aidcf:result ?result ; aidcf:scope/aidcf:capabilityRef ?ci ; aidcf:evidencedBy ?ev ; aidcf:hasFinding ?f .
+  BIND (REPLACE(STR(?ca), "^.*[:/]", "") AS ?assessment) BIND (REPLACE(STR(?ci), "^.*[:/]", "") AS ?capability) BIND (REPLACE(STR(?ev), "^.*[:/]", "") AS ?evidence) BIND (REPLACE(STR(?f), "^.*[:/]", "") AS ?finding)
+} ORDER BY ?evidence

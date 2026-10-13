@@ -1,0 +1,9 @@
+{
+ "fixtureId": "I-SYN-001",
+ "layer": "SYNTAX",
+ "expect": "FAIL",
+ "format": "json",
+ "rawFile": "syntax-malformed.jsonld.txt",
+ "expectedText": "JSONDecodeError",
+ "description": "Truncated JSON-LD document."
+}

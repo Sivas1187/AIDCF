@@ -1,0 +1,21 @@
+{
+ "fixtureId": "B-018",
+ "layer": "BUSINESS_RULE",
+ "expect": "FAIL",
+ "expectedRule": "BR-011",
+ "description": "Decision suspended by a pending event without human disposition.",
+ "patch": [
+  {
+   "op": "set",
+   "id": "urn:aidcf:syn:decision:AD-001",
+   "field": "decisionLifecycle",
+   "value": "SUSPENDED"
+  },
+  {
+   "op": "append",
+   "id": "urn:aidcf:syn:decision:AD-001",
+   "field": "invalidatedBy",
+   "value": "urn:aidcf:syn:event:EVT-001"
+  }
+ ]
+}

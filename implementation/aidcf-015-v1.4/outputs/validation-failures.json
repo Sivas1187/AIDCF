@@ -1,0 +1,54 @@
+{
+ "REGISTRY": {
+  "failures": [],
+  "warnings": []
+ },
+ "SYNTAX": {
+  "failures": [],
+  "warnings": []
+ },
+ "SCHEMA": {
+  "failures": [],
+  "warnings": []
+ },
+ "SHACL": {
+  "failures": [],
+  "warnings": []
+ },
+ "BUSINESS_RULE": {
+  "failures": [],
+  "warnings": []
+ },
+ "TRACEABILITY": {
+  "failures": [],
+  "warnings": []
+ },
+ "GRAPH_QUERY": {
+  "failures": [],
+  "warnings": []
+ },
+ "SCORE": {
+  "failures": [],
+  "warnings": []
+ },
+ "INTEGRITY": {
+  "failures": [],
+  "warnings": []
+ },
+ "MANIFEST": {
+  "failures": [],
+  "warnings": []
+ },
+ "VOCABULARY": {
+  "failures": [],
+  "warnings": []
+ },
+ "EXPORT": {
+  "failures": [],
+  "warnings": []
+ },
+ "FIXTURE": {
+  "failures": [],
+  "warnings": []
+ }
+}
