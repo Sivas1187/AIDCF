@@ -73,6 +73,7 @@ jobs:
       - name: Validation instruments are consistent (back-test, expert panel, pilot Starter Profile)
         run: |
           python -B research/back-testing/backtest_check.py --check
+          python -B research/back-testing/tests/test_comparative.py
           python -B validation/expert-panel/tools/build_sample.py --check
           python -B validation/expert-panel/tools/analyse_round.py --self-test
           python -B pilots/pilot-framework/tools/build_starter_profile.py --check

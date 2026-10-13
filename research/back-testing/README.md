@@ -2,6 +2,8 @@
 
 **Status: frame built and screened; nothing selected or coded yet.** The incident register holds 221 real candidates (140 eligible, 81 excluded), found and screened on 2026-10-11 by an AI research assistant (screener code C90). Human second checks are still pending. See [`run-log/run-log.md`](run-log/run-log.md) for the flow, the shortfalls and the open items before selection. The only rows in the coding sheet are two fictional training examples (`INC-EXAMPLE-01`). Nothing in this folder reports a back-testing result.
 
+**Protocol v1.1 (draft, not approved).** v1.1 adds section 10A, an exploratory comparison with conventional review methods. Its staged pilot evaluates BL-ENG, BL-CX and BL-OT, and labels their union BL-ANY-3. `baselines.csv` is DRAFT until practitioner reviewers fix each method's edition and profile. No comparative coding has started: `comparative-sheet.csv` and `run-log/comparative-locks.csv` hold headers only. Protocol v1.0 remains in force until v1.1 is approved.
+
 ## What this is
 
 A kit for retrospective validation without a pilot. It tests whether AIDCF controls, AIDCF-004 failure scenarios and the critical gates CG-01 to CG-15 would have identified, before the event, the conditions behind publicly reported data-centre, AI-infrastructure and cloud incidents.
@@ -15,11 +17,17 @@ The result is evidence of **content validity and detection coverage** for README
 | File | Purpose |
 |---|---|
 | [`AIDCF-VAL-001_Incident_Back-Testing_Protocol_v1.0.md`](AIDCF-VAL-001_Incident_Back-Testing_Protocol_v1.0.md) | The protocol: eligibility, sampling, hindsight controls, coding procedure, judgement scales, gap handling, agreement, metrics, threats, ethics |
+| [`AIDCF-VAL-001_Incident_Back-Testing_Protocol_v1.1.md`](AIDCF-VAL-001_Incident_Back-Testing_Protocol_v1.1.md) | Draft v1.1: v1.0 plus section 10A (comparative validation) and the matching changes to sections 1, 14, 15, 18 and Annex B |
 | [`coding-sheet.csv`](coding-sheet.csv) | Coding dataset: header plus two FICTIONAL example rows (one CONTROL row, one GATE row) |
 | [`coding-sheet-dictionary.csv`](coding-sheet-dictionary.csv) | Definition, allowed values and source of values for every coding-sheet column |
 | [`incident-register.csv`](incident-register.csv) | Sampling frame and selection log: 221 screened candidates |
 | [`run-log/`](run-log/run-log.md) | Run log (frame flow, shortfalls, open items) and the search log of 115 queries |
-| [`backtest_check.py`](backtest_check.py) | Standard-library validator (`--check`), agreement statistics (`--agreement`), metrics (`--metrics`) and the list of valid scenario-family codes (`--list-families`) |
+| [`backtest_check.py`](backtest_check.py) | Standard-library validator (`--check`), agreement statistics (`--agreement`), metrics (`--metrics`) and the list of valid scenario-family codes (`--list-families`); for v1.1 also comparative results (`--comparative`) and the EOD sample draw (`--draw-eod-sample`) |
+| [`comparative.py`](comparative.py) | v1.1 section 10A validation and paired metrics, imported by `backtest_check.py` |
+| [`baselines.csv`](baselines.csv) | v1.1 frozen comparator specification: six methods and an AIDCF row (DRAFT) |
+| [`comparative-sheet.csv`](comparative-sheet.csv) | v1.1 comparative data: FACTOR, BASELINE, AIDCF_EOD and GAP_DISPOSITION rows (header only) |
+| [`comparative-sheet-dictionary.csv`](comparative-sheet-dictionary.csv) | Definitions and allowed values for the comparative sheet, `baselines.csv` and the lock file |
+| [`tests/`](tests/) | `test_comparative.py` and the fictional fixtures it runs on (`make_fixtures.py` rebuilds them) |
 
 ## How to run it, in order
 
@@ -37,7 +45,7 @@ Section numbers refer to the protocol.
 10. **Coding pass 2** (step 6): each coder independently maps controls, records detection judgements and judges the relevant gates and gaps, then locks.
 11. **Check agreement**: run `python3 research/back-testing/backtest_check.py --check`, then `--agreement`. Apply the κ decision rules in section 13.2.
 12. **Reconcile** (section 13.3): produce RECONCILED rows and run `--check` again.
-13. **Analyse** (section 14): run `--metrics` and the required sensitivity analyses.
+13. **Analyse** (section 14): run `--metrics` and the required sensitivity analyses. For a v1.1 comparative run, follow section 10A.9 alongside steps 2 to 12, then run `--comparative`.
 14. **Report and feed back** (sections 16–17): legal review, then the results report. Raise each distinct gap as a finding against AIDCF-007A through the CONTRIBUTING/GOVERNANCE process. After a release, recode the affected incidents.
 
 ## Incident register guidance
@@ -86,3 +94,9 @@ The validator checks the column order of both CSV files and validates every code
 - the canonical vocabularies.
 
 It also checks the consistency rules in protocol section 10, for example that DETECTED is never recorded with a CONFORMING result and that NOT_ADDRESSED carries a gap. It exits non-zero on any error. Only the Python standard library is used.
+
+When `comparative-sheet.csv` has rows, `--check` also validates it against `baselines.csv`, `run-log/comparative-locks.csv` and the coding sheet (protocol section 10A.10). The comparative tests run on fictional fixtures:
+
+```text
+python3 -B research/back-testing/tests/test_comparative.py
+```

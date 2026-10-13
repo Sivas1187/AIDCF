@@ -1,0 +1,138 @@
+AIDCF-VAL-001 v1.1 comparative results (section 10A). EXPLORATORY.
+A paper-based retrospective comparison of written criteria. It does not show higher incident prevention,
+better predictive validity, lower operational risk, better cost-effectiveness, or better detection by real
+engineering teams.
+BL-ANY-3 is the combined-method coverage benchmark of BL-CX, BL-ENG, BL-OT only. The six-method BL-ANY has not been evaluated; BL-TIER, BL-ISMS, BL-TDD were not evaluated in this run.
+Methods evaluated: BL-CX, BL-ENG, BL-OT. Not evaluated: BL-TIER, BL-ISMS, BL-TDD.
+baselines.csv locked digest: 5c6fb51fc21f949b6f25313ae25a15b453b8be0bd1853720525944e24aebeb51
+Comparable factors (knowable, PRE_REVEAL, in the consolidated list): 21; by origin {'ADJUDICATOR': 1, 'AIDCF': 13, 'BASELINE': 4, 'BOTH': 3}
+Factors in the list but not comparable: 3
+Independent reviewers for BL-CX: 0 (below the target of 2: results for this method are exploratory)
+Independent reviewers for BL-ENG: 2
+Independent reviewers for BL-OT: 0 (below the target of 2: results for this method are exploratory)
+
+== Factor level, factors of origin ALL (21) ==
+BL-CX     strict    a shared 1 | b AIDCF-only 7 | c baseline-only 1 | d neither 7 | N 16 | excluded {'EXCLUDED_INDETERMINATE_AIDCF': 1, 'EXCLUDED_INDETERMINATE_BASELINE': 2, 'EXCLUDED_NOT_APPLICABLE': 2} | net incremental +0.375 (no interval: 9 eligible incidents < 10)
+            b miss subtypes: {'baseline DECLARED_EXCLUSION': 1, 'baseline NOT_ADDRESSED': 6}
+            c miss subtypes: {'AIDCF PARTIAL': 1}
+            d miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 2, 'AIDCF NOT_ADDRESSED': 3, 'AIDCF PARTIAL': 2, 'baseline NOT_ADDRESSED': 6, 'baseline PARTIAL': 1}
+BL-CX     inclusive a shared 3 | b AIDCF-only 8 | c baseline-only 0 | d neither 5 | N 16 | excluded {'EXCLUDED_INDETERMINATE_AIDCF': 1, 'EXCLUDED_INDETERMINATE_BASELINE': 2, 'EXCLUDED_NOT_APPLICABLE': 2} | net incremental +0.500 (no interval: 9 eligible incidents < 10)
+            b miss subtypes: {'baseline DECLARED_EXCLUSION': 1, 'baseline NOT_ADDRESSED': 7}
+            d miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 2, 'AIDCF NOT_ADDRESSED': 3, 'baseline NOT_ADDRESSED': 5}
+BL-ENG    strict    a shared 3 | b AIDCF-only 6 | c baseline-only 1 | d neither 6 | N 16 | excluded {'EXCLUDED_INDETERMINATE_AIDCF': 1, 'EXCLUDED_NOT_APPLICABLE': 4} | net incremental +0.312 (95% incident-cluster bootstrap +0.077 to +0.500)
+            b miss subtypes: {'baseline ADDRESSED_NOT_DETECTED': 1, 'baseline NOT_ADDRESSED': 5}
+            c miss subtypes: {'AIDCF NOT_ADDRESSED': 1}
+            d miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 2, 'AIDCF NOT_ADDRESSED': 1, 'AIDCF PARTIAL': 3, 'baseline DECLARED_EXCLUSION': 1, 'baseline NOT_ADDRESSED': 4, 'baseline PARTIAL': 1}
+BL-ENG    inclusive a shared 4 | b AIDCF-only 8 | c baseline-only 1 | d neither 3 | N 16 | excluded {'EXCLUDED_INDETERMINATE_AIDCF': 1, 'EXCLUDED_NOT_APPLICABLE': 4} | net incremental +0.438 (95% incident-cluster bootstrap +0.167 to +0.714)
+            b miss subtypes: {'baseline ADDRESSED_NOT_DETECTED': 1, 'baseline NOT_ADDRESSED': 7}
+            c miss subtypes: {'AIDCF NOT_ADDRESSED': 1}
+            d miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 2, 'AIDCF NOT_ADDRESSED': 1, 'baseline DECLARED_EXCLUSION': 1, 'baseline NOT_ADDRESSED': 2}
+BL-OT     strict    a shared 1 | b AIDCF-only 1 | c baseline-only 2 | d neither 1 | N 5 | excluded {'EXCLUDED_INDETERMINATE_BASELINE': 3, 'EXCLUDED_NOT_APPLICABLE': 13} | net incremental -0.200 (no interval: 4 eligible incidents < 10)
+            b miss subtypes: {'baseline NOT_ADDRESSED': 1}
+            c miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 1, 'AIDCF NOT_ADDRESSED': 1}
+            d miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 1, 'baseline PARTIAL': 1}
+BL-OT     inclusive a shared 1 | b AIDCF-only 1 | c baseline-only 3 | d neither 0 | N 5 | excluded {'EXCLUDED_INDETERMINATE_BASELINE': 3, 'EXCLUDED_NOT_APPLICABLE': 13} | net incremental -0.400 (no interval: 4 eligible incidents < 10)
+            b miss subtypes: {'baseline NOT_ADDRESSED': 1}
+            c miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 2, 'AIDCF NOT_ADDRESSED': 1}
+BL-ANY-3  strict    a shared 4 | b AIDCF-only 4 | c baseline-only 4 | d neither 4 | N 16 | excluded {'EXCLUDED_INDETERMINATE_AIDCF': 1, 'EXCLUDED_INDETERMINATE_BASELINE': 3, 'EXCLUDED_NOT_APPLICABLE': 1} | net incremental +0.000 (95% incident-cluster bootstrap -0.250 to +0.250)
+            b miss subtypes: {'baseline UNION_MISS': 4}
+            c miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 1, 'AIDCF NOT_ADDRESSED': 2, 'AIDCF PARTIAL': 1}
+            d miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 1, 'AIDCF NOT_ADDRESSED': 1, 'AIDCF PARTIAL': 2, 'baseline UNION_MISS': 4}
+BL-ANY-3  inclusive a shared 7 | b AIDCF-only 4 | c baseline-only 4 | d neither 1 | N 16 | excluded {'EXCLUDED_INDETERMINATE_AIDCF': 1, 'EXCLUDED_INDETERMINATE_BASELINE': 3, 'EXCLUDED_NOT_APPLICABLE': 1} | net incremental +0.000 (95% incident-cluster bootstrap -0.308 to +0.294)
+            b miss subtypes: {'baseline UNION_MISS': 4}
+            c miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 2, 'AIDCF NOT_ADDRESSED': 2}
+            d miss subtypes: {'AIDCF NOT_ADDRESSED': 1, 'baseline UNION_MISS': 1}
+Differential indeterminacy (INSUFFICIENT_INFORMATION share, comparable applicable factors):
+  BL-CX     AIDCF 0.05, baseline 0.11, n 19
+  BL-ENG    AIDCF 0.06, baseline 0.00, n 17
+  BL-OT     AIDCF 0.00, baseline 0.38, n 8 FLAG: differs by more than 10 points
+  BL-ANY-3  AIDCF 0.05, baseline 0.15, n 20
+
+== Factor level, factors of origin AIDCF or BOTH (16) ==
+BL-CX     strict    a shared 0 | b AIDCF-only 7 | c baseline-only 1 | d neither 4 | N 12 | excluded {'EXCLUDED_INDETERMINATE_AIDCF': 1, 'EXCLUDED_INDETERMINATE_BASELINE': 2, 'EXCLUDED_NOT_APPLICABLE': 1} | net incremental +0.500
+            b miss subtypes: {'baseline DECLARED_EXCLUSION': 1, 'baseline NOT_ADDRESSED': 6}
+            c miss subtypes: {'AIDCF PARTIAL': 1}
+            d miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 2, 'AIDCF PARTIAL': 2, 'baseline NOT_ADDRESSED': 3, 'baseline PARTIAL': 1}
+BL-CX     inclusive a shared 2 | b AIDCF-only 8 | c baseline-only 0 | d neither 2 | N 12 | excluded {'EXCLUDED_INDETERMINATE_AIDCF': 1, 'EXCLUDED_INDETERMINATE_BASELINE': 2, 'EXCLUDED_NOT_APPLICABLE': 1} | net incremental +0.667
+            b miss subtypes: {'baseline DECLARED_EXCLUSION': 1, 'baseline NOT_ADDRESSED': 7}
+            d miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 2, 'baseline NOT_ADDRESSED': 2}
+BL-ENG    strict    a shared 2 | b AIDCF-only 6 | c baseline-only 0 | d neither 5 | N 13 | excluded {'EXCLUDED_INDETERMINATE_AIDCF': 1, 'EXCLUDED_NOT_APPLICABLE': 2} | net incremental +0.462
+            b miss subtypes: {'baseline ADDRESSED_NOT_DETECTED': 1, 'baseline NOT_ADDRESSED': 5}
+            d miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 2, 'AIDCF PARTIAL': 3, 'baseline NOT_ADDRESSED': 4, 'baseline PARTIAL': 1}
+BL-ENG    inclusive a shared 3 | b AIDCF-only 8 | c baseline-only 0 | d neither 2 | N 13 | excluded {'EXCLUDED_INDETERMINATE_AIDCF': 1, 'EXCLUDED_NOT_APPLICABLE': 2} | net incremental +0.615
+            b miss subtypes: {'baseline ADDRESSED_NOT_DETECTED': 1, 'baseline NOT_ADDRESSED': 7}
+            d miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 2, 'baseline NOT_ADDRESSED': 2}
+BL-OT     strict    a shared 1 | b AIDCF-only 1 | c baseline-only 0 | d neither 1 | N 3 | excluded {'EXCLUDED_INDETERMINATE_BASELINE': 3, 'EXCLUDED_NOT_APPLICABLE': 10} | net incremental +0.333
+            b miss subtypes: {'baseline NOT_ADDRESSED': 1}
+            d miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 1, 'baseline PARTIAL': 1}
+BL-OT     inclusive a shared 1 | b AIDCF-only 1 | c baseline-only 1 | d neither 0 | N 3 | excluded {'EXCLUDED_INDETERMINATE_BASELINE': 3, 'EXCLUDED_NOT_APPLICABLE': 10} | net incremental +0.000
+            b miss subtypes: {'baseline NOT_ADDRESSED': 1}
+            c miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 1}
+BL-ANY-3  strict    a shared 3 | b AIDCF-only 4 | c baseline-only 1 | d neither 3 | N 11 | excluded {'EXCLUDED_INDETERMINATE_AIDCF': 1, 'EXCLUDED_INDETERMINATE_BASELINE': 3, 'EXCLUDED_NOT_APPLICABLE': 1} | net incremental +0.273
+            b miss subtypes: {'baseline UNION_MISS': 4}
+            c miss subtypes: {'AIDCF PARTIAL': 1}
+            d miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 1, 'AIDCF PARTIAL': 2, 'baseline UNION_MISS': 3}
+BL-ANY-3  inclusive a shared 6 | b AIDCF-only 4 | c baseline-only 1 | d neither 0 | N 11 | excluded {'EXCLUDED_INDETERMINATE_AIDCF': 1, 'EXCLUDED_INDETERMINATE_BASELINE': 3, 'EXCLUDED_NOT_APPLICABLE': 1} | net incremental +0.273
+            b miss subtypes: {'baseline UNION_MISS': 4}
+            c miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 1}
+
+== Factor level, factors of origin BASELINE or BOTH (7) ==
+BL-CX     strict    a shared 0 | b AIDCF-only 1 | c baseline-only 1 | d neither 3 | N 5 | excluded {'EXCLUDED_INDETERMINATE_AIDCF': 1, 'EXCLUDED_NOT_APPLICABLE': 1} | net incremental +0.000
+            b miss subtypes: {'baseline NOT_ADDRESSED': 1}
+            c miss subtypes: {'AIDCF PARTIAL': 1}
+            d miss subtypes: {'AIDCF NOT_ADDRESSED': 3, 'baseline NOT_ADDRESSED': 3}
+BL-CX     inclusive a shared 1 | b AIDCF-only 1 | c baseline-only 0 | d neither 3 | N 5 | excluded {'EXCLUDED_INDETERMINATE_AIDCF': 1, 'EXCLUDED_NOT_APPLICABLE': 1} | net incremental +0.200
+            b miss subtypes: {'baseline NOT_ADDRESSED': 1}
+            d miss subtypes: {'AIDCF NOT_ADDRESSED': 3, 'baseline NOT_ADDRESSED': 3}
+BL-ENG    strict    a shared 0 | b AIDCF-only 1 | c baseline-only 1 | d neither 2 | N 4 | excluded {'EXCLUDED_INDETERMINATE_AIDCF': 1, 'EXCLUDED_NOT_APPLICABLE': 2} | net incremental +0.000
+            b miss subtypes: {'baseline NOT_ADDRESSED': 1}
+            c miss subtypes: {'AIDCF NOT_ADDRESSED': 1}
+            d miss subtypes: {'AIDCF NOT_ADDRESSED': 1, 'AIDCF PARTIAL': 1, 'baseline DECLARED_EXCLUSION': 1, 'baseline NOT_ADDRESSED': 1}
+BL-ENG    inclusive a shared 0 | b AIDCF-only 2 | c baseline-only 1 | d neither 1 | N 4 | excluded {'EXCLUDED_INDETERMINATE_AIDCF': 1, 'EXCLUDED_NOT_APPLICABLE': 2} | net incremental +0.250
+            b miss subtypes: {'baseline NOT_ADDRESSED': 2}
+            c miss subtypes: {'AIDCF NOT_ADDRESSED': 1}
+            d miss subtypes: {'AIDCF NOT_ADDRESSED': 1, 'baseline DECLARED_EXCLUSION': 1}
+BL-OT     strict    a shared 0 | b AIDCF-only 1 | c baseline-only 2 | d neither 0 | N 3 | excluded {'EXCLUDED_NOT_APPLICABLE': 4} | net incremental -0.333
+            b miss subtypes: {'baseline NOT_ADDRESSED': 1}
+            c miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 1, 'AIDCF NOT_ADDRESSED': 1}
+BL-OT     inclusive a shared 0 | b AIDCF-only 1 | c baseline-only 2 | d neither 0 | N 3 | excluded {'EXCLUDED_NOT_APPLICABLE': 4} | net incremental -0.333
+            b miss subtypes: {'baseline NOT_ADDRESSED': 1}
+            c miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 1, 'AIDCF NOT_ADDRESSED': 1}
+BL-ANY-3  strict    a shared 0 | b AIDCF-only 1 | c baseline-only 4 | d neither 1 | N 6 | excluded {'EXCLUDED_INDETERMINATE_AIDCF': 1} | net incremental -0.500
+            b miss subtypes: {'baseline UNION_MISS': 1}
+            c miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 1, 'AIDCF NOT_ADDRESSED': 2, 'AIDCF PARTIAL': 1}
+            d miss subtypes: {'AIDCF NOT_ADDRESSED': 1, 'baseline UNION_MISS': 1}
+BL-ANY-3  inclusive a shared 1 | b AIDCF-only 1 | c baseline-only 3 | d neither 1 | N 6 | excluded {'EXCLUDED_INDETERMINATE_AIDCF': 1} | net incremental -0.333
+            b miss subtypes: {'baseline UNION_MISS': 1}
+            c miss subtypes: {'AIDCF ADDRESSED_NOT_DETECTED': 1, 'AIDCF NOT_ADDRESSED': 2}
+            d miss subtypes: {'AIDCF NOT_ADDRESSED': 1, 'baseline UNION_MISS': 1}
+
+== Incident level (common factor set; primary threshold 50%) ==
+BL-CX     strict    a shared 2 | b AIDCF-only 4 | c baseline-only 0 | d neither 3 | N 9 | excluded {} | incidents excluded {'no eligible pair': 3}
+BL-CX     inclusive a shared 3 | b AIDCF-only 5 | c baseline-only 0 | d neither 1 | N 9 | excluded {} | incidents excluded {'no eligible pair': 3}
+BL-ENG    strict    a shared 4 | b AIDCF-only 3 | c baseline-only 0 | d neither 3 | N 10 | excluded {} | incidents excluded {'no eligible pair': 2}
+BL-ENG    inclusive a shared 5 | b AIDCF-only 4 | c baseline-only 0 | d neither 1 | N 10 | excluded {} | incidents excluded {'no eligible pair': 2}
+BL-OT     strict    a shared 1 | b AIDCF-only 0 | c baseline-only 1 | d neither 1 | N 3 | excluded {} | incidents excluded {'no eligible pair': 8, 'over 50% indeterminate': 1}
+BL-OT     inclusive a shared 1 | b AIDCF-only 0 | c baseline-only 2 | d neither 0 | N 3 | excluded {} | incidents excluded {'no eligible pair': 8, 'over 50% indeterminate': 1}
+BL-ANY-3  strict    a shared 6 | b AIDCF-only 1 | c baseline-only 1 | d neither 3 | N 11 | excluded {} | incidents excluded {'no eligible pair': 1}
+BL-ANY-3  inclusive a shared 8 | b AIDCF-only 1 | c baseline-only 2 | d neither 0 | N 11 | excluded {} | incidents excluded {'no eligible pair': 1}
+Sensitivity to the incident-exclusion threshold (strict):
+  BL-CX     25%: N 9 net +0.444; 50%: N 9 net +0.444; 75%: N 9 net +0.444; none: N 9 net +0.444
+  BL-ENG    25%: N 9 net +0.222; 50%: N 10 net +0.300; 75%: N 10 net +0.300; none: N 10 net +0.300
+  BL-OT     25%: N 3 net -0.333; 50%: N 3 net -0.333; 75%: N 4 net +0.000; none: N 4 net +0.000
+  BL-ANY-3  25%: N 10 net +0.000; 50%: N 11 net +0.000; 75%: N 11 net +0.000; none: N 11 net +0.000
+Strata with fewer than 5 incidents (descriptive only): CONTROL_PLANE_OT
+
+== Baseline-only results (comparative disadvantages for AIDCF) ==
+  INC-EXAMPLE-01 CF-02 BL-CX (strict): AIDCF PARTIALLY_DETECTED, BL-CX DETECTED; disposition OUTSIDE_DECLARED_BOUNDARY FICTIONAL AIDCF clause 3.1
+  INC-EXAMPLE-02 CF-01 BL-OT (inclusive): AIDCF NOT_DETECTED, BL-OT PARTIALLY_DETECTED; disposition ACTIONABLE_GAP G2_NO_CRITERION FICTIONAL
+  INC-EXAMPLE-05 CF-02 BL-OT (strict/inclusive): AIDCF NOT_DETECTED, BL-OT DETECTED; disposition DELEGATED_TO_STANDARD FICTIONAL AIDCF clause 3.1
+  INC-EXAMPLE-08 CF-02 BL-OT (strict/inclusive): AIDCF NOT_ADDRESSED, BL-OT DETECTED; disposition DISPUTED (see notes)
+  INC-EXAMPLE-10 CF-02 BL-ENG (strict/inclusive): AIDCF NOT_ADDRESSED, BL-ENG DETECTED; disposition BELOW_INTENDED_GRANULARITY FICTIONAL AIDCF clause 3.1
+Gap dispositions: {'ACTIONABLE_GAP': 1, 'BELOW_INTENDED_GRANULARITY': 1, 'DELEGATED_TO_STANDARD': 1, 'DISPUTED': 1, 'OUTSIDE_DECLARED_BOUNDARY': 1}
+
+== Estimated operational detectability (expert estimate, not observed performance) ==
+Sampled factors: 12 of 21 comparable
+  BL-CX     (AIDCF, BL-CX) counts: {('LIKELY', 'POSSIBLE'): 11}
+  BL-ENG    (AIDCF, BL-ENG) counts: {('LIKELY', 'POSSIBLE'): 10}
+  BL-OT     (AIDCF, BL-OT) counts: {('LIKELY', 'POSSIBLE'): 3}

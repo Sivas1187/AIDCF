@@ -1,0 +1,13 @@
+Incidents with RECONCILED rows: 0
+Factors: 0 total; 0 NOT_KNOWABLE (excluded); 0 INSUFFICIENT_INFORMATION (excluded); 0 judged
+Addressing coverage (>=1 control addresses factor): n/a (n=0)
+Strict detection coverage (best = DETECTED): n/a (n=0)
+Inclusive detection coverage (DETECTED or PARTIALLY_DETECTED): n/a (n=0)
+Strict detection coverage by failure category:
+Strict detection coverage by factor domain (scenario family):
+Projected gate results (relevant gates only):
+Incidents with >=1 relevant gate projected FAIL or UNKNOWN: n/a (n=0)
+False-reassurance cases (relevant gate projected PASS):
+Control-level false reassurance (NOT_DETECTED, projected CONFORMING):
+Gap list:
+Hindsight indicator (judged factors first identified POST_REVEAL): n/a (n=0)

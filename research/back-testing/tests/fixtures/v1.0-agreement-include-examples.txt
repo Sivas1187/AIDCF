@@ -1,0 +1,4 @@
+Detection judgement (same incident, factor, control): n=0 pairs
+Gate judgement (same incident, gate): n=0 pairs
+  gates judged relevant by one coder only: 1
+Control mapping (per consolidated factor): n=0 factors; mean Jaccard n/a
