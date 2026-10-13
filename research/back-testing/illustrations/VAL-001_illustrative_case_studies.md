@@ -2,7 +2,7 @@
 
 | Field | Value |
 |---|---|
-| Status | Illustrative, draft for the owner's review. **Not back-test results.** |
+| Status | Illustrative, draft for the owner's review. **Not back-test results.** **Not for publication** (site, paper or post) until the sponsor's legal adviser has reviewed it and the outcome is in the run log (VAL-001 BT-REQ-017). |
 | Date | 2026-10-13 |
 | Prepared by | AI research assistant (Claude), screener code C90, at the framework author's request |
 | Framework version used | AIDCF-007A registry v1.1 (`registries/controls/`), gates in `registries/gates/`, AIDCF-004 v1.1 |
@@ -51,7 +51,7 @@ The draw and the recusal are recorded in `run-log/run-log.md`.
 | Framework gaps found | 0 | 2 | 3 |
 
 **The case for AIDCF.** In two of the three incidents, a specific critical gate would have failed on the condition that later caused the outage:
-- **INC-040:** CG-15 fails because nothing limited how far an automation could cut a critical service's quota.
+- **INC-040:** CG-15 fails because the report describes no limit on how far an automation could cut a critical service's quota.
 - **INC-068:** CG-10 fails because the out-of-band network depended on the network it was meant to recover.
 
 **The case against.** In INC-120, AIDCF as written would give no gate-level warning: the controls it engages only support CG-08, and CG-08's critical controls are about AI fabrics. In INC-068, CG-14 would likely pass although one command could take out the backbone. That is false reassurance, the result the back-test is designed to catch. The five gaps below are concrete fixes to the framework. Finding and fixing such gaps is part of the value of back-testing, and only the full back-test can show how often they occur.
@@ -60,9 +60,9 @@ The draw and the recusal are recorded in `run-log/run-log.md`.
 
 ## INC-040: Google authentication outage, 14 December 2020
 
-**Source:** Google Cloud incident report 20013, <https://status.cloud.google.com/incident/zall/20013> (PRIMARY).
+**Source:** Google Cloud incident report 20013, <https://status.cloud.google.com/incident/zall/20013> (PRIMARY), accessed 2026-10-13; archive copy not yet made.
 
-**What happened.** For about 47 minutes, Google services that required Google OAuth sign-in failed. The User ID Service was being migrated to a new quota system. Parts of the old system were left in place and "incorrectly reported the usage for the User ID Service as 0". When a grace period expired, this triggered "automated quota systems to decrease the quota allowed for the User ID service". Its database could no longer accept writes, and authentication lookups failed. Google's existing safety checks "did not cover the scenario of zero reported load for a single service". Cloud Support's own tools were also affected, "which delayed our ability to share outage communications".
+**What the report states.** For about 47 minutes, services that required Google OAuth sign-in failed. The report states that the User ID Service was being moved to a new quota system, and that parts of the old system, left in place, reported its usage as zero. When a grace period expired, automated quota enforcement reduced the service's quota below its real use. Its database could then not accept writes, and authentication lookups failed. The report states that existing safety checks "did not cover the scenario of zero reported load for a single service". It also states that the support team's internal tools were affected, which delayed outage communications.
 
 **Path.** This follows AIDCF-004 **X18** (a telemetry defect leads an automation to take a mass action) into **X15** (identity service failure).
 
@@ -83,13 +83,13 @@ The draw and the recusal are recorded in `run-log/run-log.md`.
 
 ## INC-068: Meta global outage, 4 October 2021
 
-**Source:** Meta engineering, "More details about the October 4 outage", <https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/> (PRIMARY).
+**Source:** Meta engineering, "More details about the October 4 outage", <https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/> (PRIMARY), accessed 2026-10-13; archive copy not yet made.
 
-**What happened.**
-- During routine maintenance, a command meant to assess global backbone capacity disconnected every backbone link. An audit tool should have stopped it, "but a bug in that audit tool prevented it from properly stopping the command."
-- DNS servers withdraw their routes when they lose contact with the data centres. They therefore removed themselves from the internet while still running.
-- "Our primary and out-of-band network access was down", so engineers had to travel to the sites, and deliberately strict physical security slowed them.
-- Bringing load back carried its own risk: "suddenly reversing such a dip in power consumption could put everything from electrical systems to caches at risk." Meta staged the restart using practice from its "storm" drills. It noted that "we've never previously run a storm that simulated our global backbone being taken offline".
+**What the report states.**
+- During routine maintenance, a command intended to assess global backbone capacity disconnected every backbone link. An audit tool meant to stop such commands did not, because of a bug.
+- The DNS servers are designed to withdraw their routes when they lose contact with the data centres, so they removed themselves from the internet while still running.
+- "Our primary and out-of-band network access was down", so engineers went to the sites, and the report notes that deliberately strict physical security added time.
+- The report states that a sudden return of load could stress electrical systems, that the restart was staged using practice from earlier drills, and that a global backbone loss had not been drilled before.
 
 **Path.** No AIDCF-004 library scenario fits: see gap G6 below. The recovery phase follows the circular-recovery step of **X15**.
 
@@ -116,13 +116,13 @@ The draw and the recusal are recorded in `run-log/run-log.md`.
 
 ## INC-120: Singtel fixed-line voice outage, 8 October 2024
 
-**Source:** IMDA press release on the S$1 million penalty, <https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2025/imda-fined-singtel-for-fixed-voice-disruption> (REGULATOR). The parliamentary answer at <https://mddi.gov.sg/media-centre/parliament/pqs-related-to-the-8-october-singtel-disruption> gives no further cause detail.
+**Source:** IMDA press release, <https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2025/imda-fined-singtel-for-fixed-voice-disruption> (REGULATOR), accessed 2026-10-13; archive copy not yet made. The parliamentary answer at <https://mddi.gov.sg/media-centre/parliament/pqs-related-to-the-8-october-singtel-disruption> gives no further cause detail.
 
-**What happened.**
+**What the regulator states.**
 - For more than four hours, about 500,000 fixed-line users lost voice service, including access to emergency lines.
-- A traffic surge hit a monitoring system's virtualised firewall, which "did not have adequate filters installed to protect the hardware against high intensity traffic". That firewall and the voice system's firewall "shared the same hardware memory resources", so the voice firewall began to malfunction intermittently.
-- Failover to the second exchange did not complete: "Calls were dropped intermittently as voice traffic alternated between the affected and unaffected voice systems."
-- IMDA found the incident "within Singtel's control to prevent". Singtel separated the hardware and added a mechanism to stop traffic alternating during failover.
+- A traffic surge hit a monitoring system's virtualised firewall, which lacked adequate filters for high-intensity traffic. That firewall and the voice system's firewall "shared the same hardware memory resources", so the voice firewall malfunctioned intermittently.
+- Failover to the second exchange did not complete cleanly: calls dropped as traffic alternated between the two systems.
+- The operator has since separated the hardware and added a mechanism to stop traffic alternating during failover.
 
 **Path.** This follows the AIDCF-004 family *DEP: Hidden shared dependency*. The nearest library scenario, X11, is the electrical version of it.
 
@@ -145,14 +145,11 @@ The draw and the recusal are recorded in `run-log/run-log.md`.
 
 ## What this shows, and what it does not
 
-- **It shows the method end to end.** Conditions are taken from the operator's or regulator's own words. Each one is tied to a named control criterion and its mandatory evidence, then rolled up to a gate. Anyone can check every step against the cited source and registry row.
+- **It shows the method end to end.** Conditions are taken from what the operator's or regulator's report states. Each one is tied to a named control criterion and its mandatory evidence, then rolled up to a gate. Anyone can check every step against the cited source and registry row.
 - **It shows that AIDCF can point at the specific gap,** not a general "resilience" concern, in two of three cases.
 - **It shows that AIDCF misses things.** The five gaps above are framework fixes. They should go through CONTRIBUTING §5 as findings rather than be patched quietly.
 - **It does not show a detection rate,** and it does not show that AIDCF beats existing practice. Only the VAL-001 back-test, with two independent coders, the seeded stratified draw and the BL-ANY-3 comparison, can support those claims.
 
 ## Effect on the back-test
 
-INC-040, INC-068 and INC-120 are still ELIGIBLE in the frame. Because this mapping is now in the repository, any coder who reads it has DETAILED familiarity with them. The protocol already reports DETAILED codings separately. The owner should still decide one of two options before the selection draw:
-
-1. Leave them in the frame and rely on that separate reporting.
-2. Record them as a protocol deviation and exclude them from selection.
+Because this mapping is in the repository, any coder who reads it would have DETAILED familiarity with these three incidents. The owner decided on 2026-10-13 to exclude them: INC-040, INC-068 and INC-120 are EXCLUDED in the register with code EX-09, and the deviation is recorded in the run log. The frame now has 137 eligible incidents.

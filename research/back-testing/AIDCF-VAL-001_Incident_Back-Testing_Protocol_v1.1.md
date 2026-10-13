@@ -135,6 +135,7 @@ The register's `detail_level` field records the screener's assessment:
 | EX-06 | Source not retrievable or not archivable at screening |
 | EX-07 | Source withdrawn, or the operator has publicly disputed the account in material respects and no regulator report settles it |
 | EX-08 | Subject to active legal proceedings where the sponsor's legal adviser advises against coding |
+| EX-09 | Exposed before selection: the study has already analysed the incident's causes in a document that coders could read (for example an illustrative case study), so blind coding is no longer possible. Recorded as a deviation (BT-REQ-016) |
 
 **BT-REQ-006** Every candidate shall be logged in `incident-register.csv` with its eligibility outcome. A second person shall check every EX-02 and EX-04 exclusion, since these involve judgement, and record this in `exclusion_checked_by`.
 
