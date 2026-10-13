@@ -86,3 +86,16 @@ Sub-quota tags among eligible incidents:
 ## Spot verification
 
 Two eligible rows were picked at random and their primary sources fetched again. Both matched the register: INC-035 (Google Cloud, 2022-06-07, fibre cuts) and INC-126 (CenturyLink, 2018-12-27, FCC report).
+
+## Comparative run requirements (protocol v1.1 section 10A, draft)
+
+Not started. Before any comparative coding, this log shall record, with dates and coder codes:
+
+1. Approval of each evaluated method's row in `baselines.csv` by its practitioner reviewer, and the BASELINES digest in `comparative-locks.csv`.
+2. The BOOTSTRAP_SEED, locked before any judgement.
+3. Each baseline coder's locked factor list (FILE:<path> digest), before they see the AIDCF list.
+4. The consolidated FACTOR list, then the EOD_SEED and EOD_FRAME locks and the `--draw-eod-sample` output, recorded before any detection judgement exists on either side.
+5. Each side's locked judgement file (FILE:<path> digest), before it sees the other side's judgements.
+6. The number of distinct independent reviewers per evaluated method, and any method run with fewer than two (exploratory).
+7. The FILE locks of the reconciled `coding-sheet.csv` and `comparative-sheet.csv` analysed by the final report, set after reconciliation and disposition. Locked files are kept unchanged.
+8. Any deviation from section 10A (BT-REQ-016).

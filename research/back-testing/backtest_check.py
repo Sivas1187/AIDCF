@@ -8,10 +8,14 @@ Usage (from any directory):
   python3 research/back-testing/backtest_check.py --agreement    coder agreement (rounds A vs B)
   python3 research/back-testing/backtest_check.py --metrics      coverage metrics (RECONCILED rows)
   python3 research/back-testing/backtest_check.py --list-families
+  python3 research/back-testing/backtest_check.py --comparative  v1.1 comparative results (section 10A)
+  python3 research/back-testing/backtest_check.py --draw-eod-sample  seeded EOD sample (section 10A.3.2)
 Options:
   --sheet PATH      coding sheet (default: coding-sheet.csv beside this script)
   --register PATH   incident register (default: incident-register.csv beside this script)
   --include-examples  include INC-EXAMPLE-* rows in --agreement and --metrics
+  --comparative-sheet, --baselines, --locks  v1.1 comparative files (defaults beside this script)
+  --threshold F     incident-exclusion threshold for --comparative (default 0.5, prespecified)
 
 --check exits 1 if any error is found. Codes are validated against AIDCF-004 v1.1
 (scenario families, library scenarios, failure modes, generic modes, cause families),
@@ -27,6 +31,9 @@ import re
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import comparative  # noqa: E402  (v1.1 section 10A)
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
@@ -585,6 +592,30 @@ def metrics(rows, controls, include_examples):
     return out
 
 
+def draw_sample(c_rows, coding_rows, locks, category_of):
+    """Seeded EOD draw (section 10A.3.2): after factor adjudication, before any detection judgement."""
+    factors = [r for r in c_rows if r["record_type"] == "FACTOR"]
+    if not factors:
+        print("No consolidated FACTOR rows: adjudicate and lock the factor list first.")
+        return 1
+    if "EOD_SEED" not in locks:
+        print("EOD_SEED is not locked in comparative-locks.csv.")
+        return 1
+    incidents = {r["incident_id"] for r in factors}
+    judged = sorted({r["incident_id"] for r in c_rows if r["record_type"] == "BASELINE" and r["detection_judgement"]} |
+                    {r["incident_id"] for r in coding_rows if r["detection_judgement"] and FACTOR_RE.match(r["factor_id"])}
+                    & incidents)
+    judged = [i for i in judged if i in incidents]
+    if judged:
+        print("Detection judgements already exist for %s: the EOD sample must be drawn before them." % ", ".join(judged))
+        return 1
+    frame = comparative.eod_frame(factors)
+    print("EOD frame: %d knowable PRE_REVEAL factors; digest %s (lock as EOD_FRAME)" % (len(frame), comparative.frame_digest(frame)))
+    for inc, fid in comparative.draw_eod_sample(frame, category_of, locks["EOD_SEED"]):
+        print("SAMPLED %s %s" % (inc, fid))
+    return 0
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     mode = ap.add_mutually_exclusive_group()
@@ -592,9 +623,15 @@ def main(argv=None):
     mode.add_argument("--agreement", action="store_true")
     mode.add_argument("--metrics", action="store_true")
     mode.add_argument("--list-families", action="store_true")
+    mode.add_argument("--comparative", action="store_true")
+    mode.add_argument("--draw-eod-sample", action="store_true")
     ap.add_argument("--sheet", type=Path, default=HERE / "coding-sheet.csv")
     ap.add_argument("--register", type=Path, default=HERE / "incident-register.csv")
     ap.add_argument("--include-examples", action="store_true")
+    ap.add_argument("--comparative-sheet", type=Path, default=HERE / "comparative-sheet.csv")
+    ap.add_argument("--baselines", type=Path, default=HERE / "baselines.csv")
+    ap.add_argument("--locks", type=Path, default=HERE / "run-log/comparative-locks.csv")
+    ap.add_argument("--threshold", type=float, default=comparative.PRIMARY_THRESHOLD)
     a = ap.parse_args(argv)
     ref, problems = reference()
     if problems:
@@ -616,6 +653,43 @@ def main(argv=None):
     for r in rows:
         if not r["incident_id"].startswith("INC-EXAMPLE-") and r["incident_id"] not in reg_ids:
             chk.err(a.sheet.name, "%s is not in the incident register" % r["incident_id"])
+    comp = None
+    if a.comparative_sheet.exists() or a.comparative or a.draw_eod_sample:
+        category = {r["incident_id"]: r["failure_category"] for r in reg}
+        category.update({r["incident_id"]: r["failure_category"] for r in rows})
+        category_of = lambda inc: category.get(inc, "UNKNOWN")
+        try:
+            comp = comparative.check_comparative(a.comparative_sheet, a.baselines, a.locks, rows, category_of, chk)
+        except (ValueError, UnicodeDecodeError, OSError) as exc:
+            print("ERROR: %s" % exc)
+            return 1
+        c_rows, spec, locks = comp
+        if "BASELINES" in locks and locks["BASELINES"] != comparative.sha256(a.baselines):
+            chk.err(a.baselines.name, "baselines.csv differs from its BASELINES lock: the frozen specification has changed")
+        for r in c_rows:
+            if not r["incident_id"].startswith("INC-EXAMPLE-") and r["incident_id"] not in reg_ids:
+                chk.err(a.comparative_sheet.name, "%s is not in the incident register" % r["incident_id"])
+    if a.comparative or a.draw_eod_sample:
+        if chk.errors:
+            for e in sorted(set(chk.errors)):
+                print("ERROR " + e)
+            print("Files have validation errors; fix them first.")
+            return 1
+        c_rows, spec, locks = comp
+        if a.draw_eod_sample:
+            return draw_sample(c_rows, rows, locks, category_of)
+        has_factors = any(r["record_type"] == "FACTOR" for r in c_rows)
+        lock_problems = comparative.final_lock_problems(locks, [a.sheet, a.comparative_sheet], has_factors)
+        if lock_problems:
+            print("Not reportable: required locks are missing (section 10A.4).\n" + "\n".join(lock_problems))
+            return 1
+        try:
+            lines = comparative.comparative_report(c_rows, spec, locks, rows, category_of, a.threshold)
+        except ValueError as exc:
+            print("Not reportable yet:\n" + str(exc))
+            return 1
+        print("\n".join(lines))
+        return 0
     if a.agreement or a.metrics:
         if chk.errors:
             print("Files have validation errors; run --check first.")
@@ -629,6 +703,8 @@ def main(argv=None):
         print("WARNING " + w)
     print("checked %d coding rows, %d register rows: %d errors, %d warnings" %
           (len(rows), len(reg), len(set(chk.errors)), len(set(chk.warnings))))
+    if comp is not None:
+        print("comparative (v1.1 section 10A): %d comparative-sheet rows checked" % len(comp[0]))
     return 1 if chk.errors else 0
 
 
