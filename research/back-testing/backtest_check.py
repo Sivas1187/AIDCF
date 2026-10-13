@@ -678,6 +678,11 @@ def main(argv=None):
         c_rows, spec, locks = comp
         if a.draw_eod_sample:
             return draw_sample(c_rows, rows, locks, category_of)
+        has_factors = any(r["record_type"] == "FACTOR" for r in c_rows)
+        lock_problems = comparative.final_lock_problems(locks, [a.sheet, a.comparative_sheet], has_factors)
+        if lock_problems:
+            print("Not reportable: required locks are missing (section 10A.4).\n" + "\n".join(lock_problems))
+            return 1
         try:
             lines = comparative.comparative_report(c_rows, spec, locks, rows, category_of, a.threshold)
         except ValueError as exc:

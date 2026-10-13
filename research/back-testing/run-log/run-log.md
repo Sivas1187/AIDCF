@@ -97,4 +97,5 @@ Not started. Before any comparative coding, this log shall record, with dates an
 4. The consolidated FACTOR list, then the EOD_SEED and EOD_FRAME locks and the `--draw-eod-sample` output, recorded before any detection judgement exists on either side.
 5. Each side's locked judgement file (FILE:<path> digest), before it sees the other side's judgements.
 6. The number of distinct independent reviewers per evaluated method, and any method run with fewer than two (exploratory).
-7. Any deviation from section 10A (BT-REQ-016).
+7. The FILE locks of the reconciled `coding-sheet.csv` and `comparative-sheet.csv` analysed by the final report, set after reconciliation and disposition. Locked files are kept unchanged.
+8. Any deviation from section 10A (BT-REQ-016).

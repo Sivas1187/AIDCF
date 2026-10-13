@@ -49,13 +49,29 @@ class Mutated:
     """A temporary copy of the fixtures with one change."""
 
     def __enter__(self):
-        self.dir = Path(tempfile.mkdtemp())
-        for p in FIX.glob("*.csv"):
-            shutil.copy(p, self.dir / p.name)
+        self.dir = Path(tempfile.mkdtemp()) / "fixtures"
+        shutil.copytree(FIX, self.dir)
+        # point FILE locks at the copies (same bytes, so the same digests)
+        cols, rows = self.rows("comparative-locks.csv")
+        for r in rows:
+            if r["artefact"].startswith("FILE:tests/fixtures/"):
+                r["artefact"] = "FILE:" + str(self.dir / r["artefact"][len("FILE:tests/fixtures/"):])
+        self.write("comparative-locks.csv", cols, rows)
         return self
 
+    def relock(self):
+        """Re-lock every FILE artefact after a mutation, so a test reaches the rule it is about."""
+        import hashlib
+        cols, rows = self.rows("comparative-locks.csv")
+        for r in rows:
+            if r["artefact"].startswith("FILE:"):
+                path = Path(r["artefact"][len("FILE:"):])
+                if path.exists():
+                    r["value"] = hashlib.sha256(path.read_bytes()).hexdigest()
+        self.write("comparative-locks.csv", cols, rows)
+
     def __exit__(self, *exc):
-        shutil.rmtree(self.dir)
+        shutil.rmtree(self.dir.parent)
 
     def rows(self, name):
         with open(self.dir / name, encoding="utf-8", newline="") as fh:
@@ -263,6 +279,7 @@ class Report(unittest.TestCase):
                 if r["record_type"] == "GAP_DISPOSITION":
                     r.update(gap_disposition="DISPUTED", disposition_citation="", notes="FICTIONAL both positions")
             m.write("comparative-sheet.csv", cols, rows)
+            m.relock()
             code, out = run("--comparative", files=m.dir)
         self.assertEqual(code, 0, out)
         self.assertEqual(base.split("== Baseline-only")[0], out.split("== Baseline-only")[0])
@@ -271,9 +288,11 @@ class Report(unittest.TestCase):
 class Validation(unittest.TestCase):
     """T-01 to T-06, T-10, T-11 and the frozen-specification and independence rules."""
 
-    def check(self, mutate, expected, mode="--check"):
+    def check(self, mutate, expected, mode="--check", relock=True):
         with Mutated() as m:
             mutate(m)
+            if relock:
+                m.relock()
             code, out = run(mode, files=m.dir)
         self.assertEqual(code, 1, out)
         self.assertIn(expected, out)
@@ -408,6 +427,118 @@ class Validation(unittest.TestCase):
         self.check(mut, "is locked once")
 
 
+class LockIntegrity(unittest.TestCase):
+    """KAI pre-merge review: the final report fails closed on missing, changed or unreadable locks."""
+
+    def fails(self, mutate, expected, mode="--comparative"):
+        with Mutated() as m:
+            mutate(m)
+            code, out = run(mode, files=m.dir)
+        self.assertEqual(code, 1, out)
+        self.assertIn(expected, out)
+        self.assertNotIn("== Factor level", out)  # no results of any kind
+
+    def drop_lock(self, pred):
+        return lambda m: m.drop("comparative-locks.csv", pred)
+
+    def test_complete_locks_report(self):
+        code, out = run("--comparative")
+        self.assertEqual(code, 0, out)
+
+    def test_each_required_lock_missing(self):
+        cases = {
+            "BOOTSTRAP_SEED": "BOOTSTRAP_SEED is not locked",
+            "BASELINES": "BASELINES is not locked",
+            "EOD_FRAME": "EOD_SEED and EOD_FRAME are not both locked",
+            "EOD_SEED": "EOD_SEED and EOD_FRAME are not both locked",
+            "FILE:coding-sheet.csv": "coding-sheet.csv is not locked",
+            "FILE:comparative-sheet.csv": "comparative-sheet.csv is not locked",
+        }
+        for artefact, expected in cases.items():
+            with self.subTest(artefact=artefact):
+                if artefact.startswith("FILE:"):
+                    pred = lambda r, n=artefact[5:]: r["artefact"].startswith("FILE:") and r["artefact"].endswith("/" + n)
+                else:
+                    pred = lambda r, a=artefact: r["artefact"] == a
+                self.fails(self.drop_lock(pred), expected)
+
+    def test_report_function_requires_bootstrap_seed(self):
+        with Mutated() as m:
+            m.drop("comparative-locks.csv", lambda r: r["artefact"] == "BOOTSTRAP_SEED")
+            chk = bc.Checker()
+            _, coding = m.rows("coding-sheet.csv")
+            rows, spec, locks = cp.check_comparative(m.dir / "comparative-sheet.csv", m.dir / "baselines.csv",
+                                                     m.dir / "comparative-locks.csv", coding, lambda i: "X", chk)
+        with self.assertRaisesRegex(ValueError, "BOOTSTRAP_SEED is not locked"):
+            cp.comparative_report(rows, spec, locks, coding, lambda i: "X")
+
+    def test_changed_locked_judgement(self):
+        # a reconciled baseline judgement edited after the comparative sheet was locked
+        self.fails(lambda m: m.edit("comparative-sheet.csv", is_base(1, "CF-01", "BL-CX"),
+                                    detection_judgement="NOT_DETECTED", baseline_criteria="FICTIONAL clause 4.2"),
+                   "the file has changed since it was locked")
+        # an AIDCF judgement edited after the coding sheet was locked
+        self.fails(lambda m: m.edit("coding-sheet.csv", lambda r: r["detection_judgement"] == "DETECTED",
+                                    detection_judgement="PARTIALLY_DETECTED"),
+                   "the file has changed since it was locked")
+        # a coder's locked round-A snapshot edited
+        self.fails(lambda m: m.edit("locked/C21-BL-ENG-round-A.csv", lambda r: True, detection_judgement="DETECTED"),
+                   "the file has changed since it was locked")
+
+    def test_replaced_or_missing_locked_file(self):
+        def replace(m):
+            (m.dir / "coding-sheet.csv").write_text((FIX / "comparative-sheet.csv").read_text(encoding="utf-8"), encoding="utf-8")
+        with Mutated() as m:
+            replace(m)
+            code, out = run("--comparative", files=m.dir)
+        self.assertEqual(code, 1)  # rejected at the header check or the lock, never reported
+        self.assertNotIn("== Factor level", out)
+        self.fails(lambda m: (m.dir / "locked/C21-BL-ENG-round-A.csv").unlink(), "the locked file cannot be read")
+
+    def test_changed_lock_fails_check_too(self):
+        self.fails(lambda m: m.edit("comparative-sheet.csv", is_base(1, "CF-01", "BL-CX"), notes="FICTIONAL edited"),
+                   "the file has changed since it was locked", mode="--check")
+
+    def test_file_locked_twice(self):
+        def dup(m):
+            cols, rows = m.rows("comparative-locks.csv")
+            rows.append(dict(next(r for r in rows if r["artefact"].endswith("coding-sheet.csv"))))
+            m.write("comparative-locks.csv", cols, rows)
+        self.fails(dup, "is locked once")
+
+    def test_empty_eod_sample_cannot_bypass_frozen_frame(self):
+        def clear(m):
+            cols, rows = m.rows("comparative-sheet.csv")
+            for r in rows:
+                if r["record_type"] == "FACTOR":
+                    r["eod_sampled"] = "N"
+            m.write("comparative-sheet.csv", cols, [r for r in rows if r["record_type"] != "AIDCF_EOD"])
+            cols, rows = m.rows("comparative-sheet.csv")
+            for r in rows:
+                r.update(eod="", eod_assumptions="", eod_confidence="")
+            m.write("comparative-sheet.csv", cols, rows)
+            m.relock()  # even with fresh file locks
+        self.fails(clear, "eod_sampled does not match the seeded draw from the locked frame")
+
+        def clear_and_unlock(m):
+            clear(m)
+            m.drop("comparative-locks.csv", lambda r: r["artefact"] == "EOD_FRAME")
+        self.fails(clear_and_unlock, "EOD_SEED and EOD_FRAME are not both locked")
+
+    def test_changed_factor_frame(self):
+        with Mutated() as m:
+            cols, rows = m.rows("comparative-sheet.csv")
+            target = next(r for r in rows if r["record_type"] == "FACTOR" and r["knowability"] == "DISCOVERABLE"
+                          and r["eod_sampled"] == "N" and r["coding_phase"] == "PRE_REVEAL")
+            key = (target["incident_id"], target["factor_id"])
+        def drop_factor(m):
+            # remove one unsampled factor from the frame on both sheets, with fresh file locks
+            m.drop("comparative-sheet.csv", lambda r: (r["incident_id"], r["factor_id"]) == key)
+            m.drop("coding-sheet.csv", lambda r: (r["incident_id"], r["factor_id"]) == key)
+            m.relock()
+        self.fails(drop_factor, "the frozen EOD frame has changed")
+
+
 class EodDraw(unittest.TestCase):
     """KAI clarification 2: the sample is drawn from the locked frame before any detection judgement."""
 
@@ -422,6 +553,9 @@ class EodDraw(unittest.TestCase):
             m.write("comparative-sheet.csv", cols, [dict(r, eod_sampled="N") for r in rows if r["record_type"] == "FACTOR"])
             ccols, _ = m.rows("coding-sheet.csv")
             m.write("coding-sheet.csv", ccols, [])
+            # the state before the draw: no EOD_FRAME and no file locks yet
+            lcols, locks = m.rows("comparative-locks.csv")
+            m.write("comparative-locks.csv", lcols, [r for r in locks if r["artefact"] in {"BASELINES", "BOOTSTRAP_SEED", "EOD_SEED"}])
             code, out = run("--draw-eod-sample", files=m.dir)
         self.assertEqual(code, 0, out)
         drawn = {tuple(l.split()[1:3]) for l in out.splitlines() if l.startswith("SAMPLED")}

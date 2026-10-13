@@ -20,6 +20,7 @@ import math
 import random
 import re
 from collections import Counter, defaultdict
+from pathlib import Path
 
 METHODS = ["BL-TIER", "BL-CX", "BL-ENG", "BL-OT", "BL-ISMS", "BL-TDD"]
 BASELINE_COLUMNS = [
@@ -66,6 +67,7 @@ FACTOR_RE = re.compile(r"^CF-\d{2}$")
 CODER_RE = re.compile(r"^C\d{2}$")
 DECL_RE = re.compile(r"^((?:EXC|APP)-\d{2}):\s*(.+)$")
 SHA_RE = re.compile(r"^[0-9a-f]{64}$")
+KIT = Path(__file__).resolve().parent  # FILE:<path> locks are relative to this folder unless absolute
 
 
 def split(value):
@@ -226,10 +228,42 @@ def load_locks(path, chk):
                 chk.err(w, "%s value must be a non-negative integer" % a)
         else:
             chk.err(w, "unknown artefact %r (BASELINES, EOD_FRAME, EOD_SEED, BOOTSTRAP_SEED or FILE:<path>)" % a)
-        if a in locks and not a.startswith("FILE:"):
+        if a in locks:
             chk.err(w, "%s is locked once; a changed lock is a protocol deviation" % a)
         locks[a] = r["value"]
+        if a.startswith("FILE:") and SHA_RE.match(r["value"]):
+            target = lock_path(a)
+            try:
+                actual = sha256(target)
+            except OSError:
+                chk.err(w, "%s: the locked file cannot be read" % a)
+            else:
+                if actual != r["value"]:
+                    chk.err(w, "%s: the file has changed since it was locked" % a)
     return locks
+
+
+def lock_path(artefact):
+    """Resolve a FILE:<path> artefact: absolute, or relative to the back-testing folder."""
+    p = Path(artefact[len("FILE:"):])
+    return (p if p.is_absolute() else KIT / p).resolve()
+
+
+def final_lock_problems(locks, analysed_files, has_factors):
+    """Locks a final comparative report requires (section 10A.4). Every FILE lock present is verified by load_locks."""
+    problems = []
+    for a in ("BASELINES", "BOOTSTRAP_SEED"):
+        if a not in locks:
+            problems.append("%s is not locked in comparative-locks.csv" % a)
+    if has_factors:
+        for a in ("EOD_SEED", "EOD_FRAME"):
+            if a not in locks:
+                problems.append("%s is not locked in comparative-locks.csv" % a)
+    locked = {lock_path(a) for a in locks if a.startswith("FILE:")}
+    for f in analysed_files:
+        if Path(f).resolve() not in locked:
+            problems.append("%s is not locked: add a FILE:<path> lock of the reconciled file before a final report" % f)
+    return problems
 
 
 # ------------------------------------------------------------ AIDCF side from coding-sheet.csv
@@ -423,13 +457,18 @@ def check_comparative(sheet_path, baselines_path, locks_path, coding_rows, categ
         if n > 1:
             chk.err(sheet_path.name, "duplicate BASELINE row for %s" % " ".join(key))
 
-    # EOD sample must be exactly the seeded draw from the locked frame
-    if sampled:
+    # EOD sample must be exactly the seeded draw from the locked frame. Once EOD_FRAME is locked this is
+    # checked whatever the flags say, so clearing every eod_sampled flag cannot bypass it.
+    judged = any(r["record_type"] == "BASELINE" and r["detection_judgement"] for r in rows)
+    if judged and ("EOD_SEED" not in locks or "EOD_FRAME" not in locks):
+        chk.err(sheet_path.name, "baseline judgements exist but EOD_SEED and EOD_FRAME are not both locked: "
+                                 "the EOD sample is drawn and locked before any detection judgement")
+    if sampled or "EOD_FRAME" in locks:
         frame = eod_frame(factors.values())
         if locks.get("EOD_FRAME") != frame_digest(frame):
-            chk.err(sheet_path.name, "eod_sampled is set but the EOD frame digest does not match the EOD_FRAME lock")
+            chk.err(sheet_path.name, "the frozen EOD frame has changed: its digest does not match the EOD_FRAME lock")
         elif "EOD_SEED" not in locks:
-            chk.err(sheet_path.name, "eod_sampled is set but EOD_SEED is not locked")
+            chk.err(sheet_path.name, "the EOD sample is set or EOD_FRAME is locked, but EOD_SEED is not locked")
         elif set(draw_eod_sample(frame, category_of, locks["EOD_SEED"])) != sampled:
             chk.err(sheet_path.name, "eod_sampled does not match the seeded draw from the locked frame")
     return rows, spec, locks
@@ -626,6 +665,8 @@ def comparative_report(rows, spec, locks, coding_rows, category_of, threshold=PR
             problems.append("%s is not APPROVED in baselines.csv" % m)
     if "BASELINES" not in locks:
         problems.append("baselines.csv is not locked (BASELINES in comparative-locks.csv)")
+    if "BOOTSTRAP_SEED" not in locks:
+        problems.append("BOOTSTRAP_SEED is not locked in comparative-locks.csv")
     keys = comparable(data)
     for k in keys:
         if k not in data["best"]:
@@ -702,12 +743,9 @@ def comparative_report(rows, spec, locks, coding_rows, category_of, threshold=PR
                 else:
                     line += " | net incremental %+.3f" % v
                     if origin == "ALL":
-                        if seed is None:
-                            line += " (no interval: BOOTSTRAP_SEED not locked)"
-                        else:
-                            ci, n_inc = bootstrap(data, ks, m, reading, seed)
-                            line += (" (no interval: %d eligible incidents < %d)" % (n_inc, MIN_INCIDENTS_FOR_INTERVAL)
-                                     if ci is None else " (95%% incident-cluster bootstrap %+.3f to %+.3f)" % ci)
+                        ci, n_inc = bootstrap(data, ks, m, reading, seed)
+                        line += (" (no interval: %d eligible incidents < %d)" % (n_inc, MIN_INCIDENTS_FOR_INTERVAL)
+                                 if ci is None else " (95%% incident-cluster bootstrap %+.3f to %+.3f)" % ci)
                 out.append(line)
                 for cls in "bcd":
                     if subtypes[cls]:

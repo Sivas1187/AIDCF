@@ -361,7 +361,9 @@ Comparative data are kept in `comparative-sheet.csv`, separate from `coding-shee
 - Only factors with `knowability` STATED_KNOWN or DISCOVERABLE and `coding_phase` PRE_REVEAL enter the comparison.
 - Baseline coders and the adjudicator are not the framework author and have no role in AIDCF's development. BASELINE rows must have `independent_of_author` Y. Each coder declares `prior_familiarity` with the incident.
 - **Coder counts (owner ruling 2).** The target is two independent practitioners per evaluated method, coding rounds A and B, with separate adjudication. A smaller pool is allowed for exploratory work if it is disclosed. Rounds A and B are reconciled as in section 13.3, and their agreement on the detection judgement (percentage agreement and Cohen's κ, section 13.1) is reported per method. Every comparative output prints the number of distinct independent reviewers per method, and labels a method with fewer than two as exploratory.
-- **Locks.** Each artefact in `run-log/comparative-locks.csv` is locked once: BASELINES (SHA-256 of `baselines.csv`), EOD_FRAME (digest of the frozen factor frame), EOD_SEED, BOOTSTRAP_SEED and FILE:<path> for each locked coding file.
+- **Locks.** Each artefact in `run-log/comparative-locks.csv` is locked once: BASELINES (SHA-256 of `baselines.csv`), EOD_FRAME (digest of the frozen factor frame), EOD_SEED, BOOTSTRAP_SEED and FILE:<path> for each locked coding file. A FILE path is relative to the back-testing folder, or absolute. A locked file is a snapshot kept unchanged for the rest of the run; later work goes into a new file.
+- **Locks fail closed.** `--check` and `--comparative` recompute the SHA-256 of every FILE lock and report an error if a locked file is missing, unreadable or changed. Once EOD_FRAME is locked, the frame and the seeded draw are recomputed on every run whatever the `eod_sampled` flags say. Baseline judgements recorded before EOD_SEED and EOD_FRAME are both locked are an error.
+- **Final report.** `--comparative` produces results only when BASELINES, BOOTSTRAP_SEED, EOD_SEED and EOD_FRAME are locked, and when the `coding-sheet.csv` and `comparative-sheet.csv` it analyses each have a FILE lock, set after reconciliation and disposition, that matches their current bytes. Otherwise it prints why and no results. There is no preview or partial-results mode.
 
 ### 10A.5 Paired analysis
 
@@ -487,7 +489,8 @@ The comparative steps run alongside section 9.
 4. **Before step 6:** the adjudicator locks EOD_SEED, draws the EOD sample (10A.6), locks EOD_FRAME and sets `eod_sampled`.
 5. **With step 6:** baseline coders record BASELINE rows for every comparable factor and evaluated method; AIDCF coders record AIDCF_EOD rows for sampled factors. Each side locks its file.
 6. **With step 7:** the adjudicator reconciles the BASELINE and AIDCF_EOD rows and records a GAP_DISPOSITION for every class-c pair.
-7. **With section 14:** run `backtest_check.py --check`, then `--comparative`.
+7. **Final locks:** the study lead locks the reconciled `coding-sheet.csv` and `comparative-sheet.csv` (FILE:<path>).
+8. **With section 14:** run `backtest_check.py --check`, then `--comparative`.
 
 ### 10A.10 Checker tests
 
@@ -508,6 +511,7 @@ The comparative steps run alongside section 9.
 | T-11 | ACTIONABLE_GAP cites a G1–G3 record; other dispositions except DISPUTED cite a clause |
 | T-12 | W1–W9 give the expected strict and inclusive classes |
 | Further | NOT_EVALUATED methods cannot be judged; the union label; the BASELINES lock; DRAFT methods block results; baseline coders are independent; the factor list matches `coding-sheet.csv`; each lock is set once; the draw is refused once judgements exist; round A/B κ; v1.0 outputs unchanged |
+| Locks | Each required lock missing; a locked judgement, coding file or coder snapshot changed, replaced or missing; a file locked twice; an emptied EOD sample; a changed EOD frame: each fails closed with no results |
 
 
 ## 11. Gate judgement

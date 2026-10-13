@@ -180,13 +180,20 @@ def main():
                                      notes="FICTIONAL. Adjudicator and coder positions recorded." if d == "DISPUTED" else "FICTIONAL."))
     write(FIX / "comparative-sheet.csv", cp.SHEET_COLUMNS, rows)
 
+    # a locked snapshot of one coder's judgement file (section 10A.4), then the reconciled files
+    (FIX / "locked").mkdir(exist_ok=True)
+    write(FIX / "locked" / "C21-BL-ENG-round-A.csv", cp.SHEET_COLUMNS, [r for r in rows if r["coder_id"] == "C21"])
+    sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
+    file_locks = [dict(artefact="FILE:tests/fixtures/%s" % name, value=sha(FIX / name), locked_on="2026-10-13",
+                       locked_by="C40", notes="FICTIONAL")
+                  for name in ("locked/C21-BL-ENG-round-A.csv", "coding-sheet.csv", "comparative-sheet.csv")]
     digest = hashlib.sha256((FIX / "baselines.csv").read_bytes()).hexdigest()
     locks = [
         dict(artefact="BASELINES", value=digest, locked_on="2026-10-13", locked_by="C40", notes="FICTIONAL"),
         dict(artefact="EOD_FRAME", value=cp.frame_digest(frame), locked_on="2026-10-13", locked_by="C40", notes="FICTIONAL"),
         dict(artefact="EOD_SEED", value=EOD_SEED, locked_on="2026-10-13", locked_by="C40", notes="FICTIONAL"),
         dict(artefact="BOOTSTRAP_SEED", value=BOOT_SEED, locked_on="2026-10-13", locked_by="C40", notes="FICTIONAL"),
-    ]
+    ] + file_locks
     write(FIX / "comparative-locks.csv", cp.LOCK_COLUMNS, locks)
     (FIX / "incident-register.csv").write_text(",".join(bc.REGISTER_COLUMNS) + "\n", encoding="utf-8")
     print("fixtures written: %d coding rows, %d comparative rows, %d sampled factors" % (len(coding), len(rows), len(sample)))
